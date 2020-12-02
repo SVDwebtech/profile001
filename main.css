@@ -40,6 +40,60 @@ li {
 	padding-left: 3rem;
 }
 
+#section-nav {
+	padding: 1rem 5rem;
+	display: flex;
+	justify-content: space-between;
+}
+
+#subsection-nav-logo {
+	width: 25%;
+}
+
+#nav-logo-span {
+	color: red;
+	font-size: 2rem;
+}
+
+#subsection-nav-links {
+	width: 50%;
+	color: rgb(1, 1, 34);
+	font-size: 2rem;
+}
+
+#container-navlinks {
+	display: flex;
+	justify-content: space-evenly;
+}
+
+#subsection-wrapper {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 20rem;
+}
+
+#header-profile-section {
+	font-size: 2rem;
+	padding-top: 2rem;
+}
+
+#heading-span-1 {
+	font-size: 1.5rem;
+	display: block;
+}
+
+#heading-span-2 {
+	color: red;
+	font-size: 3rem;
+	display: block;
+}
+
+#heading-span-3 {
+	font-size: 2rem;
+	display: block;
+}
+
 .section-wrapper-blue {
 	background-color: rgb(1, 1, 34);
 	color: white;
