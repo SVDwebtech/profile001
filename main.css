@@ -40,30 +40,36 @@ li {
 	padding-left: 3rem;
 }
 
-#section-nav {
-	padding: 1rem 5rem;
-	display: flex;
-	justify-content: space-between;
+.navbar {
+	color: rgb(1, 1, 34) !important;
+	font-size: 2rem;
+	padding: 2rem 5rem 1rem 5rem;
+	height: 8rem;
 }
 
-#subsection-nav-logo {
-	width: 25%;
+.navbar-brand {
+	font-size: 1.8rem;
 }
 
 #nav-logo-span {
 	color: red;
-	font-size: 2rem;
+	font-size: 3rem;
+	font-weight: 500;
 }
 
-#subsection-nav-links {
-	width: 50%;
-	color: rgb(1, 1, 34);
-	font-size: 2rem;
+.nav-item {
+	width: 10rem;
 }
 
-#container-navlinks {
-	display: flex;
-	justify-content: space-evenly;
+.nav-link {
+	text-align: center;
+	height: 5rem;
+}
+
+.nav-link:hover {
+	color: red !important;
+	/* font-size: 2.1rem; */
+	font-weight: 600;
 }
 
 #subsection-wrapper {
