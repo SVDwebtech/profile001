@@ -316,3 +316,36 @@ footer {
 	font-size: 1.5rem;
 	font-weight: 500;
 }
+
+#footerBrand {
+	color: red;
+	font-size: 2rem;
+}
+
+@media (max-width: 768px) {
+	footer {
+		font-size: 1.2rem;
+	}
+
+	.footerSpan {
+		font-size: 1rem;
+	}
+
+	#footerBrand {
+		font-size: 1.5rem;
+	}
+}
+
+@media (max-width: 576px) {
+	footer {
+		font-size: 0.9rem;
+	}
+
+	.footerSpan {
+		font-size: 0.7rem;
+	}
+
+	#footerBrand {
+		font-size: 1.2rem;
+	}
+}
