@@ -82,6 +82,7 @@ a {
 	width: 4rem;
 	border: none;
 	text-decoration: none;
+	outline: none;
 }
 
 #hamburger-menu {
@@ -93,10 +94,24 @@ a {
 	position: -webkit-sticky;
 	position: sticky;
 	top: 90px;
+	text-align: center;
+}
+
+#hamburger-menu h3 {
+	font-size: 4rem;
+	border-bottom: 4px solid #777;
+	max-width: 40%;
+	margin: auto;
+	margin-bottom: 2rem;
 }
 
 .hamburger-item {
 	margin: auto;
+	padding: 0;
+	height: 6rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 }
 
 .hamburger-link {
@@ -105,8 +120,13 @@ a {
 	font-weight: 600;
 	text-align: center;
 	display: block;
-	height: 100%;
 	padding-top: 0.8rem;
+}
+
+.hamburger-link:hover {
+	color: red;
+	font-size: 2.1rem;
+	font-weight: 700;
 }
 
 .menuDisplay {
