@@ -3,6 +3,7 @@ const navbarBrand = document.querySelector("#navbar-brand");
 const navLogo1 = document.querySelector("#nav-logo-span-1");
 const navLogo2 = document.querySelector("#nav-logo-span-2");
 const hamburgerBtn = document.querySelector("#hamburger-btn");
+const timesBtn = document.querySelector("#menu-times-btn");
 const navabarLinks = document.querySelector("#navbar-subcontainer");
 const menu = document.querySelector("#hamburger-menu");
 const menuLink = document.querySelectorAll(".hamburger-link");
@@ -62,7 +63,6 @@ window.addEventListener("resize", () => {
 	else {
 		hamburgerBtn.style.display = "none";
 		navabarLinks.style.display = "block";
-		hamburgerBtn.innerHTML = '<span><i class="fas fa-bars"></i></span>';
 		if (menu.classList.add("menuDisplay")) {
 			menu.classList.remove("menuDisplay");
 		}
@@ -71,21 +71,24 @@ window.addEventListener("resize", () => {
 
 menu.classList.add("menuDisplay");
 hamburgerBtn.addEventListener("click", () => {
-	if (
-		hamburgerBtn.innerHTML !== '<span><i class="fas fa-times"></i></span>'
-	) {
-		hamburgerBtn.innerHTML = '<span><i class="fas fa-times"></i></span>';
-		menu.classList.toggle("menuDisplay");
-	}
-	else {
-		hamburgerBtn.innerHTML = '<span><i class="fas fa-bars"></i></span>';
-		menu.classList.toggle("menuDisplay");
+	menu.classList.toggle("menuDisplay");
+	for (let i = 0; i < menuLink.length; i++) {
+		menuLink[i].style.color = "rgb(1,1,34)";
+		menuLink[i].addEventListener("mouseenter", () => {
+			menuLink[i].style.color = "red";
+		});
+		menuLink[i].addEventListener("mouseleave", () => {
+			menuLink[i].style.color = "rgb(1,1,34)";
+		});
 	}
 });
 
 for (let i = 0; i < menuLink.length; i++) {
 	menuLink[i].addEventListener("click", () => {
 		menu.classList.toggle("menuDisplay");
-		hamburgerBtn.innerHTML = '<span><i class="fas fa-bars"></i></span>';
 	});
 }
+
+timesBtn.addEventListener("click", () => {
+	menu.classList.toggle("menuDisplay");
+});
