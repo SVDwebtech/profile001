@@ -15,6 +15,8 @@ body {
 	font-weight: 400;
 	line-height: 1.7;
 	color: #777;
+	/* inserted width to get rid of white space on right*/
+	width: 100vw;
 	box-sizing: border-box;
 }
 
@@ -432,20 +434,30 @@ footer {
 		display: block;
 	}
 
+	/* FOOTER SECTION */
 	footer {
-		font-size: 1.2rem;
+		font-size: 1.5rem;
 	}
 
 	.footerSpan {
-		font-size: 1rem;
+		font-size: 1.3rem;
 	}
 
 	#footerBrand {
-		font-size: 1.5rem;
+		font-size: 1.8rem;
 	}
 }
 
 @media (max-width: 576px) {
+	body {
+		/* inserted width to get rid of white space on right*/
+		width: 100vw;
+	}
+
+	#navbar {
+		padding: 1rem 2.5rem 0.5rem 2.5rem;
+	}
+
 	#nav-logo-span-1 {
 		font-size: 1.1rem;
 		font-weight: 600;
@@ -460,14 +472,23 @@ footer {
 		font-size: 1.1rem;
 		font-weight: 600;
 	}
+
 	#menu-nav-logo-span-2 {
 		font-size: 2.5rem;
 		font-weight: 600;
 		letter-spacing: 0.2rem;
 	}
 
+	#subsection-wrapper {
+		height: 100vh;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-end;
+		padding: 5rem 2.5rem 5rem 2.5rem;
+	}
+
 	#header-profile-section {
-		font-size: 1.5rem;
+		font-size: 1.6rem;
 		padding-top: 2rem;
 	}
 
@@ -487,15 +508,21 @@ footer {
 		display: block;
 	}
 
+	.contact-item-socialmedia {
+		display: flex;
+		padding-right: 2rem;
+	}
+
+	/* FOOTER SECTION */
 	footer {
-		font-size: 0.9rem;
+		font-size: 0.925rem;
 	}
 
 	.footerSpan {
-		font-size: 0.7rem;
+		font-size: 0.725rem;
 	}
 
 	#footerBrand {
-		font-size: 1.2rem;
+		font-size: 1.225rem;
 	}
 }
