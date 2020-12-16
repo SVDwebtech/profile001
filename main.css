@@ -15,8 +15,6 @@ body {
 	font-weight: 400;
 	line-height: 1.7;
 	color: #777;
-	/* inserted width to get rid of white space on right*/
-	width: 100vw;
 	box-sizing: border-box;
 }
 
@@ -27,6 +25,10 @@ h3 {
 
 p {
 	margin-bottom: 1rem;
+}
+
+.about-subsection-wrapper p {
+	text-align: justify;
 }
 
 button,
@@ -98,7 +100,7 @@ a {
 
 #menu-navbar {
 	background-color: red;
-	padding: 1rem 8rem 0.5rem 8rem;
+	padding: 1rem 5rem 0.5rem 5rem;
 	display: flex;
 	justify-content: space-between;
 }
@@ -235,28 +237,30 @@ a {
 	background-color: rgb(1, 1, 34);
 	color: white;
 	font-size: 1.5rem;
+	min-height: 100vh;
 }
 
 .section-wrapper-white {
 	background-color: white;
 	color: rgb(1, 1, 34);
 	font-size: 1.5rem;
+	min-height: 100vh;
 }
 
 .heading-wrapper-blue {
 	color: rgb(1, 1, 34);
-	font-size: 2.5rem;
+	font-size: 2rem;
 	font-weight: 700;
 	text-align: center;
-	padding: 3.5rem 0 1.5rem 0;
+	padding: 3.5rem 0rem 1.5rem 0rem;
 }
 
 .heading-wrapper-white {
 	color: white;
-	font-size: 2.5rem;
+	font-size: 2rem;
 	font-weight: 700;
 	text-align: center;
-	padding: 3.5rem 0 1.5rem 0;
+	padding: 3.5rem 0rem 1.5rem 0rem;
 }
 
 .subsection-wrapper {
@@ -313,34 +317,35 @@ a {
 .about-subsection-wrapper {
 	padding: 0rem 5rem 2rem 5rem;
 	display: flex;
-	justify-content: flex-start;
+	justify-content: center;
 }
 
 .about-container-1 {
 	display: flex;
 	justify-content: space-between;
 	margin: 0rem;
+	max-width: 900px;
 }
 
 .about-sub-container-1 {
-	max-width: 35%;
+	max-width: 250px;
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
+	align-items: center;
 }
 
 .about-sub-container-2 {
-	min-width: 60%;
+	max-width: 70%;
 }
 
 img {
-	width: 100%;
+	max-width: 85%;
 	display: block;
 	height: auto;
-	margin: auto;
 	border: solid white 2px;
 	border-radius: 1%;
-	padding: 2rem;
+	margin: 1rem auto 2rem auto;
 }
 
 .contact-item {
@@ -437,6 +442,13 @@ footer {
 		letter-spacing: 0.4rem;
 	}
 
+	#menu-navbar {
+		background-color: red;
+		padding: 1rem 2.5rem 0.5rem 2.5rem;
+		display: flex;
+		justify-content: space-between;
+	}
+
 	#header-profile-section {
 		font-size: 1.8rem;
 		padding-top: 2rem;
@@ -471,50 +483,25 @@ footer {
 	}
 
 	.about-sub-container-1 {
-		width: 100%;
+		max-width: 250px;
 		display: flex;
 		justify-content: center;
 	}
 
 	.about-sub-container-2 {
-		width: 100%;
+		min-width: 100%;
 	}
 
 	img {
-		max-width: 75%;
+		max-width: 85%;
 		display: block;
 		height: auto;
-		border: solid white 5px;
+		border: solid white 2px;
 		border-radius: 1%;
-		margin: auto;
+		margin: 0rem auto 2rem auto;
 	}
 
 	/* FOOTER SECTION */
-	/* ***************  about  ***************** */
-	.about-container-1 {
-		display: flex;
-		flex-direction: column;
-	}
-
-	.about-sub-container-1 {
-		width: 100%;
-		display: flex;
-		flex-direction: column;
-		justify-content: flex-start;
-		align-items: center;
-		margin: auto;
-		flex-shrink: 1;
-	}
-
-	img {
-		flex-shrink: 1;
-	}
-
-	.about-sub-container-2 {
-		width: 100%;
-		text-align: justify;
-	}
-	/* **************************************** */
 
 	footer {
 		font-size: 1.5rem;
@@ -530,11 +517,6 @@ footer {
 }
 
 @media (max-width: 576px) {
-	body {
-		/* inserted width to get rid of white space on right*/
-		width: 100vw;
-	}
-
 	#navbar {
 		padding: 1rem 2.5rem 0.5rem 2.5rem;
 	}
@@ -603,21 +585,22 @@ footer {
 	.about-container-1 {
 		display: flex;
 		flex-direction: column;
+		align-items: center;
 	}
 
 	.about-sub-container-1 {
-		max-width: 75%;
+		max-width: 40%;
 	}
 
 	.about-sub-container-2 {
-		width: 100%;
+		min-width: 100%;
 	}
 
 	img {
-		max-width: 85%;
+		min-width: 50px;
 		display: block;
 		height: auto;
-		border: solid white 5px;
+		border: solid white 2px;
 		border-radius: 1%;
 		margin: 0rem auto 2rem auto;
 	}
