@@ -313,12 +313,13 @@ a {
 .box {
 	margin: 0rem 2rem;
 	min-width: 132px;
+	margin-bottom: 1rem;
 }
 
 .skills-sub-container-2 .box {
 	margin: 0rem 2rem;
-	min-width: 132px;
 	max-width: 152px;
+	margin-bottom: 1rem;
 }
 
 .about-subsection-wrapper {
@@ -360,7 +361,7 @@ a {
 
 .skills-sub-container-2 {
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-evenly;
 	margin-bottom: 3rem;
 	flex-wrap: wrap;
 }
@@ -455,8 +456,8 @@ footer {
 
 	.skills-sub-container-2 .box {
 		margin: 0rem 2rem;
-		min-width: 132px;
-		max-width: 350px;
+		min-width: 250px;
+		margin-bottom: 3rem;
 	}
 }
 
@@ -538,6 +539,12 @@ footer {
 		border: solid white 2px;
 		border-radius: 1%;
 		margin: 0rem auto 2rem auto;
+	}
+
+	.skills-sub-container-2 .box {
+		margin: 0rem 2rem;
+		max-width: 350px;
+		margin-bottom: 3rem;
 	}
 
 	/* FOOTER SECTION */
@@ -642,6 +649,12 @@ footer {
 		border: solid white 2px;
 		border-radius: 1%;
 		margin: 0rem auto 2rem auto;
+	}
+
+	.skills-sub-container-2 .box {
+		margin: 0rem 2rem;
+		max-width: 150px;
+		margin-bottom: 3rem;
 	}
 
 	/* FOOTER SECTION */
