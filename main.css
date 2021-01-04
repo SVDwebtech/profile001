@@ -269,6 +269,13 @@ a {
 	justify-content: flex-start;
 }
 
+.portfolio-subsection-wrapper {
+	padding: 0rem 5rem 2rem 5rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
 .contact-subsection-wrapper {
 	padding: 0rem 5rem 2rem 5rem;
 	display: flex;
@@ -288,6 +295,13 @@ a {
 	display: flex;
 	/* justify-content: space-between; */
 	margin: 0rem;
+}
+
+.container-1-portfolio {
+	display: flex;
+	justify-content: center;
+	margin: 0rem;
+	margin-bottom: 3rem;
 }
 
 .container-1-contact {
