@@ -56,6 +56,7 @@ a {
 	position: fixed;
 	top: 0px;
 	width: 100%;
+	transition: 700ms;
 }
 
 #navbar-brand {
@@ -87,6 +88,7 @@ a {
 	border: none;
 	text-decoration: none;
 	outline: none;
+	transition: 700ms;
 }
 
 #hamburger-menu {
@@ -174,6 +176,7 @@ a {
 	text-align: center;
 	display: block;
 	padding-top: 0.8rem;
+	transition: 300ms;
 }
 
 .menuDisplay {
@@ -198,6 +201,7 @@ a {
 	display: block;
 	height: 100%;
 	padding-top: 0.8rem;
+	transition: 300ms;
 }
 
 #subsection-wrapper {
@@ -479,7 +483,6 @@ footer {
 }
 
 @media (max-width: 992px) {
-
 	.skills-sub-container-2 .box {
 		margin: 0rem 2rem;
 		min-width: 260px;
@@ -591,20 +594,20 @@ footer {
 		margin-bottom: 3rem;
 	}
 
-	.contact-subsection-wrapper	{
+	.contact-subsection-wrapper {
 		flex-direction: column;
 		align-items: center;
 	}
 
-	.container-1-contact	{
+	.container-1-contact {
 		min-width: 80%;
 	}
 
-	.container-2-contact	{
+	.container-2-contact {
 		min-width: 80%;
 	}
 
-	.contact-item-info p	{
+	.contact-item-info p {
 		margin-bottom: 5px;
 	}
 
@@ -732,7 +735,7 @@ footer {
 		margin-bottom: 3rem;
 	}
 
-	.contact-item-info p	{
+	.contact-item-info p {
 		margin-bottom: 0px;
 	}
 
