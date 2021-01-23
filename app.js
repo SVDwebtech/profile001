@@ -9,6 +9,9 @@ const menu = document.querySelector("#hamburger-menu");
 const menuLink = document.querySelectorAll(".hamburger-link");
 const navLink = document.querySelectorAll(".nav-link");
 const body = document.querySelector("body");
+const lmaButton = document.querySelector("#abtlearnmre");
+const lmtButton = document.querySelector("#about-times-btn");
+const moreContent = document.querySelector("#aboutMoreContent");
 
 window.addEventListener("scroll", () => {
 	if (window.scrollY > 0) {
@@ -91,4 +94,13 @@ for (let i = 0; i < menuLink.length; i++) {
 
 timesBtn.addEventListener("click", () => {
 	menu.classList.toggle("menuDisplay");
+});
+
+moreContent.classList.add("moreContentDisplay");
+lmaButton.addEventListener("click", () => {
+	moreContent.classList.toggle("moreContentDisplay");
+});
+
+lmtButton.addEventListener("click", () => {
+	moreContent.classList.toggle("moreContentDisplay");
 });
