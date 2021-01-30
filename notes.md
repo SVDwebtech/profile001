@@ -1,0 +1,3 @@
+# NOTES 
+
+## SKILLS PAGE

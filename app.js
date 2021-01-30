@@ -13,6 +13,12 @@ const lmaButton = document.querySelector("#abtlearnmre");
 const lmtButton = document.querySelector("#about-times-btn");
 const moreContent = document.querySelector("#aboutMoreContent");
 
+const skillsHide = document.querySelector("#skill-container");
+const leftArrow = document.querySelector("#leftArrow");
+const rightArrow = document.querySelector("#rightArrow");
+const skillsIcon = document.querySelector("#skillsIcon");
+const skillsDescription = document.querySelector("#skillsDescription");
+
 window.addEventListener("scroll", () => {
 	if (window.scrollY > 0) {
 		navbar.style.backgroundColor = "red";
@@ -103,4 +109,89 @@ lmaButton.addEventListener("click", () => {
 
 lmtButton.addEventListener("click", () => {
 	moreContent.classList.toggle("moreContentDisplay");
+});
+
+const skillItem = {
+	iconClassAttribute : [
+		"fa fa-md fa-fast-forward",
+		"fa fa-md fa-crop",
+		"fa fa-md fa-compass",
+		"fa fa-md fa-cogs"
+	],
+	heading            : [
+		"  Fast",
+		"  Responsive",
+		"  Intuitive",
+		"  Dynamic"
+	],
+	shortDesription    : [
+		"I create fast loading web pages.",
+		"I design responsive web pages.",
+		"I use well designed interfaces.",
+		"I make animated pages."
+	],
+	longDescription    : [
+		"I use light weight designs to create fast loading web pages, with lag-free interaction, which increases visitor retention and loyalty!",
+		"I design responsive web pages, with mobile first in mind, that render well on a variety of devices and window or screen sizes.",
+		"My pages rely on easy to use user interfaces and better user experiences that allow the user to focus on the product or service!",
+		"I like to use active pages which comes to life.  It keeps the user curious and captures their interest."
+	]
+};
+
+let i = 0;
+leftArrow.addEventListener("click", () => {
+	i--;
+	if (i === -1) {
+		i = 3;
+	}
+	skillsHide.style.display = "none";
+	setTimeout(() => {
+		skillsHide.style.display = "block";
+	}, 500);
+	skillsIcon.setAttribute("class", skillItem.iconClassAttribute[i]);
+	skillsIcon.innerText = skillItem.heading[i];
+	skillsDescription.innerText = skillItem.shortDesription[i];
+});
+
+rightArrow.addEventListener("click", () => {
+	i++;
+	if (i === 4) {
+		i = 0;
+	}
+	skillsHide.style.display = "none";
+	setTimeout(() => {
+		skillsHide.style.display = "block";
+	}, 500);
+	skillsIcon.setAttribute("class", skillItem.iconClassAttribute[i]);
+	skillsIcon.innerText = skillItem.heading[i];
+	skillsDescription.innerText = skillItem.shortDesription[i];
+});
+
+const toolsetBox = document.querySelector(".toolset-box-wrapper");
+const langBox = document.querySelector("#lang");
+const toolBox = document.querySelector("#tool");
+const frameBox = document.querySelector("#frame");
+
+let boxWidth;
+let subWidth;
+let leftPosition;
+
+boxWidth = toolsetBox.clientWidth;
+subWidth = langBox.clientWidth;
+leftPosition = (boxWidth - subWidth) / 2;
+
+langBox.style.transform = `translateX(${leftPosition - 30}px)`;
+toolBox.style.transform = `translateX(${leftPosition}px)`;
+frameBox.style.transform = `translateX(${leftPosition + 30}px)`;
+
+window.addEventListener("resize", () => {
+	boxWidth = toolsetBox.clientWidth;
+	subWidth = langBox.clientWidth;
+	leftPosition = (boxWidth - subWidth) / 2;
+	console.log(
+		`Box: ${boxWidth} and Sub: ${subWidth} and LeftPos: ${leftPosition}`
+	);
+	langBox.style.transform = `translateX(${leftPosition - 30}px)`;
+	toolBox.style.transform = `translateX(${leftPosition}px)`;
+	frameBox.style.transform = `translateX(${leftPosition + 30}px)`;
 });
