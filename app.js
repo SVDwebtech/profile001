@@ -81,6 +81,9 @@ window.addEventListener("resize", () => {
 menu.classList.add("menuDisplay");
 hamburgerBtn.addEventListener("click", () => {
 	menu.classList.toggle("menuDisplay");
+	window.setTimeout(() => {
+		menu.style.opacity = 1;
+	}, 1);
 	for (let i = 0; i < menuLink.length; i++) {
 		menuLink[i].style.color = "rgb(1,1,34)";
 		menuLink[i].addEventListener("mouseenter", () => {
@@ -99,7 +102,10 @@ for (let i = 0; i < menuLink.length; i++) {
 }
 
 timesBtn.addEventListener("click", () => {
-	menu.classList.toggle("menuDisplay");
+	menu.style.opacity = 0;
+	window.setTimeout(() => {
+		menu.classList.toggle("menuDisplay");
+	}, 2000);
 });
 
 moreContent.classList.add("moreContentDisplay");
