@@ -172,32 +172,3 @@ rightArrow.addEventListener("click", () => {
 	skillsIcon.innerText = skillItem.heading[i];
 	skillsDescription.innerText = skillItem.shortDesription[i];
 });
-
-const toolsetBox = document.querySelector(".toolset-box-wrapper");
-const langBox = document.querySelector("#lang");
-const toolBox = document.querySelector("#tool");
-const frameBox = document.querySelector("#frame");
-
-let boxWidth;
-let subWidth;
-let leftPosition;
-
-boxWidth = toolsetBox.clientWidth;
-subWidth = langBox.clientWidth;
-leftPosition = (boxWidth - subWidth) / 2;
-
-langBox.style.transform = `translateX(${leftPosition - 30}px)`;
-toolBox.style.transform = `translateX(${leftPosition}px)`;
-frameBox.style.transform = `translateX(${leftPosition + 30}px)`;
-
-window.addEventListener("resize", () => {
-	boxWidth = toolsetBox.clientWidth;
-	subWidth = langBox.clientWidth;
-	leftPosition = (boxWidth - subWidth) / 2;
-	console.log(
-		`Box: ${boxWidth} and Sub: ${subWidth} and LeftPos: ${leftPosition}`
-	);
-	langBox.style.transform = `translateX(${leftPosition - 30}px)`;
-	toolBox.style.transform = `translateX(${leftPosition}px)`;
-	frameBox.style.transform = `translateX(${leftPosition + 30}px)`;
-});
