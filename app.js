@@ -83,7 +83,7 @@ hamburgerBtn.addEventListener("click", () => {
 	menu.classList.toggle("menuDisplay");
 	window.setTimeout(() => {
 		menu.style.opacity = 1;
-	}, 1);
+	}, 0);
 	for (let i = 0; i < menuLink.length; i++) {
 		menuLink[i].style.color = "rgb(1,1,34)";
 		menuLink[i].addEventListener("mouseenter", () => {
@@ -111,10 +111,16 @@ timesBtn.addEventListener("click", () => {
 moreContent.classList.add("moreContentDisplay");
 lmaButton.addEventListener("click", () => {
 	moreContent.classList.toggle("moreContentDisplay");
+	window.setTimeout(() => {
+		moreContent.style.opacity = 1;
+	}, 0);
 });
 
 lmtButton.addEventListener("click", () => {
-	moreContent.classList.toggle("moreContentDisplay");
+	moreContent.style.opacity = 0;
+	window.setTimeout(() => {
+		moreContent.classList.toggle("moreContentDisplay");
+	}, 2000);
 });
 
 const skillItem = {
