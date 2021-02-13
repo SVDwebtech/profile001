@@ -11,7 +11,8 @@ const navLink = document.querySelectorAll(".nav-link");
 const body = document.querySelector("body");
 const lmaButton = document.querySelector("#abtlearnmre");
 const lmtButton = document.querySelector("#about-times-btn");
-const moreContent = document.querySelector("#aboutMoreContent");
+const moreContent = document.querySelector("#plussContent");
+const lessContent = document.querySelector("#minusContent");
 
 const skillsHide = document.querySelector("#skill-container");
 const leftArrow = document.querySelector("#leftArrow");
@@ -110,6 +111,7 @@ timesBtn.addEventListener("click", () => {
 
 moreContent.classList.add("moreContentDisplay");
 lmaButton.addEventListener("click", () => {
+	lessContent.classList.toggle("lessContentDisplay");
 	moreContent.classList.toggle("moreContentDisplay");
 	window.setTimeout(() => {
 		moreContent.style.opacity = 1;
@@ -117,9 +119,11 @@ lmaButton.addEventListener("click", () => {
 });
 
 lmtButton.addEventListener("click", () => {
+	moreContent.classList.toggle("moreContentDisplay");
 	moreContent.style.opacity = 0;
+	lessContent.classList.toggle("lessContentDisplay");
 	window.setTimeout(() => {
-		moreContent.classList.toggle("moreContentDisplay");
+		lessContent.style.opacit = 1;
 	}, 2000);
 });
 
