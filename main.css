@@ -325,7 +325,7 @@ a {
 	font-size: 1.5rem;
 	min-height: 100vh;
 	position: relative;
-	padding-top: 230px;
+	padding-top: 200px;
 }
 
 .colorFiller-white {
@@ -343,7 +343,7 @@ a {
 	font-size: 1.5rem;
 	min-height: 100vh;
 	position: relative;
-	padding-top: 230px;
+	padding-top: 200px;
 }
 
 .colorFiller-blue {
@@ -487,6 +487,15 @@ a {
 	z-index: 1;
 }
 
+.about-container-2 {
+	/* display: flex;
+	justify-content: space-around; */
+	margin: 0rem;
+	max-width: 900px;
+	/* position: relative; */
+	/* z-index: 1; */
+}
+
 #plussContent {
 	opacity: 0;
 	transition: opacity 2000ms;
@@ -499,10 +508,6 @@ a {
 
 .about-sub-container-1 {
 	width: 40%;
-	/* display: flex;
-	flex-direction: column;
-	justify-content: flex-start;
-	align-items: center; */
 }
 
 #image-wrapper {
@@ -566,59 +571,14 @@ a {
 	z-index: 5;
 }
 
-#aboutMoreContent {
-	height: 100%;
-	margin: 0 auto;
-	color: white;
-	font-size: 1.42rem;
-	background-color: rgba(1, 1, 34, 0.989);
-	border-radius: 1rem;
-	padding: 3% 2.5%;
-	/* position: absolute; */
-	/* top: 50%;
-	transform: translateY(-50%); */
-	/* left: 0px; */
-	z-index: 2;
-	/* opacity: 0;
-	transition: opacity 2000ms; */
-}
-
-.aboutMoreScrollContent {
-	/* overflow: auto;
-	max-height: 350px; */
-	padding: 2rem;
-	/* border: solid white 3px; */
-	border-radius: 1rem;
-}
-
 .returnBtn {
 	display: block;
 	margin: 2.5rem auto 0;
 }
 
-/* .aboutMoreScrollContent::-webkit-scrollbar {
-	display: none;
-} */
-
 #about-times-text {
 	font-size: 2rem;
 }
-
-/* #about-times-btn {
-	color: white;
-	font-size: 4rem;
-	background-color: rgba(0, 162, 255, 0);
-	height: 4rem;
-	width: 4rem;
-	border: none;
-	text-decoration: none;
-	outline: none;
-	padding-top: 1rem;
-	display: inline-block;
-	width: 100%;
-	text-align: right;
-	box-shadow: cornsilk;
-} */
 
 .moreContentDisplay {
 	display: none;
@@ -651,6 +611,7 @@ a {
 	margin-left: 2rem;
 	margin-top: 0.5rem;
 }
+
 .imgPotjieFloatLeft {
 	width: 20%;
 	display: block;
@@ -660,9 +621,8 @@ a {
 	margin-top: 0.5rem;
 }
 
-/* ************     about section above     ************ */
-
-/* ************     skills section below     ************ */
+/* ************************ */
+/* *******  skills  ******* */
 .skills-container-1 {
 	display: flex;
 	flex-direction: row;
@@ -678,33 +638,6 @@ a {
 #tool-box {
 	width: 45%;
 }
-
-/* .skills-sub-container-1 {
-	display: flex;
-	justify-content: space-evenly;
-	align-items: center;
-}
-
-.skills-sub-container-2 {
-	display: flex;
-	justify-content: space-evenly;
-	margin-bottom: 3rem;
-	flex-wrap: wrap;
-}
-
-.toolset-sub-container-2 {
-	display: flex;
-	justify-content: space-evenly;
-	margin-bottom: 3rem;
-	margin-top: 5rem;
-	flex-wrap: wrap;
-}
-
-.skills-sub-container-2 .box {
-	margin: 0rem 2rem;
-	max-width: 152px;
-	margin-bottom: 1rem;
-} */
 
 .skills-sub-container-1 {
 	min-width: 40%;
@@ -1040,32 +973,44 @@ footer {
 	}
 
 	.aboutMoreScrollContent {
-		max-height: 350px;
+		/* max-height: 350px; */
 	}
 
 	.imgMoreContent {
+		border-radius: 1rem;
+		border: solid white 2px;
+		margin: 0;
+	}
+
+	.imgSchalkFloatLeft {
 		width: 40%;
 		display: block;
 		height: auto;
-		border-radius: 1rem;
-		border: solid white 2px;
-		margin: 0.5rem 0rem;
-	}
-
-	.imgFloatLeft {
 		float: left;
-		margin-right: 1.5rem;
+		margin-right: 2rem;
+		margin-top: 0.5rem;
 	}
 
-	.imgFloatRight {
+	.imgHikeFloatRight {
+		width: 45%;
+		display: block;
+		height: auto;
 		float: right;
-		margin-left: 1.5rem;
-		width: 55%;
+		margin-left: 2rem;
+		margin-top: 0.5rem;
+	}
+	.imgPotjieFloatLeft {
+		width: 25%;
+		display: block;
+		height: auto;
+		float: left;
+		margin-right: 2rem;
+		margin-top: 0.5rem;
 	}
 
-	#parFive {
+	/* #parFive {
 		clear: left;
-	}
+	} */
 
 	.skills-container-1 {
 		display: flex;
@@ -1373,9 +1318,9 @@ footer {
 
 	/* ABOUT SECTION */
 
-	#about .heading-wrapper-white {
+	/* #about .heading-wrapper-white {
 		padding-bottom: 0;
-	}
+	} */
 
 	#about p {
 		margin-bottom: 1rem;
@@ -1388,14 +1333,15 @@ footer {
 	.about-container-1 {
 		display: flex;
 		flex-direction: column;
-		justify-content: space-evenly;
+		justify-content: center;
 		margin: 0rem;
-		min-height: 650px;
+		min-height: 550px;
 		z-index: 1;
 	}
 
 	.about-sub-container-1 {
-		min-height: 35%;
+		width: 60%;
+		min-height: 250px;
 		margin: 0 auto;
 	}
 
@@ -1416,30 +1362,47 @@ footer {
 	}
 
 	.aboutMoreScrollContent {
-		max-height: 550px;
+		/* max-height: 550px; */
+	}
+
+	.moreContentDisplay {
+		display: none;
+	}
+
+	.lessContentDisplay {
+		display: none;
 	}
 
 	.imgMoreContent {
+		border-radius: 1rem;
+		border: solid white 2px;
+		margin: 0;
+	}
+
+	.imgSchalkFloatLeft {
+		width: 30%;
+		display: block;
+		height: auto;
+		float: left;
+		margin-right: 2rem;
+		margin-top: 0.5rem;
+	}
+
+	.imgHikeFloatRight {
 		width: 40%;
 		display: block;
 		height: auto;
-		border-radius: 1rem;
-		border: solid white 2px;
-		margin: 0.5rem 0rem;
-	}
-
-	.imgFloatLeft {
-		float: left;
-		margin-right: 1.5rem;
-	}
-
-	.imgFloatRight {
 		float: right;
-		margin-left: 1.5rem;
+		margin-left: 2rem;
+		margin-top: 0.5rem;
 	}
-
-	#parFive {
-		clear: left;
+	.imgPotjieFloatLeft {
+		width: 35%;
+		display: block;
+		height: auto;
+		float: left;
+		margin-right: 2rem;
+		margin-top: 0.5rem;
 	}
 
 	.skills-container-1 {
@@ -1779,37 +1742,60 @@ footer {
 	.about-container-1 {
 		display: flex;
 		flex-direction: column;
-		justify-content: space-evenly;
+		justify-content: center;
 		margin: 0rem;
 		min-height: 700px;
 		z-index: 1;
 	}
 
 	.about-sub-container-1 {
-		min-height: 32%;
+		width: 60%;
+		min-height: 250px;
+		margin: 0 auto;
 	}
 
 	.aboutMoreScrollContent {
-		max-height: 600px;
+		/* max-height: 600px; */
+	}
+
+	.moreContentDisplay {
+		display: none;
+	}
+
+	.lessContentDisplay {
+		display: none;
 	}
 
 	.imgMoreContent {
+		border-radius: 1rem;
+		border: solid white 2px;
+		margin: 0;
+	}
+
+	.imgSchalkFloatLeft {
+		width: 30%;
+		display: block;
+		height: auto;
+		float: left;
+		margin-right: 2rem;
+		margin-top: 0.5rem;
+	}
+
+	.imgHikeFloatRight {
+		width: 35%;
+		display: block;
+		height: auto;
+		float: right;
+		margin-left: 2rem;
+		margin-top: 0.5rem;
+	}
+	.imgPotjieFloatLeft {
 		width: 40%;
 		display: block;
 		height: auto;
-		border-radius: 1rem;
-		border: solid white 2px;
-		margin: 0.5rem 0rem;
-	}
-
-	.imgFloatLeft {
 		float: left;
-		margin-right: 1.5rem;
-	}
-
-	.imgFloatRight {
-		float: right;
-		margin-left: 1.5rem;
+		margin-right: 2rem;
+		margin-top: 0.5rem;
 	}
 
 	.skills-container-1 {
@@ -2141,47 +2127,42 @@ footer {
 	}
 
 	/* ABOUT SECTION */
-
-	.about-container-1 {
-		display: flex;
-		flex-direction: column;
-		justify-content: space-evenly;
-		margin: 0rem;
-		min-height: 800px;
-		z-index: 1;
-	}
-
 	.about-sub-container-1 {
-		min-height: 34%;
-	}
-
-	.aboutMoreScrollContent {
-		max-height: 700px;
-	}
-
-	#aboutMoreContent {
-		top: 50%;
-		transform: translateY(-50%);
-		height: 100%;
+		width: 60%;
+		min-height: 250px;
+		margin: 0 auto;
 	}
 
 	.imgMoreContent {
+		border-radius: 1rem;
+		border: solid white 2px;
+		margin: 0;
+	}
+
+	.imgSchalkFloatLeft {
 		width: 40%;
 		display: block;
 		height: auto;
-		border-radius: 1rem;
-		border: solid white 2px;
-		margin: 0.5rem 0rem;
-	}
-
-	.imgFloatLeft {
 		float: left;
-		margin-right: 1.5rem;
+		margin-right: 2rem;
+		margin-top: 0.5rem;
 	}
 
-	.imgFloatRight {
+	.imgHikeFloatRight {
+		width: 40%;
+		display: block;
+		height: auto;
 		float: right;
-		margin-left: 1.5rem;
+		margin-left: 2rem;
+		margin-top: 0.5rem;
+	}
+	.imgPotjieFloatLeft {
+		width: 40%;
+		display: block;
+		height: auto;
+		float: left;
+		margin-right: 2rem;
+		margin-top: 0.5rem;
 	}
 
 	.skills-container-1 {

@@ -111,6 +111,7 @@ timesBtn.addEventListener("click", () => {
 
 moreContent.classList.add("moreContentDisplay");
 lmaButton.addEventListener("click", () => {
+	lessContent.style.opacity = 0;
 	lessContent.classList.toggle("lessContentDisplay");
 	moreContent.classList.toggle("moreContentDisplay");
 	window.setTimeout(() => {
@@ -119,12 +120,12 @@ lmaButton.addEventListener("click", () => {
 });
 
 lmtButton.addEventListener("click", () => {
-	moreContent.classList.toggle("moreContentDisplay");
 	moreContent.style.opacity = 0;
+	moreContent.classList.toggle("moreContentDisplay");
 	lessContent.classList.toggle("lessContentDisplay");
 	window.setTimeout(() => {
-		lessContent.style.opacit = 1;
-	}, 2000);
+		lessContent.style.opacity = 1;
+	}, 0);
 });
 
 const skillItem = {
