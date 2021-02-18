@@ -19,6 +19,10 @@ const leftArrow = document.querySelector("#leftArrow");
 const rightArrow = document.querySelector("#rightArrow");
 const skillsIcon = document.querySelector("#skillsIcon");
 const skillsDescription = document.querySelector("#skillsDescription");
+const indexOne = document.querySelector("#index-box-1");
+const indexTwo = document.querySelector("#index-box-2");
+const indexThree = document.querySelector("#index-box-3");
+const indexFour = document.querySelector("#index-box-4");
 
 window.addEventListener("scroll", () => {
 	if (window.scrollY > 0) {
@@ -155,6 +159,13 @@ const skillItem = {
 	]
 };
 
+const boxes = [
+	indexOne,
+	indexTwo,
+	indexThree,
+	indexFour
+];
+
 let i = 0;
 leftArrow.addEventListener("click", () => {
 	i--;
@@ -168,6 +179,14 @@ leftArrow.addEventListener("click", () => {
 	skillsIcon.setAttribute("class", skillItem.iconClassAttribute[i]);
 	skillsIcon.innerText = skillItem.heading[i];
 	skillsDescription.innerText = skillItem.shortDesription[i];
+	if (i === boxes.length - 1) {
+		boxes[i - (boxes.length - 1)].style.backgroundColor = "rgb(1, 1, 34)";
+		boxes[i].style.backgroundColor = "red";
+	}
+	else {
+		boxes[i + 1].style.backgroundColor = "rgb(1, 1, 34)";
+		boxes[i].style.backgroundColor = "red";
+	}
 });
 
 rightArrow.addEventListener("click", () => {
@@ -182,4 +201,35 @@ rightArrow.addEventListener("click", () => {
 	skillsIcon.setAttribute("class", skillItem.iconClassAttribute[i]);
 	skillsIcon.innerText = skillItem.heading[i];
 	skillsDescription.innerText = skillItem.shortDesription[i];
+	if (i === 0) {
+		boxes[boxes.length - 1].style.backgroundColor = "rgb(1, 1, 34)";
+		boxes[i].style.backgroundColor = "red";
+	}
+	else {
+		boxes[i - 1].style.backgroundColor = "rgb(1, 1, 34)";
+		boxes[i].style.backgroundColor = "red";
+	}
 });
+
+setInterval(() => {
+	i++;
+	if (i === 4) {
+		i = 0;
+	}
+	// skillsHide.classList.toggle(".skills-container-hide");
+	skillsHide.style.opacity = 0;
+	window.setTimeout(() => {
+		skillsIcon.setAttribute("class", skillItem.iconClassAttribute[i]);
+		skillsIcon.innerText = skillItem.heading[i];
+		skillsDescription.innerText = skillItem.shortDesription[i];
+		skillsHide.style.opacity = 1;
+		if (i === 0) {
+			boxes[boxes.length - 1].style.backgroundColor = "rgb(1, 1, 34)";
+			boxes[i].style.backgroundColor = "red";
+		}
+		else {
+			boxes[i - 1].style.backgroundColor = "rgb(1, 1, 34)";
+			boxes[i].style.backgroundColor = "red";
+		}
+	}, 1000);
+}, 7000);
