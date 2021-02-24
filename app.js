@@ -9,6 +9,10 @@ const menu = document.querySelector("#hamburger-menu");
 const menuLink = document.querySelectorAll(".hamburger-link");
 const navLink = document.querySelectorAll(".nav-link");
 const body = document.querySelector("body");
+
+const stringAnimation = document.querySelector("#heading-span-4");
+const stringAnimationTwo = document.querySelector("#heading-span-5");
+
 const lmaButton = document.querySelector("#abtlearnmre");
 const lmtButton = document.querySelector("#about-times-btn");
 const moreContent = document.querySelector("#plussContent");
@@ -233,3 +237,100 @@ setInterval(() => {
 		}
 	}, 1000);
 }, 7000);
+
+// document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+// 	anchor.addEventListener("click", function(e) {
+// 		e.preventDefault();
+
+// 		document.querySelector(this.getAttribute("href")).scrollIntoView({
+// 			behavior : "smooth"
+// 		});
+// 	});
+// });
+
+const stringAnimationVariants = [
+	"a Web Developer!",
+	"qualified by experience!",
+	"a family man!",
+	"a problem solver!"
+];
+
+let dispString = "";
+const arrayDisp = {
+	1 : [],
+	2 : [],
+	3 : [],
+	4 : []
+};
+
+const arrayDispKeys = Object.keys(arrayDisp);
+console.log("keys", arrayDispKeys["4"]);
+const arrayDispValues = Object.values(arrayDisp);
+console.log("values", arrayDispValues);
+
+for (let i = 0; i <= stringAnimationVariants.length - 1; i++) {
+	for (let j = 0; j <= stringAnimationVariants[i].length - 1; j++) {
+		dispString += stringAnimationVariants[i][j];
+		arrayDispValues[i][j] = dispString;
+	}
+	dispString = "";
+}
+
+let counter = 0;
+let arrayDispKey = 1;
+let arr = arrayDisp[arrayDispKey];
+
+// arrow function to type backwards
+const typeRwd = () => {
+	if (counter >= 1) {
+		setTimeout(function() {
+			if (stringAnimation.innerText === "a problem solver!") {
+				console.log("I'm done!!!");
+				stringAnimationTwo.classList.add("stringAnimation5-disp-none");
+			}
+			else {
+				counter--;
+				stringAnimation.innerText = arr[counter];
+				if (counter === arr.length - 1) {
+					const intervalID = setInterval(() => {
+						stringAnimationTwo.classList.toggle(
+							"stringAnimation5-disp-none"
+						);
+					}, 230);
+					setTimeout(() => {
+						console.log("wait a bit");
+						clearInterval(intervalID);
+						stringAnimationTwo.classList.remove(
+							"stringAnimation5-disp-none"
+						);
+						typeRwd();
+					}, 2000);
+				}
+				else {
+					typeRwd();
+				}
+			}
+		}, 110);
+	}
+	else {
+		arr = arrayDisp[(arrayDispKey += 1)];
+		counter = 0;
+		typeFwd();
+	}
+};
+
+// arrow function to type forwards
+const typeFwd = () => {
+	if (counter <= arr.length - 1) {
+		setTimeout(function() {
+			stringAnimation.innerText = arr[counter];
+			counter++;
+			typeFwd();
+		}, 110);
+	}
+	else {
+		typeRwd();
+	}
+};
+
+typeFwd();
