@@ -9,6 +9,7 @@ const menu = document.querySelector("#hamburger-menu");
 const menuLink = document.querySelectorAll(".hamburger-link");
 const navLink = document.querySelectorAll(".nav-link");
 const body = document.querySelector("body");
+const cv = document.querySelector("#cv");
 
 const stringAnimation = document.querySelector("#heading-span-4");
 const stringAnimationTwo = document.querySelector("#heading-span-5");
@@ -23,10 +24,20 @@ const leftArrow = document.querySelector("#leftArrow");
 const rightArrow = document.querySelector("#rightArrow");
 const skillsIcon = document.querySelector("#skillsIcon");
 const skillsDescription = document.querySelector("#skillsDescription");
+const skillsLongDescription = document.querySelector("#skillsLongDescription");
 const indexOne = document.querySelector("#index-box-1");
 const indexTwo = document.querySelector("#index-box-2");
 const indexThree = document.querySelector("#index-box-3");
 const indexFour = document.querySelector("#index-box-4");
+
+cv.addEventListener("mouseenter", () => {
+	cv.style.transform = "scale(1.05) translateY(-3px)";
+	cv.style.boxShadow = "0 5px 10px rgb(1,1,34)";
+});
+cv.addEventListener("mouseleave", () => {
+	cv.style.transform = "scale(1) translateY(3px)";
+	cv.style.boxShadow = "0 0 0 rgb(0,0,0)";
+});
 
 window.addEventListener("scroll", () => {
 	if (window.scrollY > 0) {
@@ -150,16 +161,16 @@ const skillItem = {
 		"  Dynamic"
 	],
 	shortDesription    : [
-		"I create fast loading web pages.",
-		"I design responsive web pages.",
-		"I use well designed interfaces.",
-		"I make animated pages."
+		"Fast loading web applications.",
+		"Responsive web pages.",
+		"Intuitive user interfaces and experiences.",
+		"Interactive web applications constructed dynamically."
 	],
 	longDescription    : [
 		"I use light weight designs to create fast loading web pages, with lag-free interaction, which increases visitor retention and loyalty!",
 		"I design responsive web pages, with mobile first in mind, that render well on a variety of devices and window or screen sizes.",
 		"My pages rely on easy to use user interfaces and better user experiences that allow the user to focus on the product or service!",
-		"I like to use active pages which comes to life.  It keeps the user curious and captures their interest."
+		"I like to construct active pages which comes to life dynamically."
 	]
 };
 
@@ -183,6 +194,7 @@ leftArrow.addEventListener("click", () => {
 	skillsIcon.setAttribute("class", skillItem.iconClassAttribute[i]);
 	skillsIcon.innerText = skillItem.heading[i];
 	skillsDescription.innerText = skillItem.shortDesription[i];
+	skillsLongDescription.innerText = skillItem.longDescription[i];
 	if (i === boxes.length - 1) {
 		boxes[i - (boxes.length - 1)].style.backgroundColor = "rgb(1, 1, 34)";
 		boxes[i].style.backgroundColor = "red";
@@ -205,6 +217,7 @@ rightArrow.addEventListener("click", () => {
 	skillsIcon.setAttribute("class", skillItem.iconClassAttribute[i]);
 	skillsIcon.innerText = skillItem.heading[i];
 	skillsDescription.innerText = skillItem.shortDesription[i];
+	skillsLongDescription.innerText = skillItem.longDescription[i];
 	if (i === 0) {
 		boxes[boxes.length - 1].style.backgroundColor = "rgb(1, 1, 34)";
 		boxes[i].style.backgroundColor = "red";
@@ -226,6 +239,7 @@ setInterval(() => {
 		skillsIcon.setAttribute("class", skillItem.iconClassAttribute[i]);
 		skillsIcon.innerText = skillItem.heading[i];
 		skillsDescription.innerText = skillItem.shortDesription[i];
+		skillsLongDescription.innerText = skillItem.longDescription[i];
 		skillsHide.style.opacity = 1;
 		if (i === 0) {
 			boxes[boxes.length - 1].style.backgroundColor = "rgb(1, 1, 34)";

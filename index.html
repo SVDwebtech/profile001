@@ -10,6 +10,7 @@
 <body>
     <nav id="navbar">
         <a id="navbar-brand" href="#home"><span id="nav-logo-span-1">Schalk van Dyk t/a</span><span id="nav-logo-span-2">SVDwebtech</span></a>
+        <a class="" id="cv" href="CV-Schalk.pdf" download="CV-SchalkvanDyk">Download my CV</a>
         <button id="hamburger-btn">
             <span><i class="fas fa-bars hamtime-btns"></i></span>
         </button>
@@ -40,7 +41,7 @@
                 <span><i class="fas fa-times fa-2x hamtime-btns"></i></span>
             </button>
         </nav>   
-        <h3>Menu:</h3>
+        <!-- <h3>Menu:</h3> -->
         <li class="hamburger-item">
             <a class="hamburger-link" href="#home">home</a>
         </li>
@@ -69,10 +70,10 @@
             <div id="header-profile-section">
                 <p>Check out my profiles and connect with me: </p>
                 <div class="contact-item">
-                    <div class="contact-item-socialmedia"><i class="fab fa-facebook-square fa-3x contact-icon"></i></div>
-                    <div class="contact-item-socialmedia"><i class="fab fa-linkedin fa-3x contact-icon"></i></div>
-                    <div class="contact-item-socialmedia"><i class="fab fa-github-square fa-3x contact-icon"></i></div>
-                    <div class="contact-item-socialmedia"><i class="fab fa-twitter-square fa-3x contact-icon"></i></div>
+                    <div class="contact-item-socialmedia"><a href=""><i class="fab fa-facebook-square fa-3x contact-icon"></i></a></div>
+                    <div class="contact-item-socialmedia"><a target="_blank" href="https://www.linkedin.com/in/schalk-van-dyk-65978836/"><i class="fab fa-linkedin fa-3x contact-icon"></i></a></div>
+                    <div class="contact-item-socialmedia"><a target="_blank" href="https://github.com/SVDwebtech"><i class="fab fa-github-square fa-1x contact-icon"></i></a></div>
+                    <div class="contact-item-socialmedia"><a target="_blank" href="https://twitter.com/SVDwebtech"><i class="fab fa-twitter-square fa-3x contact-icon"></i></a></div>
                 </div>
             </div>
         </div>
@@ -82,7 +83,9 @@
             <div class="colorFiller-white">hello</div>
             <div class="heading-wrapper-white">
                 <h2>About Me</h2>
-                <p>---this is me---</p>
+                <div class="subheading">
+                    <p>get to know me</p>
+                </div>
             </div>
             <div class="about-subsection-wrapper">
                 <div class="about-container-1" id="minusContent">    
@@ -157,7 +160,9 @@
             <div class="colorFiller-blue">hello</div>
             <div class="heading-wrapper-blue">
                 <h2>My Skills</h2>
-                <p>---what I do---</p>
+                <div class="subheading">
+                    <p>what I do</p>
+                </div>
             </div>
             <div class="skills-subsection-wrapper">
                 <div class="skills-container-1">    
@@ -165,12 +170,12 @@
                         <div class="skills-sub-container-1">
                             <div class="box">
                                 <h3><i class="fa fa-md fa-users fa-lg" aria-hidden="true"> User Experiance</i></h3>
-                                <p>I design dynamic, responsive, fast and intuitive web applications and pages.  
-                                The user interface and experience I incoporate promotes functionality and it 
-                                is a top priority!  I like to keep the audience captivated!  I like the user 
-                                to complete the task on the website or application they set out to do easily 
-                                and without confusion.  Ultimately, is not just about buttons and menus, but 
-                                the whole user experience.</p>
+                                <p>I use light weight designs to create fast loading web pages, with lag-free interaction, 
+                                    which increases visitor retention and loyalty! I design responsive web pages, with mobile 
+                                    first in mind, that render well on a variety of devices and window or screen sizes.  My 
+                                    pages rely on easy to use user interfaces and better user experiences that allow the user 
+                                    to focus on the product or service! I like to construct active pages which comes to life 
+                                    dynamically.</p>
                             </div>
                         </div>
                         <div class="skills-sub-container-2">
@@ -182,6 +187,9 @@
                                     <div id="skill-container">
                                         <h3><i id="skillsIcon" class="fa fa-md fa-fast-forward" aria-hidden="true"> Fast</i></h3>
                                         <p id="skillsDescription">I create fast loading web pages.</p>
+                                        <p id="skillsLongDescription">I use light weight designs to create fast loading web pages, with 
+                                                                        lag-free interaction, which increases visitor retention and 
+                                                                        loyalty!</p>
                                     </div>
                                 </div>
                                 <div class="skills-nav-wrapper">
@@ -200,8 +208,10 @@
                         <div class="toolset-sub-container-2">
                             <div class="box">
                                 <h3><i class="fas fa-hammer fa-lg"> Toolbelt</i></h3>
-                                <p>The quality of your work is directly proportional to the quality of the 
-                                    tools you wield. Master the the tools and you'll master your skills. 
+                                <p>I work on both the front-end and back-end of web applications or pages.
+                                    I aim to deliver end to end solutions.  To this end I make use of 
+                                    the latest technologies to construct solutions aimed at achieving 
+                                    client goals swiftly.
                                 </p>
                             </div>
                             <div class="toolset-box-wrapper">
@@ -242,7 +252,9 @@
             <div class="colorFiller-white">hello</div>
             <div class="heading-wrapper-white">
                 <h2>Portfolio</h2>
-                <p>---my projects---</p>
+                <div class="subheading">
+                    <p>check it out</p>
+                </div>
             </div>
             <div class="portfolio-subsection-wrapper subsec-nopad">
                 <div id="portfolio-box-left" class="portfolio-box">
@@ -262,35 +274,42 @@
         <div class="colorFiller-blue">hello</div>
             <div class="heading-wrapper-blue">
                 <h2>Contact Me</h2>
-                <p>---let's chat---</p>
+                <div class="subheading">
+                    <p>let's chat</p>
+                </div>
             </div>
             <div class="contact-subsection-wrapper subsec-nopad">
                 <div class="container-1 container-1-contact">    
-                        
+                    <div id="contact-item-box">    
                         <h3 id="firstH3Contacts">Contact Details:</h3>
                         <div class="contact-item">
                             <div class="contact-item-info">
-                                <p><i class="fas fa-user fa-1x contact-icon"></i> Schalk van Dyk t/a SVDwebtech</p>
+                                <div class="contact-icon-box">
+                                    <i id="person" class="fas fa-user fa-1x contact-icon"></i>
+                                </div>
+                                <p> <b>Schalk van Dyk t/a SVDwebtech</b></p>
                             </div>
                         </div>
-                        <div class="contact-item">
-                            <div class="contact-item-info">
-                                <p><i class="fas fa-phone fa-1x contact-icon"></i> +2782 550 3872</p>
+                        <div id="mailAndTel">
+                            <div class="contact-item">
+                                <div class="contact-item-info">
+                                    <div class="contact-icon-box"><a href="tel:+27825503872"><i class="fas fa-phone fa-1x contact-icon"> <span>+2782 550 3872</span></i></div></a>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <div class="contact-item-info">
+                                    <div class="contact-icon-box"><a href="mailto:schalkvandyk1979@gmail.com"><i class="fas fa-envelope fa-1x contact-icon"> <span>schalkvandyk1979@gmail.com</span></i></div></a>
+                                </div>
                             </div>
                         </div>
-                        <div class="contact-item">
-                            <div class="contact-item-info">
-                                <p><i class="fas fa-envelope fa-1x contact-icon"></i> schalkvandyk1979@gmail.com</p>
-                            </div>
-                        </div>
-                     
+                    </div>   
                     <div class="contact-lg-box">
                         <h3>Profile Links:</h3>
                         <div class="contact-item">
-                            <div class="contact-item-socialmedia"><i class="fab fa-facebook-square fa-1x contact-icon"></i></div>
-                            <div class="contact-item-socialmedia"><i class="fab fa-linkedin fa-1x contact-icon"></i></div>
-                            <div class="contact-item-socialmedia"><i class="fab fa-github-square fa-1x contact-icon"></i></div>
-                            <div class="contact-item-socialmedia"><i class="fab fa-twitter-square fa-1x contact-icon"></i></div>
+                            <div class="contact-item-socialmedia"><a href=""><div class="contact-icon-box"><i class="fab fa-facebook-square fa-1x contact-icon"></i></div></a></div>
+                            <div class="contact-item-socialmedia"><a target="_blank" href="https://www.linkedin.com/in/schalk-van-dyk-65978836/"><div class="contact-icon-box"><i class="fab fa-linkedin fa-1x contact-icon"></i></div></a></div>
+                            <div class="contact-item-socialmedia"><a target="_blank" href="https://github.com/SVDwebtech"><div class="contact-icon-box"><i class="fab fa-github-square fa-1x contact-icon"></i></div></a></div>
+                            <div class="contact-item-socialmedia"><a target="_blank" href="https://twitter.com/SVDwebtech"><div class="contact-icon-box"><i class="fab fa-twitter-square fa-1x contact-icon"></i></div></a></div>
                         </div>
                     </div>
                 </div>
@@ -298,16 +317,24 @@
                     <h3>Message Me</h3>
                     <p>Send me a message and I will get back to you asap.</p>
                     <div class="contact-form">     
-                        <form class="sub-contact-form" action="" method="">
-                            <div>
-                                <input type="text" name="" id="" placeholder="Name" class="contact-form-space">
-                                <input type="email" name="" id="" placeholder="Email" class="contact-form-space">
+                        <form class="sub-contact-form" action="#" method="">
+                            <div class="nameAndEmail">
+                                <div class="name">
+                                    <label for="fullName"> Name: </label>
+                                    <input type="text" name="fullName" id="fullName" placeholder="Name" class="contact-form-space">
+                                </div>
+                                <div class="email">
+                                    <label for="email"> Email: </label>
+                                    <input type="email" name="email" id="email" placeholder="Email" class="contact-form-space">
+                                </div>
                             </div>
                             <div>
-                                <input type="text" name="" id="" placeholder="Subject" class="contact-input contact-form-space">
+                                <label for="subject"> Subject: </label>
+                                <input type="text" name="" id="subject" placeholder="Subject" required class="contact-input contact-form-space">
                             </div>
                             <div>
-                                <input type="text" name="" id="" placeholder="Describe project...." class="contact-input contact-form-space">
+                                <label for="message"> Message: </label>
+                                <input type="text" name="" id="message" placeholder="Describe project...." rows="3" class="contact-input contact-form-space">
                             </div>
                             <div>
                                 <button type="submit" class="contact-form-space btn-blue btn">Send Message</button>
