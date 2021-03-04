@@ -30,14 +30,14 @@ const indexTwo = document.querySelector("#index-box-2");
 const indexThree = document.querySelector("#index-box-3");
 const indexFour = document.querySelector("#index-box-4");
 
-cv.addEventListener("mouseenter", () => {
-	cv.style.transform = "scale(1.05) translateY(-3px)";
-	cv.style.boxShadow = "0 5px 10px rgb(1,1,34)";
-});
-cv.addEventListener("mouseleave", () => {
-	cv.style.transform = "scale(1) translateY(3px)";
-	cv.style.boxShadow = "0 0 0 rgb(0,0,0)";
-});
+// cv.addEventListener("mouseenter", () => {
+// 	cv.style.transform = "scale(1.05) translateY(-3px)";
+// 	cv.style.boxShadow = "0 5px 10px rgb(1,1,34)";
+// });
+// cv.addEventListener("mouseleave", () => {
+// 	cv.style.transform = "scale(1) translateY(3px)";
+// 	cv.style.boxShadow = "0 0 0 rgb(0,0,0)";
+// });
 
 window.addEventListener("scroll", () => {
 	if (window.scrollY > 0) {
