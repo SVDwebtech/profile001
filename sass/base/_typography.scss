@@ -1,0 +1,58 @@
+body {
+	color: $color-primary-darkBlue;
+	font-family: 'Lato', sans-serif;
+	font-weight: 400;
+	line-height: 1.7;
+	padding: 2rem;
+}
+
+.heading-secondary {
+	&--red {
+		background-image: linear-gradient(
+			to right bottom,
+			$color-primary-white,
+			$color-primary-brightRed
+		);
+	}
+	&--blue {
+		background-image: linear-gradient(
+			to right bottom,
+			$color-primary-white,
+			$color-primary-darkBlue
+		);
+	}
+	&--redSub {
+		color: $color-primary-brightRed;
+	}
+	&--blueSub {
+		color: $color-primary-darkBlue;
+	}
+	&--main {
+		display: block;
+		width: max-content;
+		margin: 0 auto;
+		font-size: $font-size-heading-secondary-main;
+		font-weight: 900;
+		letter-spacing: .3rem;
+		text-transform: uppercase;
+		-webkit-background-clip: text;
+		-moz-background-clip: text;
+		background-clip: text;
+		color: transparent;
+	}
+	&--sub {
+		display: inline-block;
+		font-size: $font-size-heading-secondary-sub;
+		font-weight: 900;
+		letter-spacing: .1rem;
+		text-transform: lowercase;
+	}
+	&--whiteSubBorder {
+		border-top: 1px solid $color-primary-white;
+		border-bottom: 1px solid $color-primary-white;
+	}
+	&--redSubBorder {
+		border-top: 1px solid $color-primary-brightRed;
+		border-bottom: 1px solid $color-primary-brightRed;
+	}
+}
