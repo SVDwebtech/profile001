@@ -1,0 +1,26 @@
+.socialMedia {
+	display: flex;
+	justify-content: flex-start;
+
+	&__linkWrapper {
+		height: 70px;
+		width: 70px;
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+	}
+
+	&__linkWrapper:not(:last-child) {
+		margin-right: 1rem;
+	}
+
+	&__icon {
+		color: $color-primary-darkBlue;
+		transition: all .25s;
+	}
+
+	&__icon:hover {
+		color: $color-primary-brightRed;
+		transform: scale(1.1);
+	}
+}
