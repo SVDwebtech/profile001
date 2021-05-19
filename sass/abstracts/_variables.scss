@@ -1,12 +1,36 @@
-// colors
-$color-primary-darkBlue: rgb(4, 4, 46);
-$color-primary-brightRed: rgb(255, 0, 0);
-$color-primary-white: rgb(238, 238, 238);
+// primary colors
+$color-primary-darkBlue: #04042e;
+$color-primary-brightRed: #ff0000;
+$color-primary-white: #f1f1f1;
 
 // font colors
-$color-font-default: rgb(12, 12, 12);
-$color-font-primary-funky: #d2359f;
+$color-font-default: #d1d1d1;
+$color-font-white: #f1f1f1;
 
-// font-size
+// font-size-heading-primary
+$font-size-heading-primary-main: 4rem;
+$font-size-heading-primary-sub: 1.8rem;
+
+// font-size-heading-secondary
 $font-size-heading-secondary-main: 3rem;
 $font-size-heading-secondary-sub: 1.3rem;
+
+// font-size-heading-tertiary
+$font-size-heading-tertiary: 2rem;
+
+// font-size-paragraph
+$font-size-paragraph-xtralarge: 2.5rem;
+$font-size-paragraph-large: 2rem;
+$font-size-paragraph-medium: 1.6rem;
+$font-size-paragraph-small: 1.2rem;
+$font-size-paragraph-xtrasmall: .8rem;
+
+// font-size-button
+$font-size-btn-xtralarge: 2.5rem;
+$font-size-btn-large: 2rem;
+$font-size-btn-medium: 1.6rem;
+$font-size-btn-small: 1.2rem;
+$font-size-btn-xtrasmall: .8rem;
+
+// border-radius
+$border-radius-small: .2rem;

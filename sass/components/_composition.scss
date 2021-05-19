@@ -1,0 +1,47 @@
+.img-comp {
+	position: relative;
+	// no height on this element to stop bubbling effect when hovering
+	// created about__content--images as a container to use flexbox
+
+	&__img {
+		width: 18rem;
+		border: 2px solid white;
+		border-radius: 3px;
+		outline-offset: .5rem;
+		position: absolute;
+		transition: all .4s;
+
+		&--schalk {
+			width: 23rem;
+			top: 5rem;
+			right: 35%;
+			// right: 42%;
+			z-index: 120;
+		}
+
+		&--family {
+			width: 20rem;
+			top: 0;
+			right: 30%;
+			z-index: 130;
+		}
+		&--potjiekos {
+			width: 20rem;
+			top: 5rem;
+			right: 0;
+			z-index: 110;
+		}
+
+		&:hover {
+			outline: .5rem solid $color-primary-brightRed;
+			transform: scale(1.05) translateY(-.5rem);
+			box-shadow: 0 0 1.5rem rgba($color-primary-white, .9),
+				0 0 7rem rgba($color-primary-darkBlue, .9);
+			z-index: 200;
+		}
+	}
+	// to select and manipulate elements that is not hovered
+	&:hover &__img:not(:hover) {
+		transform: scale(0.95);
+	}
+}
