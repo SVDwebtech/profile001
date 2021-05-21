@@ -167,9 +167,9 @@
 // 		"Interactive web applications constructed dynamically."
 // 	],
 // 	longDescription    : [
-// 		"I use light weight designs to create fast loading web pages, with lag-free interaction, which increases visitor retention and loyalty!",
+// 		"I use light weight designs to create fast loading web pages, with lag-free interaction, which increases visitor retention and loyalty.",
 // 		"I design responsive web pages, with mobile first in mind, that render well on a variety of devices and window or screen sizes.",
-// 		"My pages rely on easy to use user interfaces and better user experiences that allow the user to focus on the product or service!",
+// 		"My pages rely on easy to use user interfaces and better user experiences that allow the user to focus on the product or service.",
 // 		"I like to construct active pages which comes to life dynamically."
 // 	]
 // };

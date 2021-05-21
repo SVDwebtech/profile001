@@ -18,7 +18,7 @@
 
 	&:hover {
 		font-weight: 600;
-		letter-spacing: 0.01rem;
+		// letter-spacing: 0.01rem;
 		// transform: translateY(-.5rem);
 	}
 
@@ -39,5 +39,21 @@
 		color: $color-primary-brightRed;
 		border: 5px solid $color-primary-brightRed;
 		box-shadow: 0 2px 1rem $color-primary-white;
+	}
+
+	&--grey {
+		color: $color-font-darkBlue;
+		font-size: $font-size-btn-small;
+		border: 5px solid $color-grey-light-1;
+		background-color: $color-grey-light-1;
+		width: 10rem;
+		// height: 5rem;
+		padding: 0 0;
+	}
+
+	&--grey:hover {
+		color: $color-font-darkBlue;
+		border: 5px solid $color-font-darkBlue;
+		background-color: $color-grey-light-1;
 	}
 }

@@ -76,10 +76,12 @@ body {
 // topography of heading-tertiary
 .heading-tertiary {
 	font-size: $font-size-heading-tertiary;
+	font-weight: 900;
 }
 // topography of paragraph
 .paragraph {
 	font-size: $font-size-paragraph-medium;
+	font-weight: 400;
 	&:not(:last-child) {
 		margin-bottom: 1rem;
 	}

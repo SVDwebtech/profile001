@@ -1,0 +1,61 @@
+.card {
+	width: 65%;
+
+	&__heading-wrapper {
+		border-top-left-radius: $border-radius-medium;
+		border-top-right-radius: $border-radius-medium;
+		background-image: linear-gradient(
+			to right bottom,
+			rgba($color-primary-brightRed, .95),
+			rgba($color-primary-darkBlue, .95)
+		);
+		background-size: cover;
+		clip-path: polygon(0 0, 100% 0, 100% 70%, 0 100%);
+		min-height: 7rem;
+
+		position: relative;
+	}
+
+	&__heading {
+		position: absolute;
+		@include absCenter;
+		top: 45%;
+
+		&--iconandtext {
+			color: $color-font-white;
+			font-size: $font-size-paragraph-xtralarge;
+		}
+	}
+
+	&__content {
+		// background-image: linear-gradient(
+		// 	to right,
+		// 	rgba($color-primary-brightRed, .95),
+		// 	rgba($color-primary-darkBlue, .95)
+		// );
+		font-weight: 400;
+		text-align: center;
+		padding: 7rem 2.5rem;
+		margin: -5rem 0 -5rem 0;
+		background-color: $color-grey-light-1;
+	}
+	&__button-wrapper {
+		background-image: linear-gradient(
+			to right top,
+			rgba($color-primary-brightRed, .95),
+			rgba($color-primary-darkBlue, .95)
+		);
+		background-size: cover;
+		clip-path: polygon(0 30%, 100% 0, 100% 100%, 0 100%);
+		border-bottom-left-radius: $border-radius-medium;
+		border-bottom-right-radius: $border-radius-medium;
+		min-height: 7rem;
+		position: relative;
+	}
+
+	&__button {
+		position: absolute;
+		@include absCenter;
+		top: 60%;
+	}
+}

@@ -1,0 +1,17 @@
+.minicard {
+	color: $color-font-white;
+	font-size: $font-size-paragraph-small;
+	text-align: center;
+	width: 30%;
+	align-self: flex-start;
+	min-height: 15rem;
+	border: 2px solid $color-font-darkBlue;
+	background: radial-gradient(
+		circle at 100% 120%,
+		$color-font-darkBlue 75%,
+		$color-grey-light-1
+	);
+	li {
+		list-style: none;
+	}
+}

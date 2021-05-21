@@ -199,54 +199,66 @@
                 <!-- typography: heading-secondary -->
                 <h2 class="heading-secondary">
                     <span class="heading-secondary--blue heading-secondary--main">My skills</span>
-                    <span class="heading-secondary--blueSub heading-secondary--sub heading-secondary--whiteSubBorder">What I do</span>
+                    <span class="heading-secondary--blueSub heading-secondary--sub heading-secondary--whiteSubBorder">What I'm good at</span>
                 </h2>
             </div>
             <!-- utility: subsection-wrapper -->
             <div class="subsection-wrapper">
                 <div class="skills__content">
-                    <div class="skills__content--left">
-                        <div class="skills__box">
-                            <h3 class="heading-tertiary u-margin-bottom-small"><i class="fa fa-md fa-users fa-lg" aria-hidden="true"> User Experiance</i></h3>
-                            <p class="paragraph">I use light weight designs to create fast loading web pages, with lag-free interaction, 
-                                which increases visitor retention and loyalty! I design responsive web pages, with mobile 
-                                first in mind, that render well on a variety of devices and window or screen sizes.  My 
-                                pages rely on easy to use user interfaces and better user experiences that allow the user 
-                                to focus on the product or service! I like to construct active pages which comes to life 
-                                dynamically.</p>
+                    <div class="skills__content--above">
+                        <div class="skills__box skills__box--description-1">
+                            <h3 class="heading-tertiary u-margin-bottom-xtrasmall">User Experiance</h3>
+                            <p class="paragraph">I aim to create fast loading web pages with lag-free interaction. 
+                                My designs are responsive, with mobile first in mind, that render well on a variety 
+                                of devices or screen sizes.  Better user experiences allows the user to focus on the 
+                                product or service.  I love to construct dynamic 
+                                pages which comes to life.</p>
                         </div>
-                        <div class="skills__box">
-                            <div class="skills__box--arrow">
-                                <i class="fas fa-angle-double-left skills__box--arrow-left"></i>
+                        <div class="skills__box skills__box--carouselcontainer">
+                            <div class="skills__box--carousel">
+                                <div class="skills__box--arrow">
+                                    <i class="fas fa-angle-double-left skills__box--arrow-left"></i>
+                                </div>
+                                <div class="skills__box--content card">
+                                    <div class="card__heading-wrapper">
+                                        <h4 class="card__heading"><i id="skillsIcon" class="fa fa-sm fa-fast-forward card__heading--iconandtext" aria-hidden="true"> Fast</i></h4>
+                                    </div>
+                                    <div class="card__content">
+                                        <p class="card__content--short-description paragraph">I create fast loading web pages.</p>
+                                        <!-- long description will appear on when you click on more info -->
+                                        <!-- <p class="card__content--long-description paragraph">I use light weight designs to create fast loading web pages, with 
+                                            lag-free interaction, which increases visitor retention and loyalty!</p> -->
+                                    </div>
+                                    <div class="card__button-wrapper">
+                                        <button class="btn btn--grey card__button">More info</button>
+                                    </div>
+                                </div>
+                                <div class="skills__box--arrow">
+                                    <i class="fas fa-angle-double-right skills__box--arrow-right"></i>
+                                </div>
                             </div>
-                            <div class="skills__box--content">
-                                <h4 class="u-margin-bottom-xtrasmall"><i id="skillsIcon" class="fa fa-md fa-fast-forward" aria-hidden="true"> Fast</i></h4>
-                                <p class="paragraph">I create fast loading web pages.</p>
-                                <p class="paragraph">I use light weight designs to create fast loading web pages, with 
-                                    lag-free interaction, which increases visitor retention and loyalty!</p>
-                            </div>
-                            <div class="skills__box--arrow">
-                                <i class="fas fa-angle-double-right skills__box--arrow-right"></i>
-                            </div>
-                            <div class=skills-index-wrapper>
-                                <div id="index-box-1" class="skills-index-box"></div>
-                                <div id="index-box-2" class="skills-index-box"></div>
-                                <div id="index-box-3" class="skills-index-box"></div>
-                                <div id="index-box-4" class="skills-index-box"></div>
-                            </div>
+                            <div class="skills__box--carouselindex u-margin-top-small">
+                                <div class=skills__box--carouselindex-wrapper>
+                                    <div class="skills__box--carouselindex-box skills__box--carouselindex-box-1"></div>
+                                    <div class="skills__box--carouselindex-box skills__box--carouselindex-box-1"></div>
+                                    <div class="skills__box--carouselindex-box skills__box--carouselindex-box-1"></div>
+                                    <div class="skills__box--carouselindex-box skills__box--carouselindex-box-1"></div>
+                                </div>
+                            </div>     
                         </div>
                     </div>
-                    <div class="skills__content--right">
-                        <div class="skills__box">
-                            <h3 class="heading-tertiary u-margin-bottom-small"><i class="fas fa-hammer fa-lg"> Toolbelt</i></h3>
+                    <hr>
+                    <div class="skills__content--below u-margin-top-medium">
+                        <div class="skills__box skills__box--description-2 u-margin-bottom-large">
+                            <h3 class="heading-tertiary u-margin-bottom-xtrasmall">Toolbelt</h3>
                             <p class="paragraph">I work on both the front-end and back-end of web applications or pages.
                                 I aim to deliver end to end solutions.  To this end I make use of 
                                 the latest technologies to construct solutions aimed at achieving 
                                 client goals swiftly.
                             </p>
                         </div>
-                        <div class="skills__box">
-                            <div id="lang" class="toolset-item-wrapper">
+                        <div class="skills__box skills__box--toolscontainer">
+                            <div class="skills__box--toolsdescription minicard">
                                 <h4 class="u-margin-bottom-xtrasmall"><i class="fa fa-md fa-language" aria-hidden="true"> Languages</i></h4>
                                 <ul>
                                     <li>HTML</li>
@@ -257,7 +269,7 @@
                                     <li>C#</li>
                                 </ul>
                             </div>
-                            <div id="tool" class="toolset-item-wrapper">
+                            <div class="skills__box--toolsdescription minicard">
                                 <h4 class="u-margin-bottom-xtrasmall"><i class="fa fa-md fa-wrench" aria-hidden="true"> Tools</i></h4>
                                 <ul>
                                     <li>Git</li>
@@ -268,7 +280,7 @@
                                     <li>Visual Studio</li>
                                 </ul>
                             </div>
-                            <div id="frame" class="toolset-item-wrapper">
+                            <div class="skills__box--toolsdescription minicard">
                                 <h4 class="u-margin-bottom-xtrasmall"><i class="fa fa-md fa-briefcase" aria-hidden="true"> Frameworks & Libraries</i></h4>
                                 <ul>
                                     <li>Bootstrap</li>
@@ -280,14 +292,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
-
-
-
-
-                    
-                
-                    
+                </div>    
         </section>
 
 

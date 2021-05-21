@@ -5,54 +5,54 @@
 	clip-path: polygon(
 		0 0,
 		5% 0,
-		5% 3%,
-		0 3%,
-		5% 3%,
-		10% 3%,
+		5% 4%,
+		0 4%,
+		5% 4%,
+		10% 4%,
 		10% 0%,
 		15% 0%,
-		15% 3%,
-		10% 3%,
-		10% 6%,
-		5% 6%,
-		5% 3%,
-		0% 3%,
-		0 6%,
-		5% 6%,
-		5% 9%,
-		0 9%,
-		0% 12%,
+		15% 4%,
+		10% 4%,
+		10% 8%,
+		5% 8%,
+		5% 4%,
+		0% 4%,
+		0 8%,
+		5% 8%,
 		5% 12%,
-		5% 9%,
-		10% 9%,
-		10% 6%,
-		15% 6%,
-		15% 3%,
-		20% 3%,
+		0 12%,
+		0% 16%,
+		5% 16%,
+		5% 12%,
+		10% 12%,
+		10% 8%,
+		15% 8%,
+		15% 4%,
+		20% 4%,
 		20% 0%,
 		25% 0%,
-		25% 3%,
-		20% 3%,
-		20% 6%,
-		15% 6%,
-		15% 9%,
-		10% 9%,
-		10% 12%,
-		5% 12%,
-		5% 15%,
-		0% 15%,
-		0 18%,
-		5% 18%,
-		5% 15%,
-		10% 15%,
-		10% 12%,
+		25% 4%,
+		20% 4%,
+		20% 8%,
+		15% 8%,
 		15% 12%,
-		15% 9%,
-		20% 9%,
-		20% 6%,
-		25% 6%,
-		25% 3%,
-		30% 3%,
+		10% 12%,
+		10% 16%,
+		5% 16%,
+		5% 20%,
+		0% 20%,
+		0 24%,
+		5% 24%,
+		5% 20%,
+		10% 20%,
+		10% 16%,
+		15% 16%,
+		15% 12%,
+		20% 12%,
+		20% 8%,
+		25% 8%,
+		25% 4%,
+		30% 4%,
 		30% 0%,
 		100% 0%,
 		100% 100%,
@@ -83,22 +83,141 @@
 	padding-top: 4rem;
 	&__content {
 		display: flex;
-		flex-direction: row;
-		justify-content: space-evenly;
-		width: 85%;
+		flex-direction: column;
+		width: 100%;
 		margin: 0 auto;
 		text-align: justify;
-		&--left {
+		&--above {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-evenly;
+			width: 100%;
+		}
+		hr {
+			border: 0;
+			height: 1px;
+			background: #333;
+			background-image: linear-gradient(to right, #ccc, #333, #ccc);
+		}
+		&--below {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-evenly;
+			width: 100%;
+		}
+	}
+	&__box {
+		&--description-1 {
+			width: 45%;
+		}
+		&--description-2 {
+			width: 45%;
+
+			order: 2;
+		}
+		&--carouselcontainer {
 			display: flex;
 			flex-direction: column;
 			width: 45%;
-			margin-right: 3rem;
 		}
-		&--right {
+		&--carousel {
 			display: flex;
-			flex-direction: column;
-			width: 45%;
-			margin-left: 3rem;
+			flex-direction: row;
+			justify-content: space-evenly;
+			align-items: center;
 		}
+		&--arrow {
+			display: flex;
+			justify-content: center;
+			font-size: $font-size-paragraph-xtralarge;
+			width: 5rem;
+			transition: all .2s;
+		}
+		&--arrow:hover {
+			font-size: 3rem;
+		}
+		&--carouselindex-wrapper {
+			display: flex;
+			justify-content: space-evenly;
+			width: 15rem;
+			height: 30px;
+			margin: 0 auto;
+		}
+		&--carouselindex-box {
+			background-color: $color-font-darkBlue;
+			border-radius: 50%;
+			width: 1rem;
+			height: 1rem;
+		}
+		&--toolscontainer {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-evenly;
+			width: 45%;
+			padding: 1rem 0 2rem 0;
+		}
+		&--toolsdescription {
+		}
+		&--content {
+			// width: 75%;
+		}
+	}
+}
+.portfolio {
+	background-color: $color-primary-darkBlue;
+	min-height: 100vh;
+	// to create empty brick effect on about-section in top left corner
+	// clip-path: polygon(
+	// 0 0,
+	// 5% 0,
+	// 5% 4%,
+	// 0 4%,
+	// 5% 4%,
+	// 10% 4%,
+	// 10% 0%,
+	// 15% 0%,
+	// 15% 4%,
+	// 10% 4%,
+	// 10% 8%,
+	// 5% 8%,
+	// 5% 4%,
+	// 0% 4%,
+	// 0 8%,
+	// 5% 8%,
+	// 5% 12%,
+	// 0 12%,
+	// 0% 16%,
+	// 5% 16%,
+	// 5% 12%,
+	// 10% 12%,
+	// 10% 8%,
+	// 15% 8%,
+	// 15% 4%,
+	// 20% 4%,
+	// 20% 0%,
+	// 25% 0%,
+	// 25% 4%,
+	// 20% 4%,
+	// 20% 8%,
+	// 15% 8%,
+	// 15% 12%,
+	// 10% 12%,
+	// 10% 16%,
+	// 5% 16%,
+	// 5% 20%,
+	// 0% 20%,
+	// 0 24%,
+	// 5% 24%,
+	// 5% 20%,
+	// 10% 20%,
+	// 10% 16%,
+	// 15% 16%,
+	// 15% 12%,
+	// 20% 12%,
+	// 20% 8%,
+	// 25% 8%,
+	// 25% 4%, // 30% 4%, // 30% 0%, // 100% 0%, // 100% 100%, // 0% 100% // );
+	padding-top: 4rem;
+	&__content {
 	}
 }
