@@ -70,8 +70,6 @@
 			margin-right: 4.5rem;
 		}
 		&--text {
-			color: white;
-			text-align: justify;
 			width: 45rem; // width: 33rem;
 			margin-left: 4.5rem; // margin-left: 3.5rem;
 		}
@@ -81,18 +79,13 @@
 	background-color: $color-primary-white;
 	min-height: 100vh;
 	padding-top: 4rem;
+	padding-bottom: 2rem;
 	&__content {
 		display: flex;
 		flex-direction: column;
 		width: 100%;
 		margin: 0 auto;
 		text-align: justify;
-		&--above {
-			display: flex;
-			flex-direction: row;
-			justify-content: space-evenly;
-			width: 100%;
-		}
 		hr {
 			border: 0;
 			height: 1px;
@@ -106,50 +99,28 @@
 			width: 100%;
 		}
 	}
-	&__box {
-		&--description-1 {
-			width: 45%;
-		}
-		&--description-2 {
-			width: 45%;
-
-			order: 2;
-		}
-		&--carouselcontainer {
-			display: flex;
-			flex-direction: column;
+	&__contAbove {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-evenly;
+		width: 100%;
+		&--description {
 			width: 45%;
 		}
 		&--carousel {
-			display: flex;
-			flex-direction: row;
-			justify-content: space-evenly;
-			align-items: center;
+			width: 45%;
 		}
-		&--arrow {
-			display: flex;
-			justify-content: center;
-			font-size: $font-size-paragraph-xtralarge;
-			width: 5rem;
-			transition: all .2s;
+	}
+	&__contBelow {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-evenly;
+		width: 100%;
+		&--description {
+			width: 45%;
+			order: 2;
 		}
-		&--arrow:hover {
-			font-size: 3rem;
-		}
-		&--carouselindex-wrapper {
-			display: flex;
-			justify-content: space-evenly;
-			width: 15rem;
-			height: 30px;
-			margin: 0 auto;
-		}
-		&--carouselindex-box {
-			background-color: $color-font-darkBlue;
-			border-radius: 50%;
-			width: 1rem;
-			height: 1rem;
-		}
-		&--toolscontainer {
+		&--toolsContainer {
 			display: flex;
 			flex-direction: row;
 			justify-content: space-evenly;
@@ -166,58 +137,33 @@
 .portfolio {
 	background-color: $color-primary-darkBlue;
 	min-height: 100vh;
-	// to create empty brick effect on about-section in top left corner
-	// clip-path: polygon(
-	// 0 0,
-	// 5% 0,
-	// 5% 4%,
-	// 0 4%,
-	// 5% 4%,
-	// 10% 4%,
-	// 10% 0%,
-	// 15% 0%,
-	// 15% 4%,
-	// 10% 4%,
-	// 10% 8%,
-	// 5% 8%,
-	// 5% 4%,
-	// 0% 4%,
-	// 0 8%,
-	// 5% 8%,
-	// 5% 12%,
-	// 0 12%,
-	// 0% 16%,
-	// 5% 16%,
-	// 5% 12%,
-	// 10% 12%,
-	// 10% 8%,
-	// 15% 8%,
-	// 15% 4%,
-	// 20% 4%,
-	// 20% 0%,
-	// 25% 0%,
-	// 25% 4%,
-	// 20% 4%,
-	// 20% 8%,
-	// 15% 8%,
-	// 15% 12%,
-	// 10% 12%,
-	// 10% 16%,
-	// 5% 16%,
-	// 5% 20%,
-	// 0% 20%,
-	// 0 24%,
-	// 5% 24%,
-	// 5% 20%,
-	// 10% 20%,
-	// 10% 16%,
-	// 15% 16%,
-	// 15% 12%,
-	// 20% 12%,
-	// 20% 8%,
-	// 25% 8%,
-	// 25% 4%, // 30% 4%, // 30% 0%, // 100% 0%, // 100% 100%, // 0% 100% // );
 	padding-top: 4rem;
+	// no bottom padding for the other sections -- check it out
+	padding-bottom: 2rem;
 	&__content {
+		display: flex;
+		justify-content: center;
+		border: 0.5rem solid $color-font-white;
+		border-radius: $border-radius-medium;
+		width: 85%;
+		margin: 0 auto;
+	}
+	&__contAbove {
+		display: flex;
+		flex-direction: row;
+		// image width set to 100% of the width of its container
+		&--img {
+			width: 100%;
+		}
+	}
+	&__contBelow {
+		min-width: 45%;
+		padding: 5rem;
+		position: relative;
+		a {
+			// to center button a third from the bottom
+			@include absCenter;
+			top: 75%;
+		}
 	}
 }

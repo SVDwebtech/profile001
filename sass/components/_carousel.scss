@@ -1,0 +1,40 @@
+.carousel {
+	// carouselFunction is the actual card that displays the information
+	&__carouselFunction {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-evenly;
+		align-items: center;
+
+		&--arrowContainer {
+			display: flex;
+			justify-content: center;
+			font-size: $font-size-paragraph-xtralarge;
+			width: 5rem;
+			transition: all .2s;
+		}
+
+		&--arrowContainer:hover {
+			font-size: 3rem;
+		}
+
+		&--card {
+		}
+	}
+	// carouselIndex indicates which card in the sequence you are currently at
+	&__carouselIndex {
+		&--indexContainer {
+			display: flex;
+			justify-content: space-evenly;
+			width: 15rem;
+			height: 30px;
+			margin: 0 auto;
+		}
+		&--indexBox {
+			background-color: $color-font-darkBlue;
+			border-radius: 50%;
+			width: 1rem;
+			height: 1rem;
+		}
+	}
+}
