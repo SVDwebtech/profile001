@@ -1,3 +1,23 @@
+.header {
+	background-color: $color-primary-white;
+	min-height: 100vh;
+	padding-top: 4rem;
+	padding-bottom: 2rem;
+	position: relative;
+	&__content {
+	}
+	&__contLeftBottom {
+		position: absolute;
+		bottom: 5rem;
+		left: 5rem;
+	}
+	&__headingPrimary {
+		&--span {
+			display: block;
+		}
+	}
+}
+
 .about {
 	background-color: $color-primary-darkBlue;
 	min-height: 100vh;

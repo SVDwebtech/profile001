@@ -42,6 +42,23 @@ body {
   padding: 2rem;
 }
 
+.heading-primary--span {
+  font-size: 1.2rem;
+}
+.heading-primary--span2 {
+  color: transparent;
+  font-size: 7rem;
+  font-weight: 900;
+  background-image: linear-gradient(to right, red, #04042e);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.heading-primary--span3 {
+  font-size: 1.6rem;
+}
+
 .heading-secondary--red {
   background-image: linear-gradient(to right, #ff0000, #f1f1f1);
 }
@@ -462,6 +479,22 @@ body {
 
 .header {
   height: 90vh;
+}
+
+.header {
+  background-color: #f1f1f1;
+  min-height: 100vh;
+  padding-top: 4rem;
+  padding-bottom: 2rem;
+  position: relative;
+}
+.header__contLeftBottom {
+  position: absolute;
+  bottom: 5rem;
+  left: 5rem;
+}
+.header__headingPrimary--span {
+  display: block;
 }
 
 .about {

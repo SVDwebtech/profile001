@@ -6,6 +6,29 @@ body {
 	padding: 2rem;
 }
 
+// topography of heading-primary
+.heading-primary {
+	&--span {
+		font-size: $font-size-paragraph-small;
+	}
+	&--span2 {
+		color: transparent;
+		font-size: 7rem;
+		font-weight: 900;
+
+		background-image: linear-gradient(
+			to right,
+			rgba($color-font-brightRed, 1),
+			rgba($color-font-darkBlue, 1)
+		);
+		@include backgroundTextTransparent;
+	}
+	&--span3 {
+		// color: $color-font-brightRed;
+		font-size: $font-size-paragraph-medium;
+	}
+}
+
 // topography of heading-secondary
 .heading-secondary {
 	// to set text background color
