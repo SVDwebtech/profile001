@@ -116,7 +116,7 @@
         <section class="about" id="about-link">
             <!-- banner heading-secondary -->
             <!-- utility: u-center-text & u-margin-bottom --> 
-            <div class="u-center-text u-margin-bottom-large">
+            <div class="u-center-text u-margin-bottom-medium">
                 <!-- typography: heading-secondary -->
                 <h2 class="heading-secondary">
                     <span class="heading-secondary--red heading-secondary--main">About me</span>
@@ -194,7 +194,7 @@
         <section class="skills">
             <!-- banner heading-secondary -->
             <!-- utility: u-center-text & u-margin-bottom --> 
-            <div class="u-center-text u-margin-bottom-large">
+            <div class="u-center-text u-margin-bottom-medium">
                 <!-- typography: heading-secondary -->
                 <h2 class="heading-secondary">
                     <span class="heading-secondary--blue heading-secondary--main">My skills</span>
@@ -300,7 +300,7 @@
         <section class="portfolio">
             <!-- banner heading-secondary -->
             <!-- utility: u-center-text & u-margin-bottom --> 
-            <div class="u-center-text u-margin-bottom-large">
+            <div class="u-center-text u-margin-bottom-medium">
                 <!-- typography: heading-secondary -->
                 <h2 class="heading-secondary">
                     <span class="heading-secondary--red heading-secondary--main">Portfolio</span>
@@ -316,117 +316,92 @@
                     <div class="portfolio__contBelow">
                         <h3 class="heading-tertiary u-margin-bottom-xtrasmall">Portfolio Website</h3>
                         <p class="paragraph">This is my portfolio website you are currently visiting</p>
-                        <a class="btn btn--white u-margin-top-small" href="#">Visit Page</a>
+                        <a class="btn btn--white u-margin-top-small" href="#">Visit page</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="contact">
+            <!-- banner heading-secondary -->
+            <!-- utility: u-center-text & u-margin-bottom --> 
+            <div class="u-center-text u-margin-bottom-medium">
+                <!-- typography: heading-secondary -->
+                <h2 class="heading-secondary">
+                    <span class="heading-secondary--blue heading-secondary--main">Contact</span>
+                    <span class="heading-secondary--blueSub heading-secondary--sub heading-secondary--whiteSubBorder">get in touch</span>
+                </h2>
+            </div>
+            <!-- utility: subsection-wrapper -->
+            <div class="subsection-wrapper">
+                <div class="contact__content">
+                    <div class="contact__contAbove">   
+                        <div class="contact__contAbove--telAndEmail u-margin-bottom-large"> 
+                            <h3 class="heading-tertiary u-margin-bottom-small">Contact details</h3>    
+                            <div class="contact__itemsContainer">
+                                <a href="tel:+27825503872" class="contact__itemsContainer--tel u-margin-bottom-small"><i class="fas fa-phone fa-1x"></i>+2782 550 3872</a>
+                                <a href="mailto:schalkvandyk1979@gmail.com" class="contact__itemsContainer--email"><i class="fas fa-envelope fa-1x"></i>schalkvandyk1979@gmail.com</a>
+                            </div>  
+                        </div>   
+                        <div class="contact__contAbove--socialMedia">
+                            <h3 class="heading-tertiary">Profile links</h3>
+                            <!-- component-socialmedia -->
+                            <div class="contact__socialMedia socialMedia">
+                                <div class="socialMedia__linkWrapper">
+                                    <a href="#">
+                                        <i class="fab fa-facebook-square fa-3x socialMedia__icon"></i>
+                                    </a>
+                                </div>
+                                <div class="socialMedia__linkWrapper">
+                                    <a target="_blank" href="https://www.linkedin.com/in/schalk-van-dyk-65978836/">
+                                        <i class="fab fa-linkedin fa-3x socialMedia__icon"></i>
+                                    </a>
+                                </div>
+                                <div class="socialMedia__linkWrapper">
+                                    <a target="_blank" href="https://github.com/SVDwebtech">
+                                        <i class="fab fa-github-square fa-3x socialMedia__icon"></i>
+                                    </a>
+                                </div>
+                                <div class="socialMedia__linkWrapper">
+                                    <a target="_blank" href="https://twitter.com/SVDwebtech">
+                                        <i class="fab fa-twitter-square fa-3x socialMedia__icon"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact__contBelow">
+                        <h3 class="heading-tertiary">Message me</h3>
+                        <p class="paragraph">Send me a message and I will get back to you asap.</p>
+                        <div class="contact__formWrapper">     
+                            <form class="contact__form" action="#" method="">
+                                <div class="nameAndEmail">
+                                    <div class="contact__form--name contact__form--item">
+                                        <label for="fullName" class="contact__form--labels"> Name</label>
+                                        <input type="text" name="fullName" id="fullName" placeholder="Name" class="contact__form--inputs">
+                                    </div>
+                                    <div class="contact__form--email contact__form--item">
+                                        <label for="email" class="contact__form--labels"> Email</label>
+                                        <input type="email" name="email" id="email" placeholder="Email" class="contact__form--inputs">
+                                    </div>
+                                </div>
+                                <div class="contact__form--subject contact__form--item">
+                                    <label for="subject" class="contact__form--labels"> Subject</label>
+                                    <input type="text" name="" id="subject" placeholder="Subject" required class="contact__form--inputs contact__form--subject">
+                                </div>
+                                <div class="contact__form--message contact__form--item">
+                                    <label for="message" class="contact__form--labels"> Message</label>
+                                    <textarea name="" id="message" placeholder="Describe project...." rows="5" class="contact__form--inputs contact__form--message"></textarea>
+                                </div>
+                                <div class="u-margin-top-small">
+                                    <button type="submit" class="btn btn--blue">Send Message</button>
+                                </div>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
     </main>
-    <aside>
-        <section id="contact" class="section-wrapper-white">
-        <div class="colorFiller-blue">hello</div>
-            
-
-            <!-- utility: u-center-text & u-margin-bottom -->
-            <div class="u-center-text u-margin-bottom-large">
-                    <!-- typography: heading-secondary -->
-                    <h2 class="heading-secondary">
-                        <span class="heading-secondary--blue heading-secondary--main">Contact Me</span>
-                        <span class="heading-secondary--blueSub heading-secondary--sub heading-secondary--redSubBorder">let's chat</span>
-                    </h2>
-            </div>
-
-
-
-            <div class="contact-subsection-wrapper subsec-nopad">
-                <div class="container-1 container-1-contact">    
-                    <div id="contact-item-box">    
-                        <h3 id="firstH3Contacts">Contact Details:</h3>
-                        <div class="contact-item">
-                            <div class="contact-item-info">
-                                <div class="contact-icon-box">
-                                    <i id="person" class="fas fa-user fa-1x contact-icon"></i>
-                                </div>
-                                <p> <b>Schalk van Dyk t/a SVDwebtech</b></p>
-                            </div>
-                        </div>
-                        <div id="mailAndTel">
-                            <div class="contact-item">
-                                <div class="contact-item-info">
-                                    <div class="contact-icon-box"><a href="tel:+27825503872"><i class="fas fa-phone fa-1x contact-icon"> <span>+2782 550 3872</span></i></div></a>
-                                </div>
-                            </div>
-                            <div class="contact-item">
-                                <div class="contact-item-info">
-                                    <div class="contact-icon-box"><a href="mailto:schalkvandyk1979@gmail.com"><i class="fas fa-envelope fa-1x contact-icon"> <span>schalkvandyk1979@gmail.com</span></i></div></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>   
-                    <div class="contact-lg-box">
-                        <h3>Profile Links:</h3>
-                        
-
-                        <!-- component-socialmedia -->
-                        <div class="socialMedia">
-                            <div class="socialMedia__linkWrapper">
-                                <a href="#">
-                                    <i class="fab fa-facebook-square fa-3x socialMedia__icon"></i>
-                                </a>
-                            </div>
-                            <div class="socialMedia__linkWrapper">
-                                <a target="_blank" href="https://www.linkedin.com/in/schalk-van-dyk-65978836/">
-                                    <i class="fab fa-linkedin fa-3x socialMedia__icon"></i>
-                                </a>
-                            </div>
-                            <div class="socialMedia__linkWrapper">
-                                <a target="_blank" href="https://github.com/SVDwebtech">
-                                    <i class="fab fa-github-square fa-3x socialMedia__icon"></i>
-                                </a>
-                            </div>
-                            <div class="socialMedia__linkWrapper">
-                                <a target="_blank" href="https://twitter.com/SVDwebtech">
-                                    <i class="fab fa-twitter-square fa-3x socialMedia__icon"></i>
-                                </a>
-                            </div>
-                        </div>
-
-
-                    </div>
-                </div>
-                <div class="container-2 container-2-contact">
-                    <h3>Message Me</h3>
-                    <p>Send me a message and I will get back to you asap.</p>
-                    <div class="contact-form">     
-                        <form class="sub-contact-form" action="#" method="">
-                            <div class="nameAndEmail">
-                                <div class="name">
-                                    <label for="fullName"> Name: </label>
-                                    <input type="text" name="fullName" id="fullName" placeholder="Name" class="contact-form-space">
-                                </div>
-                                <div class="email">
-                                    <label for="email"> Email: </label>
-                                    <input type="email" name="email" id="email" placeholder="Email" class="contact-form-space">
-                                </div>
-                            </div>
-                            <div>
-                                <label for="subject"> Subject: </label>
-                                <input type="text" name="" id="subject" placeholder="Subject" required class="contact-input contact-form-space">
-                            </div>
-                            <div>
-                                <label for="message"> Message: </label>
-                                <input type="text" name="" id="message" placeholder="Describe project...." rows="3" class="contact-input contact-form-space">
-                            </div>
-                            <div>
-                                <button type="submit" class="contact-form-space btn-blue btn">Send Message</button>
-                            </div>
-
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </aside> 
     <footer id="copyright">
         <h4>Created by: <span class="footerSpan"> Schalk van Dyk t/a <span id="footerBrand">SVDwebtech</span></span>  || <span class="footerSpan"> &copy; 2020 All rights reserved</span></h4>
     </footer>

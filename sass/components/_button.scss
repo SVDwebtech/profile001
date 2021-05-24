@@ -56,4 +56,19 @@
 		border: 5px solid $color-font-darkBlue;
 		background-color: $color-grey-light-1;
 	}
+
+	&--blue {
+		color: $color-font-white;
+		font-size: $font-size-btn-small;
+		border: 5px solid $color-primary-darkBlue;
+		background-color: $color-primary-darkBlue;
+		width: 15rem;
+		// height: 5rem;
+		padding: .5rem 2rem;
+	}
+
+	&--blue:hover {
+		color: $color-font-brightRed;
+		border: 5px solid $color-font-brightRed;
+	}
 }

@@ -77,6 +77,8 @@ body {
 .heading-tertiary {
 	font-size: $font-size-heading-tertiary;
 	font-weight: 900;
+	letter-spacing: .2rem;
+	text-transform: uppercase;
 }
 // topography of paragraph
 .paragraph {
@@ -101,4 +103,26 @@ body {
 .portfolio__contBelow {
 	color: $color-primary-white;
 	text-align: center;
+}
+//topography of contact-section
+.contact {
+	&__itemsContainer {
+		&--tel,
+		&--email {
+			color: $color-primary-darkBlue;
+			font-size: $font-size-paragraph-medium;
+			font-weight: 700;
+			text-decoration: none;
+		}
+	}
+	&__form {
+		&--item {
+			font-size: $font-size-paragraph-medium;
+			font-weight: 700;
+		}
+		&--labels {
+			font-weight: 900;
+			letter-spacing: .1rem; // text-transform: uppercase;
+		}
+	}
 }
