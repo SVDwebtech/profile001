@@ -94,17 +94,17 @@ body {
 		}
 	}
 }
-//topography of about-section
+// topography of about-section
 .about__content--text {
 	color: white;
 	text-align: justify;
 }
-//topography of portfolio-section
+// topography of portfolio-section
 .portfolio__contBelow {
 	color: $color-primary-white;
 	text-align: center;
 }
-//topography of contact-section
+// topography of contact-section
 .contact {
 	&__itemsContainer {
 		&--tel,
@@ -123,6 +123,20 @@ body {
 		&--labels {
 			font-weight: 900;
 			letter-spacing: .1rem; // text-transform: uppercase;
+		}
+	}
+}
+// topography of footer-section
+.footer {
+	&__paragraph {
+		color: $color-font-darkGrey;
+		&--span {
+			color: $color-font-white;
+			font-size: $font-size-paragraph-small;
+		}
+		&--brand {
+			color: $color-font-brightRed;
+			font-size: $font-size-paragraph-large;
 		}
 	}
 }

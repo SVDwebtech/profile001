@@ -134,6 +134,18 @@ body {
   letter-spacing: 0.1rem;
 }
 
+.footer__paragraph {
+  color: #999595;
+}
+.footer__paragraph--span {
+  color: #c9c8c8;
+  font-size: 1.2rem;
+}
+.footer__paragraph--brand {
+  color: #ff0000;
+  font-size: 2rem;
+}
+
 .u-center-text {
   text-align: center;
 }
@@ -618,10 +630,13 @@ body {
 }
 
 .footer {
-  background-color: #f1f1f1;
-  min-height: 100vh;
-  padding-top: 4rem;
-  padding-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #04042e;
+  height: 7rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 
 /*# sourceMappingURL=styles.css.map */
