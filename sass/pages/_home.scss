@@ -1,11 +1,9 @@
 .header {
 	background-color: $color-primary-white;
-	min-height: 100vh;
-	padding-top: 4rem;
-	padding-bottom: 2rem;
+	min-height: 93vh;
+
 	position: relative;
-	&__content {
-	}
+
 	&__contLeftBottom {
 		position: absolute;
 		bottom: 5rem;
@@ -17,69 +15,69 @@
 		}
 	}
 }
-
 .about {
 	background-color: $color-primary-darkBlue;
-	min-height: 100vh;
-	// to create empty brick effect on about-section in top left corner
-	clip-path: polygon(
-		0 0,
-		5% 0,
-		5% 4%,
-		0 4%,
-		5% 4%,
-		10% 4%,
-		10% 0%,
-		15% 0%,
-		15% 4%,
-		10% 4%,
-		10% 8%,
-		5% 8%,
-		5% 4%,
-		0% 4%,
-		0 8%,
-		5% 8%,
-		5% 12%,
-		0 12%,
-		0% 16%,
-		5% 16%,
-		5% 12%,
-		10% 12%,
-		10% 8%,
-		15% 8%,
-		15% 4%,
-		20% 4%,
-		20% 0%,
-		25% 0%,
-		25% 4%,
-		20% 4%,
-		20% 8%,
-		15% 8%,
-		15% 12%,
-		10% 12%,
-		10% 16%,
-		5% 16%,
-		5% 20%,
-		0% 20%,
-		0 24%,
-		5% 24%,
-		5% 20%,
-		10% 20%,
-		10% 16%,
-		15% 16%,
-		15% 12%,
-		20% 12%,
-		20% 8%,
-		25% 8%,
-		25% 4%,
-		30% 4%,
-		30% 0%,
-		100% 0%,
-		100% 100%,
-		0% 100%
-	);
-
+	min-height: 93vh;
 	padding-top: 4rem;
+	// to create empty brick effect on about-section in top left corner
+
+	// clip-path: polygon(
+	// 0 0,
+	// 5% 0,
+
+	// 5% 4%,
+	// 0 4%,
+	// 5% 4%,
+	// 10% 4%,
+	// 10% 0%,
+	// 15% 0%,
+	// 15% 4%,
+	// 10% 4%,
+	// 10% 8%,
+	// 5% 8%,
+	// 5% 4%,
+	// 0% 4%,
+	// 0 8%,
+	// 5% 8%,
+	// 5% 12%,
+	// 0 12%,
+	// 0% 16%,
+	// 5% 16%,
+	// 5% 12%,
+	// 10% 12%,
+	// 10% 8%,
+	// 15% 8%,
+	// 15% 4%,
+	// 20% 4%,
+	// 20% 0%,
+	// 25% 0%,
+	// 25% 4%,
+	// 20% 4%,
+	// 20% 8%,
+	// 15% 8%,
+	// 15% 12%,
+	// 10% 12%,
+	// 10% 16%,
+	// 5% 16%,
+	// 5% 20%,
+	// 0% 20%,
+	// 0 24%,
+	// 5% 24%,
+	// 5% 20%,
+	// 10% 20%,
+	// 10% 16%,
+	// 15% 16%,
+	// 15% 12%,
+	// 20% 12%,
+	// 20% 8%,
+	// 25% 8%,
+	// 25% 4%,
+	// 30% 4%,
+	// 30% 0%,
+	// 100% 0%,
+	// 100% 100%,
+	// 0% 100%
+	// );
 	&__content {
 		display: flex;
 		justify-content: space-evenly;
@@ -90,16 +88,16 @@
 			margin-right: 4.5rem;
 		}
 		&--text {
-			width: 45rem; // width: 33rem;
+			width: 45rem;
+			// width: 33rem;
 			margin-left: 4.5rem; // margin-left: 3.5rem;
 		}
 	}
 }
 .skills {
 	background-color: $color-primary-white;
-	min-height: 100vh;
+	min-height: 93vh;
 	padding-top: 4rem;
-	padding-bottom: 2rem;
 	&__content {
 		display: flex;
 		flex-direction: column;
@@ -151,10 +149,8 @@
 }
 .portfolio {
 	background-color: $color-primary-darkBlue;
-	min-height: 100vh;
+	min-height: 93vh;
 	padding-top: 4rem;
-	// no bottom padding for the other sections -- check it out
-	padding-bottom: 2rem;
 	&__content {
 		display: flex;
 		justify-content: center;
@@ -184,9 +180,8 @@
 }
 .contact {
 	background-color: $color-primary-white;
-	min-height: 100vh;
+	min-height: 93vh;
 	padding-top: 4rem;
-	padding-bottom: 2rem;
 	&__content {
 		display: flex;
 		justify-content: space-evenly;

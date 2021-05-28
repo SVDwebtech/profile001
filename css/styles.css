@@ -3,13 +3,19 @@
 600px		-		900px:			Tablet Portrait
 900px		-		1200px:			Tablet Landscape
 1200px		-		1800px:			Desktop First Approach (is where our normal styles apply)
+900px +								Tablet Portrait and bigger
 1800px +							Big Desktop
 
+@mixin respond-phone {
+	@media (max-width: 600px) { @content};
+}
+
 $breakpoint argument choices
-	- phone
-	- tab-port
-	- tab-land
-	- big-desktop
+	- phone and <
+	- tablet-portrait and <
+	- tablet-landscape and <
+	- tablet-portrait and >
+	- big-desktop and >
 
 ORDER: base + typography > general layout + grid > page layout > components
 */
@@ -22,12 +28,33 @@ ORDER: base + typography > general layout + grid > page layout > components
 }
 
 html {
+  scroll-behavior: smooth;
   /* 	1rem is equal to 10px */
   /* 	because 10px / 10 is equal to 1rem */
   /* 	therefore 30px is equal to 3rem */
   /* 	the default font size of the browser is 16px */
   /* 	10px / 16px *100 = 62.5% */
   font-size: 62.5%;
+}
+@media (max-width: 75em) {
+  html {
+    font-size: 56.25%;
+  }
+}
+@media (max-width: 56.25em) {
+  html {
+    font-size: 50%;
+  }
+}
+@media (max-width: 37.5em) {
+  html {
+    font-size: 43.75%;
+  }
+}
+@media (min-width: 112.5em) {
+  html {
+    font-size: 75%;
+  }
 }
 
 body {
@@ -50,6 +77,7 @@ body {
   font-size: 7rem;
   font-weight: 900;
   background-image: linear-gradient(to right, red, #04042e);
+  background-size: cover;
   -webkit-background-clip: text;
   -moz-background-clip: text;
   background-clip: text;
@@ -124,6 +152,39 @@ body {
 }
 .paragraph__popup:not(:last-child) {
   margin-bottom: 1rem;
+}
+
+.navbar__logoBox--logoLink {
+  text-decoration: none;
+}
+.navbar__logoBox--logo {
+  display: inline-block;
+  color: #c9c8c8;
+  font-weight: 900;
+  letter-spacing: 0.3rem;
+}
+
+.navList {
+  list-style: none;
+}
+.navList__navItem--navLink {
+  color: #c9c8c8;
+  font-size: 1.6rem;
+  font-weight: 700;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.hamburger__item {
+  list-style: none;
+}
+.hamburger__link {
+  color: #c9c8c8;
+  font-size: 2rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  text-decoration: none;
 }
 
 .about__content--text {
@@ -381,6 +442,22 @@ body {
   transform: scale(0.95);
 }
 
+.filler--white {
+  width: 100%;
+  height: 6rem;
+  background-color: #f1f1f1;
+}
+.filler--blue {
+  width: 100%;
+  height: 6rem;
+  background-color: #04042e;
+}
+.filler--hamburger {
+  width: 100%;
+  height: 8rem;
+  background-color: #f1f1f1;
+}
+
 .minicard {
   color: #c9c8c8;
   font-size: 1.2rem;
@@ -393,6 +470,210 @@ body {
 }
 .minicard li {
   list-style: none;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-image: linear-gradient(to bottom, rgba(255, 0, 0, 0.95) 40%, rgba(4, 4, 46, 0.95));
+  background-size: 100%;
+  height: 7rem;
+  margin: 0rem 2rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10000;
+}
+.navbar__logoBox {
+  width: 25rem;
+  margin-left: 5rem;
+}
+.navbar__logoBox--logoLink {
+  display: flex;
+  align-items: center;
+  max-width: max-content;
+}
+.navbar__logoBox--logoImage {
+  width: 6rem;
+}
+.navbar__logoBox--logoText {
+  margin-left: 1rem;
+}
+.navbar__navContainer {
+  width: 55%;
+  margin-right: 5rem;
+}
+@media (max-width: 56.25em) {
+  .navbar__navContainer {
+    display: none;
+  }
+}
+.navbar__navContainer--navList {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.navList__navItem {
+  display: flex;
+  justify-content: center;
+  width: 15rem;
+}
+.navList__navItem--navLink {
+  transition: all 0.25s;
+}
+.navList__navItem--navLink:hover {
+  color: #04042e;
+  font-weight: 900;
+  transform: scale(1.1);
+}
+.navList__navItem--navLink::after {
+  display: inline-block;
+  content: "";
+  height: 0.2rem;
+  width: 0;
+  background-color: #040483;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: width 0.4s;
+}
+.navList__navItem--navLink:hover::after {
+  background-color: #040483;
+  left: -1px;
+  width: 100%;
+}
+
+.hamburger__checkbox {
+  display: none;
+}
+.hamburger__button {
+  border: 2px solid #c9c8c8;
+  border-radius: 0.5rem;
+  width: 5rem;
+  height: 4rem;
+  position: fixed;
+  top: 1.5rem;
+  right: 7rem;
+  z-index: 20000;
+}
+@media (min-width: 56.25em) {
+  .hamburger__button {
+    display: none;
+  }
+}
+.hamburger__icon {
+  position: relative;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.hamburger__icon, .hamburger__icon::before, .hamburger__icon::after {
+  background-color: #c9c8c8;
+  width: 3rem;
+  height: 2px;
+  display: inline-block;
+  transition: all 0.2s;
+}
+.hamburger__icon::before, .hamburger__icon::after {
+  content: "";
+  position: absolute;
+}
+.hamburger__icon::before {
+  top: -0.8rem;
+}
+.hamburger__icon::after {
+  top: 0.8rem;
+}
+.hamburger__button:hover .hamburger__icon::before {
+  top: -1rem;
+}
+.hamburger__button:hover .hamburger__icon::after {
+  top: 1rem;
+}
+.hamburger__checkbox:checked + .hamburger__button .hamburger__icon {
+  background-color: transparent;
+}
+.hamburger__checkbox:checked + .hamburger__button .hamburger__icon::before {
+  top: 0;
+  transform: rotate(135deg);
+}
+.hamburger__checkbox:checked + .hamburger__button .hamburger__icon::after {
+  top: 0;
+  transform: rotate(-135deg);
+}
+.hamburger__container {
+  height: 100vh;
+  position: fixed;
+  top: 7rem;
+  left: 0;
+  right: 0;
+  background-image: linear-gradient(to right bottom, rgba(4, 4, 46, 0.95), rgba(4, 4, 46, 0.95));
+  margin: 0 2rem 0 2rem;
+  z-index: 300;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.6s;
+}
+.hamburger__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  background-image: linear-gradient(to right bottom, rgba(255, 0, 0, 0.99), rgba(4, 4, 46, 0.99));
+  background-size: cover;
+  border-radius: 0.5rem;
+  box-shadow: 0 2rem 4rem rgba(241, 241, 241, 0.5);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  top: 35%;
+  width: 55%;
+  height: 50vh;
+  padding: 2.5rem;
+  opacity: 0;
+  transform: translate(-50%, -50%) scale(0.3);
+  transition: all 0.6s 0.2s;
+}
+.hamburger__checkbox:checked ~ .hamburger__container {
+  opacity: 1;
+  visibility: visible;
+}
+.hamburger__checkbox:checked ~ .hamburger__container .hamburger__content {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
+}
+.hamburger__item {
+  display: flex;
+  justify-content: center;
+  width: 15rem;
+}
+.hamburger__link {
+  transition: all 0.25s;
+}
+.hamburger__link:hover {
+  color: #04042e;
+  font-weight: 900;
+  transform: scale(1.1);
+}
+.hamburger__link::after {
+  display: inline-block;
+  content: "";
+  height: 0.2rem;
+  width: 0;
+  background-color: #040483;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: width 0.4s;
+}
+.hamburger__link:hover::after {
+  background-color: #040483;
+  left: -1px;
+  width: 100%;
 }
 
 .popup {
@@ -483,9 +764,7 @@ body {
 
 .header {
   background-color: #f1f1f1;
-  min-height: 100vh;
-  padding-top: 4rem;
-  padding-bottom: 2rem;
+  min-height: 93vh;
   position: relative;
 }
 .header__contLeftBottom {
@@ -499,8 +778,7 @@ body {
 
 .about {
   background-color: #04042e;
-  min-height: 100vh;
-  clip-path: polygon(0 0, 5% 0, 5% 4%, 0 4%, 5% 4%, 10% 4%, 10% 0%, 15% 0%, 15% 4%, 10% 4%, 10% 8%, 5% 8%, 5% 4%, 0% 4%, 0 8%, 5% 8%, 5% 12%, 0 12%, 0% 16%, 5% 16%, 5% 12%, 10% 12%, 10% 8%, 15% 8%, 15% 4%, 20% 4%, 20% 0%, 25% 0%, 25% 4%, 20% 4%, 20% 8%, 15% 8%, 15% 12%, 10% 12%, 10% 16%, 5% 16%, 5% 20%, 0% 20%, 0 24%, 5% 24%, 5% 20%, 10% 20%, 10% 16%, 15% 16%, 15% 12%, 20% 12%, 20% 8%, 25% 8%, 25% 4%, 30% 4%, 30% 0%, 100% 0%, 100% 100%, 0% 100%);
+  min-height: 93vh;
   padding-top: 4rem;
 }
 .about__content {
@@ -519,9 +797,8 @@ body {
 
 .skills {
   background-color: #f1f1f1;
-  min-height: 100vh;
+  min-height: 93vh;
   padding-top: 4rem;
-  padding-bottom: 2rem;
 }
 .skills__content {
   display: flex;
@@ -574,9 +851,8 @@ body {
 
 .portfolio {
   background-color: #04042e;
-  min-height: 100vh;
+  min-height: 93vh;
   padding-top: 4rem;
-  padding-bottom: 2rem;
 }
 .portfolio__content {
   display: flex;
@@ -608,9 +884,8 @@ body {
 
 .contact {
   background-color: #f1f1f1;
-  min-height: 100vh;
+  min-height: 93vh;
   padding-top: 4rem;
-  padding-bottom: 2rem;
 }
 .contact__content {
   display: flex;

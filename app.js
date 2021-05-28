@@ -1,3 +1,28 @@
+// VARIABLES
+// select all hamburger list links;
+const hamburgerLink = document.querySelectorAll(".hamburgerLink");
+
+// NAVIGATION
+// to remove hamburger nav menu when you click on menu item;
+// for loop to select all hamburger list links;
+for (let i = 0; i < hamburgerLink.length; i++) {
+	// use for loop to add eventlistener to each link;
+	hamburgerLink[i].addEventListener("click", () => {
+		// uncheck checkbox when link is clicked to remove hamburgermenu to see page selection;
+		document.querySelector("#hamburgerToggle").checked = false;
+	});
+}
+
+// to remove hamburger nav menu when window width is bigger than 883;
+// add eventlistener for resizing of window width;
+window.addEventListener("resize", () => {
+	// if window width is bigger than 883px;
+	if (document.body.clientWidth > 883) {
+		// uncheck checkbox to see page and return to navbar;
+		document.querySelector("#hamburgerToggle").checked = false;
+	}
+});
+
 // const navbar = document.querySelector("#navbar");
 // const navbarBrand = document.querySelector("#navbar-brand");
 // const navLogo1 = document.querySelector("#nav-logo-span-1");
@@ -70,30 +95,6 @@
 // 			navLink[i].addEventListener("mouseleave", () => {
 // 				navLink[i].style.color = "rgb(1,1,34)";
 // 			});
-// 		}
-// 	}
-// });
-
-// hamburgerBtn.style.display = "none";
-// if (window.innerWidth < 1000) {
-// 	hamburgerBtn.style.display = "block";
-// 	navabarLinks.style.display = "none";
-// }
-// else {
-// 	hamburgerBtn.style.display = "none";
-// 	navabarLinks.style.display = "block";
-// }
-
-// window.addEventListener("resize", () => {
-// 	if (window.innerWidth < 1000) {
-// 		hamburgerBtn.style.display = "block";
-// 		navabarLinks.style.display = "none";
-// 	}
-// 	else {
-// 		hamburgerBtn.style.display = "none";
-// 		navabarLinks.style.display = "block";
-// 		if (menu.classList.add("menuDisplay")) {
-// 			menu.classList.remove("menuDisplay");
 // 		}
 // 	}
 // });

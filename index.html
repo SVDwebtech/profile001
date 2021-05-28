@@ -9,112 +9,117 @@
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-    <nav id="navbar">
-        <div id="cv-logo-box">
-            <div id="cv-and-span1-box">
-                    <a class="" id="cv" href="CV_04-02-2021_Schalk_van_Dyk.pdf" download="CV_SchalkvanDyk" >My CV</a>
-                    <span id="nav-logo-span-1">Schalk van Dyk t/a </span>
-            </div>
-            <a id="navbar-brand" href="#home">
-                <span id="nav-logo-span-2">SVDwebtech</span>
-            </a>
-            <!-- <a class="" id="cv" href="#CV_04-02-2021_Schalk_van_Dyk.pdf" >My CV</a> -->
+    <!-- <div class="cv-and-span1-box">
+        <a class="" id="cv" href="CV_04-02-2021_Schalk_van_Dyk.pdf" download="CV_SchalkvanDyk" >My CV</a>
+        <span id="nav-logo-span-1">Schalk van Dyk t/a </span>
+    </div> -->
+
+    <!-- hamburger menu button> -->
+    <input type="checkbox" name="hamburger" id="hamburgerToggle" class="hamburger__checkbox">
+    <label for="hamburgerToggle" class="hamburger__button">
+        <span class="hamburger__icon"></span>
+    </label>
+    </div>
+    <ul class="hamburger__container" >
+        <div class="hamburger__content">
+            <li class="hamburger__item">
+                <a id="aboutLink" class="hamburger__link hamburgerLink" href="#about">about</a>
+            </li>
+            <li class="hamburger__item">
+                <a id="skillsLink" class="hamburger__link hamburgerLink" href="#skills">skills</a>
+            </li>
+            <li class="hamburger__item">
+                <a id="portfolioLink" class="hamburger__link hamburgerLink" href="#portfolio">portfolio</a>
+            </li>
+            <li class="hamburger__item">
+                <a id="contactLink" class="hamburger__link hamburgerLink" href="#contact">contact</a>
+            </li>
         </div>
-        <button id="hamburger-btn">
-            <span><i class="fas fa-bars hamtime-btns"></i></span>
-        </button>
-        <div id="navbar-subcontainer">
-            <ul id="navbar-nav-items">
-                <li class="nav-item">
-                    <a class="nav-link" href="#home">home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#about">about</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#skills">skills</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#portfolio">portfolio</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#contact">contact</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-    <ul id="hamburger-menu">
-        <nav id="menu-navbar">
-            <a id="menu-navbar-brand" href="#home"><span id="menu-nav-logo-span-1">Schalk van Dyk t/a</span><span id="menu-nav-logo-span-2">SVDwebtech</span></a>
-            <button id="menu-times-btn">
-                <span><i class="fas fa-times fa-2x hamtime-btns"></i></span>
-            </button>
-        </nav>   
-        <!-- <h3>Menu:</h3> -->
-        <li class="hamburger-item">
-            <a class="hamburger-link" href="#home">home</a>
-        </li>
-        <li class="hamburger-item">
-            <a class="hamburger-link" href="#about">about</a>
-        </li>
-        <li class="hamburger-item">
-            <a class="hamburger-link" href="#skills">skills</a>
-        </li>
-        <li class="hamburger-item">
-            <a class="hamburger-link" href="#portfolio">portfolio</a>
-        </li>
-        <li class="hamburger-item">
-            <a class="hamburger-link" href="#contact">contact</a>
-        </li>
     </ul>
+    <!-- filler for navbar before header -->
+    <div class="filler--white">
+        <!-- this is a filler to fill space behind the navbar -->
+    </div>
     <!-- header -->
-    <header class="header">
-            <!-- utility: subsection-wrapper -->
-            <div class="subsection-wrapper">
-                <div class="header__content">
-                    <!-- position heading content left bottom on all screen sizes -->
-                    <div class="header__contLeftBottom">
-                        <!-- heading-primary content -->
-                        <div class="header__headingPrimary heading-primary u-margin-bottom-medium">
-                            <!-- typography: heading-primary -->
-                            <h1>
-                                <span class="header__headingPrimary--span header__headingPrimary--span1 heading-primary--span1 heading-primary--span">Hello, my name is </span>
-                                <span class="header__headingPrimary--span header__headingPrimary--span2 heading-primary--span2 heading-primary--span">Schalk van Dyk</span>
-                                <span class="header__headingPrimary--span header__headingPrimary--span3 heading-primary--span3 heading-primary--span">and I am <span id='heading-span-4'></span><span id="heading-span-5"> _</span></span>
-                            </h1>
-                        </div>
-                        <!-- social-media content -->
-                        <div id="header__socialMedia">
-                            <p class="paragraph">Check out my profiles and connect with me: </p>
-                            <!-- component: socialmedia -->
-                            <div class="socialMedia">
-                                <div class="socialMedia__linkWrapper">
-                                    <a href="#">
-                                        <i class="fab fa-facebook-square fa-3x socialMedia__icon"></i>
-                                    </a>
-                                </div>
-                                <div class="socialMedia__linkWrapper">
-                                    <a target="_blank" href="https://www.linkedin.com/in/schalk-van-dyk-65978836/">
-                                        <i class="fab fa-linkedin fa-3x socialMedia__icon"></i>
-                                    </a>
-                                </div>
-                                <div class="socialMedia__linkWrapper">
-                                    <a target="_blank" href="https://github.com/SVDwebtech">
-                                        <i class="fab fa-github-square fa-3x socialMedia__icon"></i>
-                                    </a>
-                                </div>
-                                <div class="socialMedia__linkWrapper">
-                                    <a target="_blank" href="https://twitter.com/SVDwebtech">
-                                        <i class="fab fa-twitter-square fa-3x socialMedia__icon"></i>
-                                    </a>
-                                </div>
+    <header id="home" class="header">
+        <!-- navbar -->
+        <nav class="header__navbar navbar">
+            <div class="navbar__logoBox">
+                <a class="navbar__logoBox--logoLink" href="#home">
+                    <div>
+                        <img class="navbar__logoBox--logoImage" src="./img/schalk-logoLight-2000.png" alt="">
+                    </div>
+                    <div class="navbar__logoBox--logoText navList__navItem--navLink">
+                        <p>Home</p>
+                    </div>
+                </a>
+            </div>
+            <div class="navbar__navContainer">
+                <ul class="navbar__navContainer--navList navList">
+                    <li class="navList__navItem">
+                        <a class="navList__navItem--navLink" href="#about"><p>about</p></a>
+                    </li>
+                    <li class="navList__navItem">
+                        <a class="navList__navItem--navLink" href="#skills">skills</a>
+                    </li>
+                    <li class="navList__navItem">
+                        <a class="navList__navItem--navLink" href="#portfolio">portfolio</a>
+                    </li>
+                    <li class="navList__navItem">
+                        <a class="navList__navItem--navLink" href="#contact">contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- utility: subsection-wrapper -->
+        <div class="subsection-wrapper">
+            <div class="header__content">
+                <!-- position heading content left bottom on all screen sizes -->
+                <div class="header__contLeftBottom">
+                    <!-- heading-primary content -->
+                    <div class="header__headingPrimary heading-primary u-margin-bottom-medium">
+                        <!-- typography: heading-primary -->
+                        <h1>
+                            <span class="header__headingPrimary--span header__headingPrimary--span1 heading-primary--span1 heading-primary--span">Hello, my name is </span>
+                            <span class="header__headingPrimary--span header__headingPrimary--span2 heading-primary--span2 heading-primary--span">Schalk van Dyk</span>
+                            <span class="header__headingPrimary--span header__headingPrimary--span3 heading-primary--span3 heading-primary--span">and I am <span id='heading-span-4'></span><span id="heading-span-5"> _</span></span>
+                        </h1>
+                    </div>
+                    <!-- social-media content -->
+                    <div id="header__socialMedia">
+                        <p class="paragraph">Check out my profiles and connect with me: </p>
+                        <!-- component: socialmedia -->
+                        <div class="socialMedia">
+                            <div class="socialMedia__linkWrapper">
+                                <a href="#">
+                                    <i class="fab fa-facebook-square fa-3x socialMedia__icon"></i>
+                                </a>
+                            </div>
+                            <div class="socialMedia__linkWrapper">
+                                <a target="_blank" href="https://www.linkedin.com/in/schalk-van-dyk-65978836/">
+                                    <i class="fab fa-linkedin fa-3x socialMedia__icon"></i>
+                                </a>
+                            </div>
+                            <div class="socialMedia__linkWrapper">
+                                <a target="_blank" href="https://github.com/SVDwebtech">
+                                    <i class="fab fa-github-square fa-3x socialMedia__icon"></i>
+                                </a>
+                            </div>
+                            <div class="socialMedia__linkWrapper">
+                                <a target="_blank" href="https://twitter.com/SVDwebtech">
+                                    <i class="fab fa-twitter-square fa-3x socialMedia__icon"></i>
+                                </a>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>    
+            </div>
+        </div>    
     </header>    
     <main>
+        <div id="about" class="filler--white">
+            <!-- this is a filler to fill space behind the navbar -->
+        </div>
         <!-- about-section -->
         <section class="about" id="about-link">
             <!-- banner heading-secondary -->
@@ -192,7 +197,10 @@
                 <p class="paragraph__popup">In the pages below you'll find what I have to offer and how to reach me.</p>
                 <a class="btn btn--white" href="#about-link">Return</a>         
             </div>
-        </div>   
+        </div>  
+        <div id="skills" class="filler--blue">
+            <!-- this is a filler to fill space behind the navbar -->
+        </div> 
         <!-- skills-section -->
         <section class="skills">
             <!-- banner heading-secondary -->
@@ -300,6 +308,9 @@
                 </div>
             </div>    
         </section>
+        <div id="portfolio" class="filler--white">
+            <!-- this is a filler to fill space behind the navbar -->
+        </div>
         <section class="portfolio">
             <!-- banner heading-secondary -->
             <!-- utility: u-center-text & u-margin-bottom --> 
@@ -324,7 +335,10 @@
                 </div>
             </div>
         </section>
-        <section class="contact">
+        <div id="contact" class="filler--blue">
+            <!-- this is a filler to fill space behind the navbar -->
+        </div>
+        <section id="contact" class="contact">
             <!-- banner heading-secondary -->
             <!-- utility: u-center-text & u-margin-bottom --> 
             <div class="u-center-text u-margin-bottom-medium">
