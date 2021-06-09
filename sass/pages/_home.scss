@@ -1,25 +1,94 @@
+// /////////////////////////////////////////////////////////////////
+// HEADER
 .header {
-	background-color: $color-primary-white;
-	min-height: 93vh;
+	background-image: linear-gradient(
+			to bottom,
+			rgba($color-primary-white, .7) 1%,
+			rgba(transparent, .1) 20% 70%,
+			rgba($color-primary-darkBlue, .9) 95%
+		),
+		url(../img/header-background-img-2000.jpg);
+	background-size: cover;
+	background-position: bottom;
 
 	position: relative;
 
-	&__contLeftBottom {
-		position: absolute;
-		bottom: 5rem;
-		left: 5rem;
+	// to position the primary-heading in the center of the page;
+	&__contentTopCenter {
+		@include absCenter;
+		width: 55rem;
+
+		@include respond(tablet-landscape) {
+			width: 50rem;
+		}
+
+		@include respond(tablet-portrait) {
+			width: 47rem;
+		}
+
+		@include respond(phone) {
+			width: 43rem;
+		}
 	}
+
 	&__headingPrimary {
+		border-radius: $border-radius-medium;
+		background-color: rgba($color-primary-white, .8);
+		padding: 3em 5em;
+
 		&--span {
 			display: block;
 		}
+		// animate heading;
+		&--span1 {
+			animation-name: moveInLeft;
+			animation-duration: 3s;
+			animation-timing-function: ease-out;
+		}
+		// animate heading;
+		&--span2 {
+			animation-name: rotateAndMoveInRight;
+			animation-duration: 2s;
+			animation-delay: 900ms;
+			animation-timing-function: cubic-bezier(.12, .02, .93, .9);
+			animation-fill-mode: backwards;
+		}
+		// animate heading;
+		&--span3 {
+			animation-name: moveInRight;
+			animation-duration: 3s;
+			animation-timing-function: ease-out;
+		}
+	}
+	// to position the social-media component to the bottom left of the page;
+	&__contentBottomLeft {
+		position: absolute;
+		bottom: 5rem;
+		left: 5rem;
+
+		@include respond(phone) {
+			width: 35rem;
+
+			left: 50%;
+			transform: translateX(-50%);
+		}
+	}
+
+	// to align the paragraph with the icons;
+	&__paragraph {
+		@include respond(phone) {
+			margin-left: 0rem;
+		}
 	}
 }
+
+// /////////////////////////////////////////////////////////////////
+// ABOUT
 .about {
 	background-color: $color-primary-darkBlue;
 	min-height: 93vh;
 	padding-top: 4rem;
-	// to create empty brick effect on about-section in top left corner
+	// to create empty brick effect on about-section in top left corner;
 
 	// clip-path: polygon(
 	// 0 0,
@@ -94,6 +163,8 @@
 		}
 	}
 }
+// ////////////////////////////////////////////////////////////////////////////////////////
+// SKILLS
 .skills {
 	background-color: $color-primary-white;
 	min-height: 93vh;
@@ -147,6 +218,8 @@
 		}
 	}
 }
+// //////////////////////////////////////////////////////////////////////////////////
+// PORTFOLIO
 .portfolio {
 	background-color: $color-primary-darkBlue;
 	min-height: 93vh;
@@ -162,7 +235,7 @@
 	&__contAbove {
 		display: flex;
 		flex-direction: row;
-		// image width set to 100% of the width of its container
+		// image width set to 100% of the width of its container;
 		&--img {
 			width: 100%;
 		}
@@ -172,12 +245,14 @@
 		padding: 5rem;
 		position: relative;
 		a {
-			// to center button a third from the bottom
+			// to center button a third from the bottom;
 			@include absCenter;
 			top: 75%;
 		}
 	}
 }
+// //////////////////////////////////////////////////////////////////////////////////////
+// CONTACT
 .contact {
 	background-color: $color-primary-white;
 	min-height: 93vh;
@@ -234,6 +309,8 @@
 		}
 	}
 }
+// //////////////////////////////////////////////////////////////////////////////////////////////
+// FOOTER
 .footer {
 	display: flex;
 	justify-content: center;

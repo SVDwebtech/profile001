@@ -3,18 +3,30 @@ body {
 	font-family: 'Lato', sans-serif;
 	font-weight: 300;
 	line-height: 1.6;
-	padding: 2rem;
+	padding: 0 2rem 2rem 2rem;
 }
 
-// topography of heading-primary
+// topography of heading-primary;
 .heading-primary {
 	&--span {
-		font-size: $font-size-paragraph-small;
+		font-size: $font-size-paragraph-medium;
 	}
 	&--span2 {
 		color: transparent;
-		font-size: 7rem;
+		font-size: 6rem;
 		font-weight: 900;
+
+		@include respond(tablet-landscape) {
+			font-size: 5.5rem;
+		}
+
+		@include respond(tablet-portrait) {
+			font-size: 5rem;
+		}
+
+		@include respond(phone) {
+			font-size: 4.2rem;
+		}
 
 		background-image: linear-gradient(
 			to right,
@@ -24,15 +36,15 @@ body {
 		background-size: cover;
 		@include backgroundTextTransparent;
 	}
-	&--span3 {
-		// color: $color-font-brightRed;
-		font-size: $font-size-paragraph-medium;
-	}
 }
 
-// topography of heading-secondary
+.displayNone {
+	display: none;
+}
+
+// topography of heading-secondary;
 .heading-secondary {
-	// to set text background color
+	// to set text background color;
 	&--red {
 		background-image: linear-gradient(
 			to right,
@@ -40,7 +52,7 @@ body {
 			$color-primary-white
 		);
 	}
-	// to set text background color
+	// to set text background color;
 	&--blue {
 		background-image: linear-gradient(
 			to right,
@@ -48,7 +60,7 @@ body {
 			$color-font-default
 		);
 	}
-	// to set text background color
+	// to set text background color;
 	&--redSub {
 		background-image: linear-gradient(
 			to right,
@@ -56,7 +68,7 @@ body {
 			$color-primary-brightRed
 		);
 	}
-	// to set text background color
+	// to set text background color;
 	&--blueSub {
 		background-image: linear-gradient(
 			to right,
@@ -64,7 +76,7 @@ body {
 			$color-primary-darkBlue
 		);
 	}
-	// topography of heading-secondary--main
+	// topography of heading-secondary--main;
 	&--main {
 		display: block;
 		width: max-content;
@@ -73,38 +85,38 @@ body {
 		font-weight: 900;
 		letter-spacing: .3rem;
 		text-transform: uppercase;
-		@include backgroundTextTransparent; // to make background text color visible
+		@include backgroundTextTransparent; // to make background text color visible;
 	}
-	// topography of heading-secondary--main
+	// topography of heading-secondary--main;
 	&--sub {
 		display: inline-block;
 		font-size: $font-size-heading-secondary-sub;
 		font-weight: 900;
 		letter-spacing: .1rem;
 		text-transform: lowercase;
-		// to make background text color visible
+		// to make background text color visible;
 		@include backgroundTextTransparent;
 		padding: .5rem 0 .8rem 0;
 	}
-	// sets top and bottom border values of heading-secondary--sub
+	// sets top and bottom border values of heading-secondary--sub;
 	&--whiteSubBorder {
 		border-top: 1px solid $color-primary-darkBlue;
 		border-bottom: 1px solid $color-primary-darkBlue;
 	}
-	// sets top and bottom border values of heading-secondary--sub
+	// sets top and bottom border values of heading-secondary--sub;
 	&--redSubBorder {
 		border-top: 1px solid $color-primary-brightRed;
 		border-bottom: 1px solid $color-primary-brightRed;
 	}
 }
-// topography of heading-tertiary
+// topography of heading-tertiary;
 .heading-tertiary {
 	font-size: $font-size-heading-tertiary;
 	font-weight: 900;
 	letter-spacing: .2rem;
 	text-transform: uppercase;
 }
-// topography of paragraph
+// topography of paragraph;
 .paragraph {
 	font-size: $font-size-paragraph-medium;
 	font-weight: 400;
@@ -118,7 +130,7 @@ body {
 		}
 	}
 }
-// topography of navlogo
+// topography of navlogo;
 .navbar {
 	&__logoBox {
 		&--logoLink {
@@ -132,7 +144,7 @@ body {
 		}
 	}
 }
-// topography of navlist
+// topography of navlist;
 .navList {
 	list-style: none;
 	&__navItem {
@@ -146,7 +158,7 @@ body {
 		}
 	}
 }
-// topography of hamburger menu
+// topography of hamburger menu;
 .hamburger {
 	&__item {
 		list-style: none;
@@ -159,17 +171,24 @@ body {
 		text-decoration: none;
 	}
 }
-// topography of about-section
+// topography of about-section;
+.header {
+	&__paragraph {
+		color: $color-font-white;
+		font-weight: 700;
+	}
+}
+// topography of about-section;
 .about__content--text {
 	color: white;
 	text-align: justify;
 }
-// topography of portfolio-section
+// topography of portfolio-section;
 .portfolio__contBelow {
 	color: $color-primary-white;
 	text-align: center;
 }
-// topography of contact-section
+// topography of contact-section;
 .contact {
 	&__itemsContainer {
 		&--tel,
@@ -191,7 +210,7 @@ body {
 		}
 	}
 }
-// topography of footer-section
+// topography of footer-section;
 .footer {
 	&__paragraph {
 		color: $color-font-darkGrey;

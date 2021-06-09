@@ -1,7 +1,11 @@
+// //////////////////////////////////////////////////////////////////////////////////////
 // VARIABLES
 // select all hamburger list links;
 const hamburgerLink = document.querySelectorAll(".hamburgerLink");
+const stringAnimation = document.querySelector("#heading-span-4");
+const typeCursor = document.querySelector("#heading-span-5");
 
+// //////////////////////////////////////////////////////////////////////////////////////
 // NAVIGATION
 // to remove hamburger nav menu when you click on menu item;
 // for loop to select all hamburger list links;
@@ -22,6 +26,90 @@ window.addEventListener("resize", () => {
 		document.querySelector("#hamburgerToggle").checked = false;
 	}
 });
+
+// //////////////////////////////////////////////////////////////////////////////////////
+// HEADER TYPE ANIMATION
+// example strings for typewriter animation
+const stringOne = "      a Web Developer.    ";
+const stringTwo = "      qualified by experience.    ";
+const stringThree = "      a family man.    ";
+const stringFour = "      a problem solver!    ";
+// array with all the string examples
+const arrayStringExamples = [
+	stringOne,
+	stringTwo,
+	stringThree,
+	stringFour
+];
+// empty string to which string characters are added over time
+let stringSegment = "";
+// array to store each string segment
+const arrayStringSegments = [];
+// for loop to build string segments
+for (let i = 0; i < arrayStringExamples.length; i++) {
+	arrayStringSegments[i] = [];
+	for (let j = 0; j < arrayStringExamples[i].length; j++) {
+		stringSegment += arrayStringExamples[i][j];
+		arrayStringSegments[i].push(stringSegment);
+	}
+	stringSegment = "";
+}
+// print the array with all the string segments in sequence
+console.log(arrayStringSegments);
+let counterArrayEls = 0;
+// a counter to increment after each count
+let counterFwd = 0;
+// a counter to decrement after each count
+let counterBwd = arrayStringSegments[counterArrayEls].length - 1;
+// ID to stop setinterval-typewriter;
+let stopIntvalID;
+// ID to stop setinterval-cursor;
+let stopCursorID;
+// typeWriter function to call a function after each interval;
+function typeWriter() {
+	stopIntvalID = setInterval(() => {
+		// type forward
+		if (counterFwd < arrayStringSegments[counterArrayEls].length) {
+			stringAnimation.innerText =
+				arrayStringSegments[counterArrayEls][counterFwd];
+			counterFwd++;
+		}
+		else if (
+			counterFwd === arrayStringSegments[counterArrayEls].length &&
+			counterBwd >= 0 &&
+			counterArrayEls !== arrayStringExamples.length - 1
+		) {
+			// type backward
+			stringAnimation.innerText =
+				arrayStringSegments[counterArrayEls][counterBwd];
+			counterBwd--;
+		}
+		else if (counterBwd < 0) {
+			counterArrayEls++;
+			counterFwd = 0;
+			if (counterArrayEls > arrayStringExamples.length - 1) {
+				// stop typeWriter();
+				clearInterval(stopIntvalID);
+			}
+			else {
+				counterBwd = arrayStringSegments[counterArrayEls].length - 1;
+			}
+		}
+	}, 120);
+}
+
+function cursorPulsate() {
+	stopCursorID = setInterval(() => {
+		typeCursor.classList.toggle("displayNone");
+	}, 300);
+}
+cursorPulsate();
+setTimeout(() => {
+	clearInterval(stopCursorID);
+}, 37000);
+setTimeout(() => {
+	typeWriter();
+}, 4000);
 
 // const navbar = document.querySelector("#navbar");
 // const navbarBrand = document.querySelector("#navbar-brand");
@@ -253,16 +341,6 @@ window.addEventListener("resize", () => {
 // 	}, 1000);
 // }, 7000);
 
-// // document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
-// // 	anchor.addEventListener("click", function(e) {
-// // 		e.preventDefault();
-
-// // 		document.querySelector(this.getAttribute("href")).scrollIntoView({
-// // 			behavior : "smooth"
-// // 		});
-// // 	});
-// // });
-
 // const stringAnimationVariants = [
 // 	"a Web Developer!",
 // 	"qualified by experience!",
@@ -348,4 +426,4 @@ window.addEventListener("resize", () => {
 // 	}
 // };
 
-// typeFwd();
+// typeFwd()

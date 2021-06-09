@@ -19,6 +19,48 @@ $breakpoint argument choices
 
 ORDER: base + typography > general layout + grid > page layout > components
 */
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-4.8rem);
+  }
+  80% {
+    transform: translateX(1rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(4.8rem);
+  }
+  80% {
+    transform: translateX(-1rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes rotateAndMoveInRight {
+  0% {
+    opacity: 0;
+    transform: translateY(-12rem) translateX(15rem) scale(1) rotateY(45deg);
+  }
+  25% {
+    opacity: 0;
+  }
+  65% {
+    transform: scale(0.4) rotateY(140deg);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0rem) translateX(0rem) scale(1) rotateY(360deg);
+  }
+}
 *,
 *::after,
 *::before {
@@ -66,15 +108,15 @@ body {
   font-family: "Lato", sans-serif;
   font-weight: 300;
   line-height: 1.6;
-  padding: 2rem;
+  padding: 0 2rem 2rem 2rem;
 }
 
 .heading-primary--span {
-  font-size: 1.2rem;
+  font-size: 1.6rem;
 }
 .heading-primary--span2 {
   color: transparent;
-  font-size: 7rem;
+  font-size: 6rem;
   font-weight: 900;
   background-image: linear-gradient(to right, red, #04042e);
   background-size: cover;
@@ -83,8 +125,24 @@ body {
   background-clip: text;
   color: transparent;
 }
-.heading-primary--span3 {
-  font-size: 1.6rem;
+@media (max-width: 75em) {
+  .heading-primary--span2 {
+    font-size: 5.5rem;
+  }
+}
+@media (max-width: 56.25em) {
+  .heading-primary--span2 {
+    font-size: 5rem;
+  }
+}
+@media (max-width: 37.5em) {
+  .heading-primary--span2 {
+    font-size: 4.2rem;
+  }
+}
+
+.displayNone {
+  display: none;
 }
 
 .heading-secondary--red {
@@ -185,6 +243,11 @@ body {
   font-weight: 900;
   text-transform: uppercase;
   text-decoration: none;
+}
+
+.header__paragraph {
+  color: #c9c8c8;
+  font-weight: 700;
 }
 
 .about__content--text {
@@ -476,7 +539,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-image: linear-gradient(to bottom, rgba(255, 0, 0, 0.95) 40%, rgba(4, 4, 46, 0.95));
+  background-image: linear-gradient(to bottom, rgba(255, 0, 0, 0.98) 40%, rgba(4, 4, 46, 0.7));
   background-size: 100%;
   height: 7rem;
   margin: 0rem 2rem;
@@ -487,7 +550,7 @@ body {
   z-index: 10000;
 }
 .navbar__logoBox {
-  width: 25rem;
+  width: 28rem;
   margin-left: 5rem;
 }
 .navbar__logoBox--logoLink {
@@ -496,7 +559,7 @@ body {
   max-width: max-content;
 }
 .navbar__logoBox--logoImage {
-  width: 6rem;
+  width: 6.3rem;
 }
 .navbar__logoBox--logoText {
   margin-left: 1rem;
@@ -519,11 +582,20 @@ body {
   display: flex;
   justify-content: center;
   width: 15rem;
+  /* to ensure hover efect over the navlink when you
+  	hover over the logo img as well */
+  /* to ensure hover efect over the navlink when you
+  	hover over the logo img as well */
 }
 .navList__navItem--navLink {
   transition: all 0.25s;
 }
 .navList__navItem--navLink:hover {
+  color: #04042e;
+  font-weight: 900;
+  transform: scale(1.1);
+}
+.navList__navItem--navBrandImg:hover + .navList__navItem--navLink {
   color: #04042e;
   font-weight: 900;
   transform: scale(1.1);
@@ -540,6 +612,11 @@ body {
   transition: width 0.4s;
 }
 .navList__navItem--navLink:hover::after {
+  background-color: #040483;
+  left: -1px;
+  width: 100%;
+}
+.navList__navItem--navBrandImg:hover + .navList__navItem--navLink::after {
   background-color: #040483;
   left: -1px;
   width: 100%;
@@ -613,7 +690,10 @@ body {
   background-image: linear-gradient(to right bottom, rgba(4, 4, 46, 0.95), rgba(4, 4, 46, 0.95));
   margin: 0 2rem 0 2rem;
   z-index: 300;
-  opacity: 0;
+  /* set opacity and visibility to hide it when learn more button is not clicked yet
+  	do not use display: none otherwise you will not be able to use animations on the effect
+  	after checkbox: checked --> opacity: 1 -- see below;
+  	opacity: 0;*/
   visibility: hidden;
   transition: all 0.6s;
 }
@@ -737,10 +817,10 @@ body {
 
 .socialMedia {
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
 }
 .socialMedia__linkWrapper {
-  height: 70px;
+  height: 35px;
   width: 70px;
   display: flex;
   justify-content: flex-start;
@@ -750,7 +830,7 @@ body {
   margin-right: 1rem;
 }
 .socialMedia__icon {
-  color: #04042e;
+  color: #c9c8c8;
   transition: all 0.25s;
 }
 .socialMedia__icon:hover {
@@ -759,21 +839,78 @@ body {
 }
 
 .header {
-  height: 90vh;
+  min-height: 95vh;
 }
 
 .header {
-  background-color: #f1f1f1;
-  min-height: 93vh;
+  background-image: linear-gradient(to bottom, rgba(241, 241, 241, 0.7) 1%, rgba(0, 0, 0, 0.1) 20% 70%, rgba(4, 4, 46, 0.9) 95%), url(../img/header-background-img-2000.jpg);
+  background-size: cover;
+  background-position: bottom;
   position: relative;
 }
-.header__contLeftBottom {
+.header__contentTopCenter {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 55rem;
+}
+@media (max-width: 75em) {
+  .header__contentTopCenter {
+    width: 50rem;
+  }
+}
+@media (max-width: 56.25em) {
+  .header__contentTopCenter {
+    width: 47rem;
+  }
+}
+@media (max-width: 37.5em) {
+  .header__contentTopCenter {
+    width: 43rem;
+  }
+}
+.header__headingPrimary {
+  border-radius: 0.5rem;
+  background-color: rgba(241, 241, 241, 0.8);
+  padding: 3em 5em;
+}
+.header__headingPrimary--span {
+  display: block;
+}
+.header__headingPrimary--span1 {
+  animation-name: moveInLeft;
+  animation-duration: 3s;
+  animation-timing-function: ease-out;
+}
+.header__headingPrimary--span2 {
+  animation-name: rotateAndMoveInRight;
+  animation-duration: 2s;
+  animation-delay: 900ms;
+  animation-timing-function: cubic-bezier(0.12, 0.02, 0.93, 0.9);
+  animation-fill-mode: backwards;
+}
+.header__headingPrimary--span3 {
+  animation-name: moveInRight;
+  animation-duration: 3s;
+  animation-timing-function: ease-out;
+}
+.header__contentBottomLeft {
   position: absolute;
   bottom: 5rem;
   left: 5rem;
 }
-.header__headingPrimary--span {
-  display: block;
+@media (max-width: 37.5em) {
+  .header__contentBottomLeft {
+    width: 35rem;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+@media (max-width: 37.5em) {
+  .header__paragraph {
+    margin-left: 0rem;
+  }
 }
 
 .about {

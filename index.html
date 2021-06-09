@@ -13,13 +13,18 @@
         <a class="" id="cv" href="CV_04-02-2021_Schalk_van_Dyk.pdf" download="CV_SchalkvanDyk" >My CV</a>
         <span id="nav-logo-span-1">Schalk van Dyk t/a </span>
     </div> -->
-
+    <!-- component: navigation -->
+    <!-- secondary navigation -->
     <!-- hamburger menu button> -->
+    <!-- this button's functionality relies on the checkbox hack and only appears
+        on screen sizes with a screen width smaller than 900px -->
     <input type="checkbox" name="hamburger" id="hamburgerToggle" class="hamburger__checkbox">
     <label for="hamburgerToggle" class="hamburger__button">
         <span class="hamburger__icon"></span>
     </label>
-    </div>
+    
+    <!-- hamburger menu -->
+    <!-- a list of navigation links that appears when the hamburger button is clicked -->
     <ul class="hamburger__container" >
         <div class="hamburger__content">
             <li class="hamburger__item">
@@ -36,24 +41,33 @@
             </li>
         </div>
     </ul>
-    <!-- filler for navbar before header -->
-    <div class="filler--white">
-        <!-- this is a filler to fill space behind the navbar -->
-    </div>
+    
     <!-- header -->
+    <!-- the header is the landing page section of the entire webpage and
+        is an introduction to the web developer and his profiles -->
     <header id="home" class="header">
+        <!-- component: navigation -->
         <!-- navbar -->
+        <!-- primary navigation of the entire webpage -->
+        <!-- this appears as a fixed banner across the top of the page -->
         <nav class="header__navbar navbar">
+            <!-- logobox -->
+            <!-- contains the logo and branding of the web developer 
+                and functions as a navigation link to the home/landing page section of the entire webpage  -->
             <div class="navbar__logoBox">
                 <a class="navbar__logoBox--logoLink" href="#home">
-                    <div>
-                        <img class="navbar__logoBox--logoImage" src="./img/schalk-logoLight-2000.png" alt="">
+                    <div class="navList__navItem--navBrandImg">
+                        <img class="navbar__logoBox--logoImage" src="./img/circleLogo.png" alt="">
                     </div>
                     <div class="navbar__logoBox--logoText navList__navItem--navLink">
                         <p>Home</p>
                     </div>
                 </a>
             </div>
+            <!-- component: navigation -->
+            <!-- the nav container contains a list of primary navigation links, to the various
+                page sections of the page, that appears accross the navbar on screen width 
+                sizes larger than 900px -->
             <div class="navbar__navContainer">
                 <ul class="navbar__navContainer--navList navList">
                     <li class="navList__navItem">
@@ -73,21 +87,30 @@
         </nav>
         <!-- utility: subsection-wrapper -->
         <div class="subsection-wrapper">
+            <!-- header content contains the actual content that appears
+                on the landing/header section of the page when the webpage loads -->
             <div class="header__content">
-                <!-- position heading content left bottom on all screen sizes -->
-                <div class="header__contLeftBottom">
+                <!-- position primary heading in the center horizontally and vertically of the page on 
+                    all screen sizes -->
+                <div class="header__contentTopCenter">
                     <!-- heading-primary content -->
-                    <div class="header__headingPrimary heading-primary u-margin-bottom-medium">
+                    <!-- introduces the user to the web developer -->
+                    <div class="header__headingPrimary heading-primary u-margin-bottom-small">
                         <!-- typography: heading-primary -->
                         <h1>
                             <span class="header__headingPrimary--span header__headingPrimary--span1 heading-primary--span1 heading-primary--span">Hello, my name is </span>
                             <span class="header__headingPrimary--span header__headingPrimary--span2 heading-primary--span2 heading-primary--span">Schalk van Dyk</span>
-                            <span class="header__headingPrimary--span header__headingPrimary--span3 heading-primary--span3 heading-primary--span">and I am <span id='heading-span-4'></span><span id="heading-span-5"> _</span></span>
+                            <span class="header__headingPrimary--span header__headingPrimary--span3 heading-primary--span3 heading-primary--span">and I am <span id='heading-span-4'></span><span id="heading-span-5" class="displayNone"> _</span></span>
                         </h1>
                     </div>
+                </div>
+                <!-- position social media content left bottom on all screen sizes except on mobile phones where
+                    it should be in the center horizontally  -->
+                <div class="header__contentBottomLeft">
                     <!-- social-media content -->
+                    <!-- contains links to the social-media pages of the web developer -->
                     <div id="header__socialMedia">
-                        <p class="paragraph">Check out my profiles and connect with me: </p>
+                        <p class="header__paragraph paragraph">Check out my profiles and connect with me: </p>
                         <!-- component: socialmedia -->
                         <div class="socialMedia">
                             <div class="socialMedia__linkWrapper">
@@ -117,7 +140,7 @@
         </div>    
     </header>    
     <main>
-        <div id="about" class="filler--white">
+        <div id="about" class="filler--blue">
             <!-- this is a filler to fill space behind the navbar -->
         </div>
         <!-- about-section -->
