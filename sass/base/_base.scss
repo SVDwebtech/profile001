@@ -24,6 +24,10 @@ html {
 		font-size: 50%; // 1rem = 8px  -->  8/16 *100 = 50%
 	}
 
+	@include respond(tablet-portrait-2) {
+		font-size: 45%; // 1rem = 7.2px  -->  7.2/16 *100 = 47%
+	}
+
 	@include respond(phone) {
 		font-size: 43.75%; // 1rem = 7px  -->  7/16 *100 = 43.75%
 	}

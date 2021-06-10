@@ -15,8 +15,11 @@
 			width: 23rem;
 			top: 5rem;
 			right: 35%;
-			// right: 42%;
 			z-index: 120;
+			@include respond(tablet-portrait-2) {
+				width: 16rem;
+				right: 45%;
+			}
 		}
 
 		&--family {
@@ -24,12 +27,21 @@
 			top: 0;
 			right: 30%;
 			z-index: 130;
+			@include respond(tablet-portrait-2) {
+				width: 13rem;
+				right: 42%;
+			}
 		}
+
 		&--potjiekos {
 			width: 20rem;
 			top: 5rem;
 			right: 0;
 			z-index: 110;
+			@include respond(tablet-portrait-2) {
+				width: 13rem;
+				right: 35%;
+			}
 		}
 
 		&:hover {

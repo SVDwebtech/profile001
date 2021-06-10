@@ -72,3 +72,32 @@
 		border: 5px solid $color-font-brightRed;
 	}
 }
+
+.btnClose {
+	&,
+	&:link,
+	&:visited {
+		text-decoration: none;
+	}
+
+	&__iconWrapper {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 5rem;
+		width: 5rem;
+	}
+
+	&__icon {
+		color: $color-font-white;
+		font-size: 5rem;
+		font-weight: 700;
+		backface-visibility: hidden;
+		transition: all .1s;
+	}
+
+	&__icon:hover {
+		color: $color-font-darkGrey;
+		font-size: 7rem;
+	}
+}

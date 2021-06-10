@@ -18,6 +18,7 @@
 /*
 0px			- 		600px:			Phone
 600px		-		900px:			Tablet Portrait
+600px		- 		700px: 			Tablet Portrait 2
 900px		-		1200px:			Tablet Landscape
 1200px		-		1800px:			Desktop First Approach (is where our normal styles apply)
 900px +								Tablet Portrait and bigger
@@ -29,6 +30,7 @@
 
 $breakpoint argument choices
 	- phone and <
+	- tablet-portrait-2 and <
 	- tablet-portrait and <
 	- tablet-landscape and <
 	- tablet-portrait and >
@@ -41,6 +43,12 @@ ORDER: base + typography > general layout + grid > page layout > components
 	@if $breakpoint == phone {
 		// 600px (600/16 = 37.5)                 REMEMBER: 1em = 16px;
 		@media (max-width: 37.5em) {
+			@content;
+		}
+	}
+	@if $breakpoint == tablet-portrait-2 {
+		// 750px (750/16 = 46.88)                 REMEMBER: 1em = 16px;
+		@media (max-width: 46.88em) {
 			@content;
 		}
 	}

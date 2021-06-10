@@ -144,7 +144,7 @@
             <!-- this is a filler to fill space behind the navbar -->
         </div>
         <!-- about-section -->
-        <section class="about" id="about-link">
+        <section class="about">
             <!-- banner heading-secondary -->
             <!-- utility: u-center-text & u-margin-bottom --> 
             <div class="u-center-text u-margin-bottom-medium">
@@ -186,39 +186,48 @@
         </section>
         <!-- component: popup -->
         <div class="popup" id="popup-link">
-            <!-- component: popup -- it serves as a wrapper for the popup content -->
-            <div class="popup__content">
-                <h3 class="heading-tertiary u-margin-bottom-small">Hi, I'm Schalk.</h3>
-                <p class="paragraph__popup popup__par">I call the Bushveld my home.</p>
-                <img class="popup__img popup__img--1" src="./img/schalk-300.jpg" alt="">
-                <p class="paragraph__popup">You'll find me in a small town called Modimolle, better known as
-                    Nylstroom, in the southern part of Limpopo.  It is about a 120km drive from Tshwane 
-                    (Pretoria) in Gauteng.  The Waterberg district is arguably the hunting mecca of 
-                    South Africa.  It's a hide-away to soak in the beauty of nature and 
-                    recharge your life force.  I love it here!</P>
-                <img class="popup__img popup__img--2" src="./img/family-300.jpg" alt="">
-                <p class="paragraph__popup"">When I'm not engaged in web development (or staring at my computer
-                    monitor) I enjoy spending time with my family, especially outdoors.  Hiking is fun!  
-                    When cabin fever sets in there's enough blue skyes to lift the winter blues.  
-                    I love to keep fit and there's no better way to do than doing it close to nature 
-                    together with your family. It is also a great chance to learn more and see more.</p>
-                <img class="popup__img popup__img--3" src="./img/potjiekos-300.jpg" alt="">
-                <p class="paragraph__popup">I love braaivleis (meat grilled over an open fire), biltong 
-                    (strips of meat cured by adding salt and spices, and then drying), boerewors 
-                    (traditional Afrikaner sausage) and potjiekos (traditional Afrikaner dish prepared 
-                    outside in a pot over an open fire). I also love to read and play guitar.  Lately 
-                    I've been neglecting my guitar, but every now and again I pick up my guitar and 
-                    strum my worries away....</p>
-                <p class="paragraph__popup">I fell in love with web development in 2020 and I'm constantly
-                    improving my programming skills to deliver top notch web
-                    development services.  I've switched to web/software development 
-                    fairly late in life.  And although the learning curve is quite steep,
-                    especially with the fast pace at which all the technologies evovle,
-                    I enjoy all it has to offer.  I guess it is the whole process of
-                    starting a project from scratch; developing it; improving it; until
-                    the finished product comes to life! Creation is truly liberating! </p>
-                <p class="paragraph__popup">In the pages below you'll find what I have to offer and how to reach me.</p>
-                <a class="btn btn--white" href="#about-link">Return</a>         
+            <div class="popup__content-wrapper">
+                <!-- component: popup -- it serves as a wrapper for the popup content -->
+                <div class="popup__content">
+                    <h3 class="heading-tertiary u-margin-bottom-small">Hi, I'm Schalk.</h3>
+                    <p class="paragraph__popup popup__par">I call the Bushveld my home.</p>
+                    <img class="popup__img popup__img--1" src="./img/schalk-300.jpg" alt="">
+                    <p class="paragraph__popup">You'll find me in a small town called Modimolle, better known as
+                        Nylstroom, in the southern part of Limpopo.  It is about a 120km drive from Tshwane 
+                        (Pretoria) in Gauteng.  The Waterberg district is arguably the hunting mecca of 
+                        South Africa.  It's a hide-away to soak in the beauty of nature and 
+                        recharge your life force.  I love it here!</P>
+                    <img class="popup__img popup__img--2" src="./img/family-300.jpg" alt="">
+                    <p class="paragraph__popup"">When I'm not engaged in web development (or staring at my computer
+                        monitor) I enjoy spending time with my family, especially outdoors.  Hiking is fun!  
+                        When cabin fever sets in there's enough blue skyes to lift the winter blues.  
+                        I love to keep fit and there's no better way to do than doing it close to nature 
+                        together with your family. It is also a great chance to learn more and see more.</p>
+                    <img class="popup__img popup__img--3" src="./img/potjiekos-300.jpg" alt="">
+                    <p class="paragraph__popup">I love braaivleis (meat grilled over an open fire), biltong 
+                        (strips of meat cured by adding salt and spices, and then drying), boerewors 
+                        (traditional Afrikaner sausage) and potjiekos (traditional Afrikaner dish prepared 
+                        outside in a pot over an open fire). I also love to read and play guitar.  Lately 
+                        I've been neglecting my guitar, but every now and again I pick up my guitar and 
+                        strum my worries away....</p>
+                    <p class="paragraph__popup">I fell in love with web development in 2020 and I'm constantly
+                        improving my programming skills to deliver top notch web
+                        development services.  I've switched to web/software development 
+                        fairly late in life.  And although the learning curve is quite steep,
+                        especially with the fast pace at which all the technologies evovle,
+                        I enjoy all it has to offer.  I guess it is the whole process of
+                        starting a project from scratch; developing it; improving it; until
+                        the finished product comes to life! Creation is truly liberating! </p>
+                    <p class="paragraph__popup">In the pages below you'll find what I have to offer and how to reach me.</p>         
+                    <!-- return button -->
+                    <a class="btnClose" href="#about"> 
+                        <div class="btnClose__iconWrapper">
+                            <p class="btnClose__icon">
+                                &times;
+                            </p>
+                        </div>
+                    </a>
+                </div>
             </div>
         </div>  
         <div id="skills" class="filler--blue">

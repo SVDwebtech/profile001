@@ -1,15 +1,18 @@
 // popup effect when you click on learn more button in about section
 .popup {
 	height: 100vh;
-	width: 100%;
+	margin: 0 2rem;
+	max-width: 100%;
 	position: fixed;
 	top: 0;
 	left: 0;
+	right: 0;
 	background-image: linear-gradient(
 		to right bottom,
 		rgba($color-primary-brightRed, .8),
 		rgba($color-primary-darkBlue, .95)
 	);
+	background-size: cover;
 	z-index: 300;
 	// set opacity and visibility to hide it when learn more button is not clicked yet
 	// do not use display: none otherwise you will not be able to use animations on the effect
@@ -23,22 +26,30 @@
 		background-color: $color-primary-darkBlue;
 		border-radius: $border-radius-small;
 		box-shadow: 0 2rem 4rem rgba($color-primary-darkBlue, .2);
-		@include absCenter;
-		// width: 95%;
-		width: 85%;
-		// padding: 2rem;
+
+		position: absolute;
+		top: 55%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+
+		width: 90%;
 		padding: 2.5rem;
 
 		opacity: 0;
 		// be sure to repeat translate again as it is already in use in @include absCenter above
+		// transform: translate(-50%, -50%) scale(0.3);
 		transform: translate(-50%, -50%) scale(0.3);
 		transition: all .6s .2s;
+		// place close button (times button) in top right corner of popup content
+		.btnClose {
+			position: absolute;
+			top: 2%;
+			right: 2%;
+		}
 	}
 
 	&__img {
 		display: block;
-		// width: 10rem;
-		width: 9rem;
 		height: auto;
 		border: 1px solid $color-primary-white;
 		padding: .5rem;
@@ -47,20 +58,31 @@
 		&--1 {
 			float: left;
 			margin-right: 1.5rem;
+			width: 9rem;
+
+			@include respond(phone) {
+				width: 8rem;
+			}
 		}
 
 		&--2 {
 			float: right;
-			// width: 12rem;
-			width: 21rem;
+			width: 14rem;
 			margin-left: 1.5rem;
+
+			@include respond(phone) {
+				width: 13rem;
+			}
 		}
 
 		&--3 {
 			float: left;
-			// width: 8rem;
-			width: 12rem;
+			width: 13rem;
 			margin-right: 1.5rem;
+
+			@include respond(phone) {
+				width: 12rem;
+			}
 		}
 	}
 	// use target and target + content to make it visible when you click on learn more button

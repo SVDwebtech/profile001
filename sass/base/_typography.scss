@@ -124,9 +124,23 @@ body {
 		margin-bottom: 1rem;
 	}
 	&__popup {
-		font-size: 1.3rem;
+		font-size: 1.25rem;
+		font-weight: 100;
 		&:not(:last-child) {
 			margin-bottom: 1rem;
+		}
+		@include respond(tablet-landscape) {
+			font-size: 1.35rem;
+		}
+		@include respond(tablet-portrait) {
+			font-size: 1.45rem;
+		}
+		@include respond(tablet-portrait-2) {
+			font-size: 1.55rem;
+		}
+		@include respond(phone) {
+			font-size: 1.35rem;
+			font-weight: 100;
 		}
 	}
 }
@@ -182,6 +196,21 @@ body {
 .about__content--text {
 	color: white;
 	text-align: justify;
+	@include respond(tablet-landscape) {
+		.paragraph {
+			font-size: 1.7rem;
+		}
+	}
+	@include respond(tablet-portrait) {
+		.paragraph {
+			font-size: 1.65rem;
+		}
+	}
+	@include respond(tablet-portrait-2) {
+		.paragraph {
+			font-size: 1.75rem;
+		}
+	}
 }
 // topography of portfolio-section;
 .portfolio__contBelow {
