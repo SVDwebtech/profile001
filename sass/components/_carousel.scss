@@ -11,14 +11,19 @@
 			justify-content: center;
 			font-size: $font-size-paragraph-xtralarge;
 			width: 5rem;
-			transition: all .2s;
+			backface-visibility: hidden;
+			transition: all .15s;
 		}
 
 		&--arrowContainer:hover {
+			color: $color-font-brightRed;
 			font-size: 3rem;
 		}
 
-		&--card {
+		&--arrowContainer:active,
+		&--arrowContainer:focus {
+			color: $color-font-darkBlue;
+			font-size: 2rem;
 		}
 	}
 	// carouselIndex indicates which card in the sequence you are currently at
@@ -27,14 +32,33 @@
 			display: flex;
 			justify-content: space-evenly;
 			width: 15rem;
-			height: 30px;
+			height: 25px;
 			margin: 0 auto;
+
+			@include respond(tablet-landscape) {
+				height: 20px;
+			}
+
+			@include respond(tablet-portrait) {
+				height: 20px;
+				margin: 2rem auto 0;
+			}
+
+			@include respond(tablet-portrait-2) {
+				height: 15px;
+				margin: 3rem auto 0;
+			}
+
+			@include respond(phone) {
+				height: 15px;
+				margin: 4rem auto 0;
+			}
 		}
 		&--indexBox {
 			background-color: $color-font-darkBlue;
-			border-radius: 50%;
-			width: 1rem;
-			height: 1rem;
+			border-radius: 100px;
+			width: .65rem;
+			height: .65rem;
 		}
 	}
 }

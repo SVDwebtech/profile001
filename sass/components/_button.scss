@@ -2,59 +2,63 @@
 	&,
 	&:link,
 	&:visited {
-		display: block;
-		font-size: $font-size-btn-medium;
-		font-weight: 700;
+		display: inline-block;
+
 		text-align: center;
 		text-decoration: none;
-		border-radius: 3px;
-		width: 15rem;
-		// height: 5rem;
-		padding: .5rem 2rem;
-		backface-visibility: hidden;
-		transition: all .2s;
-		// box-sizing: border-box;
-	}
-
-	&:hover {
-		font-weight: 600;
-		// letter-spacing: 0.01rem;
-		// transform: translateY(-.5rem);
-	}
-
-	&:active,
-	&:focus {
+		border-radius: 5px;
 		outline: none;
-		transform: translateY(-.2rem);
-		box-shadow: 0 2px 13px rgba($color-primary-darkBlue, .4);
+
+		backface-visibility: hidden;
+		transition: transform .2s, border .2s;
 	}
 
 	&--white {
-		color: $color-primary-darkBlue;
-		border: 5px solid $color-primary-white;
-		background-color: $color-primary-white;
-	}
+		color: $color-font-brightRed;
+		font-size: 1.4rem;
+		font-weight: 600;
+		border: 2px solid $color-font-white;
+		background-color: $color-font-white;
+		padding: .15em 1em;
 
-	&--white:hover {
-		color: $color-primary-brightRed;
-		border: 5px solid $color-primary-brightRed;
-		box-shadow: 0 2px 1rem $color-primary-white;
+		&:hover {
+			border: 2px solid $color-font-brightRed;
+			box-shadow: 0 .5rem 2rem rgba(255, 255, 255, .45);
+			transform: translateY(-.2rem);
+		}
+
+		&:active,
+		&:focus {
+			outline: none;
+			transform: translateY(.2rem);
+			box-shadow: 0 .5rem 2rem rgba(255, 255, 255, .3);
+		}
 	}
 
 	&--grey {
-		color: $color-font-darkBlue;
-		font-size: $font-size-btn-small;
-		border: 5px solid $color-grey-light-1;
-		background-color: $color-grey-light-1;
-		width: 10rem;
-		// height: 5rem;
-		padding: 0 0;
-	}
+		color: $color-font-white;
+		font-size: 1.4rem;
+		font-weight: 600;
+		border-top: 2px solid $color-font-white;
+		border-left: 2px solid $color-font-white;
+		border-bottom: 2px solid $color-font-darkGrey2;
+		border-right: 2px solid $color-font-darkGrey2;
+		background-color: transparent;
+		padding: .15em 1em;
 
-	&--grey:hover {
-		color: $color-font-darkBlue;
-		border: 5px solid $color-font-darkBlue;
-		background-color: $color-grey-light-1;
+		&:hover {
+			color: $color-font-white;
+			border: 2px solid $color-font-white;
+			box-shadow: 0 2rem 3rem rgba(0, 0, 0, .6);
+			transform: translateY(-.2rem);
+		}
+
+		&:active,
+		&:focus {
+			outline: none;
+			transform: translateY(.2rem);
+			box-shadow: 0 2px 13px rgba(0, 0, 0, .9);
+		}
 	}
 
 	&--blue {
@@ -65,14 +69,21 @@
 		width: 15rem;
 		// height: 5rem;
 		padding: .5rem 2rem;
-	}
 
-	&--blue:hover {
-		color: $color-font-brightRed;
-		border: 5px solid $color-font-brightRed;
+		&--blue:hover {
+			color: $color-font-brightRed;
+			border: 5px solid $color-font-brightRed;
+		}
+
+		&:active,
+		&:focus {
+			outline: none;
+			transform: translate(-50%, -50%) translateY(.2rem);
+			box-shadow: 0 2px 13px rgba(0, 0, 0, .9);
+		}
 	}
 }
-
+// times icons for close buttons
 .btnClose {
 	&,
 	&:link,
@@ -89,15 +100,58 @@
 	}
 
 	&__icon {
-		color: $color-font-white;
-		font-size: 5rem;
-		font-weight: 700;
-		backface-visibility: hidden;
-		transition: all .1s;
-	}
+		// close button for the about popup in the about section
+		&--aboutpopup {
+			color: $color-font-darkGrey;
+			font-size: 3rem;
+			font-weight: 600;
 
-	&__icon:hover {
-		color: $color-font-darkGrey;
-		font-size: 7rem;
+			backface-visibility: hidden;
+			transition: all .2s;
+
+			&:hover {
+				color: $color-font-white;
+				font-size: 5rem;
+				transform: translateY(-.2rem);
+			}
+
+			&:active,
+			&:focus {
+				outline: none;
+				transform: translateY(.2rem);
+			}
+		}
+		// close button for the card popup in the skills section
+		&--cardpopup {
+			color: $color-font-darkGrey;
+			font-size: 2rem;
+			font-weight: 600;
+
+			backface-visibility: hidden;
+			transition: all .2s;
+
+			&:hover {
+				color: $color-font-white;
+				font-size: 3.5rem;
+				cursor: pointer;
+				transform: translateY(-.2rem);
+			}
+
+			&:active,
+			&:focus {
+				outline: none;
+				transform: translateY(.2rem);
+			}
+		}
 	}
+}
+// a classlist for the mock buttons with a hover effect on the tool description categories
+.mockbtn {
+	border-bottom: 1px solid $color-primary-darkBlue;
+	padding-bottom: .3rem;
+}
+//  classlist for the right arrow with a hover effect on the tool description categories
+.noneRarr {
+	visibility: hidden;
+	opacity: 0;
 }

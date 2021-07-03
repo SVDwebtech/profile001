@@ -1,0 +1,55 @@
+.card__popup {
+	color: $color-font-white;
+	font-size: 1.3rem;
+	font-weight: 300;
+	border: 2px solid $color-font-darkBlue;
+	// background: radial-gradient(
+	// 	circle at 85% 240%,
+	// 	$color-font-darkBlue 75%,
+	// 	$color-font-brightRed
+	// );
+	background: linear-gradient(
+		to right bottom,
+		$color-font-brightRed,
+		$color-font-darkBlue 75%
+	);
+	width: 100%;
+	min-height: 100%;
+	border-radius: 3px;
+	padding: 1.5em 1.5em;
+	// set opacity and visibility to hide it when learn more button is not clicked yet;
+	// do not use display: none otherwise you will not be able to use animations on the effect;
+	opacity: 0;
+	visibility: hidden;
+	transition: all .6s;
+	@include respond(tablet-landscape) {
+		font-size: 1.4rem;
+		background: radial-gradient(
+			circle at 100% 200%,
+			$color-font-darkBlue 75%,
+			$color-grey-light-1
+		);
+	}
+	@include respond(tablet-portrait) {
+		font-size: 1.5rem;
+		background: radial-gradient(
+			circle at 105% 180%,
+			$color-font-darkBlue 75%,
+			$color-grey-light-1
+		);
+	}
+	@include respond(tablet-portrait-2) {
+		font-size: 1.55rem;
+		background: radial-gradient(
+			circle at 105% 220%,
+			$color-font-darkBlue 75%,
+			$color-grey-light-1
+		);
+	}
+	// place close button (times button) in top right corner of popup content
+	.btnClose {
+		position: absolute;
+		top: 2%;
+		right: 2%;
+	}
+}

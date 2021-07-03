@@ -151,23 +151,31 @@
 	background-color: $color-primary-white;
 	min-height: 93vh;
 	padding-top: 4rem;
+	// a wrapper for all the content pertaining to skills
 	&__content {
 		display: flex;
 		flex-direction: column;
 		width: 100%;
 		margin: 0 auto;
 		text-align: justify;
+		// a horizontal line to help seperate (visual) the two subsections of this section
 		hr {
 			border: 0;
 			height: 1px;
 			background: #333;
 			background-image: linear-gradient(to right, #ccc, #333, #ccc);
-		}
-		&--below {
-			display: flex;
-			flex-direction: row;
-			justify-content: space-evenly;
-			width: 100%;
+			// to increase/decrease spacing around the horizontal line at smaller screen sizes
+			@include respond(tablet-portrait-2) {
+				// see if the horizontal line presents well before increasing the thickness again
+				// height: 3px;
+				margin: 9.25rem 0 2rem;
+			}
+			// to increase/decrease spacing around the horizontal line at smaller screen sizes
+			@include respond(phone) {
+				// see if the horizontal line presents well before increasing the thickness again
+				// height: 3px;
+				margin: 8.5rem 0 2rem;
+			}
 		}
 	}
 	&__contAbove {
@@ -175,11 +183,42 @@
 		flex-direction: row;
 		justify-content: space-evenly;
 		width: 100%;
+
+		@include respond(tablet-landscape) {
+			margin-bottom: 1.2rem;
+		}
+
+		@include respond(tablet-portrait) {
+			margin-bottom: 3.5rem;
+		}
+
+		@include respond(tablet-portrait-2) {
+			// change to column style layout on smaller screen size
+			flex-direction: column;
+			align-items: center;
+		}
+
 		&--description {
 			width: 45%;
+
+			@include respond(tablet-portrait-2) {
+				width: 75%;
+				margin-bottom: 7rem;
+				order: 1;
+			}
 		}
 		&--carousel {
 			width: 45%;
+
+			@include respond(tablet-portrait-2) {
+				width: 65%;
+				order: 2;
+			}
+
+			@include respond(phone) {
+				width: 75%;
+				order: 2;
+			}
 		}
 	}
 	&__contBelow {
@@ -187,16 +226,48 @@
 		flex-direction: row;
 		justify-content: space-evenly;
 		width: 100%;
+
+		@include respond(tablet-landscape) {
+			margin-top: 3rem;
+		}
+
+		@include respond(tablet-portrait) {
+			margin-top: 5.5rem;
+		}
+
+		@include respond(tablet-portrait-2) {
+			// change to column style layout on smaller screen size
+			flex-direction: column;
+			align-items: center;
+
+			margin-top: 4.5rem;
+		}
+
 		&--description {
 			width: 45%;
 			order: 2;
+
+			@include respond(tablet-portrait-2) {
+				width: 75%;
+				margin-bottom: 7rem;
+				order: 1;
+			}
 		}
 		&--toolsContainer {
 			display: flex;
-			flex-direction: row;
-			justify-content: space-evenly;
+
 			width: 45%;
-			padding: 1rem 0 2rem 0;
+			padding: 0;
+
+			@include respond(tablet-portrait-2) {
+				width: 55%;
+				order: 2;
+			}
+
+			@include respond(phone) {
+				width: 75%;
+				order: 2;
+			}
 		}
 	}
 }

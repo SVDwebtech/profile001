@@ -130,7 +130,7 @@
                             </div>
                             <div class="socialMedia__linkWrapper">
                                 <a target="_blank" href="https://twitter.com/SVDwebtech">
-                                    <i class="fab fa-twitter-square fa-3x socialMedia__icon"></i>
+                                    <i class="fab fa-twitter-square fa-3x socialMedia__icon"></i> 
                                 </a>
                             </div>
                         </div>
@@ -222,7 +222,7 @@
                     <!-- return button -->
                     <a class="btnClose" href="#about"> 
                         <div class="btnClose__iconWrapper">
-                            <p class="btnClose__icon">
+                            <p class="btnClose__icon--aboutpopup">
                                 &times;
                             </p>
                         </div>
@@ -246,10 +246,14 @@
             </div>
             <!-- utility: subsection-wrapper -->
             <div class="subsection-wrapper">
+                <!-- container for the skills content which is divided in two sections: 
+                    1. what I aim to achieve with my skills and 
+                    2. the technologies I use to achieve those skills -->
                 <div class="skills__content">
+                    <!-- container for what I aim to achieve with my skills -->
                     <div class="skills__contAbove">
                         <div class="skills__contAbove--description">
-                            <h3 class="heading-tertiary u-margin-bottom-xtrasmall">User Experiance</h3>
+                            <h3 class="heading-tertiary u-margin-bottom-xtrasmall">User Experience</h3>
                             <p class="paragraph">I aim to create fast loading web pages with lag-free interaction. 
                                 My designs are responsive, with mobile first in mind, that render well on a variety 
                                 of devices or screen sizes.  Better user experiences allows the user to focus on the 
@@ -261,39 +265,56 @@
                             <!-- carouselFunction is the actual card that displays the information -->
                             <div class="skills__contAbove--carouselFunction carousel__carouselFunction">
                                 <div class="carousel__carouselFunction--arrowContainer">
-                                    <i class="fas fa-angle-double-left carousel__carouselFunction--arrowLeft"></i>
+                                    <i class="fas fa-angle-double-left carousel__carouselFunction--arrowLeft carouselLeftArrow"></i>
                                 </div>
                                 <div class="carousel__carouselFunction--card card">
                                     <div class="card__heading-wrapper">
-                                        <h4 class="card__heading"><i id="skillsIcon" class="fa fa-sm fa-fast-forward card__heading--iconandtext" aria-hidden="true"> Fast</i></h4>
+                                        <h4 class="card__heading"><span class="carouselCardHeadingIcon"><i class="fa fa-sm fa-fast-forward card__heading--icon" aria-hidden="true"></i></span><span class="card__heading--text carouselCardHeading"> Fast</span></h4>
                                     </div>
                                     <div class="card__content">
-                                        <p class="card__content--short-description paragraph">I create fast loading web pages.</p>
+                                        <p class="card__content--short-description paragraph carouselCardInfo">I create fast loading web pages.</p>
                                         <!-- long description will appear on when you click on more info -->
                                         <!-- <p class="card__content--long-description paragraph">I use light weight designs to create fast loading web pages, with 
                                             lag-free interaction, which increases visitor retention and loyalty!</p> -->
                                     </div>
+                                    <!-- button wrapper -->
                                     <div class="card__button-wrapper">
-                                        <button class="btn btn--grey card__button">More info</button>
+                                        <!-- component: btn--grey-->
+                                        <button class="btn btn--grey card__button cardOpenMoreInfoPopup">More info</button>
+                                    </div>
+                                    <div id="cardPopupLink" class="card__popup">
+                                        <h4 class="card__popup--heading u-margin-bottom-xtrasmall carouselPopupHeading">Fast</h4>
+                                        <p class="card__popup--paragraph carouselPopupInfo">I use light weight designs to create fast loading web pages, with 
+                                            lag-free interaction, which increases visitor retention and loyalty!</p>
+                                        <!-- component: btnClose> -->
+                                        <div class="btnClose"> 
+                                            <div class="btnClose__iconWrapper">
+                                                <p class="btnClose__icon--cardpopup popupCloseMoreInfoIcon">
+                                                    &times;
+                                                </p>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="carousel__carouselFunction--arrowContainer">
-                                    <i class="fas fa-angle-double-right carousel__carouselFunction--arrowRight"></i>
+                                    <i class="fas fa-angle-double-right carousel__carouselFunction--arrowRight carouselRightArrow"></i>
                                 </div>
                             </div>
                             <!-- carouselIndex indicates which card in the sequence you are currently at -->
                             <div class="skills__contAbove--carouselIndex carousel__carouselIndex u-margin-top-small">
                                 <div class=carousel__carouselIndex--indexContainer>
-                                    <div class="carousel__carouselIndex--indexBox"></div>
-                                    <div class="carousel__carouselIndex--indexBox"></div>
-                                    <div class="carousel__carouselIndex--indexBox"></div>
-                                    <div class="carousel__carouselIndex--indexBox"></div>
+                                    <div class="carousel__carouselIndex--indexBox carouselIndex0"></div>
+                                    <div class="carousel__carouselIndex--indexBox carouselIndex1"></div>
+                                    <div class="carousel__carouselIndex--indexBox carouselIndex2"></div>
+                                    <div class="carousel__carouselIndex--indexBox carouselIndex3"></div>
                                 </div>
                             </div>     
                         </div>
                     </div>
                     <hr>
-                    <div class="skills__contBelow u-margin-top-medium">
+                    <!-- container for the technologies I use to achieve my coding goals -->
+                    <div class="skills__contBelow u-margin-top-small">
+                        <!-- description of how I use the technologies -->
                         <div class="skills__contBelow--description u-margin-bottom-large">
                             <h3 class="heading-tertiary u-margin-bottom-xtrasmall">Toolbelt</h3>
                             <p class="paragraph">I work on both the front-end and back-end of web applications or pages.
@@ -302,40 +323,49 @@
                                 client goals swiftly.
                             </p>
                         </div>
+                        <!-- holds a box to the left with 3 categories of tools, and
+                            a box to the right with a reference to each tool of all
+                            the categories combined -->
                         <div class="skills__contBelow--toolsContainer">
-                            <div class="minicard">
-                                <h4 class="u-margin-bottom-xtrasmall"><i class="fa fa-md fa-language" aria-hidden="true"> Languages</i></h4>
-                                <ul>
-                                    <li>HTML</li>
-                                    <li>CSS</li>
-                                    <li>SASS</li>
-                                    <li>JavaScript</li>
-                                    <li>SQL</li>
-                                    <li>C#</li>
-                                </ul>
+                            <div class="tools">
+                                <!-- tools navbar with categories as nav items in left box -->
+                                <div class="tools__toolsNav">
+                                    <ul class="tools__navbar">
+                                        <li class="tools__navbarItem tools__navbarItem--languages"><i class="fa fa-md fa-language" aria-hidden="true"></i> <span class="languageSpan mockbtn"> Langs<span class="languageRarr"> &rarr;</span></span></li>
+                                        <li class="tools__navbarItem tools__navbarItem--tools"><i class="fa fa-md fa-wrench" aria-hidden="true"></i> <span class="toolsSpan mockbtn"> Tools<span class="toolsRarr"> &rarr;</span></span></li>
+                                        <li class="tools__navbarItem tools__navbarItem--frameworksAndLibs"><i class="fa fa-md fa-briefcase" aria-hidden="true"></i> <span class="framesLibsSpan mockbtn"> Fmwks & Libs<span class="framesLibsRarr"> &rarr;</span></span></li>
+                                    </ul>
+                                </div>
+                                <!-- tools of each category in boxes position on top of each other -->
+                                <!-- languages -->
+                                <div class="tools__toolsCard tools__toolsCard--1">
+                                    <ul class="tools__toolsList tools__toolsList--toolList1">
+                                        <li class="tools__toolsList--items tools__toolsList--item1 tools__toolsList--absItem1">HTML</li>
+                                        <li class="tools__toolsList--items tools__toolsList--item1 tools__toolsList--absItem2">CSS</li>
+                                        <li class="tools__toolsList--items tools__toolsList--item1 tools__toolsList--absItem3">SASS</li>
+                                        <li class="tools__toolsList--items tools__toolsList--item1 tools__toolsList--absItem4">JavaScript</li>
+                                    </ul>
+                                </div>
+                                <!-- tools -->
+                                <div class="tools__toolsCard tools__toolsCard--2">
+                                    <ul class="tools__toolsList tools__toolsList--toolList1">
+                                        <li class="tools__toolsList--items tools__toolsList--item2 tools__toolsList--absItem5">Git</li>
+                                        <li class="tools__toolsList--items tools__toolsList--item2 tools__toolsList--absItem6">GitHub</li>
+                                        <li class="tools__toolsList--items tools__toolsList--item2 tools__toolsList--absItem7">Npm</li>
+                                        <li class="tools__toolsList--items tools__toolsList--item2 tools__toolsList--absItem8">VSCode</li>
+                                        <li class="tools__toolsList--items tools__toolsList--item2 tools__toolsList--absItem9">CodePen</li>
+                                    </ul>
+                                </div>
+                                <!-- frmwrks and libs -->
+                                <div class="tools__toolsCard tools__toolsCard--3">
+                                    <ul class="tools__toolsList tools__toolsList--toolList1">
+                                        <li class="tools__toolsList--items tools__toolsList--item3 tools__toolsList--absItem10">Bootstrap</li>
+                                        <li class="tools__toolsList--items tools__toolsList--item3 tools__toolsList--absItem11">Node.js</li>
+                                        <li class="tools__toolsList--items tools__toolsList--item3 tools__toolsList--absItem12">Express.js</li>
+                                    </ul>
+                                </div>
                             </div>
-                            <div class="minicard">
-                                <h4 class="u-margin-bottom-xtrasmall"><i class="fa fa-md fa-wrench" aria-hidden="true"> Tools</i></h4>
-                                <ul>
-                                    <li>Git</li>
-                                    <li>GitHub</li>
-                                    <li>Npm</li>
-                                    <li>VSCode</li>
-                                    <li>CodePen</li>
-                                    <li>Visual Studio</li>
-                                </ul>
-                            </div>
-                            <div class="minicard">
-                                <h4 class="u-margin-bottom-xtrasmall"><i class="fa fa-md fa-briefcase" aria-hidden="true"> Frameworks & Libraries</i></h4>
-                                <ul>
-                                    <li>Bootstrap</li>
-                                    <li>Axios</li>
-                                    <li>Node.js</li>
-                                    <li>Express.js</li>
-                                    <li>Mongoose</li>
-                                </ul>
-                            </div>
-                        </div>
+                        </div>            
                     </div>
                 </div>
             </div>    

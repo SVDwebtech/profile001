@@ -212,6 +212,32 @@ body {
 		}
 	}
 }
+// topography of skills-section;
+.skills {
+	text-align: center;
+}
+.tools__navbarItem {
+	color: $color-font-darkBlue;
+	font-size: 1.4rem;
+	font-weight: 700;
+	text-align: left;
+}
+.tools__toolsList {
+	&--items {
+		font-size: $font-size-paragraph-small;
+		font-weight: 900;
+		letter-spacing: .28rem;
+	}
+	&--item1 {
+		color: $color-font-white;
+	}
+	&--item2 {
+		color: $color-font-white;
+	}
+	&--item3 {
+		color: $color-font-white;
+	}
+}
 // topography of portfolio-section;
 .portfolio__contBelow {
 	color: $color-primary-white;
@@ -235,7 +261,8 @@ body {
 		}
 		&--labels {
 			font-weight: 900;
-			letter-spacing: .1rem; // text-transform: uppercase;
+			letter-spacing: .1rem;
+			// text-transform: uppercase;
 		}
 	}
 }

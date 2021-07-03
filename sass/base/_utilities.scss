@@ -25,6 +25,10 @@
 }
 
 // top margins
+.u-margin-top-xtrasmall {
+	margin-top: 1rem;
+}
+
 .u-margin-top-small {
 	margin-top: 2rem;
 }
@@ -49,4 +53,14 @@
 	// will take up all the width as a blocklevel element
 	// width: 100%;
 	padding: 0 5rem 5rem 5rem;
+}
+
+// classlists
+.carouselIndexColor {
+	background-color: $color-font-brightRed !important;
+}
+
+.closePopupFirst {
+	color: $color-font-white !important;
+	font-size: 3.5rem !important;
 }
