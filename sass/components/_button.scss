@@ -10,20 +10,21 @@
 		outline: none;
 
 		backface-visibility: hidden;
-		transition: transform .2s, border .2s;
+		transition: box-shadow .2s, transform .2s, border .2s;
 	}
 
-	&--white {
+	&--onGreyBackground {
 		color: $color-font-brightRed;
 		font-size: 1.4rem;
 		font-weight: 600;
-		border: 2px solid $color-font-white;
-		background-color: $color-font-white;
+		border: 2px solid $color-font-brightRed;
+		border-bottom: 2px solid rgb(177, 10, 10);
+		border-right: 2px solid rgb(177, 10, 10);
 		padding: .15em 1em;
 
 		&:hover {
 			border: 2px solid $color-font-brightRed;
-			box-shadow: 0 .5rem 2rem rgba(255, 255, 255, .45);
+			box-shadow: 0 1rem 1rem rgba(0, 0, 0, .4);
 			transform: translateY(-.2rem);
 		}
 
@@ -35,21 +36,18 @@
 		}
 	}
 
-	&--grey {
+	&--onBlueBackground {
 		color: $color-font-white;
 		font-size: 1.4rem;
 		font-weight: 600;
-		border-top: 2px solid $color-font-white;
-		border-left: 2px solid $color-font-white;
-		border-bottom: 2px solid $color-font-darkGrey2;
-		border-right: 2px solid $color-font-darkGrey2;
-		background-color: transparent;
+		border: 2px solid $color-font-white;
+		border-bottom: 2px solid rgba(255, 255, 255, 0.472);
+		border-right: 2px solid rgba(255, 255, 255, 0.472);
 		padding: .15em 1em;
 
 		&:hover {
-			color: $color-font-white;
 			border: 2px solid $color-font-white;
-			box-shadow: 0 2rem 3rem rgba(0, 0, 0, .6);
+			box-shadow: 0 1rem 1rem rgba(#eeeeeef1, .4);
 			transform: translateY(-.2rem);
 		}
 
@@ -57,29 +55,7 @@
 		&:focus {
 			outline: none;
 			transform: translateY(.2rem);
-			box-shadow: 0 2px 13px rgba(0, 0, 0, .9);
-		}
-	}
-
-	&--blue {
-		color: $color-font-white;
-		font-size: $font-size-btn-small;
-		border: 5px solid $color-primary-darkBlue;
-		background-color: $color-primary-darkBlue;
-		width: 15rem;
-		// height: 5rem;
-		padding: .5rem 2rem;
-
-		&--blue:hover {
-			color: $color-font-brightRed;
-			border: 5px solid $color-font-brightRed;
-		}
-
-		&:active,
-		&:focus {
-			outline: none;
-			transform: translate(-50%, -50%) translateY(.2rem);
-			box-shadow: 0 2px 13px rgba(0, 0, 0, .9);
+			box-shadow: 0 .5rem 2rem rgba(255, 255, 255, .3);
 		}
 	}
 }

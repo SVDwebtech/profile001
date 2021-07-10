@@ -240,8 +240,11 @@ body {
 }
 // topography of portfolio-section;
 .portfolio__contBelow {
-	color: $color-primary-white;
+	color: #04042f;
 	text-align: center;
+	.paragraph {
+		font-size: 1.4rem;
+	}
 }
 // topography of contact-section;
 .contact {
@@ -261,8 +264,7 @@ body {
 		}
 		&--labels {
 			font-weight: 900;
-			letter-spacing: .1rem;
-			// text-transform: uppercase;
+			letter-spacing: .1rem; // text-transform: uppercase;
 		}
 	}
 }

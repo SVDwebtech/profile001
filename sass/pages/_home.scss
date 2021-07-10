@@ -279,28 +279,126 @@
 	padding-top: 4rem;
 	&__content {
 		display: flex;
-		justify-content: center;
-		border: 0.5rem solid $color-font-white;
-		border-radius: $border-radius-medium;
 		width: 85%;
 		margin: 0 auto;
+
+		border: 1rem solid $color-font-white;
+		border-radius: $border-radius-medium;
+
+		@include respond(tablet-landscape) {
+			width: 90%;
+		}
+
+		@include respond(tablet-portrait) {
+			flex-direction: column;
+			width: 55%;
+			height: auto;
+			align-self: center;
+		}
+
+		@include respond(tablet-portrait-2) {
+			width: 60%;
+		}
+
+		@include respond(phone) {
+			width: 75%;
+		}
+
+		&:hover > :not(:last-child) > img {
+			transform: translate(-50%, -50%) scale(1.1);
+		}
+
+		&:hover > ::after {
+			background-color: rgba(209, 192, 192, 0.9);
+			border-radius: 1000px;
+			transform: translate(-50%, -50%) scale(0);
+		}
 	}
 	&__contAbove {
 		display: flex;
-		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		flex: 1 0 300px;
+
+		position: relative;
+
+		@include respond(tablet-portrait) {
+			order: 1;
+			flex: 1 0 100%;
+			min-height: 150px;
+		}
+
+		@include respond(tablet-portrait-2) {
+			min-height: 200px;
+		}
+
+		&::after {
+			content: "";
+			width: 75%;
+			height: 65%;
+			background-color: rgba(255, 255, 255, .85);
+
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+
+			transition: all .5s;
+		}
+
 		// image width set to 100% of the width of its container;
 		&--img {
-			width: 100%;
+			width: 75%;
+			height: 65%;
+
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+
+			transition: all .5s;
 		}
 	}
 	&__contBelow {
-		min-width: 45%;
-		padding: 5rem;
+		flex: 1 0 300px;
+		padding: 3rem 8rem;
 		position: relative;
-		a {
-			// to center button a third from the bottom;
-			@include absCenter;
-			top: 75%;
+
+		p {
+			padding: 0 1rem;
+		}
+
+		& > :not(:last-child) {
+			padding-bottom: 1.75rem;
+			margin-bottom: 1.25rem;
+			border-bottom: 1px solid #04042f;
+		}
+
+		& > :first-child {
+			border-bottom: none;
+		}
+
+		@include respond(tablet-landscape) {
+			padding: 3rem 6rem;
+		}
+
+		@include respond(tablet-portrait) {
+			order: 2;
+			flex: 1 0 100%;
+			padding: 3rem 4rem;
+
+			& > :not(:last-child) {
+				padding-bottom: 1rem;
+				margin-bottom: 1rem;
+			}
+		}
+
+		@include respond(tablet-portrait-2) {
+			padding: 3rem 7rem;
+		}
+
+		@include respond(phone) {
+			padding: 3rem 5rem;
 		}
 	}
 }
