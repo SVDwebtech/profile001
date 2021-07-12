@@ -411,7 +411,27 @@
 	&__content {
 		display: flex;
 		justify-content: space-evenly;
+
+		@include respond(tablet-portrait) {
+			flex-direction: column;
+			align-items: center;
+			width: 100%;
+		}
 	}
+
+	&__contAbove {
+		@include respond(tablet-portrait) {
+			width: 75%;
+			margin-bottom: 7rem;
+		}
+	}
+
+	&__contBelow {
+		@include respond(tablet-portrait) {
+			width: 75%;
+		}
+	}
+
 	&__itemsContainer {
 		display: flex;
 		flex-direction: column;
@@ -433,10 +453,43 @@
 		}
 	}
 	&__socialMedia {
+		display: flex;
+		justify-content: flex-start;
 		padding-left: 1rem;
+		.socialMediaContact__icon {
+			color: $color-primary-darkBlue;
+		}
+		.socialMediaContact__icon:hover {
+			color: $color-primary-brightRed;
+		}
+
+		.socialMediaContact__button {
+			&,
+			&:link,
+			&:visited {
+				text-decoration: none;
+				outline: none;
+				background-color: transparent;
+				backface-visibility: hidden;
+			}
+		}
 	}
 	&__form {
 		padding-left: 1rem;
+
+		.nameAndEmail {
+			display: flex;
+			justify-content: flex-start;
+		}
+
+		&--nameInputs {
+			flex: 1 0 95%;
+		}
+
+		&--emailInputs {
+			flex: 1 0 95%;
+		}
+
 		&--item {
 			margin-top: 1rem;
 		}
@@ -450,7 +503,7 @@
 			border-radius: $border-radius-small;
 			padding: .5rem .5rem;
 			margin-top: .3rem;
-			width: 65%;
+			width: 95%;
 		}
 		&--subject {
 			width: 100%;
