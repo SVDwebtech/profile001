@@ -117,6 +117,11 @@ body {
   line-height: 1.6;
   padding: 0 2rem 2rem 2rem;
 }
+@media (max-width: 75em) {
+  body {
+    padding: 0;
+  }
+}
 
 .heading-primary--span {
   font-size: 1.6rem;
@@ -789,6 +794,11 @@ body {
   left: 0;
   right: 0;
   z-index: 10000;
+}
+@media (max-width: 75em) {
+  .navbar {
+    margin: 0;
+  }
 }
 .navbar__logoBox {
   width: 28rem;
