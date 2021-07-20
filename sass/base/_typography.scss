@@ -105,14 +105,20 @@ body {
 		@include backgroundTextTransparent;
 		padding: .5rem 0 .8rem 0;
 	}
-	// sets top and bottom border values of heading-secondary--sub;
-	&--whiteSubBorder {
-		border-top: 1px solid $color-primary-darkBlue;
+	&--mainWhiteSubBorder {
 		border-bottom: 1px solid $color-primary-darkBlue;
 	}
 	// sets top and bottom border values of heading-secondary--sub;
+	&--whiteSubBorder {
+		// border-top: 1px solid $color-primary-darkBlue;
+		border-bottom: 1px solid $color-primary-darkBlue;
+	}
+	&--mainRedSubBorder {
+		border-bottom: 1px solid $color-primary-brightRed;
+	}
+	// sets top and bottom border values of heading-secondary--sub;
 	&--redSubBorder {
-		border-top: 1px solid $color-primary-brightRed;
+		// border-top: 1px solid $color-primary-brightRed;
 		border-bottom: 1px solid $color-primary-brightRed;
 	}
 }

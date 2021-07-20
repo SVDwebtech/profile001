@@ -194,12 +194,16 @@ body {
   color: transparent;
   padding: 0.5rem 0 0.8rem 0;
 }
-.heading-secondary--whiteSubBorder {
-  border-top: 1px solid #04042e;
+.heading-secondary--mainWhiteSubBorder {
   border-bottom: 1px solid #04042e;
 }
+.heading-secondary--whiteSubBorder {
+  border-bottom: 1px solid #04042e;
+}
+.heading-secondary--mainRedSubBorder {
+  border-bottom: 1px solid #ff0000;
+}
 .heading-secondary--redSubBorder {
-  border-top: 1px solid #ff0000;
   border-bottom: 1px solid #ff0000;
 }
 
