@@ -778,7 +778,6 @@ body {
   width: 100%;
   height: 6rem;
   background-color: #04042e;
-  border-top: 1px solid #04042e;
 }
 .filler--hamburger {
   width: 100%;
@@ -790,7 +789,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-image: linear-gradient(to bottom, rgba(255, 0, 0, 0.98) 40%, rgba(4, 4, 46, 0.7));
+  background-image: linear-gradient(to bottom, rgba(255, 0, 0, 0.92) 40%, rgba(4, 4, 46, 0.95));
   background-size: 100%;
   height: 7rem;
   margin: 0rem 2rem;
@@ -861,19 +860,19 @@ body {
   content: "";
   height: 0.2rem;
   width: 0;
-  background-color: #040483;
+  background-color: #04042e;
   position: absolute;
   bottom: 0;
   left: 0;
   transition: width 0.4s;
 }
 .navList__navItem--navLink:hover::after {
-  background-color: #040483;
+  background-color: #04042e;
   left: -1px;
   width: 100%;
 }
 .navList__navItem--navBrandImg:hover + .navList__navItem--navLink::after {
-  background-color: #040483;
+  background-color: #04042e;
   left: -1px;
   width: 100%;
 }
@@ -953,6 +952,11 @@ body {
   visibility: hidden;
   transition: all 0.6s;
 }
+@media (max-width: 75em) {
+  .hamburger__container {
+    margin: 0;
+  }
+}
 .hamburger__content {
   display: flex;
   flex-direction: column;
@@ -1000,14 +1004,14 @@ body {
   content: "";
   height: 0.2rem;
   width: 0;
-  background-color: #040483;
+  background-color: #04042e;
   position: absolute;
   bottom: 0;
   left: 0;
   transition: width 0.4s;
 }
 .hamburger__link:hover::after {
-  background-color: #040483;
+  background-color: #04042e;
   left: -1px;
   width: 100%;
 }
