@@ -432,6 +432,7 @@ body {
   text-decoration: none;
   border-radius: 5px;
   outline: none;
+  padding: 0.3em 1.5em;
   backface-visibility: hidden;
   transition: box-shadow 0.2s, transform 0.2s, border 0.2s;
 }
@@ -439,14 +440,14 @@ body {
   color: #ff0000;
   font-size: 1.4rem;
   font-weight: 600;
+  background-color: transparent;
   border: 2px solid #ff0000;
   border-bottom: 2px solid #b10a0a;
   border-right: 2px solid #b10a0a;
-  padding: 0.15em 1em;
 }
 .btn--onGreyBackground:hover {
   border: 2px solid #ff0000;
-  box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.4);
   transform: translateY(-0.2rem);
 }
 .btn--onGreyBackground:active, .btn--onGreyBackground:focus {
@@ -458,14 +459,14 @@ body {
   color: #c9c8c8;
   font-size: 1.4rem;
   font-weight: 600;
+  background-color: transparent;
   border: 2px solid #c9c8c8;
   border-bottom: 2px solid rgba(255, 255, 255, 0.472);
   border-right: 2px solid rgba(255, 255, 255, 0.472);
-  padding: 0.15em 1em;
 }
 .btn--onBlueBackground:hover {
   border: 2px solid #c9c8c8;
-  box-shadow: 0 1rem 1rem rgba(238, 238, 238, 0.4);
+  box-shadow: 0 0.5rem 0.5rem rgba(238, 238, 238, 0.4);
   transform: translateY(-0.2rem);
 }
 .btn--onBlueBackground:active, .btn--onBlueBackground:focus {
