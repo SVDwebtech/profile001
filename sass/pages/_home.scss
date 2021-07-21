@@ -325,7 +325,7 @@
 		@include respond(tablet-portrait) {
 			order: 1;
 			flex: 1 0 100%;
-			min-height: 150px;
+			min-height: 180px;
 		}
 
 		@include respond(tablet-portrait-2) {
@@ -337,6 +337,16 @@
 			width: 75%;
 			height: 65%;
 			background-color: rgba(255, 255, 255, .85);
+
+			@include respond(tablet-portrait) {
+				width: 55%;
+				height: 60%;
+			}
+
+			@include respond(tablet-portrait-2) {
+				width: 60%;
+				height: 60%;
+			}
 
 			position: absolute;
 			top: 50%;
@@ -350,6 +360,16 @@
 		&--img {
 			width: 75%;
 			height: 65%;
+
+			@include respond(tablet-portrait) {
+				width: 55%;
+				height: 60%;
+			}
+
+			@include respond(tablet-portrait-2) {
+				width: 60%;
+				height: 60%;
+			}
 
 			position: absolute;
 			top: 50%;
