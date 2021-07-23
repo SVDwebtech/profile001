@@ -87,6 +87,11 @@
 .about {
 	background-color: $color-primary-darkBlue;
 	min-height: 93vh;
+
+	@include respond(phone-small) {
+		min-height: 120vh;
+	}
+
 	padding-top: 4rem;
 
 	&__content {
@@ -500,6 +505,10 @@
 		.nameAndEmail {
 			display: flex;
 			justify-content: flex-start;
+
+			@include respond(phone) {
+				flex-direction: column;
+			}
 		}
 
 		&--nameInputs {
@@ -524,6 +533,10 @@
 			padding: .5rem .5rem;
 			margin-top: .3rem;
 			width: 95%;
+
+			@include respond(phone) {
+				width: 100%;
+			}
 		}
 		&--subject {
 			width: 100%;
