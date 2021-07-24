@@ -224,6 +224,10 @@
 				width: 75%;
 				order: 2;
 			}
+
+			@include respond(phone-small) {
+				width: 110%;
+			}
 		}
 	}
 	&__contBelow {
@@ -272,6 +276,10 @@
 			@include respond(phone) {
 				width: 75%;
 				order: 2;
+			}
+
+			@include respond(phone-small) {
+				width: 95%;
 			}
 		}
 	}

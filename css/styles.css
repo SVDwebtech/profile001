@@ -1528,6 +1528,11 @@ body {
     order: 2;
   }
 }
+@media (max-width: 31.25em) {
+  .skills__contAbove--carousel {
+    width: 110%;
+  }
+}
 .skills__contBelow {
   display: flex;
   flex-direction: row;
@@ -1577,6 +1582,11 @@ body {
   .skills__contBelow--toolsContainer {
     width: 75%;
     order: 2;
+  }
+}
+@media (max-width: 31.25em) {
+  .skills__contBelow--toolsContainer {
+    width: 95%;
   }
 }
 
