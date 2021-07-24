@@ -1612,7 +1612,12 @@ body {
 }
 @media (max-width: 37.5em) {
   .portfolio__content {
-    width: 75%;
+    width: 80%;
+  }
+}
+@media (max-width: 31.25em) {
+  .portfolio__content {
+    width: 100%;
   }
 }
 .portfolio__content:hover > :not(:last-child) > img {

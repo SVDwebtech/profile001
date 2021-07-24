@@ -306,7 +306,11 @@
 		}
 
 		@include respond(phone) {
-			width: 75%;
+			width: 80%;
+		}
+
+		@include respond(phone-small) {
+			width: 100%;
 		}
 
 		&:hover > :not(:last-child) > img {
