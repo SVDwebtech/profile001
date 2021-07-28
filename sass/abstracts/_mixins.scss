@@ -1,4 +1,4 @@
-// to make background text color visible
+// to make background color for text visible
 @mixin backgroundTextTransparent {
 	-webkit-background-clip: text;
 	-moz-background-clip: text;
@@ -30,6 +30,7 @@
 }
 
 $breakpoint argument choices
+	- phone small and <
 	- phone and <
 	- tablet-portrait-2 and <
 	- tablet-portrait and <
@@ -41,42 +42,49 @@ ORDER: base + typography > general layout + grid > page layout > components
 */
 
 @mixin respond($breakpoint) {
+	// phone small breakpoint
 	@if $breakpoint == phone-small {
 		// 500px (500/16 = 31.25)                 REMEMBER: 1em = 16px;
 		@media (max-width: 31.25em) {
 			@content;
 		}
 	}
+	// phone breakpoint
 	@if $breakpoint == phone {
 		// 600px (600/16 = 37.5)                 REMEMBER: 1em = 16px;
 		@media (max-width: 37.5em) {
 			@content;
 		}
 	}
+	// tablet portrait 2 breakpoint
 	@if $breakpoint == tablet-portrait-2 {
 		// 750px (750/16 = 46.88)                 REMEMBER: 1em = 16px;
 		@media (max-width: 46.88em) {
 			@content;
 		}
 	}
+	// tablet portrait breakpoint
 	@if $breakpoint == tablet-portrait {
 		// 900px (900/16 = 56.25)
 		@media (max-width: 56.25em) {
 			@content;
 		}
 	}
+	// tablet landscape breakpoint
 	@if $breakpoint == tablet-landscape {
 		// 1200px (1200/16 = 75)
 		@media (max-width: 75em) {
 			@content;
 		}
 	}
+	// tablet portrait bigger breakpoint
 	@if $breakpoint == tablet-portrait-bigger {
 		// 900 and >
 		@media (min-width: 56.25em) {
 			@content;
 		}
 	}
+	// big desktop breakpoint
 	@if $breakpoint == big-desktop {
 		// 1800px (1800/16 = 112.5)
 		@media (min-width: 112.5em) {

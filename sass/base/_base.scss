@@ -8,6 +8,7 @@
 }
 
 html {
+	// smoothes automatic scroll when you click on a navlink
 	scroll-behavior: smooth;
 	/* 	1rem is equal to 10px */
 	/* 	because 10px / 10 is equal to 1rem */
@@ -42,5 +43,11 @@ html {
 }
 
 body {
+	/* This makes dealing with the sizes of elements much easier, 
+		and generally eliminates a number of pitfalls you can stumble on
+		 while laying out your content. */
+	/* The width and height properties include the content, padding, and border, 
+		but do not include the margin.  Note that padding and border will be inside 
+		of the box. */
 	box-sizing: border-box;
 }

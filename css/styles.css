@@ -13,6 +13,7 @@
 }
 
 $breakpoint argument choices
+	- phone small and <
 	- phone and <
 	- tablet-portrait-2 and <
 	- tablet-portrait and <
@@ -113,6 +114,12 @@ html {
 }
 
 body {
+  /* This makes dealing with the sizes of elements much easier, 
+  	and generally eliminates a number of pitfalls you can stumble on
+  	 while laying out your content. */
+  /* The width and height properties include the content, padding, and border, 
+  	but do not include the margin.  Note that padding and border will be inside 
+  	of the box. */
   box-sizing: border-box;
 }
 
@@ -1033,10 +1040,17 @@ body {
   right: 0;
   background-image: linear-gradient(to right bottom, rgba(255, 0, 0, 0.8), rgba(4, 4, 46, 0.95));
   background-size: cover;
-  z-index: 300;
+  z-index: 400;
   opacity: 0;
   visibility: hidden;
   transition: all 0.6s;
+  /* on tablet-landscape screen sizes and smaller the body margin is zero and
+  	the popup should be should be adjusted accordingly */
+}
+@media (max-width: 75em) {
+  .popup {
+    margin: 0;
+  }
 }
 .popup__content {
   color: #f1f1f1;
