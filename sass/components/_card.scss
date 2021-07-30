@@ -37,6 +37,12 @@
 		top: 20%;
 		left: 10%;
 
+		// opacity styled in app.js from 0 to 1 and transition delayed here
+		.carouselCardHeadingIcon,
+		.carouselCardHeading {
+			transition: all .5s;
+		}
+
 		&--icon {
 			color: $color-font-white;
 			font-size: $font-size-paragraph-large;

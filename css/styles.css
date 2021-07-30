@@ -575,6 +575,10 @@ body {
   top: 20%;
   left: 10%;
 }
+.card__heading .carouselCardHeadingIcon,
+.card__heading .carouselCardHeading {
+  transition: all 0.5s;
+}
 .card__heading--icon {
   color: #c9c8c8;
   font-size: 2rem;

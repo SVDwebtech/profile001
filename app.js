@@ -260,7 +260,7 @@ setInterval(() => {
 	if (cardPopupContent.style.opacity === "0") {
 		rightArrow();
 	}
-}, 5000);
+}, 6000);
 
 // //////////////////////////////////////////////////////////////////////////////////////
 // TOOLS HOVER EFFECT
@@ -371,39 +371,55 @@ toolsFrameworksAndLibs.addEventListener("mouseleave", function() {
 //////////////////////////
 // carousel functions
 function leftArrow() {
+	carouselCardHeadingIcon.style.opacity = 0;
+	carouselCardHeading.style.opacity = 0;
 	carouselIndex[carouselCounter].classList.toggle("carouselIndexColor");
 	carouselCounter--;
 	if (carouselCounter < 0) {
 		carouselCounter = 3;
 	}
 	carouselIndex[carouselCounter].classList.toggle("carouselIndexColor");
-	carouselCardHeadingIcon.innerHTML =
-		'<i class="fa fa-sm' +
-		" " +
-		carouselData.cardHeadingIcon[carouselCounter] +
-		' card__heading--icon" aria-hidden="true"></i>';
-	carouselCardHeading.innerText = carouselData.cardHeading[carouselCounter];
-	carouselCardInfo.innerText = carouselData.cardInfo[carouselCounter];
 	carouselPopupHeading.innerText = carouselData.cardHeading[carouselCounter];
 	carouselPopupInfo.innerText = carouselData.cardPopupInfo[carouselCounter];
+	// opacity styled from 0 to 1 and transition delayed in _card.scss
+	setTimeout(() => {
+		carouselCardHeadingIcon.style.opacity = 1;
+		carouselCardHeading.style.opacity = 1;
+		carouselCardHeadingIcon.innerHTML =
+			'<i class="fa fa-sm' +
+			" " +
+			carouselData.cardHeadingIcon[carouselCounter] +
+			' card__heading--icon" aria-hidden="true"></i>';
+		carouselCardHeading.innerText =
+			carouselData.cardHeading[carouselCounter];
+		carouselCardInfo.innerText = carouselData.cardInfo[carouselCounter];
+	}, 500);
 }
 
 function rightArrow() {
+	carouselCardHeadingIcon.style.opacity = 0;
+	carouselCardHeading.style.opacity = 0;
 	carouselIndex[carouselCounter].classList.toggle("carouselIndexColor");
 	carouselCounter++;
 	if (carouselCounter > 3) {
 		carouselCounter = 0;
 	}
 	carouselIndex[carouselCounter].classList.toggle("carouselIndexColor");
-	carouselCardHeadingIcon.innerHTML =
-		'<i class="fa fa-sm' +
-		" " +
-		carouselData.cardHeadingIcon[carouselCounter] +
-		' card__heading--icon" aria-hidden="true"></i>';
-	carouselCardHeading.innerText = carouselData.cardHeading[carouselCounter];
-	carouselCardInfo.innerText = carouselData.cardInfo[carouselCounter];
 	carouselPopupHeading.innerText = carouselData.cardHeading[carouselCounter];
 	carouselPopupInfo.innerText = carouselData.cardPopupInfo[carouselCounter];
+	// opacity styled from 0 to 1 and transition delayed in _card.scss
+	setTimeout(() => {
+		carouselCardHeadingIcon.style.opacity = 1;
+		carouselCardHeading.style.opacity = 1;
+		carouselCardHeadingIcon.innerHTML =
+			'<i class="fa fa-sm' +
+			" " +
+			carouselData.cardHeadingIcon[carouselCounter] +
+			' card__heading--icon" aria-hidden="true"></i>';
+		carouselCardHeading.innerText =
+			carouselData.cardHeading[carouselCounter];
+		carouselCardInfo.innerText = carouselData.cardInfo[carouselCounter];
+	}, 500);
 }
 //////////////////////////
 // tools hover functions
