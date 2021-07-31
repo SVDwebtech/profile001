@@ -331,6 +331,7 @@
 			transform: translate(-50%, -50%) scale(0);
 		}
 	}
+	// portfolio image container
 	&__contAbove {
 		display: flex;
 		justify-content: center;
@@ -396,6 +397,7 @@
 			transition: all .5s;
 		}
 	}
+	// portfolio projectinfo container
 	&__contBelow {
 		flex: 1 0 300px;
 		padding: 3rem 8rem;
@@ -403,6 +405,29 @@
 
 		p {
 			padding: 0 1rem;
+			max-width: 280px;
+			margin: 0 auto;
+
+			@include respond(tablet-landscape) {
+				max-width: 230px;
+				margin: 0 auto;
+			}
+			@include respond(tablet-portrait) {
+				max-width: 200px;
+				margin: 0 auto;
+			}
+			@include respond(tablet-portrait-2) {
+				max-width: 180px;
+				margin: 0 auto;
+			}
+			@include respond(phone) {
+				max-width: 180px;
+				margin: 0 auto;
+			}
+			@include respond(phone-small) {
+				max-width: 170px;
+				margin: 0 auto;
+			}
 		}
 
 		& > :not(:last-child) {
@@ -436,6 +461,10 @@
 
 		@include respond(phone) {
 			padding: 3rem 5rem;
+		}
+
+		@include respond(phone-small) {
+			padding: 3rem 4rem;
 		}
 	}
 }

@@ -1726,6 +1726,38 @@ body {
 }
 .portfolio__contBelow p {
   padding: 0 1rem;
+  max-width: 280px;
+  margin: 0 auto;
+}
+@media (max-width: 75em) {
+  .portfolio__contBelow p {
+    max-width: 230px;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 56.25em) {
+  .portfolio__contBelow p {
+    max-width: 200px;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 46.88em) {
+  .portfolio__contBelow p {
+    max-width: 180px;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 37.5em) {
+  .portfolio__contBelow p {
+    max-width: 180px;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 31.25em) {
+  .portfolio__contBelow p {
+    max-width: 170px;
+    margin: 0 auto;
+  }
 }
 .portfolio__contBelow > :not(:last-child) {
   padding-bottom: 1.75rem;
@@ -1759,6 +1791,11 @@ body {
 @media (max-width: 37.5em) {
   .portfolio__contBelow {
     padding: 3rem 5rem;
+  }
+}
+@media (max-width: 31.25em) {
+  .portfolio__contBelow {
+    padding: 3rem 4rem;
   }
 }
 
