@@ -84,6 +84,10 @@
 
 // /////////////////////////////////////////////////////////////////
 // ABOUT
+.filler-and-section-wrapper-about-skills {
+	background-color: $color-primary-darkBlue;
+}
+
 .about {
 	background-color: $color-primary-darkBlue;
 	min-height: 93vh;
@@ -286,6 +290,10 @@
 }
 // //////////////////////////////////////////////////////////////////////////////////
 // PORTFOLIO
+.filler-and-section-wrapper-portfolio-contact {
+	background-color: $color-primary-darkBlue;
+}
+
 .portfolio {
 	background-color: $color-primary-darkBlue;
 	min-height: 93vh;
@@ -496,6 +504,9 @@
 }
 // //////////////////////////////////////////////////////////////////////////////////////
 // CONTACT
+.filler-and-section-wrapper-contact {
+	background-color: $color-primary-darkBlue;
+}
 .contact {
 	background-color: $color-primary-white;
 	min-height: 93vh;
