@@ -295,6 +295,13 @@
 		width: 85%;
 		margin: 0 auto;
 
+		// set content background-color to help fix fine space
+		// between borders etc on smaller screen sizes
+		background-color: $color-font-white;
+
+		border: 5px solid $color-font-white;
+		border-radius: $border-radius-medium;
+
 		@include respond(tablet-landscape) {
 			width: 90%;
 		}
@@ -335,9 +342,13 @@
 		align-items: center;
 		flex: 1 0 300px;
 
-		border: 1rem solid $color-font-white;
-		border-bottom-left-radius: $border-radius-medium;
-		border-top-left-radius: $border-radius-medium;
+		// set content background-color to help fix fine space
+		// between borders etc on smaller screen sizes
+		background-color: $color-primary-darkBlue;
+
+		// border: 5px solid $color-font-white;
+		// border-bottom-left-radius: $border-radius-medium;
+		// border-top-left-radius: $border-radius-medium;
 
 		position: relative;
 
@@ -346,10 +357,10 @@
 			flex: 1 0 100%;
 			min-height: 180px;
 
-			border: 1rem solid $color-font-white;
-			border-top-left-radius: $border-radius-medium;
-			border-top-right-radius: $border-radius-medium;
-			border-bottom-left-radius: 0;
+			// border: 5px solid $color-font-white;
+			// border-top-left-radius: $border-radius-medium;
+			// border-top-right-radius: $border-radius-medium;
+			// border-bottom-left-radius: 0;
 		}
 
 		@include respond(tablet-portrait-2) {
@@ -409,9 +420,9 @@
 		padding: 3rem 8rem;
 		position: relative;
 
-		border: 1rem solid $color-font-white;
-		border-bottom-right-radius: $border-radius-medium;
-		border-top-right-radius: $border-radius-medium;
+		// border: 5px solid $color-font-white;
+		// border-bottom-right-radius: $border-radius-medium;
+		// border-top-right-radius: $border-radius-medium;
 
 		p {
 			padding: 0 1rem;
@@ -459,10 +470,10 @@
 			flex: 1 0 100%;
 			padding: 3rem 4rem;
 
-			border: 1rem solid $color-font-white;
-			border-bottom-right-radius: $border-radius-medium;
-			border-bottom-left-radius: $border-radius-medium;
-			border-top-right-radius: 0;
+			// border: 5px solid $color-font-white;
+			// border-bottom-right-radius: $border-radius-medium;
+			// border-bottom-left-radius: $border-radius-medium;
+			// border-top-right-radius: 0;
 
 			& > :not(:last-child) {
 				padding-bottom: 1rem;

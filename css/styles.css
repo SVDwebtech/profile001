@@ -1617,6 +1617,9 @@ body {
   display: flex;
   width: 85%;
   margin: 0 auto;
+  background-color: #c9c8c8;
+  border: 5px solid #c9c8c8;
+  border-radius: 0.5rem;
 }
 @media (max-width: 75em) {
   .portfolio__content {
@@ -1659,9 +1662,7 @@ body {
   justify-content: center;
   align-items: center;
   flex: 1 0 300px;
-  border: 1rem solid #c9c8c8;
-  border-bottom-left-radius: 0.5rem;
-  border-top-left-radius: 0.5rem;
+  background-color: #04042e;
   position: relative;
 }
 @media (max-width: 56.25em) {
@@ -1669,10 +1670,6 @@ body {
     order: 1;
     flex: 1 0 100%;
     min-height: 180px;
-    border: 1rem solid #c9c8c8;
-    border-top-left-radius: 0.5rem;
-    border-top-right-radius: 0.5rem;
-    border-bottom-left-radius: 0;
   }
 }
 @media (max-width: 46.88em) {
@@ -1728,9 +1725,6 @@ body {
   flex: 1 0 320px;
   padding: 3rem 8rem;
   position: relative;
-  border: 1rem solid #c9c8c8;
-  border-bottom-right-radius: 0.5rem;
-  border-top-right-radius: 0.5rem;
 }
 .portfolio__contBelow p {
   padding: 0 1rem;
@@ -1785,10 +1779,6 @@ body {
     order: 2;
     flex: 1 0 100%;
     padding: 3rem 4rem;
-    border: 1rem solid #c9c8c8;
-    border-bottom-right-radius: 0.5rem;
-    border-bottom-left-radius: 0.5rem;
-    border-top-right-radius: 0;
   }
   .portfolio__contBelow > :not(:last-child) {
     padding-bottom: 1rem;
