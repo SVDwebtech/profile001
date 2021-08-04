@@ -207,6 +207,9 @@ body {
 	&__paragraph {
 		color: $color-font-white;
 		font-weight: 700;
+		@include respond(phone550) {
+			text-align: center;
+		}
 	}
 }
 // topography of about-section;

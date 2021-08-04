@@ -9,7 +9,7 @@
 		justify-content: flex-start;
 		align-items: center;
 
-		@include respond(phone300and650) {
+		@include respond(phone550) {
 			justify-content: center;
 		}
 	}

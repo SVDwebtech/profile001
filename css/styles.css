@@ -314,6 +314,11 @@ body {
   color: #c9c8c8;
   font-weight: 700;
 }
+@media (max-width: 34.38em) {
+  .header__paragraph {
+    text-align: center;
+  }
+}
 
 .about__content--text {
   color: white;
@@ -1177,7 +1182,7 @@ body {
   justify-content: flex-start;
   align-items: center;
 }
-@media (max-width: 18.75em) and (min-height: 40.63em) {
+@media (max-width: 34.38em) {
   .socialMedia__linkWrapper {
     justify-content: center;
   }
