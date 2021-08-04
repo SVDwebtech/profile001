@@ -8,6 +8,10 @@
 		display: flex;
 		justify-content: flex-start;
 		align-items: center;
+
+		@include respond(phone300and650) {
+			justify-content: center;
+		}
 	}
 
 	&__linkWrapper:not(:last-child) {

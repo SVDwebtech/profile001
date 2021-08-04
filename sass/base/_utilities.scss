@@ -55,6 +55,26 @@
 	padding: 0 5rem 5rem 5rem;
 }
 
+.subsection-wrapper-portfolio {
+	// header is a flex box
+	// set width to 100% to take up all the space in a flexbox
+	// in other containers this container is a block level element and
+	// will take up all the width as a blocklevel element
+	// width: 100%;
+	padding: 0;
+}
+
+.subsection-wrapper-contact {
+	// header is a flex box
+	// set width to 100% to take up all the space in a flexbox
+	// in other containers this container is a block level element and
+	// will take up all the width as a blocklevel element
+	// width: 100%;
+	@include respond(phone300and650) {
+		padding: 0 0 5rem;
+	}
+}
+
 // classlists
 .carouselIndexColor {
 	background-color: $color-font-brightRed !important;

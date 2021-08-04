@@ -66,6 +66,9 @@
 		);
 		padding: 1rem 0rem;
 		margin-left: 2rem;
+		@include respond(phone300and650) {
+			margin-left: 1rem;
+		}
 		&:not(:last-child) {
 			margin-bottom: .2rem;
 		}
@@ -147,8 +150,7 @@
 			top: 2rem;
 			left: 18%;
 			transition: all .5s;
-		}
-		// css
+		} // css
 		&--absItem2 {
 			position: absolute;
 			top: 4.5rem;

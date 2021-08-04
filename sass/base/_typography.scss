@@ -35,6 +35,10 @@ body {
 			font-size: 4.2rem;
 		}
 
+		@include respond(phone300and650) {
+			font-size: 3.2rem;
+		}
+
 		background-image: linear-gradient(
 			to right,
 			rgba($color-font-brightRed, 1),
@@ -234,6 +238,9 @@ body {
 	font-size: 1.4rem;
 	font-weight: 700;
 	text-align: left;
+	@include respond(phone300and650) {
+		font-size: 1.2rem;
+	}
 }
 .tools__toolsList {
 	&--items {
@@ -288,10 +295,16 @@ body {
 		&--span {
 			color: $color-font-white;
 			font-size: $font-size-paragraph-small;
+			@include respond(phone300and650) {
+				font-size: 1rem;
+			}
 		}
 		&--brand {
 			color: $color-font-brightRed;
 			font-size: $font-size-paragraph-large;
+			@include respond(phone300and650) {
+				font-size: $font-size-paragraph-medium;
+			}
 		}
 	}
 }

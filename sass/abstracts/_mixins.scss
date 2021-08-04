@@ -16,6 +16,8 @@
 
 // MEDIA QUERY MANAGER
 /*
+0px			- 		300px:			Phone300
+
 0px  		-		500px:			Phone Small
 500px		- 		600px:			Phone
 600px		-		750px:			Tablet Portrait 2
@@ -31,6 +33,7 @@
 }
 
 $breakpoint argument choices
+	- phone300 and <
 	- phone small and <
 	- phone and <
 	- tablet-portrait-2 and <
@@ -43,6 +46,21 @@ ORDER: base + typography > general layout + grid > page layout > components
 */
 
 @mixin respond($breakpoint) {
+	// phone small 300px <
+	@if $breakpoint == phone300 {
+		// 300px (300/16 = 18.75)                 REMEMBER: 1em = 16px;
+		@media (max-width: 18.75em) {
+			@content;
+		}
+	}
+	// phone small 300x650 <
+	@if $breakpoint == phone300and650 {
+		// 300px (300/16 = 18.75) && 650px (650/16 = 40.63)
+		// REMEMBER: 1em = 16px;
+		@media (max-width: 18.75em) and (min-height: 40.63em) {
+			@content;
+		}
+	}
 	// phone small breakpoint
 	@if $breakpoint == phone-small {
 		// 500px (500/16 = 31.25)                 REMEMBER: 1em = 16px;
