@@ -83,11 +83,35 @@ ORDER: base + typography > general layout + grid > page layout > components
 			@content;
 		}
 	}
+	// phone small 400x800 <
+	@if $breakpoint == phone400Maxand650Max {
+		// 400px (400/16 = 25) && 650px (650/16 = 50)
+		// REMEMBER: 1em = 16px;
+		@media (max-width: 25em) and (max-height: 40.63em) {
+			@content;
+		}
+	}
+	// phone small 400x700 <
+	@if $breakpoint == phone400Maxand700Max {
+		// 400px (400/16 = 25) && 700px (700/16 = 43.75)
+		// REMEMBER: 1em = 16px;
+		@media (max-width: 25em) and (max-height: 43.75em) {
+			@content;
+		}
+	}
+	// phone small 400x800 <
+	@if $breakpoint == phone400Maxand800Max {
+		// 400px (400/16 = 25) && 800px (800/16 = 50)
+		// REMEMBER: 1em = 16px;
+		@media (max-width: 25em) and (max-height: 50em) {
+			@content;
+		}
+	}
 	// phone small 400x850 <
-	@if $breakpoint == phone400and850 {
+	@if $breakpoint == phone400Maxand850Max {
 		// 400px (400/16 = 25) && 850px (850/16 = 53.13)
 		// REMEMBER: 1em = 16px;
-		@media (max-width: 25em) and (min-height: 53.13em) {
+		@media (max-width: 25em) and (max-height: 53.13em) {
 			@content;
 		}
 	}

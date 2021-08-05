@@ -116,6 +116,10 @@
 		min-height: 88vh;
 	}
 
+	@include respond(phone400Maxand850Max) {
+		min-height: 90vh;
+	}
+
 	padding-top: 4rem;
 
 	&__content {
