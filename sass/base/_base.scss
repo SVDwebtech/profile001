@@ -54,7 +54,7 @@ html {
 	}
 
 	@include respond(phone350) {
-		font-size: 42%; // 1rem = 7px  -->  6.72/16 *100 = 42%
+		font-size: 42%; // 1rem = 6.72px  -->  6.72/16 *100 = 42%
 	}
 
 	@include respond(phone300) {

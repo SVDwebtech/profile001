@@ -16,9 +16,22 @@
 			top: 5rem;
 			right: 35%;
 			z-index: 120;
+
 			@include respond(tablet-portrait-2) {
 				width: 16rem;
 				right: 45%;
+			}
+
+			@include respond(phone550Maxand750Max) {
+				width: 16rem;
+				right: 29%;
+				top: -7rem;
+			}
+
+			@include respond(phone500Maxand860Max) {
+				width: 16rem;
+				right: 45%;
+				// top: -7rem;
 			}
 		}
 
@@ -27,9 +40,16 @@
 			top: 0;
 			right: 30%;
 			z-index: 130;
+
 			@include respond(tablet-portrait-2) {
 				width: 13rem;
 				right: 42%;
+			}
+
+			@include respond(phone550Maxand750Max) {
+				width: 14rem;
+				right: 55%;
+				top: -2rem;
 			}
 		}
 
@@ -38,9 +58,16 @@
 			top: 5rem;
 			right: 0;
 			z-index: 110;
+
 			@include respond(tablet-portrait-2) {
 				width: 13rem;
 				right: 35%;
+			}
+
+			@include respond(phone550Maxand750Max) {
+				width: 11rem;
+				right: 16%;
+				top: -9rem;
 			}
 		}
 

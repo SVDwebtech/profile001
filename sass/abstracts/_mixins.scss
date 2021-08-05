@@ -121,7 +121,7 @@ ORDER: base + typography > general layout + grid > page layout > components
 		}
 	}
 	// phone small 500x860 <
-	@if $breakpoint == phone500and860 {
+	@if $breakpoint == phone500Maxand860Max {
 		// 500px (500/16 = 31.25) && 860px (860/16 = 53.75)
 		// REMEMBER: 1em = 16px;
 		@media (max-width: 31.25em) and (min-height: 53.75em) {
@@ -136,10 +136,10 @@ ORDER: base + typography > general layout + grid > page layout > components
 		}
 	}
 	// phone small 550x750 <
-	@if $breakpoint == phone550and750 {
+	@if $breakpoint == phone550Maxand750Max {
 		// 550px (550/16 = 34.38) && 750px (750/16 = 46.88)
 		// REMEMBER: 1em = 16px;
-		@media (max-width: 34.38em) and (min-height: 46.88em) {
+		@media (max-width: 34.38em) and (max-height: 46.88em) {
 			@content;
 		}
 	}
