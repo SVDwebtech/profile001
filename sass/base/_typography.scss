@@ -17,6 +17,10 @@ body {
 .heading-primary {
 	&--span {
 		font-size: $font-size-paragraph-medium;
+
+		@include respond(phone500) {
+			font-size: 2rem;
+		}
 	}
 	&--span2 {
 		color: transparent;
@@ -210,6 +214,12 @@ body {
 		@include respond(phone550) {
 			text-align: center;
 		}
+		@include respond(phone500) {
+			font-size: 2rem;
+		}
+	}
+	.socialMedia__icon {
+		font-size: 4rem;
 	}
 }
 // topography of about-section;

@@ -68,6 +68,21 @@ ORDER: base + typography > general layout + grid > page layout > components
 			@content;
 		}
 	}
+	// phone small 500px <
+	@if $breakpoint == phone500 {
+		// 500px (500/16 = 34.38)                 REMEMBER: 1em = 16px;
+		@media (max-width: 31.25em) {
+			@content;
+		}
+	}
+	// phone small 500x860 <
+	@if $breakpoint == phone500and860 {
+		// 500px (500/16 = 31.25) && 860px (860/16 = 53.75)
+		// REMEMBER: 1em = 16px;
+		@media (max-width: 31.25em) and (min-height: 53.75em) {
+			@content;
+		}
+	}
 	// phone small 550px <
 	@if $breakpoint == phone550 {
 		// 550px (550/16 = 34.38)                 REMEMBER: 1em = 16px;
