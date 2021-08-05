@@ -50,7 +50,7 @@ html {
 	}
 
 	@include respond(phone400) {
-		font-size: 53.13%; // 1rem = 8.2px  -->  8.2/16 *100 = 51.25%
+		font-size: 47%; // 1rem = 7.52px  -->  7.52/16 *100 = 51.25%
 	}
 
 	@include respond(big-desktop) {
