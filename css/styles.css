@@ -842,10 +842,11 @@ body {
     top: -7rem;
   }
 }
-@media (max-width: 31.25em) and (min-height: 53.75em) {
+@media (max-width: 31.25em) and (max-height: 53.75em) {
   .img-comp__img--schalk {
     width: 16rem;
-    right: 45%;
+    right: 29%;
+    top: 0rem;
   }
 }
 .img-comp__img--family {
@@ -867,6 +868,13 @@ body {
     top: -2rem;
   }
 }
+@media (max-width: 31.25em) and (max-height: 53.75em) {
+  .img-comp__img--family {
+    width: 14rem;
+    right: 55%;
+    top: 5rem;
+  }
+}
 .img-comp__img--potjiekos {
   width: 20rem;
   top: 5rem;
@@ -884,6 +892,13 @@ body {
     width: 11rem;
     right: 16%;
     top: -9rem;
+  }
+}
+@media (max-width: 31.25em) and (max-height: 53.75em) {
+  .img-comp__img--potjiekos {
+    width: 11rem;
+    right: 16%;
+    top: -4rem;
   }
 }
 .img-comp__img:hover {
@@ -1557,6 +1572,11 @@ body {
 @media (max-width: 18.75em) and (min-height: 40.63em) {
   .about {
     min-height: 100vh;
+  }
+}
+@media (max-width: 31.25em) and (max-height: 53.75em) {
+  .about {
+    min-height: 88vh;
   }
 }
 .about__content {

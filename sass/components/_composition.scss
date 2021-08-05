@@ -30,8 +30,8 @@
 
 			@include respond(phone500Maxand860Max) {
 				width: 16rem;
-				right: 45%;
-				// top: -7rem;
+				right: 29%;
+				top: 0rem;
 			}
 		}
 
@@ -51,6 +51,12 @@
 				right: 55%;
 				top: -2rem;
 			}
+
+			@include respond(phone500Maxand860Max) {
+				width: 14rem;
+				right: 55%;
+				top: 5rem;
+			}
 		}
 
 		&--potjiekos {
@@ -68,6 +74,12 @@
 				width: 11rem;
 				right: 16%;
 				top: -9rem;
+			}
+
+			@include respond(phone500Maxand860Max) {
+				width: 11rem;
+				right: 16%;
+				top: -4rem;
 			}
 		}
 

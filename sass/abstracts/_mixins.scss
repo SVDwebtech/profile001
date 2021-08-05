@@ -124,7 +124,7 @@ ORDER: base + typography > general layout + grid > page layout > components
 	@if $breakpoint == phone500Maxand860Max {
 		// 500px (500/16 = 31.25) && 860px (860/16 = 53.75)
 		// REMEMBER: 1em = 16px;
-		@media (max-width: 31.25em) and (min-height: 53.75em) {
+		@media (max-width: 31.25em) and (max-height: 53.75em) {
 			@content;
 		}
 	}
