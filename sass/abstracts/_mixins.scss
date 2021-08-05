@@ -98,11 +98,19 @@ ORDER: base + typography > general layout + grid > page layout > components
 			@content;
 		}
 	}
+	// phone small 450x750 <
+	@if $breakpoint == phone450Maxand750Max {
+		// 450px (450/16 = 28.13) && 750px (750/16 = 46.88)
+		// REMEMBER: 1em = 16px;
+		@media (max-width: 28.13em) and (max-height: 46.88em) {
+			@content;
+		}
+	}
 	// phone small 450x850 <
-	@if $breakpoint == phone450and850 {
+	@if $breakpoint == phone450Maxand850Max {
 		// 450px (450/16 = 28.13) && 850px (850/16 = 53.13)
 		// REMEMBER: 1em = 16px;
-		@media (max-width: 28.13em) and (min-height: 53.13em) {
+		@media (max-width: 28.13em) and (max-height: 53.13em) {
 			@content;
 		}
 	}

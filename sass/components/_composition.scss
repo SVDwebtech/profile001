@@ -33,6 +33,18 @@
 				right: 29%;
 				top: 0rem;
 			}
+
+			@include respond(phone450Maxand850Max) {
+				width: 16rem;
+				right: 23%;
+				top: 0rem;
+			}
+
+			@include respond(phone450Maxand750Max) {
+				width: 16rem;
+				right: 23%;
+				top: -5rem;
+			}
 		}
 
 		&--family {
@@ -57,6 +69,18 @@
 				right: 55%;
 				top: 5rem;
 			}
+
+			@include respond(phone450Maxand850Max) {
+				width: 14rem;
+				right: 49%;
+				top: 5rem;
+			}
+
+			@include respond(phone450Maxand750Max) {
+				width: 14rem;
+				right: 49%;
+				top: 1rem;
+			}
 		}
 
 		&--potjiekos {
@@ -80,6 +104,18 @@
 				width: 11rem;
 				right: 16%;
 				top: -4rem;
+			}
+
+			@include respond(phone450Maxand850Max) {
+				width: 11rem;
+				right: 10%;
+				top: -4rem;
+			}
+
+			@include respond(phone450Maxand750Max) {
+				width: 11rem;
+				right: 10%;
+				top: -8rem;
 			}
 		}
 
