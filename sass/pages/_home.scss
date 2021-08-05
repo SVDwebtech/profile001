@@ -77,7 +77,11 @@
 			transform: translateX(-50%);
 		}
 
-		@include respond(phone300and650) {
+		@include respond(phone500) {
+			width: 40rem;
+		}
+
+		@include respond(phone300) {
 			width: 31rem;
 		}
 	}

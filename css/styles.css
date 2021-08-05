@@ -116,6 +116,11 @@ html {
     font-size: 42.5%;
   }
 }
+@media (max-width: 31.25em) {
+  html {
+    font-size: 56.25%;
+  }
+}
 @media (min-width: 112.5em) {
   html {
     font-size: 75%;
@@ -147,6 +152,11 @@ body {
 
 .heading-primary--span {
   font-size: 1.6rem;
+}
+@media (max-width: 31.25em) {
+  .heading-primary--span {
+    font-size: 2rem;
+  }
 }
 .heading-primary--span2 {
   color: transparent;
@@ -318,6 +328,14 @@ body {
   .header__paragraph {
     text-align: center;
   }
+}
+@media (max-width: 31.25em) {
+  .header__paragraph {
+    font-size: 2rem;
+  }
+}
+.header .socialMedia__icon {
+  font-size: 4rem;
 }
 
 .about__content--text {
@@ -1380,7 +1398,7 @@ body {
 }
 @media (max-width: 34.38em) {
   .header {
-    min-height: 98vh;
+    min-height: 100vh;
   }
 }
 @media (max-width: 31.25em) {
@@ -1459,7 +1477,12 @@ body {
     transform: translateX(-50%);
   }
 }
-@media (max-width: 18.75em) and (min-height: 40.63em) {
+@media (max-width: 31.25em) {
+  .header__contentBottomLeft {
+    width: 40rem;
+  }
+}
+@media (max-width: 18.75em) {
   .header__contentBottomLeft {
     width: 31rem;
   }
