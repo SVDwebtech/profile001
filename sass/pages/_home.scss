@@ -211,13 +211,7 @@
 			}
 
 			@include respond(phone550) {
-				margin: 3rem 0 3rem;
-			}
-
-			@include respond(phone300and650) {
-				// see if the horizontal line presents well before increasing the thickness again
-				// height: 3px;
-				margin: 0;
+				margin: 0rem 0 0rem;
 			}
 		}
 	}
@@ -251,10 +245,7 @@
 			}
 
 			@include respond(phone550) {
-				margin-bottom: 3rem;
-			}
-
-			@include respond(phone300and650) {
+				width: 100%;
 				margin-bottom: 3rem;
 			}
 		}
@@ -276,11 +267,7 @@
 			}
 
 			@include respond(phone550) {
-				width: 105%;
-			}
-
-			@include respond(phone300and650) {
-				width: 130%;
+				width: 125%;
 			}
 		}
 	}
@@ -317,10 +304,7 @@
 			}
 
 			@include respond(phone550) {
-				margin-bottom: 3rem;
-			}
-
-			@include respond(phone300and650) {
+				width: 100%;
 				margin-bottom: 3rem;
 			}
 		}
@@ -342,6 +326,10 @@
 
 			@include respond(phone-small) {
 				width: 95%;
+			}
+
+			@include respond(phone550) {
+				width: 92%;
 			}
 		}
 	}

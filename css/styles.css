@@ -1832,7 +1832,7 @@ body {
 }
 @media (max-width: 34.38em) {
   .skills__content hr {
-    margin: 3rem 0 3rem;
+    margin: 0rem 0 0rem;
   }
 }
 .skills__contAbove {
@@ -1869,6 +1869,7 @@ body {
 }
 @media (max-width: 34.38em) {
   .skills__contAbove--description {
+    width: 100%;
     margin-bottom: 3rem;
   }
 }
@@ -1894,7 +1895,7 @@ body {
 }
 @media (max-width: 34.38em) {
   .skills__contAbove--carousel {
-    width: 105%;
+    width: 125%;
   }
 }
 .skills__contBelow {
@@ -1933,6 +1934,7 @@ body {
 }
 @media (max-width: 34.38em) {
   .skills__contBelow--description {
+    width: 100%;
     margin-bottom: 3rem;
   }
 }
@@ -1956,6 +1958,11 @@ body {
 @media (max-width: 31.25em) {
   .skills__contBelow--toolsContainer {
     width: 95%;
+  }
+}
+@media (max-width: 34.38em) {
+  .skills__contBelow--toolsContainer {
+    width: 92%;
   }
 }
 
