@@ -30,8 +30,8 @@
 			width: 43rem;
 		}
 
-		@include respond(phone300and650) {
-			width: 35rem;
+		@include respond(phone300) {
+			width: 40rem;
 		}
 	}
 
@@ -106,10 +106,6 @@
 
 	@include respond(phone-small) {
 		min-height: 120vh;
-	}
-
-	@include respond(phone300and650) {
-		min-height: 100vh;
 	}
 
 	@include respond(phone500Maxand860Max) {
