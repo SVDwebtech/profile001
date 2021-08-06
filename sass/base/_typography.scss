@@ -277,6 +277,9 @@ body {
 	text-align: center;
 	.paragraph {
 		font-size: 1.4rem;
+		@include respond(phone550) {
+			font-size: 1.7rem;
+		}
 	}
 }
 // topography of contact-section;
