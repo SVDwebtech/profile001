@@ -865,13 +865,6 @@ body {
     top: -5rem;
   }
 }
-<<<<<<< HEAD
-@media (max-width: 21.88em) and (max-height: 34.38em) {
-  .img-comp__img--schalk {
-    width: 16rem;
-    right: 20%;
-    top: -7rem;
-=======
 @media (max-width: 21.88em) and (max-height: 37.5em) {
   .img-comp__img--schalk {
     width: 15rem;
@@ -881,10 +874,9 @@ body {
 }
 @media (max-width: 21.88em) and (max-height: 34.38em) {
   .img-comp__img--schalk {
-    width: 14rem;
-    right: 18%;
-    top: -6rem;
->>>>>>> media-queries
+    width: 9rem;
+    right: 28%;
+    top: -5rem;
   }
 }
 .img-comp__img--family {
@@ -955,13 +947,6 @@ body {
     top: 0rem;
   }
 }
-<<<<<<< HEAD
-@media (max-width: 21.88em) and (max-height: 34.38em) {
-  .img-comp__img--family {
-    width: 14rem;
-    right: 46%;
-    top: -2rem;
-=======
 @media (max-width: 21.88em) and (max-height: 37.5em) {
   .img-comp__img--family {
     width: 12rem;
@@ -971,10 +956,9 @@ body {
 }
 @media (max-width: 21.88em) and (max-height: 34.38em) {
   .img-comp__img--family {
-    width: 11rem;
+    width: 7rem;
     right: 45%;
-    top: -1rem;
->>>>>>> media-queries
+    top: -1.5rem;
   }
 }
 .img-comp__img--potjiekos {
@@ -1045,13 +1029,6 @@ body {
     top: -9rem;
   }
 }
-<<<<<<< HEAD
-@media (max-width: 21.88em) and (max-height: 34.38em) {
-  .img-comp__img--potjiekos {
-    width: 11rem;
-    right: 9%;
-    top: -11rem;
-=======
 @media (max-width: 21.88em) and (max-height: 37.5em) {
   .img-comp__img--potjiekos {
     width: 10rem;
@@ -1061,10 +1038,9 @@ body {
 }
 @media (max-width: 21.88em) and (max-height: 34.38em) {
   .img-comp__img--potjiekos {
-    width: 9rem;
-    right: 7%;
-    top: -9rem;
->>>>>>> media-queries
+    width: 8rem;
+    right: 15%;
+    top: -8rem;
   }
 }
 .img-comp__img:hover {
