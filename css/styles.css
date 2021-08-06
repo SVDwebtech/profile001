@@ -1830,6 +1830,11 @@ body {
     margin: 8.5rem 0 2rem;
   }
 }
+@media (max-width: 34.38em) {
+  .skills__content hr {
+    margin: 3rem 0 3rem;
+  }
+}
 .skills__contAbove {
   display: flex;
   flex-direction: row;
@@ -1862,6 +1867,11 @@ body {
     order: 1;
   }
 }
+@media (max-width: 34.38em) {
+  .skills__contAbove--description {
+    margin-bottom: 3rem;
+  }
+}
 .skills__contAbove--carousel {
   width: 45%;
 }
@@ -1880,6 +1890,11 @@ body {
 @media (max-width: 31.25em) {
   .skills__contAbove--carousel {
     width: 110%;
+  }
+}
+@media (max-width: 34.38em) {
+  .skills__contAbove--carousel {
+    width: 105%;
   }
 }
 .skills__contBelow {
@@ -1914,6 +1929,11 @@ body {
     width: 75%;
     margin-bottom: 7rem;
     order: 1;
+  }
+}
+@media (max-width: 34.38em) {
+  .skills__contBelow--description {
+    margin-bottom: 3rem;
   }
 }
 .skills__contBelow--toolsContainer {
