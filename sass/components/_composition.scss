@@ -69,6 +69,12 @@
 				right: 20%;
 				top: -5rem;
 			}
+
+			@include respond(phone350Maxand550Max) {
+				width: 16rem;
+				right: 20%;
+				top: -7rem;
+			}
 		}
 
 		&--family {
@@ -129,6 +135,12 @@
 				right: 46%;
 				top: 0rem;
 			}
+
+			@include respond(phone350Maxand550Max) {
+				width: 14rem;
+				right: 46%;
+				top: -2rem;
+			}
 		}
 
 		&--potjiekos {
@@ -188,6 +200,12 @@
 				width: 11rem;
 				right: 7%;
 				top: -9rem;
+			}
+
+			@include respond(phone350Maxand550Max) {
+				width: 11rem;
+				right: 9%;
+				top: -11rem;
 			}
 		}
 
