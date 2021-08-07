@@ -98,47 +98,12 @@ html {
 }
 @media (max-width: 46.88em) {
   html {
-    font-size: 45%;
+    font-size: 46.88%;
   }
 }
 @media (max-width: 37.5em) {
   html {
     font-size: 43.75%;
-  }
-}
-@media (max-width: 34.38em) {
-  html {
-    font-size: 60%;
-  }
-}
-@media (max-width: 31.25em) {
-  html {
-    font-size: 42.5%;
-  }
-}
-@media (max-width: 31.25em) {
-  html {
-    font-size: 56.25%;
-  }
-}
-@media (max-width: 28.13em) {
-  html {
-    font-size: 53.13%;
-  }
-}
-@media (max-width: 25em) {
-  html {
-    font-size: 47%;
-  }
-}
-@media (max-width: 21.88em) {
-  html {
-    font-size: 42%;
-  }
-}
-@media (max-width: 18.75em) {
-  html {
-    font-size: 40%;
   }
 }
 @media (min-width: 112.5em) {
@@ -356,21 +321,6 @@ body {
 .about__content--text {
   color: white;
   text-align: justify;
-}
-@media (max-width: 75em) {
-  .about__content--text .paragraph {
-    font-size: 1.7rem;
-  }
-}
-@media (max-width: 56.25em) {
-  .about__content--text .paragraph {
-    font-size: 1.65rem;
-  }
-}
-@media (max-width: 46.88em) {
-  .about__content--text .paragraph {
-    font-size: 1.75rem;
-  }
 }
 
 .skills {

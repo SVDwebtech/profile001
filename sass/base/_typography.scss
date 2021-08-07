@@ -226,21 +226,6 @@ body {
 .about__content--text {
 	color: white;
 	text-align: justify;
-	@include respond(tablet-landscape) {
-		.paragraph {
-			font-size: 1.7rem;
-		}
-	}
-	@include respond(tablet-portrait) {
-		.paragraph {
-			font-size: 1.65rem;
-		}
-	}
-	@include respond(tablet-portrait-2) {
-		.paragraph {
-			font-size: 1.75rem;
-		}
-	}
 }
 // topography of skills-section;
 .skills {
