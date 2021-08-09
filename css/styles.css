@@ -136,7 +136,7 @@ body {
 }
 
 .heading-primary--span {
-  font-size: 1.6rem;
+  font-size: 1.8rem;
 }
 @media (max-width: 31.25em) {
   .heading-primary--span {
@@ -232,11 +232,11 @@ body {
 }
 
 .paragraph {
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   font-weight: 400;
 }
 .paragraph:not(:last-child) {
-  margin-bottom: 1rem;
+  margin-bottom: 0.8rem;
 }
 .paragraph__popup {
   font-size: 1.25rem;
@@ -282,7 +282,7 @@ body {
 }
 .navList__navItem--navLink {
   color: #c9c8c8;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   font-weight: 700;
   letter-spacing: 0.2rem;
   text-transform: uppercase;
@@ -294,7 +294,7 @@ body {
 }
 .hamburger__link {
   color: #c9c8c8;
-  font-size: 2rem;
+  font-size: 2.2rem;
   font-weight: 900;
   text-transform: uppercase;
   text-decoration: none;
@@ -335,7 +335,7 @@ body {
 }
 
 .tools__toolsList--items {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   font-weight: 900;
   letter-spacing: 0.28rem;
 }
@@ -364,12 +364,12 @@ body {
 
 .contact__itemsContainer--tel, .contact__itemsContainer--email {
   color: #04042e;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   font-weight: 700;
   text-decoration: none;
 }
 .contact__form--item {
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   font-weight: 700;
 }
 .contact__form--labels {
@@ -382,11 +382,11 @@ body {
 }
 .footer__paragraph--span {
   color: #c9c8c8;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
 }
 .footer__paragraph--brand {
   color: #ff0000;
-  font-size: 2rem;
+  font-size: 2.2rem;
 }
 
 .u-center-text {
@@ -592,11 +592,11 @@ body {
 }
 .card__heading--icon {
   color: #c9c8c8;
-  font-size: 2rem;
+  font-size: 2.2rem;
 }
 .card__heading--text {
   color: #c9c8c8;
-  font-size: 2rem;
+  font-size: 2.2rem;
   margin-left: 0.25rem;
 }
 .card__content {
@@ -691,7 +691,7 @@ body {
 .carousel__carouselFunction--arrowContainer {
   display: flex;
   justify-content: center;
-  font-size: 2.5rem;
+  font-size: 2.6rem;
   width: 5rem;
   backface-visibility: hidden;
   transition: all 0.15s;
