@@ -30,8 +30,12 @@
 			width: 43rem;
 		}
 
-		@include respond(phone300) {
+		@include respond(phone350) {
 			width: 40rem;
+		}
+
+		@include respond(phone300) {
+			width: 36rem;
 		}
 	}
 

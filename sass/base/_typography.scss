@@ -39,8 +39,8 @@ body {
 			font-size: 4.2rem;
 		}
 
-		@include respond(phone300and650) {
-			font-size: 3.2rem;
+		@include respond(phone300) {
+			font-size: 3.7rem;
 		}
 
 		background-image: linear-gradient(
