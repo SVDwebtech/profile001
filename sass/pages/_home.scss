@@ -297,11 +297,6 @@
 				width: 120%;
 				order: 2;
 			}
-
-			@include respond(phone350) {
-				width: 130%;
-				order: 2;
-			}
 		}
 	}
 	&__contBelow {
@@ -351,11 +346,6 @@
 				width: 90%;
 				order: 2;
 			}
-
-			@include respond(phone450) {
-				width: 100%;
-				order: 2;
-			}
 		}
 	}
 }
@@ -387,30 +377,30 @@
 
 		@include respond(tablet-portrait) {
 			flex-direction: column;
-			width: 55%;
+			width: 40rem;
 			height: auto;
 			align-self: center;
 		}
 
 		@include respond(tablet-portrait-2) {
-			width: 60%;
+			width: 42.7rem;
 		}
 
 		@include respond(phone) {
-			width: 80%;
+			width: 33rem;
 		}
 
-		@include respond(phone550) {
-			width: 70%;
-		}
+		// @include respond(phone550) {
+		// 	width: 70%;
+		// }
 
-		@include respond(phone450) {
-			width: 75%;
-		}
+		// @include respond(phone450) {
+		// 	width: 75%;
+		// }
 
-		@include respond(phone300) {
-			width: 80%;
-		}
+		// @include respond(phone300) {
+		// 	width: 80%;
+		// }
 
 		&:hover > :not(:last-child) > img {
 			transform: translate(-50%, -50%) scale(1.1);
@@ -442,7 +432,7 @@
 		@include respond(tablet-portrait) {
 			order: 1;
 			flex: 1 0 100%;
-			min-height: 180px;
+			min-height: 22vw;
 
 			// border: 5px solid $color-font-white;
 			// border-top-left-radius: $border-radius-medium;
@@ -450,20 +440,8 @@
 			// border-bottom-left-radius: 0;
 		}
 
-		@include respond(tablet-portrait-2) {
-			min-height: 200px;
-		}
-
-		@include respond(phone550) {
-			min-height: 35vw;
-		}
-
-		@include respond(phone450) {
-			min-height: 40vw;
-		}
-
-		@include respond(phone450) {
-			min-height: 45vw;
+		@include respond(phone) {
+			min-height: 18rem;
 		}
 
 		&::after {
@@ -542,30 +520,6 @@
 			}
 			@include respond(phone) {
 				max-width: 180px;
-				margin: 0 auto;
-			}
-			@include respond(phone550) {
-				max-width: 305px;
-				margin: 0 auto;
-			}
-			@include respond(phone500) {
-				max-width: 270px;
-				margin: 0 auto;
-			}
-			@include respond(phone450) {
-				max-width: 260px;
-				margin: 0 auto;
-			}
-			@include respond(phone400) {
-				max-width: 230px;
-				margin: 0 auto;
-			}
-			@include respond(phone350) {
-				max-width: 200px;
-				margin: 0 auto;
-			}
-			@include respond(phone300) {
-				max-width: 190px;
 				margin: 0 auto;
 			}
 		}

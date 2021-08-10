@@ -136,6 +136,11 @@ body {
 	font-weight: 900;
 	letter-spacing: .2rem;
 	text-transform: uppercase;
+	&--portfolio-card {
+		@include respond(phone) {
+			font-size: 1.7rem;
+		}
+	}
 }
 // topography of paragraph;
 .paragraph {
@@ -315,7 +320,7 @@ body {
 	text-align: center;
 	.paragraph {
 		font-size: 1.4rem;
-		@include respond(phone550) {
+		@include respond(phone) {
 			font-size: 1.7rem;
 		}
 	}
