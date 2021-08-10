@@ -106,22 +106,46 @@
 
 .about {
 	background-color: $color-primary-darkBlue;
-	min-height: 93vh;
+	min-height: 85vh;
+
+	@include respond(tablet-portrait-2) {
+		min-height: 90vh;
+	}
+
+	@include respond(phone) {
+		min-height: 87vh;
+	}
+
+	@include respond(phone550) {
+		min-height: 87vh;
+	}
+
+	@include respond(phone550Maxand750Max) {
+		min-height: 90vh;
+	}
+
+	@include respond(phone550Maxand600Max) {
+		min-height: 87vh;
+	}
 
 	@include respond(phone-small) {
 		min-height: 120vh;
 	}
 
 	@include respond(phone500Maxand860Max) {
-		min-height: 88vh;
+		min-height: 91vh;
 	}
 
 	@include respond(phone400Maxand850Max) {
+		min-height: 92vh;
+	}
+
+	@include respond(phone400Maxand650Max) {
 		min-height: 90vh;
 	}
 
 	@include respond(phone350Maxand550Max) {
-		min-height: 93vh;
+		min-height: 88vh;
 	}
 
 	padding-top: 4rem;
@@ -271,7 +295,7 @@
 			}
 
 			@include respond(phone550) {
-				width: 125%;
+				width: 100%;
 			}
 		}
 	}

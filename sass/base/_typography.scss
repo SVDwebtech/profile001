@@ -141,6 +141,51 @@ body {
 .paragraph {
 	font-size: $font-size-paragraph-medium;
 	font-weight: 400;
+	@include respond(tablet-landscape) {
+		font-size: 1.86rem;
+	}
+	@include respond(tablet-portrait) {
+		font-size: 2rem;
+	}
+	@include respond(phone550Maxand750Max) {
+		font-size: 2.5rem;
+	}
+	@include respond(phone550Maxand650Max) {
+		font-size: 2rem;
+	}
+	@include respond(phone500Maxand860Max) {
+		font-size: 2.8rem;
+	}
+	@include respond(phone500Maxand750Max) {
+		font-size: 2.8rem;
+	}
+	@include respond(phone500Maxand700Max) {
+		font-size: 2.4rem;
+	}
+	@include respond(phone450Maxand850Max) {
+		font-size: 2.5rem;
+	}
+	@include respond(phone450Maxand750Max) {
+		font-size: 2.4rem;
+	}
+	@include respond(phone400Maxand850Max) {
+		font-size: 2.4rem;
+	}
+	@include respond(phone400Maxand700Max) {
+		font-size: 2.1rem;
+	}
+	@include respond(phone400Maxand650Max) {
+		font-size: 2rem;
+	}
+	@include respond(phone350Maxand600Max) {
+		font-size: 1.7rem;
+	}
+	@include respond(phone350Maxand550Max) {
+		font-size: 1.6rem;
+	}
+	@include respond(phone300Maxand700Max) {
+		font-size: 1.7rem;
+	}
 	&:not(:last-child) {
 		margin-bottom: .8rem;
 	}
