@@ -1,13 +1,9 @@
 .card {
-	width: 65%;
+	width: 72%;
 	position: relative;
 	box-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.9);
 	border-radius: $border-radius-medium;
 	overflow: hidden;
-
-	@include respond(tablet-portrait) {
-		width: 72%;
-	}
 
 	&__heading-wrapper {
 		// border-top-left-radius: $border-radius-medium;

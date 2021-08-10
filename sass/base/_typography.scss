@@ -189,6 +189,14 @@ body {
 	&:not(:last-child) {
 		margin-bottom: .8rem;
 	}
+	&__card {
+		font-size: 1.6rem;
+	}
+	&__skills {
+		@include respond(tablet-portrait) {
+			font-size: 1.8rem;
+		}
+	}
 	&__popup {
 		font-size: 1.25rem;
 		font-weight: 100;
@@ -281,7 +289,7 @@ body {
 	font-size: 1.4rem;
 	font-weight: 700;
 	text-align: left;
-	@include respond(phone300and650) {
+	@include respond(phone300) {
 		font-size: 1.2rem;
 	}
 }

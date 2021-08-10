@@ -68,6 +68,15 @@
 	}
 }
 
+.subsection-wrapper-skills {
+	// header is a flex box
+	// set width to 100% to take up all the space in a flexbox
+	// in other containers this container is a block level element and
+	// will take up all the width as a blocklevel element
+	// width: 100%;
+	padding: 0 5rem 0;
+}
+
 .subsection-wrapper-portfolio {
 	// header is a flex box
 	// set width to 100% to take up all the space in a flexbox

@@ -167,6 +167,14 @@ ORDER: base + typography > general layout + grid > page layout > components
 			@content;
 		}
 	}
+	// phone small 500x650 <
+	@if $breakpoint == phone500Maxand650Max {
+		// 500px (500/16 = 31.25) && 650px (650/16 = 40.63)
+		// REMEMBER: 1em = 16px;
+		@media (max-width: 31.25em) and (max-height: 40.63em) {
+			@content;
+		}
+	}
 	// phone small 500x700 <
 	@if $breakpoint == phone500Maxand700Max {
 		// 500px (500/16 = 31.25) && 700px (700/16 = 43.75)

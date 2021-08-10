@@ -136,6 +136,10 @@
 		min-height: 91vh;
 	}
 
+	@include respond(phone500Maxand650Max) {
+		min-height: 100vh;
+	}
+
 	@include respond(phone400Maxand850Max) {
 		min-height: 92vh;
 	}
@@ -212,6 +216,10 @@
 	background-color: $color-primary-white;
 	min-height: 93vh;
 	padding-top: 4rem;
+
+	@include respond(phone500Maxand860Max) {
+		min-height: 90vh;
+	}
 	// a wrapper for all the content pertaining to skills
 	&__content {
 		display: flex;
@@ -229,7 +237,7 @@
 			@include respond(tablet-portrait-2) {
 				// see if the horizontal line presents well before increasing the thickness again
 				// height: 3px;
-				margin: 9.25rem 0 2rem;
+				margin: 0;
 			}
 			// to increase/decrease spacing around the horizontal line at smaller screen sizes
 			@include respond(phone) {
@@ -267,8 +275,8 @@
 			width: 45%;
 
 			@include respond(tablet-portrait-2) {
-				width: 75%;
-				margin-bottom: 7rem;
+				width: 100%;
+				margin-bottom: 3rem;
 				order: 1;
 			}
 
@@ -281,21 +289,18 @@
 			width: 45%;
 
 			@include respond(tablet-portrait-2) {
-				width: 65%;
+				width: 85%;
 				order: 2;
 			}
 
-			@include respond(phone) {
-				width: 75%;
+			@include respond(phone450) {
+				width: 120%;
 				order: 2;
 			}
 
-			@include respond(phone-small) {
-				width: 110%;
-			}
-
-			@include respond(phone550) {
-				width: 100%;
+			@include respond(phone350) {
+				width: 130%;
+				order: 2;
 			}
 		}
 	}
@@ -318,7 +323,7 @@
 			flex-direction: column;
 			align-items: center;
 
-			margin-top: 4.5rem;
+			margin-top: 3rem;
 		}
 
 		&--description {
@@ -326,14 +331,9 @@
 			order: 2;
 
 			@include respond(tablet-portrait-2) {
-				width: 75%;
-				margin-bottom: 7rem;
-				order: 1;
-			}
-
-			@include respond(phone550) {
 				width: 100%;
 				margin-bottom: 3rem;
+				order: 1;
 			}
 		}
 		&--toolsContainer {
@@ -343,21 +343,18 @@
 			padding: 0;
 
 			@include respond(tablet-portrait-2) {
-				width: 55%;
+				width: 65%;
 				order: 2;
 			}
 
-			@include respond(phone) {
-				width: 75%;
+			@include respond(phone450) {
+				width: 90%;
 				order: 2;
 			}
 
-			@include respond(phone-small) {
-				width: 95%;
-			}
-
-			@include respond(phone550) {
-				width: 92%;
+			@include respond(phone450) {
+				width: 100%;
+				order: 2;
 			}
 		}
 	}
