@@ -699,4 +699,17 @@
 	height: 7rem;
 	padding-top: .5rem;
 	padding-bottom: .5rem;
+
+	@include respond(phone400) {
+		&__paragraph {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+
+		&__par {
+			display: block;
+			align-self: center;
+		}
+	}
 }
