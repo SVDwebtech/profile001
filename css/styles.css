@@ -2414,6 +2414,9 @@ body {
     display: block;
     align-self: center;
   }
+  .footer__seperator {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
