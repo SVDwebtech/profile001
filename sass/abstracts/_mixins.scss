@@ -98,9 +98,9 @@ ORDER: base + typography > general layout + grid > page layout > components
 			@content;
 		}
 	}
-	// phone small 400x800 <
+	// phone small 400x650 <
 	@if $breakpoint == phone400Maxand650Max {
-		// 400px (400/16 = 25) && 650px (650/16 = 50)
+		// 400px (400/16 = 25) && 650px (650/16 = 40.63)
 		// REMEMBER: 1em = 16px;
 		@media (max-width: 25em) and (max-height: 40.63em) {
 			@content;
@@ -111,6 +111,14 @@ ORDER: base + typography > general layout + grid > page layout > components
 		// 400px (400/16 = 25) && 700px (700/16 = 43.75)
 		// REMEMBER: 1em = 16px;
 		@media (max-width: 25em) and (max-height: 43.75em) {
+			@content;
+		}
+	}
+	// phone small 400x750 <
+	@if $breakpoint == phone400Maxand750Max {
+		// 400px (400/16 = 25) && 750px (750/16 = 46.88)
+		// REMEMBER: 1em = 16px;
+		@media (max-width: 25em) and (max-height: 46.88em) {
 			@content;
 		}
 	}
