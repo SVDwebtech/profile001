@@ -1,0 +1,372 @@
+body {
+	color: $color-primary-darkBlue;
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
+	line-height: 1.6;
+	// padding for large screen sizes
+	padding: 0 2rem 2rem 2rem;
+
+	@include respond(tablet-landscape) {
+		// 0 padding on smaller screen sizes
+		// and adjust the navbar margin-left and margin-right to 0 as well
+		padding: 0;
+	}
+}
+
+// topography of heading-primary;
+.heading-primary {
+	&--span {
+		font-size: $font-size-paragraph-medium;
+
+		@include respond(phone500) {
+			font-size: 2rem;
+		}
+	}
+	&--span2 {
+		color: transparent;
+		font-size: 6rem;
+		font-weight: 900;
+
+		@include respond(tablet-landscape) {
+			font-size: 5.5rem;
+		}
+
+		@include respond(tablet-portrait) {
+			font-size: 5rem;
+		}
+
+		@include respond(phone) {
+			font-size: 4.2rem;
+		}
+
+		@include respond(phone300) {
+			font-size: 3.7rem;
+		}
+
+		background-image: linear-gradient(
+			to right,
+			rgba($color-font-brightRed, 1),
+			rgba($color-font-darkBlue, 1)
+		);
+		background-size: cover;
+		@include backgroundTextTransparent;
+	}
+}
+
+.displayNone {
+	display: none;
+}
+
+// topography of heading-secondary;
+.heading-secondary {
+	// to set text background color;
+	&--red {
+		background-image: linear-gradient(
+			to right,
+			$color-primary-brightRed,
+			$color-primary-white
+		);
+	}
+	// to set text background color;
+	&--blue {
+		background-image: linear-gradient(
+			to right,
+			$color-primary-darkBlue,
+			$color-font-default
+		);
+	}
+	// to set text background color;
+	&--redSub {
+		background-image: linear-gradient(
+			to right,
+			$color-primary-white,
+			$color-primary-brightRed
+		);
+	}
+	// to set text background color;
+	&--blueSub {
+		background-image: linear-gradient(
+			to right,
+			$color-font-default,
+			$color-primary-darkBlue
+		);
+	}
+	// topography of heading-secondary--main;
+	&--main {
+		display: block;
+		width: max-content;
+		margin: 0 auto;
+		font-size: $font-size-heading-secondary-main;
+		font-weight: 900;
+		letter-spacing: .3rem;
+		text-transform: uppercase;
+		@include backgroundTextTransparent; // to make background text color visible;
+	}
+	// topography of heading-secondary--main;
+	&--sub {
+		display: inline-block;
+		font-size: $font-size-heading-secondary-sub;
+		font-weight: 900;
+		letter-spacing: .1rem;
+		text-transform: lowercase;
+		// to make background text color visible;
+		@include backgroundTextTransparent;
+		padding: .5rem 0 .8rem 0;
+	}
+	&--mainWhiteSubBorder {
+		border-bottom: 1px solid $color-primary-darkBlue;
+	}
+	// sets top and bottom border values of heading-secondary--sub;
+	&--whiteSubBorder {
+		// border-top: 1px solid $color-primary-darkBlue;
+		border-bottom: 1px solid $color-primary-darkBlue;
+	}
+	&--mainRedSubBorder {
+		border-bottom: 1px solid $color-primary-brightRed;
+	}
+	// sets top and bottom border values of heading-secondary--sub;
+	&--redSubBorder {
+		// border-top: 1px solid $color-primary-brightRed;
+		border-bottom: 1px solid $color-primary-brightRed;
+	}
+}
+// topography of heading-tertiary;
+.heading-tertiary {
+	font-size: $font-size-heading-tertiary;
+	font-weight: 900;
+	letter-spacing: .2rem;
+	text-transform: uppercase;
+	&--portfolio-card {
+		@include respond(phone) {
+			font-size: 1.7rem;
+		}
+	}
+}
+// topography of paragraph;
+.paragraph {
+	font-size: $font-size-paragraph-medium;
+	font-weight: 400;
+	@include respond(tablet-landscape) {
+		font-size: 1.86rem;
+	}
+	@include respond(tablet-portrait) {
+		font-size: 2rem;
+	}
+	@include respond(phone550Maxand750Max) {
+		font-size: 2.5rem;
+	}
+	@include respond(phone550Maxand650Max) {
+		font-size: 2rem;
+	}
+	@include respond(phone500Maxand860Max) {
+		font-size: 2.8rem;
+	}
+	@include respond(phone500Maxand750Max) {
+		font-size: 2.8rem;
+	}
+	@include respond(phone500Maxand700Max) {
+		font-size: 2.4rem;
+	}
+	@include respond(phone450Maxand850Max) {
+		font-size: 2.5rem;
+	}
+	@include respond(phone450Maxand750Max) {
+		font-size: 2.4rem;
+	}
+	@include respond(phone400Maxand850Max) {
+		font-size: 2.4rem;
+	}
+	@include respond(phone400Maxand750Max) {
+		font-size: 2.2rem;
+	}
+	@include respond(phone400Maxand700Max) {
+		font-size: 2.1rem;
+	}
+	@include respond(phone400Maxand650Max) {
+		font-size: 2rem;
+	}
+	@include respond(phone350Maxand600Max) {
+		font-size: 1.7rem;
+	}
+	@include respond(phone350Maxand550Max) {
+		font-size: 1.6rem;
+	}
+	@include respond(phone300Maxand700Max) {
+		font-size: 1.7rem;
+	}
+	&:not(:last-child) {
+		margin-bottom: .8rem;
+	}
+	&__card {
+		font-size: 1.6rem;
+	}
+	&__skills {
+		@include respond(tablet-portrait) {
+			font-size: 1.8rem;
+		}
+	}
+	&__popup {
+		font-size: 1.25rem;
+		font-weight: 100;
+		&:not(:last-child) {
+			margin-bottom: 1rem;
+		}
+		@include respond(tablet-landscape) {
+			font-size: 1.35rem;
+		}
+		@include respond(tablet-portrait) {
+			font-size: 1.45rem;
+		}
+		@include respond(tablet-portrait-2) {
+			font-size: 1.55rem;
+		}
+		@include respond(phone) {
+			font-size: 1.35rem;
+			font-weight: 100;
+		}
+	}
+}
+// topography of navlogo;
+.navbar {
+	&__logoBox {
+		&--logoLink {
+			text-decoration: none;
+		}
+		&--logo {
+			display: inline-block;
+			color: $color-font-white;
+			font-weight: 900;
+			letter-spacing: .3rem;
+		}
+	}
+}
+// topography of navlist;
+.navList {
+	list-style: none;
+	&__navItem {
+		&--navLink {
+			color: $color-font-white;
+			font-size: $font-size-paragraph-medium;
+			font-weight: 700;
+			letter-spacing: .2rem;
+			text-transform: uppercase;
+			text-decoration: none;
+		}
+	}
+}
+// topography of hamburger menu;
+.hamburger {
+	&__item {
+		list-style: none;
+	}
+	&__link {
+		color: $color-font-white;
+		font-size: $font-size-paragraph-large;
+		font-weight: 900;
+		text-transform: uppercase;
+		text-decoration: none;
+	}
+}
+// topography of about-section;
+.header {
+	&__paragraph {
+		color: $color-font-white;
+		font-weight: 700;
+		@include respond(phone550) {
+			text-align: center;
+		}
+		@include respond(phone500) {
+			font-size: 2rem;
+		}
+	}
+	.socialMedia__icon {
+		font-size: 4rem;
+	}
+}
+// topography of about-section;
+.about__content--text {
+	color: white;
+	text-align: justify;
+}
+// topography of skills-section;
+.skills {
+	text-align: center;
+}
+.tools__navbarItem {
+	color: $color-font-darkBlue;
+	font-size: 1.4rem;
+	font-weight: 700;
+	text-align: left;
+	@include respond(phone300) {
+		font-size: 1.2rem;
+	}
+}
+.tools__toolsList {
+	&--items {
+		font-size: $font-size-paragraph-small;
+		font-weight: 900;
+		letter-spacing: .28rem;
+	}
+	&--item1 {
+		color: $color-font-white;
+	}
+	&--item2 {
+		color: $color-font-white;
+	}
+	&--item3 {
+		color: $color-font-white;
+	}
+}
+// topography of portfolio-section;
+.portfolio__contBelow {
+	color: #04042f;
+	text-align: center;
+	.paragraph {
+		font-size: 1.4rem;
+		@include respond(phone) {
+			font-size: 1.7rem;
+		}
+	}
+}
+// topography of contact-section;
+.contact {
+	&__itemsContainer {
+		&--tel,
+		&--email {
+			color: $color-primary-darkBlue;
+			font-size: $font-size-paragraph-medium;
+			font-weight: 700;
+			text-decoration: none;
+		}
+	}
+	&__form {
+		&--item {
+			font-size: $font-size-paragraph-medium;
+			font-weight: 700;
+		}
+		&--labels {
+			font-weight: 900;
+			letter-spacing: .1rem; // text-transform: uppercase;
+		}
+	}
+}
+// topography of footer-section;
+.footer {
+	&__paragraph {
+		color: $color-font-darkGrey;
+		&--span {
+			color: $color-font-white;
+			font-size: $font-size-paragraph-small;
+			@include respond(phone300and650) {
+				font-size: 1rem;
+			}
+		}
+		&--brand {
+			color: $color-font-brightRed;
+			font-size: $font-size-paragraph-large;
+			@include respond(phone300and650) {
+				font-size: $font-size-paragraph-medium;
+			}
+		}
+	}
+}

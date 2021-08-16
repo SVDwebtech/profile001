@@ -1,0 +1,22 @@
+{
+  "name": "profile001",
+  "version": "1.0.0",
+  "description": "a landing/profile page for Schalk van Dyk, a web developer",
+  "main": "app.js",
+  "scripts": {
+    "compile:sass": "sass sass/main.scss css/styles.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SVDwebtech/profile001.git"
+  },
+  "author": "Schalk van Dyk",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SVDwebtech/profile001/issues"
+  },
+  "homepage": "https://github.com/SVDwebtech/profile001#readme",
+  "devDependencies": {
+    "sass": "^1.32.12"
+  }
+}

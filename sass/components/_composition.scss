@@ -1,0 +1,323 @@
+.img-comp {
+	position: relative;
+	// no height on this element to stop bubbling effect when hovering
+	// created about__content--images as a container to use flexbox
+
+	&__img {
+		width: 18rem;
+		border: 2px solid white;
+		border-radius: 3px;
+		outline-offset: .5rem;
+		position: absolute;
+		transition: all .4s;
+
+		&--schalk {
+			width: 23rem;
+			top: 5rem;
+			right: 35%;
+			z-index: 120;
+
+			@include respond(tablet-portrait-2) {
+				width: 18rem;
+				right: 42%;
+				top: -1rem;
+			}
+
+			@include respond(phone) {
+				width: 18rem;
+				right: 42%;
+				top: 2rem;
+			}
+
+			@include respond(phone550Maxand750Max) {
+				width: 16rem;
+				right: 42%;
+				top: -1rem;
+			}
+
+			@include respond(phone500Maxand860Max) {
+				width: 18rem;
+				right: 33%;
+				top: 0rem;
+			}
+
+			@include respond(phone500Maxand750Max) {
+				width: 18rem;
+				right: 33%;
+				top: 0rem;
+			}
+
+			@include respond(phone450Maxand850Max) {
+				width: 17rem;
+				right: 29%;
+				top: 2rem;
+			}
+
+			@include respond(phone450Maxand750Max) {
+				width: 14rem;
+				right: 34%;
+				top: 0rem;
+			}
+
+			@include respond(phone400Maxand850Max) {
+				width: 17rem;
+				right: 29%;
+				top: 2rem;
+			}
+
+			@include respond(phone400Maxand800Max) {
+				width: 14rem;
+				right: 28%;
+				top: -1rem;
+			}
+
+			@include respond(phone400Maxand750Max) {
+				width: 14rem;
+				right: 28%;
+				top: -1rem;
+			}
+
+			@include respond(phone400Maxand700Max) {
+				width: 14rem;
+				right: 31%;
+				top: 0rem;
+			}
+
+			@include respond(phone400Maxand650Max) {
+				width: 12rem;
+				right: 32%;
+				top: -2rem;
+			}
+
+			@include respond(phone350Maxand600Max) {
+				width: 11rem;
+				right: 24%;
+				top: -2rem;
+			}
+
+			@include respond(phone350Maxand550Max) {
+				width: 9rem;
+				right: 33%;
+				top: -4rem;
+			}
+
+			@include respond(phone300Maxand700Max) {
+				width: 12rem;
+				right: 24%;
+				top: 2rem;
+			}
+		}
+
+		&--family {
+			width: 20rem;
+			top: 0;
+			right: 30%;
+			z-index: 130;
+
+			@include respond(tablet-portrait-2) {
+				width: 16rem;
+				right: 60%;
+				top: 4rem;
+			}
+
+			@include respond(phone) {
+				width: 16rem;
+				right: 60%;
+				top: 8rem;
+			}
+
+			@include respond(phone550Maxand750Max) {
+				width: 14rem;
+				right: 60%;
+				top: 6rem;
+			}
+
+			@include respond(phone500Maxand860Max) {
+				width: 16rem;
+				right: 55%;
+				top: 5rem;
+			}
+
+			@include respond(phone500Maxand750Max) {
+				width: 16rem;
+				right: 55%;
+				top: 5rem;
+			}
+
+			@include respond(phone450Maxand850Max) {
+				width: 16rem;
+				right: 53%;
+				top: 7rem;
+			}
+
+			@include respond(phone450Maxand750Max) {
+				width: 14rem;
+				right: 52%;
+				top: 5rem;
+			}
+
+			@include respond(phone400Maxand850Max) {
+				width: 16rem;
+				right: 53%;
+				top: 7rem;
+			}
+
+			@include respond(phone400Maxand800Max) {
+				width: 12rem;
+				right: 52%;
+				top: 4rem;
+			}
+
+			@include respond(phone400Maxand750Max) {
+				width: 12rem;
+				right: 52%;
+				top: 4rem;
+			}
+
+			@include respond(phone400Maxand700Max) {
+				width: 12rem;
+				right: 53%;
+				top: 5rem;
+			}
+
+			@include respond(phone400Maxand650Max) {
+				width: 11rem;
+				right: 51%;
+				top: 2rem;
+			}
+
+			@include respond(phone350Maxand600Max) {
+				width: 9rem;
+				right: 47%;
+				top: 2rem;
+			}
+
+			@include respond(phone350Maxand550Max) {
+				width: 7rem;
+				right: 52%;
+				top: 0rem;
+			}
+
+			@include respond(phone300Maxand700Max) {
+				width: 11rem;
+				right: 49%;
+				top: 7rem;
+			}
+		}
+
+		&--potjiekos {
+			width: 20rem;
+			top: 5rem;
+			right: 0;
+			z-index: 110;
+
+			@include respond(tablet-portrait-2) {
+				width: 15rem;
+				right: 30%;
+				top: -7rem;
+			}
+
+			@include respond(phone) {
+				width: 15rem;
+				right: 30%;
+				top: -4rem;
+			}
+
+			@include respond(phone550Maxand600Max) {
+				width: 13rem;
+				right: 30%;
+				top: -7rem;
+			}
+
+			@include respond(phone550Maxand750Max) {
+				width: 13rem;
+				right: 30%;
+				top: -7rem;
+			}
+
+			@include respond(phone500Maxand860Max) {
+				width: 15rem;
+				right: 16%;
+				top: -5rem;
+			}
+
+			@include respond(phone500Maxand750Max) {
+				width: 15rem;
+				right: 16%;
+				top: -5rem;
+			}
+
+			@include respond(phone450Maxand850Max) {
+				width: 13rem;
+				right: 14%;
+				top: -2rem;
+			}
+
+			@include respond(phone450Maxand750Max) {
+				width: 11rem;
+				right: 21%;
+				top: -4rem;
+			}
+
+			@include respond(phone400Maxand850Max) {
+				width: 13rem;
+				right: 14%;
+				top: -2rem;
+			}
+
+			@include respond(phone400Maxand800Max) {
+				width: 11rem;
+				right: 14%;
+				top: -5rem;
+			}
+
+			@include respond(phone400Maxand750Max) {
+				width: 10rem;
+				right: 14%;
+				top: -6rem;
+			}
+
+			@include respond(phone400Maxand700Max) {
+				width: 11rem;
+				right: 14%;
+				top: -4rem;
+			}
+
+			@include respond(phone400Maxand650Max) {
+				width: 9rem;
+				right: 19%;
+				top: -6rem;
+			}
+
+			@include respond(phone350Maxand600Max) {
+				width: 9rem;
+				right: 9%;
+				top: -5rem;
+			}
+
+			@include respond(phone350Maxand550Max) {
+				width: 7rem;
+				right: 20%;
+				top: -7rem;
+			}
+
+			@include respond(phone300Maxand700Max) {
+				width: 11rem;
+				right: 8%;
+				top: -4rem;
+			}
+		}
+
+		&:hover {
+			outline: .5rem solid $color-primary-brightRed;
+			transform: scale(1.05) translateY(-.5rem);
+			box-shadow: 0 0 1.5rem rgba($color-primary-white, .9),
+				0 0 7rem rgba($color-primary-darkBlue, .9);
+			z-index: 200;
+		}
+	}
+	// to select and manipulate elements that is not hovered
+	&:hover &__img:not(:hover) {
+		transform: scale(0.95);
+	}
+}

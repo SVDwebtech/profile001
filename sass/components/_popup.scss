@@ -1,0 +1,103 @@
+// popup effect when you click on learn more button in about section
+.popup {
+	height: 100vh;
+	margin: 0 2rem;
+	max-width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	background-image: linear-gradient(
+		to right bottom,
+		rgba($color-primary-brightRed, .8),
+		rgba($color-primary-darkBlue, .95)
+	);
+	background-size: cover;
+	z-index: 400;
+	// set opacity and visibility to hide it when learn more button is not clicked yet
+	// do not use display: none otherwise you will not be able to use animations on the effect
+	opacity: 0;
+	visibility: hidden;
+	transition: all .6s;
+	/* on tablet-landscape screen sizes and smaller the body margin is zero and
+		the popup should be should be adjusted accordingly */
+	@include respond(tablet-landscape) {
+		margin: 0;
+	}
+
+	&__content {
+		color: $color-primary-white;
+		text-align: justify;
+		background-color: $color-primary-darkBlue;
+		border-radius: $border-radius-small;
+		box-shadow: 0 2rem 4rem rgba($color-primary-darkBlue, .2);
+
+		position: absolute;
+		top: 55%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+
+		width: 90%;
+		padding: 2.5rem;
+
+		opacity: 0;
+		// be sure to repeat translate again as it is already in use in @include absCenter above
+		// transform: translate(-50%, -50%) scale(0.3);
+		transform: translate(-50%, -50%) scale(0.3);
+		transition: all .6s .2s;
+		// place close button (times button) in top right corner of popup content
+		.btnClose {
+			position: absolute;
+			top: 2%;
+			right: 2%;
+		}
+	}
+
+	&__img {
+		display: block;
+		height: auto;
+		border: 1px solid $color-primary-white;
+		padding: .5rem;
+		margin: .3rem;
+
+		&--1 {
+			float: left;
+			margin-right: 1.5rem;
+			width: 9rem;
+
+			@include respond(phone) {
+				width: 8rem;
+			}
+		}
+
+		&--2 {
+			float: right;
+			width: 14rem;
+			margin-left: 1.5rem;
+
+			@include respond(phone) {
+				width: 13rem;
+			}
+		}
+
+		&--3 {
+			float: left;
+			width: 13rem;
+			margin-right: 1.5rem;
+
+			@include respond(phone) {
+				width: 12rem;
+			}
+		}
+	}
+	// use target and target + content to make it visible when you click on learn more button
+	&:target {
+		opacity: 1;
+		visibility: visible;
+	}
+	// see note above
+	&:target &__content {
+		opacity: 1;
+		transform: translate(-50%, -50%) scale(1);
+	}
+}

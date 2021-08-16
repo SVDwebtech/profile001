@@ -1,0 +1,719 @@
+// /////////////////////////////////////////////////////////////////
+// HEADER
+.header {
+	background-image: linear-gradient(
+			to bottom,
+			rgba($color-primary-white, .7) 1%,
+			rgba(transparent, .1) 20% 70%,
+			rgba($color-primary-darkBlue, .9) 97%
+		),
+		url(../img/header-background-img-2000.jpg);
+	background-size: cover;
+	background-position: bottom;
+
+	position: relative;
+
+	// to position the primary-heading in the center of the page;
+	&__contentTopCenter {
+		@include absCenter;
+		width: 55rem;
+
+		@include respond(tablet-landscape) {
+			width: 50rem;
+		}
+
+		@include respond(tablet-portrait) {
+			width: 47rem;
+		}
+
+		@include respond(phone) {
+			width: 43rem;
+		}
+
+		@include respond(phone350) {
+			width: 40rem;
+		}
+
+		@include respond(phone300) {
+			width: 36rem;
+		}
+	}
+
+	&__headingPrimary {
+		border-radius: $border-radius-medium;
+		background-color: rgba($color-primary-white, .8);
+		padding: 3em 5em;
+
+		&--span {
+			display: block;
+		}
+		// animate heading;
+		&--span1 {
+			animation-name: moveInLeft;
+			animation-duration: 3s;
+			animation-timing-function: ease-out;
+		}
+		// animate heading;
+		&--span2 {
+			animation-name: rotateAndMoveInRight;
+			animation-duration: 2s;
+			animation-delay: 900ms;
+			animation-timing-function: cubic-bezier(.12, .02, .93, .9);
+			animation-fill-mode: backwards;
+		}
+		// animate heading;
+		&--span3 {
+			animation-name: moveInRight;
+			animation-duration: 3s;
+			animation-timing-function: ease-out;
+		}
+	}
+	// to position the social-media component to the bottom left of the page;
+	&__contentBottomLeft {
+		position: absolute;
+		bottom: 5rem;
+		left: 5rem;
+
+		@include respond(phone) {
+			width: 35rem;
+
+			left: 50%;
+			transform: translateX(-50%);
+		}
+
+		@include respond(phone500) {
+			width: 40rem;
+		}
+
+		@include respond(phone300) {
+			width: 31rem;
+		}
+	}
+
+	// to align the paragraph with the icons;
+	&__paragraph {
+		@include respond(phone) {
+			margin-left: 0rem;
+		}
+	}
+}
+
+// /////////////////////////////////////////////////////////////////
+// ABOUT
+.filler-and-section-wrapper-about-skills {
+	background-color: $color-primary-darkBlue;
+}
+
+.about {
+	background-color: $color-primary-darkBlue;
+	min-height: 85vh;
+
+	@include respond(tablet-portrait-2) {
+		min-height: 90vh;
+	}
+
+	@include respond(phone) {
+		min-height: 87vh;
+	}
+
+	@include respond(phone550) {
+		min-height: 87vh;
+	}
+
+	@include respond(phone550Maxand750Max) {
+		min-height: 90vh;
+	}
+
+	@include respond(phone550Maxand600Max) {
+		min-height: 87vh;
+	}
+
+	@include respond(phone-small) {
+		min-height: 120vh;
+	}
+
+	@include respond(phone500Maxand860Max) {
+		min-height: 91vh;
+	}
+
+	@include respond(phone500Maxand650Max) {
+		min-height: 100vh;
+	}
+
+	@include respond(phone400Maxand850Max) {
+		min-height: 92vh;
+	}
+
+	@include respond(phone400Maxand650Max) {
+		min-height: 90vh;
+	}
+
+	@include respond(phone350Maxand550Max) {
+		min-height: 88vh;
+	}
+
+	padding-top: 4rem;
+
+	&__content {
+		display: flex;
+		justify-content: space-evenly;
+		width: 100%;
+
+		@include respond(tablet-landscape) {
+			justify-content: space-evenly;
+		}
+		// change view to top and bottom instead side by side
+		// top to bottom better on smaller screen size
+		@include respond(tablet-portrait-2) {
+			flex-direction: column;
+		}
+
+		&--images {
+			width: 45%;
+			margin-right: 4.5rem;
+			// decrease margins on images and text containers as screen size gets smaller
+			// this helps with overall spacing and styling
+			@include respond(tablet-landscape) {
+				margin-right: 3.8rem;
+			}
+
+			@include respond(tablet-portrait) {
+				margin-right: 3.5rem;
+				width: 40%;
+			}
+			// increase width to 100% as the containers now appears on top of each other
+			@include respond(tablet-portrait-2) {
+				margin-top: 4rem;
+				width: 100%;
+				order: 2;
+			}
+		}
+		&--text {
+			width: 45%;
+			margin-left: 4.5rem;
+			// decrease margins and width on images and text containers as screen size gets smaller
+			// this helps with overall spacing and styling
+			@include respond(tablet-landscape) {
+				margin-left: 3.8rem;
+			}
+
+			@include respond(tablet-portrait) {
+				margin-left: 3.5rem;
+				min-width: 40%;
+			}
+			// increase width to 100% as the containers now appears on top of each other
+			@include respond(tablet-portrait-2) {
+				width: 100%;
+				margin: 0 auto;
+				order: 1;
+			}
+		}
+	}
+}
+// ////////////////////////////////////////////////////////////////////////////////////////
+// SKILLS
+.skills {
+	background-color: $color-primary-white;
+	min-height: 93vh;
+	padding-top: 4rem;
+
+	@include respond(phone500Maxand860Max) {
+		min-height: 90vh;
+	}
+	// a wrapper for all the content pertaining to skills
+	&__content {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		margin: 0 auto;
+		text-align: justify;
+		// a horizontal line to help seperate (visual) the two subsections of this section
+		hr {
+			border: 0;
+			height: 1px;
+			background: #333;
+			background-image: linear-gradient(to right, #ccc, #333, #ccc);
+			// to increase/decrease spacing around the horizontal line at smaller screen sizes
+			@include respond(tablet-portrait-2) {
+				// see if the horizontal line presents well before increasing the thickness again
+				// height: 3px;
+				margin: 0;
+			}
+			// to increase/decrease spacing around the horizontal line at smaller screen sizes
+			@include respond(phone) {
+				// see if the horizontal line presents well before increasing the thickness again
+				// height: 3px;
+				margin: 8.5rem 0 2rem;
+			}
+
+			@include respond(phone550) {
+				margin: 0rem 0 0rem;
+			}
+		}
+	}
+	&__contAbove {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-evenly;
+		width: 100%;
+
+		@include respond(tablet-landscape) {
+			margin-bottom: 1.2rem;
+		}
+
+		@include respond(tablet-portrait) {
+			margin-bottom: 3.5rem;
+		}
+
+		@include respond(tablet-portrait-2) {
+			// change to column style layout on smaller screen size
+			flex-direction: column;
+			align-items: center;
+		}
+
+		&--description {
+			width: 45%;
+
+			@include respond(tablet-portrait-2) {
+				width: 100%;
+				margin-bottom: 3rem;
+				order: 1;
+			}
+
+			@include respond(phone550) {
+				width: 100%;
+				margin-bottom: 3rem;
+			}
+		}
+		&--carousel {
+			width: 45%;
+
+			@include respond(tablet-portrait-2) {
+				width: 85%;
+				order: 2;
+			}
+
+			@include respond(phone450) {
+				width: 120%;
+				order: 2;
+			}
+		}
+	}
+	&__contBelow {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-evenly;
+		width: 100%;
+
+		@include respond(tablet-landscape) {
+			margin-top: 3rem;
+		}
+
+		@include respond(tablet-portrait) {
+			margin-top: 5.5rem;
+		}
+
+		@include respond(tablet-portrait-2) {
+			// change to column style layout on smaller screen size
+			flex-direction: column;
+			align-items: center;
+
+			margin-top: 3rem;
+		}
+
+		&--description {
+			width: 45%;
+			order: 2;
+
+			@include respond(tablet-portrait-2) {
+				width: 100%;
+				margin-bottom: 3rem;
+				order: 1;
+			}
+		}
+		&--toolsContainer {
+			display: flex;
+
+			width: 45%;
+			padding: 0;
+
+			@include respond(tablet-portrait-2) {
+				width: 65%;
+				order: 2;
+			}
+
+			@include respond(phone450) {
+				width: 90%;
+				order: 2;
+			}
+		}
+	}
+}
+// //////////////////////////////////////////////////////////////////////////////////
+// PORTFOLIO
+.filler-and-section-wrapper-portfolio-contact {
+	background-color: $color-primary-darkBlue;
+}
+
+.portfolio {
+	background-color: $color-primary-darkBlue;
+	min-height: 93vh;
+	padding-top: 4rem;
+	&__content {
+		display: flex;
+		width: 85%;
+		margin: 0 auto;
+
+		// set content background-color to help fix fine space
+		// between borders etc on smaller screen sizes
+		background-color: $color-font-white;
+
+		border: 5px solid $color-font-white;
+		border-radius: $border-radius-medium;
+
+		@include respond(tablet-landscape) {
+			width: 90%;
+		}
+
+		@include respond(tablet-portrait) {
+			flex-direction: column;
+			width: 40rem;
+			height: auto;
+			align-self: center;
+		}
+
+		@include respond(tablet-portrait-2) {
+			width: 42.7rem;
+		}
+
+		@include respond(phone) {
+			width: 33rem;
+		}
+
+		// @include respond(phone550) {
+		// 	width: 70%;
+		// }
+
+		// @include respond(phone450) {
+		// 	width: 75%;
+		// }
+
+		// @include respond(phone300) {
+		// 	width: 80%;
+		// }
+
+		&:hover > :not(:last-child) > img {
+			transform: translate(-50%, -50%) scale(1.1);
+		}
+
+		&:hover > ::after {
+			background-color: rgba(209, 192, 192, 0.9);
+			border-radius: 1000px;
+			transform: translate(-50%, -50%) scale(0);
+		}
+	}
+	// portfolio image container
+	&__contAbove {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex: 1 0 300px;
+
+		// set content background-color to help fix fine space
+		// between borders etc on smaller screen sizes
+		background-color: $color-primary-darkBlue;
+
+		// border: 5px solid $color-font-white;
+		// border-bottom-left-radius: $border-radius-medium;
+		// border-top-left-radius: $border-radius-medium;
+
+		position: relative;
+
+		@include respond(tablet-portrait) {
+			order: 1;
+			flex: 1 0 100%;
+			min-height: 22vw;
+
+			// border: 5px solid $color-font-white;
+			// border-top-left-radius: $border-radius-medium;
+			// border-top-right-radius: $border-radius-medium;
+			// border-bottom-left-radius: 0;
+		}
+
+		@include respond(phone) {
+			min-height: 18rem;
+		}
+
+		&::after {
+			content: "";
+			width: 75%;
+			height: 65%;
+			background-color: rgba(255, 255, 255, .85);
+
+			@include respond(tablet-portrait) {
+				width: 55%;
+				height: 60%;
+			}
+
+			@include respond(tablet-portrait-2) {
+				width: 60%;
+				height: 60%;
+			}
+
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+
+			transition: all .5s;
+		}
+
+		// image width set to 100% of the width of its container;
+		&--img {
+			width: 75%;
+			height: 65%;
+
+			@include respond(tablet-portrait) {
+				width: 55%;
+				height: 60%;
+			}
+
+			@include respond(tablet-portrait-2) {
+				width: 60%;
+				height: 60%;
+			}
+
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+
+			transition: all .5s;
+		}
+	}
+	// portfolio projectinfo container
+	&__contBelow {
+		flex: 1 0 320px;
+		padding: 3rem 8rem;
+		position: relative;
+
+		// border: 5px solid $color-font-white;
+		// border-bottom-right-radius: $border-radius-medium;
+		// border-top-right-radius: $border-radius-medium;
+
+		p {
+			padding: 0 1rem;
+			max-width: 280px;
+			margin: 0 auto;
+
+			@include respond(tablet-landscape) {
+				max-width: 230px;
+				margin: 0 auto;
+			}
+			@include respond(tablet-portrait) {
+				max-width: 200px;
+				margin: 0 auto;
+			}
+			@include respond(tablet-portrait-2) {
+				max-width: 180px;
+				margin: 0 auto;
+			}
+			@include respond(phone) {
+				max-width: 180px;
+				margin: 0 auto;
+			}
+		}
+
+		& > :not(:last-child) {
+			padding-bottom: 1.75rem;
+			margin-bottom: 1.25rem;
+			border-bottom: 1px solid #04042f;
+		}
+
+		& > :first-child {
+			border-bottom: none;
+		}
+
+		@include respond(tablet-landscape) {
+			padding: 3rem 6rem;
+		}
+
+		@include respond(tablet-portrait) {
+			order: 2;
+			flex: 1 0 100%;
+			padding: 3rem 4rem;
+
+			// border: 5px solid $color-font-white;
+			// border-bottom-right-radius: $border-radius-medium;
+			// border-bottom-left-radius: $border-radius-medium;
+			// border-top-right-radius: 0;
+
+			& > :not(:last-child) {
+				padding-bottom: 1rem;
+				margin-bottom: 1rem;
+			}
+		}
+
+		@include respond(tablet-portrait-2) {
+			padding: 3rem 7rem;
+		}
+
+		@include respond(phone) {
+			padding: 3rem 5rem;
+		}
+
+		@include respond(phone550) {
+			padding: 2rem 0rem;
+		}
+	}
+}
+// //////////////////////////////////////////////////////////////////////////////////////
+// CONTACT
+.filler-and-section-wrapper-contact {
+	background-color: $color-primary-darkBlue;
+}
+.contact {
+	background-color: $color-primary-white;
+	min-height: 93vh;
+	padding-top: 4rem;
+	&__content {
+		display: flex;
+		justify-content: space-evenly;
+
+		@include respond(tablet-portrait) {
+			flex-direction: column;
+			align-items: center;
+			width: 100%;
+		}
+	}
+
+	&__contAbove {
+		@include respond(tablet-portrait) {
+			width: 75%;
+			margin-bottom: 6rem;
+		}
+	}
+
+	&__contBelow {
+		@include respond(tablet-portrait) {
+			width: 75%;
+		}
+	}
+
+	&__itemsContainer {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		min-height: 7rem;
+		padding-left: 1rem;
+		&--tel,
+		&--email {
+			display: block;
+			transition: all .2s;
+		}
+		&--tel:hover,
+		&--email:hover {
+			color: $color-primary-brightRed;
+			font-size: 1.7rem;
+		}
+		i {
+			margin-right: 1rem;
+		}
+	}
+	&__socialMedia {
+		display: flex;
+		justify-content: flex-start;
+		padding-left: 1rem;
+		.socialMediaContact__icon {
+			color: $color-primary-darkBlue;
+		}
+		.socialMediaContact__icon:hover {
+			color: $color-primary-brightRed;
+		}
+
+		.socialMediaContact__button {
+			&,
+			&:link,
+			&:visited {
+				text-decoration: none;
+				outline: none;
+				background-color: transparent;
+				backface-visibility: hidden;
+			}
+		}
+	}
+	&__form {
+		padding-left: 1rem;
+
+		.nameAndEmail {
+			display: flex;
+			justify-content: flex-start;
+
+			@include respond(phone) {
+				flex-direction: column;
+			}
+		}
+
+		&--nameInputs {
+			flex: 1 0 95%;
+		}
+
+		&--emailInputs {
+			flex: 1 0 95%;
+		}
+
+		&--item {
+			margin-top: 1rem;
+		}
+		&--labels {
+			margin-left: .2rem;
+			margin-bottom: 5rem;
+		}
+		&--inputs {
+			display: block;
+			border: 1px solid $color-primary-darkBlue;
+			border-radius: $border-radius-small;
+			padding: .5rem .5rem;
+			margin-top: .3rem;
+			width: 95%;
+
+			@include respond(phone) {
+				width: 100%;
+			}
+		}
+		&--subject {
+			width: 100%;
+		}
+		&--message {
+			width: 100%;
+		}
+	}
+}
+// //////////////////////////////////////////////////////////////////////////////////////////////
+// FOOTER
+.footer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: $color-primary-darkBlue;
+	height: 7rem;
+	padding-top: .5rem;
+	padding-bottom: .5rem;
+
+	@include respond(phone400) {
+		&__paragraph {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+
+		&__par {
+			display: block;
+			align-self: center;
+		}
+
+		&__seperator {
+			display: none;
+		}
+	}
+}

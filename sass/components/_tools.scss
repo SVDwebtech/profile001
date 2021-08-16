@@ -1,0 +1,234 @@
+// tools description container;
+.tools {
+	display: flex;
+	justify-content: space-between;
+
+	background-image: linear-gradient(
+		to right bottom,
+		rgba($color-primary-brightRed, 1),
+		rgba($color-primary-darkBlue, 1)
+	);
+	background-size: cover;
+	border-radius: $border-radius-medium;
+	box-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.9);
+	width: 100%;
+	height: 14.5rem;
+	overflow: hidden;
+	position: relative;
+	// space at bottom of page an issue
+	@include respond(tablet-portrait) {
+		height: 17.5rem;
+	}
+	// space at bottom of page an issue
+	@include respond(tablet-landscape) {
+		height: 16.5rem;
+	}
+	// wrapper for the tools navigation in the tools card
+	&__toolsNav {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+
+		background-color: $color-grey-light-1;
+		padding: 5rem 0;
+
+		width: 50%;
+	}
+
+	&__navbar {
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+
+		transform: translateX(6.5%);
+		width: 100%;
+		padding: 0 0;
+	}
+
+	&__navbarItem {
+		// color: $color-font-darkBlue;
+		// font-size: 1.4rem;
+		// font-weight: 700;
+		// text-align: left;
+		background-color: $color-grey-light-1;
+
+		width: 95%;
+		height: 35%;
+		clip-path: polygon(
+			0 20%,
+			85% 20%,
+			85% 20%,
+			85% 50%,
+			85% 80%,
+			85% 80%,
+			0 80%
+		);
+		padding: 1rem 0rem;
+		margin-left: 2rem;
+		@include respond(phone300and650) {
+			margin-left: 1rem;
+		}
+		&:not(:last-child) {
+			margin-bottom: .2rem;
+		}
+		position: relative;
+		z-index: 50;
+		// animation of morphing arrow to right
+		transition: padding-left .8s, width .8s, clip-path 1.4s;
+		&--languages:hover > .rarr {
+			display: hidden;
+		}
+		@include respond(tablet-landscape) {
+			// morphing arrow to right on hover
+			clip-path: polygon(
+				0 20%,
+				80% 20%,
+				80% 20%,
+				80% 50%,
+				80% 80%,
+				80% 80%,
+				0 80%
+			);
+		}
+	}
+	&__navbarItem:hover {
+		// animation morphing arrow to right
+		clip-path: polygon(
+			0 20%,
+			85% 20%,
+			85% 0%,
+			100% 50%,
+			85% 100%,
+			85% 80%,
+			0 80%
+		);
+		// animation text to right
+		padding-left: 5rem;
+		// nav item animation to right
+		width: 108%;
+		@include respond(tablet-landscape) {
+			clip-path: polygon(
+				0 20%,
+				83% 20%,
+				83% 0%,
+				92% 50%,
+				83% 100%,
+				83% 80%,
+				0 80%
+			);
+		}
+	}
+	// cards placed on top of each other
+	&__toolsCard {
+		height: 100%;
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 50%;
+		&--1 {
+			z-index: 300;
+		}
+		&--2 {
+			z-index: 200;
+		}
+		&--3 {
+			z-index: 100;
+		}
+	}
+	&__toolsList {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-evenly;
+		align-items: center;
+		height: inherit;
+		position: relative;
+		// spread items accross card and animate with app.js
+		// html
+		&--absItem1 {
+			position: absolute;
+			top: 2rem;
+			left: 18%;
+			transition: all .5s;
+		} // css
+		&--absItem2 {
+			position: absolute;
+			top: 4.5rem;
+			left: 80%;
+			transition: all .5s;
+		}
+		// sass
+		&--absItem3 {
+			position: absolute;
+			top: 7.5rem;
+			left: 18%;
+			transition: all .5s;
+		}
+		// js
+		&--absItem4 {
+			position: absolute;
+			top: 12rem;
+			left: 48%;
+			transition: all .5s;
+		}
+		// git
+		&--absItem5 {
+			position: absolute;
+			top: 3rem;
+			left: 60%;
+			transition: all .5s;
+		}
+		// github
+		&--absItem6 {
+			position: absolute;
+			top: 4.5rem;
+			left: 23%;
+			transition: all .5s;
+		}
+		// npm
+		&--absItem7 {
+			position: absolute;
+			top: 7.8rem;
+			left: 75%;
+			transition: all .5s;
+		}
+		// vscode
+		&--absItem8 {
+			position: absolute;
+			top: 9.5rem;
+			left: 60%;
+			transition: all .5s;
+		}
+		// codepen
+		&--absItem9 {
+			position: absolute;
+			top: 11.8rem;
+			left: 10%;
+			transition: all .5s;
+		}
+		// bootstrap
+		&--absItem10 {
+			position: absolute;
+			top: 1rem;
+			left: 50%;
+			transition: all .5s;
+		}
+		// node
+		&--absItem11 {
+			position: absolute;
+			top: 6rem;
+			left: 52%;
+			transition: all .5s;
+		}
+		// express
+		&--absItem12 {
+			position: absolute;
+			top: 9.7rem;
+			left: 16%;
+			transition: all .5s;
+		}
+	}
+	li {
+		list-style: none;
+	}
+}

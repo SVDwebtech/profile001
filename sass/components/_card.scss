@@ -1,0 +1,103 @@
+.card {
+	width: 72%;
+	position: relative;
+	box-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.9);
+	border-radius: $border-radius-medium;
+	overflow: hidden;
+
+	&__heading-wrapper {
+		// border-top-left-radius: $border-radius-medium;
+		// border-top-right-radius: $border-radius-medium;
+		background-image: linear-gradient(
+			to right bottom,
+			rgba($color-primary-brightRed, .95),
+			rgba($color-primary-darkBlue, .95)
+		);
+		background-size: cover;
+		// clip-path: polygon(0 0, 100% 0, 100% 70%, 0 100%);
+		min-height: 4.8rem;
+
+		position: relative;
+
+		@include respond(tablet-landscape) {
+			min-height: 6.5rem;
+		}
+
+		@include respond(tablet-portrait) {
+			min-height: 7rem;
+		}
+	}
+
+	&__heading {
+		position: absolute;
+		top: 20%;
+		left: 10%;
+
+		// opacity styled in app.js from 0 to 1 and transition delayed here
+		.carouselCardHeadingIcon,
+		.carouselCardHeading {
+			transition: all .5s;
+		}
+
+		&--icon {
+			color: $color-font-white;
+			font-size: $font-size-paragraph-large;
+		}
+
+		&--text {
+			color: $color-font-white;
+			font-size: $font-size-paragraph-large;
+			margin-left: .25rem;
+		}
+	}
+
+	&__content {
+		font-weight: 400;
+		text-align: center;
+		padding: 7rem 2.5rem;
+		margin: -5rem 0 -5rem 0;
+		background-color: $color-grey-light-1;
+
+		@include respond(tablet-landscape) {
+			padding: 6.5rem 2.5rem;
+		}
+
+		@include respond(tablet-portrait) {
+			padding: 7rem 2.5rem;
+		}
+	}
+	&__button-wrapper {
+		background-image: linear-gradient(
+			to right top,
+			rgba($color-primary-brightRed, .95),
+			rgba($color-primary-darkBlue, .95)
+		);
+		background-size: cover;
+		// clip-path: polygon(0 30%, 100% 0, 100% 100%, 0 100%);
+		// border-bottom-left-radius: $border-radius-medium;
+		// border-bottom-right-radius: $border-radius-medium;
+		min-height: 4.8rem;
+		position: relative;
+
+		@include respond(tablet-landscape) {
+			min-height: 6.5rem;
+		}
+
+		@include respond(tablet-landscape) {
+			min-height: 7rem;
+		}
+	}
+
+	&__button {
+		position: absolute;
+		top: 30%;
+		right: 10%;
+	}
+
+	&__popup {
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 200;
+	}
+}

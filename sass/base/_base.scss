@@ -1,0 +1,49 @@
+// basic reset
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit;
+}
+
+html {
+	// smoothes automatic scroll when you click on a navlink
+	scroll-behavior: smooth;
+	/* 	1rem is equal to 10px */
+	/* 	because 10px / 10 is equal to 1rem */
+	/* 	therefore 30px is equal to 3rem */
+	/* 	the default font size of the browser is 16px */
+	/* 	10px / 16px *100 = 62.5% */
+	font-size: 62.5%; // 1rem = 10px
+
+	@include respond(tablet-landscape) {
+		font-size: 56.25%; // 1rem = 9px 	-->		9/16 *100 = 56.25%
+	}
+
+	@include respond(tablet-portrait) {
+		font-size: 50%; // 1rem = 8px  -->  8/16 *100 = 50%
+	}
+
+	@include respond(tablet-portrait-2) {
+		font-size: 46.88%; // 1rem = 7.5px  -->  7.5/16 *100 = 46.88%
+	}
+
+	@include respond(phone) {
+		font-size: 43.75%; // 1rem = 7px  -->  7/16 *100 = 43.75%
+	}
+
+	@include respond(big-desktop) {
+		font-size: 75%; // 1rem = 12px	-->		12/16 *100 = 75%
+	}
+}
+
+body {
+	/* This makes dealing with the sizes of elements much easier, 
+		and generally eliminates a number of pitfalls you can stumble on
+		 while laying out your content. */
+	/* The width and height properties include the content, padding, and border, 
+		but do not include the margin.  Note that padding and border will be inside 
+		of the box. */
+	box-sizing: border-box;
+}
