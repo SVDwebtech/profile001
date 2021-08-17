@@ -700,7 +700,7 @@
 	padding-top: .5rem;
 	padding-bottom: .5rem;
 
-	@include respond(phone400) {
+	@include respond(phone) {
 		&__paragraph {
 			display: flex;
 			flex-direction: column;

@@ -354,19 +354,22 @@ body {
 .footer {
 	&__paragraph {
 		color: $color-font-darkGrey;
+		font-size: $font-size-paragraph-medium;
 		&--span {
 			color: $color-font-white;
-			font-size: $font-size-paragraph-small;
-			@include respond(phone300and650) {
-				font-size: 1rem;
-			}
 		}
 		&--brand {
 			color: $color-font-brightRed;
-			font-size: $font-size-paragraph-large;
-			@include respond(phone300and650) {
-				font-size: $font-size-paragraph-medium;
+			font-size: $font-size-paragraph-xtralarge;
+			letter-spacing: 2px;
+			@include respond(phone) {
+				letter-spacing: 1px;
 			}
+		}
+	}
+	@include respond(phone) {
+		&__par {
+			font-size: 1.6rem;
 		}
 	}
 }
