@@ -350,12 +350,30 @@ body {
 			@include respond(tablet-portrait) {
 				font-size: 2rem;
 			}
+			@include respond(phone400) {
+				font-size: 1.9rem;
+			}
+			@include respond(phone350) {
+				font-size: 1.6rem;
+			}
+			@include respond(phone300) {
+				font-size: 1.55rem;
+			}
 		}
 	}
 	.socialMediaContact__icon {
 		color: $color-primary-white;
 		@include respond(tablet-portrait) {
 			font-size: 4.5rem;
+		}
+		@include respond(phone400) {
+			font-size: 4rem;
+		}
+		@include respond(phone350) {
+			font-size: 3.3rem;
+		}
+		@include respond(phone300) {
+			font-size: 3rem;
 		}
 	}
 	&__form {

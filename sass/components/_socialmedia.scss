@@ -25,5 +25,9 @@
 	&__icon:hover {
 		color: $color-primary-brightRed;
 		transform: scale(1.1);
+
+		@include respond(phone400) {
+			transform: scale(1.3);
+		}
 	}
 }
