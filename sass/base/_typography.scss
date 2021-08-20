@@ -330,13 +330,31 @@ body {
 }
 // topography of contact-section;
 .contact {
+	h3,
+	p {
+		color: $color-font-white;
+		text-align: center;
+	}
 	&__itemsContainer {
 		&--tel,
 		&--email {
-			color: $color-primary-darkBlue;
-			font-size: $font-size-paragraph-medium;
-			font-weight: 700;
+			color: $color-primary-white;
+			font-size: 1.4rem;
+			font-weight: 600;
+			text-align: center;
 			text-decoration: none;
+			@include respond(tablet-landscape) {
+				font-size: 1.5rem;
+			}
+			@include respond(tablet-portrait) {
+				font-size: 2rem;
+			}
+		}
+	}
+	.socialMediaContact__icon {
+		color: $color-primary-white;
+		@include respond(tablet-portrait) {
+			font-size: 4.5rem;
 		}
 	}
 	&__form {
@@ -345,7 +363,8 @@ body {
 			font-weight: 700;
 		}
 		&--labels {
-			font-weight: 900;
+			color: $color-primary-white;
+			font-weight: 400;
 			letter-spacing: .1rem; // text-transform: uppercase;
 		}
 	}

@@ -583,29 +583,93 @@
 		@include respond(tablet-portrait) {
 			flex-direction: column;
 			align-items: center;
+			justify-content: space-evenly;
 			width: 100%;
 		}
 	}
 
 	&__contAbove {
+		display: flex;
+		flex-direction: column;
+
+		&--telAndEmail,
+		&--socialMedia {
+			background-color: $color-primary-darkBlue;
+			border-radius: $border-radius-medium;
+			box-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.9);
+			min-height: 25vh;
+			padding: 8rem 3rem 2rem;
+
+			@include respond(tablet-portrait) {
+				min-height: 32vh;
+			}
+		}
+
+		&--telAndEmail,
+		&--socialMedia {
+			position: relative;
+
+			h3 {
+				background-color: $color-primary-darkRed;
+				border-radius: $border-radius-medium;
+				padding: 1em;
+				margin-bottom: 3rem;
+
+				position: absolute;
+				top: -2rem;
+				left: -2rem;
+			}
+		}
 		@include respond(tablet-portrait) {
-			width: 75%;
+			width: 50rem;
 			margin-bottom: 6rem;
 		}
 	}
 
 	&__contBelow {
+		background-color: $color-primary-darkBlue;
+		border-radius: $border-radius-medium;
+		box-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.9);
+		padding: 5rem 3rem 3rem;
+
+		min-height: 60.5vh;
+
+		position: relative;
+
+		h3 {
+			background-color: $color-primary-darkRed;
+			border-radius: $border-radius-medium;
+			padding: 1em;
+			margin-bottom: 3rem;
+
+			position: absolute;
+			top: -2rem;
+			left: -2rem;
+		}
+
+		@include respond(tablet-landscape) {
+			min-height: 59vh;
+		}
+
 		@include respond(tablet-portrait) {
-			width: 75%;
+			width: 50rem;
+			min-height: 55vh;
+			padding: 7rem 7rem 3rem;
 		}
 	}
 
 	&__itemsContainer {
 		display: flex;
 		flex-direction: column;
-		justify-content: space-between;
-		min-height: 7rem;
-		padding-left: 1rem;
+		justify-content: space-around;
+		height: 9vh;
+		padding-left: 0rem;
+
+		@include respond(tablet-portrait) {
+			justify-content: space-around;
+			height: 12vh;
+		}
+
 		&--tel,
 		&--email {
 			display: block;
@@ -614,7 +678,15 @@
 		&--tel:hover,
 		&--email:hover {
 			color: $color-primary-brightRed;
-			font-size: 1.7rem;
+			font-size: 1.45rem;
+
+			@include respond(tablet-landscape) {
+				font-size: 1.55rem;
+			}
+
+			@include respond(tablet-portrait) {
+				font-size: 2.1rem;
+			}
 		}
 		i {
 			margin-right: 1rem;
@@ -623,10 +695,23 @@
 	&__socialMedia {
 		display: flex;
 		justify-content: flex-start;
-		padding-left: 1rem;
-		.socialMediaContact__icon {
-			color: $color-primary-darkBlue;
+
+		@include respond(tablet-portrait) {
+			justify-content: center;
 		}
+
+		min-height: 5rem;
+		padding-left: 1rem;
+
+		.socialMedia__linkWrapper {
+			justify-content: center;
+
+			@include respond(tablet-portrait) {
+				width: 70px;
+				height: 90px;
+			}
+		}
+
 		.socialMediaContact__icon:hover {
 			color: $color-primary-brightRed;
 		}
@@ -643,7 +728,7 @@
 		}
 	}
 	&__form {
-		padding-left: 1rem;
+		padding-left: 0rem;
 
 		.nameAndEmail {
 			display: flex;
@@ -655,15 +740,15 @@
 		}
 
 		&--nameInputs {
-			flex: 1 0 95%;
+			flex: 1 0 98%;
 		}
 
 		&--emailInputs {
-			flex: 1 0 95%;
+			flex: 1 0 98%;
 		}
 
 		&--item {
-			margin-top: 1rem;
+			margin-top: 0rem;
 		}
 		&--labels {
 			margin-left: .2rem;
@@ -672,9 +757,9 @@
 		&--inputs {
 			display: block;
 			border: 1px solid $color-primary-darkBlue;
-			border-radius: $border-radius-small;
+			border-radius: $border-radius-medium;
 			padding: .5rem .5rem;
-			margin-top: .3rem;
+			margin-top: 0rem;
 			width: 95%;
 
 			@include respond(phone) {
