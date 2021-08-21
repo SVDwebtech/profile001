@@ -55,6 +55,19 @@
 	padding: 0 5rem 5rem 5rem;
 }
 
+.subsection-wrapper-header {
+	// header is a flex box
+	// set width to 100% to take up all the space in a flexbox
+	// in other containers this container is a block level element and
+	// will take up all the width as a blocklevel element
+	// width: 100%;
+	padding: 4rem 5rem 0rem 5rem;
+
+	@include respond(tablet-landscape) {
+		padding: 2rem 5rem 0rem 5rem;
+	}
+}
+
 .subsection-wrapper-about {
 	// header is a flex box
 	// set width to 100% to take up all the space in a flexbox

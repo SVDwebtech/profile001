@@ -16,10 +16,14 @@ body {
 // topography of heading-primary;
 .heading-primary {
 	&--span {
-		font-size: $font-size-paragraph-medium;
+		font-size: 1.8rem;
+
+		@include respond(tablet-landscape) {
+			font-size: 1.7rem;
+		}
 
 		@include respond(phone500) {
-			font-size: 2rem;
+			font-size: 1.65rem;
 		}
 	}
 	&--span2 {

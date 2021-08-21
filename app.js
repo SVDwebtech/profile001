@@ -92,10 +92,10 @@ window.addEventListener("resize", () => {
 // //////////////////////////////////////////////////////////////////////////////////////
 // HEADER TYPE ANIMATION
 // example strings for typewriter animation
-const stringOne = "      a Web Developer.    ";
+const stringOne = "      an excellent researcher.    ";
 const stringTwo = "      qualified by experience.    ";
-const stringThree = "      a family man.    ";
-const stringFour = "      a problem solver!    ";
+const stringThree = "      a problem solver.    ";
+const stringFour = "      a family man!    ";
 // array with all the string examples
 const arrayStringExamples = [
 	stringOne,

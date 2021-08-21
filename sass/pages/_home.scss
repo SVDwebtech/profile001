@@ -13,17 +13,29 @@
 
 	position: relative;
 
+	&__content {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+
+		height: 100vh;
+	}
+
 	// to position the primary-heading in the center of the page;
 	&__contentTopCenter {
-		@include absCenter;
-		width: 55rem;
+		width: 90rem;
 
 		@include respond(tablet-landscape) {
-			width: 50rem;
+			width: 80rem;
 		}
 
 		@include respond(tablet-portrait) {
-			width: 47rem;
+			width: 70rem;
+		}
+
+		@include respond(tablet-portrait-2) {
+			width: 60rem;
 		}
 
 		@include respond(phone) {
@@ -70,15 +82,8 @@
 	}
 	// to position the social-media component to the bottom left of the page;
 	&__contentBottomLeft {
-		position: absolute;
-		bottom: 5rem;
-		left: 5rem;
-
 		@include respond(phone) {
 			width: 35rem;
-
-			left: 50%;
-			transform: translateX(-50%);
 		}
 
 		@include respond(phone500) {
@@ -92,6 +97,7 @@
 
 	// to align the paragraph with the icons;
 	&__paragraph {
+		text-align: center;
 		@include respond(phone) {
 			margin-left: 0rem;
 		}
