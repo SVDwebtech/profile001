@@ -275,6 +275,7 @@ body {
 .header {
 	&__paragraph {
 		color: $color-font-white;
+		font-size: 2.2rem;
 		font-weight: 700;
 		@include respond(phone) {
 			text-align: center;

@@ -405,6 +405,7 @@ body {
 
 .header__paragraph {
   color: #c9c8c8;
+  font-size: 2.2rem;
   font-weight: 700;
 }
 @media (max-width: 37.5em) {
@@ -1998,10 +1999,8 @@ body {
   animation-duration: 3s;
   animation-timing-function: ease-out;
 }
-@media (max-width: 37.5em) {
-  .header__contentBottomLeft {
-    width: 35rem;
-  }
+.header__contentBottomLeft {
+  width: 35rem;
 }
 .header__paragraph {
   text-align: center;
