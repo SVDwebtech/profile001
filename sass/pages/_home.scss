@@ -39,6 +39,22 @@
 		}
 
 		@include respond(phone) {
+			width: 53rem;
+		}
+
+		@include respond(phone550) {
+			width: 50rem;
+		}
+
+		@include respond(phone500) {
+			width: 47rem;
+		}
+
+		@include respond(phone450) {
+			width: 45rem;
+		}
+
+		@include respond(phone400) {
 			width: 43rem;
 		}
 
@@ -84,14 +100,6 @@
 	&__contentBottomLeft {
 		@include respond(phone) {
 			width: 35rem;
-		}
-
-		@include respond(phone500) {
-			width: 40rem;
-		}
-
-		@include respond(phone300) {
-			width: 31rem;
 		}
 	}
 

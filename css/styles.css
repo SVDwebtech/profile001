@@ -407,19 +407,80 @@ body {
   color: #c9c8c8;
   font-weight: 700;
 }
-@media (max-width: 34.38em) {
+@media (max-width: 37.5em) {
   .header__paragraph {
     text-align: center;
+    font-size: 2.6rem;
+  }
+}
+@media (max-width: 34.38em) {
+  .header__paragraph {
+    font-size: 2.4rem;
   }
 }
 @media (max-width: 31.25em) {
   .header__paragraph {
+    font-size: 2.2rem;
+  }
+}
+@media (max-width: 28.13em) {
+  .header__paragraph {
     font-size: 2rem;
+  }
+}
+@media (max-width: 25em) {
+  .header__paragraph {
+    font-size: 1.9rem;
+  }
+}
+@media (max-width: 21.88em) {
+  .header__paragraph {
+    font-size: 1.8rem;
+  }
+}
+@media (max-width: 18.75em) {
+  .header__paragraph {
+    font-size: 1.7rem;
   }
 }
 .header .socialMedia__icon {
   color: #c9c8c8;
   font-size: 4rem;
+}
+@media (max-width: 37.5em) {
+  .header .socialMedia__icon {
+    font-size: 4rem;
+  }
+}
+@media (max-width: 34.38em) {
+  .header .socialMedia__icon {
+    font-size: 3.8rem;
+  }
+}
+@media (max-width: 31.25em) {
+  .header .socialMedia__icon {
+    font-size: 3.6rem;
+  }
+}
+@media (max-width: 28.13em) {
+  .header .socialMedia__icon {
+    font-size: 3.4rem;
+  }
+}
+@media (max-width: 25em) {
+  .header .socialMedia__icon {
+    font-size: 3.3rem;
+  }
+}
+@media (max-width: 21.88em) {
+  .header .socialMedia__icon {
+    font-size: 3.2rem;
+  }
+}
+@media (max-width: 18.75em) {
+  .header .socialMedia__icon {
+    font-size: 3.1rem;
+  }
 }
 
 .about__content--text {
@@ -1879,6 +1940,26 @@ body {
 }
 @media (max-width: 37.5em) {
   .header__contentTopCenter {
+    width: 53rem;
+  }
+}
+@media (max-width: 34.38em) {
+  .header__contentTopCenter {
+    width: 50rem;
+  }
+}
+@media (max-width: 31.25em) {
+  .header__contentTopCenter {
+    width: 47rem;
+  }
+}
+@media (max-width: 28.13em) {
+  .header__contentTopCenter {
+    width: 45rem;
+  }
+}
+@media (max-width: 25em) {
+  .header__contentTopCenter {
     width: 43rem;
   }
 }
@@ -1920,16 +2001,6 @@ body {
 @media (max-width: 37.5em) {
   .header__contentBottomLeft {
     width: 35rem;
-  }
-}
-@media (max-width: 31.25em) {
-  .header__contentBottomLeft {
-    width: 40rem;
-  }
-}
-@media (max-width: 18.75em) {
-  .header__contentBottomLeft {
-    width: 31rem;
   }
 }
 .header__paragraph {
