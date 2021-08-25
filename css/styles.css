@@ -265,6 +265,16 @@ body {
     font-size: 2.5rem;
   }
 }
+@media (max-width: 34.38em) and (max-height: 46.88em) {
+  .paragraph {
+    font-size: 2.5rem;
+  }
+}
+@media (max-width: 34.38em) and (max-height: 40.63em) {
+  .paragraph {
+    font-size: 2rem;
+  }
+}
 @media (max-width: 34.38em) and (max-height: 40.63em) {
   .paragraph {
     font-size: 2rem;
@@ -312,7 +322,7 @@ body {
 }
 @media (max-width: 25em) and (max-height: 40.63em) {
   .paragraph {
-    font-size: 2rem;
+    font-size: 1.75rem;
   }
 }
 @media (max-width: 21.88em) and (max-height: 37.5em) {
@@ -327,7 +337,7 @@ body {
 }
 @media (max-width: 18.75em) and (max-height: 43.75em) {
   .paragraph {
-    font-size: 1.7rem;
+    font-size: 1.6rem;
   }
 }
 .paragraph:not(:last-child) {
@@ -1033,6 +1043,13 @@ body {
     top: -1rem;
   }
 }
+@media (max-width: 34.38em) and (max-height: 46.88em) {
+  .img-comp__img--schalk {
+    width: 16rem;
+    right: 42%;
+    top: -1rem;
+  }
+}
 @media (max-width: 31.25em) and (max-height: 53.75em) {
   .img-comp__img--schalk {
     width: 18rem;
@@ -1114,7 +1131,7 @@ body {
   .img-comp__img--schalk {
     width: 12rem;
     right: 24%;
-    top: 2rem;
+    top: 2.5rem;
   }
 }
 .img-comp__img--family {
@@ -1135,6 +1152,13 @@ body {
     width: 16rem;
     right: 60%;
     top: 8rem;
+  }
+}
+@media (max-width: 34.38em) and (max-height: 46.88em) {
+  .img-comp__img--family {
+    width: 14rem;
+    right: 60%;
+    top: 6rem;
   }
 }
 @media (max-width: 34.38em) and (max-height: 46.88em) {
@@ -1225,7 +1249,7 @@ body {
   .img-comp__img--family {
     width: 11rem;
     right: 49%;
-    top: 7rem;
+    top: 7.5rem;
   }
 }
 .img-comp__img--potjiekos {
@@ -1249,6 +1273,20 @@ body {
   }
 }
 @media (max-width: 34.38em) and (max-height: 37.5em) {
+  .img-comp__img--potjiekos {
+    width: 13rem;
+    right: 30%;
+    top: -7rem;
+  }
+}
+@media (max-width: 34.38em) and (max-height: 37.5em) {
+  .img-comp__img--potjiekos {
+    width: 13rem;
+    right: 30%;
+    top: -7rem;
+  }
+}
+@media (max-width: 34.38em) and (max-height: 46.88em) {
   .img-comp__img--potjiekos {
     width: 13rem;
     right: 30%;
@@ -1343,7 +1381,7 @@ body {
   .img-comp__img--potjiekos {
     width: 11rem;
     right: 8%;
-    top: -4rem;
+    top: -3.5rem;
   }
 }
 .img-comp__img:hover {
@@ -2040,6 +2078,16 @@ body {
     min-height: 90vh;
   }
 }
+@media (max-width: 34.38em) and (max-height: 46.88em) {
+  .about {
+    min-height: 90vh;
+  }
+}
+@media (max-width: 34.38em) and (max-height: 37.5em) {
+  .about {
+    min-height: 87vh;
+  }
+}
 @media (max-width: 34.38em) and (max-height: 37.5em) {
   .about {
     min-height: 87vh;
@@ -2071,6 +2119,11 @@ body {
   }
 }
 @media (max-width: 21.88em) and (max-height: 34.38em) {
+  .about {
+    min-height: 88vh;
+  }
+}
+@media (max-width: 18.75em) and (max-height: 43.75em) {
   .about {
     min-height: 88vh;
   }
