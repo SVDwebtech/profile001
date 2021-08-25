@@ -265,6 +265,16 @@ body {
     font-size: 2.5rem;
   }
 }
+@media (max-width: 34.38em) and (max-height: 46.88em) {
+  .paragraph {
+    font-size: 2.5rem;
+  }
+}
+@media (max-width: 34.38em) and (max-height: 40.63em) {
+  .paragraph {
+    font-size: 2rem;
+  }
+}
 @media (max-width: 34.38em) and (max-height: 40.63em) {
   .paragraph {
     font-size: 2rem;
@@ -312,7 +322,7 @@ body {
 }
 @media (max-width: 25em) and (max-height: 40.63em) {
   .paragraph {
-    font-size: 2rem;
+    font-size: 1.75rem;
   }
 }
 @media (max-width: 21.88em) and (max-height: 37.5em) {
@@ -327,7 +337,7 @@ body {
 }
 @media (max-width: 18.75em) and (max-height: 43.75em) {
   .paragraph {
-    font-size: 1.7rem;
+    font-size: 1.6rem;
   }
 }
 .paragraph:not(:last-child) {
@@ -405,21 +415,83 @@ body {
 
 .header__paragraph {
   color: #c9c8c8;
+  font-size: 2.2rem;
   font-weight: 700;
+}
+@media (max-width: 37.5em) {
+  .header__paragraph {
+    text-align: center;
+    font-size: 2.6rem;
+  }
 }
 @media (max-width: 34.38em) {
   .header__paragraph {
-    text-align: center;
+    font-size: 2.4rem;
   }
 }
 @media (max-width: 31.25em) {
   .header__paragraph {
+    font-size: 2.2rem;
+  }
+}
+@media (max-width: 28.13em) {
+  .header__paragraph {
     font-size: 2rem;
+  }
+}
+@media (max-width: 25em) {
+  .header__paragraph {
+    font-size: 1.9rem;
+  }
+}
+@media (max-width: 21.88em) {
+  .header__paragraph {
+    font-size: 1.8rem;
+  }
+}
+@media (max-width: 18.75em) {
+  .header__paragraph {
+    font-size: 1.7rem;
   }
 }
 .header .socialMedia__icon {
   color: #c9c8c8;
   font-size: 4rem;
+}
+@media (max-width: 37.5em) {
+  .header .socialMedia__icon {
+    font-size: 4rem;
+  }
+}
+@media (max-width: 34.38em) {
+  .header .socialMedia__icon {
+    font-size: 3.8rem;
+  }
+}
+@media (max-width: 31.25em) {
+  .header .socialMedia__icon {
+    font-size: 3.6rem;
+  }
+}
+@media (max-width: 28.13em) {
+  .header .socialMedia__icon {
+    font-size: 3.4rem;
+  }
+}
+@media (max-width: 25em) {
+  .header .socialMedia__icon {
+    font-size: 3.3rem;
+  }
+}
+@media (max-width: 21.88em) {
+  .header .socialMedia__icon {
+    font-size: 3.2rem;
+  }
+}
+@media (max-width: 18.75em) {
+  .header .socialMedia__icon {
+    font-size: 3.1rem;
+  }
 }
 
 .about__content--text {
@@ -971,6 +1043,13 @@ body {
     top: -1rem;
   }
 }
+@media (max-width: 34.38em) and (max-height: 46.88em) {
+  .img-comp__img--schalk {
+    width: 16rem;
+    right: 42%;
+    top: -1rem;
+  }
+}
 @media (max-width: 31.25em) and (max-height: 53.75em) {
   .img-comp__img--schalk {
     width: 18rem;
@@ -1024,14 +1103,14 @@ body {
   .img-comp__img--schalk {
     width: 14rem;
     right: 31%;
-    top: 0rem;
+    bottom: 5rem;
   }
 }
 @media (max-width: 25em) and (max-height: 40.63em) {
   .img-comp__img--schalk {
-    width: 12rem;
+    width: 14vh;
     right: 32%;
-    top: -2rem;
+    top: -5rem;
   }
 }
 @media (max-width: 21.88em) and (max-height: 37.5em) {
@@ -1052,7 +1131,7 @@ body {
   .img-comp__img--schalk {
     width: 12rem;
     right: 24%;
-    top: 2rem;
+    top: 2.5rem;
   }
 }
 .img-comp__img--family {
@@ -1073,6 +1152,13 @@ body {
     width: 16rem;
     right: 60%;
     top: 8rem;
+  }
+}
+@media (max-width: 34.38em) and (max-height: 46.88em) {
+  .img-comp__img--family {
+    width: 14rem;
+    right: 60%;
+    top: 6rem;
   }
 }
 @media (max-width: 34.38em) and (max-height: 46.88em) {
@@ -1140,9 +1226,9 @@ body {
 }
 @media (max-width: 25em) and (max-height: 40.63em) {
   .img-comp__img--family {
-    width: 11rem;
+    width: 12vh;
     right: 51%;
-    top: 2rem;
+    top: -1rem;
   }
 }
 @media (max-width: 21.88em) and (max-height: 37.5em) {
@@ -1163,7 +1249,7 @@ body {
   .img-comp__img--family {
     width: 11rem;
     right: 49%;
-    top: 7rem;
+    top: 7.5rem;
   }
 }
 .img-comp__img--potjiekos {
@@ -1187,6 +1273,20 @@ body {
   }
 }
 @media (max-width: 34.38em) and (max-height: 37.5em) {
+  .img-comp__img--potjiekos {
+    width: 13rem;
+    right: 30%;
+    top: -7rem;
+  }
+}
+@media (max-width: 34.38em) and (max-height: 37.5em) {
+  .img-comp__img--potjiekos {
+    width: 13rem;
+    right: 30%;
+    top: -7rem;
+  }
+}
+@media (max-width: 34.38em) and (max-height: 46.88em) {
   .img-comp__img--potjiekos {
     width: 13rem;
     right: 30%;
@@ -1258,9 +1358,9 @@ body {
 }
 @media (max-width: 25em) and (max-height: 40.63em) {
   .img-comp__img--potjiekos {
-    width: 9rem;
+    width: 11vh;
     right: 19%;
-    top: -6rem;
+    top: -9rem;
   }
 }
 @media (max-width: 21.88em) and (max-height: 37.5em) {
@@ -1281,7 +1381,7 @@ body {
   .img-comp__img--potjiekos {
     width: 11rem;
     right: 8%;
-    top: -4rem;
+    top: -3.5rem;
   }
 }
 .img-comp__img:hover {
@@ -1879,6 +1979,26 @@ body {
 }
 @media (max-width: 37.5em) {
   .header__contentTopCenter {
+    width: 53rem;
+  }
+}
+@media (max-width: 34.38em) {
+  .header__contentTopCenter {
+    width: 50rem;
+  }
+}
+@media (max-width: 31.25em) {
+  .header__contentTopCenter {
+    width: 47rem;
+  }
+}
+@media (max-width: 28.13em) {
+  .header__contentTopCenter {
+    width: 45rem;
+  }
+}
+@media (max-width: 25em) {
+  .header__contentTopCenter {
     width: 43rem;
   }
 }
@@ -1917,20 +2037,8 @@ body {
   animation-duration: 3s;
   animation-timing-function: ease-out;
 }
-@media (max-width: 37.5em) {
-  .header__contentBottomLeft {
-    width: 35rem;
-  }
-}
-@media (max-width: 31.25em) {
-  .header__contentBottomLeft {
-    width: 40rem;
-  }
-}
-@media (max-width: 18.75em) {
-  .header__contentBottomLeft {
-    width: 31rem;
-  }
+.header__contentBottomLeft {
+  width: 35rem;
 }
 .header__paragraph {
   text-align: center;
@@ -1970,6 +2078,16 @@ body {
     min-height: 90vh;
   }
 }
+@media (max-width: 34.38em) and (max-height: 46.88em) {
+  .about {
+    min-height: 90vh;
+  }
+}
+@media (max-width: 34.38em) and (max-height: 37.5em) {
+  .about {
+    min-height: 87vh;
+  }
+}
 @media (max-width: 34.38em) and (max-height: 37.5em) {
   .about {
     min-height: 87vh;
@@ -2005,10 +2123,16 @@ body {
     min-height: 88vh;
   }
 }
+@media (max-width: 18.75em) and (max-height: 43.75em) {
+  .about {
+    min-height: 88vh;
+  }
+}
 .about__content {
   display: flex;
   justify-content: space-evenly;
   width: 100%;
+  position: relative;
 }
 @media (max-width: 75em) {
   .about__content {
@@ -2040,6 +2164,9 @@ body {
     margin-top: 4rem;
     width: 100%;
     order: 2;
+    position: absolute;
+    left: 0;
+    top: 50vh;
   }
 }
 .about__content--text {

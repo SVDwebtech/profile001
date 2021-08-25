@@ -187,7 +187,7 @@ body {
 		font-size: 2.1rem;
 	}
 	@include respond(phone400Maxand650Max) {
-		font-size: 2rem;
+		font-size: 1.75rem;
 	}
 	@include respond(phone350Maxand600Max) {
 		font-size: 1.7rem;
@@ -196,7 +196,7 @@ body {
 		font-size: 1.6rem;
 	}
 	@include respond(phone300Maxand700Max) {
-		font-size: 1.7rem;
+		font-size: 1.6rem;
 	}
 	&:not(:last-child) {
 		margin-bottom: .8rem;
@@ -275,17 +275,55 @@ body {
 .header {
 	&__paragraph {
 		color: $color-font-white;
+		font-size: 2.2rem;
 		font-weight: 700;
-		@include respond(phone550) {
+		@include respond(phone) {
 			text-align: center;
+			font-size: 2.6rem;
+		}
+		@include respond(phone550) {
+			font-size: 2.4rem;
 		}
 		@include respond(phone500) {
+			font-size: 2.2rem;
+		}
+		@include respond(phone450) {
 			font-size: 2rem;
+		}
+		@include respond(phone400) {
+			font-size: 1.9rem;
+		}
+		@include respond(phone350) {
+			font-size: 1.8rem;
+		}
+		@include respond(phone300) {
+			font-size: 1.7rem;
 		}
 	}
 	.socialMedia__icon {
 		color: $color-font-white;
 		font-size: 4rem;
+		@include respond(phone) {
+			font-size: 4rem;
+		}
+		@include respond(phone550) {
+			font-size: 3.8rem;
+		}
+		@include respond(phone500) {
+			font-size: 3.6rem;
+		}
+		@include respond(phone450) {
+			font-size: 3.4rem;
+		}
+		@include respond(phone400) {
+			font-size: 3.3rem;
+		}
+		@include respond(phone350) {
+			font-size: 3.2rem;
+		}
+		@include respond(phone300) {
+			font-size: 3.1rem;
+		}
 	}
 }
 // topography of about-section;
