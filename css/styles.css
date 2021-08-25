@@ -1103,14 +1103,14 @@ body {
   .img-comp__img--schalk {
     width: 14rem;
     right: 31%;
-    top: 0rem;
+    bottom: 5rem;
   }
 }
 @media (max-width: 25em) and (max-height: 40.63em) {
   .img-comp__img--schalk {
-    width: 12rem;
+    width: 14vh;
     right: 32%;
-    top: -2rem;
+    top: -5rem;
   }
 }
 @media (max-width: 21.88em) and (max-height: 37.5em) {
@@ -1226,9 +1226,9 @@ body {
 }
 @media (max-width: 25em) and (max-height: 40.63em) {
   .img-comp__img--family {
-    width: 11rem;
+    width: 12vh;
     right: 51%;
-    top: 2rem;
+    top: -1rem;
   }
 }
 @media (max-width: 21.88em) and (max-height: 37.5em) {
@@ -1358,9 +1358,9 @@ body {
 }
 @media (max-width: 25em) and (max-height: 40.63em) {
   .img-comp__img--potjiekos {
-    width: 9rem;
+    width: 11vh;
     right: 19%;
-    top: -6rem;
+    top: -9rem;
   }
 }
 @media (max-width: 21.88em) and (max-height: 37.5em) {
@@ -2132,6 +2132,7 @@ body {
   display: flex;
   justify-content: space-evenly;
   width: 100%;
+  position: relative;
 }
 @media (max-width: 75em) {
   .about__content {
@@ -2163,6 +2164,9 @@ body {
     margin-top: 4rem;
     width: 100%;
     order: 2;
+    position: absolute;
+    left: 0;
+    top: 50vh;
   }
 }
 .about__content--text {

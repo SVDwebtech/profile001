@@ -80,13 +80,13 @@
 			@include respond(phone400Maxand700Max) {
 				width: 14rem;
 				right: 31%;
-				top: 0rem;
+				bottom: 5rem;
 			}
 
 			@include respond(phone400Maxand650Max) {
-				width: 12rem;
+				width: 14vh;
 				right: 32%;
-				top: -2rem;
+				top: -5rem;
 			}
 
 			@include respond(phone350Maxand600Max) {
@@ -181,9 +181,9 @@
 			}
 
 			@include respond(phone400Maxand650Max) {
-				width: 11rem;
+				width: 12vh;
 				right: 51%;
-				top: 2rem;
+				top: -1rem;
 			}
 
 			@include respond(phone350Maxand600Max) {
@@ -284,9 +284,9 @@
 			}
 
 			@include respond(phone400Maxand650Max) {
-				width: 9rem;
+				width: 11vh;
 				right: 19%;
-				top: -6rem;
+				top: -9rem;
 			}
 
 			@include respond(phone350Maxand600Max) {
