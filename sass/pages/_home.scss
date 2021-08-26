@@ -127,9 +127,48 @@
 	@include respond(phone) {
 		min-height: 87vh;
 	}
+	//WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW
+	@include respond(phone600Maxand950Max) {
+		min-height: 92vh;
+	}
+
+	@include respond(phone600Maxand850Max) {
+		min-height: 92vh;
+	}
+
+	@include respond(phone600Maxand700Max) {
+		min-height: 90vh;
+	}
+	@include respond(phone600Maxand650Max) {
+		min-height: 87vh;
+	}
+	@include respond(phone600Maxand600Max) {
+		min-height: 87vh;
+	}
+	@include respond(phone600Maxand550Max) {
+		min-height: 85vh;
+	}
+
+	//WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW
 
 	@include respond(phone550) {
 		min-height: 87vh;
+	}
+
+	@include respond(phone550Maxand950Max) {
+		min-height: 96vh;
+	}
+
+	@include respond(phone550Maxand900Max) {
+		min-height: 95vh;
+	}
+
+	@include respond(phone550Maxand850Max) {
+		min-height: 94vh;
+	}
+
+	@include respond(phone550Maxand800Max) {
+		min-height: 92vh;
 	}
 
 	@include respond(phone550Maxand750Max) {
@@ -151,7 +190,7 @@
 	@include respond(phone500Maxand650Max) {
 		min-height: 100vh;
 	}
-
+	//WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW
 	@include respond(phone400Maxand950Max) {
 		min-height: 92vh;
 	}
@@ -163,6 +202,7 @@
 	@include respond(phone400Maxand650Max) {
 		min-height: 90vh;
 	}
+	//WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW
 
 	@include respond(phone350Maxand550Max) {
 		min-height: 88vh;
@@ -214,7 +254,81 @@
 				left: 0;
 				top: 50vh;
 			}
+			//WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW
+			@include respond(phone600Maxand950Max) {
+				top: 48vh;
+			}
 
+			@include respond(phone600Maxand900Max) {
+				top: 49vh;
+			}
+
+			@include respond(phone600Maxand850Max) {
+				top: 51vh;
+			}
+
+			@include respond(phone600Maxand800Max) {
+				top: 52vh;
+			}
+
+			@include respond(phone600Maxand750Max) {
+				top: 47vh;
+			}
+
+			@include respond(phone600Maxand700Max) {
+				top: 47vh;
+			}
+
+			@include respond(phone600Maxand650Max) {
+				top: 44vh;
+			}
+
+			@include respond(phone600Maxand600Max) {
+				top: 50vh;
+			}
+
+			@include respond(phone600Maxand550Max) {
+				top: 53vh;
+			}
+			//WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW
+			//WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW
+			@include respond(phone550Maxand950Max) {
+				top: 57vh;
+			}
+
+			@include respond(phone550Maxand900Max) {
+				top: 58vh;
+			}
+
+			@include respond(phone550Maxand850Max) {
+				top: 57vh;
+			}
+
+			@include respond(phone550Maxand800Max) {
+				top: 55vh;
+			}
+
+			@include respond(phone550Maxand750Max) {
+				top: 55vh;
+			}
+
+			@include respond(phone550Maxand700Max) {
+				top: 54vh;
+			}
+
+			@include respond(phone550Maxand650Max) {
+				top: 50vh;
+			}
+
+			@include respond(phone550Maxand600Max) {
+				top: 48vh;
+			}
+
+			@include respond(phone550Maxand550Max) {
+				top: 53vh;
+			}
+			//WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW
+			//WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW
 			@include respond(phone400Maxand950Max) {
 				top: 55vh;
 			}
@@ -250,6 +364,7 @@
 			@include respond(phone400Maxand550Max) {
 				top: 53vh;
 			}
+			//WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW
 		}
 		&--text {
 			width: 45%;
@@ -269,6 +384,9 @@
 				width: 100%;
 				margin: 0 auto;
 				order: 1;
+			}
+			@include respond(phone) {
+				width: 95%;
 			}
 		}
 	}
