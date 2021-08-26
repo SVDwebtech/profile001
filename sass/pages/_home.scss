@@ -127,6 +127,28 @@
 	@include respond(phone) {
 		min-height: 87vh;
 	}
+	//WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW
+	@include respond(phone600Maxand950Max) {
+		min-height: 92vh;
+	}
+
+	@include respond(phone600Maxand850Max) {
+		min-height: 92vh;
+	}
+
+	@include respond(phone600Maxand650Max) {
+		min-height: 90vh;
+	}
+	@include respond(phone600Maxand600Max) {
+		min-height: 90vh;
+	}
+	@include respond(phone600Maxand550Max) {
+		min-height: 90vh;
+	}
+	@include respond(phone600Maxand500Max) {
+		min-height: 90vh;
+	}
+	//WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW
 
 	@include respond(phone550) {
 		min-height: 87vh;
@@ -151,7 +173,7 @@
 	@include respond(phone500Maxand650Max) {
 		min-height: 100vh;
 	}
-
+	//WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW
 	@include respond(phone400Maxand950Max) {
 		min-height: 92vh;
 	}
@@ -163,6 +185,7 @@
 	@include respond(phone400Maxand650Max) {
 		min-height: 90vh;
 	}
+	//WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW
 
 	@include respond(phone350Maxand550Max) {
 		min-height: 88vh;
@@ -214,7 +237,44 @@
 				left: 0;
 				top: 50vh;
 			}
+			//WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW
+			@include respond(phone600Maxand950Max) {
+				top: 55vh;
+			}
 
+			@include respond(phone600Maxand900Max) {
+				top: 55vh;
+			}
+
+			@include respond(phone600Maxand850Max) {
+				top: 54vh;
+			}
+
+			@include respond(phone600Maxand800Max) {
+				top: 55vh;
+			}
+
+			@include respond(phone600Maxand750Max) {
+				top: 52vh;
+			}
+
+			@include respond(phone600Maxand700Max) {
+				top: 51vh;
+			}
+
+			@include respond(phone600Maxand650Max) {
+				top: 46vh;
+			}
+
+			@include respond(phone600Maxand600Max) {
+				top: 48vh;
+			}
+
+			@include respond(phone600Maxand550Max) {
+				top: 53vh;
+			}
+			//WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW
+			//WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW
 			@include respond(phone400Maxand950Max) {
 				top: 55vh;
 			}
@@ -250,6 +310,7 @@
 			@include respond(phone400Maxand550Max) {
 				top: 53vh;
 			}
+			//WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW
 		}
 		&--text {
 			width: 45%;
