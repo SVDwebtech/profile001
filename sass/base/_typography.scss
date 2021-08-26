@@ -177,8 +177,17 @@ body {
 	@include respond(phone450Maxand750Max) {
 		font-size: 2.4rem;
 	}
+	@include respond(phone400Maxand950Max) {
+		font-size: 2.4rem;
+	}
+	@include respond(phone400Maxand900Max) {
+		font-size: 2.4rem;
+	}
 	@include respond(phone400Maxand850Max) {
 		font-size: 2.4rem;
+	}
+	@include respond(phone400Maxand800Max) {
+		font-size: 2.2rem;
 	}
 	@include respond(phone400Maxand750Max) {
 		font-size: 2.2rem;

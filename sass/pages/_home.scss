@@ -152,6 +152,10 @@
 		min-height: 100vh;
 	}
 
+	@include respond(phone400Maxand950Max) {
+		min-height: 92vh;
+	}
+
 	@include respond(phone400Maxand850Max) {
 		min-height: 92vh;
 	}
@@ -209,6 +213,42 @@
 				position: absolute;
 				left: 0;
 				top: 50vh;
+			}
+
+			@include respond(phone400Maxand950Max) {
+				top: 55vh;
+			}
+
+			@include respond(phone400Maxand900Max) {
+				top: 55vh;
+			}
+
+			@include respond(phone400Maxand850Max) {
+				top: 57vh;
+			}
+
+			@include respond(phone400Maxand800Max) {
+				top: 53vh;
+			}
+
+			@include respond(phone400Maxand750Max) {
+				top: 58vh;
+			}
+
+			@include respond(phone400Maxand700Max) {
+				top: 57vh;
+			}
+
+			@include respond(phone400Maxand650Max) {
+				top: 50vh;
+			}
+
+			@include respond(phone400Maxand600Max) {
+				top: 52vh;
+			}
+
+			@include respond(phone400Maxand550Max) {
+				top: 53vh;
 			}
 		}
 		&--text {
