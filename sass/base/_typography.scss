@@ -156,87 +156,8 @@ body {
 	@include respond(tablet-portrait) {
 		font-size: 2rem;
 	}
-	// WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW
-	@include respond(phone600Maxand950Max) {
-		font-size: 2.9rem;
-	}
-	@include respond(phone600Maxand900Max) {
-		font-size: 2.7rem;
-	}
-	@include respond(phone600Maxand850Max) {
-		font-size: 2.5rem;
-	}
-	@include respond(phone600Maxand800Max) {
-		font-size: 2.5rem;
-	}
-	@include respond(phone600Maxand750Max) {
-		font-size: 2.2rem;
-	}
-	@include respond(phone600Maxand700Max) {
-		font-size: 2.1rem;
-	}
-	@include respond(phone600Maxand650Max) {
-		font-size: 1.9rem;
-	}
-	@include respond(phone600Maxand600Max) {
+	@include respond(phone) {
 		font-size: 1.8rem;
-	}
-	@include respond(phone600Maxand550Max) {
-		font-size: 1.8rem;
-	}
-	// WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW
-	@include respond(phone550Maxand750Max) {
-		font-size: 2.5rem;
-	}
-	@include respond(phone550Maxand650Max) {
-		font-size: 2rem;
-	}
-	@include respond(phone500Maxand860Max) {
-		font-size: 2.8rem;
-	}
-	@include respond(phone500Maxand750Max) {
-		font-size: 2.8rem;
-	}
-	@include respond(phone500Maxand700Max) {
-		font-size: 2.4rem;
-	}
-	@include respond(phone450Maxand850Max) {
-		font-size: 2.5rem;
-	}
-	@include respond(phone450Maxand750Max) {
-		font-size: 2.4rem;
-	}
-	// WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW
-	@include respond(phone400Maxand950Max) {
-		font-size: 2.4rem;
-	}
-	@include respond(phone400Maxand900Max) {
-		font-size: 2.4rem;
-	}
-	@include respond(phone400Maxand850Max) {
-		font-size: 2.4rem;
-	}
-	@include respond(phone400Maxand800Max) {
-		font-size: 2.2rem;
-	}
-	@include respond(phone400Maxand750Max) {
-		font-size: 2.2rem;
-	}
-	@include respond(phone400Maxand700Max) {
-		font-size: 2.1rem;
-	}
-	@include respond(phone400Maxand650Max) {
-		font-size: 1.75rem;
-	}
-	// WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW
-	@include respond(phone350Maxand600Max) {
-		font-size: 1.7rem;
-	}
-	@include respond(phone350Maxand550Max) {
-		font-size: 1.6rem;
-	}
-	@include respond(phone300Maxand700Max) {
-		font-size: 1.6rem;
 	}
 	&:not(:last-child) {
 		margin-bottom: .8rem;
@@ -264,6 +185,7 @@ body {
 		@include respond(tablet-portrait-2) {
 			font-size: 1.55rem;
 		}
+
 		@include respond(phone) {
 			font-size: 1.35rem;
 			font-weight: 100;
