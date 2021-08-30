@@ -377,6 +377,22 @@ ORDER: base + typography > general layout + grid > page layout > components
 			@content;
 		}
 	}
+	// phone small 450x900 <
+	@if $breakpoint == phone450Maxand900Max {
+		// 450px (450/16 = 28.13) && 900px (900/16 = 56.25)
+		// REMEMBER: 1em = 16px;
+		@media (max-width: 28.13em) and (max-height: 56.25em) {
+			@content;
+		}
+	}
+	// phone small 450x950 <
+	@if $breakpoint == phone450Maxand950Max {
+		// 450px (450/16 = 28.13) && 950px (950/16 = 59.38)
+		// REMEMBER: 1em = 16px;
+		@media (max-width: 28.13em) and (max-height: 59.38em) {
+			@content;
+		}
+	}
 	// phone small breakpoint
 	@if $breakpoint == phone-small {
 		// 500px (500/16 = 31.25)                 REMEMBER: 1em = 16px;
@@ -436,6 +452,14 @@ ORDER: base + typography > general layout + grid > page layout > components
 		// 500px (500/16 = 31.25) && 750px (750/16 = 46.88)
 		// REMEMBER: 1em = 16px;
 		@media (max-width: 31.25em) and (max-height: 46.88em) {
+			@content;
+		}
+	}
+	// phone small 500x800 <
+	@if $breakpoint == phone500Maxand800Max {
+		// 500px (500/16 = 31.25) && 800px (800/16 = 50)
+		// REMEMBER: 1em = 16px;
+		@media (max-width: 31.25em) and (max-height: 50em) {
 			@content;
 		}
 	}
