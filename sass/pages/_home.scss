@@ -156,40 +156,73 @@
 	}
 
 	@include respond(phone550Maxand950Max) {
-		min-height: 96vh;
+		min-height: 90vh;
 	}
 
 	@include respond(phone550Maxand900Max) {
-		min-height: 95vh;
-	}
-
-	@include respond(phone550Maxand850Max) {
-		min-height: 94vh;
-	}
-
-	@include respond(phone550Maxand800Max) {
 		min-height: 92vh;
 	}
 
-	@include respond(phone550Maxand750Max) {
+	@include respond(phone550Maxand850Max) {
+		min-height: 91vh;
+	}
+
+	@include respond(phone550Maxand800Max) {
 		min-height: 90vh;
+	}
+
+	@include respond(phone550Maxand750Max) {
+		min-height: 92vh;
 	}
 
 	@include respond(phone550Maxand600Max) {
 		min-height: 87vh;
 	}
 
-	@include respond(phone-small) {
-		min-height: 120vh;
+	@include respond(phone550Maxand550Max) {
+		min-height: 87vh;
 	}
 
-	@include respond(phone500Maxand860Max) {
+	//WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW
+	//WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW
+
+	@include respond(phone500Maxand950Max) {
+		min-height: 90vh;
+	}
+
+	@include respond(phone500Maxand900Max) {
 		min-height: 91vh;
 	}
 
-	@include respond(phone500Maxand650Max) {
-		min-height: 100vh;
+	@include respond(phone500Maxand850Max) {
+		min-height: 90vh;
 	}
+
+	@include respond(phone500Maxand800Max) {
+		min-height: 90vh;
+	}
+
+	@include respond(phone500Maxand750Max) {
+		min-height: 90vh;
+	}
+
+	@include respond(phone500Maxand700Max) {
+		min-height: 88vh;
+	}
+
+	@include respond(phone500Maxand650Max) {
+		min-height: 87vh;
+	}
+
+	@include respond(phone500Maxand600Max) {
+		min-height: 87vh;
+	}
+
+	@include respond(phone500Maxand550Max) {
+		min-height: 87vh;
+	}
+
+	//WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW
 	//WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW
 	@include respond(phone400Maxand950Max) {
 		min-height: 92vh;
@@ -293,7 +326,7 @@
 			//WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW
 			//WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW
 			@include respond(phone550Maxand950Max) {
-				top: 57vh;
+				top: 55vh;
 			}
 
 			@include respond(phone550Maxand900Max) {
@@ -301,7 +334,7 @@
 			}
 
 			@include respond(phone550Maxand850Max) {
-				top: 57vh;
+				top: 55vh;
 			}
 
 			@include respond(phone550Maxand800Max) {
@@ -309,7 +342,7 @@
 			}
 
 			@include respond(phone550Maxand750Max) {
-				top: 55vh;
+				top: 54vh;
 			}
 
 			@include respond(phone550Maxand700Max) {
@@ -317,15 +350,89 @@
 			}
 
 			@include respond(phone550Maxand650Max) {
-				top: 50vh;
+				top: 55vh;
 			}
 
 			@include respond(phone550Maxand600Max) {
-				top: 48vh;
+				top: 57vh;
 			}
 
 			@include respond(phone550Maxand550Max) {
+				top: 61vh;
+			}
+			//WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW
+			//WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW
+			@include respond(phone500Maxand950Max) {
+				top: 55vh;
+			}
+
+			@include respond(phone500Maxand900Max) {
+				top: 58vh;
+			}
+
+			@include respond(phone500Maxand850Max) {
+				top: 57vh;
+			}
+
+			@include respond(phone500Maxand800Max) {
+				top: 57vh;
+			}
+
+			@include respond(phone500Maxand750Max) {
+				top: 54vh;
+			}
+
+			@include respond(phone500Maxand700Max) {
+				top: 54vh;
+			}
+
+			@include respond(phone500Maxand650Max) {
 				top: 53vh;
+			}
+
+			@include respond(phone500Maxand600Max) {
+				top: 57vh;
+			}
+
+			@include respond(phone500Maxand550Max) {
+				top: 61vh;
+			}
+			//WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW
+			//WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW
+			@include respond(phone450Maxand950Max) {
+				top: 55vh;
+			}
+
+			@include respond(phone450Maxand900Max) {
+				top: 58vh;
+			}
+
+			@include respond(phone450Maxand850Max) {
+				top: 58vh;
+			}
+
+			@include respond(phone450Maxand800Max) {
+				top: 60vh;
+			}
+
+			@include respond(phone450Maxand750Max) {
+				top: 56vh;
+			}
+
+			@include respond(phone450Maxand700Max) {
+				top: 58vh;
+			}
+
+			@include respond(phone450Maxand650Max) {
+				top: 59vh;
+			}
+
+			@include respond(phone450Maxand600Max) {
+				top: 60vh;
+			}
+
+			@include respond(phone450Maxand550Max) {
+				top: 64vh;
 			}
 			//WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW
 			//WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW
