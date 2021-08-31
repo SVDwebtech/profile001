@@ -121,6 +121,11 @@ html {
     font-size: 43.75%;
   }
 }
+@media (max-width: 25em) and (max-height: 37.5em) {
+  html {
+    font-size: 40.63%;
+  }
+}
 @media (min-width: 112.5em) {
   html {
     font-size: 75%;
@@ -1228,67 +1233,67 @@ body {
     top: -12rem;
   }
 }
-@media (max-width: 28.13em) and (max-height: 59.38em) {
+@media (max-width: 25em) and (max-height: 59.38em) {
   .img-comp__img--schalk {
-    width: 16vh;
-    right: 31%;
-    top: -9rem;
+    width: 11vh;
+    right: 32%;
+    top: -14rem;
   }
 }
-@media (max-width: 28.13em) and (max-height: 56.25em) {
+@media (max-width: 25em) and (max-height: 56.25em) {
   .img-comp__img--schalk {
-    width: 15vh;
-    right: 31%;
-    top: -9rem;
+    width: 11vh;
+    right: 32%;
+    top: -14rem;
   }
 }
-@media (max-width: 28.13em) and (max-height: 53.13em) {
+@media (max-width: 25em) and (max-height: 53.13em) {
   .img-comp__img--schalk {
-    width: 14vh;
+    width: 11vh;
     right: 34%;
-    top: -8rem;
+    top: -14rem;
   }
 }
-@media (max-width: 28.13em) and (max-height: 50em) {
+@media (max-width: 25em) and (max-height: 50em) {
   .img-comp__img--schalk {
-    width: 13vh;
-    right: 35%;
-    top: -9rem;
+    width: 11vh;
+    right: 36%;
+    top: -13rem;
   }
 }
-@media (max-width: 28.13em) and (max-height: 46.88em) {
-  .img-comp__img--schalk {
-    width: 12vh;
-    right: 38%;
-    top: -9rem;
-  }
-}
-@media (max-width: 28.13em) and (max-height: 43.75em) {
+@media (max-width: 25em) and (max-height: 46.88em) {
   .img-comp__img--schalk {
     width: 10vh;
-    right: 40%;
-    top: -10rem;
+    right: 39%;
+    top: -13rem;
   }
 }
-@media (max-width: 28.13em) and (max-height: 40.63em) {
+@media (max-width: 25em) and (max-height: 43.75em) {
   .img-comp__img--schalk {
     width: 9vh;
     right: 41%;
-    top: -11rem;
+    top: -13rem;
   }
 }
-@media (max-width: 28.13em) and (max-height: 37.5em) {
+@media (max-width: 25em) and (max-height: 40.63em) {
   .img-comp__img--schalk {
     width: 8vh;
-    right: 42%;
-    top: -11rem;
+    right: 40%;
+    top: -13rem;
   }
 }
-@media (max-width: 28.13em) and (max-height: 34.38em) {
+@media (max-width: 25em) and (max-height: 37.5em) {
   .img-comp__img--schalk {
-    width: 7vh;
-    right: 43%;
+    width: 9vh;
+    right: 40%;
     top: -12rem;
+  }
+}
+@media (max-width: 25em) and (max-height: 34.38em) {
+  .img-comp__img--schalk {
+    width: 8vh;
+    right: 43%;
+    top: -11rem;
   }
 }
 @media (max-width: 21.88em) and (max-height: 37.5em) {
@@ -1447,7 +1452,7 @@ body {
 @media (max-width: 34.38em) and (max-height: 37.5em) {
   .img-comp__img--family {
     width: 9vh;
-    right: 50%;
+    right: 51%;
     top: -8rem;
   }
 }
@@ -1586,65 +1591,65 @@ body {
 }
 @media (max-width: 25em) and (max-height: 59.38em) {
   .img-comp__img--family {
-    width: 15vh;
-    right: 55%;
-    top: -2rem;
+    width: 10vh;
+    right: 54%;
+    top: -9rem;
   }
 }
 @media (max-width: 25em) and (max-height: 56.25em) {
   .img-comp__img--family {
-    width: 14vh;
-    right: 55%;
-    top: -2rem;
+    width: 10vh;
+    right: 54%;
+    top: -9rem;
   }
 }
 @media (max-width: 25em) and (max-height: 53.13em) {
   .img-comp__img--family {
-    width: 13vh;
-    right: 54%;
-    top: -2rem;
+    width: 10vh;
+    right: 52%;
+    top: -9rem;
   }
 }
 @media (max-width: 25em) and (max-height: 50em) {
   .img-comp__img--family {
-    width: 12vh;
-    right: 53%;
-    top: -4rem;
+    width: 10vh;
+    right: 52%;
+    top: -9rem;
   }
 }
 @media (max-width: 25em) and (max-height: 46.88em) {
   .img-comp__img--family {
-    width: 11vh;
+    width: 9vh;
     right: 53%;
-    top: -4rem;
+    top: -9rem;
   }
 }
 @media (max-width: 25em) and (max-height: 43.75em) {
   .img-comp__img--family {
-    width: 9vh;
-    right: 53%;
-    top: -6rem;
+    width: 8vh;
+    right: 52%;
+    top: -9rem;
   }
 }
 @media (max-width: 25em) and (max-height: 40.63em) {
   .img-comp__img--family {
-    width: 8vh;
-    right: 52%;
-    top: -8rem;
+    width: 7vh;
+    right: 50%;
+    top: -10rem;
   }
 }
 @media (max-width: 25em) and (max-height: 37.5em) {
   .img-comp__img--family {
-    width: 7vh;
-    right: 51%;
+    width: 8vh;
+    right: 50%;
     top: -8rem;
   }
 }
 @media (max-width: 25em) and (max-height: 34.38em) {
   .img-comp__img--family {
-    width: 6vh;
-    right: 50%;
-    top: -10rem;
+    width: 7vh;
+    right: 49%;
+    top: -8rem;
   }
 }
 @media (max-width: 21.88em) and (max-height: 37.5em) {
@@ -1942,64 +1947,64 @@ body {
 }
 @media (max-width: 25em) and (max-height: 59.38em) {
   .img-comp__img--potjiekos {
-    width: 15vh;
-    right: 10%;
-    top: -18rem;
+    width: 10vh;
+    right: 14%;
+    top: -20rem;
   }
 }
 @media (max-width: 25em) and (max-height: 56.25em) {
   .img-comp__img--potjiekos {
-    width: 14vh;
+    width: 10vh;
     right: 14%;
-    top: -17rem;
+    top: -20rem;
   }
 }
 @media (max-width: 25em) and (max-height: 53.13em) {
   .img-comp__img--potjiekos {
-    width: 14vh;
+    width: 10vh;
     right: 18%;
-    top: -17rem;
+    top: -20rem;
   }
 }
 @media (max-width: 25em) and (max-height: 50em) {
   .img-comp__img--potjiekos {
-    width: 13vh;
-    right: 21%;
-    top: -17rem;
+    width: 10vh;
+    right: 23%;
+    top: -19rem;
   }
 }
 @media (max-width: 25em) and (max-height: 46.88em) {
   .img-comp__img--potjiekos {
-    width: 12vh;
+    width: 9vh;
     right: 27%;
-    top: -17rem;
+    top: -19rem;
   }
 }
 @media (max-width: 25em) and (max-height: 43.75em) {
   .img-comp__img--potjiekos {
-    width: 10vh;
-    right: 31%;
-    top: -16rem;
+    width: 9vh;
+    right: 29%;
+    top: -19rem;
   }
 }
 @media (max-width: 25em) and (max-height: 40.63em) {
   .img-comp__img--potjiekos {
-    width: 9vh;
-    right: 33%;
-    top: -16rem;
+    width: 8vh;
+    right: 31%;
+    top: -18rem;
   }
 }
 @media (max-width: 25em) and (max-height: 37.5em) {
   .img-comp__img--potjiekos {
-    width: 8vh;
-    right: 35%;
-    top: -15rem;
+    width: 9vh;
+    right: 31%;
+    top: -17rem;
   }
 }
 @media (max-width: 25em) and (max-height: 34.38em) {
   .img-comp__img--potjiekos {
-    width: 7vh;
-    right: 37%;
+    width: 8vh;
+    right: 36%;
     top: -15rem;
   }
 }
@@ -2825,17 +2830,42 @@ body {
 }
 @media (max-width: 25em) and (max-height: 59.38em) {
   .about {
-    min-height: 92vh;
+    min-height: 90vh;
   }
 }
 @media (max-width: 25em) and (max-height: 53.13em) {
   .about {
-    min-height: 92vh;
+    min-height: 89vh;
+  }
+}
+@media (max-width: 25em) and (max-height: 50em) {
+  .about {
+    min-height: 89vh;
+  }
+}
+@media (max-width: 25em) and (max-height: 46.88em) {
+  .about {
+    min-height: 89vh;
+  }
+}
+@media (max-width: 25em) and (max-height: 43.75em) {
+  .about {
+    min-height: 89vh;
   }
 }
 @media (max-width: 25em) and (max-height: 40.63em) {
   .about {
-    min-height: 90vh;
+    min-height: 87vh;
+  }
+}
+@media (max-width: 25em) and (max-height: 37.5em) {
+  .about {
+    min-height: 88vh;
+  }
+}
+@media (max-width: 25em) and (max-height: 34.38em) {
+  .about {
+    min-height: 86vh;
   }
 }
 @media (max-width: 21.88em) and (max-height: 34.38em) {
@@ -3071,47 +3101,47 @@ body {
 }
 @media (max-width: 25em) and (max-height: 59.38em) {
   .about__content--images {
-    top: 55vh;
+    top: 65vh;
   }
 }
 @media (max-width: 25em) and (max-height: 56.25em) {
   .about__content--images {
-    top: 55vh;
+    top: 67vh;
   }
 }
 @media (max-width: 25em) and (max-height: 53.13em) {
   .about__content--images {
-    top: 57vh;
+    top: 63vh;
   }
 }
 @media (max-width: 25em) and (max-height: 50em) {
   .about__content--images {
-    top: 53vh;
+    top: 66vh;
   }
 }
 @media (max-width: 25em) and (max-height: 46.88em) {
   .about__content--images {
-    top: 58vh;
+    top: 63vh;
   }
 }
 @media (max-width: 25em) and (max-height: 43.75em) {
   .about__content--images {
-    top: 57vh;
+    top: 65vh;
   }
 }
 @media (max-width: 25em) and (max-height: 40.63em) {
   .about__content--images {
-    top: 50vh;
+    top: 66vh;
   }
 }
 @media (max-width: 25em) and (max-height: 37.5em) {
   .about__content--images {
-    top: 52vh;
+    top: 60vh;
   }
 }
 @media (max-width: 25em) and (max-height: 34.38em) {
   .about__content--images {
-    top: 53vh;
+    top: 63vh;
   }
 }
 .about__content--text {

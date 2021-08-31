@@ -45,6 +45,10 @@ html {
 		font-size: 43.75%; // 1rem = 7px  -->  7/16 *100 = 43.75%
 	}
 
+	@include respond(phone400Maxand600Max) {
+		font-size: 40.63%; // 1rem = 6.5px  -->  6.5/16 *100 = 40.63%
+	}
+
 	@include respond(big-desktop) {
 		font-size: 75%; // 1rem = 12px	-->		12/16 *100 = 75%
 	}
