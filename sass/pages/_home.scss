@@ -262,8 +262,12 @@
 		min-height: 90vh;
 	}
 
+	@include respond(phone350Maxand900Max) {
+		min-height: 91vh;
+	}
+
 	@include respond(phone350Maxand850Max) {
-		min-height: 89vh;
+		min-height: 90vh;
 	}
 
 	@include respond(phone350Maxand800Max) {
@@ -313,7 +317,7 @@
 	}
 
 	@include respond(phone300Maxand650Max) {
-		min-height: 87vh;
+		min-height: 89vh;
 	}
 
 	@include respond(phone300Maxand600Max) {
@@ -615,7 +619,7 @@
 			}
 
 			@include respond(phone300Maxand650Max) {
-				top: 66vh;
+				top: 69vh;
 			}
 
 			@include respond(phone300Maxand600Max) {

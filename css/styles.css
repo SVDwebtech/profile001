@@ -3208,9 +3208,14 @@ body {
     min-height: 90vh;
   }
 }
+@media (max-width: 21.88em) and (max-height: 56.25em) {
+  .about {
+    min-height: 91vh;
+  }
+}
 @media (max-width: 21.88em) and (max-height: 53.13em) {
   .about {
-    min-height: 89vh;
+    min-height: 90vh;
   }
 }
 @media (max-width: 21.88em) and (max-height: 50em) {
@@ -3270,7 +3275,7 @@ body {
 }
 @media (max-width: 18.75em) and (max-height: 40.63em) {
   .about {
-    min-height: 87vh;
+    min-height: 89vh;
   }
 }
 @media (max-width: 18.75em) and (max-height: 37.5em) {
@@ -3626,7 +3631,7 @@ body {
 }
 @media (max-width: 18.75em) and (max-height: 40.63em) {
   .about__content--images {
-    top: 66vh;
+    top: 69vh;
   }
 }
 @media (max-width: 18.75em) and (max-height: 37.5em) {
