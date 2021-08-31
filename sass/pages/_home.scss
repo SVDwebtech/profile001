@@ -257,13 +257,73 @@
 	}
 	//WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW
 
-	@include respond(phone350Maxand550Max) {
+	//WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW
+	@include respond(phone350Maxand950Max) {
+		min-height: 90vh;
+	}
+
+	@include respond(phone350Maxand850Max) {
+		min-height: 89vh;
+	}
+
+	@include respond(phone350Maxand800Max) {
+		min-height: 89vh;
+	}
+
+	@include respond(phone350Maxand750Max) {
+		min-height: 89vh;
+	}
+
+	@include respond(phone350Maxand700Max) {
+		min-height: 89vh;
+	}
+
+	@include respond(phone350Maxand650Max) {
+		min-height: 89vh;
+	}
+
+	@include respond(phone350Maxand600Max) {
 		min-height: 88vh;
 	}
 
+	@include respond(phone350Maxand550Max) {
+		min-height: 86vh;
+	}
+	//WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW
+
+	//WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW
+	@include respond(phone300Maxand950Max) {
+		min-height: 90vh;
+	}
+
+	@include respond(phone300Maxand850Max) {
+		min-height: 89vh;
+	}
+
+	@include respond(phone300Maxand800Max) {
+		min-height: 89vh;
+	}
+
+	@include respond(phone300Maxand750Max) {
+		min-height: 89vh;
+	}
+
 	@include respond(phone300Maxand700Max) {
+		min-height: 89vh;
+	}
+
+	@include respond(phone300Maxand650Max) {
+		min-height: 87vh;
+	}
+
+	@include respond(phone300Maxand600Max) {
 		min-height: 88vh;
 	}
+
+	@include respond(phone300Maxand550Max) {
+		min-height: 86vh;
+	}
+	//WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW
 
 	padding-top: 4rem;
 
@@ -489,6 +549,80 @@
 			}
 
 			@include respond(phone400Maxand550Max) {
+				top: 63vh;
+			}
+			//WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW
+			//WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW
+			@include respond(phone350Maxand950Max) {
+				top: 68vh;
+			}
+
+			@include respond(phone350Maxand900Max) {
+				top: 59vh;
+			}
+
+			@include respond(phone350Maxand850Max) {
+				top: 60vh;
+			}
+
+			@include respond(phone350Maxand800Max) {
+				top: 62vh;
+			}
+
+			@include respond(phone350Maxand750Max) {
+				top: 63vh;
+			}
+
+			@include respond(phone350Maxand700Max) {
+				top: 65vh;
+			}
+
+			@include respond(phone350Maxand650Max) {
+				top: 59vh;
+			}
+
+			@include respond(phone350Maxand600Max) {
+				top: 60vh;
+			}
+
+			@include respond(phone350Maxand550Max) {
+				top: 63vh;
+			}
+			//WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW
+			//WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW
+			@include respond(phone300Maxand950Max) {
+				top: 65vh;
+			}
+
+			@include respond(phone300Maxand900Max) {
+				top: 67vh;
+			}
+
+			@include respond(phone300Maxand850Max) {
+				top: 63vh;
+			}
+
+			@include respond(phone300Maxand800Max) {
+				top: 66vh;
+			}
+
+			@include respond(phone300Maxand750Max) {
+				top: 63vh;
+			}
+
+			@include respond(phone300Maxand700Max) {
+				top: 65vh;
+			}
+
+			@include respond(phone300Maxand650Max) {
+				top: 66vh;
+			}
+
+			@include respond(phone300Maxand600Max) {
+				top: 60vh;
+			}
+
+			@include respond(phone300Maxand550Max) {
 				top: 63vh;
 			}
 			//WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW

@@ -49,6 +49,22 @@ html {
 		font-size: 40.63%; // 1rem = 6.5px  -->  6.5/16 *100 = 40.63%
 	}
 
+	@include respond(phone350Maxand950Max) {
+		font-size: 50%; // 1rem = 8px  -->  8/16 *100 = 50%
+	}
+
+	@include respond(phone350Maxand900Max) {
+		font-size: 46.88%; // 1rem = 7.5px  -->  7.5/16 *100 = 46.88%
+	}
+
+	@include respond(phone350Maxand750Max) {
+		font-size: 43.75%; // 1rem = 7px  -->  7/16 *100 = 43.75%
+	}
+
+	@include respond(phone350Maxand650Max) {
+		font-size: 40.63%; // 1rem = 6.5px  -->  6.5/16 *100 = 40.63%
+	}
+
 	@include respond(big-desktop) {
 		font-size: 75%; // 1rem = 12px	-->		12/16 *100 = 75%
 	}
