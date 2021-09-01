@@ -673,6 +673,11 @@
 		width: 100%;
 		margin: 0 auto;
 		text-align: justify;
+
+		@include respond(phone) {
+			width: 95%;
+		}
+
 		// a horizontal line to help seperate (visual) the two subsections of this section
 		hr {
 			border: 0;

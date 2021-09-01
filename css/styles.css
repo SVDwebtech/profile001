@@ -3689,6 +3689,11 @@ body {
   margin: 0 auto;
   text-align: justify;
 }
+@media (max-width: 37.5em) {
+  .skills__content {
+    width: 95%;
+  }
+}
 .skills__content hr {
   border: 0;
   height: 1px;
