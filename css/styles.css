@@ -3707,12 +3707,7 @@ body {
 }
 @media (max-width: 37.5em) {
   .skills__content hr {
-    margin: 8.5rem 0 2rem;
-  }
-}
-@media (max-width: 34.38em) {
-  .skills__content hr {
-    margin: 0rem 0 0rem;
+    margin: 0;
   }
 }
 .skills__contAbove {

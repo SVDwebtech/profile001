@@ -18,3 +18,4 @@ ___
 ## genstyle
 ### skills-section
 * change .skills__content width to 95% on phone-size
+* change hr margin to 0 on phone-size and smaller
