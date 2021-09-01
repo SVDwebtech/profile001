@@ -28,84 +28,403 @@
 				right: 42%;
 				top: 2rem;
 			}
-
-			@include respond(phone550Maxand750Max) {
-				width: 16rem;
-				right: 42%;
-				top: -1rem;
+			// WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW
+			@include respond(phone600Maxand950Max) {
+				width: 19vh;
+				right: 37%;
+				top: -7rem;
 			}
 
-			@include respond(phone500Maxand860Max) {
-				width: 18rem;
-				right: 33%;
-				top: 0rem;
+			@include respond(phone600Maxand900Max) {
+				width: 19vh;
+				right: 36%;
+				top: -7rem;
+			}
+
+			@include respond(phone600Maxand850Max) {
+				width: 19vh;
+				right: 37%;
+				top: -7rem;
+			}
+
+			@include respond(phone600Maxand800Max) {
+				width: 18vh;
+				right: 39%;
+				top: -7rem;
+			}
+
+			@include respond(phone600Maxand750Max) {
+				width: 18vh;
+				right: 40%;
+				top: -8rem;
+			}
+
+			@include respond(phone600Maxand700Max) {
+				width: 18vh;
+				right: 41%;
+				top: -8rem;
+			}
+
+			@include respond(phone600Maxand650Max) {
+				width: 16vh;
+				right: 42%;
+				top: -8rem;
+			}
+
+			@include respond(phone600Maxand600Max) {
+				width: 16vh;
+				right: 43%;
+				top: -8rem;
+			}
+
+			@include respond(phone600Maxand550Max) {
+				width: 13vh;
+				right: 43%;
+				top: -10rem;
+			}
+
+			// WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW
+			// WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW
+			@include respond(phone550Maxand950Max) {
+				width: 16vh;
+				right: 34%;
+				top: -11rem;
+			}
+
+			@include respond(phone550Maxand900Max) {
+				width: 16vh;
+				right: 34%;
+				top: -11rem;
+			}
+
+			@include respond(phone550Maxand850Max) {
+				width: 16vh;
+				right: 34%;
+				top: -11rem;
+			}
+
+			@include respond(phone550Maxand800Max) {
+				width: 16vh;
+				right: 35%;
+				top: -10rem;
+			}
+
+			@include respond(phone550Maxand750Max) {
+				width: 15vh;
+				right: 36%;
+				top: -10rem;
+			}
+
+			@include respond(phone550Maxand700Max) {
+				width: 14vh;
+				right: 41%;
+				top: -10rem;
+			}
+
+			@include respond(phone550Maxand650Max) {
+				width: 11vh;
+				right: 43%;
+				top: -9rem;
+			}
+
+			@include respond(phone550Maxand600Max) {
+				width: 9vh;
+				right: 43%;
+				top: -11rem;
+			}
+
+			@include respond(phone550Maxand550Max) {
+				width: 9vh;
+				right: 43%;
+				top: -11rem;
+			}
+
+			// WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW
+
+			// WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW
+			@include respond(phone500Maxand950Max) {
+				width: 16vh;
+				right: 31%;
+				top: -11rem;
+			}
+
+			@include respond(phone500Maxand900Max) {
+				width: 16vh;
+				right: 32%;
+				top: -11rem;
+			}
+
+			@include respond(phone500Maxand850Max) {
+				width: 16vh;
+				right: 34%;
+				top: -11rem;
+			}
+
+			@include respond(phone500Maxand800Max) {
+				width: 16vh;
+				right: 35%;
+				top: -10rem;
 			}
 
 			@include respond(phone500Maxand750Max) {
-				width: 18rem;
-				right: 33%;
-				top: 0rem;
+				width: 15vh;
+				right: 36%;
+				top: -10rem;
+			}
+
+			@include respond(phone500Maxand700Max) {
+				width: 14vh;
+				right: 39%;
+				top: -10rem;
+			}
+
+			@include respond(phone500Maxand650Max) {
+				width: 10vh;
+				right: 42%;
+				top: -8rem;
+			}
+
+			@include respond(phone500Maxand600Max) {
+				width: 9vh;
+				right: 43%;
+				top: -7rem;
+			}
+
+			@include respond(phone500Maxand550Max) {
+				width: 8vh;
+				right: 43%;
+				top: -12rem;
+			}
+
+			// WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW
+
+			// WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW
+			@include respond(phone450Maxand950Max) {
+				width: 16vh;
+				right: 31%;
+				top: -9rem;
+			}
+
+			@include respond(phone450Maxand900Max) {
+				width: 15vh;
+				right: 31%;
+				top: -9rem;
 			}
 
 			@include respond(phone450Maxand850Max) {
-				width: 17rem;
-				right: 29%;
-				top: 2rem;
+				width: 14vh;
+				right: 34%;
+				top: -8rem;
+			}
+
+			@include respond(phone450Maxand800Max) {
+				width: 13vh;
+				right: 35%;
+				top: -9rem;
 			}
 
 			@include respond(phone450Maxand750Max) {
-				width: 14rem;
-				right: 34%;
-				top: 0rem;
+				width: 12vh;
+				right: 38%;
+				top: -9rem;
+			}
+
+			@include respond(phone450Maxand700Max) {
+				width: 10vh;
+				right: 40%;
+				top: -10rem;
+			}
+
+			@include respond(phone450Maxand650Max) {
+				width: 9vh;
+				right: 41%;
+				top: -11rem;
+			}
+
+			@include respond(phone450Maxand600Max) {
+				width: 8vh;
+				right: 42%;
+				top: -11rem;
+			}
+
+			@include respond(phone450Maxand550Max) {
+				width: 7vh;
+				right: 43%;
+				top: -12rem;
+			}
+
+			// WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW
+
+			// WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW
+			@include respond(phone400Maxand950Max) {
+				width: 11vh;
+				right: 32%;
+				top: -14rem;
+			}
+
+			@include respond(phone400Maxand900Max) {
+				width: 11vh;
+				right: 32%;
+				top: -14rem;
 			}
 
 			@include respond(phone400Maxand850Max) {
-				width: 17rem;
-				right: 29%;
-				top: 2rem;
+				width: 11vh;
+				right: 34%;
+				top: -14rem;
 			}
 
 			@include respond(phone400Maxand800Max) {
-				width: 14rem;
-				right: 28%;
-				top: -1rem;
+				width: 11vh;
+				right: 36%;
+				top: -13rem;
 			}
 
 			@include respond(phone400Maxand750Max) {
-				width: 14rem;
-				right: 28%;
-				top: -1rem;
+				width: 10vh;
+				right: 39%;
+				top: -13rem;
 			}
 
 			@include respond(phone400Maxand700Max) {
-				width: 14rem;
-				right: 31%;
-				bottom: 5rem;
+				width: 9vh;
+				right: 41%;
+				top: -13rem;
 			}
 
 			@include respond(phone400Maxand650Max) {
-				width: 14vh;
+				width: 8vh;
+				right: 40%;
+				top: -13rem;
+			}
+
+			@include respond(phone400Maxand600Max) {
+				width: 9vh;
+				right: 40%;
+				top: -12rem;
+			}
+
+			@include respond(phone400Maxand550Max) {
+				width: 8vh;
+				right: 43%;
+				top: -11rem;
+			}
+
+			// WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW
+
+			// WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW
+			@include respond(phone350Maxand950Max) {
+				width: 11vh;
+				right: 30%;
+				top: -14rem;
+			}
+
+			@include respond(phone350Maxand900Max) {
+				width: 12vh;
+				right: 31%;
+				top: -6rem;
+			}
+
+			@include respond(phone350Maxand850Max) {
+				width: 10vh;
+				right: 31%;
+				top: -8rem;
+			}
+
+			@include respond(phone350Maxand800Max) {
+				width: 9vh;
 				right: 32%;
-				top: -5rem;
+				top: -8rem;
+			}
+
+			@include respond(phone350Maxand750Max) {
+				width: 9vh;
+				right: 32%;
+				top: -8rem;
+			}
+
+			@include respond(phone350Maxand700Max) {
+				width: 8vh;
+				right: 34%;
+				top: -10rem;
+			}
+
+			@include respond(phone350Maxand650Max) {
+				width: 10vh;
+				right: 39%;
+				top: -9rem;
 			}
 
 			@include respond(phone350Maxand600Max) {
-				width: 11rem;
-				right: 24%;
-				top: -2rem;
+				width: 8vh;
+				right: 41%;
+				top: -9rem;
 			}
 
 			@include respond(phone350Maxand550Max) {
-				width: 9rem;
-				right: 33%;
-				top: -4rem;
+				width: 7vh;
+				right: 42%;
+				top: -10rem;
+			}
+
+			// WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW
+
+			// WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW
+			@include respond(phone300Maxand950Max) {
+				width: 11vh;
+				right: 32%;
+				top: -14rem;
+			}
+
+			@include respond(phone300Maxand900Max) {
+				width: 11vh;
+				right: 32%;
+				top: -14rem;
+			}
+
+			@include respond(phone300Maxand850Max) {
+				width: 11vh;
+				right: 34%;
+				top: -14rem;
+			}
+
+			@include respond(phone300Maxand800Max) {
+				width: 11vh;
+				right: 36%;
+				top: -13rem;
+			}
+
+			@include respond(phone300Maxand750Max) {
+				width: 10vh;
+				right: 39%;
+				top: -13rem;
 			}
 
 			@include respond(phone300Maxand700Max) {
-				width: 12rem;
-				right: 24%;
-				top: 2.5rem;
+				width: 9vh;
+				right: 41%;
+				top: -13rem;
 			}
+
+			@include respond(phone300Maxand650Max) {
+				width: 8vh;
+				right: 40%;
+				top: -13rem;
+			}
+
+			@include respond(phone300Maxand600Max) {
+				width: 9vh;
+				right: 40%;
+				top: -12rem;
+			}
+
+			@include respond(phone300Maxand550Max) {
+				width: 8vh;
+				right: 43%;
+				top: -11rem;
+			}
+
+			// WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW
 		}
 
 		&--family {
@@ -125,84 +444,393 @@
 				right: 60%;
 				top: 8rem;
 			}
-
-			@include respond(phone550Maxand750Max) {
-				width: 14rem;
-				right: 60%;
-				top: 6rem;
-			}
-
-			@include respond(phone500Maxand860Max) {
-				width: 16rem;
-				right: 55%;
-				top: 5rem;
-			}
-
-			@include respond(phone500Maxand750Max) {
-				width: 16rem;
-				right: 55%;
-				top: 5rem;
-			}
-
-			@include respond(phone450Maxand850Max) {
-				width: 16rem;
-				right: 53%;
-				top: 7rem;
-			}
-
-			@include respond(phone450Maxand750Max) {
-				width: 14rem;
-				right: 52%;
-				top: 5rem;
-			}
-
-			@include respond(phone400Maxand850Max) {
-				width: 16rem;
-				right: 53%;
-				top: 7rem;
-			}
-
-			@include respond(phone400Maxand800Max) {
-				width: 12rem;
-				right: 52%;
-				top: 4rem;
-			}
-
-			@include respond(phone400Maxand750Max) {
-				width: 12rem;
-				right: 52%;
-				top: 4rem;
-			}
-
-			@include respond(phone400Maxand700Max) {
-				width: 12rem;
-				right: 53%;
-				top: 5rem;
-			}
-
-			@include respond(phone400Maxand650Max) {
-				width: 12vh;
-				right: 51%;
-				top: -1rem;
-			}
-
-			@include respond(phone350Maxand600Max) {
-				width: 9rem;
-				right: 47%;
+			//WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW
+			@include respond(phone600Maxand950Max) {
+				width: 17vh;
+				right: 58%;
 				top: 2rem;
 			}
 
-			@include respond(phone350Maxand550Max) {
-				width: 7rem;
+			@include respond(phone600Maxand900Max) {
+				width: 16vh;
+				right: 56%;
+				top: 2rem;
+			}
+
+			@include respond(phone600Maxand850Max) {
+				width: 17vh;
+				right: 55%;
+				top: 1rem;
+			}
+
+			@include respond(phone600Maxand800Max) {
+				width: 16vh;
+				right: 55%;
+				top: 1rem;
+			}
+
+			@include respond(phone600Maxand750Max) {
+				width: 16vh;
+				right: 55%;
+				top: -1rem;
+			}
+
+			@include respond(phone600Maxand700Max) {
+				width: 16vh;
+				right: 55%;
+				top: -1rem;
+			}
+
+			@include respond(phone600Maxand650Max) {
+				width: 14vh;
+				right: 53%;
+				top: -2rem;
+			}
+
+			@include respond(phone600Maxand600Max) {
+				width: 13vh;
 				right: 52%;
+				top: -3rem;
+			}
+
+			@include respond(phone600Maxand550Max) {
+				width: 11vh;
+				right: 52%;
+				top: -6rem;
+			}
+			//WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW
+			//WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW
+			@include respond(phone550Maxand950Max) {
+				width: 15vh;
+				right: 51%;
+				top: -4rem;
+			}
+
+			@include respond(phone550Maxand900Max) {
+				width: 15vh;
+				right: 51%;
+				top: -4rem;
+			}
+
+			@include respond(phone550Maxand850Max) {
+				width: 15vh;
+				right: 51%;
+				top: -4rem;
+			}
+
+			@include respond(phone550Maxand800Max) {
+				width: 15vh;
+				right: 50%;
+				top: -4rem;
+			}
+
+			@include respond(phone550Maxand750Max) {
+				width: 14vh;
+				right: 51%;
+				top: -4rem;
+			}
+
+			@include respond(phone550Maxand700Max) {
+				width: 13vh;
+				right: 53%;
+				top: -4rem;
+			}
+
+			@include respond(phone550Maxand650Max) {
+				width: 11vh;
+				right: 52%;
+				top: -5rem;
+			}
+
+			@include respond(phone550Maxand600Max) {
+				width: 9vh;
+				right: 51%;
+				top: -8rem;
+			}
+
+			@include respond(phone550Maxand550Max) {
+				width: 8vh;
+				right: 50%;
+				top: -8rem;
+			}
+			//WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW
+
+			//WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW
+			@include respond(phone500Maxand950Max) {
+				width: 15vh;
+				right: 52%;
+				top: -4rem;
+			}
+
+			@include respond(phone500Maxand900Max) {
+				width: 15vh;
+				right: 52%;
+				top: -4rem;
+			}
+
+			@include respond(phone500Maxand850Max) {
+				width: 15vh;
+				right: 53%;
+				top: -4rem;
+			}
+
+			@include respond(phone500Maxand800Max) {
+				width: 14vh;
+				right: 53%;
+				top: -4rem;
+			}
+
+			@include respond(phone500Maxand750Max) {
+				width: 14vh;
+				right: 51%;
+				top: -4rem;
+			}
+
+			@include respond(phone500Maxand700Max) {
+				width: 13vh;
+				right: 53%;
+				top: -4rem;
+			}
+
+			@include respond(phone500Maxand650Max) {
+				width: 10vh;
+				right: 51%;
+				top: -4rem;
+			}
+
+			@include respond(phone500Maxand600Max) {
+				width: 8vh;
+				right: 50%;
+				top: -4rem;
+			}
+
+			@include respond(phone500Maxand550Max) {
+				width: 7vh;
+				right: 50%;
+				top: -10rem;
+			}
+			//WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW
+
+			//WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW
+			@include respond(phone450Maxand950Max) {
+				width: 15vh;
+				right: 55%;
+				top: -2rem;
+			}
+
+			@include respond(phone450Maxand900Max) {
+				width: 14vh;
+				right: 55%;
+				top: -2rem;
+			}
+
+			@include respond(phone450Maxand850Max) {
+				width: 13vh;
+				right: 54%;
+				top: -2rem;
+			}
+
+			@include respond(phone450Maxand800Max) {
+				width: 12vh;
+				right: 53%;
+				top: -4rem;
+			}
+
+			@include respond(phone450Maxand750Max) {
+				width: 11vh;
+				right: 53%;
+				top: -4rem;
+			}
+
+			@include respond(phone450Maxand700Max) {
+				width: 9vh;
+				right: 53%;
+				top: -6rem;
+			}
+
+			@include respond(phone450Maxand650Max) {
+				width: 8vh;
+				right: 52%;
+				top: -8rem;
+			}
+
+			@include respond(phone450Maxand600Max) {
+				width: 7vh;
+				right: 51%;
+				top: -8rem;
+			}
+
+			@include respond(phone450Maxand550Max) {
+				width: 6vh;
+				right: 50%;
+				top: -10rem;
+			}
+			//WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW
+			//WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW
+			@include respond(phone400Maxand950Max) {
+				width: 10vh;
+				right: 54%;
+				top: -9rem;
+			}
+
+			@include respond(phone400Maxand900Max) {
+				width: 10vh;
+				right: 54%;
+				top: -9rem;
+			}
+
+			@include respond(phone400Maxand850Max) {
+				width: 10vh;
+				right: 52%;
+				top: -9rem;
+			}
+
+			@include respond(phone400Maxand800Max) {
+				width: 10vh;
+				right: 52%;
+				top: -9rem;
+			}
+
+			@include respond(phone400Maxand750Max) {
+				width: 9vh;
+				right: 53%;
+				top: -9rem;
+			}
+
+			@include respond(phone400Maxand700Max) {
+				width: 8vh;
+				right: 52%;
+				top: -9rem;
+			}
+
+			@include respond(phone400Maxand650Max) {
+				width: 7vh;
+				right: 50%;
+				top: -10rem;
+			}
+
+			@include respond(phone400Maxand600Max) {
+				width: 8vh;
+				right: 50%;
+				top: -8rem;
+			}
+
+			@include respond(phone400Maxand550Max) {
+				width: 7vh;
+				right: 49%;
+				top: -8rem;
+			}
+			//WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW
+			//WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW
+			@include respond(phone350Maxand950Max) {
+				width: 10vh;
+				right: 54%;
+				top: -9rem;
+			}
+
+			@include respond(phone350Maxand900Max) {
+				width: 11vh;
+				right: 54%;
 				top: 0rem;
 			}
 
-			@include respond(phone300Maxand700Max) {
-				width: 11rem;
-				right: 49%;
-				top: 7.5rem;
+			@include respond(phone350Maxand850Max) {
+				width: 9vh;
+				right: 52%;
+				top: -3rem;
 			}
+
+			@include respond(phone350Maxand800Max) {
+				width: 8vh;
+				right: 50%;
+				top: -4rem;
+			}
+
+			@include respond(phone350Maxand750Max) {
+				width: 8vh;
+				right: 50%;
+				top: -4rem;
+			}
+
+			@include respond(phone350Maxand700Max) {
+				width: 7vh;
+				right: 49%;
+				top: -6rem;
+			}
+
+			@include respond(phone350Maxand650Max) {
+				width: 9vh;
+				right: 54%;
+				top: -5rem;
+			}
+
+			@include respond(phone350Maxand600Max) {
+				width: 7vh;
+				right: 52%;
+				top: -6rem;
+			}
+
+			@include respond(phone350Maxand550Max) {
+				width: 6vh;
+				right: 51%;
+				top: -8rem;
+			}
+			//WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW
+			//WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW
+			@include respond(phone300Maxand950Max) {
+				width: 10vh;
+				right: 54%;
+				top: -9rem;
+			}
+
+			@include respond(phone300Maxand900Max) {
+				width: 10vh;
+				right: 54%;
+				top: -9rem;
+			}
+
+			@include respond(phone300Maxand850Max) {
+				width: 10vh;
+				right: 52%;
+				top: -9rem;
+			}
+
+			@include respond(phone300Maxand800Max) {
+				width: 10vh;
+				right: 52%;
+				top: -9rem;
+			}
+
+			@include respond(phone300Maxand750Max) {
+				width: 9vh;
+				right: 53%;
+				top: -9rem;
+			}
+
+			@include respond(phone300Maxand700Max) {
+				width: 8vh;
+				right: 52%;
+				top: -9rem;
+			}
+
+			@include respond(phone300Maxand650Max) {
+				width: 7vh;
+				right: 50%;
+				top: -10rem;
+			}
+
+			@include respond(phone300Maxand600Max) {
+				width: 8vh;
+				right: 50%;
+				top: -8rem;
+			}
+
+			@include respond(phone300Maxand550Max) {
+				width: 7vh;
+				right: 49%;
+				top: -8rem;
+			}
+			//WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW
 		}
 
 		&--potjiekos {
@@ -222,90 +850,393 @@
 				right: 30%;
 				top: -4rem;
 			}
+			//WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW
+			@include respond(phone600Maxand950Max) {
+				width: 18vh;
+				right: 18%;
+				top: -16rem;
+			}
 
-			@include respond(phone550Maxand600Max) {
-				width: 13rem;
+			@include respond(phone600Maxand900Max) {
+				width: 17vh;
+				right: 21%;
+				top: -16rem;
+			}
+
+			@include respond(phone600Maxand850Max) {
+				width: 17vh;
+				right: 24%;
+				top: -17rem;
+			}
+
+			@include respond(phone600Maxand800Max) {
+				width: 16vh;
+				right: 28%;
+				top: -17rem;
+			}
+
+			@include respond(phone600Maxand750Max) {
+				width: 16vh;
+				right: 29%;
+				top: -16rem;
+			}
+
+			@include respond(phone600Maxand700Max) {
+				width: 16vh;
 				right: 30%;
-				top: -7rem;
+				top: -16rem;
+			}
+
+			@include respond(phone600Maxand650Max) {
+				width: 14vh;
+				right: 33%;
+				top: -14rem;
+			}
+
+			@include respond(phone600Maxand600Max) {
+				width: 13vh;
+				right: 35%;
+				top: -14rem;
+			}
+
+			@include respond(phone600Maxand550Max) {
+				width: 12vh;
+				right: 35%;
+				top: -15rem;
+			}
+			//WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW
+			//WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW
+			@include respond(phone550Maxand950Max) {
+				width: 16vh;
+				right: 19%;
+				top: -22rem;
+			}
+
+			@include respond(phone550Maxand900Max) {
+				width: 16vh;
+				right: 19%;
+				top: -22rem;
+			}
+
+			@include respond(phone550Maxand850Max) {
+				width: 16vh;
+				right: 19%;
+				top: -22rem;
+			}
+
+			@include respond(phone550Maxand800Max) {
+				width: 15vh;
+				right: 22%;
+				top: -18rem;
 			}
 
 			@include respond(phone550Maxand750Max) {
-				width: 13rem;
-				right: 30%;
-				top: -7rem;
+				width: 14vh;
+				right: 25%;
+				top: -18rem;
 			}
 
-			@include respond(phone500Maxand860Max) {
-				width: 15rem;
-				right: 16%;
-				top: -5rem;
+			@include respond(phone550Maxand700Max) {
+				width: 13vh;
+				right: 32%;
+				top: -18rem;
+			}
+
+			@include respond(phone550Maxand650Max) {
+				width: 11vh;
+				right: 35%;
+				top: -16rem;
+			}
+
+			@include respond(phone550Maxand600Max) {
+				width: 9vh;
+				right: 37%;
+				top: -16rem;
+			}
+
+			@include respond(phone550Maxand550Max) {
+				width: 8vh;
+				right: 37%;
+				top: -15rem;
+			}
+			//WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW
+
+			//WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW
+			@include respond(phone500Maxand950Max) {
+				width: 16vh;
+				right: 13%;
+				top: -22rem;
+			}
+
+			@include respond(phone500Maxand900Max) {
+				width: 16vh;
+				right: 15%;
+				top: -22rem;
+			}
+
+			@include respond(phone500Maxand850Max) {
+				width: 16vh;
+				right: 17%;
+				top: -22rem;
+			}
+
+			@include respond(phone500Maxand800Max) {
+				width: 15vh;
+				right: 22%;
+				top: -18rem;
 			}
 
 			@include respond(phone500Maxand750Max) {
-				width: 15rem;
-				right: 16%;
-				top: -5rem;
+				width: 14vh;
+				right: 25%;
+				top: -18rem;
+			}
+
+			@include respond(phone500Maxand700Max) {
+				width: 13vh;
+				right: 29%;
+				top: -18rem;
+			}
+
+			@include respond(phone500Maxand650Max) {
+				width: 9vh;
+				right: 35%;
+				top: -13rem;
+			}
+
+			@include respond(phone500Maxand600Max) {
+				width: 9vh;
+				right: 37%;
+				top: -12rem;
+			}
+
+			@include respond(phone500Maxand550Max) {
+				width: 8vh;
+				right: 37%;
+				top: -15rem;
+			}
+			//WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW
+
+			//WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW
+			@include respond(phone450Maxand950Max) {
+				width: 15vh;
+				right: 10%;
+				top: -18rem;
+			}
+
+			@include respond(phone450Maxand900Max) {
+				width: 14vh;
+				right: 14%;
+				top: -17rem;
 			}
 
 			@include respond(phone450Maxand850Max) {
-				width: 13rem;
-				right: 14%;
-				top: -2rem;
+				width: 14vh;
+				right: 18%;
+				top: -17rem;
+			}
+
+			@include respond(phone450Maxand800Max) {
+				width: 13vh;
+				right: 21%;
+				top: -17rem;
 			}
 
 			@include respond(phone450Maxand750Max) {
-				width: 11rem;
-				right: 21%;
-				top: -4rem;
+				width: 12vh;
+				right: 27%;
+				top: -17rem;
+			}
+
+			@include respond(phone450Maxand700Max) {
+				width: 10vh;
+				right: 31%;
+				top: -16rem;
+			}
+
+			@include respond(phone450Maxand650Max) {
+				width: 9vh;
+				right: 33%;
+				top: -16rem;
+			}
+
+			@include respond(phone450Maxand600Max) {
+				width: 8vh;
+				right: 35%;
+				top: -15rem;
+			}
+
+			@include respond(phone450Maxand550Max) {
+				width: 7vh;
+				right: 37%;
+				top: -15rem;
+			}
+			//WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW
+			//WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW
+			@include respond(phone400Maxand950Max) {
+				width: 10vh;
+				right: 14%;
+				top: -20rem;
+			}
+
+			@include respond(phone400Maxand900Max) {
+				width: 10vh;
+				right: 14%;
+				top: -20rem;
 			}
 
 			@include respond(phone400Maxand850Max) {
-				width: 13rem;
-				right: 14%;
-				top: -2rem;
+				width: 10vh;
+				right: 18%;
+				top: -20rem;
 			}
 
 			@include respond(phone400Maxand800Max) {
-				width: 11rem;
-				right: 14%;
-				top: -5rem;
+				width: 10vh;
+				right: 23%;
+				top: -19rem;
 			}
 
 			@include respond(phone400Maxand750Max) {
-				width: 10rem;
-				right: 14%;
-				top: -6rem;
+				width: 9vh;
+				right: 27%;
+				top: -19rem;
 			}
 
 			@include respond(phone400Maxand700Max) {
-				width: 11rem;
-				right: 14%;
-				top: -4rem;
+				width: 9vh;
+				right: 29%;
+				top: -19rem;
 			}
 
 			@include respond(phone400Maxand650Max) {
-				width: 11vh;
-				right: 19%;
-				top: -9rem;
+				width: 8vh;
+				right: 31%;
+				top: -18rem;
+			}
+
+			@include respond(phone400Maxand600Max) {
+				width: 9vh;
+				right: 31%;
+				top: -17rem;
+			}
+
+			@include respond(phone400Maxand550Max) {
+				width: 8vh;
+				right: 36%;
+				top: -15rem;
+			}
+			//WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW
+			//WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW
+			@include respond(phone350Maxand950Max) {
+				width: 10vh;
+				right: 5%;
+				top: -20rem;
+			}
+
+			@include respond(phone350Maxand900Max) {
+				width: 12vh;
+				right: 6%;
+				top: -15rem;
+			}
+
+			@include respond(phone350Maxand850Max) {
+				width: 10vh;
+				right: 12%;
+				top: -15rem;
+			}
+
+			@include respond(phone350Maxand800Max) {
+				width: 9vh;
+				right: 16%;
+				top: -14rem;
+			}
+
+			@include respond(phone350Maxand750Max) {
+				width: 9vh;
+				right: 18%;
+				top: -14rem;
+			}
+
+			@include respond(phone350Maxand700Max) {
+				width: 8vh;
+				right: 24%;
+				top: -15rem;
+			}
+
+			@include respond(phone350Maxand650Max) {
+				width: 10vh;
+				right: 27%;
+				top: -16rem;
 			}
 
 			@include respond(phone350Maxand600Max) {
-				width: 9rem;
-				right: 9%;
-				top: -5rem;
+				width: 8vh;
+				right: 32%;
+				top: -13rem;
 			}
 
 			@include respond(phone350Maxand550Max) {
-				width: 7rem;
-				right: 20%;
-				top: -7rem;
+				width: 7vh;
+				right: 34%;
+				top: -13rem;
+			}
+			//WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW
+			//WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW
+			@include respond(phone300Maxand950Max) {
+				width: 10vh;
+				right: 14%;
+				top: -20rem;
+			}
+
+			@include respond(phone300Maxand900Max) {
+				width: 10vh;
+				right: 14%;
+				top: -20rem;
+			}
+
+			@include respond(phone300Maxand850Max) {
+				width: 10vh;
+				right: 18%;
+				top: -20rem;
+			}
+
+			@include respond(phone300Maxand800Max) {
+				width: 10vh;
+				right: 23%;
+				top: -19rem;
+			}
+
+			@include respond(phone300Maxand750Max) {
+				width: 9vh;
+				right: 27%;
+				top: -19rem;
 			}
 
 			@include respond(phone300Maxand700Max) {
-				width: 11rem;
-				right: 8%;
-				top: -3.5rem;
+				width: 9vh;
+				right: 29%;
+				top: -19rem;
 			}
+
+			@include respond(phone300Maxand650Max) {
+				width: 8vh;
+				right: 31%;
+				top: -18rem;
+			}
+
+			@include respond(phone300Maxand600Max) {
+				width: 9vh;
+				right: 31%;
+				top: -17rem;
+			}
+
+			@include respond(phone300Maxand550Max) {
+				width: 8vh;
+				right: 36%;
+				top: -15rem;
+			}
+			//WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW
 		}
 
 		&:hover {

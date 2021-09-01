@@ -29,8 +29,40 @@ html {
 		font-size: 46.88%; // 1rem = 7.5px  -->  7.5/16 *100 = 46.88%
 	}
 
-	@include respond(phone) {
+	@include respond(phone600Maxand950Max) {
+		font-size: 53.13%; // 1rem = 8.5px  -->  8.5/16 *100 = 53.13%
+	}
+
+	@include respond(phone600Maxand850Max) {
+		font-size: 50%; // 1rem = 8px  -->  8/16 *100 = 50%
+	}
+
+	@include respond(phone600Maxand750Max) {
+		font-size: 46.88%; // 1rem = 7.5px  -->  7.5/16 *100 = 46.88%
+	}
+
+	@include respond(phone600Maxand700Max) {
 		font-size: 43.75%; // 1rem = 7px  -->  7/16 *100 = 43.75%
+	}
+
+	@include respond(phone400Maxand600Max) {
+		font-size: 40.63%; // 1rem = 6.5px  -->  6.5/16 *100 = 40.63%
+	}
+
+	@include respond(phone350Maxand950Max) {
+		font-size: 50%; // 1rem = 8px  -->  8/16 *100 = 50%
+	}
+
+	@include respond(phone350Maxand900Max) {
+		font-size: 46.88%; // 1rem = 7.5px  -->  7.5/16 *100 = 46.88%
+	}
+
+	@include respond(phone350Maxand750Max) {
+		font-size: 43.75%; // 1rem = 7px  -->  7/16 *100 = 43.75%
+	}
+
+	@include respond(phone350Maxand650Max) {
+		font-size: 40.63%; // 1rem = 6.5px  -->  6.5/16 *100 = 40.63%
 	}
 
 	@include respond(big-desktop) {

@@ -14,3 +14,8 @@ ___
     * ~~On small phone screen sizes the content-below container appears to be smaller than the overall border of the portfolio project container and this creates a blue border around the content-below container. On larger screen sizes this appears not to be the case.~~
     * The image container needs work regarding the size of the image inside the outer container
   ___
+
+## genstyle
+### skills-section
+* change .skills__content width to 95% on phone-size
+* change hr margin to 0 on phone-size and smaller
