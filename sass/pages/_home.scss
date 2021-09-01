@@ -39,38 +39,50 @@
 		}
 
 		@include respond(phone) {
-			width: 53rem;
+			width: 75%;
 		}
 
 		@include respond(phone550) {
-			width: 50rem;
-		}
-
-		@include respond(phone500) {
-			width: 47rem;
-		}
-
-		@include respond(phone450) {
-			width: 45rem;
-		}
-
-		@include respond(phone400) {
-			width: 43rem;
+			width: 95%;
 		}
 
 		@include respond(phone350) {
-			width: 40rem;
+			width: 100%;
 		}
 
-		@include respond(phone300) {
-			width: 36rem;
-		}
+		// @include respond(phone450) {
+		// 	width: 45rem;
+		// }
+
+		// @include respond(phone400) {
+		// 	width: 43rem;
+		// }
+
+		// @include respond(phone350) {
+		// 	width: 40rem;
+		// }
+
+		// @include respond(phone300) {
+		// 	width: 36rem;
+		// }
 	}
 
 	&__headingPrimary {
 		border-radius: $border-radius-medium;
 		background-color: rgba($color-primary-white, .8);
-		padding: 3em 5em;
+		padding: 4em 5em;
+
+		@include respond(phone400) {
+			padding: 4em 4.5em;
+		}
+
+		@include respond(phone350) {
+			padding: 3em 4em;
+		}
+
+		@include respond(phone300) {
+			padding: 3em 3em;
+		}
 
 		&--span {
 			display: block;
