@@ -1039,37 +1039,33 @@
 		display: flex;
 		flex-direction: column;
 
+		@include respond(tablet-portrait) {
+			width: 60%;
+		}
+
+		@include respond(tablet-portrait-2) {
+			width: 70%;
+		}
+
+		@include respond(phone) {
+			width: 75%;
+		}
+
 		&--telAndEmail,
 		&--socialMedia {
 			background-color: $color-primary-darkBlue;
 			border-radius: $border-radius-medium;
 			box-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.9);
-			min-height: 25vh;
-			padding: 8rem 3rem 2rem;
+			height: 15.25em;
+			padding: 10em 4em 5em;
 
 			@include respond(tablet-portrait) {
-				min-height: 32vh;
+				padding: 11em 4em 7em;
 			}
 
-			@include respond(phone500) {
-				min-height: 30vh;
-			}
-
-			@include respond(phone450) {
-				min-height: 27vh;
-			}
-
-			@include respond(phone400) {
-				min-height: 25vh;
-			}
-
-			@include respond(phone350) {
-				min-height: 23vh;
-			}
-
-			@include respond(phone300) {
-				min-height: 21vh;
-			}
+			display: flex;
+			justify-content: center;
+			align-items: center;
 		}
 
 		&--telAndEmail,
@@ -1087,34 +1083,6 @@
 				left: -2rem;
 			}
 		}
-		@include respond(tablet-portrait) {
-			width: 50rem;
-			margin-bottom: 6rem;
-		}
-
-		@include respond(phone550) {
-			width: 47rem;
-		}
-
-		@include respond(phone500) {
-			width: 45rem;
-		}
-
-		@include respond(phone450) {
-			width: 43rem;
-		}
-
-		@include respond(phone400) {
-			width: 40rem;
-		}
-
-		@include respond(phone350) {
-			width: 35rem;
-		}
-
-		@include respond(phone300) {
-			width: 32rem;
-		}
 	}
 
 	&__contBelow {
@@ -1123,7 +1091,7 @@
 		box-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.9);
 		padding: 5rem 3rem 3rem;
 
-		min-height: 60.5vh;
+		height: 37em;
 
 		position: relative;
 
@@ -1138,74 +1106,34 @@
 			left: -2rem;
 		}
 
-		@include respond(tablet-landscape) {
-			min-height: 59vh;
-		}
-
 		@include respond(tablet-portrait) {
-			width: 50rem;
-			min-height: 55vh;
+			width: 60%;
+			height: 43em;
 			padding: 7rem 7rem 3rem;
 		}
 
-		// @include respond(tablet-portrait) {
-		// 	width: 40rem;
-		// }
+		@include respond(tablet-portrait-2) {
+			width: 70%;
+		}
 
-		@include respond(phone550) {
-			width: 47rem;
-			padding: 7rem 7rem 3rem;
+		@include respond(phone) {
+			width: 75%;
+			height: 49em;
 		}
 
 		@include respond(phone500) {
-			width: 45rem;
-			padding: 7rem 7rem 3rem;
-		}
-
-		@include respond(phone450) {
-			width: 43rem;
-			padding: 7rem 7rem 3rem;
+			padding: 7rem 5rem 3rem;
 		}
 
 		@include respond(phone400) {
-			width: 40rem;
-			padding: 7rem 4rem 3rem;
-		}
-
-		@include respond(phone350) {
-			width: 35rem;
-			padding: 7rem 4rem 3rem;
-		}
-
-		@include respond(phone300) {
-			width: 32rem;
-			padding: 7rem 4rem 3rem;
+			padding: 7rem 3rem 3rem;
 		}
 	}
 
 	&__itemsContainer {
 		display: flex;
 		flex-direction: column;
-		justify-content: space-around;
-		height: 9vh;
-		padding-left: 0rem;
-
-		@include respond(tablet-portrait) {
-			justify-content: space-around;
-			height: 12vh;
-		}
-
-		@include respond(phone400) {
-			height: 13vh;
-		}
-
-		@include respond(phone350) {
-			height: 10vh;
-		}
-
-		@include respond(phone300) {
-			height: 8vh;
-		}
+		justify-content: center;
 
 		&--tel,
 		&--email {
@@ -1228,12 +1156,15 @@
 			@include respond(phone) {
 				font-size: 1.6rem;
 			}
+
 			@include respond(phone400) {
 				font-size: 2rem;
 			}
+
 			@include respond(phone350) {
 				font-size: 1.65rem;
 			}
+
 			@include respond(phone300) {
 				font-size: 1.6rem;
 			}
@@ -1244,31 +1175,36 @@
 	}
 	&__socialMedia {
 		display: flex;
-		justify-content: flex-start;
-
-		@include respond(tablet-portrait) {
-			justify-content: center;
-		}
-
-		min-height: 5rem;
-		padding-left: 1rem;
+		justify-content: center;
+		align-items: center;
 
 		.socialMedia__linkWrapper {
 			justify-content: center;
 
 			@include respond(tablet-portrait) {
-				width: 70px;
-				height: 90px;
+				width: 11.5em;
+				height: 10em;
+			}
+
+			@include respond(phone) {
+				width: 10em;
+				height: 65%;
+			}
+
+			@include respond(phone550) {
+				width: 8em;
 			}
 
 			@include respond(phone400) {
-				width: 70px;
-				height: 60px;
+				width: 7em;
 			}
 
-			@include respond(phone350) {
-				width: 70px;
-				height: 50px;
+			@include respond(phone400) {
+				width: 6em;
+			}
+
+			@include respond(phone400) {
+				width: 5em;
 			}
 		}
 
