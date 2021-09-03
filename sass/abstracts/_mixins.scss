@@ -134,6 +134,86 @@ ORDER: base + typography > general layout + grid > page layout > components
 		}
 	}
 	//////////////////////////////////////////////////////////////////////////
+	// phone small 325px <
+	@if $breakpoint == phone325 {
+		// 325px (325/16 = 20.31)                 REMEMBER: 1em = 16px;
+		@media (max-width: 20.31em) {
+			@content;
+		}
+	}
+	// phone small 325x550 <
+	@if $breakpoint == phone325Maxand550Max {
+		// 325px (325/16 = 20.31) && 550px (550/16 = 34.38)
+		// REMEMBER: 1em = 16px;
+		@media (max-width: 20.31em) and (max-height: 34.38em) {
+			@content;
+		}
+	}
+	// phone small 325x600 <
+	@if $breakpoint == phone325Maxand600Max {
+		// 325px (325/16 = 20.31) && 600px (600/16 = 37.5)
+		// REMEMBER: 1em = 16px;
+		@media (max-width: 20.31em) and (max-height: 37.5em) {
+			@content;
+		}
+	}
+	// phone small 325x650 <
+	@if $breakpoint == phone325Maxand650Max {
+		// 325px (325/16 = 20.31) && 650px (650/16 = 40.63)
+		// REMEMBER: 1em = 16px;
+		@media (max-width: 20.31em) and (max-height: 40.63em) {
+			@content;
+		}
+	}
+	// phone small 325x700 <
+	@if $breakpoint == phone325Maxand700Max {
+		// 325px (325/16 = 20.31) && 700px (700/16 = 43.75)
+		// REMEMBER: 1em = 16px;
+		@media (max-width: 20.31em) and (max-height: 43.75em) {
+			@content;
+		}
+	}
+	// phone small 325x750 <
+	@if $breakpoint == phone325Maxand750Max {
+		// 325px (325/16 = 20.31) && 750px (750/16 = 46.88)
+		// REMEMBER: 1em = 16px;
+		@media (max-width: 20.31em) and (max-height: 46.88em) {
+			@content;
+		}
+	}
+	// phone small 325x800 <
+	@if $breakpoint == phone325Maxand800Max {
+		// 325px (325/16 = 20.31) && 800px (800/16 = 50)
+		// REMEMBER: 1em = 16px;
+		@media (max-width: 20.31em) and (max-height: 50em) {
+			@content;
+		}
+	}
+	// phone small 325x850 <
+	@if $breakpoint == phone325Maxand850Max {
+		// 325px (325/16 = 20.31) && 850px (850/16 = 53.13)
+		// REMEMBER: 1em = 16px;
+		@media (max-width: 20.31em) and (max-height: 53.13em) {
+			@content;
+		}
+	}
+	// phone small 325x900 <
+	@if $breakpoint == phone325Maxand900Max {
+		// 325px (325/16 = 20.31) && 900px (900/16 = 56.25)
+		// REMEMBER: 1em = 16px;
+		@media (max-width: 20.31em) and (max-height: 56.25em) {
+			@content;
+		}
+	}
+	// phone small 325x950 <
+	@if $breakpoint == phone325Maxand950Max {
+		// 325px (325/16 = 20.31) && 950px (950/16 = 59.38)
+		// REMEMBER: 1em = 16px;
+		@media (max-width: 20.31em) and (max-height: 59.38em) {
+			@content;
+		}
+	}
+	///////////////////////////////////////////////////////////////////////////
 	// phone small 350px <
 	@if $breakpoint == phone350 {
 		// 350px (350/16 = 21.88)                 REMEMBER: 1em = 16px;
