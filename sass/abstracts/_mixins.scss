@@ -45,6 +45,7 @@ $breakpoint argument choices
 ORDER: base + typography > general layout + grid > page layout > components
 */
 @mixin respond($breakpoint) {
+	///////////////////////////////////////////////////////////////////////////
 	// phone small 300px <
 	@if $breakpoint == phone300 {
 		// 300px (300/16 = 18.75)                 REMEMBER: 1em = 16px;
@@ -132,18 +133,11 @@ ORDER: base + typography > general layout + grid > page layout > components
 			@content;
 		}
 	}
+	//////////////////////////////////////////////////////////////////////////
 	// phone small 350px <
 	@if $breakpoint == phone350 {
 		// 350px (350/16 = 21.88)                 REMEMBER: 1em = 16px;
 		@media (max-width: 21.88em) {
-			@content;
-		}
-	}
-	// phone small 350x500 <
-	@if $breakpoint == phone350Maxand500Max {
-		// 350px (350/16 = 21.88) && 500px (500/16 = 31.25)
-		// REMEMBER: 1em = 16px;
-		@media (max-width: 21.88em) and (max-height: 31.25em) {
 			@content;
 		}
 	}
@@ -219,6 +213,88 @@ ORDER: base + typography > general layout + grid > page layout > components
 			@content;
 		}
 	}
+	///////////////////////////////////////////////////////////////////////////
+	// phone small 375px <
+	@if $breakpoint == phone375 {
+		// 375px (375/16 = 23.44)                 REMEMBER: 1em = 16px;
+		@media (max-width: 23.44em) {
+			@content;
+		}
+	}
+
+	// phone small 375x550 <
+	@if $breakpoint == phone375Maxand550Max {
+		// 375px (375/16 = 23.44) && 550px (550/16 = 34.38)
+		// REMEMBER: 1em = 16px;
+		@media (max-width: 23.44em) and (max-height: 34.38em) {
+			@content;
+		}
+	}
+	// phone small 375x600 <
+	@if $breakpoint == phone375Maxand600Max {
+		// 375px (375/16 = 23.44) && 600px (600/16 = 37.5)
+		// REMEMBER: 1em = 16px;
+		@media (max-width: 23.44em) and (max-height: 37.5em) {
+			@content;
+		}
+	}
+	// phone small 375x650 <
+	@if $breakpoint == phone375Maxand650Max {
+		// 375px (375/16 = 23.44) && 650px (650/16 = 40.63)
+		// REMEMBER: 1em = 16px;
+		@media (max-width: 23.44em) and (max-height: 40.63em) {
+			@content;
+		}
+	}
+	// phone small 375x700 <
+	@if $breakpoint == phone375Maxand700Max {
+		// 375px (375/16 = 23.44) && 700px (700/16 = 43.75)
+		// REMEMBER: 1em = 16px;
+		@media (max-width: 23.44em) and (max-height: 43.75em) {
+			@content;
+		}
+	}
+	// phone small 375x750 <
+	@if $breakpoint == phone375Maxand750Max {
+		// 375px (375/16 = 23.44) && 750px (750/16 = 46.88)
+		// REMEMBER: 1em = 16px;
+		@media (max-width: 23.44em) and (max-height: 46.88em) {
+			@content;
+		}
+	}
+	// phone small 375x800 <
+	@if $breakpoint == phone375Maxand800Max {
+		// 375px (375/16 = 23.44) && 800px (800/16 = 50)
+		// REMEMBER: 1em = 16px;
+		@media (max-width: 23.44em) and (max-height: 50em) {
+			@content;
+		}
+	}
+	// phone small 375x850 <
+	@if $breakpoint == phone375Maxand850Max {
+		// 375px (375/16 = 23.44) && 850px (850/16 = 53.13)
+		// REMEMBER: 1em = 16px;
+		@media (max-width: 23.44em) and (max-height: 53.13em) {
+			@content;
+		}
+	}
+	// phone small 375x900 <
+	@if $breakpoint == phone375Maxand900Max {
+		// 375px (375/16 = 23.44) && 900px (900/16 = 56.25)
+		// REMEMBER: 1em = 16px;
+		@media (max-width: 23.44em) and (max-height: 56.25em) {
+			@content;
+		}
+	}
+	// phone small 375x950 <
+	@if $breakpoint == phone375Maxand950Max {
+		// 375px (375/16 = 23.44) && 950px (950/16 = 59.38)
+		// REMEMBER: 1em = 16px;
+		@media (max-width: 23.44em) and (max-height: 59.38em) {
+			@content;
+		}
+	}
+	///////////////////////////////////////////////////////////////////////////
 	// phone small 400px <
 	@if $breakpoint == phone400 {
 		// 400px (400/16 = 25)                 REMEMBER: 1em = 16px;
@@ -306,6 +382,7 @@ ORDER: base + typography > general layout + grid > page layout > components
 			@content;
 		}
 	}
+	///////////////////////////////////////////////////////////////////////////
 	// phone small 450px <
 	@if $breakpoint == phone450 {
 		// 450px (450/16 = 28.13)                 REMEMBER: 1em = 16px;
@@ -393,6 +470,7 @@ ORDER: base + typography > general layout + grid > page layout > components
 			@content;
 		}
 	}
+	///////////////////////////////////////////////////////////////////////////
 	// phone small breakpoint
 	@if $breakpoint == phone-small {
 		// 500px (500/16 = 31.25)                 REMEMBER: 1em = 16px;
@@ -400,6 +478,7 @@ ORDER: base + typography > general layout + grid > page layout > components
 			@content;
 		}
 	}
+	///////////////////////////////////////////////////////////////////////////
 	// phone small 500px <
 	@if $breakpoint == phone500 {
 		// 500px (500/16 = 34.38)                 REMEMBER: 1em = 16px;
@@ -495,6 +574,7 @@ ORDER: base + typography > general layout + grid > page layout > components
 			@content;
 		}
 	}
+	///////////////////////////////////////////////////////////////////////////
 	// phone small 550px <
 	@if $breakpoint == phone550 {
 		// 550px (550/16 = 34.38)                 REMEMBER: 1em = 16px;
@@ -582,6 +662,7 @@ ORDER: base + typography > general layout + grid > page layout > components
 			@content;
 		}
 	}
+	///////////////////////////////////////////////////////////////////////////
 	// phone small 600x500 <
 	@if $breakpoint == phone600Maxand500Max {
 		// 550px (550/16 = 37.5) && 500px (500/16 = 31.25)
@@ -669,6 +750,7 @@ ORDER: base + typography > general layout + grid > page layout > components
 			@content;
 		}
 	}
+	///////////////////////////////////////////////////////////////////////////
 	// tablet portrait 2 breakpoint
 	@if $breakpoint == tablet-portrait-2 {
 		// 750px (750/16 = 46.88)                 REMEMBER: 1em = 16px;
@@ -676,6 +758,7 @@ ORDER: base + typography > general layout + grid > page layout > components
 			@content;
 		}
 	}
+	///////////////////////////////////////////////////////////////////////////
 	// tablet portrait breakpoint
 	@if $breakpoint == tablet-portrait {
 		// 900px (900/16 = 56.25)
@@ -683,6 +766,7 @@ ORDER: base + typography > general layout + grid > page layout > components
 			@content;
 		}
 	}
+	///////////////////////////////////////////////////////////////////////////
 	// tablet landscape breakpoint
 	@if $breakpoint == tablet-landscape {
 		// 1200px (1200/16 = 75)
@@ -690,6 +774,7 @@ ORDER: base + typography > general layout + grid > page layout > components
 			@content;
 		}
 	}
+	///////////////////////////////////////////////////////////////////////////
 	// tablet portrait bigger breakpoint
 	@if $breakpoint == tablet-portrait-bigger {
 		// 900 and >
@@ -697,6 +782,7 @@ ORDER: base + typography > general layout + grid > page layout > components
 			@content;
 		}
 	}
+	///////////////////////////////////////////////////////////////////////////
 	// big desktop breakpoint
 	@if $breakpoint == big-desktop {
 		// 1800px (1800/16 = 112.5)
@@ -704,4 +790,5 @@ ORDER: base + typography > general layout + grid > page layout > components
 			@content;
 		}
 	}
+	///////////////////////////////////////////////////////////////////////////
 }

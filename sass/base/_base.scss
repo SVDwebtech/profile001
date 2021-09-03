@@ -29,41 +29,109 @@ html {
 		font-size: 46.88%; // 1rem = 7.5px  -->  7.5/16 *100 = 46.88%
 	}
 
-	@include respond(phone600Maxand950Max) {
-		font-size: 53.13%; // 1rem = 8.5px  -->  8.5/16 *100 = 53.13%
-	}
-
-	@include respond(phone600Maxand850Max) {
-		font-size: 50%; // 1rem = 8px  -->  8/16 *100 = 50%
-	}
-
-	@include respond(phone600Maxand750Max) {
+	@include respond(phone) {
 		font-size: 46.88%; // 1rem = 7.5px  -->  7.5/16 *100 = 46.88%
 	}
 
-	@include respond(phone600Maxand700Max) {
+	@include respond(phone400Maxand950Max) {
+		font-size: 53.13%; // 1rem = 8.5px  -->  8.5/16 *100 = 53.13%
+	}
+
+	@include respond(phone400Maxand800Max) {
+		font-size: 50%; // 1rem = 8px  -->  8/16 *100 = 50%
+	}
+
+	@include respond(phone400Maxand700Max) {
 		font-size: 43.75%; // 1rem = 7px  -->  7/16 *100 = 43.75%
 	}
 
 	@include respond(phone400Maxand600Max) {
 		font-size: 40.63%; // 1rem = 6.5px  -->  6.5/16 *100 = 40.63%
 	}
+	////////////////////////////////////////////////////////////////////////////
+	@include respond(phone375Maxand950Max) {
+		font-size: 51.56%; // 1rem = 8.25px  -->  8.25/16 *100 = 51.56%
+	}
 
+	@include respond(phone375Maxand900Max) {
+		font-size: 50%; // 1rem = 8px  -->  8/16 *100 = 50%
+	}
+
+	@include respond(phone375Maxand850Max) {
+		font-size: 48.43%; // 1rem = 7.75px  -->  7.75/16 *100 = 48.43%
+	}
+
+	@include respond(phone375Maxand800Max) {
+		font-size: 46.88%; // 1rem = 7.5px  -->  7.5/16 *100 = 46.88%
+	}
+
+	@include respond(phone375Maxand750Max) {
+		font-size: 43.75%; // 1rem = 7px  -->  7/16 *100 = 43.75%
+	}
+
+	@include respond(phone375Maxand700Max) {
+		font-size: 42.19%; // 1rem = 6.75px  -->  6.75/16 *100 = 42.19%
+	}
+
+	@include respond(phone375Maxand600Max) {
+		font-size: 40.63%; // 1rem = 6.5px  -->  6.5/16 *100 = 40.63%
+	}
+	////////////////////////////////////////////////////////////////////////////
 	@include respond(phone350Maxand950Max) {
 		font-size: 50%; // 1rem = 8px  -->  8/16 *100 = 50%
 	}
 
-	@include respond(phone350Maxand900Max) {
+	@include respond(phone350Maxand800Max) {
 		font-size: 46.88%; // 1rem = 7.5px  -->  7.5/16 *100 = 46.88%
 	}
 
-	@include respond(phone350Maxand750Max) {
-		font-size: 43.75%; // 1rem = 7px  -->  7/16 *100 = 43.75%
+	@include respond(phone350Maxand700Max) {
+		font-size: 42.19%; // 1rem = 6.75px  -->  6.75/16 *100 = 42.19%
 	}
 
-	@include respond(phone350Maxand650Max) {
+	@include respond(phone350Maxand600Max) {
 		font-size: 40.63%; // 1rem = 6.5px  -->  6.5/16 *100 = 40.63%
 	}
+
+	@include respond(phone300Maxand700Max) {
+		font-size: 40.63%; // 1rem = 6.5px  -->  6.5/16 *100 = 40.63%
+	}
+
+	// @include respond(phone600Maxand950Max) {
+	// 	font-size: 53.13%; // 1rem = 8.5px  -->  8.5/16 *100 = 53.13%
+	// }
+
+	// @include respond(phone600Maxand850Max) {
+	// 	font-size: 50%; // 1rem = 8px  -->  8/16 *100 = 50%
+	// }
+
+	// @include respond(phone600Maxand750Max) {
+	// 	font-size: 46.88%; // 1rem = 7.5px  -->  7.5/16 *100 = 46.88%
+	// }
+
+	// @include respond(phone600Maxand700Max) {
+	// 	font-size: 43.75%; // 1rem = 7px  -->  7/16 *100 = 43.75%
+	// }
+
+	// @include respond(phone400Maxand600Max) {
+	// 	font-size: 40.63%; // 1rem = 6.5px  -->  6.5/16 *100 = 40.63%
+	// }
+
+	// @include respond(phone350Maxand950Max) {
+	// 	font-size: 50%; // 1rem = 8px  -->  8/16 *100 = 50%
+	// }
+
+	// @include respond(phone350Maxand900Max) {
+	// 	font-size: 46.88%; // 1rem = 7.5px  -->  7.5/16 *100 = 46.88%
+	// }
+
+	// @include respond(phone350Maxand750Max) {
+	// 	font-size: 43.75%; // 1rem = 7px  -->  7/16 *100 = 43.75%
+	// }
+
+	// @include respond(phone350Maxand650Max) {
+	// 	font-size: 40.63%; // 1rem = 6.5px  -->  6.5/16 *100 = 40.63%
+	// }
 
 	@include respond(big-desktop) {
 		font-size: 75%; // 1rem = 12px	-->		12/16 *100 = 75%
