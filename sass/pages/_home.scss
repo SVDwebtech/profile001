@@ -226,12 +226,36 @@
 			@include respond(phone550Maxand700Max) {
 				top: 50vh;
 			}
-
+			//////////////////////////////////////////////////////////////////
 			@include respond(phone500) {
-				top: 56vh;
+				// top: 56vh;
+			}
+
+			@include respond(phone500Maxand950Max) {
+				top: 52vh;
+			}
+
+			@include respond(phone500Maxand900Max) {
+				top: 54vh;
+			}
+
+			@include respond(phone500Maxand850Max) {
+				top: 51vh;
+			}
+
+			@include respond(phone500Maxand800Max) {
+				top: 52vh;
+			}
+
+			@include respond(phone500Maxand750Max) {
+				top: 54vh;
 			}
 
 			@include respond(phone500Maxand700Max) {
+				top: 50vh;
+			}
+
+			@include respond(phone500Maxand650Max) {
 				top: 51vh;
 			}
 
