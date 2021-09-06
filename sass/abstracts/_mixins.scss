@@ -463,6 +463,94 @@ ORDER: base + typography > general layout + grid > page layout > components
 		}
 	}
 	///////////////////////////////////////////////////////////////////////////
+	// phone small 425px <
+	@if $breakpoint == phone425 {
+		// 425px (425/16 = 26.56)                 REMEMBER: 1em = 16px;
+		@media (max-width: 26.56em) {
+			@content;
+		}
+	}
+	// phone small 425x500 <
+	@if $breakpoint == phone425Maxand500Max {
+		// 425px (425/16 = 26.56) && 500px (500/16 = 31.25)
+		// REMEMBER: 1em = 16px;
+		@media (max-width: 26.56em) and (max-height: 31.25em) {
+			@content;
+		}
+	}
+	// phone small 425x550 <
+	@if $breakpoint == phone425Maxand550Max {
+		// 425px (425/16 = 26.56) && 550px (550/16 = 34.38)
+		// REMEMBER: 1em = 16px;
+		@media (max-width: 26.56em) and (max-height: 34.38em) {
+			@content;
+		}
+	}
+	// phone small 425x600 <
+	@if $breakpoint == phone425Maxand600Max {
+		// 425px (425/16 = 26.56) && 600px (600/16 = 37.5)
+		// REMEMBER: 1em = 16px;
+		@media (max-width: 26.56em) and (max-height: 37.5em) {
+			@content;
+		}
+	}
+	// phone small 425x650 <
+	@if $breakpoint == phone425Maxand650Max {
+		// 425px (425/16 = 26.56) && 650px (650/16 = 40.63)
+		// REMEMBER: 1em = 16px;
+		@media (max-width: 26.56em) and (max-height: 40.63em) {
+			@content;
+		}
+	}
+	// phone small 425x700 <
+	@if $breakpoint == phone425Maxand700Max {
+		// 425px (425/16 = 26.56) && 700px (700/16 = 43.75)
+		// REMEMBER: 1em = 16px;
+		@media (max-width: 26.56em) and (max-height: 43.75em) {
+			@content;
+		}
+	}
+	// phone small 425x750 <
+	@if $breakpoint == phone425Maxand750Max {
+		// 425px (425/16 = 26.56) && 750px (750/16 = 46.88)
+		// REMEMBER: 1em = 16px;
+		@media (max-width: 26.56em) and (max-height: 46.88em) {
+			@content;
+		}
+	}
+	// phone small 425x800 <
+	@if $breakpoint == phone425Maxand800Max {
+		// 425px (425/16 = 26.56) && 800px (800/16 = 50)
+		// REMEMBER: 1em = 16px;
+		@media (max-width: 26.56em) and (max-height: 50em) {
+			@content;
+		}
+	}
+	// phone small 425x850 <
+	@if $breakpoint == phone425Maxand850Max {
+		// 425px (425/16 = 26.56) && 850px (850/16 = 53.13)
+		// REMEMBER: 1em = 16px;
+		@media (max-width: 26.56em) and (max-height: 53.13em) {
+			@content;
+		}
+	}
+	// phone small 425x900 <
+	@if $breakpoint == phone425Maxand900Max {
+		// 425px (425/16 = 26.56) && 900px (900/16 = 56.25)
+		// REMEMBER: 1em = 16px;
+		@media (max-width: 26.56em) and (max-height: 56.25em) {
+			@content;
+		}
+	}
+	// phone small 425x950 <
+	@if $breakpoint == phone425Maxand950Max {
+		// 425px (425/16 = 26.56) && 950px (950/16 = 59.38)
+		// REMEMBER: 1em = 16px;
+		@media (max-width: 26.56em) and (max-height: 59.38em) {
+			@content;
+		}
+	}
+	///////////////////////////////////////////////////////////////////////////
 	// phone small 450px <
 	@if $breakpoint == phone450 {
 		// 450px (450/16 = 28.13)                 REMEMBER: 1em = 16px;
