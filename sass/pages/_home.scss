@@ -140,6 +140,10 @@
 		min-height: 91vh;
 	}
 
+	@include respond(phone525) {
+		min-height: 90vh;
+	}
+
 	@include respond(phone475) {
 		min-height: 90vh;
 	}
@@ -225,6 +229,42 @@
 
 			@include respond(phone550Maxand700Max) {
 				top: 50vh;
+			}
+			//////////////////////////////////////////////////////////////////
+			@include respond(phone525) {
+				// top: 56vh;
+			}
+
+			@include respond(phone525Maxand950Max) {
+				top: 52vh;
+			}
+
+			@include respond(phone525Maxand900Max) {
+				top: 53vh;
+			}
+
+			@include respond(phone525Maxand850Max) {
+				top: 53vh;
+			}
+
+			@include respond(phone525Maxand800Max) {
+				top: 53vh;
+			}
+
+			@include respond(phone525Maxand750Max) {
+				top: 53vh;
+			}
+
+			@include respond(phone525Maxand700Max) {
+				top: 52vh;
+			}
+
+			@include respond(phone525Maxand650Max) {
+				top: 52vh;
+			}
+
+			@include respond(phone525Maxand600Max) {
+				top: 48vh;
 			}
 			//////////////////////////////////////////////////////////////////
 			@include respond(phone500) {
