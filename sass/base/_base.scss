@@ -416,4 +416,7 @@ body {
 		but do not include the margin.  Note that padding and border will be inside 
 		of the box. */
 	box-sizing: border-box;
+
+	// for position absolute iro popup component
+	position: relative;
 }

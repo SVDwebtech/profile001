@@ -38,7 +38,7 @@
 			width: 60rem;
 		}
 
-		@include respond(phone) {
+		@include respond(phone600) {
 			width: 75%;
 		}
 
@@ -49,22 +49,6 @@
 		@include respond(phone350) {
 			width: 100%;
 		}
-
-		// @include respond(phone450) {
-		// 	width: 45rem;
-		// }
-
-		// @include respond(phone400) {
-		// 	width: 43rem;
-		// }
-
-		// @include respond(phone350) {
-		// 	width: 40rem;
-		// }
-
-		// @include respond(phone300) {
-		// 	width: 36rem;
-		// }
 	}
 
 	&__headingPrimary {
@@ -116,7 +100,7 @@
 	// to align the paragraph with the icons;
 	&__paragraph {
 		text-align: center;
-		@include respond(phone) {
+		@include respond(phone600) {
 			margin-left: 0rem;
 		}
 	}
@@ -725,7 +709,7 @@
 				margin: 0 auto;
 				order: 1;
 			}
-			@include respond(phone) {
+			@include respond(phone600) {
 				width: 95%;
 			}
 		}
@@ -749,7 +733,7 @@
 		margin: 0 auto;
 		text-align: justify;
 
-		@include respond(phone) {
+		@include respond(phone600) {
 			width: 95%;
 		}
 
@@ -766,7 +750,7 @@
 				margin: 0;
 			}
 			// to increase/decrease spacing around the horizontal line at smaller screen sizes
-			@include respond(phone) {
+			@include respond(phone600) {
 				// see if the horizontal line presents well before increasing the thickness again
 				// height: 3px;
 				margin: 0;
@@ -908,7 +892,7 @@
 			width: 42.7rem;
 		}
 
-		@include respond(phone) {
+		@include respond(phone600) {
 			width: 33rem;
 		}
 
@@ -962,7 +946,7 @@
 			// border-bottom-left-radius: 0;
 		}
 
-		@include respond(phone) {
+		@include respond(phone600) {
 			min-height: 18rem;
 		}
 
@@ -1040,7 +1024,7 @@
 				max-width: 180px;
 				margin: 0 auto;
 			}
-			@include respond(phone) {
+			@include respond(phone600) {
 				max-width: 180px;
 				margin: 0 auto;
 			}
@@ -1080,7 +1064,7 @@
 			padding: 3rem 7rem;
 		}
 
-		@include respond(phone) {
+		@include respond(phone600) {
 			padding: 3rem 5rem;
 		}
 
@@ -1122,7 +1106,7 @@
 			width: 70%;
 		}
 
-		@include respond(phone) {
+		@include respond(phone600) {
 			width: 75%;
 		}
 
@@ -1191,7 +1175,7 @@
 			width: 70%;
 		}
 
-		@include respond(phone) {
+		@include respond(phone600) {
 			width: 75%;
 			height: 49em;
 		}
@@ -1228,7 +1212,7 @@
 				font-size: 2.1rem;
 			}
 
-			@include respond(phone) {
+			@include respond(phone600) {
 				font-size: 1.6rem;
 			}
 
@@ -1261,7 +1245,7 @@
 				height: 10em;
 			}
 
-			@include respond(phone) {
+			@include respond(phone600) {
 				width: 10em;
 				height: 65%;
 			}
@@ -1305,7 +1289,7 @@
 			display: flex;
 			justify-content: flex-start;
 
-			@include respond(phone) {
+			@include respond(phone600) {
 				flex-direction: column;
 			}
 		}
@@ -1333,7 +1317,7 @@
 			margin-top: 0rem;
 			width: 95%;
 
-			@include respond(phone) {
+			@include respond(phone600) {
 				width: 100%;
 			}
 		}
@@ -1356,7 +1340,7 @@
 	padding-top: .5rem;
 	padding-bottom: .5rem;
 
-	@include respond(phone) {
+	@include respond(phone600) {
 		&__paragraph {
 			display: flex;
 			flex-direction: column;

@@ -39,7 +39,7 @@ body {
 			font-size: 5rem;
 		}
 
-		@include respond(phone) {
+		@include respond(phone600) {
 			font-size: 4.2rem;
 		}
 
@@ -149,7 +149,7 @@ body {
 	letter-spacing: .2rem;
 	text-transform: uppercase;
 	&--portfolio-card {
-		@include respond(phone) {
+		@include respond(phone600) {
 			font-size: 1.7rem;
 		}
 	}
@@ -164,7 +164,7 @@ body {
 	@include respond(tablet-portrait) {
 		font-size: 2rem;
 	}
-	@include respond(phone) {
+	@include respond(phone600) {
 		font-size: 1.8rem;
 	}
 	&:not(:last-child) {
@@ -193,7 +193,7 @@ body {
 		@include respond(tablet-portrait-2) {
 			font-size: 1.55rem;
 		}
-		@include respond(phone) {
+		@include respond(phone600) {
 			font-size: 1.35rem;
 			font-weight: 100;
 		}
@@ -246,7 +246,7 @@ body {
 		color: $color-font-white;
 		font-size: 2.2rem;
 		font-weight: 700;
-		@include respond(phone) {
+		@include respond(phone600) {
 			text-align: center;
 			font-size: 2.6rem;
 		}
@@ -272,7 +272,7 @@ body {
 	.socialMedia__icon {
 		color: $color-font-white;
 		font-size: 4rem;
-		@include respond(phone) {
+		@include respond(phone600) {
 			font-size: 4rem;
 		}
 		@include respond(phone550) {
@@ -335,7 +335,7 @@ body {
 	text-align: center;
 	.paragraph {
 		font-size: 1.4rem;
-		@include respond(phone) {
+		@include respond(phone600) {
 			font-size: 1.7rem;
 		}
 	}
@@ -411,12 +411,12 @@ body {
 			color: $color-font-brightRed;
 			font-size: $font-size-paragraph-xtralarge;
 			letter-spacing: 2px;
-			@include respond(phone) {
+			@include respond(phone600) {
 				letter-spacing: 1px;
 			}
 		}
 	}
-	@include respond(phone) {
+	@include respond(phone600) {
 		&__par {
 			font-size: 1.6rem;
 		}
