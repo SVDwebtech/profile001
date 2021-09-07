@@ -552,7 +552,7 @@
 			///////////////////////////////////////////////////////////////////
 			&:hover {
 				outline: .5rem solid $color-primary-brightRed;
-				transform: translate(-50%, -50%) scale(1.05) translateY(-.5rem);
+				transform: translate(-50%, -50%) scale(1.1) translateY(-.5rem);
 				box-shadow: 0 0 1.5rem rgba($color-primary-white, .9),
 					0 0 7rem rgba($color-primary-darkBlue, .9);
 				z-index: 200;
@@ -1161,7 +1161,7 @@
 			///////////////////////////////////////////////////////////////////
 			&:hover {
 				outline: .5rem solid $color-primary-brightRed;
-				transform: translate(-125%, 10%) scale(1.05) translateY(-.5rem);
+				transform: translate(-125%, 20%) scale(1.1) translateY(-.5rem);
 				box-shadow: 0 0 1.5rem rgba($color-primary-white, .9),
 					0 0 7rem rgba($color-primary-darkBlue, .9);
 				z-index: 200;
@@ -1767,7 +1767,7 @@
 			///////////////////////////////////////////////////////////////////
 			&:hover {
 				outline: .5rem solid $color-primary-brightRed;
-				transform: translate(15%, -80%) scale(1.05) translateY(-.5rem);
+				transform: translate(15%, -80%) scale(1.1) translateY(-.5rem);
 				box-shadow: 0 0 1.5rem rgba($color-primary-white, .9),
 					0 0 7rem rgba($color-primary-darkBlue, .9);
 				z-index: 200;
@@ -1776,14 +1776,14 @@
 	}
 	// to select and manipulate elements that is not hovered
 	&:hover &__img--schalk:not(:hover) {
-		transform: scale(0.95) translate(-50%, -50%);
+		transform: translate(-50%, -50%) scale(0.9);
 	}
 
 	&:hover &__img--family:not(:hover) {
-		transform: scale(0.95) translate(-125%, 10%);
+		transform: translate(-125%, 10%) scale(0.9);
 	}
 
 	&:hover &__img--potjiekos:not(:hover) {
-		transform: scale(0.95) translate(-5%, -80%);
+		transform: translate(15%, -80%) scale(0.9);
 	}
 }

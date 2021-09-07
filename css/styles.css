@@ -2029,7 +2029,7 @@ body {
 }
 .img-comp__img--schalk:hover {
   outline: 0.5rem solid #ff0000;
-  transform: translate(-50%, -50%) scale(1.05) translateY(-0.5rem);
+  transform: translate(-50%, -50%) scale(1.1) translateY(-0.5rem);
   box-shadow: 0 0 1.5rem rgba(241, 241, 241, 0.9), 0 0 7rem rgba(4, 4, 46, 0.9);
   z-index: 200;
 }
@@ -2765,7 +2765,7 @@ body {
 }
 .img-comp__img--family:hover {
   outline: 0.5rem solid #ff0000;
-  transform: translate(-125%, 10%) scale(1.05) translateY(-0.5rem);
+  transform: translate(-125%, 20%) scale(1.1) translateY(-0.5rem);
   box-shadow: 0 0 1.5rem rgba(241, 241, 241, 0.9), 0 0 7rem rgba(4, 4, 46, 0.9);
   z-index: 200;
 }
@@ -3498,18 +3498,18 @@ body {
 }
 .img-comp__img--potjiekos:hover {
   outline: 0.5rem solid #ff0000;
-  transform: translate(15%, -80%) scale(1.05) translateY(-0.5rem);
+  transform: translate(15%, -80%) scale(1.1) translateY(-0.5rem);
   box-shadow: 0 0 1.5rem rgba(241, 241, 241, 0.9), 0 0 7rem rgba(4, 4, 46, 0.9);
   z-index: 200;
 }
 .img-comp:hover .img-comp__img--schalk:not(:hover) {
-  transform: scale(0.95) translate(-50%, -50%);
+  transform: translate(-50%, -50%) scale(0.9);
 }
 .img-comp:hover .img-comp__img--family:not(:hover) {
-  transform: scale(0.95) translate(-125%, 10%);
+  transform: translate(-125%, 10%) scale(0.9);
 }
 .img-comp:hover .img-comp__img--potjiekos:not(:hover) {
-  transform: scale(0.95) translate(-5%, -80%);
+  transform: translate(15%, -80%) scale(0.9);
 }
 
 .filler--white {
