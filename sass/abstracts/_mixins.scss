@@ -1104,7 +1104,7 @@ ORDER: base + typography > general layout + grid > page layout > components
 	}
 	///////////////////////////////////////////////////////////////////////////
 	// phone breakpoint
-	@if $breakpoint == phone {
+	@if $breakpoint == phone600 {
 		// 600px (600/16 = 37.5)                 REMEMBER: 1em = 16px;
 		@media (max-width: 37.5em) {
 			@content;
