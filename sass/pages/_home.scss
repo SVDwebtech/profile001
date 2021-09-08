@@ -213,35 +213,39 @@
 			}
 
 			@include respond(phone600Maxand950Max) {
-				top: 53vh;
+				top: 50vh;
 			}
 
 			@include respond(phone600Maxand900Max) {
-				top: 52vh;
+				top: 49vh;
 			}
 
 			@include respond(phone600Maxand850Max) {
-				top: 52vh;
+				top: 49vh;
 			}
 
 			@include respond(phone600Maxand800Max) {
-				top: 54vh;
+				top: 45vh;
 			}
 
 			@include respond(phone600Maxand750Max) {
-				top: 50vh;
+				top: 45.5vh;
 			}
 
 			@include respond(phone600Maxand700Max) {
-				top: 50vh;
+				top: 45vh;
 			}
 
 			@include respond(phone600Maxand650Max) {
-				top: 49vh;
+				top: 43vh;
 			}
 
 			@include respond(phone600Maxand600Max) {
-				top: 49vh;
+				top: 43vh;
+			}
+
+			@include respond(phone600Maxand550Max) {
+				top: 44vh;
 			}
 			//////////////////////////////////////////////////////////////////
 			@include respond(phone575) {
@@ -249,11 +253,11 @@
 			}
 
 			@include respond(phone575Maxand950Max) {
-				top: 52vh;
+				top: 51vh;
 			}
 
 			@include respond(phone575Maxand900Max) {
-				top: 54vh;
+				top: 52vh;
 			}
 
 			@include respond(phone575Maxand850Max) {
@@ -261,23 +265,27 @@
 			}
 
 			@include respond(phone575Maxand800Max) {
-				top: 51vh;
+				top: 50vh;
 			}
 
 			@include respond(phone575Maxand750Max) {
-				top: 49vh;
+				top: 45.5vh;
 			}
 
 			@include respond(phone575Maxand700Max) {
-				top: 49vh;
+				top: 45vh;
 			}
 
 			@include respond(phone575Maxand650Max) {
-				top: 47vh;
+				top: 44vh;
 			}
 
 			@include respond(phone575Maxand600Max) {
-				top: 47vh;
+				top: 43.5vh;
+			}
+
+			@include respond(phone575Maxand550Max) {
+				top: 44vh;
 			}
 			//////////////////////////////////////////////////////////////////
 			@include respond(phone550) {
@@ -285,23 +293,23 @@
 			}
 
 			@include respond(phone550Maxand950Max) {
-				top: 52vh;
+				top: 51vh;
 			}
 
 			@include respond(phone550Maxand900Max) {
-				top: 53vh;
+				top: 52vh;
 			}
 
 			@include respond(phone550Maxand850Max) {
-				top: 53vh;
+				top: 51.5vh;
 			}
 
 			@include respond(phone550Maxand800Max) {
-				top: 53vh;
+				top: 52vh;
 			}
 
 			@include respond(phone550Maxand750Max) {
-				top: 53vh;
+				top: 50vh;
 			}
 
 			@include respond(phone550Maxand700Max) {
@@ -313,7 +321,11 @@
 			}
 
 			@include respond(phone550Maxand600Max) {
-				top: 47vh;
+				top: 43vh;
+			}
+
+			@include respond(phone550Maxand550Max) {
+				top: 44vh;
 			}
 			//////////////////////////////////////////////////////////////////
 			@include respond(phone525) {
@@ -321,35 +333,39 @@
 			}
 
 			@include respond(phone525Maxand950Max) {
-				top: 52vh;
+				top: 49vh;
 			}
 
 			@include respond(phone525Maxand900Max) {
-				top: 53vh;
+				top: 50.5vh;
 			}
 
 			@include respond(phone525Maxand850Max) {
-				top: 53vh;
+				top: 50vh;
 			}
 
 			@include respond(phone525Maxand800Max) {
-				top: 53vh;
+				top: 50vh;
 			}
 
 			@include respond(phone525Maxand750Max) {
-				top: 53vh;
+				top: 49vh;
 			}
 
 			@include respond(phone525Maxand700Max) {
-				top: 52vh;
+				top: 48.5vh;
 			}
 
 			@include respond(phone525Maxand650Max) {
-				top: 52vh;
+				top: 48.5vh;
 			}
 
 			@include respond(phone525Maxand600Max) {
-				top: 48vh;
+				top: 44vh;
+			}
+
+			@include respond(phone525Maxand550Max) {
+				top: 44vh;
 			}
 			//////////////////////////////////////////////////////////////////
 			@include respond(phone500) {
@@ -361,31 +377,35 @@
 			}
 
 			@include respond(phone500Maxand900Max) {
-				top: 54vh;
+				top: 53vh;
 			}
 
 			@include respond(phone500Maxand850Max) {
-				top: 51vh;
-			}
-
-			@include respond(phone500Maxand800Max) {
-				top: 52vh;
-			}
-
-			@include respond(phone500Maxand750Max) {
-				top: 54vh;
-			}
-
-			@include respond(phone500Maxand700Max) {
 				top: 50vh;
 			}
 
-			@include respond(phone500Maxand650Max) {
+			@include respond(phone500Maxand800Max) {
 				top: 51vh;
 			}
 
-			@include respond(phone500Maxand600Max) {
+			@include respond(phone500Maxand750Max) {
 				top: 52vh;
+			}
+
+			@include respond(phone500Maxand700Max) {
+				top: 47vh;
+			}
+
+			@include respond(phone500Maxand650Max) {
+				top: 47vh;
+			}
+
+			@include respond(phone500Maxand600Max) {
+				top: 47.5vh;
+			}
+
+			@include respond(phone500Maxand550Max) {
+				top: 47vh;
 			}
 			//////////////////////////////////////////////////////////////////
 			@include respond(phone475) {
@@ -397,11 +417,11 @@
 			}
 
 			@include respond(phone475Maxand900Max) {
-				top: 54vh;
+				top: 53vh;
 			}
 
 			@include respond(phone475Maxand850Max) {
-				top: 54vh;
+				top: 52vh;
 			}
 
 			@include respond(phone475Maxand800Max) {
@@ -409,19 +429,23 @@
 			}
 
 			@include respond(phone475Maxand750Max) {
-				top: 54vh;
+				top: 50vh;
 			}
 
 			@include respond(phone475Maxand700Max) {
-				top: 53vh;
+				top: 49vh;
 			}
 
 			@include respond(phone475Maxand650Max) {
-				top: 53vh;
+				top: 49vh;
 			}
 
 			@include respond(phone475Maxand600Max) {
-				top: 52vh;
+				top: 48vh;
+			}
+
+			@include respond(phone475Maxand550Max) {
+				top: 48vh;
 			}
 			//////////////////////////////////////////////////////////////////
 			@include respond(phone450) {
@@ -433,7 +457,7 @@
 			}
 
 			@include respond(phone450Maxand900Max) {
-				top: 52vh;
+				top: 50vh;
 			}
 
 			@include respond(phone450Maxand850Max) {
@@ -445,7 +469,7 @@
 			}
 
 			@include respond(phone450Maxand750Max) {
-				top: 51vh;
+				top: 50vh;
 			}
 
 			@include respond(phone450Maxand700Max) {
@@ -457,7 +481,11 @@
 			}
 
 			@include respond(phone450Maxand600Max) {
-				top: 52vh;
+				top: 48vh;
+			}
+
+			@include respond(phone450Maxand550Max) {
+				top: 47vh;
 			}
 
 			//////////////////////////////////////////////////////////////////
@@ -490,11 +518,15 @@
 			}
 
 			@include respond(phone425Maxand650Max) {
-				top: 53vh;
+				top: 49vh;
 			}
 
 			@include respond(phone425Maxand600Max) {
-				top: 52vh;
+				top: 48vh;
+			}
+
+			@include respond(phone425Maxand550Max) {
+				top: 48vh;
 			}
 			//////////////////////////////////////////////////////////////////
 			@include respond(phone400) {
@@ -514,7 +546,7 @@
 			}
 
 			@include respond(phone400Maxand800Max) {
-				top: 56vh;
+				top: 55vh;
 			}
 
 			@include respond(phone400Maxand750Max) {
@@ -522,15 +554,19 @@
 			}
 
 			@include respond(phone400Maxand700Max) {
-				top: 53vh;
-			}
-
-			@include respond(phone400Maxand650Max) {
 				top: 52vh;
 			}
 
-			@include respond(phone400Maxand600Max) {
+			@include respond(phone400Maxand650Max) {
 				top: 53vh;
+			}
+
+			@include respond(phone400Maxand600Max) {
+				top: 50vh;
+			}
+
+			@include respond(phone400Maxand550Max) {
+				top: 50vh;
 			}
 			//////////////////////////////////////////////////////////////////
 			@include respond(phone375) {
@@ -538,7 +574,7 @@
 			}
 
 			@include respond(phone375Maxand950Max) {
-				top: 60vh;
+				top: 58vh;
 			}
 
 			@include respond(phone375Maxand900Max) {
@@ -546,27 +582,31 @@
 			}
 
 			@include respond(phone375Maxand850Max) {
-				top: 56vh;
-			}
-
-			@include respond(phone375Maxand800Max) {
-				top: 56vh;
-			}
-
-			@include respond(phone375Maxand750Max) {
 				top: 57vh;
 			}
 
+			@include respond(phone375Maxand800Max) {
+				top: 53vh;
+			}
+
+			@include respond(phone375Maxand750Max) {
+				top: 54vh;
+			}
+
 			@include respond(phone375Maxand700Max) {
-				top: 56vh;
+				top: 52vh;
 			}
 
 			@include respond(phone375Maxand650Max) {
-				top: 55vh;
+				top: 52vh;
 			}
 
 			@include respond(phone375Maxand600Max) {
-				top: 55vh;
+				top: 50vh;
+			}
+
+			@include respond(phone375Maxand550Max) {
+				top: 50vh;
 			}
 			//////////////////////////////////////////////////////////////////
 			@include respond(phone350) {
@@ -590,23 +630,23 @@
 			}
 
 			@include respond(phone350Maxand750Max) {
-				top: 57vh;
+				top: 56vh;
 			}
 
 			@include respond(phone350Maxand700Max) {
-				top: 57vh;
+				top: 56vh;
 			}
 
 			@include respond(phone350Maxand650Max) {
-				top: 57vh;
+				top: 55vh;
 			}
 
 			@include respond(phone350Maxand600Max) {
-				top: 55vh;
+				top: 53vh;
 			}
 
 			@include respond(phone350Maxand550Max) {
-				top: 55vh;
+				top: 53vh;
 			}
 			//////////////////////////////////////////////////////////////////
 			@include respond(phone325) {
@@ -638,15 +678,15 @@
 			}
 
 			@include respond(phone325Maxand650Max) {
-				top: 57vh;
+				top: 55vh;
 			}
 
 			@include respond(phone325Maxand600Max) {
-				top: 58vh;
+				top: 54vh;
 			}
 
 			@include respond(phone325Maxand550Max) {
-				top: 57vh;
+				top: 54vh;
 			}
 			//////////////////////////////////////////////////////////////////
 			@include respond(phone300) {
@@ -662,7 +702,7 @@
 			}
 
 			@include respond(phone300Maxand850Max) {
-				top: 65vh;
+				top: 62vh;
 			}
 
 			@include respond(phone300Maxand800Max) {
@@ -674,11 +714,11 @@
 			}
 
 			@include respond(phone300Maxand700Max) {
-				top: 62vh;
+				top: 59vh;
 			}
 
 			@include respond(phone300Maxand650Max) {
-				top: 62vh;
+				top: 59vh;
 			}
 
 			@include respond(phone300Maxand600Max) {
