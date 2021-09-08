@@ -771,7 +771,7 @@ body {
 }
 @media (max-width: 37.5em) {
   .paragraph__popup {
-    font-size: 1.35rem;
+    font-size: 1.8rem;
     font-weight: 100;
   }
 }
@@ -3569,12 +3569,12 @@ body {
 
 .filler--white {
   width: 100%;
-  height: 6rem;
+  height: 11.7rem;
   background-color: #f1f1f1;
 }
 .filler--blue {
   width: 100%;
-  height: 6rem;
+  height: 11.7rem;
   background-color: #04042e;
 }
 .filler--hamburger {
@@ -3589,7 +3589,7 @@ body {
   align-items: center;
   background-image: linear-gradient(to bottom, rgba(255, 0, 0, 0.92) 40%, rgba(4, 4, 46, 0.95));
   background-size: 100%;
-  height: 7rem;
+  height: 12.7rem;
   margin: 0rem 2rem;
   position: fixed;
   top: 0;
@@ -3854,652 +3854,652 @@ body {
 }
 @media (max-width: 37.5em) {
   .popup__content {
-    top: 45rem;
+    top: 73rem;
   }
 }
 @media (max-width: 37.5em) and (max-height: 59.38em) {
   .popup__content {
-    top: 45rem;
+    top: 73rem;
   }
 }
 @media (max-width: 37.5em) and (max-height: 56.25em) {
   .popup__content {
-    top: 44rem;
+    top: 71rem;
   }
 }
 @media (max-width: 37.5em) and (max-height: 53.13em) {
   .popup__content {
-    top: 44rem;
+    top: 71rem;
   }
 }
 @media (max-width: 37.5em) and (max-height: 50em) {
   .popup__content {
-    top: 45rem;
+    top: 69rem;
   }
 }
 @media (max-width: 37.5em) and (max-height: 46.88em) {
   .popup__content {
-    top: 45rem;
+    top: 66rem;
   }
 }
 @media (max-width: 37.5em) and (max-height: 43.75em) {
   .popup__content {
-    top: 44rem;
+    top: 65rem;
   }
 }
 @media (max-width: 37.5em) and (max-height: 40.63em) {
   .popup__content {
-    top: 44rem;
+    top: 65rem;
   }
 }
 @media (max-width: 37.5em) and (max-height: 37.5em) {
   .popup__content {
-    top: 43rem;
+    top: 65rem;
   }
 }
 @media (max-width: 37.5em) and (max-height: 34.38em) {
   .popup__content {
-    top: 43rem;
+    top: 65rem;
   }
 }
 @media (max-width: 35.94em) {
   .popup__content {
-    top: 46rem;
+    top: 74rem;
   }
 }
 @media (max-width: 35.94em) and (max-height: 59.38em) {
   .popup__content {
-    top: 46rem;
+    top: 74rem;
   }
 }
 @media (max-width: 35.94em) and (max-height: 56.25em) {
   .popup__content {
-    top: 47rem;
+    top: 74rem;
   }
 }
 @media (max-width: 35.94em) and (max-height: 53.13em) {
   .popup__content {
-    top: 45rem;
+    top: 72rem;
   }
 }
 @media (max-width: 35.94em) and (max-height: 50em) {
   .popup__content {
-    top: 45rem;
+    top: 70rem;
   }
 }
 @media (max-width: 35.94em) and (max-height: 46.88em) {
   .popup__content {
-    top: 45rem;
+    top: 68rem;
   }
 }
 @media (max-width: 35.94em) and (max-height: 43.75em) {
   .popup__content {
-    top: 45rem;
+    top: 65rem;
   }
 }
 @media (max-width: 35.94em) and (max-height: 40.63em) {
   .popup__content {
-    top: 45rem;
+    top: 65rem;
   }
 }
 @media (max-width: 35.94em) and (max-height: 37.5em) {
   .popup__content {
-    top: 46rem;
+    top: 65rem;
   }
 }
 @media (max-width: 35.94em) and (max-height: 34.38em) {
   .popup__content {
-    top: 46rem;
+    top: 65rem;
   }
 }
 @media (max-width: 34.38em) {
   .popup__content {
-    top: 48rem;
+    top: 67rem;
   }
 }
 @media (max-width: 34.38em) and (max-height: 59.38em) {
   .popup__content {
-    top: 48rem;
+    top: 78rem;
   }
 }
 @media (max-width: 34.38em) and (max-height: 56.25em) {
   .popup__content {
-    top: 48rem;
+    top: 76rem;
   }
 }
 @media (max-width: 34.38em) and (max-height: 53.13em) {
   .popup__content {
-    top: 47rem;
+    top: 74rem;
   }
 }
 @media (max-width: 34.38em) and (max-height: 50em) {
   .popup__content {
-    top: 47rem;
+    top: 72rem;
   }
 }
 @media (max-width: 34.38em) and (max-height: 46.88em) {
   .popup__content {
-    top: 46rem;
+    top: 70em;
   }
 }
 @media (max-width: 34.38em) and (max-height: 43.75em) {
   .popup__content {
-    top: 46rem;
+    top: 67rem;
   }
 }
 @media (max-width: 34.38em) and (max-height: 40.63em) {
   .popup__content {
-    top: 46rem;
+    top: 67rem;
   }
 }
 @media (max-width: 34.38em) and (max-height: 37.5em) {
   .popup__content {
-    top: 46rem;
+    top: 66rem;
   }
 }
 @media (max-width: 34.38em) and (max-height: 34.38em) {
   .popup__content {
-    top: 46rem;
+    top: 66rem;
   }
 }
 @media (max-width: 32.81em) {
   .popup__content {
-    top: 49rem;
+    top: 67rem;
   }
 }
 @media (max-width: 32.81em) and (max-height: 59.38em) {
   .popup__content {
-    top: 49rem;
+    top: 81rem;
   }
 }
 @media (max-width: 32.81em) and (max-height: 56.25em) {
   .popup__content {
-    top: 49rem;
+    top: 80rem;
   }
 }
 @media (max-width: 32.81em) and (max-height: 53.13em) {
   .popup__content {
-    top: 48rem;
+    top: 77rem;
   }
 }
 @media (max-width: 32.81em) and (max-height: 50em) {
   .popup__content {
-    top: 48rem;
+    top: 73rem;
   }
 }
 @media (max-width: 32.81em) and (max-height: 46.88em) {
   .popup__content {
-    top: 46rem;
+    top: 71rem;
   }
 }
 @media (max-width: 32.81em) and (max-height: 43.75em) {
   .popup__content {
-    top: 46rem;
+    top: 69rem;
   }
 }
 @media (max-width: 32.81em) and (max-height: 40.63em) {
   .popup__content {
-    top: 46rem;
+    top: 69rem;
   }
 }
 @media (max-width: 32.81em) and (max-height: 37.5em) {
   .popup__content {
-    top: 48rem;
+    top: 68rem;
   }
 }
 @media (max-width: 32.81em) and (max-height: 34.38em) {
   .popup__content {
-    top: 47rem;
+    top: 68rem;
   }
 }
 @media (max-width: 31.25em) {
   .popup__content {
-    top: 49rem;
+    top: 82rem;
   }
 }
 @media (max-width: 31.25em) and (max-height: 59.38em) {
   .popup__content {
-    top: 49rem;
+    top: 82rem;
   }
 }
 @media (max-width: 31.25em) and (max-height: 56.25em) {
   .popup__content {
-    top: 50rem;
+    top: 83rem;
   }
 }
 @media (max-width: 31.25em) and (max-height: 53.13em) {
   .popup__content {
-    top: 49rem;
+    top: 82rem;
   }
 }
 @media (max-width: 31.25em) and (max-height: 50em) {
   .popup__content {
-    top: 49rem;
+    top: 79rem;
   }
 }
 @media (max-width: 31.25em) and (max-height: 46.88em) {
   .popup__content {
-    top: 49rem;
+    top: 75rem;
   }
 }
 @media (max-width: 31.25em) and (max-height: 43.75em) {
   .popup__content {
-    top: 48rem;
+    top: 71rem;
   }
 }
 @media (max-width: 31.25em) and (max-height: 40.63em) {
   .popup__content {
-    top: 48rem;
+    top: 71rem;
   }
 }
 @media (max-width: 31.25em) and (max-height: 37.5em) {
   .popup__content {
-    top: 48rem;
+    top: 70rem;
   }
 }
 @media (max-width: 31.25em) and (max-height: 34.38em) {
   .popup__content {
-    top: 47rem;
+    top: 70rem;
   }
 }
 @media (max-width: 29.69em) {
   .popup__content {
-    top: 52rem;
+    top: 88rem;
   }
 }
 @media (max-width: 29.69em) and (max-height: 59.38em) {
   .popup__content {
-    top: 52rem;
+    top: 88rem;
   }
 }
 @media (max-width: 29.69em) and (max-height: 56.25em) {
   .popup__content {
-    top: 52rem;
+    top: 87rem;
   }
 }
 @media (max-width: 29.69em) and (max-height: 53.13em) {
   .popup__content {
-    top: 50rem;
+    top: 84rem;
   }
 }
 @media (max-width: 29.69em) and (max-height: 50em) {
   .popup__content {
-    top: 50rem;
+    top: 82rem;
   }
 }
 @media (max-width: 29.69em) and (max-height: 46.88em) {
   .popup__content {
-    top: 50rem;
+    top: 78rem;
   }
 }
 @media (max-width: 29.69em) and (max-height: 43.75em) {
   .popup__content {
-    top: 49rem;
+    top: 74rem;
   }
 }
 @media (max-width: 29.69em) and (max-height: 40.63em) {
   .popup__content {
-    top: 49rem;
+    top: 74rem;
   }
 }
 @media (max-width: 29.69em) and (max-height: 37.5em) {
   .popup__content {
-    top: 49rem;
+    top: 74rem;
   }
 }
 @media (max-width: 29.69em) and (max-height: 34.38em) {
   .popup__content {
-    top: 50rem;
+    top: 74rem;
   }
 }
 @media (max-width: 28.13em) {
   .popup__content {
-    top: 53rem;
+    top: 75rem;
   }
 }
 @media (max-width: 28.13em) and (max-height: 59.38em) {
   .popup__content {
-    top: 53rem;
+    top: 89rem;
   }
 }
 @media (max-width: 28.13em) and (max-height: 56.25em) {
   .popup__content {
-    top: 54rem;
+    top: 89rem;
   }
 }
 @media (max-width: 28.13em) and (max-height: 53.13em) {
   .popup__content {
-    top: 53rem;
+    top: 82rem;
   }
 }
 @media (max-width: 28.13em) and (max-height: 50em) {
   .popup__content {
-    top: 53rem;
+    top: 82rem;
   }
 }
 @media (max-width: 28.13em) and (max-height: 46.88em) {
   .popup__content {
-    top: 51rem;
+    top: 79rem;
   }
 }
 @media (max-width: 28.13em) and (max-height: 43.75em) {
   .popup__content {
-    top: 51rem;
+    top: 77rem;
   }
 }
 @media (max-width: 28.13em) and (max-height: 40.63em) {
   .popup__content {
-    top: 51rem;
+    top: 77rem;
   }
 }
 @media (max-width: 28.13em) and (max-height: 37.5em) {
   .popup__content {
-    top: 51rem;
+    top: 75rem;
   }
 }
 @media (max-width: 28.13em) and (max-height: 34.38em) {
   .popup__content {
-    top: 51rem;
+    top: 75rem;
   }
 }
 @media (max-width: 26.56em) {
   .popup__content {
-    top: 57rem;
+    top: 88rem;
   }
 }
 @media (max-width: 26.56em) and (max-height: 59.38em) {
   .popup__content {
-    top: 57rem;
+    top: 88rem;
   }
 }
 @media (max-width: 26.56em) and (max-height: 56.25em) {
   .popup__content {
-    top: 56rem;
+    top: 89rem;
   }
 }
 @media (max-width: 26.56em) and (max-height: 53.13em) {
   .popup__content {
-    top: 54rem;
+    top: 88rem;
   }
 }
 @media (max-width: 26.56em) and (max-height: 50em) {
   .popup__content {
-    top: 54rem;
+    top: 83rem;
   }
 }
 @media (max-width: 26.56em) and (max-height: 46.88em) {
   .popup__content {
-    top: 53rem;
+    top: 79rem;
   }
 }
 @media (max-width: 26.56em) and (max-height: 43.75em) {
   .popup__content {
-    top: 52rem;
+    top: 78rem;
   }
 }
 @media (max-width: 26.56em) and (max-height: 40.63em) {
   .popup__content {
-    top: 52rem;
+    top: 78rem;
   }
 }
 @media (max-width: 26.56em) and (max-height: 37.5em) {
   .popup__content {
-    top: 51rem;
+    top: 76rem;
   }
 }
 @media (max-width: 26.56em) and (max-height: 34.38em) {
   .popup__content {
-    top: 51rem;
+    top: 76rem;
   }
 }
 @media (max-width: 25em) {
   .popup__content {
-    top: 60rem;
+    top: 87rem;
   }
 }
 @media (max-width: 25em) and (max-height: 59.38em) {
   .popup__content {
-    top: 60rem;
+    top: 93rem;
   }
 }
 @media (max-width: 25em) and (max-height: 56.25em) {
   .popup__content {
-    top: 61rem;
+    top: 92rem;
   }
 }
 @media (max-width: 25em) and (max-height: 53.13em) {
   .popup__content {
-    top: 59rem;
+    top: 90rem;
   }
 }
 @media (max-width: 25em) and (max-height: 50em) {
   .popup__content {
-    top: 57rem;
+    top: 87rem;
   }
 }
 @media (max-width: 25em) and (max-height: 46.88em) {
   .popup__content {
-    top: 56rem;
+    top: 85rem;
   }
 }
 @media (max-width: 25em) and (max-height: 43.75em) {
   .popup__content {
-    top: 55rem;
+    top: 81rem;
   }
 }
 @media (max-width: 25em) and (max-height: 40.63em) {
   .popup__content {
-    top: 55rem;
+    top: 81rem;
   }
 }
 @media (max-width: 25em) and (max-height: 37.5em) {
   .popup__content {
-    top: 54rem;
+    top: 80rem;
   }
 }
 @media (max-width: 25em) and (max-height: 34.38em) {
   .popup__content {
-    top: 54rem;
+    top: 79rem;
   }
 }
 @media (max-width: 23.44em) {
   .popup__content {
-    top: 65rem;
+    top: 98rem;
   }
 }
 @media (max-width: 23.44em) and (max-height: 59.38em) {
   .popup__content {
-    top: 62rem;
+    top: 98rem;
   }
 }
 @media (max-width: 23.44em) and (max-height: 56.25em) {
   .popup__content {
-    top: 62rem;
+    top: 97rem;
   }
 }
 @media (max-width: 23.44em) and (max-height: 53.13em) {
   .popup__content {
-    top: 62rem;
+    top: 95rem;
   }
 }
 @media (max-width: 23.44em) and (max-height: 50em) {
   .popup__content {
-    top: 62rem;
+    top: 92rem;
   }
 }
 @media (max-width: 23.44em) and (max-height: 46.88em) {
   .popup__content {
-    top: 58rem;
+    top: 90rem;
   }
 }
 @media (max-width: 23.44em) and (max-height: 43.75em) {
   .popup__content {
-    top: 56rem;
+    top: 86rem;
   }
 }
 @media (max-width: 23.44em) and (max-height: 40.63em) {
   .popup__content {
-    top: 56rem;
+    top: 86rem;
   }
 }
 @media (max-width: 23.44em) and (max-height: 37.5em) {
   .popup__content {
-    top: 56rem;
+    top: 83rem;
   }
 }
 @media (max-width: 23.44em) and (max-height: 34.38em) {
   .popup__content {
-    top: 57rem;
+    top: 83rem;
   }
 }
 @media (max-width: 21.88em) {
   .popup__content {
-    top: 67rem;
+    top: 106rem;
   }
 }
 @media (max-width: 21.88em) and (max-height: 59.38em) {
   .popup__content {
-    top: 67rem;
+    top: 105rem;
   }
 }
 @media (max-width: 21.88em) and (max-height: 56.25em) {
   .popup__content {
-    top: 66rem;
+    top: 105rem;
   }
 }
 @media (max-width: 21.88em) and (max-height: 53.13em) {
   .popup__content {
-    top: 65rem;
+    top: 103rem;
   }
 }
 @media (max-width: 21.88em) and (max-height: 50em) {
   .popup__content {
-    top: 62rem;
+    top: 94rem;
   }
 }
 @media (max-width: 21.88em) and (max-height: 46.88em) {
   .popup__content {
-    top: 63rem;
+    top: 94rem;
   }
 }
 @media (max-width: 21.88em) and (max-height: 43.75em) {
   .popup__content {
-    top: 62rem;
+    top: 89rem;
   }
 }
 @media (max-width: 21.88em) and (max-height: 40.63em) {
   .popup__content {
-    top: 59rem;
+    top: 88rem;
   }
 }
 @media (max-width: 21.88em) and (max-height: 37.5em) {
   .popup__content {
-    top: 59rem;
+    top: 88rem;
   }
 }
 @media (max-width: 21.88em) and (max-height: 34.38em) {
   .popup__content {
-    top: 59rem;
+    top: 88rem;
   }
 }
 @media (max-width: 20.31em) {
   .popup__content {
-    top: 71rem;
+    top: 109rem;
   }
 }
 @media (max-width: 20.31em) and (max-height: 59.38em) {
   .popup__content {
-    top: 71rem;
+    top: 109rem;
   }
 }
 @media (max-width: 20.31em) and (max-height: 56.25em) {
   .popup__content {
-    top: 71rem;
+    top: 108rem;
   }
 }
 @media (max-width: 20.31em) and (max-height: 53.13em) {
   .popup__content {
-    top: 67rem;
+    top: 107rem;
   }
 }
 @media (max-width: 20.31em) and (max-height: 50em) {
   .popup__content {
-    top: 66rem;
+    top: 98rem;
   }
 }
 @media (max-width: 20.31em) and (max-height: 46.88em) {
   .popup__content {
-    top: 65rem;
+    top: 94rem;
   }
 }
 @media (max-width: 20.31em) and (max-height: 43.75em) {
   .popup__content {
-    top: 64rem;
+    top: 93rem;
   }
 }
 @media (max-width: 20.31em) and (max-height: 40.63em) {
   .popup__content {
-    top: 64rem;
+    top: 93rem;
   }
 }
 @media (max-width: 20.31em) and (max-height: 37.5em) {
   .popup__content {
-    top: 64rem;
+    top: 93rem;
   }
 }
 @media (max-width: 20.31em) and (max-height: 34.38em) {
   .popup__content {
-    top: 64rem;
+    top: 92rem;
   }
 }
 @media (max-width: 18.75em) {
   .popup__content {
-    top: 70rem;
+    top: 94rem;
   }
 }
 @media (max-width: 18.75em) and (max-height: 59.38em) {
   .popup__content {
-    top: 75rem;
+    top: 110rem;
   }
 }
 @media (max-width: 18.75em) and (max-height: 56.25em) {
   .popup__content {
-    top: 75rem;
+    top: 110rem;
   }
 }
 @media (max-width: 18.75em) and (max-height: 53.13em) {
   .popup__content {
-    top: 72rem;
+    top: 109rem;
   }
 }
 @media (max-width: 18.75em) and (max-height: 50em) {
   .popup__content {
-    top: 69rem;
+    top: 104rem;
   }
 }
 @media (max-width: 18.75em) and (max-height: 46.88em) {
   .popup__content {
-    top: 68rem;
+    top: 100rem;
   }
 }
 @media (max-width: 18.75em) and (max-height: 43.75em) {
   .popup__content {
-    top: 67rem;
+    top: 99rem;
   }
 }
 @media (max-width: 18.75em) and (max-height: 40.63em) {
   .popup__content {
-    top: 65rem;
+    top: 96rem;
   }
 }
 @media (max-width: 18.75em) and (max-height: 37.5em) {
   .popup__content {
-    top: 63rem;
+    top: 94rem;
   }
 }
 @media (max-width: 18.75em) and (max-height: 34.38em) {
   .popup__content {
-    top: 62rem;
+    top: 94rem;
   }
 }
 .popup__content .btnClose {
@@ -4521,7 +4521,32 @@ body {
 }
 @media (max-width: 37.5em) {
   .popup__img--1 {
-    width: 8rem;
+    width: 25rem;
+  }
+}
+@media (max-width: 35.94em) {
+  .popup__img--1 {
+    width: 24rem;
+  }
+}
+@media (max-width: 34.38em) {
+  .popup__img--1 {
+    width: 23rem;
+  }
+}
+@media (max-width: 28.13em) {
+  .popup__img--1 {
+    width: 21rem;
+  }
+}
+@media (max-width: 26.56em) {
+  .popup__img--1 {
+    width: 19rem;
+  }
+}
+@media (max-width: 20.31em) {
+  .popup__img--1 {
+    width: 16rem;
   }
 }
 .popup__img--2 {
@@ -4531,7 +4556,27 @@ body {
 }
 @media (max-width: 37.5em) {
   .popup__img--2 {
-    width: 13rem;
+    width: 20rem;
+  }
+}
+@media (max-width: 35.94em) {
+  .popup__img--2 {
+    width: 19rem;
+  }
+}
+@media (max-width: 34.38em) {
+  .popup__img--2 {
+    width: 18rem;
+  }
+}
+@media (max-width: 28.13em) {
+  .popup__img--2 {
+    width: 16rem;
+  }
+}
+@media (max-width: 26.56em) {
+  .popup__img--2 {
+    width: 14rem;
   }
 }
 .popup__img--3 {
@@ -4541,7 +4586,27 @@ body {
 }
 @media (max-width: 37.5em) {
   .popup__img--3 {
-    width: 12rem;
+    width: 15rem;
+  }
+}
+@media (max-width: 35.94em) {
+  .popup__img--3 {
+    width: 14rem;
+  }
+}
+@media (max-width: 34.38em) {
+  .popup__img--3 {
+    width: 13rem;
+  }
+}
+@media (max-width: 28.13em) {
+  .popup__img--3 {
+    width: 11rem;
+  }
+}
+@media (max-width: 26.56em) {
+  .popup__img--3 {
+    width: 9rem;
   }
 }
 .popup:target {
