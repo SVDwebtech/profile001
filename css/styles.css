@@ -2084,9 +2084,14 @@ body {
 }
 .img-comp__img--schalk:hover {
   outline: 0.5rem solid #ff0000;
-  transform: translate(-50%, -50%) scale(1.1) translateY(-0.5rem);
+  transform: scale(1.1) translateY(-0.5rem);
   box-shadow: 0 0 1.5rem rgba(241, 241, 241, 0.9), 0 0 7rem rgba(4, 4, 46, 0.9);
   z-index: 200;
+}
+@media (max-width: 37.5em) {
+  .img-comp__img--schalk:hover {
+    transform: translate(-50%, -50%) scale(1.1) translateY(-0.5rem);
+  }
 }
 .img-comp__img--family {
   width: 20rem;
@@ -2820,9 +2825,14 @@ body {
 }
 .img-comp__img--family:hover {
   outline: 0.5rem solid #ff0000;
-  transform: translate(-125%, 20%) scale(1.1) translateY(-0.5rem);
+  transform: scale(1.1) translateY(-0.5rem);
   box-shadow: 0 0 1.5rem rgba(241, 241, 241, 0.9), 0 0 7rem rgba(4, 4, 46, 0.9);
   z-index: 200;
+}
+@media (max-width: 37.5em) {
+  .img-comp__img--family:hover {
+    transform: translate(-125%, 20%) scale(1.1) translateY(-0.5rem);
+  }
 }
 .img-comp__img--potjiekos {
   width: 20rem;
@@ -3553,18 +3563,38 @@ body {
 }
 .img-comp__img--potjiekos:hover {
   outline: 0.5rem solid #ff0000;
-  transform: translate(15%, -80%) scale(1.1) translateY(-0.5rem);
+  transform: scale(1.1) translateY(-0.5rem);
   box-shadow: 0 0 1.5rem rgba(241, 241, 241, 0.9), 0 0 7rem rgba(4, 4, 46, 0.9);
   z-index: 200;
 }
+@media (max-width: 37.5em) {
+  .img-comp__img--potjiekos:hover {
+    transform: translate(15%, -80%) scale(1.1) translateY(-0.5rem);
+  }
+}
 .img-comp:hover .img-comp__img--schalk:not(:hover) {
-  transform: translate(-50%, -50%) scale(0.9);
+  transform: scale(0.9);
+}
+@media (max-width: 37.5em) {
+  .img-comp:hover .img-comp__img--schalk:not(:hover) {
+    transform: translate(-50%, -50%) scale(0.9);
+  }
 }
 .img-comp:hover .img-comp__img--family:not(:hover) {
-  transform: translate(-125%, 10%) scale(0.9);
+  transform: scale(0.9);
+}
+@media (max-width: 37.5em) {
+  .img-comp:hover .img-comp__img--family:not(:hover) {
+    transform: translate(-125%, 10%) scale(0.9);
+  }
 }
 .img-comp:hover .img-comp__img--potjiekos:not(:hover) {
-  transform: translate(15%, -80%) scale(0.9);
+  transform: scale(0.9);
+}
+@media (max-width: 37.5em) {
+  .img-comp:hover .img-comp__img--potjiekos:not(:hover) {
+    transform: translate(15%, -80%) scale(0.9);
+  }
 }
 
 .filler--white {

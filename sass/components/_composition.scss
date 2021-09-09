@@ -552,7 +552,11 @@
 			///////////////////////////////////////////////////////////////////
 			&:hover {
 				outline: .5rem solid $color-primary-brightRed;
-				transform: translate(-50%, -50%) scale(1.1) translateY(-.5rem);
+				transform: scale(1.1) translateY(-.5rem);
+				@include respond(phone600) {
+					transform: translate(-50%, -50%) scale(1.1)
+						translateY(-.5rem);
+				}
 				box-shadow: 0 0 1.5rem rgba($color-primary-white, .9),
 					0 0 7rem rgba($color-primary-darkBlue, .9);
 				z-index: 200;
@@ -1161,7 +1165,11 @@
 			///////////////////////////////////////////////////////////////////
 			&:hover {
 				outline: .5rem solid $color-primary-brightRed;
-				transform: translate(-125%, 20%) scale(1.1) translateY(-.5rem);
+				transform: scale(1.1) translateY(-.5rem);
+				@include respond(phone600) {
+					transform: translate(-125%, 20%) scale(1.1)
+						translateY(-.5rem);
+				}
 				box-shadow: 0 0 1.5rem rgba($color-primary-white, .9),
 					0 0 7rem rgba($color-primary-darkBlue, .9);
 				z-index: 200;
@@ -1767,7 +1775,11 @@
 			///////////////////////////////////////////////////////////////////
 			&:hover {
 				outline: .5rem solid $color-primary-brightRed;
-				transform: translate(15%, -80%) scale(1.1) translateY(-.5rem);
+				transform: scale(1.1) translateY(-.5rem);
+				@include respond(phone600) {
+					transform: translate(15%, -80%) scale(1.1)
+						translateY(-.5rem);
+				}
 				box-shadow: 0 0 1.5rem rgba($color-primary-white, .9),
 					0 0 7rem rgba($color-primary-darkBlue, .9);
 				z-index: 200;
@@ -1776,14 +1788,26 @@
 	}
 	// to select and manipulate elements that is not hovered
 	&:hover &__img--schalk:not(:hover) {
-		transform: translate(-50%, -50%) scale(0.9);
+		transform: scale(0.9);
+
+		@include respond(phone600) {
+			transform: translate(-50%, -50%) scale(0.9);
+		}
 	}
 
 	&:hover &__img--family:not(:hover) {
-		transform: translate(-125%, 10%) scale(0.9);
+		transform: scale(0.9);
+
+		@include respond(phone600) {
+			transform: translate(-125%, 10%) scale(0.9);
+		}
 	}
 
 	&:hover &__img--potjiekos:not(:hover) {
-		transform: translate(15%, -80%) scale(0.9);
+		transform: scale(0.9);
+
+		@include respond(phone600) {
+			transform: translate(15%, -80%) scale(0.9);
+		}
 	}
 }
