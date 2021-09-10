@@ -3920,7 +3920,7 @@ body {
 .popup__img--1 {
   float: left;
   margin-right: 1.5rem;
-  width: 26%;
+  width: 20%;
 }
 @media (max-width: 37.5em) {
   .popup__img--1 {
@@ -3954,7 +3954,7 @@ body {
 }
 .popup__img--2 {
   float: right;
-  width: 40%;
+  width: 30%;
   margin-left: 1.5rem;
 }
 @media (max-width: 37.5em) {
@@ -3984,7 +3984,7 @@ body {
 }
 .popup__img--3 {
   float: left;
-  width: 26%;
+  width: 13%;
   margin-right: 1.5rem;
 }
 @media (max-width: 37.5em) {
