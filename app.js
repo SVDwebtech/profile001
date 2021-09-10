@@ -29,6 +29,10 @@ const carouselIndex1 = document.querySelector(".carouselIndex1");
 const carouselIndex2 = document.querySelector(".carouselIndex2");
 const carouselIndex3 = document.querySelector(".carouselIndex3");
 
+// popup component
+const learnMorePopupButton = document.querySelector(".learnMorePopupBtn");
+const learnMoreCloseButton = document.querySelector(".learnMoreCloseBtn");
+
 // tools
 const toolsLanguages = document.querySelector(".tools__navbarItem--languages");
 const toolsTools = document.querySelector(".tools__navbarItem--tools");
@@ -186,6 +190,14 @@ moreInfoCloseButton.addEventListener("click", function() {
 	cardPopupContent.style.visibility = "hidden";
 });
 
+// //////////////////////////////////////////////////////////////////////////////////////
+// POPUP COMPONENT LIMITED SCROLL
+learnMorePopupButton.addEventListener("click", function() {
+	document.body.classList.add("stop-scrolling");
+});
+learnMoreCloseButton.addEventListener("click", function() {
+	document.body.classList.remove("stop-scrolling");
+});
 // //////////////////////////////////////////////////////////////////////////////////////
 // CAROUSEL FUNCTIONALITY
 
@@ -523,215 +535,3 @@ function toolsFrmwrksAndLibsPosition(
 	toolsFrameworksAndLibs3.style.left = leftPerc3;
 	toolsFrameworksAndLibs3.style.transform = transFormItem;
 }
-
-// const navbar = document.querySelector("#navbar");
-// const navbarBrand = document.querySelector("#navbar-brand");
-// const navLogo1 = document.querySelector("#nav-logo-span-1");
-// const navLogo2 = document.querySelector("#nav-logo-span-2");
-// const hamburgerBtn = document.querySelector("#hamburger-btn");
-// const timesBtn = document.querySelector("#menu-times-btn");
-// const navabarLinks = document.querySelector("#navbar-subcontainer");
-// const menu = document.querySelector("#hamburger-menu");
-// const menuLink = document.querySelectorAll(".hamburger-link");
-// const navLink = document.querySelectorAll(".nav-link");
-// const body = document.querySelector("body");
-// const cv = document.querySelector("#cv");
-
-// const stringAnimation = document.querySelector("#heading-span-4");
-// const stringAnimationTwo = document.querySelector("#heading-span-5");
-
-// const lmaButton = document.querySelector("#abtlearnmre");
-// const lmtButton = document.querySelector("#about-times-btn");
-// const moreContent = document.querySelector("#plussContent");
-// const lessContent = document.querySelector("#minusContent");
-
-// const skillsHide = document.querySelector("#skill-container");
-// const leftArrow = document.querySelector("#leftArrow");
-// const rightArrow = document.querySelector("#rightArrow");
-// const skillsIcon = document.querySelector("#skillsIcon");
-// const skillsDescription = document.querySelector("#skillsDescription");
-// const skillsLongDescription = document.querySelector("#skillsLongDescription");
-// const indexOne = document.querySelector("#index-box-1");
-// const indexTwo = document.querySelector("#index-box-2");
-// const indexThree = document.querySelector("#index-box-3");
-// const indexFour = document.querySelector("#index-box-4");
-
-// // cv.addEventListener("mouseenter", () => {
-// // 	cv.style.transform = "scale(1.05) translateY(-3px)";
-// // 	cv.style.boxShadow = "0 5px 10px rgb(1,1,34)";
-// // });
-// // cv.addEventListener("mouseleave", () => {
-// // 	cv.style.transform = "scale(1) translateY(3px)";
-// // 	cv.style.boxShadow = "0 0 0 rgb(0,0,0)";
-// // });
-
-// window.addEventListener("scroll", () => {
-// 	if (window.scrollY > 0) {
-// 		navbar.style.backgroundColor = "red";
-// 		navbarBrand.style.color = "white";
-// 		navLogo1.style.color = "white";
-// 		navLogo2.style.color = "rgb(1,1,34)";
-// 		hamburgerBtn.style.backgroundColor = "red";
-// 		for (let i = 0; i < navLink.length; i++) {
-// 			navLink[i].style.color = "white";
-// 			navLink[i].addEventListener("mouseenter", () => {
-// 				navLink[i].style.color = "rgb(1,1,34)";
-// 			});
-// 			navLink[i].addEventListener("mouseleave", () => {
-// 				navLink[i].style.color = "white";
-// 			});
-// 		}
-// 	}
-// 	else {
-// 		navbar.style.backgroundColor = "white";
-// 		navbarBrand.style.color = "rgb(1,1,34)";
-// 		navLogo1.style.color = "rgb(1,1,34)";
-// 		navLogo2.style.color = "red";
-// 		hamburgerBtn.style.backgroundColor = "white";
-// 		for (let i = 0; i < navLink.length; i++) {
-// 			navLink[i].style.color = "rgb(1,1,34)";
-// 			navLink[i].addEventListener("mouseenter", () => {
-// 				navLink[i].style.color = "red";
-// 			});
-// 			navLink[i].addEventListener("mouseleave", () => {
-// 				navLink[i].style.color = "rgb(1,1,34)";
-// 			});
-// 		}
-// 	}
-// });
-
-// menu.classList.add("menuDisplay");
-// hamburgerBtn.addEventListener("click", () => {
-// 	menu.classList.toggle("menuDisplay");
-// 	window.setTimeout(() => {
-// 		menu.style.opacity = 1;
-// 	}, 0);
-// 	for (let i = 0; i < menuLink.length; i++) {
-// 		menuLink[i].style.color = "rgb(1,1,34)";
-// 		menuLink[i].addEventListener("mouseenter", () => {
-// 			menuLink[i].style.color = "red";
-// 		});
-// 		menuLink[i].addEventListener("mouseleave", () => {
-// 			menuLink[i].style.color = "rgb(1,1,34)";
-// 		});
-// 	}
-// });
-
-// for (let i = 0; i < menuLink.length; i++) {
-// 	menuLink[i].addEventListener("click", () => {
-// 		menu.classList.toggle("menuDisplay");
-// 	});
-// }
-
-// timesBtn.addEventListener("click", () => {
-// 	menu.style.opacity = 0;
-// 	window.setTimeout(() => {
-// 		menu.classList.toggle("menuDisplay");
-// 	}, 2000);
-// });
-
-// moreContent.classList.add("moreContentDisplay");
-// lmaButton.addEventListener("click", () => {
-// 	lessContent.style.opacity = 0;
-// 	lessContent.classList.toggle("lessContentDisplay");
-// 	moreContent.classList.toggle("moreContentDisplay");
-// 	window.setTimeout(() => {
-// 		moreContent.style.opacity = 1;
-// 	}, 0);
-// });
-
-// lmtButton.addEventListener("click", () => {
-// 	moreContent.style.opacity = 0;
-// 	moreContent.classList.toggle("moreContentDisplay");
-// 	lessContent.classList.toggle("lessContentDisplay");
-// 	window.setTimeout(() => {
-// 		lessContent.style.opacity = 1;
-// 	}, 0);
-// });
-
-// const stringAnimationVariants = [
-// 	"a Web Developer!",
-// 	"qualified by experience!",
-// 	"a family man!",
-// 	"a problem solver!"
-// ];
-
-// let dispString = "";
-// const arrayDisp = {
-// 	1 : [],
-// 	2 : [],
-// 	3 : [],
-// 	4 : []
-// };
-
-// const arrayDispKeys = Object.keys(arrayDisp);
-// console.log("keys", arrayDispKeys["4"]);
-// const arrayDispValues = Object.values(arrayDisp);
-// console.log("values", arrayDispValues);
-
-// for (let i = 0; i <= stringAnimationVariants.length - 1; i++) {
-// 	for (let j = 0; j <= stringAnimationVariants[i].length - 1; j++) {
-// 		dispString += stringAnimationVariants[i][j];
-// 		arrayDispValues[i][j] = dispString;
-// 	}
-// 	dispString = "";
-// }
-
-// let counter = 0;
-// let arrayDispKey = 1;
-// let arr = arrayDisp[arrayDispKey];
-
-// // arrow function to type backwards
-// const typeRwd = () => {
-// 	if (counter >= 1) {
-// 		setTimeout(function() {
-// 			if (stringAnimation.innerText === "a problem solver!") {
-// 				console.log("I'm done!!!");
-// 				stringAnimationTwo.classList.add("stringAnimation5-disp-none");
-// 			}
-// 			else {
-// 				counter--;
-// 				stringAnimation.innerText = arr[counter];
-// 				if (counter === arr.length - 1) {
-// 					const intervalID = setInterval(() => {
-// 						stringAnimationTwo.classList.toggle(
-// 							"stringAnimation5-disp-none"
-// 						);
-// 					}, 230);
-// 					setTimeout(() => {
-// 						console.log("wait a bit");
-// 						clearInterval(intervalID);
-// 						stringAnimationTwo.classList.remove(
-// 							"stringAnimation5-disp-none"
-// 						);
-// 						typeRwd();
-// 					}, 2000);
-// 				}
-// 				else {
-// 					typeRwd();
-// 				}
-// 			}
-// 		}, 110);
-// 	}
-// 	else {
-// 		arr = arrayDisp[(arrayDispKey += 1)];
-// 		counter = 0;
-// 		typeFwd();
-// 	}
-// };
-
-// // arrow function to type forwards
-// const typeFwd = () => {
-// 	if (counter <= arr.length - 1) {
-// 		setTimeout(function() {
-// 			stringAnimation.innerText = arr[counter];
-// 			counter++;
-// 			typeFwd();
-// 		}, 110);
-// 	}
-// 	else {
-// 		typeRwd();
-// 	}
-// };
-
-// typeFwd()
