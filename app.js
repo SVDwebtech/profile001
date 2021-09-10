@@ -31,6 +31,7 @@ const carouselIndex3 = document.querySelector(".carouselIndex3");
 
 // popup component
 const learnMorePopupButton = document.querySelector(".learnMorePopupBtn");
+const learnMoreCloseButton = document.querySelector(".learnMoreCloseBtn");
 
 // tools
 const toolsLanguages = document.querySelector(".tools__navbarItem--languages");
@@ -193,6 +194,9 @@ moreInfoCloseButton.addEventListener("click", function() {
 // POPUP COMPONENT LIMITED SCROLL
 learnMorePopupButton.addEventListener("click", function() {
 	document.body.classList.add("stop-scrolling");
+});
+learnMoreCloseButton.addEventListener("click", function() {
+	document.body.classList.remove("stop-scrolling");
 });
 // //////////////////////////////////////////////////////////////////////////////////////
 // CAROUSEL FUNCTIONALITY
