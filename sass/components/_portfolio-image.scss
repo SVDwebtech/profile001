@@ -1,0 +1,10 @@
+.portfolio-image {
+	background-color: $color-primary-darkBlue;
+	padding: 2.5rem;
+
+	&__image {
+		width: 60%;
+		height: auto;
+		margin: 0 auto;
+	}
+}

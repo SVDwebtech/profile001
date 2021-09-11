@@ -331,13 +331,16 @@ body {
 }
 // topography of portfolio-section;
 .portfolio__contBelow {
-	color: #04042f;
+	color: $color-font-white;
 	text-align: center;
 	.paragraph {
 		font-size: 1.4rem;
 		@include respond(phone600) {
 			font-size: 1.7rem;
 		}
+	}
+	.portfolio-card__buttons--btn {
+		color: $color-font-white;
 	}
 }
 // topography of contact-section;

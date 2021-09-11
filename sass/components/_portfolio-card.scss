@@ -1,3 +1,29 @@
 .portfolio-card {
-	background-color: $color-font-white;
+	background-color: transparent;
+
+	padding: 2.5rem;
+
+	&__techandbuttons-container {
+		display: flex;
+		justify-content: space-evenly;
+	}
+
+	&__techlist {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-evenly;
+		&--item {
+			list-style: none;
+		}
+	}
+
+	&__buttons {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-evenly;
+
+		&--btn {
+			text-decoration: none;
+		}
+	}
 }

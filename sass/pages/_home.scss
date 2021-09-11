@@ -905,212 +905,24 @@
 	background-color: $color-primary-darkBlue;
 	min-height: 93vh;
 	padding-top: 4rem;
+	// portfolio content wrapper
 	&__content {
 		display: flex;
-		width: 85%;
+		justify-content: center;
+		align-items: stretch;
+
+		background-color: $color-primary-darkRed;
+		width: 65%;
 		margin: 0 auto;
-
-		// set content background-color to help fix fine space
-		// between borders etc on smaller screen sizes
-		background-color: $color-font-white;
-
-		border: 5px solid $color-font-white;
-		border-radius: $border-radius-medium;
-
-		@include respond(tablet-landscape) {
-			width: 90%;
-		}
-
-		@include respond(tablet-portrait) {
-			flex-direction: column;
-			width: 40rem;
-			height: auto;
-			align-self: center;
-		}
-
-		@include respond(tablet-portrait-2) {
-			width: 42.7rem;
-		}
-
-		@include respond(phone600) {
-			width: 33rem;
-		}
-
-		// @include respond(phone550) {
-		// 	width: 70%;
-		// }
-
-		// @include respond(phone450) {
-		// 	width: 75%;
-		// }
-
-		// @include respond(phone300) {
-		// 	width: 80%;
-		// }
-
-		&:hover > :not(:last-child) > img {
-			transform: translate(-50%, -50%) scale(1.1);
-		}
-
-		&:hover > ::after {
-			background-color: rgba(209, 192, 192, 0.9);
-			border-radius: 1000px;
-			transform: translate(-50%, -50%) scale(0);
-		}
+		padding: 2.5rem;
 	}
 	// portfolio image container
 	&__contAbove {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		flex: 1 0 300px;
-
-		// set content background-color to help fix fine space
-		// between borders etc on smaller screen sizes
-		background-color: $color-primary-darkBlue;
-
-		// border: 5px solid $color-font-white;
-		// border-bottom-left-radius: $border-radius-medium;
-		// border-top-left-radius: $border-radius-medium;
-
-		position: relative;
-
-		@include respond(tablet-portrait) {
-			order: 1;
-			flex: 1 0 100%;
-			min-height: 22vw;
-
-			// border: 5px solid $color-font-white;
-			// border-top-left-radius: $border-radius-medium;
-			// border-top-right-radius: $border-radius-medium;
-			// border-bottom-left-radius: 0;
-		}
-
-		@include respond(phone600) {
-			min-height: 18rem;
-		}
-
-		&::after {
-			content: "";
-			width: 75%;
-			height: 65%;
-			background-color: rgba(255, 255, 255, .85);
-
-			@include respond(tablet-portrait) {
-				width: 55%;
-				height: 60%;
-			}
-
-			@include respond(tablet-portrait-2) {
-				width: 60%;
-				height: 60%;
-			}
-
-			position: absolute;
-			top: 50%;
-			left: 50%;
-			transform: translate(-50%, -50%);
-
-			transition: all .5s;
-		}
-
-		// image width set to 100% of the width of its container;
-		&--img {
-			width: 75%;
-			height: 65%;
-
-			@include respond(tablet-portrait) {
-				width: 55%;
-				height: 60%;
-			}
-
-			@include respond(tablet-portrait-2) {
-				width: 60%;
-				height: 60%;
-			}
-
-			position: absolute;
-			top: 50%;
-			left: 50%;
-			transform: translate(-50%, -50%);
-
-			transition: all .5s;
-		}
+		flex: 1 0 20rem;
 	}
 	// portfolio projectinfo container
 	&__contBelow {
-		flex: 1 0 320px;
-		padding: 3rem 8rem;
-		position: relative;
-
-		// border: 5px solid $color-font-white;
-		// border-bottom-right-radius: $border-radius-medium;
-		// border-top-right-radius: $border-radius-medium;
-
-		p {
-			padding: 0 1rem;
-			max-width: 280px;
-			margin: 0 auto;
-
-			@include respond(tablet-landscape) {
-				max-width: 230px;
-				margin: 0 auto;
-			}
-			@include respond(tablet-portrait) {
-				max-width: 200px;
-				margin: 0 auto;
-			}
-			@include respond(tablet-portrait-2) {
-				max-width: 180px;
-				margin: 0 auto;
-			}
-			@include respond(phone600) {
-				max-width: 180px;
-				margin: 0 auto;
-			}
-		}
-
-		& > :not(:last-child) {
-			padding-bottom: 1.75rem;
-			margin-bottom: 1.25rem;
-			border-bottom: 1px solid #04042f;
-		}
-
-		& > :first-child {
-			border-bottom: none;
-		}
-
-		@include respond(tablet-landscape) {
-			padding: 3rem 6rem;
-		}
-
-		@include respond(tablet-portrait) {
-			order: 2;
-			flex: 1 0 100%;
-			padding: 3rem 4rem;
-
-			// border: 5px solid $color-font-white;
-			// border-bottom-right-radius: $border-radius-medium;
-			// border-bottom-left-radius: $border-radius-medium;
-			// border-top-right-radius: 0;
-
-			& > :not(:last-child) {
-				padding-bottom: 1rem;
-				margin-bottom: 1rem;
-			}
-		}
-
-		@include respond(tablet-portrait-2) {
-			padding: 3rem 7rem;
-		}
-
-		@include respond(phone600) {
-			padding: 3rem 5rem;
-		}
-
-		@include respond(phone550) {
-			padding: 2rem 0rem;
-		}
+		flex: 1 0 20rem;
 	}
 }
 // //////////////////////////////////////////////////////////////////////////////////////
