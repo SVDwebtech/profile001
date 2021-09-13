@@ -3,6 +3,10 @@
 
 	padding: 0 2.5rem 2.5rem;
 
+	@include respond(tablet-portrait) {
+		padding: 2.5rem 0;
+	}
+
 	&__techandbuttons-container {
 		display: flex;
 		flex-direction: column;

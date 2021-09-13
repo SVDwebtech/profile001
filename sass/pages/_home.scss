@@ -922,7 +922,12 @@
 
 		width: 80%;
 		margin: 0 auto;
-		padding: 2.5rem;
+		padding: 2.5rem 2.5rem 0;
+
+		@include respond(tablet-portrait) {
+			flex-direction: column;
+			width: 40rem;
+		}
 	}
 	// portfolio image container
 	&__contAbove {

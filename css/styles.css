@@ -4050,6 +4050,11 @@ body {
   background-color: transparent;
   padding: 0 2.5rem 2.5rem;
 }
+@media (max-width: 56.25em) {
+  .portfolio-card {
+    padding: 2.5rem 0;
+  }
+}
 .portfolio-card__techandbuttons-container {
   display: flex;
   flex-direction: column;
@@ -5292,7 +5297,13 @@ body {
   border-radius: 0.5rem;
   width: 80%;
   margin: 0 auto;
-  padding: 2.5rem;
+  padding: 2.5rem 2.5rem 0;
+}
+@media (max-width: 56.25em) {
+  .portfolio__content {
+    flex-direction: column;
+    width: 40rem;
+  }
 }
 .portfolio__contAbove {
   flex: 1 0 20rem;
