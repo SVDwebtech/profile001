@@ -4046,7 +4046,7 @@ body {
 
 .portfolio-card {
   background-color: transparent;
-  padding: 2.5rem;
+  padding: 0 2.5rem 2.5rem;
 }
 .portfolio-card__techandbuttons-container {
   display: flex;
