@@ -4039,6 +4039,10 @@ body {
 }
 .portfolio-card__techlist--item {
   list-style: none;
+  background-color: #04042e;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.4);
+  padding: 0.5rem 2.5rem;
 }
 .portfolio-card__buttons {
   display: flex;
