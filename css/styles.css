@@ -5261,9 +5261,7 @@ body {
   background-image: linear-gradient(to right bottom, rgba(255, 0, 0, 0.95), rgba(4, 4, 46, 0.95));
   background-size: cover;
   border: 1px solid rgba(4, 4, 46, 0.5);
-  border-radius: 0.2rem;
-  border-top-left-radius: 0.5rem;
-  border-bottom-left-radius: 0.5rem;
+  border-radius: 0.5rem;
   width: 65%;
   margin: 0 auto;
   padding: 2.5rem;
