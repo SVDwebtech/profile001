@@ -339,9 +339,11 @@ body {
 	}
 	.paragraph {
 		font-size: $font-size-paragraph-small;
+		margin: 0.5rem;
 	}
 	&__techlist--item {
 		font-size: $font-size-paragraph-small;
+		text-align: center;
 	}
 	.portfolio-card__buttons--btn {
 		color: $color-font-white;
