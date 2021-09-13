@@ -764,7 +764,7 @@ body {
   font-size: 1.6rem;
 }
 @media (max-width: 56.25em) {
-  .paragraph__skills {
+  .paragraph__skills, .paragraph__portfolio {
     font-size: 1.8rem;
   }
 }
@@ -947,19 +947,19 @@ body {
   color: #c9c8c8;
 }
 
-.portfolio__contBelow {
+.portfolio-card {
   color: #c9c8c8;
-  text-align: center;
 }
-.portfolio__contBelow .paragraph {
+.portfolio-card h4 {
+  font-size: 1.8rem;
+}
+.portfolio-card .paragraph {
   font-size: 1.4rem;
 }
-@media (max-width: 37.5em) {
-  .portfolio__contBelow .paragraph {
-    font-size: 1.7rem;
-  }
+.portfolio-card__techlist--item {
+  font-size: 1.8rem;
 }
-.portfolio__contBelow .portfolio-card__buttons--btn {
+.portfolio-card .portfolio-card__buttons--btn {
   color: #c9c8c8;
 }
 

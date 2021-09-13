@@ -173,7 +173,8 @@ body {
 	&__card {
 		font-size: 1.6rem;
 	}
-	&__skills {
+	&__skills,
+	&__portfolio {
 		@include respond(tablet-portrait) {
 			font-size: 1.8rem;
 		}
@@ -330,14 +331,17 @@ body {
 	}
 }
 // topography of portfolio-section;
-.portfolio__contBelow {
+.portfolio-card {
 	color: $color-font-white;
-	text-align: center;
+	// text-align: center;
+	h4 {
+		font-size: 1.8rem;
+	}
 	.paragraph {
-		font-size: 1.4rem;
-		@include respond(phone600) {
-			font-size: 1.7rem;
-		}
+		font-size: $font-size-paragraph-small;
+	}
+	&__techlist--item {
+		font-size: 1.8rem;
 	}
 	.portfolio-card__buttons--btn {
 		color: $color-font-white;
