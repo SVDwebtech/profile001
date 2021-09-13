@@ -5305,6 +5305,11 @@ body {
     width: 40rem;
   }
 }
+@media (max-width: 31.25em) {
+  .portfolio__content {
+    width: 75%;
+  }
+}
 .portfolio__contAbove {
   flex: 1 0 20rem;
 }

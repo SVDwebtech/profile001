@@ -928,6 +928,10 @@
 			flex-direction: column;
 			width: 40rem;
 		}
+
+		@include respond(phone500) {
+			width: 75%;
+		}
 	}
 	// portfolio image container
 	&__contAbove {
