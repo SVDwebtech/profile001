@@ -173,7 +173,8 @@ body {
 	&__card {
 		font-size: 1.6rem;
 	}
-	&__skills {
+	&__skills,
+	&__portfolio {
 		@include respond(tablet-portrait) {
 			font-size: 1.8rem;
 		}
@@ -330,14 +331,22 @@ body {
 	}
 }
 // topography of portfolio-section;
-.portfolio__contBelow {
-	color: #04042f;
-	text-align: center;
+.portfolio-card {
+	color: $color-font-white;
+	// text-align: center;
+	h4 {
+		font-size: 1.8rem;
+	}
 	.paragraph {
-		font-size: 1.4rem;
-		@include respond(phone600) {
-			font-size: 1.7rem;
-		}
+		font-size: $font-size-paragraph-small;
+		margin: 0.5rem;
+	}
+	&__techlist--item {
+		font-size: $font-size-paragraph-small;
+		text-align: center;
+	}
+	.portfolio-card__buttons--btn {
+		color: $color-font-white;
 	}
 }
 // topography of contact-section;
