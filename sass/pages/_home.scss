@@ -1061,7 +1061,24 @@
 	&__itemsContainer {
 		display: flex;
 		flex-direction: column;
-		justify-content: center;
+		justify-content: space-evenly;
+		min-height: 7rem;
+
+		@include respond(tablet-portrait) {
+			min-height: 14rem;
+		}
+
+		@include respond(phone425) {
+			min-height: 12rem;
+		}
+
+		@include respond(phone375) {
+			min-height: 12rem;
+		}
+
+		@include respond(phone300) {
+			min-height: 15rem;
+		}
 
 		&--tel,
 		&--email {
@@ -1071,10 +1088,10 @@
 		&--tel:hover,
 		&--email:hover {
 			color: $color-primary-brightRed;
-			font-size: 1.45rem;
+			font-size: 1.4rem;
 
 			@include respond(tablet-landscape) {
-				font-size: 1.55rem;
+				font-size: 1.35rem;
 			}
 
 			@include respond(tablet-portrait) {
@@ -1082,19 +1099,23 @@
 			}
 
 			@include respond(phone600) {
-				font-size: 1.6rem;
+				font-size: 1.75rem;
+			}
+
+			@include respond(phone425) {
+				font-size: 1.89rem;
 			}
 
 			@include respond(phone400) {
-				font-size: 2rem;
+				font-size: 1.7rem;
 			}
 
 			@include respond(phone350) {
-				font-size: 1.65rem;
+				font-size: 1.36rem;
 			}
 
 			@include respond(phone300) {
-				font-size: 1.6rem;
+				font-size: 1.25rem;
 			}
 		}
 		i {
