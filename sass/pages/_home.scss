@@ -922,7 +922,7 @@
 
 		width: 80%;
 		margin: 0 auto;
-		padding: 2.5rem 2.5rem 0;
+		padding: 2.5rem 2.5rem 2.5rem;
 
 		@include respond(tablet-portrait) {
 			flex-direction: column;
