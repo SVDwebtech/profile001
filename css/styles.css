@@ -625,6 +625,11 @@ body {
     font-size: 1.7rem;
   }
 }
+@media (max-width: 56.25em) {
+  .heading-primary--span {
+    font-size: 3rem;
+  }
+}
 @media (max-width: 31.25em) {
   .heading-primary--span {
     font-size: 1.65rem;
@@ -648,7 +653,7 @@ body {
 }
 @media (max-width: 56.25em) {
   .heading-primary--span2 {
-    font-size: 5rem;
+    font-size: 7rem;
   }
 }
 @media (max-width: 37.5em) {
@@ -4380,6 +4385,11 @@ body {
   border-radius: 0.5rem;
   background-color: rgba(241, 241, 241, 0.8);
   padding: 4em 5em;
+}
+@media (max-width: 56.25em) {
+  .header__headingPrimary {
+    margin-bottom: 10rem;
+  }
 }
 @media (max-width: 25em) {
   .header__headingPrimary {
