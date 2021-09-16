@@ -95,11 +95,20 @@
 	// to position the social-media component to the bottom left of the page;
 	&__contentBottomLeft {
 		width: 35rem;
+
+		@include respond(tablet-portrait) {
+			width: 40rem;
+		}
 	}
 
 	// to align the paragraph with the icons;
 	&__paragraph {
 		text-align: center;
+
+		@include respond(tablet-portrait) {
+			margin-bottom: 3rem !important;
+		}
+
 		@include respond(phone600) {
 			margin-left: 0rem;
 		}

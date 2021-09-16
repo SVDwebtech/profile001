@@ -835,6 +835,12 @@ body {
   font-size: 2.2rem;
   font-weight: 700;
 }
+@media (max-width: 56.25em) {
+  .header__paragraph {
+    text-align: center;
+    font-size: 4rem;
+  }
+}
 @media (max-width: 37.5em) {
   .header__paragraph {
     text-align: center;
@@ -874,6 +880,11 @@ body {
 .header .socialMedia__icon {
   color: #c9c8c8;
   font-size: 4rem;
+}
+@media (max-width: 56.25em) {
+  .header .socialMedia__icon {
+    font-size: 6.5rem;
+  }
 }
 @media (max-width: 37.5em) {
   .header .socialMedia__icon {
@@ -4408,8 +4419,18 @@ body {
 .header__contentBottomLeft {
   width: 35rem;
 }
+@media (max-width: 56.25em) {
+  .header__contentBottomLeft {
+    width: 40rem;
+  }
+}
 .header__paragraph {
   text-align: center;
+}
+@media (max-width: 56.25em) {
+  .header__paragraph {
+    margin-bottom: 3rem !important;
+  }
 }
 @media (max-width: 37.5em) {
   .header__paragraph {
@@ -5307,7 +5328,7 @@ body {
   border-radius: 0.5rem;
   width: 80%;
   margin: 0 auto;
-  padding: 2.5rem 2.5rem 0;
+  padding: 2.5rem 2.5rem 2.5rem;
 }
 @media (max-width: 56.25em) {
   .portfolio__content {
