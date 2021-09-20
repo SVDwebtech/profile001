@@ -26,6 +26,10 @@ body {
 			font-size: 3rem;
 		}
 
+		@include respond(tabletPortraitMaxand850Max) {
+			font-size: 2.5rem;
+		}
+
 		@include respond(phone500) {
 			font-size: 1.65rem;
 		}
@@ -41,6 +45,10 @@ body {
 
 		@include respond(tablet-portrait) {
 			font-size: 7rem;
+		}
+
+		@include respond(tabletPortraitMaxand850Max) {
+			font-size: 6rem;
 		}
 
 		@include respond(phone600) {

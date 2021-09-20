@@ -630,6 +630,11 @@ body {
     font-size: 3rem;
   }
 }
+@media (max-width: 56.25em) and (max-height: 53.13em) {
+  .heading-primary--span {
+    font-size: 2.5rem;
+  }
+}
 @media (max-width: 31.25em) {
   .heading-primary--span {
     font-size: 1.65rem;
@@ -654,6 +659,11 @@ body {
 @media (max-width: 56.25em) {
   .heading-primary--span2 {
     font-size: 7rem;
+  }
+}
+@media (max-width: 56.25em) and (max-height: 53.13em) {
+  .heading-primary--span2 {
+    font-size: 6rem;
   }
 }
 @media (max-width: 37.5em) {
@@ -4389,6 +4399,11 @@ body {
 @media (max-width: 56.25em) {
   .header__headingPrimary {
     margin-bottom: 10rem;
+  }
+}
+@media (max-width: 56.25em) and (max-height: 53.13em) {
+  .header__headingPrimary {
+    margin-bottom: 0;
   }
 }
 @media (max-width: 25em) {
