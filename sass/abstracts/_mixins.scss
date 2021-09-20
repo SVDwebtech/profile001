@@ -1206,6 +1206,14 @@ ORDER: base + typography > general layout + grid > page layout > components
 			@content;
 		}
 	}
+	// tablet portrait breakpoint
+	@if $breakpoint == tabletPortraitMaxand850Max {
+		// 900px (900/16 = 56.25) && 850px (850/16 = 53.13)
+		// REMEMBER: 1em = 16px;
+		@media (max-width: 56.25em) and (max-height: 53.13em) {
+			@content;
+		}
+	}
 	///////////////////////////////////////////////////////////////////////////
 	// tablet landscape breakpoint
 	@if $breakpoint == tablet-landscape {
