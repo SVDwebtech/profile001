@@ -60,6 +60,10 @@
 			margin-bottom: 10rem;
 		}
 
+		@include respond(tabletPortraitMaxand850Max) {
+			margin-bottom: 0;
+		}
+
 		@include respond(phone400) {
 			padding: 4em 4.5em;
 		}
