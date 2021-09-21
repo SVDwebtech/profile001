@@ -56,6 +56,14 @@
 		background-color: rgba($color-primary-white, .8);
 		padding: 4em 5em;
 
+		@include respond(tablet-portrait) {
+			margin-bottom: 10rem;
+		}
+
+		@include respond(tabletPortraitMaxand850Max) {
+			margin-bottom: 0;
+		}
+
 		@include respond(phone400) {
 			padding: 4em 4.5em;
 		}
@@ -95,11 +103,20 @@
 	// to position the social-media component to the bottom left of the page;
 	&__contentBottomLeft {
 		width: 35rem;
+
+		@include respond(tablet-portrait) {
+			width: 40rem;
+		}
 	}
 
 	// to align the paragraph with the icons;
 	&__paragraph {
 		text-align: center;
+
+		@include respond(tablet-portrait) {
+			margin-bottom: 3rem !important;
+		}
+
 		@include respond(phone600) {
 			margin-left: 0rem;
 		}
@@ -116,8 +133,12 @@
 	background-color: $color-primary-darkBlue;
 	min-height: 85vh;
 
+	@include respond(tablet-portrait) {
+		min-height: 94vh;
+	}
+
 	@include respond(tablet-portrait-2) {
-		min-height: 90vh;
+		min-height: 93vh;
 	}
 
 	@include respond(phone600) {
@@ -178,7 +199,7 @@
 		}
 		// change view to top and bottom instead side by side
 		// top to bottom better on smaller screen size
-		@include respond(tablet-portrait-2) {
+		@include respond(tablet-portrait) {
 			flex-direction: column;
 		}
 
@@ -192,19 +213,39 @@
 				margin-right: 3.8rem;
 			}
 
-			@include respond(tablet-portrait) {
-				margin-right: 3.5rem;
-				width: 40%;
-			}
+			// @include respond(tablet-portrait) {
+			// 	margin-right: 3.5rem;
+			// 	width: 40%;
+			// }
 			// increase width to 100% as the containers now appears on top of each other
-			@include respond(tablet-portrait-2) {
+			@include respond(tablet-portrait) {
 				margin-top: 4rem;
-				width: 100%;
+				width: 93%;
 				order: 2;
 
 				position: absolute;
 				left: 0;
 				top: 50vh;
+			}
+
+			@include respond(tabletPortraitMaxand1300Max) {
+				top: 58vh;
+			}
+
+			@include respond(tabletPortraitMaxand1300Max) {
+				top: 56vh;
+			}
+
+			@include respond(tablet-portrait-2) {
+				top: 58vh;
+			}
+
+			@include respond(tabletPortrait2Maxand900Max) {
+				top: 52vh;
+			}
+
+			@include respond(tabletPortrait2Maxand700Max) {
+				top: 54vh;
 			}
 
 			//////////////////////////////////////////////////////////////////
@@ -740,8 +781,9 @@
 			}
 
 			@include respond(tablet-portrait) {
-				margin-left: 3.5rem;
-				min-width: 40%;
+				width: 92%;
+				margin: 0 auto;
+				order: 1;
 			}
 			// increase width to 100% as the containers now appears on top of each other
 			@include respond(tablet-portrait-2) {
@@ -807,11 +849,11 @@
 			margin-bottom: 1.2rem;
 		}
 
-		@include respond(tablet-portrait) {
-			margin-bottom: 3.5rem;
-		}
+		// @include respond(tablet-portrait) {
+		// 	margin-bottom: 3.5rem;
+		// }
 
-		@include respond(tablet-portrait-2) {
+		@include respond(tablet-portrait) {
 			// change to column style layout on smaller screen size
 			flex-direction: column;
 			align-items: center;
@@ -820,7 +862,7 @@
 		&--description {
 			width: 45%;
 
-			@include respond(tablet-portrait-2) {
+			@include respond(tablet-portrait) {
 				width: 100%;
 				margin-bottom: 3rem;
 				order: 1;
@@ -834,8 +876,13 @@
 		&--carousel {
 			width: 45%;
 
-			@include respond(tablet-portrait-2) {
-				width: 85%;
+			@include respond(tablet-portrait) {
+				width: 70rem;
+				order: 2;
+			}
+
+			@include respond(phone600) {
+				max-width: 85%;
 				order: 2;
 			}
 
@@ -855,11 +902,11 @@
 			margin-top: 3rem;
 		}
 
-		@include respond(tablet-portrait) {
-			margin-top: 5.5rem;
-		}
+		// @include respond(tablet-portrait) {
+		// 	margin-top: 5.5rem;
+		// }
 
-		@include respond(tablet-portrait-2) {
+		@include respond(tablet-portrait) {
 			// change to column style layout on smaller screen size
 			flex-direction: column;
 			align-items: center;
@@ -871,7 +918,7 @@
 			width: 45%;
 			order: 2;
 
-			@include respond(tablet-portrait-2) {
+			@include respond(tablet-portrait) {
 				width: 100%;
 				margin-bottom: 3rem;
 				order: 1;
@@ -883,9 +930,13 @@
 			width: 45%;
 			padding: 0;
 
-			@include respond(tablet-portrait-2) {
-				width: 65%;
+			@include respond(tablet-portrait) {
+				width: 50rem;
 				order: 2;
+			}
+
+			@include respond(phone600) {
+				width: 65%;
 			}
 
 			@include respond(phone450) {
@@ -922,7 +973,7 @@
 
 		width: 80%;
 		margin: 0 auto;
-		padding: 2.5rem 2.5rem 0;
+		padding: 2.5rem 2.5rem 2.5rem;
 
 		@include respond(tablet-portrait) {
 			flex-direction: column;
@@ -1061,7 +1112,24 @@
 	&__itemsContainer {
 		display: flex;
 		flex-direction: column;
-		justify-content: center;
+		justify-content: space-evenly;
+		min-height: 7rem;
+
+		@include respond(tablet-portrait) {
+			min-height: 14rem;
+		}
+
+		@include respond(phone425) {
+			min-height: 12rem;
+		}
+
+		@include respond(phone375) {
+			min-height: 12rem;
+		}
+
+		@include respond(phone300) {
+			min-height: 15rem;
+		}
 
 		&--tel,
 		&--email {
@@ -1071,10 +1139,10 @@
 		&--tel:hover,
 		&--email:hover {
 			color: $color-primary-brightRed;
-			font-size: 1.45rem;
+			font-size: 1.4rem;
 
 			@include respond(tablet-landscape) {
-				font-size: 1.55rem;
+				font-size: 1.35rem;
 			}
 
 			@include respond(tablet-portrait) {
@@ -1082,19 +1150,23 @@
 			}
 
 			@include respond(phone600) {
-				font-size: 1.6rem;
+				font-size: 1.75rem;
+			}
+
+			@include respond(phone425) {
+				font-size: 1.89rem;
 			}
 
 			@include respond(phone400) {
-				font-size: 2rem;
+				font-size: 1.7rem;
 			}
 
 			@include respond(phone350) {
-				font-size: 1.65rem;
+				font-size: 1.36rem;
 			}
 
 			@include respond(phone300) {
-				font-size: 1.6rem;
+				font-size: 1.25rem;
 			}
 		}
 		i {

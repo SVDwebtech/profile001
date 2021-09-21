@@ -17,10 +17,52 @@
 			right: 35%;
 			z-index: 120;
 
+			@include respond(tablet-portrait) {
+				width: 20vh;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+			}
+
+			@include respond(tabletPortraitMaxand1300Max) {
+				width: 18vh;
+			}
+
+			@include respond(tabletPortraitMaxand1100Max) {
+				width: 16vh;
+			}
+
+			@include respond(tabletPortraitMaxand900Max) {
+				width: 14vh;
+			}
+
+			///////////////////////////////////////////////////////////////////
 			@include respond(tablet-portrait-2) {
-				width: 18rem;
-				right: 42%;
-				top: -1rem;
+				width: 18vh;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+			}
+
+			@include respond(tabletPortrait2Maxand1300Max) {
+				width: 18vh;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+			}
+
+			@include respond(tabletPortrait2Maxand1100Max) {
+				width: 16vh;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+			}
+
+			@include respond(tabletPortrait2Maxand900Max) {
+				width: 14vh;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
 			}
 			///////////////////////////////////////////////////////////////////
 			@include respond(phone600) {
@@ -569,10 +611,52 @@
 			right: 30%;
 			z-index: 130;
 
+			@include respond(tablet-portrait) {
+				width: 19vh;
+				top: 50%;
+				left: 50%;
+				transform: translate(-110%, 10%);
+			}
+
+			@include respond(tabletPortraitMaxand1300Max) {
+				width: 17vh;
+			}
+
+			@include respond(tabletPortraitMaxand1100Max) {
+				width: 15vh;
+			}
+
+			@include respond(tabletPortraitMaxand900Max) {
+				width: 13vh;
+			}
+
+			///////////////////////////////////////////////////////////////////
 			@include respond(tablet-portrait-2) {
-				width: 16rem;
-				right: 60%;
-				top: 4rem;
+				width: 17vh;
+				top: 50%;
+				left: 50%;
+				transform: translate(-95%, 10%);
+			}
+
+			@include respond(tabletPortrait2Maxand1300Max) {
+				width: 17vh;
+				top: 50%;
+				left: 50%;
+				transform: translate(-95%, 10%);
+			}
+
+			@include respond(tabletPortrait2Maxand1100Max) {
+				width: 15vh;
+				top: 50%;
+				left: 50%;
+				transform: translate(-95%, 10%);
+			}
+
+			@include respond(tabletPortrait2Maxand900Max) {
+				width: 13vh;
+				top: 50%;
+				left: 50%;
+				transform: translate(-95%, 10%);
 			}
 
 			///////////////////////////////////////////////////////////////////
@@ -1182,10 +1266,52 @@
 			right: 0;
 			z-index: 110;
 
+			@include respond(tablet-portrait) {
+				width: 19vh;
+				top: 50%;
+				left: 50%;
+				transform: translate(-5%, -80%);
+			}
+
+			@include respond(tabletPortraitMaxand1300Max) {
+				width: 17vh;
+			}
+
+			@include respond(tabletPortraitMaxand1100Max) {
+				width: 15vh;
+			}
+
+			@include respond(tabletPortraitMaxand900Max) {
+				width: 13vh;
+			}
+
+			///////////////////////////////////////////////////////////////////
 			@include respond(tablet-portrait-2) {
-				width: 15rem;
-				right: 30%;
-				top: -7rem;
+				width: 17vh;
+				top: 50%;
+				left: 50%;
+				transform: translate(5%, -80%);
+			}
+
+			@include respond(tabletPortrait2Maxand1300Max) {
+				width: 17vh;
+				top: 50%;
+				left: 50%;
+				transform: translate(5%, -80%);
+			}
+
+			@include respond(tabletPortrait2Maxand1100Max) {
+				width: 15vh;
+				top: 50%;
+				left: 50%;
+				transform: translate(5%, -80%);
+			}
+
+			@include respond(tabletPortrait2Maxand900Max) {
+				width: 13vh;
+				top: 50%;
+				left: 50%;
+				transform: translate(5%, -80%);
 			}
 
 			///////////////////////////////////////////////////////////////////

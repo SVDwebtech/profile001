@@ -100,6 +100,10 @@
 	@include respond(tablet-landscape) {
 		padding: 0 5rem 0;
 	}
+
+	@include respond(tablet-portrait) {
+		padding: 0 6rem 0;
+	}
 }
 
 .subsection-wrapper-skills {
@@ -109,6 +113,10 @@
 	// will take up all the width as a blocklevel element
 	// width: 100%;
 	padding: 0 5rem 0;
+
+	@include respond(tablet-portrait) {
+		padding: 0 8rem 0;
+	}
 }
 
 .subsection-wrapper-portfolio {

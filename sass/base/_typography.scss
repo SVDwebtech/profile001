@@ -22,6 +22,14 @@ body {
 			font-size: 1.7rem;
 		}
 
+		@include respond(tablet-portrait) {
+			font-size: 3rem;
+		}
+
+		@include respond(tabletPortraitMaxand850Max) {
+			font-size: 2.5rem;
+		}
+
 		@include respond(phone500) {
 			font-size: 1.65rem;
 		}
@@ -36,7 +44,11 @@ body {
 		}
 
 		@include respond(tablet-portrait) {
-			font-size: 5rem;
+			font-size: 7rem;
+		}
+
+		@include respond(tabletPortraitMaxand850Max) {
+			font-size: 6rem;
 		}
 
 		@include respond(phone600) {
@@ -52,7 +64,7 @@ body {
 		}
 
 		@include respond(phone300) {
-			font-size: 2.6rem;
+			font-size: 2.5rem;
 		}
 
 		background-image: linear-gradient(
@@ -162,7 +174,7 @@ body {
 		font-size: 1.86rem;
 	}
 	@include respond(tablet-portrait) {
-		font-size: 2rem;
+		font-size: 2.5rem;
 	}
 	@include respond(phone600) {
 		font-size: 1.8rem;
@@ -176,7 +188,7 @@ body {
 	&__skills,
 	&__portfolio {
 		@include respond(tablet-portrait) {
-			font-size: 1.8rem;
+			font-size: 2.5rem;
 		}
 	}
 	&__popup {
@@ -247,6 +259,10 @@ body {
 		color: $color-font-white;
 		font-size: 2.2rem;
 		font-weight: 700;
+		@include respond(tablet-portrait) {
+			text-align: center;
+			font-size: 4rem;
+		}
 		@include respond(phone600) {
 			text-align: center;
 			font-size: 2.6rem;
@@ -273,6 +289,9 @@ body {
 	.socialMedia__icon {
 		color: $color-font-white;
 		font-size: 4rem;
+		@include respond(tablet-portrait) {
+			font-size: 6.5rem;
+		}
 		@include respond(phone600) {
 			font-size: 4rem;
 		}
@@ -360,24 +379,30 @@ body {
 		&--tel,
 		&--email {
 			color: $color-primary-white;
-			font-size: 1.4rem;
+			font-size: 1.35rem;
 			font-weight: 600;
 			text-align: center;
 			text-decoration: none;
 			@include respond(tablet-landscape) {
-				font-size: 1.5rem;
+				font-size: 1.3rem;
 			}
 			@include respond(tablet-portrait) {
 				font-size: 2rem;
 			}
+			@include respond(phone600) {
+				font-size: 1.7rem;
+			}
+			@include respond(phone425) {
+				font-size: 1.8rem;
+			}
 			@include respond(phone400) {
-				font-size: 1.9rem;
+				font-size: 1.62rem;
 			}
 			@include respond(phone350) {
-				font-size: 1.6rem;
+				font-size: 1.3rem;
 			}
 			@include respond(phone300) {
-				font-size: 1.55rem;
+				font-size: 1.2rem;
 			}
 		}
 	}
