@@ -1198,6 +1198,38 @@ ORDER: base + typography > general layout + grid > page layout > components
 			@content;
 		}
 	}
+	// tablet portrait 2 breakpoint
+	@if $breakpoint == tabletPortrait2Maxand700Max {
+		// 750px (750/16 = 46.88) && 700px (700/16 = 43.75)
+		// REMEMBER: 1em = 16px;
+		@media (max-width: 46.88em) and (max-height: 43.75em) {
+			@content;
+		}
+	}
+	// tablet portrait 2 breakpoint
+	@if $breakpoint == tabletPortrait2Maxand900Max {
+		// 750px (750/16 = 46.88) && 900px (900/16 = 56.25)
+		// REMEMBER: 1em = 16px;
+		@media (max-width: 46.88em) and (max-height: 56.25em) {
+			@content;
+		}
+	}
+	// tablet portrait 2 breakpoint
+	@if $breakpoint == tabletPortrait2Maxand1100Max {
+		// 750px (750/16 = 46.88) && 1100px (1100/16 = 68.75)
+		// REMEMBER: 1em = 16px;
+		@media (max-width: 46.88em) and (max-height: 68.75em) {
+			@content;
+		}
+	}
+	// tablet portrait 2 breakpoint
+	@if $breakpoint == tabletPortrait2Maxand1300Max {
+		// 750px (750/16 = 46.88) && 1300px (1300/16 = 81.25)
+		// REMEMBER: 1em = 16px;
+		@media (max-width: 46.88em) and (max-height: 81.25em) {
+			@content;
+		}
+	}
 	///////////////////////////////////////////////////////////////////////////
 	// tablet portrait breakpoint
 	@if $breakpoint == tablet-portrait {
@@ -1206,11 +1238,43 @@ ORDER: base + typography > general layout + grid > page layout > components
 			@content;
 		}
 	}
+	// tablet portrait 2 breakpoint
+	@if $breakpoint == tabletPortraitMaxand700Max {
+		// 900px (900/16 = 56.25) && 700px (700/16 = 43.75)
+		// REMEMBER: 1em = 16px;
+		@media (max-width: 56.25em) and (max-height: 43.75em) {
+			@content;
+		}
+	}
 	// tablet portrait breakpoint
 	@if $breakpoint == tabletPortraitMaxand850Max {
 		// 900px (900/16 = 56.25) && 850px (850/16 = 53.13)
 		// REMEMBER: 1em = 16px;
 		@media (max-width: 56.25em) and (max-height: 53.13em) {
+			@content;
+		}
+	}
+	// tablet portrait 2 breakpoint
+	@if $breakpoint == tabletPortraitMaxand900Max {
+		// 900px (900/16 = 56.25) && 900px (900/16 = 56.25)
+		// REMEMBER: 1em = 16px;
+		@media (max-width: 56.25em) and (max-height: 56.25em) {
+			@content;
+		}
+	}
+	// tablet portrait 2 breakpoint
+	@if $breakpoint == tabletPortraitMaxand1100Max {
+		// 900px (900/16 = 56.25) && 1100px (1100/16 = 68.75)
+		// REMEMBER: 1em = 16px;
+		@media (max-width: 56.25em) and (max-height: 68.75em) {
+			@content;
+		}
+	}
+	// tablet portrait breakpoint
+	@if $breakpoint == tabletPortraitMaxand1300Max {
+		// 900px (900/16 = 56.25) && 1300px (1300/16 = 81.25)
+		// REMEMBER: 1em = 16px;
+		@media (max-width: 56.25em) and (max-height: 81.25em) {
 			@content;
 		}
 	}

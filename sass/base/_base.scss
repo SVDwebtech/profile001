@@ -20,13 +20,47 @@ html {
 	@include respond(tablet-landscape) {
 		font-size: 56.25%; // 1rem = 9px 	-->		9/16 *100 = 56.25%
 	}
-
+	/////////////////////////////////////////////////////////////////////////////
 	@include respond(tablet-portrait) {
+		font-size: 62.5%; // 1rem = 10px
+	}
+
+	@include respond(tabletPortraitMaxand1300Max) {
+		font-size: 62.5%; // 1rem = 10px
+	}
+
+	@include respond(tabletPortraitMaxand1100Max) {
+		font-size: 56.25%; // 1rem = 9px 	-->		9/16 *100 = 56.25%
+		// font-size: 53.13%; // 1rem = 8.5px  -->  8.5/16 *100 = 53.13%
+	}
+
+	@include respond(tabletPortraitMaxand900Max) {
 		font-size: 50%; // 1rem = 8px  -->  8/16 *100 = 50%
 	}
 
-	@include respond(tablet-portrait-2) {
+	@include respond(tabletPortraitMaxand700Max) {
 		font-size: 46.88%; // 1rem = 7.5px  -->  7.5/16 *100 = 46.88%
+	}
+
+	/////////////////////////////////////////////////////////////////////////////
+	@include respond(tablet-portrait-2) {
+		font-size: 56.25%; // 1rem = 9px 	-->		9/16 *100 = 56.25%
+	}
+
+	@include respond(tabletPortrait2Maxand1300Max) {
+		font-size: 56.25%; // 1rem = 9px 	-->		9/16 *100 = 56.25%
+	}
+
+	@include respond(tabletPortrait2Maxand1100Max) {
+		font-size: 50%; // 1rem = 8px  -->  8/16 *100 = 50%
+	}
+
+	@include respond(tabletPortrait2Maxand900Max) {
+		font-size: 43.75%; // 1rem = 7px  -->  7/16 *100 = 43.75%
+	}
+
+	@include respond(tabletPortrait2Maxand700Max) {
+		font-size: 40.63%; // 1rem = 6.5px  -->  6.5/16 *100 = 40.63%
 	}
 
 	////////////////////////////////////////////////////////////////////////////
