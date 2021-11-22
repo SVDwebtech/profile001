@@ -1281,6 +1281,14 @@
 	padding-top: .5rem;
 	padding-bottom: .5rem;
 
+	&__paragraph--developer {
+		margin: 0 .5rem;
+	}
+
+	&__par--par2 {
+		margin: 0 .5rem;
+	}
+
 	@include respond(phone600) {
 		&__paragraph {
 			display: flex;
