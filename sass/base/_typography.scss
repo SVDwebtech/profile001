@@ -438,13 +438,17 @@ body {
 	&__paragraph {
 		color: $color-font-darkGrey;
 		font-size: $font-size-paragraph-medium;
+		&--intro {
+			text-decoration: underline;
+		}
 		&--span {
 			color: $color-font-white;
 		}
 		&--brand {
 			color: $color-font-brightRed;
 			font-size: $font-size-paragraph-xtralarge;
-			letter-spacing: 2px;
+			font-weight: 700;
+			letter-spacing: 3px;
 			@include respond(phone600) {
 				letter-spacing: 1px;
 			}
