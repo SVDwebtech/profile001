@@ -5881,8 +5881,8 @@ body {
   align-items: center;
   background-color: #04042e;
   height: 7rem;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 .footer__paragraph--developer {
   margin: 0 0.5rem;
@@ -5890,7 +5890,12 @@ body {
 .footer__par--par2 {
   margin: 0 0.5rem;
 }
-@media (max-width: 37.5em) {
+@media (max-width: 75em) {
+  .footer {
+    height: 10rem;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+  }
   .footer__paragraph {
     display: flex;
     flex-direction: column;

@@ -1278,8 +1278,8 @@
 	align-items: center;
 	background-color: $color-primary-darkBlue;
 	height: 7rem;
-	padding-top: .5rem;
-	padding-bottom: .5rem;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
 
 	&__paragraph--developer {
 		margin: 0 .5rem;
@@ -1289,7 +1289,11 @@
 		margin: 0 .5rem;
 	}
 
-	@include respond(phone600) {
+	@include respond(tablet-landscape) {
+		height: 10rem;
+		padding-top: 1rem;
+		padding-bottom: 2rem;
+
 		&__paragraph {
 			display: flex;
 			flex-direction: column;
