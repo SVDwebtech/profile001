@@ -688,22 +688,22 @@
                                     <div class="nameAndEmail">
                                         <div class="contact__form--name contact__form--item">
                                             <label for="fullName" class="contact__form--labels"></label>
-                                            <input type="text" name="fullName" id="fullName" placeholder="Name" class="contact__form--inputs contact__form--nameInputs">
+                                            <input type="text" name="clientFullName" id="fullName" placeholder="Name" class="contact__form--inputs contact__form--nameInputs" required>
                                         </div>
                                         <div class="contact__form--email contact__form--item">
                                             <label for="email" class="contact__form--labels"></label>
-                                            <input type="email" name="email" id="email" placeholder="Email" class="contact__form--inputs contact__form--emailInputs">
+                                            <input type="email" name="clientEmailAddress" id="email" placeholder="Email" class="contact__form--inputs contact__form--emailInputs" required>
                                         </div>
                                     </div>
                                     
                                     <div class="contact__form--subject contact__form--item">
                                         <label for="subject" class="contact__form--labels"></label>
-                                        <input type="text" name="" id="subject" placeholder="Subject" required class="contact__form--inputs contact__form--subject">
+                                        <input type="text" name="messageSubject" id="subject" placeholder="Subject" required class="contact__form--inputs contact__form--subject">
                                     </div>
                                     
                                     <div class="contact__form--message contact__form--item">
                                         <label for="message" class="contact__form--labels"></label>
-                                        <textarea name="" id="message" placeholder="Describe project...." rows="5" class="contact__form--inputs contact__form--message"></textarea>
+                                        <textarea name="messageContent" id="message" placeholder="Describe project...." rows="5" class="contact__form--inputs contact__form--message"></textarea>
                                     </div>
                                     
                                     <div class="u-margin-top-small">
@@ -756,7 +756,7 @@
 
     <!-- to add functionality to contact form -->
     <script src="https://smtpjs.com/v3/smtp.js">
-    
+
 </script>
 </body>
 </html>
