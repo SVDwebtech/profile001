@@ -683,7 +683,7 @@
                             
                             <div class="contact__formWrapper">     
                                 
-                                <form class="contact__form" action="#" method="">
+                                <form onsubmit="sendEmail(); reset(); return false;" class="contact__form">
                                     
                                     <div class="nameAndEmail">
                                         <div class="contact__form--name contact__form--item">
@@ -755,8 +755,27 @@
     <script src="app.js"></script>
 
     <!-- to add functionality to contact form -->
-    <script src="https://smtpjs.com/v3/smtp.js">
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
 
-</script>
+    <script>
+        
+        function sendEmail() {
+
+            Email.send({
+                SecureToken : "6e7267cd-38a6-41a7-8bb0-35df93e1f48c",
+                To : 'schalk@schalkvandyk.com',
+                From : document.getElementById("email").value,
+                Subject : "New Contact Form Enquiry",
+                Body : "Name: " + document.getElementById("fullName").value 
+                    + "<br> Email: " + document.getElementById("email").value        
+                    + "<br> Subject: " + document.getElementById("subject").value        
+                    + "<br> Message: " + document.getElementById("message").value        
+            }).then(
+            message => alert("Message sent successfully. Thank you.")
+            );
+        
+        }
+
+    </script>
 </body>
 </html>
