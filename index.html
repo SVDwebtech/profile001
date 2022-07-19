@@ -707,7 +707,7 @@
                                     </div>
                                     
                                     <div class="u-margin-top-small">
-                                        <button type="submit" class="btn btn--onBlueBackground">Send Message</button>
+                                        <button type="submit" class="btn btn--onBlueBackground submitBtn">Send Message</button>
                                     </div>
 
                                 </form>
@@ -754,17 +754,41 @@
     <!-- import an external script app.js -->
     <script src="app.js"></script>
 
-    <!-- to add functionality to contact form -->
+    <!-- import smtpjs.com api -->
     <script src="https://smtpjs.com/v3/smtp.js"></script>
 
     <script>
+
+        // const submitBtn = document.querySelector(".submitBtn");
+        
+        // submitBtn.addEventListener("click", function(){
+            
+        //     const name = document.querySelector("#fullName");
+        //     const email = document.querySelector("#email");
+        //     const subject = document.querySelector("#subject");
+        //     const message = document.querySelector("#message");
+
+        //     Email.send({
+        //         SecureToken : "6e7267cd-38a6-41a7-8bb0-35df93e1f48c",
+        //         To : 'schalk@schalkvandyk.com',
+        //         From : email.value,
+        //         Subject : "New Contact Form Enquiry",
+        //         Body : "Name: " + name.value 
+        //             + "<br> Email: " + email.value        
+        //             + "<br> Subject: " + subject.value        
+        //             + "<br> Message: " + message.value        
+        //     }).then(
+        //     message => alert("Message sent successfully. Thank you.")
+        //     );
+
+        // });
         
         function sendEmail() {
 
             Email.send({
                 SecureToken : "6e7267cd-38a6-41a7-8bb0-35df93e1f48c",
                 To : 'schalk@schalkvandyk.com',
-                From : document.getElementById("email").value,
+                From : 'schalk@schalkvandyk.com',
                 Subject : "New Contact Form Enquiry",
                 Body : "Name: " + document.getElementById("fullName").value 
                     + "<br> Email: " + document.getElementById("email").value        
