@@ -1,29 +1,2 @@
 .socialMedia {
-	display: flex;
-	justify-content: center;
-
-	&__linkWrapper {
-		height: 35px;
-		width: 70px;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-	}
-
-	&__linkWrapper:not(:last-child) {
-		margin-right: 1rem;
-	}
-
-	&__icon {
-		transition: all .25s;
-	}
-
-	&__icon:hover {
-		color: $color-primary-brightRed;
-		transform: scale(1.1);
-
-		@include respond(phone400) {
-			transform: scale(1.3);
-		}
-	}
 }

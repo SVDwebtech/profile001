@@ -1,11 +1,2 @@
 .header {
-	min-height: 96vh;
-
-	@include respond(phone550) {
-		min-height: 100vh;
-	}
-
-	@include respond(phone-small) {
-		min-height: 100vh;
-	}
 }
