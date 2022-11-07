@@ -1,43 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web Developer & Designer | Schalk van Dyk | I design and build functional websites and applications</title>
-    <script src="https://kit.fontawesome.com/dec787a9fd.js" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Open+Sans&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/styles.css">
-</head>
-<body>
-    
-       <nav>Navbar</nav>
-       <header>Header</header>
-       <main>Main</main>
-       <aside>Sidebar</aside>
-       <footer>Footer</footer>
-    
-    <!-- import an external script app.js -->
-    <script src="app.js"></script>
 
-    <!-- import smtpjs.com api -->
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Web Developer & Designer | Schalk van Dyk | I design and build functional websites and applications</title>
+        <script src="https://kit.fontawesome.com/dec787a9fd.js" crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Open+Sans&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./css/styles.css">
+    </head>
 
-    <script>
-        
-        function sendEmail() {
-            Email.send({
-                SecureToken : "6e7267cd-38a6-41a7-8bb0-35df93e1f48c",
-                To : 'schalk@schalkvandyk.com',
-                From : 'schalk@schalkvandyk.com',
-                Subject : "New Contact Form Enquiry",
-                Body : "Name: " + document.getElementById("fullName").value 
-                    + "<br> Email: " + document.getElementById("email").value        
-                    + "<br> Subject: " + document.getElementById("subject").value        
-                    + "<br> Message: " + document.getElementById("message").value        
-            }).then(
-            message => alert("Message sent successfully. Thank you.")
-            );
-        }
-    </script>
-</body>
+    <body>
+
+        <nav>Navbar</nav>
+        <header>Header</header>
+        <main>Main</main>
+        <aside>Sidebar</aside>
+
+        <footer>
+
+            <figure>
+                <img src="" alt="">
+                <figcaption>
+                    <p>Schalk van Dyk</p>
+                    <p>Web Developer and Designer</p>
+                </figcaption>
+            </figure>
+
+            <section>
+                <h2>Copyright</h2>
+                <p>&#169; 2022, Schalk van Dyk</p>
+
+                <p>All rights reserved</p>
+            </section>
+
+        </footer>
+
+        <!-- import an external script app.js -->
+        <script src="app.js"></script>
+
+        <!-- import smtpjs.com api -->
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
+
+        <script>
+
+            function sendEmail() {
+                Email.send({
+                    SecureToken: "6e7267cd-38a6-41a7-8bb0-35df93e1f48c",
+                    To: 'schalk@schalkvandyk.com',
+                    From: 'schalk@schalkvandyk.com',
+                    Subject: "New Contact Form Enquiry",
+                    Body: "Name: " + document.getElementById("fullName").value
+                        + "<br> Email: " + document.getElementById("email").value
+                        + "<br> Subject: " + document.getElementById("subject").value
+                        + "<br> Message: " + document.getElementById("message").value
+                }).then(
+                    message => alert("Message sent successfully. Thank you.")
+                );
+            }
+        </script>
+    </body>
+
 </html>
