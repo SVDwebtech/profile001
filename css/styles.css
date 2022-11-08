@@ -861,6 +861,12 @@ body {
   font-weight: 900;
   letter-spacing: 0.3rem;
 }
+.navbar__logoBox--logoTextName {
+  font-size: 2rem;
+}
+.navbar__logoBox--logoTextDev {
+  font-size: 1rem;
+}
 
 .navList {
   list-style: none;
@@ -3913,7 +3919,7 @@ body {
   }
 }
 .navbar__logoBox {
-  width: 28rem;
+  width: 30rem;
   margin-left: 5rem;
 }
 .navbar__logoBox--logoLink {
@@ -3922,7 +3928,10 @@ body {
   max-width: max-content;
 }
 .navbar__logoBox--logoImage {
+  border: 2px solid white;
+  border-radius: 50%;
   width: 6.3rem;
+  margin-right: 1rem;
 }
 .navbar__logoBox--logoText {
   margin-left: 1rem;

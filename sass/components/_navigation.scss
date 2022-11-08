@@ -27,7 +27,7 @@
 	z-index: 10000;
 
 	&__logoBox {
-		width: 28rem;
+		width: 30rem;
 		margin-left: 5rem;
 		// wraps home logo image and text;
 		&--logoLink {
@@ -37,7 +37,10 @@
 		}
 		// 2000px logo image --> ./img/circleLogo.png;
 		&--logoImage {
+			border: 2px solid white;
+			border-radius: 50%;
 			width: 6.3rem;
+			margin-right: 1rem;
 		}
 		// home text in logo;
 		&--logoText {
