@@ -4,14 +4,7 @@ body {
 	font-size: 1.6rem;
 	font-weight: 400;
 	line-height: 1.6;
-	// padding for large screen sizes
-	padding: 0 2rem 2rem 2rem;
 
-	@include respond(tablet-landscape) {
-		// 0 padding on smaller screen sizes
-		// and adjust the navbar margin-left and margin-right to 0 as well
-		padding: 0;
-	}
 }
 
 .heading-h1 {}
@@ -23,3 +16,6 @@ body {
 
 .btn {}
 
+.footer {
+	text-align: center;
+}

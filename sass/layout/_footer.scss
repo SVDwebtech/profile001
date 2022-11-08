@@ -1,0 +1,21 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: rgba(14, 14, 14, 0.935);
+    padding: 2rem 2rem;
+    &__figure {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 2rem;
+        &--img {
+            border: 5px solid whitesmoke;
+            border-radius: 50%;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 1);
+            width: 30%;
+            margin-bottom: 2rem;
+        }
+    }
+}
