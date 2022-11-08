@@ -3922,6 +3922,8 @@ body {
   max-width: max-content;
 }
 .navbar__logoBox--logoImage {
+  border: 2px solid white;
+  border-radius: 50%;
   width: 6.3rem;
 }
 .navbar__logoBox--logoText {
