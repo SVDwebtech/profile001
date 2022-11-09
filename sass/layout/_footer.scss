@@ -14,7 +14,7 @@
             border: 5px solid whitesmoke;
             border-radius: 50%;
             box-shadow: 0 10px 20px rgba(0, 0, 0, 1);
-            width: 40%;
+            width: clamp(13rem, 20vw, 18rem);
             margin-bottom: 2rem;
         }
     }

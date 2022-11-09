@@ -135,7 +135,7 @@ body {
   border: 5px solid whitesmoke;
   border-radius: 50%;
   box-shadow: 0 10px 20px black;
-  width: 40%;
+  width: clamp(13rem, 20vw, 18rem);
   margin-bottom: 2rem;
 }
 
