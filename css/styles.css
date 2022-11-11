@@ -85,6 +85,18 @@ body {
   line-height: 1.6;
 }
 
+.navbar__logo {
+  text-align: center;
+}
+.navbar__logo--devName {
+  font-size: clamp(1.5rem, 4vw, 2.3rem);
+  font-weight: 900;
+  line-height: 1;
+}
+.navbar__logo--devDesc {
+  font-size: clamp(1rem, 2.5vw, 1.5rem);
+}
+
 .footer {
   text-align: center;
 }
@@ -118,6 +130,24 @@ body {
   margin-right: 0.5rem;
 }
 
+.navbar__logo {
+  display: flex;
+  align-items: center;
+  margin: 1rem;
+}
+.navbar__logo--img {
+  border: 2px solid whitesmoke;
+  border-radius: 50%;
+  box-shadow: 0 10px 20px black;
+  width: clamp(4rem, 12vw, 6rem);
+}
+.navbar__logo--text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 1rem;
+}
+
 .footer {
   display: flex;
   flex-direction: column;
@@ -141,6 +171,12 @@ body {
 
 main {
   background-color: red;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba(14, 14, 14, 0.935);
 }
 
 /*# sourceMappingURL=styles.css.map */
