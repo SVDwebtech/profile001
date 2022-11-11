@@ -78,7 +78,7 @@ a {
 }
 
 body {
-  color: #4e4e4e;
+  color: #dedede;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1.6rem;
   font-weight: 400;
@@ -133,7 +133,6 @@ body {
 .navbar__logo {
   display: flex;
   align-items: center;
-  margin: 1rem;
 }
 .navbar__logo--img {
   border: 2px solid whitesmoke;
@@ -176,7 +175,34 @@ main {
 .navbar {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   background-color: rgba(14, 14, 14, 0.935);
+  padding: 1rem 2rem;
+}
+.navbar__hamburger {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 4rem;
+  height: 4rem;
+}
+.navbar__hamburger--bar {
+  position: relative;
+}
+.navbar__hamburger--bar, .navbar__hamburger--bar::before, .navbar__hamburger--bar::after {
+  background-color: #cacad3;
+  height: 2px;
+  width: 40px;
+}
+.navbar__hamburger--bar::before, .navbar__hamburger--bar::after {
+  content: "";
+  position: absolute;
+}
+.navbar__hamburger--bar::before {
+  top: -7px;
+}
+.navbar__hamburger--bar::after {
+  top: 7px;
 }
 
 /*# sourceMappingURL=styles.css.map */
