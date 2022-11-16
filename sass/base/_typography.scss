@@ -14,7 +14,12 @@ body {
 
 .paragraph {}
 
-.btn {}
+.btn {
+	color: rgba(10,52,101,1);
+	font-size: 1.6rem;
+	font-weight: 700;
+	letter-spacing: 1px;
+}
 
 .navbar__logo {
 	text-align: center;
@@ -27,6 +32,35 @@ body {
 		font-size: clamp(1rem, 2.5vw, 1.5rem);
 	}
 }
+
+.header	{
+	&__section {
+		text-align: justify;
+	
+		&--primaryHeading {
+			color: rgba(10,52,101,1);
+			font-size: 1.6rem;
+		}
+
+		&--primaryHeadingSpanName {
+            color:  rgba(123,9,9,1);
+            font-size: clamp(2.3rem, 6vw, 4rem);
+            font-weight: 900;
+			line-height: 1;
+            letter-spacing: 1px;
+
+			margin-left: 0rem;
+        }
+
+		&--paragraph {
+			color: rgba(10,52,101,1);
+			font-size: 1.6rem;
+			font-weight: bold;
+		}
+	}
+}
+
+	
 
 .footer {
 	text-align: center;
