@@ -38,7 +38,7 @@ body {
 		text-align: justify;
 	
 		&--primaryHeading {
-			color: rgba(10,52,101,1);
+			color: $color-font-darkGrey2;
 			font-size: 1.6rem;
 		}
 
@@ -53,11 +53,41 @@ body {
         }
 
 		&--paragraph {
-			color: rgba(10,52,101,1);
+			color: $color-font-darkGrey2;
 			font-size: 1.6rem;
 			font-weight: bold;
 		}
+
+		&--iconContainerText {
+			color: $color-font-white;
+			font-weight: 700;
+			letter-spacing: 1px;
+		}
 	}
+}
+
+.about {
+	
+	&__section {
+		color: $color-font-darkGrey2;
+
+		&--heading {
+			font-size: clamp(2.3rem, 6vw, 4rem);
+		}
+
+		&--paragraph {
+			font-size: clamp(1.6rem, 4vw, 2.6rem);
+			font-weight: 700;
+			text-align: justify;
+		}
+
+		&--iconContainerText {
+			color: $color-font-white;
+			font-weight: 700;
+			letter-spacing: 1px;
+		}
+	}
+	
 }
 
 	
