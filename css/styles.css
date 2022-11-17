@@ -147,6 +147,10 @@ body {
   letter-spacing: 1px;
 }
 
+.portfolio__section {
+  color: #2e2d2d;
+}
+
 .footer {
   text-align: center;
 }
@@ -296,6 +300,37 @@ main .about__section--iconContainerText {
   margin-left: 1rem;
 }
 main .about__section--svgSkills {
+  height: 4rem;
+  width: 4rem;
+  fill: #eee;
+}
+main .portfolio__section {
+  background-color: white;
+  padding: 2rem;
+}
+main .portfolio__section--heading {
+  margin-bottom: 2rem;
+}
+main .portfolio__section--paragraph {
+  margin-bottom: 2rem;
+}
+main .portfolio__section--paragraph:last-of-type {
+  margin-bottom: 4rem;
+}
+main .portfolio__section--iconContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #6e0909;
+  border-radius: 0.5em;
+  width: fit-content;
+  padding: 0.25em 1em;
+  margin: 0 auto 4rem;
+}
+main .portfolio__section--iconContainerText {
+  margin-left: 1rem;
+}
+main .portfolio__section--svgSkills {
   height: 4rem;
   width: 4rem;
   fill: #eee;

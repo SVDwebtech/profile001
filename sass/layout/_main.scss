@@ -43,5 +43,47 @@ main {
         }
         
     }
+
+    .portfolio {
+
+        &__section {
+            background-color: rgba(255, 255, 255, 1);
+            padding: 2rem;
+
+            &--heading {
+                margin-bottom: 2rem;
+            }
+
+            &--paragraph {
+                margin-bottom: 2rem;
+            }
+
+            &--paragraph:last-of-type {
+                margin-bottom: 4rem;
+            }
+
+            &--iconContainer {
+                display: flex;
+                justify-content: center;
+                align-items: center; 
+                background-color: rgba(110,9,9,1);
+                border-radius: .5em;
+                width: fit-content;
+                padding: .25em 1em;
+                margin: 0 auto 4rem;   
+            }
+
+            &--iconContainerText {
+                margin-left: 1rem;
+            }
+
+            &--svgSkills {
+                height: 4rem;
+                width: 4rem;
+                fill: $color-font-white;
+            }
+        }
+        
+    }
     
 }
