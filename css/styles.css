@@ -168,6 +168,31 @@ body {
   font-size: clamp(1.2rem, 1.7vw, 1.7rem);
 }
 
+.cardPortfolio__headingH3 {
+  color: #2e2d2d;
+  font-size: 2rem;
+  font-weight: 900;
+  letter-spacing: 1px;
+  text-decoration: underline solid 2px #2e2d2d;
+}
+
+.cardPortfolio__figure--figcaptionParagraph {
+  color: #2e2d2d;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.cardPortfolio__techContainer--tech {
+  color: #eee;
+}
+
+.cardPortfolio__btnsContainer {
+  color: #eee;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
 .u-center-text {
   text-align: center;
 }
@@ -191,6 +216,51 @@ body {
 
 .header__section--btn {
   margin-bottom: 2rem;
+}
+
+.cardPortfolio {
+  background-color: #f1f1f1;
+  border-radius: 0.5rem;
+  box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.3);
+  padding: 2rem;
+}
+.cardPortfolio__headingH3 {
+  margin-bottom: 1rem;
+}
+.cardPortfolio__figure {
+  padding: 0.5rem;
+  border: 1px solid #2e2d2d;
+  border-radius: 0.2rem;
+  margin-bottom: 1rem;
+}
+.cardPortfolio__descriptionContainer {
+  margin-bottom: 2rem;
+}
+.cardPortfolio__techContainer {
+  margin-bottom: 4rem;
+}
+.cardPortfolio__techContainer--tech {
+  background-color: #0a3465;
+  border-radius: 0.5em;
+  padding: 0.25em 0.75em;
+}
+.cardPortfolio__btnsContainer--btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #6e0909;
+  border-radius: 0.5em;
+  width: fit-content;
+  padding: 0.25em 1em;
+  margin: 0 0 4rem 0;
+}
+.cardPortfolio__btnsContainer--icon {
+  height: 5rem;
+  width: 5rem;
+  fill: #eee;
+}
+.cardPortfolio__btnsContainer--text {
+  margin-left: 1rem;
 }
 
 .navbar__logo {
@@ -265,8 +335,8 @@ body {
   margin-left: 1rem;
 }
 .header__section--svgBriefcase, .header__section--svgCV {
-  height: 3rem;
-  width: 3rem;
+  height: 5rem;
+  width: 5rem;
   fill: rgba(245, 245, 245, 0.8);
 }
 
@@ -300,8 +370,8 @@ main .about__section--iconContainerText {
   margin-left: 1rem;
 }
 main .about__section--svgSkills {
-  height: 4rem;
-  width: 4rem;
+  height: 5rem;
+  width: 5rem;
   fill: #eee;
 }
 main .portfolio__section {
@@ -331,8 +401,8 @@ main .portfolio__section--iconContainerText {
   margin-left: 1rem;
 }
 main .portfolio__section--svgSkills {
-  height: 4rem;
-  width: 4rem;
+  height: 5rem;
+  width: 5rem;
   fill: #eee;
 }
 

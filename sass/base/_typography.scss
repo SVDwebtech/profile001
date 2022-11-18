@@ -116,3 +116,28 @@ body {
 		font-size: clamp(1.2rem, 1.7vw, 1.7rem);
 	}
 }
+
+.cardPortfolio__headingH3 {
+	color: $color-font-darkGrey2;
+	font-size: 2rem;
+	font-weight: 900;
+	letter-spacing: 1px;
+	text-decoration:underline solid 2px $color-font-darkGrey2;
+}
+
+.cardPortfolio__figure--figcaptionParagraph {
+	color: $color-font-darkGrey2;
+	font-size: 1rem;
+	font-weight: 700;
+	letter-spacing: 1px;
+}
+
+.cardPortfolio__techContainer--tech {
+	color: $color-font-white;
+}
+
+.cardPortfolio__btnsContainer {
+			color: $color-font-white;
+			font-weight: 700;
+			letter-spacing: 1px;
+}
