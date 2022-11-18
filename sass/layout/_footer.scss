@@ -3,7 +3,7 @@
     flex-direction: column;
     align-items: center;
 
-    background-color: rgba(14, 14, 14, 0.935);
+    background-color: $cp-dark;
     padding: 2rem 2rem;
     &__figure {
         display: flex;
@@ -11,9 +11,9 @@
         align-items: center;
         margin-bottom: 2rem;
         &--img {
-            border: 5px solid whitesmoke;
+            border: 5px solid $cp-white;
             border-radius: 50%;
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 1);
+            box-shadow: $bs-dark;
             width: clamp(13rem, 20vw, 18rem);
             margin-bottom: 2rem;
         }

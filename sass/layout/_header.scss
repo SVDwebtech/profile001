@@ -22,8 +22,8 @@
         
         &--banner {
             background-color: rgba(255,255,255, 0.85);
-            border-radius: .5rem;
-            box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, .3);
+            border-radius: $br-m;
+            box-shadow: $bs-dark;
 
             width: clamp(25rem, 70vw, 40rem);
 
@@ -33,14 +33,14 @@
 
         &--primaryHeadingSpan1, &--primaryHeadingSpan2, &--primaryHeadingSpan3, &--primaryHeadingSpan4 {
             display: block;
-            margin-bottom: 2rem;
+            margin-bottom: $mb-p;
         }
 
         &--iconContainer {
             display: flex;
             justify-content: center;
             align-items: center; 
-            background-color: rgba(110,9,9,1);
+            background-color: $cp-red;
             border-radius: .5em;
             width: fit-content;
             padding: .75em 1.5em;
@@ -54,7 +54,7 @@
         &--svgBriefcase, &--svgCV {
             height: 5rem;
             width: 5rem;
-            fill: rgba(245, 245, 245, 0.8);
+            fill: $cp-white;
         }
     }    
 }

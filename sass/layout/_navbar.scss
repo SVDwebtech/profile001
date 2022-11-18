@@ -3,7 +3,7 @@
     justify-content: space-between;
     align-items: center;
 
-    background-color: rgba(14, 14, 14, 0.935);
+    background-color: $cp-dark;
 
     padding: 1rem 2rem;
 
@@ -20,7 +20,7 @@
         }
 
         &--bar, &--bar::before, &--bar::after {
-            background-color: $color-grey-light-1;
+            background-color: $cp-white;
             height: 2px;
             width: 40px;
         }

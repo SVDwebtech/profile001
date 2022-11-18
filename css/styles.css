@@ -78,7 +78,7 @@ a {
 }
 
 body {
-  color: #dedede;
+  color: #3e3e3e;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1.6rem;
   font-weight: 400;
@@ -93,6 +93,7 @@ body {
 }
 
 .navbar__logo {
+  color: #eee;
   text-align: center;
 }
 .navbar__logo--devName {
@@ -108,7 +109,7 @@ body {
   text-align: justify;
 }
 .header__section--primaryHeading {
-  color: #2e2d2d;
+  color: #3e3e3e;
   font-size: 1.6rem;
 }
 .header__section--primaryHeadingSpanName {
@@ -120,7 +121,7 @@ body {
   margin-left: 0rem;
 }
 .header__section--paragraph {
-  color: #2e2d2d;
+  color: #3e3e3e;
   font-size: 1.6rem;
   font-weight: bold;
 }
@@ -131,7 +132,7 @@ body {
 }
 
 .about__section {
-  color: #2e2d2d;
+  color: #3e3e3e;
 }
 .about__section--heading {
   font-size: clamp(2.3rem, 6vw, 4rem);
@@ -148,10 +149,11 @@ body {
 }
 
 .portfolio__section {
-  color: #2e2d2d;
+  color: #3e3e3e;
 }
 
 .footer {
+  color: #eee;
   text-align: center;
 }
 .footer__figure--figcaption-name {
@@ -169,15 +171,15 @@ body {
 }
 
 .cardPortfolio__headingH3 {
-  color: #2e2d2d;
+  color: #3e3e3e;
   font-size: 2rem;
   font-weight: 900;
   letter-spacing: 1px;
-  text-decoration: underline solid 2px #2e2d2d;
+  text-decoration: underline solid 2px #3e3e3e;
 }
 
 .cardPortfolio__figure--figcaptionParagraph {
-  color: #2e2d2d;
+  color: #3e3e3e;
   font-size: 1rem;
   font-weight: 700;
   letter-spacing: 1px;
@@ -219,17 +221,17 @@ body {
 }
 
 .cardPortfolio {
-  background-color: #f1f1f1;
+  background-color: #eee;
   border-radius: 0.5rem;
-  box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.3);
-  padding: 2rem;
+  box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.3);
+  padding: 1rem;
 }
 .cardPortfolio__headingH3 {
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
 }
 .cardPortfolio__figure {
   padding: 0.5rem;
-  border: 1px solid #2e2d2d;
+  border: 1px solid #3e3e3e;
   border-radius: 0.2rem;
   margin-bottom: 1rem;
 }
@@ -241,15 +243,15 @@ body {
 }
 .cardPortfolio__techContainer--tech {
   background-color: #0a3465;
-  border-radius: 0.5em;
+  border-radius: 0.5rem;
   padding: 0.25em 0.75em;
 }
 .cardPortfolio__btnsContainer--btn {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #6e0909;
-  border-radius: 0.5em;
+  background-color: #7b0909;
+  border-radius: 0.5rem;
   width: fit-content;
   padding: 0.25em 1em;
   margin: 0 0 4rem 0;
@@ -284,7 +286,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: rgba(14, 14, 14, 0.935);
+  background-color: #2b2b2b;
   padding: 2rem 2rem;
 }
 .footer__figure {
@@ -294,9 +296,9 @@ body {
   margin-bottom: 2rem;
 }
 .footer__figure--img {
-  border: 5px solid whitesmoke;
+  border: 5px solid #eee;
   border-radius: 50%;
-  box-shadow: 0 10px 20px black;
+  box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.3);
   width: clamp(13rem, 20vw, 18rem);
   margin-bottom: 2rem;
 }
@@ -312,20 +314,20 @@ body {
 .header__section--banner {
   background-color: rgba(255, 255, 255, 0.85);
   border-radius: 0.5rem;
-  box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.3);
   width: clamp(25rem, 70vw, 40rem);
   padding: 1em;
   margin: 3rem auto 5rem;
 }
 .header__section--primaryHeadingSpan1, .header__section--primaryHeadingSpan2, .header__section--primaryHeadingSpan3, .header__section--primaryHeadingSpan4 {
   display: block;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 .header__section--iconContainer {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #6e0909;
+  background-color: #7b0909;
   border-radius: 0.5em;
   width: fit-content;
   padding: 0.75em 1.5em;
@@ -337,7 +339,7 @@ body {
 .header__section--svgBriefcase, .header__section--svgCV {
   height: 5rem;
   width: 5rem;
-  fill: rgba(245, 245, 245, 0.8);
+  fill: #eee;
 }
 
 main .about__section {
@@ -351,7 +353,7 @@ main .about__section--heading {
   margin-bottom: 2rem;
 }
 main .about__section--paragraph {
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 main .about__section--paragraph:last-of-type {
   margin-bottom: 4rem;
@@ -360,8 +362,8 @@ main .about__section--iconContainer {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #6e0909;
-  border-radius: 0.5em;
+  background-color: #7b0909;
+  border-radius: 0.5rem;
   width: fit-content;
   padding: 0.25em 1em;
   margin: 0 auto 4rem;
@@ -375,14 +377,14 @@ main .about__section--svgSkills {
   fill: #eee;
 }
 main .portfolio__section {
-  background-color: white;
+  background-color: #eee;
   padding: 2rem;
 }
 main .portfolio__section--heading {
   margin-bottom: 2rem;
 }
 main .portfolio__section--paragraph {
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 main .portfolio__section--paragraph:last-of-type {
   margin-bottom: 4rem;
@@ -391,7 +393,7 @@ main .portfolio__section--iconContainer {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #6e0909;
+  background-color: #7b0909;
   border-radius: 0.5em;
   width: fit-content;
   padding: 0.25em 1em;
@@ -410,7 +412,7 @@ main .portfolio__section--svgSkills {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: rgba(14, 14, 14, 0.935);
+  background-color: #2b2b2b;
   padding: 1rem 2rem;
 }
 .navbar__hamburger {
@@ -424,7 +426,7 @@ main .portfolio__section--svgSkills {
   position: relative;
 }
 .navbar__hamburger--bar, .navbar__hamburger--bar::before, .navbar__hamburger--bar::after {
-  background-color: #cacad3;
+  background-color: #eee;
   height: 2px;
   width: 40px;
 }

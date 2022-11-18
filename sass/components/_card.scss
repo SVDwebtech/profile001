@@ -1,16 +1,16 @@
 .cardPortfolio {
-    background-color: $color-primary-white;
-    border-radius: .5rem;
-    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, .3);
-    padding: 2rem;
+    background-color: $cp-white;
+    border-radius: $br-m;
+    box-shadow: $bs-dark;
+    padding: $mb-p;
 
     &__headingH3 {
-        margin-bottom: 1rem;
+        margin-bottom: $mb-h3;
     }
 
     &__figure {
         padding: .5rem;
-        border: 1px solid $color-font-darkGrey2;
+        border: 1px solid $cp-darkgrey;
         border-radius: .2rem;
         margin-bottom: 1rem;
     }
@@ -24,8 +24,8 @@
         margin-bottom: 4rem;
         
         &--tech {
-            background-color: rgba(10,52,101, 1);
-            border-radius: .5em;
+            background-color: $cp-blue;
+            border-radius: $br-m;
             padding: .25em .75em;
         }
     }
@@ -36,8 +36,8 @@
             display: flex;
             justify-content: center;
             align-items: center; 
-            background-color: rgba(110,9,9,1);
-            border-radius: .5em;
+            background-color: $cp-red;
+            border-radius: $br-m;
             width: fit-content;
             padding: .25em 1em;
             margin: 0 0 4rem 0; 
@@ -46,7 +46,7 @@
         &--icon {
             height: 5rem;
             width: 5rem;
-            fill: $color-font-white;
+            fill: $cp-white;
         }
 
         &--text {
