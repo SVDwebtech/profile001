@@ -139,7 +139,7 @@ body {
 }
 
 .cardPortfolio__headingH3 {
-	color: $cf-darkGrey;
+	color: $cf-red;
 	font-size: 2rem;
 	font-weight: 900;
 	letter-spacing: 1px;
@@ -147,13 +147,17 @@ body {
 }
 
 .cardPortfolio__figure--figcaptionParagraph {
-	color: $cf-darkGrey;
+	color: $cf-white;
 	font-size: 1rem;
 	font-weight: 700;
 	letter-spacing: 1px;
 }
 
-.cardPortfolio__techContainer--tech {
+.cardPortfolio__descriptionContainer {
+	color: $cf-white;
+}
+
+.cardPortfolio__techContainer {
 	color: $cf-white;
 }
 

@@ -35,26 +35,8 @@
             margin-bottom: $mb-p;
         }
 
-        &--iconContainer {
-            display: flex;
-            justify-content: center;
-            align-items: center; 
-            background-color: $cp-red;
-            border-radius: .5em;
-            width: fit-content;
-            padding: .75em 1.5em;
-            margin: 0 auto 4rem;    
-        }
-
-        &--iconContainerText {
-            margin-left: 1rem;
-        }
-
-        &--svgBriefcase, &--svgCV {
-            
-            @include btnIconSize;
-        
-            fill: $cp-white;
+        .btn {
+            margin: 0 auto 2rem;
         }
     }    
 }
