@@ -52,8 +52,9 @@
         }
 
         &--svgBriefcase, &--svgCV {
-            height: 5rem;
-            width: 5rem;
+            
+            @include btnIconSize;
+        
             fill: $cp-white;
         }
     }    

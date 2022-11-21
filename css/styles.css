@@ -86,14 +86,16 @@ body {
 }
 
 .btn {
-  color: #0a3465;
+  color: #f0f0f0;
+}
+.btn__paragraph {
   font-size: 1.6rem;
   font-weight: 700;
   letter-spacing: 1px;
 }
 
 .navbar__logo {
-  color: #eee;
+  color: #f0f0f0;
   text-align: center;
 }
 .navbar__logo--devName {
@@ -124,11 +126,7 @@ body {
   color: #3e3e3e;
   font-size: 1.6rem;
   font-weight: bold;
-}
-.header__section--iconContainerText {
-  color: #eee;
-  font-weight: 700;
-  letter-spacing: 1px;
+  line-height: 1;
 }
 
 .about__section {
@@ -142,18 +140,13 @@ body {
   font-weight: 700;
   text-align: justify;
 }
-.about__section--iconContainerText {
-  color: #eee;
-  font-weight: 700;
-  letter-spacing: 1px;
-}
 
 .portfolio__section {
   color: #3e3e3e;
 }
 
 .footer {
-  color: #eee;
+  color: #f0f0f0;
   text-align: center;
 }
 .footer__figure--figcaption-name {
@@ -186,11 +179,11 @@ body {
 }
 
 .cardPortfolio__techContainer--tech {
-  color: #eee;
+  color: #f0f0f0;
 }
 
 .cardPortfolio__btnsContainer {
-  color: #eee;
+  color: #f0f0f0;
   font-weight: 700;
   letter-spacing: 1px;
 }
@@ -211,17 +204,47 @@ body {
   margin-right: 0.5rem;
 }
 
-.btn {
-  border-radius: 0.5em;
-  padding: 0.5em 1em;
+.btn:link, .btn:visited {
+  display: flex;
+  align-items: center;
+  background-color: #7b0909;
+  border: 2px solid #898989;
+  border-radius: 0.5rem;
+  box-shadow: 0px 1px 2px 1px rgba(0, 0, 0, 0.5);
+  width: fit-content;
+  padding: 0.5em 0.75em;
+  margin: auto;
+  margin-bottom: 4rem;
+  backface-visibility: hidden;
+  transition: all 0.2s;
+}
+.btn__icon {
+  width: 3.5rem;
+  height: 3.5rem;
+}
+.btn__paragraph {
+  margin-left: 0.75rem;
 }
 
-.header__section--btn {
-  margin-bottom: 2rem;
+.btn:hover {
+  background-color: #920505;
+  border-top-color: #d7d7d7;
+  border-left-color: #d7d7d7;
+  box-shadow: 0px 3px 4px 2px rgba(0, 0, 0, 0.5);
+  transform: translateY(-1px);
+}
+
+.btn:active {
+  border-top-color: #898989;
+  border-left-color: #898989;
+  border-bottom-color: #d7d7d7;
+  border-right-color: #d7d7d7;
+  box-shadow: none;
+  transform: translateY(1px);
 }
 
 .cardPortfolio {
-  background-color: #eee;
+  background-color: #f0f0f0;
   border-radius: 0.5rem;
   box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.3);
   padding: 1rem;
@@ -259,7 +282,7 @@ body {
 .cardPortfolio__btnsContainer--icon {
   height: 5rem;
   width: 5rem;
-  fill: #eee;
+  fill: #f0f0f0;
 }
 .cardPortfolio__btnsContainer--text {
   margin-left: 1rem;
@@ -296,7 +319,7 @@ body {
   margin-bottom: 2rem;
 }
 .footer__figure--img {
-  border: 5px solid #eee;
+  border: 5px solid #f0f0f0;
   border-radius: 50%;
   box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.3);
   width: clamp(13rem, 20vw, 18rem);
@@ -337,9 +360,9 @@ body {
   margin-left: 1rem;
 }
 .header__section--svgBriefcase, .header__section--svgCV {
-  height: 5rem;
-  width: 5rem;
-  fill: #eee;
+  width: 3.5rem;
+  height: 3.5rem;
+  fill: #f0f0f0;
 }
 
 main .about__section {
@@ -372,12 +395,12 @@ main .about__section--iconContainerText {
   margin-left: 1rem;
 }
 main .about__section--svgSkills {
-  height: 5rem;
-  width: 5rem;
-  fill: #eee;
+  width: 3.5rem;
+  height: 3.5rem;
+  fill: #f0f0f0;
 }
 main .portfolio__section {
-  background-color: #eee;
+  background-color: #f0f0f0;
   padding: 2rem;
 }
 main .portfolio__section--heading {
@@ -388,24 +411,6 @@ main .portfolio__section--paragraph {
 }
 main .portfolio__section--paragraph:last-of-type {
   margin-bottom: 4rem;
-}
-main .portfolio__section--iconContainer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #7b0909;
-  border-radius: 0.5em;
-  width: fit-content;
-  padding: 0.25em 1em;
-  margin: 0 auto 4rem;
-}
-main .portfolio__section--iconContainerText {
-  margin-left: 1rem;
-}
-main .portfolio__section--svgSkills {
-  height: 5rem;
-  width: 5rem;
-  fill: #eee;
 }
 
 .navbar {
@@ -426,7 +431,7 @@ main .portfolio__section--svgSkills {
   position: relative;
 }
 .navbar__hamburger--bar, .navbar__hamburger--bar::before, .navbar__hamburger--bar::after {
-  background-color: #eee;
+  background-color: #f0f0f0;
   height: 2px;
   width: 40px;
 }

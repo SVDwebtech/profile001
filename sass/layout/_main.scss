@@ -36,8 +36,7 @@ main {
             }
 
             &--svgSkills {
-                height: 5rem;
-                width: 5rem;
+                @include btnIconSize;
                 fill: $cp-white;
             }
         }
@@ -61,27 +60,7 @@ main {
             &--paragraph:last-of-type {
                 margin-bottom: 4rem;
             }
-
-            &--iconContainer {
-                display: flex;
-                justify-content: center;
-                align-items: center; 
-                background-color: $cp-red;
-                border-radius: .5em;
-                width: fit-content;
-                padding: .25em 1em;
-                margin: 0 auto 4rem;   
-            }
-
-            &--iconContainerText {
-                margin-left: 1rem;
-            }
-
-            &--svgSkills {
-                height: 5rem;
-                width: 5rem;
-                fill: $cp-white;
-            }
+            
         }
         
     }

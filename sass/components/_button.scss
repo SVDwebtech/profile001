@@ -1,8 +1,52 @@
-.btn {
-    border-radius: .5em;
-    padding: .5em 1em;
+.btn:link, .btn:visited {
+    display: flex;
+    align-items: center; 
+    
+    background-color: $cp-red;
+    
+    border: 2px solid $cp-grey;
+
+    border-radius: $br-m;
+    box-shadow: $bs-btn;
+
+    width: fit-content;
+    
+    padding: .5em .75em;
+    margin: auto;
+    margin-bottom: $mb-btn;
+
+    backface-visibility: hidden;
+    transition: all .2s;
+
+    &__icon {
+		
+	}
 }
 
-.header__section--btn {
-    margin-bottom: 2rem;
+.btn {
+    &__icon {
+        @include btnIconSize;
+    }
+    &__paragraph {
+        margin-left: .75rem;
+    }
 }
+
+.btn:hover { 
+    background-color: $cp-red-hover;
+    border-top-color: $cp-lightGrey;
+    border-left-color: $cp-lightGrey;
+    box-shadow: $bs-btnHover;
+    transform: translateY(-1px);
+}
+
+.btn:active {
+    border-top-color: $cp-grey;
+    border-left-color: $cp-grey;
+    border-bottom-color: $cp-lightGrey;
+    border-right-color: $cp-lightGrey;
+    box-shadow: none;
+    transform: translateY(1px);
+}
+
+
