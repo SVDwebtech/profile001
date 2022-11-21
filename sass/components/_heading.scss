@@ -1,0 +1,25 @@
+.headingH2Container {
+    position: relative;
+
+    margin: 2rem 0 5rem;
+
+    &__headingH2 {
+        width: fit-content;
+
+        &::first-letter {
+            background-color: $cp-blue;
+            border-radius: $br-m;
+            box-shadow: -7px -7px 0 $cp-red;
+            
+            padding: 0px 3px 15px 8px;
+            margin-right: 3px;  
+        }
+    }
+
+    &__paragraph {
+        position: absolute;
+        top: 6.5rem;
+        left: 7rem;
+    }
+}
+

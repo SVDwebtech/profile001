@@ -94,6 +94,29 @@ body {
   letter-spacing: 1px;
 }
 
+.headingH2Container__headingH2 {
+  font-size: 4rem;
+  font-weight: 900;
+  letter-spacing: 3px;
+  text-decoration: underline 3px #0a3465;
+  text-underline-offset: 6px;
+  background: linear-gradient(-45deg, #7b0909 15%, rgba(3, 3, 3, 0.273) 25%, rgba(3, 3, 3, 0.33) 30%, #0a3465 50%);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.headingH2Container__headingH2::first-letter {
+  color: #f0f0f0;
+  font-size: 4.5rem;
+}
+.headingH2Container__paragraph {
+  color: #7b0909;
+  font-size: 1.5rem;
+  font-weight: 900;
+  letter-spacing: 2px;
+}
+
 .navbar__logo {
   color: #f0f0f0;
   text-align: center;
@@ -286,6 +309,26 @@ body {
 }
 .cardPortfolio__btnsContainer--text {
   margin-left: 1rem;
+}
+
+.headingH2Container {
+  position: relative;
+  margin: 2rem 0 5rem;
+}
+.headingH2Container__headingH2 {
+  width: fit-content;
+}
+.headingH2Container__headingH2::first-letter {
+  background-color: #0a3465;
+  border-radius: 0.5rem;
+  box-shadow: -7px -7px 0 #7b0909;
+  padding: 0px 3px 15px 8px;
+  margin-right: 3px;
+}
+.headingH2Container__paragraph {
+  position: absolute;
+  top: 6.5rem;
+  left: 7rem;
 }
 
 .navbar__logo {

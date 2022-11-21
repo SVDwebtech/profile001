@@ -51,6 +51,16 @@ ORDER: base + typography > general layout + grid > page layout > components
 	}
 }
 
+/////////////////////////////////////////////////////////////////////////////
+// heading mixins
+/////////////////////////////////////////////////////////////////////////////
+// to make background color for text visible
+@mixin backgroundTextTransparent {
+	-webkit-background-clip: text;
+	-moz-background-clip: text;
+	background-clip: text;
+	color: transparent;
+}
 
 /////////////////////////////////////////////////////////////////////////////
 // btn mixins
@@ -60,3 +70,4 @@ ORDER: base + typography > general layout + grid > page layout > components
 	width: 3.5rem;
 	height: 3.5rem;
 }
+
