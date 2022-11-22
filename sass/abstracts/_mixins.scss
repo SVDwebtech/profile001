@@ -67,7 +67,7 @@ ORDER: base + typography > general layout + grid > page layout > components
 /////////////////////////////////////////////////////////////////////////////
 
 @mixin btnIconSize {
-	width: 3.5rem;
-	height: 3.5rem;
+	width: clamp(3.5rem, 9vw, 4.5rem);
+	height: clamp(3.5rem, 9vw, 4.5rem);
 }
 

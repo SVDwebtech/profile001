@@ -1,5 +1,6 @@
 .btn:link, .btn:visited {
-    display: flex;
+    display: flex; 
+    justify-content: center;
     align-items: center; 
     
     background-color: $cp-red;
@@ -15,10 +16,6 @@
     
     backface-visibility: hidden;
     transition: all .2s;
-
-    &__icon {
-		
-	}
 }
 
 .btn {
@@ -46,5 +43,3 @@
     box-shadow: none;
     transform: translateY(1px);
 }
-
-
