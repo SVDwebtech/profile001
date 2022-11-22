@@ -38,19 +38,22 @@ main {
         &__section {
             background-color: $cp-white;
             padding: 2rem;
-
-            &--heading {
-                margin-bottom: $mb-h2;
-            }
-
-            &--paragraph {
-                margin-bottom: $mb-p;
-            }
-
-            &--paragraph:last-of-type {
-                margin-bottom: 4rem;
-            }
             
+        }
+        
+    }
+
+    .skills {
+
+        &__section {
+            background-color: $cp-white;
+            padding: 2rem;
+
+           
+        .btn {
+                margin: 0 auto 2rem;
+        }
+           
         }
         
     }

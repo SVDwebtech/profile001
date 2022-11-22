@@ -186,12 +186,16 @@ body {
   text-decoration: underline solid 2px #f0f0f0;
 }
 
-.cardPortfolio__headingH3 {
+.headingH3 {
   color: #f0f0f0;
-  font-size: 2rem;
+  font-size: clamp(2rem, 6vw, 3rem);
   font-weight: 900;
   letter-spacing: 1px;
   text-decoration: underline solid 2px #f0f0f0;
+}
+.headingH3--blue {
+  color: #0a3465;
+  text-decoration: underline solid 2px #0a3465;
 }
 
 .cardPortfolio__figure--figcaptionParagraph {
@@ -422,14 +426,12 @@ main .portfolio__section {
   background-color: #f0f0f0;
   padding: 2rem;
 }
-main .portfolio__section--heading {
-  margin-bottom: 2rem;
+main .skills__section {
+  background-color: #f0f0f0;
+  padding: 2rem;
 }
-main .portfolio__section--paragraph {
-  margin-bottom: 1rem;
-}
-main .portfolio__section--paragraph:last-of-type {
-  margin-bottom: 4rem;
+main .skills__section .btn {
+  margin: 0 auto 2rem;
 }
 
 .navbar {

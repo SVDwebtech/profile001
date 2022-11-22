@@ -133,12 +133,17 @@ body {
 	}
 }
 
-.cardPortfolio__headingH3 {
+.headingH3 {
 	color: $cf-white;
-	font-size: 2rem;
+	font-size: clamp(2rem, 6vw, 3rem);
 	font-weight: 900;
 	letter-spacing: 1px;
 	text-decoration:underline solid 2px $cf-white;
+
+	&--blue {
+		color: $cf-blue;
+		text-decoration:underline solid 2px $cf-blue;
+	}
 }
 
 .cardPortfolio__figure--figcaptionParagraph {
