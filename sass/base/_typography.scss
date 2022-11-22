@@ -27,7 +27,7 @@ body {
 .headingH2Container {
 	
 	&__headingH2 {
-		font-size: 4rem;
+		font-size: clamp(2.3rem, 6vw, 4rem);
         font-weight: 900;
         letter-spacing: 3px;
         text-decoration: underline 3px $cp-blue;
@@ -38,13 +38,13 @@ body {
         
 		&::first-letter {
             color: $cf-white;
-            font-size: 4.5rem;            
+            font-size: clamp(4.5rem, 12vw, 6.5rem);            
         }
 	}
 
 	&__paragraph {
         color: $cp-red;
-        font-size: 1.5rem;
+        font-size: clamp(1.3rem, 3.5vw, 2.2rem);
         font-weight: 900;
         letter-spacing: 2px;
     }
@@ -95,16 +95,6 @@ body {
 	
 	&__section {
 		color: $cf-darkGrey;
-
-		&--heading {
-			font-size: clamp(2.3rem, 6vw, 4rem);
-		}
-
-		&--paragraph {
-			font-size: clamp(1.6rem, 4vw, 2.6rem);
-			font-weight: 700;
-			text-align: justify;
-		}
 	}
 	
 }
@@ -113,7 +103,6 @@ body {
 	
 	&__section {
 		color: $cf-darkGrey
-
 	}
 }
 

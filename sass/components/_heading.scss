@@ -17,8 +17,8 @@
 
     &__paragraph {
         position: absolute;
-        top: 6.125rem;
-        left: 7rem;
+        bottom: clamp(-1.5rem, 1vw, -1.6rem);
+        left: clamp(7rem, 17vw, 15rem);
     }
 }
 

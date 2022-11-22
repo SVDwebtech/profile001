@@ -95,7 +95,7 @@ body {
 }
 
 .headingH2Container__headingH2 {
-  font-size: 4rem;
+  font-size: clamp(2.3rem, 6vw, 4rem);
   font-weight: 900;
   letter-spacing: 3px;
   text-decoration: underline 3px #0a3465;
@@ -108,11 +108,11 @@ body {
 }
 .headingH2Container__headingH2::first-letter {
   color: #f0f0f0;
-  font-size: 4.5rem;
+  font-size: clamp(4.5rem, 12vw, 6.5rem);
 }
 .headingH2Container__paragraph {
   color: #7b0909;
-  font-size: 1.5rem;
+  font-size: clamp(1.3rem, 3.5vw, 2.2rem);
   font-weight: 900;
   letter-spacing: 2px;
 }
@@ -154,14 +154,6 @@ body {
 
 .about__section {
   color: #3e3e3e;
-}
-.about__section--heading {
-  font-size: clamp(2.3rem, 6vw, 4rem);
-}
-.about__section--paragraph {
-  font-size: clamp(1.6rem, 4vw, 2.6rem);
-  font-weight: 700;
-  text-align: justify;
 }
 
 .portfolio__section {
@@ -328,8 +320,8 @@ body {
 }
 .headingH2Container__paragraph {
   position: absolute;
-  top: 6.125rem;
-  left: 7rem;
+  bottom: clamp(-1.5rem, 1vw, -1.6rem);
+  left: clamp(7rem, 17vw, 15rem);
 }
 
 .navbar__logo {
