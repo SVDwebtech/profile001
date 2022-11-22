@@ -148,6 +148,10 @@ body {
   margin-left: 0rem;
 }
 
+.about__section {
+  text-align: justify;
+}
+
 .portfolio__section {
   color: #3e3e3e;
 }
