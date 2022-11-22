@@ -1,5 +1,6 @@
 // primary colors
 $cp-blue: #0a3465;
+$cp-blue-hover: #083f7e;
 $cp-red: #7b0909;
 $cp-red-hover: #920505;
 $cp-dark: #2b2b2b;
@@ -24,9 +25,9 @@ $fs-btn: 1.5rem;
 $fs-p: 1rem;
 
 // border-radius
-$br-sm: .2rem;
+$br-sm: .25rem;
 $br-m: .5rem;
-$br-l: .7rem;
+$br-l: 1rem;
 
 // box-shadow
 $bs-dark: 0 0 5px 2px rgba(0, 0, 0, .3);

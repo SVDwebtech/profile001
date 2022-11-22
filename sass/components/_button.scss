@@ -4,10 +4,8 @@
     align-items: center; 
     
     background-color: $cp-red;
-    
     border: 2px solid $cp-grey;
-
-    border-radius: $br-m;
+    border-radius: $br-l;
     box-shadow: $bs-btn;
 
     width: fit-content;
@@ -44,3 +42,11 @@
     box-shadow: none;
     transform: translateY(1px);
 }
+
+// .btn--blue:link, .btn--blue:visited {
+//     background-color: $cp-blue;
+// }
+
+// .btn--blue:hover { 
+//     background-color: $cp-blue-hover;
+// }

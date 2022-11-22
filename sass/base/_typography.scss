@@ -118,12 +118,27 @@ body {
 	}
 }
 
+.cardPortfolio {
+	.paragraph {
+		color: $cf-white;
+		font-weight: 400;
+	}
+
+	&__headingH4 {
+		color: $cf-white;
+		font-size: clamp(1.8rem, 6vw, 2.8rem);
+		font-weight: 700;
+		letter-spacing: 1px;
+		text-decoration:underline solid 2px $cf-white;
+	}
+}
+
 .cardPortfolio__headingH3 {
-	color: $cf-red;
+	color: $cf-white;
 	font-size: 2rem;
 	font-weight: 900;
 	letter-spacing: 1px;
-	text-decoration:underline solid 2px $cf-darkGrey;
+	text-decoration:underline solid 2px $cf-white;
 }
 
 .cardPortfolio__figure--figcaptionParagraph {
@@ -131,18 +146,4 @@ body {
 	font-size: 1rem;
 	font-weight: 700;
 	letter-spacing: 1px;
-}
-
-.cardPortfolio__descriptionContainer {
-	color: $cf-white;
-}
-
-.cardPortfolio__techContainer {
-	color: $cf-white;
-}
-
-.cardPortfolio__btnsContainer {
-			color: $cf-white;
-			font-weight: 700;
-			letter-spacing: 1px;
 }

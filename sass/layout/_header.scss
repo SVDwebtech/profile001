@@ -20,7 +20,7 @@
         padding: 2rem;
         
         &--banner {
-            background-color: rgba(255,255,255, 0.85);
+            background-color: rgba($cp-white, .8);
             border-radius: $br-m;
             box-shadow: $bs-dark;
 
@@ -44,8 +44,8 @@
              display: block;
         }
 
-        &--btn {
-            margin: 0 auto 2rem;
+        .btn {
+            margin: 0 auto 4rem;
         }
     }    
 }

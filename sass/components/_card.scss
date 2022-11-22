@@ -1,7 +1,7 @@
 .cardPortfolio {
-    background-color: $cp-white;
-    border: 2px solid $cp-blue;
-    border-radius: $br-m;
+    background-color: $cp-blue;
+    // border: 12px solid $cp-white;
+    border-radius: $br-l;
 
     padding: 2rem;
     
@@ -13,11 +13,11 @@
     &__figure {
         background-color: $cp-blue;
         border-radius: $br-m;
-        padding: 1em;
-        margin-bottom: 2rem;
+        padding: 0 1em;
+        margin-bottom: 4rem;
 
         &--img {
-            border: 2px solid $cp-white;
+            border: 10px solid $cp-white;
             border-radius: 1rem;
             width: 100%;
         }
@@ -26,16 +26,16 @@
     &__descriptionContainer {
         background-color: $cp-blue;
         border-radius: $br-m;
-        padding: 1em;
-        margin-bottom: 2rem;
+        padding: 0 1em;
+        margin-bottom: 4rem;
         
     }
 
     &__techContainer {
         background-color: $cp-blue;
         border-radius: $br-m;
-        padding: 1em;
-        margin-bottom: 2rem;
+        padding: 0 1em;
+        margin-bottom: 6rem;
         
         &--tech {
             background-color: $cp-red;
@@ -47,12 +47,11 @@
     &__btnsContainer {
         
         .btn {
-            margin: 0 auto 2rem;
-        }
+            margin: 0 auto 4rem;
+        }    
+    }
 
-        .btn:last-child {
-            margin-bottom: 0;
-        }
-    
+    .paragraph:last-of-type {
+        margin-bottom: 0rem;
     }
 }

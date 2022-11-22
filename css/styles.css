@@ -174,31 +174,29 @@ body {
   font-size: clamp(1.2rem, 1.7vw, 1.7rem);
 }
 
+.cardPortfolio .paragraph {
+  color: #f0f0f0;
+  font-weight: 400;
+}
+.cardPortfolio__headingH4 {
+  color: #f0f0f0;
+  font-size: clamp(1.8rem, 6vw, 2.8rem);
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-decoration: underline solid 2px #f0f0f0;
+}
+
 .cardPortfolio__headingH3 {
-  color: #7b0909;
+  color: #f0f0f0;
   font-size: 2rem;
   font-weight: 900;
   letter-spacing: 1px;
-  text-decoration: underline solid 2px #3e3e3e;
+  text-decoration: underline solid 2px #f0f0f0;
 }
 
 .cardPortfolio__figure--figcaptionParagraph {
   color: #f0f0f0;
   font-size: 1rem;
-  font-weight: 700;
-  letter-spacing: 1px;
-}
-
-.cardPortfolio__descriptionContainer {
-  color: #f0f0f0;
-}
-
-.cardPortfolio__techContainer {
-  color: #f0f0f0;
-}
-
-.cardPortfolio__btnsContainer {
-  color: #f0f0f0;
   font-weight: 700;
   letter-spacing: 1px;
 }
@@ -225,7 +223,7 @@ body {
   align-items: center;
   background-color: #7b0909;
   border: 2px solid #898989;
-  border-radius: 0.5rem;
+  border-radius: 1rem;
   box-shadow: 0px 1px 2px 1px rgba(0, 0, 0, 0.5);
   width: fit-content;
   padding: 0.5em 0.75em;
@@ -260,9 +258,8 @@ body {
 }
 
 .cardPortfolio {
-  background-color: #f0f0f0;
-  border: 2px solid #0a3465;
-  border-radius: 0.5rem;
+  background-color: #0a3465;
+  border-radius: 1rem;
   padding: 2rem;
 }
 .cardPortfolio__headingH3 {
@@ -271,25 +268,25 @@ body {
 .cardPortfolio__figure {
   background-color: #0a3465;
   border-radius: 0.5rem;
-  padding: 1em;
-  margin-bottom: 2rem;
+  padding: 0 1em;
+  margin-bottom: 4rem;
 }
 .cardPortfolio__figure--img {
-  border: 2px solid #f0f0f0;
+  border: 10px solid #f0f0f0;
   border-radius: 1rem;
   width: 100%;
 }
 .cardPortfolio__descriptionContainer {
   background-color: #0a3465;
   border-radius: 0.5rem;
-  padding: 1em;
-  margin-bottom: 2rem;
+  padding: 0 1em;
+  margin-bottom: 4rem;
 }
 .cardPortfolio__techContainer {
   background-color: #0a3465;
   border-radius: 0.5rem;
-  padding: 1em;
-  margin-bottom: 2rem;
+  padding: 0 1em;
+  margin-bottom: 6rem;
 }
 .cardPortfolio__techContainer--tech {
   background-color: #7b0909;
@@ -297,10 +294,10 @@ body {
   padding: 0.25em 0.75em;
 }
 .cardPortfolio__btnsContainer .btn {
-  margin: 0 auto 2rem;
+  margin: 0 auto 4rem;
 }
-.cardPortfolio__btnsContainer .btn:last-child {
-  margin-bottom: 0;
+.cardPortfolio .paragraph:last-of-type {
+  margin-bottom: 0rem;
 }
 
 .headingH2Container {
@@ -318,6 +315,10 @@ body {
   position: absolute;
   bottom: clamp(-1.5rem, 1vw, -1.6rem);
   left: clamp(7rem, 17vw, 15rem);
+}
+
+.headingH4 {
+  margin-bottom: 1rem;
 }
 
 .navbar__logo {
@@ -376,7 +377,7 @@ body {
   padding: 2rem;
 }
 .header__section--banner {
-  background-color: rgba(255, 255, 255, 0.85);
+  background-color: rgba(240, 240, 240, 0.8);
   border-radius: 0.5rem;
   box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.3);
   width: clamp(25rem, 70vw, 40rem);
@@ -392,12 +393,12 @@ body {
 .header__section--primaryHeadingSpanName {
   display: block;
 }
-.header__section--btn {
-  margin: 0 auto 2rem;
+.header__section .btn {
+  margin: 0 auto 4rem;
 }
 
 main .about__section {
-  background: linear-gradient(to bottom, transparent 60%, #f0f0f0 90%), linear-gradient(to bottom right, transparent 10%, #f0f0f0 65%, #f0f0f0 95%), url(/img/about-background-photo.webp);
+  background: linear-gradient(to bottom, transparent 60%, #f0f0f0 90%), linear-gradient(to bottom right, transparent 10%, rgba(240, 240, 240, 0.6) 65%, rgba(240, 240, 240, 0.8) 95%), url(/img/about-background-photo.webp);
   background-size: clamp(30rem, 60vw, 55rem);
   background-repeat: no-repeat;
   background-position: bottom right;
