@@ -4,7 +4,6 @@
     margin: 2rem 0 5rem;
 
     &__headingH2 {
-        width: fit-content;
 
         &::first-letter {
             background-color: $cp-blue;
@@ -18,7 +17,7 @@
 
     &__paragraph {
         position: absolute;
-        top: 6.5rem;
+        top: 6.125rem;
         left: 7rem;
     }
 }
