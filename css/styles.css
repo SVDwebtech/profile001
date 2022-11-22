@@ -85,6 +85,12 @@ body {
   line-height: 1.6;
 }
 
+.paragraph {
+  color: #0a3465;
+  font-size: clamp(1.2rem, 3.5vw, 2rem);
+  font-weight: 700;
+}
+
 .btn {
   color: #f0f0f0;
 }
@@ -144,16 +150,6 @@ body {
   line-height: 1;
   letter-spacing: 1px;
   margin-left: 0rem;
-}
-.header__section--paragraph {
-  color: #3e3e3e;
-  font-size: 1.6rem;
-  font-weight: bold;
-  line-height: 1;
-}
-
-.about__section {
-  color: #3e3e3e;
 }
 
 .portfolio__section {
@@ -341,6 +337,10 @@ body {
   margin-left: 1rem;
 }
 
+.paragraph {
+  margin: 0 auto 2rem;
+}
+
 .footer {
   display: flex;
   flex-direction: column;
@@ -395,12 +395,6 @@ main .about__section {
 }
 main .about__section--heading {
   margin-bottom: 2rem;
-}
-main .about__section--paragraph {
-  margin-bottom: 1rem;
-}
-main .about__section--paragraph:last-of-type {
-  margin-bottom: 4rem;
 }
 main .about__section .btn {
   margin: 0 auto 2rem;

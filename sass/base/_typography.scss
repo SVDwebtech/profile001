@@ -12,7 +12,11 @@ body {
 .heading-h3 {}
 .heading-h4 {}
 
-.paragraph {}
+.paragraph {
+	color:  $cf-blue;
+	font-size: clamp(1.2rem, 3.5vw, 2rem);
+	font-weight: 700;
+}
 
 .btn {
 	color: $cf-white;
@@ -81,22 +85,7 @@ body {
 
 			margin-left: 0rem;
         }
-
-		&--paragraph {
-			color: $cf-darkGrey;
-			font-size: 1.6rem;
-			font-weight: bold;
-			line-height: 1;
-		}
 	}
-}
-
-.about {
-	
-	&__section {
-		color: $cf-darkGrey;
-	}
-	
 }
 
 .portfolio {
