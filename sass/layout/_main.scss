@@ -2,19 +2,33 @@ main {
     .about {
 
         &__section {
-            background: linear-gradient(to bottom, transparent 60%, $cp-white 90%), linear-gradient(to bottom right, transparent 10%, rgba($cp-white, .6) 65%, rgba($cp-white, .8) 95%),url(/img/about-background-photo.webp);
-            background-size: clamp(30rem, 60vw, 55rem);
-            background-repeat: no-repeat;
-            background-position: bottom right;
+            background: 
+                linear-gradient(to bottom, transparent 60%, $cp-white 90%), 
+                linear-gradient(to bottom right, transparent 10%, rgba($cp-white, .6) 65%, rgba($cp-white, .8) 95%);
             padding: 2rem;
 
-            &--heading {
-                margin-bottom: $mb-h2;
-            }
+            position: relative;
 
             .btn {
                 margin: 0 auto 2rem;
             }
+        }
+
+        &__section::after {
+            content: "";
+            background: linear-gradient(to bottom, transparent 65%, $cp-white 70%), linear-gradient(to bottom right, transparent 10%, rgba($cp-white, .4) 65%, rgba($cp-white, .6) 95%),url(/img/about-background-photo.webp);
+            background-size: 80%;
+            background-repeat: no-repeat;
+            background-position: 70% 65%;
+
+            width: 100%;
+            height: 100%;
+
+            position: absolute;
+            top: 0;
+            left: 0;
+
+            z-index: -1;
         }
         
     }
