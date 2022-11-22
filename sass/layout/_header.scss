@@ -28,11 +28,20 @@
 
             padding: 1em;
             margin: 3rem auto 5rem;
+
+            h1 > .paragraph:last-of-type {
+                margin-bottom: 2rem;
+            }
+
+            h1 + .paragraph {
+                margin-bottom: 0rem;
+            }
         }
 
-        &--primaryHeadingSpan1, &--primaryHeadingSpan2, &--primaryHeadingSpan3, &--primaryHeadingSpan4 {
-            display: block;
-            margin-bottom: $mb-p;
+        
+
+        &--primaryHeadingSpanName {
+             display: block;
         }
 
         &--btn {

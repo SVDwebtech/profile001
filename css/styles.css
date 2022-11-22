@@ -139,13 +139,9 @@ body {
 .header__section {
   text-align: justify;
 }
-.header__section--primaryHeading {
-  color: #3e3e3e;
-  font-size: 1.6rem;
-}
 .header__section--primaryHeadingSpanName {
   color: #7b0909;
-  font-size: clamp(2.3rem, 6vw, 4rem);
+  font-size: clamp(2.2rem, 6.5vw, 12rem);
   font-weight: 900;
   line-height: 1;
   letter-spacing: 1px;
@@ -338,6 +334,7 @@ body {
 }
 
 .paragraph {
+  display: block;
   margin: 0 auto 2rem;
 }
 
@@ -382,9 +379,14 @@ body {
   padding: 1em;
   margin: 3rem auto 5rem;
 }
-.header__section--primaryHeadingSpan1, .header__section--primaryHeadingSpan2, .header__section--primaryHeadingSpan3, .header__section--primaryHeadingSpan4 {
+.header__section--banner h1 > .paragraph:last-of-type {
+  margin-bottom: 2rem;
+}
+.header__section--banner h1 + .paragraph {
+  margin-bottom: 0rem;
+}
+.header__section--primaryHeadingSpanName {
   display: block;
-  margin-bottom: 1rem;
 }
 .header__section--btn {
   margin: 0 auto 2rem;
