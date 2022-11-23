@@ -16,6 +16,10 @@ body {
 	color:  $cf-blue;
 	font-size: clamp(1.6rem, 5vw, 2.4rem);
 	font-weight: 700;
+
+	&--white {
+		color: $cf-white;
+	}
 }
 
 .btn {
@@ -144,6 +148,11 @@ body {
 		color: $cf-blue;
 		text-decoration:underline solid 2px $cf-blue;
 	}
+
+	&--white {
+		color: $cf-white;
+		text-decoration:underline solid 2px $cf-white;
+	}
 }
 
 .cardPortfolio__figure--figcaptionParagraph {
@@ -151,4 +160,13 @@ body {
 	font-size: 1rem;
 	font-weight: 700;
 	letter-spacing: 1px;
+}
+
+.form {
+	color: $cf-white;
+
+	&__inputContainer {
+		font-size: clamp(1.6rem, 5vw, 2.4rem);
+		font-weight: 700;
+	}
 }

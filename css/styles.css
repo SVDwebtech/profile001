@@ -90,6 +90,9 @@ body {
   font-size: clamp(1.6rem, 5vw, 2.4rem);
   font-weight: 700;
 }
+.paragraph--white {
+  color: #f0f0f0;
+}
 
 .btn {
   color: #f0f0f0;
@@ -197,12 +200,24 @@ body {
   color: #0a3465;
   text-decoration: underline solid 2px #0a3465;
 }
+.headingH3--white {
+  color: #f0f0f0;
+  text-decoration: underline solid 2px #f0f0f0;
+}
 
 .cardPortfolio__figure--figcaptionParagraph {
   color: #f0f0f0;
   font-size: 1rem;
   font-weight: 700;
   letter-spacing: 1px;
+}
+
+.form {
+  color: #f0f0f0;
+}
+.form__inputContainer {
+  font-size: clamp(1.6rem, 5vw, 2.4rem);
+  font-weight: 700;
 }
 
 .u-center-text {
@@ -318,6 +333,36 @@ body {
   margin-bottom: 0rem;
 }
 
+.form {
+  margin-bottom: 4rem;
+}
+.form__inputAndBtnContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #0a3465;
+  border-radius: 1rem;
+  padding: 2rem 2rem;
+}
+.form__inputContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 1rem 0;
+}
+.form__input {
+  width: 100%;
+  height: 3.5rem;
+}
+.form__textArea {
+  width: 100%;
+  height: 15rem;
+}
+.form__btn {
+  margin: 2rem auto;
+}
+
 .headingH2Container {
   position: relative;
   margin: 2rem 0 5rem;
@@ -363,6 +408,21 @@ body {
 
 .paragraph:last-of-type {
   margin: 0 auto 4rem;
+}
+
+.socialMedia {
+  margin-bottom: 4rem;
+}
+.socialMedia__iconContainer {
+  display: flex;
+  justify-content: space-evenly;
+}
+.socialMedia__icon {
+  color: #7b0909;
+  border-radius: 50%;
+  box-shadow: 4px 6px 10px 3px #33333393;
+  width: clamp(3rem, 12vw, 8rem);
+  height: clamp(3rem, 12vw, 8rem);
 }
 
 .footer {
@@ -450,6 +510,15 @@ main .skills__section .btn {
 main .contact__section {
   background-color: #f0f0f0;
   padding: 2rem;
+}
+main .contact__section .paragraph {
+  margin: 1rem 0;
+}
+main .contact__section .paragraph:last-of-type {
+  margin: 1rem 0 4rem;
+}
+main .contact__section .contactCard {
+  margin-bottom: 4rem;
 }
 
 .navbar {

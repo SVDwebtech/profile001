@@ -1,2 +1,16 @@
 .socialMedia {
+    margin-bottom: 4rem;
+
+    &__iconContainer {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    &__icon {
+        color: $cp-red;
+        border-radius: 50%;
+        box-shadow: 4px 6px 10px 3px #33333393;
+        width: clamp(3rem, 12vw, 8rem);
+        height: clamp(3rem, 12vw, 8rem);
+    }
 }

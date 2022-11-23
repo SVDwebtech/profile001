@@ -49,22 +49,29 @@ main {
             background-color: $cp-white;
             padding: 2rem;
 
-           
-        .btn {
-                margin: 0 auto 2rem;
-        }
-           
+            .btn {
+                    margin: 0 auto 2rem;
+            }
         }
         
     }
 
     .contact {
-
         &__section {
             background-color: $cp-white;
             padding: 2rem;
 
-        
+            .paragraph {
+                margin: 1rem 0;
+            }
+
+            .paragraph:last-of-type {
+                margin: 1rem 0 4rem;
+            }
+
+            .contactCard {
+                margin-bottom: 4rem;
+            }
            
         }
         
