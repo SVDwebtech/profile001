@@ -18,6 +18,23 @@
 }
 
 .btn {
+    display: flex; 
+    justify-content: center;
+    align-items: center; 
+    
+    background-color: $cp-red;
+    border: 2px solid $cp-grey;
+    border-radius: $br-l;
+    box-shadow: $bs-btn;
+
+    width: fit-content;
+    
+    padding: .5em .75em;
+    margin-bottom: 4rem;
+    
+    backface-visibility: hidden;
+    transition: all .2s;
+    
     &__icon {
         @include btnIconSize;
     }
