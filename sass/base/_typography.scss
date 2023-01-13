@@ -225,11 +225,12 @@ body {
 			letter-spacing: .3rem;
 		}
 		&--logoTextName {
-			font-size: 2rem;
+			font-size: clamp(1.8rem, 2.5vw, 2.5rem);
 			line-height: 1;
 		}
 		&--logoTextDev {
-			font-size: 1rem;
+			//font-size: 1rem;
+			font-size: clamp(1rem, 2vw, 1.3rem);
 		}
 	}
 }
