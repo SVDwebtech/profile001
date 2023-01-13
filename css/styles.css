@@ -862,11 +862,11 @@ body {
   letter-spacing: 0.3rem;
 }
 .navbar__logoBox--logoTextName {
-  font-size: 2rem;
+  font-size: clamp(1.8rem, 2.5vw, 2.5rem);
   line-height: 1;
 }
 .navbar__logoBox--logoTextDev {
-  font-size: 1rem;
+  font-size: clamp(1rem, 2vw, 1.3rem);
 }
 
 .navList {
@@ -3920,7 +3920,7 @@ body {
   }
 }
 .navbar__logoBox {
-  width: 30rem;
+  width: 35rem;
   margin-left: 5rem;
 }
 .navbar__logoBox--logoLink {
