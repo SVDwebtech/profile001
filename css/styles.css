@@ -103,29 +103,6 @@ body {
   letter-spacing: 1px;
 }
 
-.headingH2Container__headingH2 {
-  font-size: clamp(2.3rem, 6vw, 4rem);
-  font-weight: 900;
-  letter-spacing: 3px;
-  text-decoration: underline 3px #0a3465;
-  text-underline-offset: 6px;
-  background: linear-gradient(-45deg, #7b0909 15%, rgba(3, 3, 3, 0.273) 25%, rgba(3, 3, 3, 0.33) 30%, #0a3465 50%);
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  background-clip: text;
-  color: transparent;
-}
-.headingH2Container__headingH2::first-letter {
-  color: #f0f0f0;
-  font-size: clamp(4.5rem, 12vw, 6.5rem);
-}
-.headingH2Container__paragraph {
-  color: #7b0909;
-  font-size: clamp(1.3rem, 3.5vw, 2.2rem);
-  font-weight: 900;
-  letter-spacing: 2px;
-}
-
 .navbar__logo {
   color: #f0f0f0;
   text-align: center;
@@ -363,21 +340,45 @@ body {
   margin: 2rem auto;
 }
 
-.headingH2Container {
+.sectionHeadingWrapper {
+  margin: 4rem 0 5rem;
+}
+.sectionHeadingWrapper__headingH2 {
+  color: #f0f0f0;
+  font-size: 3.5rem;
+  font-weight: 900;
+  line-height: 1;
+  letter-spacing: -2px;
+  text-transform: capitalize;
+  text-shadow: 1px 0px 2px #3e3e3e, 2px -1px 2px #3e3e3e, 3px -1px 2px #3e3e3e, 4px -1px 2px #3e3e3e;
   position: relative;
-  margin: 2rem 0 5rem;
+  z-index: 10;
 }
-.headingH2Container__headingH2::first-letter {
-  background-color: #0a3465;
-  border-radius: 0.5rem;
-  box-shadow: -7px -7px 0 #7b0909;
-  padding: 0px 3px 15px 8px;
-  margin-right: 3px;
-}
-.headingH2Container__paragraph {
+.sectionHeadingWrapper__headingH2::before {
+  content: attr(data-text);
+  color: none;
+  text-shadow: none;
+  text-transform: capitalize;
+  background: linear-gradient(to top, #303030, #a6a6a68f 55%, #ffffff00);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  filter: blur(2px);
+  transform: skewX(-50deg) translate(2.2rem, -1.3rem) scaleY(1.75);
   position: absolute;
-  bottom: clamp(-1.5rem, 1vw, -1.6rem);
-  left: clamp(7rem, 17vw, 15rem);
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.sectionHeadingWrapper__headingHr {
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0) 70%);
+  margin: 1rem 0 0.5rem;
+}
+.sectionHeadingWrapper__headingParagraph {
+  color: #0a3465;
+  font-weight: 700;
+  margin-left: 5rem;
 }
 
 .headingH4 {
