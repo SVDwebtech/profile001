@@ -1,0 +1,41 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: $cp-dark;
+
+    padding: 1rem 2rem;
+
+    &__hamburger {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        width: 4rem;
+        height: 4rem;
+
+        &--bar {
+            position: relative;
+        }
+
+        &--bar, &--bar::before, &--bar::after {
+            background-color: $cp-white;
+            height: 2px;
+            width: 40px;
+        }
+
+        &--bar::before, &--bar::after {
+            content: "";
+            position: absolute;
+        }
+
+        &--bar::before {
+            top: -7px;
+        }
+
+        &--bar::after {
+            top: 7px;
+        }
+    }
+}

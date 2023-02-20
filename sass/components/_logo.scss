@@ -1,0 +1,17 @@
+.navbar__logo {
+    display: flex;
+    align-items: center;
+    
+    &--img {
+        border: 2px solid whitesmoke;
+            border-radius: 50%;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 1);
+            width: clamp(4rem, 12vw, 6rem);
+    }
+    &--text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 1rem;
+    }
+}

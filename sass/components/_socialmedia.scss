@@ -1,29 +1,16 @@
 .socialMedia {
-	display: flex;
-	justify-content: center;
+    margin-bottom: 4rem;
 
-	&__linkWrapper {
-		height: 35px;
-		width: 70px;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-	}
+    &__iconContainer {
+        display: flex;
+        justify-content: space-evenly;
+    }
 
-	&__linkWrapper:not(:last-child) {
-		margin-right: 1rem;
-	}
-
-	&__icon {
-		transition: all .25s;
-	}
-
-	&__icon:hover {
-		color: $color-primary-brightRed;
-		transform: scale(1.1);
-
-		@include respond(phone400) {
-			transform: scale(1.3);
-		}
-	}
+    &__icon {
+        color: $cp-red;
+        border-radius: 50%;
+        box-shadow: 4px 6px 10px 3px #33333393;
+        width: clamp(3rem, 12vw, 8rem);
+        height: clamp(3rem, 12vw, 8rem);
+    }
 }

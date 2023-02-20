@@ -1,11 +1,51 @@
 .header {
-	min-height: 96vh;
+    
+    &__section {
+        background: linear-gradient(
+                180deg, 
+                transparent 50%, 
+                rgba(0, 0, 0, .9) 90%), 
+                linear-gradient(
+                138deg,
+                rgba(123,9,9,.6) 20%,
+                rgba(0,0,0,.5) 40%, 
+                rgba(10,52,101,.6) 50%),
+                url(../../img/header-background-img-1000.webp);
+        background-position: bottom;
+        background-repeat: no-repeat;
+        background-size: cover;
 
-	@include respond(phone550) {
-		min-height: 100vh;
-	}
+        min-height: 70rem;
 
-	@include respond(phone-small) {
-		min-height: 100vh;
-	}
+        padding: 2rem;
+        
+        &--banner {
+            background-color: rgba($cp-white, .8);
+            border-radius: $br-m;
+            box-shadow: $bs-dark;
+
+            width: clamp(25rem, 70vw, 40rem);
+
+            padding: 1em;
+            margin: 3rem auto 5rem;
+
+            h1 > .paragraph:last-of-type {
+                margin-bottom: 2rem;
+            }
+
+            h1 + .paragraph {
+                margin-bottom: 0rem;
+            }
+        }
+
+        
+
+        &--primaryHeadingSpanName {
+             display: block;
+        }
+
+        .btn {
+            margin: 0 auto 4rem;
+        }
+    }    
 }

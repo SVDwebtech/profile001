@@ -8,143 +8,18 @@
 	margin-bottom: .5rem;
 }
 
-.u-margin-bottom-small {
-	margin-bottom: 1rem;
-}
-
-.u-margin-bottom-medium {
-	margin-bottom: 4rem;
-}
-
-.u-margin-bottom-large {
-	margin-bottom: 6rem !important;
-}
-
-.u-margin-bottom-xtralarge {
-	margin-bottom: 8rem;
-}
 
 // top margins
 .u-margin-top-xtrasmall {
 	margin-top: 1rem;
 }
 
-.u-margin-top-small {
-	margin-top: 2rem;
-}
 
-.u-margin-top-medium {
-	margin-top: 4rem;
-}
-
-.u-margin-top-large {
-	margin-top: 6rem;
-}
-
-.u-margin-top-xtralarge {
-	margin-top: 8rem;
-}
 
 // right margins
 .u-margin-right-xtrasmall {
 	margin-right: .5rem;
 }
 
-.u-margin-right-small {
-	margin-right: 1rem;
-}
 
-.u-margin-right-medium {
-	margin-right: 4rem;
-}
 
-.u-margin-right-large {
-	margin-right: 6rem;
-}
-
-.u-margin-right-xtralarge {
-	margin-right: 8rem;
-}
-
-// wrappers
-.subsection-wrapper {
-	// header is a flex box
-	// set width to 100% to take up all the space in a flexbox
-	// in other containers this container is a block level element and
-	// will take up all the width as a blocklevel element
-	// width: 100%;
-	padding: 0 5rem 5rem 5rem;
-}
-
-.subsection-wrapper-header {
-	// header is a flex box
-	// set width to 100% to take up all the space in a flexbox
-	// in other containers this container is a block level element and
-	// will take up all the width as a blocklevel element
-	// width: 100%;
-	padding: 4rem 5rem 0rem 5rem;
-
-	@include respond(tablet-landscape) {
-		padding: 2rem 5rem 0rem 5rem;
-	}
-}
-
-.subsection-wrapper-about {
-	// header is a flex box
-	// set width to 100% to take up all the space in a flexbox
-	// in other containers this container is a block level element and
-	// will take up all the width as a blocklevel element
-	// width: 100%;
-	padding: 0 5rem 5rem 5rem;
-
-	@include respond(tablet-landscape) {
-		padding: 0 5rem 0;
-	}
-
-	@include respond(tablet-portrait) {
-		padding: 0 6rem 0;
-	}
-}
-
-.subsection-wrapper-skills {
-	// header is a flex box
-	// set width to 100% to take up all the space in a flexbox
-	// in other containers this container is a block level element and
-	// will take up all the width as a blocklevel element
-	// width: 100%;
-	padding: 0 5rem 0;
-
-	@include respond(tablet-portrait) {
-		padding: 0 8rem 0;
-	}
-}
-
-.subsection-wrapper-portfolio {
-	// header is a flex box
-	// set width to 100% to take up all the space in a flexbox
-	// in other containers this container is a block level element and
-	// will take up all the width as a blocklevel element
-	// width: 100%;
-	padding: 0;
-}
-
-.subsection-wrapper-contact {
-	// header is a flex box
-	// set width to 100% to take up all the space in a flexbox
-	// in other containers this container is a block level element and
-	// will take up all the width as a blocklevel element
-	// width: 100%;
-	@include respond(phone300and650) {
-		padding: 0 0 5rem;
-	}
-}
-
-// classlists
-.carouselIndexColor {
-	background-color: $color-font-brightRed !important;
-}
-
-.closePopupFirst {
-	color: $color-font-white !important;
-	font-size: 3.5rem !important;
-}
