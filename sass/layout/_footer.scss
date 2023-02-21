@@ -4,18 +4,23 @@
     align-items: center;
 
     background-color: $cp-dark;
-    padding: 2rem 2rem;
+    padding: 6rem 2rem 0rem;
+
+    & > * {
+        margin-bottom: 4rem;
+    }
+
     &__figure {
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-bottom: 2rem;
+        
         &--img {
             border: 5px solid $cp-white;
             border-radius: 50%;
             box-shadow: $bs-dark;
-            width: clamp(13rem, 20vw, 18rem);
-            margin-bottom: 2rem;
+            width: clamp(15rem, 40vw, 25rem);
+            
         }
     }
 }
