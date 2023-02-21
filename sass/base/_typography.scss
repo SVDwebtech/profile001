@@ -99,7 +99,7 @@ body {
 	
 	&__figure--figcaption-name {
 		font-family: 'Alegreya', serif;;
-		font-size: clamp(3rem, 11vw, 7rem);
+		font-size: clamp(3rem, 11.3vw, 7rem);
 		font-weight: 900;
 		letter-spacing: 2px;
 		line-height: 1;
@@ -109,7 +109,7 @@ body {
 	}
 	&__figure--figcaption-dev {
 		font-family: 'Caveat', cursive;
-		font-size: clamp(1.8rem, 6vw, 4rem);
+		font-size: clamp(1.8rem, 6.5vw, 4rem);
 		font-weight: 400;
 		letter-spacing: 2px;
 	}
