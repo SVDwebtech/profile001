@@ -132,8 +132,14 @@ body {
   text-align: justify;
 }
 
-.portfolio__section {
-  color: #3e3e3e;
+.navbar__logoBox--logoLink {
+  text-decoration: none;
+}
+.navbar__logoBox--logo {
+  display: inline-block;
+  color: white;
+  font-weight: 900;
+  letter-spacing: 0.3rem;
 }
 
 .footer {
@@ -343,54 +349,9 @@ body {
 .sectionHeadingWrapper {
   margin: 4rem 0 5rem;
 }
-@media (max-width: 75em) {
-  .navbar {
-    margin: 0;
-  }
-}
-.navbar__logoBox {
-  width: 28rem;
-  margin-left: 5rem;
-}
-.navbar__logoBox--logoLink {
-  display: flex;
-  align-items: center;
-  max-width: max-content;
-}
-.navbar__logoBox--logoImage {
-  width: 6.3rem;
-}
-.navbar__logoBox--logoText {
-  margin-left: 1rem;
-}
-.navbar__navContainer {
-  width: 55%;
-  margin-right: 5rem;
-}
-@media (max-width: 56.25em) {
-  .navbar__navContainer {
-    display: none;
-  }
-}
-.navbar__navContainer--navList {
-  display: flex;
-  justify-content: space-evenly;
-}
-
-.navList__navItem {
-  display: flex;
-  justify-content: center;
-  width: 15rem;
-  /* to ensure hover efect over the navlink when you
-  	hover over the logo img as well */
-  /* to ensure hover efect over the navlink when you
-  	hover over the logo img as well */
-}
-.navList__navItem--navLink {
-  transition: all 0.25s;
-}
-.navList__navItem--navLink:hover {
-  color: #04042e;
+.sectionHeadingWrapper__headingH2 {
+  color: #f0f0f0;
+  font-size: 3.5rem;
   font-weight: 900;
   line-height: 1;
   letter-spacing: -2px;
@@ -457,18 +418,15 @@ body {
 }
 
 .socialMedia {
-  margin-bottom: 4rem;
-}
-.socialMedia__iconContainer {
   display: flex;
   justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 2rem;
 }
 .socialMedia__icon {
-  color: #7b0909;
-  border-radius: 50%;
-  box-shadow: 4px 6px 10px 3px #33333393;
-  width: clamp(3rem, 12vw, 8rem);
-  height: clamp(3rem, 12vw, 8rem);
+  width: clamp(4rem, 12vw, 12rem);
+  height: clamp(4rem, 12vw, 128rem);
 }
 
 .footer {
