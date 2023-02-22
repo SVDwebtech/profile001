@@ -431,11 +431,11 @@ body {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  width: 100%;
+  width: 75%;
 }
 .socialMedia__icon {
-  width: clamp(4rem, 12vw, 12rem);
-  height: clamp(4rem, 12vw, 128rem);
+  width: clamp(3.5rem, 11vw, 9rem);
+  height: clamp(3.5rem, 11vw, 9rem);
 }
 
 .footer {
@@ -457,7 +457,7 @@ body {
   border: 5px solid #f0f0f0;
   border-radius: 50%;
   box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.3);
-  width: clamp(15rem, 40vw, 25rem);
+  width: clamp(8rem, 40vw, 18rem);
 }
 
 .header__section {

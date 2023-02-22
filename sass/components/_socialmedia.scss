@@ -3,10 +3,11 @@
     justify-content: space-evenly;
     align-items: center;
 
-    width: 100%;
+    width: 75%;
+
 
     &__icon {
-        width: clamp(4rem, 12vw, 12rem);
-        height: clamp(4rem, 12vw, 128rem);
+        width: clamp(3.5rem, 11vw, 9rem);
+        height: clamp(3.5rem, 11vw, 9rem);
     }
 }
