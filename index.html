@@ -16,29 +16,36 @@
 
         <header class="header">
 
-            <nav class="navbar header__navbar">
-                <figure class="navbar__logo">
-                    <img class="navbar__logo--img" src="./img/logo-photo.webp" alt="a portrait picture of Schalk van Dyk, a web developer and designer">
-                    <figcaption class="navbar__logo--text">
-                        <p class="navbar__logo--devName">Schalk van Dyk</p>
-                        <p class="navbar__logo--devDesc">Web Developer and Designer</p>
+            <nav class="header__navbar navbar">
+                <!-- <figure class="logo">
+                    <img class="logo--img" src="./img/logo-photo.webp" alt="a portrait picture of Schalk van Dyk, a web developer and designer">
+                    <figcaption class="logo--text">
+                        <p class="logo--devName">Schalk van Dyk</p>
+                        <p class="logo--devDesc">Web Developer and Designer</p>
                     </figcaption>
-                </figure>
-                <div class="navbar__hamburger">
-                    <span class="navbar__hamburger--bar"></span>
+                </figure> -->
+                <div class="navbar__hamburger hamburger">
+                    <span class="hamburger--bar"></span>
                 </div>
             </nav>
 
-            <section class="header__section">
-                <h1 class="header__section--primaryHeading">
-                    <span>Schalk van Dyk</span><br>
-                    <span>Web Developer and Designer</span><br>
-                    <span>Creating modern websites and applications to drive traffic & sales.</span>
+            <section class="header__hero hero">
+
+                <figure class="hero__figure figure">
+                    <img class="figure__img" src="./img/logo-photo.webp" alt="a portrait picture of Schalk van Dyk, a web developer and designer">
+                </figure>
+
+                <h1 class="hero__primaryHeading primaryHeading">
+                    <span class="primaryHeading__headline">Schalk van Dyk</span><br>
+                    <span class="primaryHeading__subheading">Web Developer and Designer</span><br>
+                    <span class="primaryHeading__paragraph">Creating modern websites and applications to drive traffic & sales.</span>
                 </h1>
-                <div class="header__section--btnContainer">
-                    <a class="btn btn--primary" href="#">My Portfolio</a>
-                    <a class="btn btn--secondary" href="#">Contact Me</a>
-                </div>
+
+                <article class="hero__cta cta">
+                    <h3 class="cta__paragraph">View my work or schedule a consulation:</h3>
+                    <a class="cta__btn btn btn--primary" href="#">My Portfolio</a>
+                    <a class="cta__btn btn btn--secondary" href="#">Contact Me</a>
+                </article>
 
             </section>
 
