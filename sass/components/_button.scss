@@ -1,69 +1,68 @@
-.btn:link, .btn:visited {
-    display: flex; 
-    justify-content: center;
-    align-items: center; 
-    
-    background-color: $cp-red;
+.btn:link, .btn:visited {    
     border: 2px solid $cp-grey;
-    border-radius: $br-l;
+    border-radius: $br-m;
     box-shadow: $bs-btn;
 
     width: fit-content;
+
+    &--primary {
+        background-color: $cp-white;
+        padding: .5em 1.25em;
+    } 
+
+    &--secondary {
+        background-color: transparent;
+        padding: .25rem .75em;
+    }
     
-    padding: .5em .75em;
-    margin-bottom: 4rem;
     
     backface-visibility: hidden;
     transition: all .2s;
 }
 
-.btn {
-    display: flex; 
-    justify-content: center;
-    align-items: center; 
-    
-    background-color: $cp-red;
+.btn {    
     border: 2px solid $cp-grey;
-    border-radius: $br-l;
+    border-radius: $br-m;
     box-shadow: $bs-btn;
 
     width: fit-content;
-    
-    padding: .5em .75em;
-    margin-bottom: 4rem;
-    
+
+    &--primary {
+        background-color: $cp-white;
+        padding: .5em 1.25em;
+    } 
+
+    &--primary:hover {
+        border: 5px solid $cp-white;
+        background-color: $cp-grey;
+        box-shadow: $bs-btnHover;
+        transform: translateY(-3px);
+    } 
+
+    &--secondary {
+        background-color: transparent;
+        padding: .25em .75em;
+    }
+
+    &--secondary:hover {
+        border: 5px solid $cp-white;
+        background-color: $cp-grey;
+        box-shadow: $bs-btnHover;
+        transform: translateY(-3px);
+    }
+       
     backface-visibility: hidden;
     transition: all .2s;
     
-    &__icon {
-        @include btnIconSize;
-    }
-    &__paragraph {
-        margin-left: .75rem;
-    }
-}
-
-.btn:hover { 
-    background-color: $cp-red-hover;
-    border-top-color: $cp-lightGrey;
-    border-left-color: $cp-lightGrey;
-    box-shadow: $bs-btnHover;
-    transform: translateY(-1px);
 }
 
 .btn:active {
+
     border-top-color: $cp-grey;
     border-left-color: $cp-grey;
     border-bottom-color: $cp-lightGrey;
     border-right-color: $cp-lightGrey;
+    background-color: $cp-lightGrey;
     box-shadow: none;
-    transform: translateY(1px);
+    transform: translateY(2px);
 }
-
-// .btn--blue:link, .btn--blue:visited {
-//     background-color: $cp-blue;
-// }
-
-// .btn--blue:hover { 
-//     background-color: $cp-blue-hover;
-// }

@@ -1,51 +1,88 @@
 .header {
-    
-    &__section {
-        background: linear-gradient(
-                180deg, 
-                transparent 50%, 
-                rgba(0, 0, 0, .9) 90%), 
-                linear-gradient(
-                138deg,
-                rgba(123,9,9,.6) 20%,
-                rgba(0,0,0,.5) 40%, 
-                rgba(10,52,101,.6) 50%),
-                url(../../img/header-background-img-1000.webp);
+    background: conic-gradient(
+                from 45deg at 107% -7%, 
+                rgba($cp-blue, .75) 115deg, 
+                rgba($cp-dark, .2), 
+                rgba($cp-red, .75) 215deg),
+                url(../../img/hero/hero-background-img.webp);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @media (min-width: 400px) {
+        background: conic-gradient(
+                from 45deg at 107% -7%, 
+                rgba($cp-blue, .75) 123deg, 
+                rgba($cp-dark, .2), 
+                rgba($cp-red, .75) 215deg),
+                url(../../img/hero/hero-background-img.webp);
         background-position: bottom;
         background-repeat: no-repeat;
         background-size: cover;
+    }
 
-        min-height: 70rem;
+    @media (min-width: 500px) {
+        background: conic-gradient(
+                from 45deg at 107% -7%, 
+                rgba($cp-blue, .75) 135deg, 
+                rgba($cp-dark, .2), 
+                rgba($cp-red, .75) 215deg),
+                url(../../img/hero/hero-background-img.webp);
+        background-position: bottom;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
 
-        padding: 2rem;
+    min-height: 100vh;
+
+    padding: 0rem clamp(2rem, 6.5vw, 4rem) 4rem;
+
+    &__navbar {
+        margin-bottom: calc(10vh - 5rem);
+    }
+    
+    &__hero {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        & > * {
+            margin-bottom: calc(10vh - 4rem);
+        }
         
-        &--banner {
-            background-color: rgba($cp-white, .8);
-            border-radius: $br-m;
-            box-shadow: $bs-dark;
+        .figure {
+            margin-bottom: calc(6vh - 4rem);
+            &__img {
+                border: 5px solid $cp-white;
+                border-radius: 50%;
+                box-shadow: 3px 7px 5px 5px rgba(0, 0, 0, .3);
+                width: clamp(calc(8rem + 15vh - 4rem), 55vw, calc(18rem + 20vh - 12rem));
+            }
+        }
 
-            width: clamp(25rem, 70vw, 40rem);
-
-            padding: 1em;
-            margin: 3rem auto 5rem;
-
-            h1 > .paragraph:last-of-type {
-                margin-bottom: 2rem;
+        .primaryHeading {
+            & > * {
+                display: block;
             }
 
-            h1 + .paragraph {
-                margin-bottom: 0rem;
+            &__subheading {
+                margin-bottom: calc(10vh - 4rem);
             }
         }
 
-        
+        .cta {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            @media (min-width: 485px) {
+                flex-direction: row;
+                gap: 2rem;
+            }
+            justify-content: center;
+            align-items: center;
 
-        &--primaryHeadingSpanName {
-             display: block;
+            width: 100%;
         }
-
-        .btn {
-            margin: 0 auto 4rem;
-        }
-    }    
+    } 
 }

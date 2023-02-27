@@ -1,41 +1,41 @@
 .navbar {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
 
-    background-color: $cp-dark;
-
+    background-color: transparent;
     padding: 1rem 2rem;
 
-    &__hamburger {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+}
 
+.hamburger  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 4rem;
+    height: 4rem;
+
+    &__bar {
+        position: relative;
+    }
+
+    &__bar, &__bar::before, &__bar::after {
+        background-color: $cp-white;
+        height: .3rem;
         width: 4rem;
-        height: 4rem;
+    }
 
-        &--bar {
-            position: relative;
-        }
+    &__bar::before, &__bar::after {
+        content: "";
+        position: absolute;
+    }
 
-        &--bar, &--bar::before, &--bar::after {
-            background-color: $cp-white;
-            height: 2px;
-            width: 40px;
-        }
+    &__bar::before {
+        top: -.8rem;
+    }
 
-        &--bar::before, &--bar::after {
-            content: "";
-            position: absolute;
-        }
-
-        &--bar::before {
-            top: -7px;
-        }
-
-        &--bar::after {
-            top: 7px;
-        }
+    &__bar::after {
+        top: .8rem;
     }
 }
