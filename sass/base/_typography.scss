@@ -1,5 +1,7 @@
 // font-family: 'Alegreya', serif;
+// font-family: 'Alegreya SC', serif;
 // font-family: 'Caveat', cursive;
+// font-family: 'Caveat Brush', cursive;
 // font-family: 'Lato', sans-serif;
 
 body {
@@ -11,15 +13,40 @@ body {
 
 }
 
-.heading-h1 {}
-.heading-h2 {}
-.heading-h3 {}
-.heading-h4 {}
+.headingH2Container {
+	&__headingH2 {
+		color: $cf-blue;
+		font-family: 'Alegreya SC', serif;
+		font-size: clamp(calc(3.2rem + 3vh - 2rem), 11vw, calc(6.2rem + 3vh - 2rem));
+		// font-size: clamp(3.5rem, 11.3vw, 6.5rem);
+		font-weight: 900;
+		line-height: 1;
+		letter-spacing: 4px;
+		text-shadow: 4px 4px 2px rgba(0, 0, 0, .8);
+		// text-shadow: 
+		//         1px 0px 2px $cp-darkGrey,
+		//         2px -1px 2px $cp-darkGrey,
+		//         3px -1px 2px $cp-darkGrey,
+		//         4px -1px 2px $cp-darkGrey;     
+	}
+	 &__subheadingH2 {
+	 	color: $cf-red;
+		font-family: 'Caveat', cursive;
+		font-size: clamp(calc(1.8rem + 3vh - 2rem), 6.6vw, calc(3.5rem + 3vh - 2rem));
+		// font-size: clamp(2rem, 6.8vw, 3.7rem);
+		font-weight: 700;
+		line-height: 1;
+		letter-spacing: 1px;
+	 }
+}
+
+
 
 .paragraph {
-	color:  $cf-blue;
-	font-size: clamp(1.6rem, 5vw, 2.4rem);
+	color:  $cf-darkBlue;
+	font-size: clamp(calc(1.5rem + 3vh - 2rem), 3vw, calc(2.5rem + 3vh - 2rem));
 	font-weight: 700;
+	text-align: center;
 
 	&--white {
 		color: $cf-white;
@@ -30,8 +57,13 @@ body {
 	font-weight:900;
 	letter-spacing: 1px;
 
-	&--primary {
+	&--primary-white {
 		color: $cf-red;
+		font-size: clamp(calc(1.2rem + 1.2vh), 4.5vw, calc(1.8rem + 1.2vh));
+	}
+
+	&--primary-blue {
+		color: $cf-white;
 		font-size: clamp(calc(1.2rem + 1.2vh), 4.5vw, calc(1.8rem + 1.2vh));
 	}
 
@@ -41,10 +73,7 @@ body {
 	}
 }
 
-.headingH2Container {
-	
-	
-}
+
 
 .navbar__logo {
 	color: $cf-white;

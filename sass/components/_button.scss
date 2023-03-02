@@ -1,12 +1,19 @@
-.btn:link, .btn:visited {    
+.btn:link, .btn:visited {  
+    display: block;
     border: 2px solid $cp-grey;
     border-radius: $br-m;
     box-shadow: $bs-btn;
 
     width: fit-content;
+    margin: 0 auto;
 
-    &--primary {
+    &--primary-white {
         background-color: $cp-white;
+        padding: .5em 1.25em;
+    }
+
+    &--primary-blue {
+        background-color: $cp-darkBlue;
         padding: .5em 1.25em;
     } 
 
@@ -20,15 +27,23 @@
     transition: all .2s;
 }
 
-.btn {    
+.btn { 
+    display: block;
+
     border: 2px solid $cp-grey;
     border-radius: $br-m;
     box-shadow: $bs-btn;
 
     width: fit-content;
+    margin: 0 auto;
 
-    &--primary {
+    &--primary-white {
         background-color: $cp-white;
+        padding: .5em 1.25em;
+    }
+
+    &--primary-blue {
+        background-color: $cp-darkBlue;
         padding: .5em 1.25em;
     } 
 

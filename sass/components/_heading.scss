@@ -1,56 +1,16 @@
-.sectionHeadingWrapper {
-    margin: 4rem 0 5rem;
+.headingH2Container {
+    margin: 0 0 2rem;
 
-    &__headingH2 {
-        color: $cp-white;
-        font-size: 3.5rem;
-        font-weight: 900;
-        line-height: 1;
-        letter-spacing: -2px;
-        text-transform: capitalize;
-        text-shadow: 
-            1px 0px 2px $cp-darkGrey,
-            2px -1px 2px $cp-darkGrey,
-            3px -1px 2px $cp-darkGrey,
-            4px -1px 2px $cp-darkGrey;     
-        
-        position: relative;
-
-        z-index: 10;
-    }
-
-    &__headingH2::before {
-        content: attr(data-text);
-        color: none;
-        text-shadow: none;
-        text-transform: capitalize;
-
-        background: linear-gradient(
-            to top, #303030, #a6a6a68f 55%, #ffffff00 );
-        -webkit-text-fill-color: transparent;
-        -webkit-background-clip: text;
-     
-        filter: blur(2px);
-        transform: skewX(-50deg) translate(2.2rem, -1.3rem) scaleY(1.75);    
-        
-        position: absolute;
-        top: 0;
-        left: 0;
-
-        z-index: -1;
-    }
-
-    &__headingHr {
+    &__hr {
         border: 0;
-        height: 1px;
-        background-image: linear-gradient(to right, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0) 70%);
-        margin: 1rem 0 .5rem;
+        height: 2px;
+        background-image: linear-gradient(to right, rgba($cp-darkBlue, 0.75) 20%, rgba($cp-darkBlue, 0.4) 40%, rgba(0,0,0,0) 60%);
+        margin: .15rem 0 .5rem;
     }
 
-    &__headingParagraph {
-        color: $cf-blue;
-        font-weight: 700;
-        margin-left: 5rem;
+    &__subheadingH2 {
+        margin-left: clamp(3rem, 12vw, 12rem);
+       //margin-left: 5rem;
     }    
 }
 
