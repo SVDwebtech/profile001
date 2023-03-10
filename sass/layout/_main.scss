@@ -7,18 +7,13 @@
     }
 
     &__aboutSection {
-        // height: 100vh;
         position: relative;
         z-index: 100;
     }
 
     &__aboutSection::after {
         content: "";
-        background: 
-            // linear-gradient(to bottom, transparent 55%, rgba($cp-white, 1) 75%), 
-            // linear-gradient(150deg, transparent 10%, rgba($cp-white, .5) 55%, rgba($cp-white, .7) 75%),
-            // linear-gradient(-150deg, transparent 10%, rgba($cp-white, .5) 55%, rgba($cp-white, .7) 75%),
-            url(/img/backgroundImages/final-about-background-photo.webp);
+        background: url(/img/backgroundImages/final-about-background-photo.webp);
         background-size: clamp(calc(5rem + 20vh), 35vw, calc(25rem + 20vh));
         background-repeat: no-repeat;
         background-position: 50% calc(18vw + 5vh);
@@ -32,18 +27,10 @@
         z-index: -100;
     }
     
-    
-
-    .portfolio {
-
-        &__section {
-            background-color: $cp-white;
-            padding: 2rem;
-            
-        }
-        
+    &__portfolioSection {
+        background-color: $cp-white;            
     }
-
+        
     .skills {
 
         &__section {
@@ -54,7 +41,6 @@
                     margin: 0 auto 2rem;
             }
         }
-        
     }
 
     .contact {
