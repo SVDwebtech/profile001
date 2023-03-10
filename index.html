@@ -39,11 +39,11 @@
                 <h1 class="hero__primaryHeading primaryHeading">
                     <span class="primaryHeading__headline"><span class="primaryHeading__headline-firstLetter">S</span>chalk van Dyk</span>
                     <span class="primaryHeading__subheading">Web Developer and Designer</span>
-                    <span class="primaryHeading__paragraph">Creating modern websites and applications to drive traffic & sales.</span>
+                    <span class="primaryHeading__paragraph">Creating modern websites and applications that drives traffic & sales.</span>
                 </h1>
 
                 <div class="hero__cta cta">
-                    <a class="cta__btn btn btn--primary-white" href="#">View Portfolio</a>
+                    <a class="cta__btn btn btn--primary-white" href="#">My Projects</a>
                     <a class="cta__btn btn btn--secondary" href="#">Contact Me</a>
                 </div>
 
@@ -52,9 +52,10 @@
         </header>
 
         <main class="main">
+
             <section class="main__aboutSection aboutSection">
                 <div class="aboutSection__headingH2Container headingH2Container">
-                    <h2 data-text="about" class="headingH2Container__headingH2 headingH2">About</h2>
+                    <h2 data-text="about" class="headingH2Container__headingH2 headingH2">About Me</h2>
                     <hr class="headingH2Container__hr hr">
                     <p class="headingH2Container__subheadingH2 subheadingH2">get to know me</p>
                 </div>
@@ -67,78 +68,77 @@
                     and products online.</p>
                 <a class="aboutSection__btn btn btn--primary-blue" href="#">My Skills</a>
             </section>
-            <section class="portfolio__section">
-                <div class="portfolio__section--sectionHeadingWrapper sectionHeadingWrapper">
-                    <h2 data-text="portfolio" class="sectionHeadingWrapper__headingH2">portfolio</h2>
-                    <hr class="sectionHeadingWrapper__headingHr">
-                    <p class="sectionHeadingWrapper__headingParagraph">check out my work</p>
+
+            <section class="main__portfolioSection portfolioSection">
+                <div class="portfolioSection__headingH2Container headingH2Container">
+                    <h2 data-text="portfolio" class="headingH2Container__headingH2 headingH2">My Projects</h2>
+                    <hr class="headingH2Container__hr hr">
+                    <p class="headingH2Container__subheadingH2 subheadingH2">check out my work</p>
                 </div>
-                <p class="paragraph portfolio__section--paragraph">Here are some examples
+
+                <p class="portfolioSection__paragraph paragraph onlyParagraph" id="portfolioParagraph">Here are some examples
                     of my latest creations.</p>
-                <article class="portfolio__section--cardPortfolio cardPortfolio">
-                    <h3 class="headingH3 cardPortfolio__headingH3">lightSwitch002</h3>
+
+                <article class=" portfolioSection__cardPortfolio cardPortfolio">
                     <figure class="cardPortfolio__figure">
-                        <img class="cardPortfolio__figure--img" src="./img/lightSwitch002.webp" alt="a portrait picture of Schalk van Dyk, a web developer and designer">
-                        <figcaption class="cardPortfolio__figure--figcaption">
-                            <p class="cardPortfolio__figure--figcaptionParagraph">Image of lightSwitch002 project</p>
+                        <img class="cardPortfolio__img" src="./img/portfolioProjects/lightSwitch002.webp" alt="an image of the lightSwitch002 project home page">
+                        <figcaption class="figure__figcaption">
+                            <p class="figure__paragraph">static web page</p>
                         </figcaption>
                     </figure>
-                    <div class="cardPortfolio__descriptionContainer">
-                        <h4 class="headingH4 cardPortfolio__headingH4">Description</h4>
-                        <p class=" paragraph cardPortfolio__paragraph">This is a small project that demonstrates a mastery of
-                            CSS and DOM manipulation.</p>
+                    <div class="cardPortfolio__headingH3Container headingH3Container">
+                        <h3 data-text="portfolio" class="headingH3Container__headingH3 headingH3">lightSwitch002</h3>
+                        <hr class="headingH3Container__hr hr">
+                        <h4 class="headingH3Container__subheadingH3 subheadingH3">DOM manipulation</h4>
                     </div>
-                    <div class="cardPortfolio__techContainer">
-                        <h4 class="headingH4 cardPortfolio__headingH4">Technologies</h4>
-                        <p class=" paragraph cardPortfolio__paragraph">
-                            <span class="cardPortfolio__techContainer--tech">html</span>
-                            <span class="cardPortfolio__techContainer--tech">css</span>
-                            <span class="cardPortfolio__techContainer--tech">js</span>
-                        </p>
-
-                    </div>
-                    <div class="cardPortfolio__btnsContainer">
-                        <a class="btn" href="#">
-                            <svg class="btn__icon" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                    d="M4.61197 5.09091V8H5.43917V7.09659H6.00067C6.26248 7.09659 6.48864 7.0554 6.67914 6.97301C6.86965 6.89062 7.01615 6.77462 7.11865 6.625C7.22226 6.47443 7.27406 6.29877 7.27406 6.09801C7.27406 5.8982 7.22337 5.72301 7.12199 5.57244C7.02061 5.42093 6.87634 5.30303 6.68917 5.21875C6.50312 5.13352 6.28197 5.09091 6.02574 5.09091H4.61197ZM5.43917 6.54261V5.65767H5.84693C5.97059 5.65767 6.07476 5.67566 6.15943 5.71165C6.2441 5.74763 6.30816 5.79877 6.3516 5.86506C6.39505 5.9304 6.41678 6.00805 6.41678 6.09801C6.41678 6.18703 6.39505 6.26515 6.3516 6.33239C6.30816 6.39867 6.2441 6.45028 6.15943 6.48722C6.07587 6.52415 5.9717 6.54261 5.84693 6.54261H5.43917Z" />
-                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                    d="M7.68182 5.09091V8H8.50902V7.00426H8.93271L9.55849 8H10.4609L9.75146 6.89328C9.93996 6.81947 10.0856 6.713 10.1885 6.57386C10.2921 6.43277 10.3439 6.26136 10.3439 6.05966C10.3439 5.8608 10.2932 5.68892 10.1918 5.54403C10.0905 5.3982 9.94619 5.28646 9.75902 5.20881C9.57297 5.13021 9.35183 5.09091 9.09559 5.09091H7.68182ZM8.50902 6.45028V5.65767H8.91678C9.04044 5.65767 9.14461 5.67282 9.22928 5.70312C9.31395 5.73248 9.37801 5.77699 9.42146 5.83665C9.46491 5.89536 9.48663 5.9697 9.48663 6.05966C9.48663 6.14962 9.46491 6.22348 9.42146 6.28125C9.37801 6.33807 9.31395 6.38068 9.22928 6.40909C9.14572 6.43655 9.04156 6.45028 8.91678 6.45028H8.50902Z" />
-                                <path d="M4.35294 11.5H19.6471V10.5H4.35294V11.5Z" />
-                                <path d="M4.35294 13.5H19.6471V12.5H4.35294V13.5Z" />
-                                <path d="M4.35294 15.5H19.6471V14.5H4.35294V15.5Z" />
-                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                    d="M16.9531 16H17.5719V16.1995C17.6414 16.2202 17.708 16.2477 17.771 16.2813L17.913 16.1392L18.3505 16.5767L18.2115 16.7157C18.2483 16.7825 18.2783 16.8537 18.3005 16.9281H18.5V17.5469H18.3005C18.279 17.6189 18.2503 17.6878 18.2152 17.7526L18.3563 17.8938L17.9188 18.3313L17.7776 18.1902C17.7128 18.2253 17.6439 18.254 17.5719 18.2755V18.475H16.9531V18.2755C16.8787 18.2533 16.8075 18.2233 16.7407 18.1865L16.6004 18.3268L16.1629 17.8893L16.3063 17.746C16.2727 17.683 16.2452 17.6164 16.2245 17.5469H16.025V16.9281H16.2245C16.246 16.8561 16.2747 16.7872 16.3098 16.7224L16.1687 16.5812L16.6062 16.1437L16.7474 16.2848C16.8122 16.2497 16.8811 16.221 16.9531 16.1995V16ZM17.7266 17.2375C17.7266 17.4938 17.5188 17.7016 17.2625 17.7016C17.0062 17.7016 16.7984 17.4938 16.7984 17.2375C16.7984 16.9812 17.0062 16.7734 17.2625 16.7734C17.5188 16.7734 17.7266 16.9812 17.7266 17.2375Z" />
-                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                    d="M15.125 17.125H14.675V17.2701C14.6226 17.2857 14.5725 17.3066 14.5254 17.3322L14.4227 17.2295L14.1045 17.5477L14.2072 17.6504C14.1816 17.6975 14.1607 17.7476 14.1451 17.8H14V18.25H14.1451C14.1602 18.3006 14.1802 18.349 14.2045 18.3948L14.1003 18.499L14.4185 18.8172L14.5205 18.7152C14.5691 18.742 14.6208 18.7638 14.675 18.7799V18.925H15.125V18.7799C15.1774 18.7643 15.2275 18.7434 15.2746 18.7178L15.3773 18.8205L15.6955 18.5023L15.5928 18.3996C15.6184 18.3525 15.6393 18.3024 15.6549 18.25H15.8V17.8H15.6549C15.6388 17.7458 15.617 17.6941 15.5902 17.6455L15.6913 17.5444L15.3731 17.2262L15.2698 17.3295C15.224 17.3052 15.1756 17.2852 15.125 17.2701V17.125ZM14.9 18.3625C15.0864 18.3625 15.2375 18.2114 15.2375 18.025C15.2375 17.8386 15.0864 17.6875 14.9 17.6875C14.7136 17.6875 14.5625 17.8386 14.5625 18.025C14.5625 18.2114 14.7136 18.3625 14.9 18.3625Z" />
-                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                    d="M16.25 18.7H16.7V18.8451C16.7506 18.8602 16.799 18.8802 16.8448 18.9045L16.9481 18.8012L17.2663 19.1194L17.1652 19.2205C17.192 19.2691 17.2138 19.3208 17.2299 19.375H17.375V19.825H17.2299C17.2143 19.8774 17.1934 19.9275 17.1678 19.9746L17.2705 20.0773L16.9523 20.3955L16.8496 20.2928C16.8025 20.3184 16.7524 20.3393 16.7 20.3549V20.5H16.25V20.3549C16.1958 20.3388 16.1441 20.317 16.0955 20.2902L15.9935 20.3922L15.6753 20.074L15.7795 19.9698C15.7552 19.924 15.7352 19.8756 15.7201 19.825H15.575V19.375H15.7201C15.7357 19.3226 15.7566 19.2725 15.7822 19.2254L15.6795 19.1227L15.9977 18.8045L16.1004 18.9072C16.1475 18.8816 16.1976 18.8607 16.25 18.8451V18.7ZM16.8125 19.6C16.8125 19.7864 16.6614 19.9375 16.475 19.9375C16.2886 19.9375 16.1375 19.7864 16.1375 19.6C16.1375 19.4136 16.2886 19.2625 16.475 19.2625C16.6614 19.2625 16.8125 19.4136 16.8125 19.6Z" />
-                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                    d="M22 8.29289V21.5C22 21.7761 21.7366 22 21.4118 22H2.58824C2.26336 22 2 21.7761 2 21.5V2.5C2 2.22386 2.26336 2 2.58824 2H14.5966L22 8.29289ZM21 9H14.9412C14.2914 9 13.7647 8.55229 13.7647 8V7.42585C13.6253 7.61587 13.4445 7.76274 13.2224 7.86648C12.9762 7.98201 12.6999 8.03977 12.3936 8.03977C12.0861 8.03977 11.8092 7.98153 11.563 7.86506C11.3168 7.74858 11.1213 7.57955 10.9764 7.35795C10.8327 7.13542 10.7609 6.86458 10.7609 6.54545C10.7609 6.22538 10.8327 5.95407 10.9764 5.73153C11.1213 5.509 11.3168 5.33996 11.563 5.22443C11.8092 5.1089 12.0861 5.05114 12.3936 5.05114C12.6999 5.05114 12.9762 5.1089 13.2224 5.22443C13.4445 5.32817 13.6253 5.47504 13.7647 5.66506V3H3V21H21V9ZM14.65 3.5L19.9916 8H14.65V3.5ZM13.0871 6.06534C13.1506 6.19602 13.1823 6.35606 13.1823 6.54545C13.1823 6.73485 13.1506 6.89489 13.0871 7.02557C13.0247 7.15625 12.9344 7.25521 12.8163 7.32244C12.6994 7.38968 12.5584 7.4233 12.3936 7.4233C12.2298 7.4233 12.0888 7.38968 11.9708 7.32244C11.8527 7.25521 11.7619 7.15625 11.6984 7.02557C11.636 6.89489 11.6048 6.73485 11.6048 6.54545C11.6048 6.35606 11.636 6.19602 11.6984 6.06534C11.7619 5.93466 11.8527 5.8357 11.9708 5.76847C12.0888 5.70123 12.2298 5.66761 12.3936 5.66761C12.5584 5.66761 12.6994 5.70123 12.8163 5.76847C12.9344 5.8357 13.0247 5.93466 13.0871 6.06534Z" />
-                            </svg>
-                            <p class="btn__paragraph">View Project</p>
-                        </a>
-
-                        <a class="btn" href="#">
-                            <svg class="btn__icon" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M4.33553 5.04999C4.74974 5.04999 5.08553 4.71903 5.08553 4.30481C5.08553 3.8906 4.74974 3.55481 4.33553 3.55481C3.92131 3.55481 3.58553 3.8906 3.58553 4.30481C3.58553 4.71903 3.92131 5.04999 4.33553 5.04999Z" />
-                                <path
-                                    d="M7.5 4.29999C7.5 4.7142 7.16421 5.04999 6.75 5.04999C6.33579 5.04999 6 4.7142 6 4.29999C6 3.88577 6.33579 3.54999 6.75 3.54999C7.16421 3.54999 7.5 3.88577 7.5 4.29999Z" />
-                                <path
-                                    d="M9.25 5.04999C9.66421 5.04999 10 4.7142 10 4.29999C10 3.88577 9.66421 3.54999 9.25 3.54999C8.83579 3.54999 8.5 3.88577 8.5 4.29999C8.5 4.7142 8.83579 5.04999 9.25 5.04999Z" />
-                                <path
-                                    d="M13.706 9.21144C13.9047 9.26973 14.0066 9.4741 13.9336 9.66791L10.6835 18.2937C10.6104 18.4875 10.3901 18.5974 10.1914 18.5391C9.99266 18.4808 9.89075 18.2764 9.96378 18.0826L13.2139 9.4568C13.2869 9.26299 13.5072 9.15314 13.706 9.21144Z" />
-                                <path
-                                    d="M15.5465 18.6107C15.3479 18.8163 15 18.6757 15 18.3898C15 18.3075 15.032 18.2283 15.0892 18.169L18.7806 14.3474C18.9677 14.1536 18.9677 13.8464 18.7806 13.6526L15.0892 9.83101C15.032 9.77174 15 9.69256 15 9.61017C15 9.32431 15.3479 9.18372 15.5465 9.38933L19.6645 13.6526C19.8516 13.8464 19.8516 14.1536 19.6645 14.3474L15.5465 18.6107Z" />
-                                <path
-                                    d="M8.4535 9.38933C8.65209 9.18372 9 9.32431 9 9.61017C9 9.69256 8.96801 9.77174 8.91076 9.83101L5.21941 13.6526C5.19095 13.6821 5.16681 13.7142 5.14701 13.7481C5.14358 13.754 5.14027 13.7599 5.1371 13.7659C5.05969 13.9119 5.05969 14.0881 5.1371 14.2341C5.14027 14.2401 5.14358 14.246 5.14701 14.2519C5.16681 14.2858 5.19095 14.3179 5.21941 14.3474L8.91076 18.169C8.968 18.2283 9 18.3075 9 18.3898C9 18.6757 8.65209 18.8163 8.4535 18.6107L4.33553 14.3474C4.14837 14.1536 4.14837 13.8464 4.33553 13.6526L8.4535 9.38933Z" />
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M2 2H22V22H2V2ZM21 3V6.00001H3V3H21ZM3 7H21V21H3V7Z" />
-                            </svg>
-                            <p class="btn__paragraph">View Code</p>
-                        </a>
+                    <p class="cardPortfolio__paragraph paragraph--projects onlyParagraph">This is a simple static
+                        web page to illustrate my skills in relation to DOM manipulation.
+                        By clicking on the light switch you are able to turn on or off the light.</p>
+                    <div class="cardPortfolio__cta cta">
+                        <a class="cta__btn btn btn--primary-white-btn" href="#">Live View</a>
+                        <a class="cta__btn btn btn--secondary-btn" href="#">View Code</a>
                     </div>
                 </article>
+
+                <article class=" portfolioSection__cardPortfolio cardPortfolio">
+                    <figure class="cardPortfolio__figure">
+                        <img class="cardPortfolio__img" src="./img/portfolioProjects/memoryGame014.webp" alt="an image of the home page of the memoryGame014">
+                        <figcaption class="figure__figcaption">
+                            <p class="figure__paragraph">memory card game</p>
+                        </figcaption>
+                    </figure>
+                    <div class="cardPortfolio__headingH3Container headingH3Container">
+                        <h3 data-text="portfolio" class="headingH3Container__headingH3 headingH3">memoryGame014</h3>
+                        <hr class="headingH3Container__hr hr">
+                        <h4 class="headingH3Container__subheadingH3 subheadingH3">programming logic</h4>
+                    </div>
+                    <p class="cardPortfolio__paragraph paragraph--projects onlyParagraph">A simple static web page to host a simple memory card game.</p>
+                    <div class="cardPortfolio__cta cta">
+                        <a class="cta__btn btn btn--primary-white-btn" href="#">Live View</a>
+                        <a class="cta__btn btn btn--secondary-btn" href="#">View Code</a>
+                    </div>
+                </article>
+
+                <article class=" portfolioSection__cardPortfolio cardPortfolio">
+                    <figure class="cardPortfolio__figure">
+                        <img class="cardPortfolio__img" src="./img/portfolioProjects/prtfolio-pic-profile001.webp" alt="an image of the home page of a portfolio website">
+                        <figcaption class="figure__figcaption">
+                            <p class="figure__paragraph">portfolio website</p>
+                        </figcaption>
+                    </figure>
+                    <div class="cardPortfolio__headingH3Container headingH3Container">
+                        <h3 data-text="portfolio" class="headingH3Container__headingH3 headingH3">profile001</h3>
+                        <hr class="headingH3Container__hr hr">
+                        <h4 class="headingH3Container__subheadingH3 subheadingH3">website design and development</h4>
+                    </div>
+                    <p class="cardPortfolio__paragraph paragraph--projects onlyParagraph">This is a simple static portfolio website built with a mobile-first approach using
+                        best-practices in all respects.</p>
+                    <div class="cardPortfolio__cta cta">
+                        <a class="cta__btn btn btn--primary-white-btn" href="#">Live View</a>
+                        <a class="cta__btn btn btn--secondary-btn" href="#">View Code</a>
+                    </div>
+                </article>
+
             </section>
 
             <section class="skills__section">
@@ -231,7 +231,7 @@
                 <article class="contact__section--contactCard contactCard">
                     <h3 class="headingH3 headingH3--blue contactCard__headingH3">Contact Details</h3>
                     <p class="paragraph contactCard__paragraph">Mobile: +27 (0)82 550 3872</p>
-                    <p class="paragraph contactCard__paragraph">Email: schalk@schalkvandyk.com</p>
+                    <p class="paragraph contactCard__paragraph">Email: </p>
                 </article>
 
                 <article class="contact__section--socialMedia socialMedia">
