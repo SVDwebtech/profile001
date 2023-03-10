@@ -14,6 +14,21 @@
     }    
 }
 
+.headingH3Container {
+    margin: 0 0 2rem;
+
+    &__hr {
+        border: 0;
+        height: 2px;
+        background-image: linear-gradient(to right, rgba(0,0,0,0) 10%, rgba($cp-white, 0.4) 35%, rgba($cp-white, 0.75) 50%, rgba($cp-white, 0.4) 75%, rgba(0,0,0,0) 90%);
+        margin: .75rem 0;
+    }
+
+    &__subheadingH3 {
+        // margin-left: clamp(3rem, 12vw, 12rem);
+    }    
+}
+
 .headingH4 {
     margin-bottom: $mb-h4;
 }
