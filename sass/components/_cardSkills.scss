@@ -1,0 +1,25 @@
+.cardSkills {
+    background-color: $cp-white;
+
+    max-width: 450px;
+    padding: 2.5rem;
+    margin: 0 auto 4rem;
+    
+    &__figure {
+        margin-bottom: 5rem;
+    }
+
+    &__img {
+        display: block;
+        width: clamp(15rem, 35vw, 30rem); 
+        margin: 0 auto;   
+    }
+        
+    &__headingH3Container {
+         margin-bottom: 1rem;
+    }
+
+    &__paragraph {
+        margin-bottom: 2rem;
+    }
+}

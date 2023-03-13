@@ -85,6 +85,12 @@ body {
 		line-height: 1;
 		letter-spacing: 2px;
 	}
+
+	&__headingH3--blue {
+		color: $cf-darkBlue;
+		font-size: clamp(calc(2.8rem + 2.3vh - 2rem), 8vw, calc(5rem + 2.3vh - 2rem));
+	}
+
 	 &__subheadingH3 {
 	 	color: $cf-red;
 		font-size: clamp(calc(1.7rem + 2.3vh - 2rem), 4vw, calc(2.3rem + 2.3vh - 2rem));
@@ -108,6 +114,11 @@ body {
 
 	&--projects {
 		font-size: clamp(calc(1.7rem + 2.3vh - 2rem), 4vw, calc(2.1rem + 2.3vh - 2rem));
+		text-align: center;
+	}
+
+	&--skills {
+		color:  $cf-darkRed;
 		text-align: center;
 	}
 }

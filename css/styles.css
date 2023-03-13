@@ -140,6 +140,10 @@ body {
   line-height: 1;
   letter-spacing: 2px;
 }
+.headingH3Container__headingH3--blue {
+  color: #003049;
+  font-size: clamp(calc(2.8rem + 2.3vh - 2rem), 8vw, calc(5rem + 2.3vh - 2rem));
+}
 .headingH3Container__subheadingH3 {
   color: #c1121f;
   font-size: clamp(calc(1.7rem + 2.3vh - 2rem), 4vw, calc(2.3rem + 2.3vh - 2rem));
@@ -159,6 +163,10 @@ body {
 }
 .paragraph--projects {
   font-size: clamp(calc(1.7rem + 2.3vh - 2rem), 4vw, calc(2.1rem + 2.3vh - 2rem));
+  text-align: center;
+}
+.paragraph--skills {
+  color: #991818;
   text-align: center;
 }
 
@@ -399,6 +407,27 @@ body {
 
 .figure__img {
   width: 100%;
+}
+
+.cardSkills {
+  background-color: #f0f0f0;
+  max-width: 450px;
+  padding: 2.5rem;
+  margin: 0 auto 4rem;
+}
+.cardSkills__figure {
+  margin-bottom: 5rem;
+}
+.cardSkills__img {
+  display: block;
+  width: clamp(15rem, 35vw, 30rem);
+  margin: 0 auto;
+}
+.cardSkills__headingH3Container {
+  margin-bottom: 1rem;
+}
+.cardSkills__paragraph {
+  margin-bottom: 2rem;
 }
 
 .form {
