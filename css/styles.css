@@ -533,6 +533,19 @@ body {
   height: clamp(3.5rem, 11vw, 9rem);
 }
 
+.techStack {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+  margin-bottom: 10rem;
+}
+.techStack__img {
+  width: clamp(5rem, 18vw, 18rem);
+  filter: drop-shadow(0 15px 10px rgba(0, 0, 0, 0.6));
+}
+
 .footer {
   display: flex;
   flex-direction: column;
@@ -663,12 +676,8 @@ body {
 .main__portfolioSection {
   background-color: #f0f0f0;
 }
-.main .skills__section {
+.main__skillsSection {
   background-color: #f0f0f0;
-  padding: 2rem;
-}
-.main .skills__section .btn {
-  margin: 0 auto 2rem;
 }
 .main .contact__section {
   background-color: #f0f0f0;
