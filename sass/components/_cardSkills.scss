@@ -6,7 +6,7 @@
     margin: 0 auto 4rem;
     
     &__figure {
-        margin-bottom: 5rem;
+        margin-bottom: 3rem;
     }
 
     &__img {
@@ -16,10 +16,14 @@
     }
         
     &__headingH3Container {
+        // margin-bottom: 12rem;
+    }
+
+    &__headingH3 {
          margin-bottom: 1rem;
     }
 
     &__paragraph {
-        margin-bottom: 2rem;
+        // margin-bottom: 2rem;
     }
 }

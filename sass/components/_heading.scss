@@ -24,9 +24,20 @@
         margin: .75rem 0;
     }
 
+    &__hr--blue {
+        border: 0;
+        height: 3px;
+        background-image: linear-gradient(to right, rgba(0,0,0,0) 10%, rgba($cp-darkBlue, 0.4) 35%, rgba($cp-darkBlue, 0.75) 50%, rgba($cp-darkBlue, 0.4) 75%, rgba(0,0,0,0) 90%);
+        margin: .75rem auto;
+    }
+
     &__subheadingH3 {
         // margin-left: clamp(3rem, 12vw, 12rem);
     }    
+}
+
+.headingH3Container--skills {
+    margin: 0 0 0rem;  
 }
 
 .headingH4 {

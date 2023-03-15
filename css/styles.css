@@ -142,6 +142,9 @@ body {
 }
 .headingH3Container__headingH3--blue {
   color: #003049;
+}
+.headingH3Container__headingH3--blue {
+  color: #003049;
   font-size: clamp(calc(2.8rem + 2.3vh - 2rem), 8vw, calc(5rem + 2.3vh - 2rem));
 }
 .headingH3Container__subheadingH3 {
@@ -416,20 +419,16 @@ body {
   margin: 0 auto 4rem;
 }
 .cardSkills__figure {
-  margin-bottom: 5rem;
+  margin-bottom: 3rem;
 }
 .cardSkills__img {
   display: block;
   width: clamp(15rem, 35vw, 30rem);
   margin: 0 auto;
 }
-.cardSkills__headingH3Container {
+.cardSkills__headingH3 {
   margin-bottom: 1rem;
 }
-.cardSkills__paragraph {
-  margin-bottom: 2rem;
-}
-
 .form {
   margin-bottom: 4rem;
 }
@@ -482,6 +481,16 @@ body {
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0) 10%, rgba(240, 240, 240, 0.4) 35%, rgba(240, 240, 240, 0.75) 50%, rgba(240, 240, 240, 0.4) 75%, rgba(0, 0, 0, 0) 90%);
   margin: 0.75rem 0;
 }
+.headingH3Container__hr--blue {
+  border: 0;
+  height: 3px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0) 10%, rgba(0, 48, 73, 0.4) 35%, rgba(0, 48, 73, 0.75) 50%, rgba(0, 48, 73, 0.4) 75%, rgba(0, 0, 0, 0) 90%);
+  margin: 0.75rem auto;
+}
+.headingH3Container--skills {
+  margin: 0 0 0rem;
+}
+
 .headingH4 {
   margin-bottom: 1rem;
 }
@@ -518,6 +527,10 @@ body {
   margin: 0 auto 4rem;
 }
 
+.cardSkills .paragraph--skills {
+  margin: 0 auto 0;
+}
+
 #portfolioParagraph {
   margin: 0 auto 2rem;
 }
@@ -539,10 +552,10 @@ body {
   justify-content: center;
   align-items: center;
   gap: 5rem;
-  margin-bottom: 10rem;
+  margin: 8rem 0 10rem;
 }
 .techStack__img {
-  width: clamp(5rem, 18vw, 18rem);
+  width: clamp(5rem, 20.5vw, 18rem);
   filter: drop-shadow(0 15px 10px rgba(0, 0, 0, 0.6));
 }
 
