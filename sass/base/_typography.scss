@@ -123,6 +123,11 @@ body {
 		color:  $cf-darkRed;
 		text-align: center;
 	}
+
+	&--contactItem {
+		font-size: clamp(calc(1.7rem + 2.3vh - 2rem), 4vw, calc(2.1rem + 2.3vh - 2rem));
+		text-align: center;
+	}
 }
 
 .btn {
@@ -243,7 +248,7 @@ body {
 
 
 .form {
-	color: $cf-white;
+	color: $cf-darkBlue;
 
 	&__inputContainer {
 		font-size: clamp(1.6rem, 5vw, 2.4rem);

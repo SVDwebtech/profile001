@@ -172,6 +172,10 @@ body {
   color: #991818;
   text-align: center;
 }
+.paragraph--contactItem {
+  font-size: clamp(calc(1.7rem + 2.3vh - 2rem), 4vw, calc(2.1rem + 2.3vh - 2rem));
+  text-align: center;
+}
 
 .btn {
   font-weight: 900;
@@ -257,7 +261,7 @@ body {
 }
 
 .form {
-  color: #f0f0f0;
+  color: #003049;
 }
 .form__inputContainer {
   font-size: clamp(1.6rem, 5vw, 2.4rem);
@@ -430,13 +434,14 @@ body {
   margin-bottom: 1rem;
 }
 .form {
+  padding-bottom: 4rem;
   margin-bottom: 4rem;
 }
 .form__inputAndBtnContainer {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: #1b90d8;
+  background-color: #f0f0f0;
   border-radius: 1rem;
   padding: 2rem 2rem;
 }
@@ -448,10 +453,12 @@ body {
   padding: 1rem 0;
 }
 .form__input {
+  border: 3px solid #003049;
   width: 100%;
   height: 3.5rem;
 }
 .form__textArea {
+  border: 3px solid #003049;
   width: 100%;
   height: 15rem;
 }
@@ -474,6 +481,12 @@ body {
 
 .headingH3Container {
   margin: 0 0 2rem;
+}
+.headingH3Container--contactInfo {
+  margin-top: 8rem;
+}
+.headingH3Container--messageMe {
+  margin: 8rem 0 0;
 }
 .headingH3Container__hr {
   border: 0;
@@ -519,7 +532,6 @@ body {
 }
 
 .paragraph {
-  display: block;
   margin: 0 auto 2rem;
 }
 
@@ -529,6 +541,14 @@ body {
 
 .cardSkills .paragraph--skills {
   margin: 0 auto 0;
+}
+
+.contactSection .paragraph:last-of-type {
+  margin: 0 auto 1rem;
+}
+
+.contactSection__contactItem > .contactItem__paragraph.paragraph {
+  margin: 0;
 }
 
 #portfolioParagraph {
@@ -692,18 +712,21 @@ body {
 .main__skillsSection {
   background-color: #f0f0f0;
 }
-.main .contact__section {
-  background-color: #f0f0f0;
-  padding: 2rem;
+.main__contactSection .contactItem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
 }
-.main .contact__section .paragraph {
-  margin: 1rem 0;
+@media (max-width: 320px) {
+  .main__contactSection .contactItem {
+    flex-direction: column;
+    margin-bottom: 4.5rem;
+  }
 }
-.main .contact__section .paragraph:last-of-type {
-  margin: 1rem 0 4rem;
-}
-.main .contact__section .contactCard {
-  margin-bottom: 4rem;
+.main__contactSection #internetItem {
+  margin-bottom: 5rem;
 }
 
 .navbar {

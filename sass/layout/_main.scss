@@ -37,25 +37,23 @@
         
     
 
-    .contact {
-        &__section {
-            background-color: $cp-white;
-            padding: 2rem;
+    &__contactSection {
+        .contactItem {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
 
-            .paragraph {
-                margin: 1rem 0;
-            }
+            margin-bottom: 1.5rem;
 
-            .paragraph:last-of-type {
-                margin: 1rem 0 4rem;
+            @media (max-width: 320px) {
+                flex-direction: column;
+                margin-bottom: 4.5rem;
             }
-
-            .contactCard {
-                margin-bottom: 4rem;
-            }
-           
         }
-        
+
+        #internetItem {
+            margin-bottom: 5rem;
+        }
     }
-    
 }

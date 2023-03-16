@@ -17,6 +17,14 @@
 .headingH3Container {
     margin: 0 0 2rem;
 
+    &--contactInfo {
+        margin-top: 8rem;
+    }
+
+    &--messageMe {
+        margin: 8rem 0 0;
+    }
+
     &__hr {
         border: 0;
         height: 2px;
