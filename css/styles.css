@@ -763,4 +763,11 @@ body {
   top: 0.8rem;
 }
 
+body {
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: auto;
+  gap: 0;
+}
+
 /*# sourceMappingURL=styles.css.map */
