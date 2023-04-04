@@ -583,7 +583,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #292828;
+  background-color: #2c2c2c;
   padding: 6rem 2rem 0rem;
 }
 .footer > * {
@@ -602,7 +602,7 @@ body {
 }
 
 .header {
-  background: conic-gradient(from 45deg at 107% -7%, rgba(27, 144, 216, 0.75) 115deg, rgba(41, 40, 40, 0.2), rgba(193, 18, 31, 0.75) 215deg), url(../../img/hero/hero-background-img.webp);
+  background: conic-gradient(from 45deg at 107% -7%, rgba(27, 144, 216, 0.75) 115deg, rgba(44, 44, 44, 0.2), rgba(193, 18, 31, 0.75) 215deg), url(../../img/hero/hero-background-img.webp);
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
@@ -611,7 +611,7 @@ body {
 }
 @media (min-width: 400px) {
   .header {
-    background: conic-gradient(from 45deg at 107% -7%, rgba(27, 144, 216, 0.75) 123deg, rgba(41, 40, 40, 0.2), rgba(193, 18, 31, 0.75) 215deg), url(../../img/hero/hero-background-img.webp);
+    background: conic-gradient(from 45deg at 107% -7%, rgba(27, 144, 216, 0.75) 123deg, rgba(44, 44, 44, 0.2), rgba(193, 18, 31, 0.75) 215deg), url(../../img/hero/hero-background-img.webp);
     background-position: bottom;
     background-repeat: no-repeat;
     background-size: cover;
@@ -619,7 +619,7 @@ body {
 }
 @media (min-width: 500px) {
   .header {
-    background: conic-gradient(from 45deg at 107% -7%, rgba(27, 144, 216, 0.75) 135deg, rgba(41, 40, 40, 0.2), rgba(193, 18, 31, 0.75) 215deg), url(../../img/hero/hero-background-img.webp);
+    background: conic-gradient(from 45deg at 107% -7%, rgba(27, 144, 216, 0.75) 135deg, rgba(44, 44, 44, 0.2), rgba(193, 18, 31, 0.75) 215deg), url(../../img/hero/hero-background-img.webp);
     background-position: bottom;
     background-repeat: no-repeat;
     background-size: cover;
