@@ -7,35 +7,3 @@
     padding: 1rem 2rem;
 
 }
-
-.hamburger  {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    width: 4rem;
-    height: 4rem;
-
-    &__bar {
-        position: relative;
-    }
-
-    &__bar, &__bar::before, &__bar::after {
-        background-color: $cp-white;
-        height: .3rem;
-        width: 4rem;
-    }
-
-    &__bar::before, &__bar::after {
-        content: "";
-        position: absolute;
-    }
-
-    &__bar::before {
-        top: -.8rem;
-    }
-
-    &__bar::after {
-        top: .8rem;
-    }
-}
