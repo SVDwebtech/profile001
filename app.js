@@ -1,1 +1,4 @@
-console.log("Hello World!");
+// NAVIGATION
+const hamburger = document.querySelector(".hamburger");
+
+hamburger.style.backgroundColor = "red";
