@@ -6,8 +6,8 @@
     border: none;
     background-color: transparent;
 
-    width: 40px;
-    height: 50px;
+    width: clamp(4.8rem, 12vw, 6.2rem);
+    height: 5rem;
 
     padding: 0;
     margin: 0;
@@ -29,7 +29,7 @@
     }
 
     &__hamburgerBar--top { 
-        top: 36%;
+        top: 32%;
         transition: all 1s;
     }
 
@@ -39,7 +39,7 @@
     }
 
     &__hamburgerBar--bottom {
-        top: 65%;
+        top: 67%;
         transition: all 1s;
     }
 }
