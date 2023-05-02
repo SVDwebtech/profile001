@@ -566,6 +566,10 @@ body {
   transition: all 1s;
 }
 
+.navList {
+  display: none;
+}
+
 .paragraph {
   margin: 0 auto 2rem;
 }
