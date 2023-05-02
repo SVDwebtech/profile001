@@ -1,31 +1,45 @@
-.hamburger  {
+.hamburgerBtn {
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
 
-    width: 4rem;
-    height: 4rem;
+    border: none;
+    background-color: transparent;
 
-    &__bar {
-        position: relative;
-    }
+    width: 40px;
+    height: 50px;
 
-    &__bar, &__bar::before, &__bar::after {
+    padding: 0;
+    margin: 0;
+
+    cursor: pointer;
+    position: relative;
+
+    &__hamburgerBar {
         background-color: $cp-white;
-        height: .3rem;
-        width: 4rem;
+        width: 100%;
+        height: 3px;
     }
 
-    &__bar::before, &__bar::after {
-        content: "";
+    &__hamburgerBar--top,
+    &__hamburgerBar--middle,
+    &__hamburgerBar--bottom {
         position: absolute;
+        left: 0;
     }
 
-    &__bar::before {
-        top: -.8rem;
+    &__hamburgerBar--top { 
+        top: 36%;
+        transition: all 1s;
     }
 
-    &__bar::after {
-        top: .8rem;
+    &__hamburgerBar--middle { 
+        top: 50%;
+        transition: all 5s;
+    }
+
+    &__hamburgerBar--bottom {
+        top: 65%;
+        transition: all 1s;
     }
 }
