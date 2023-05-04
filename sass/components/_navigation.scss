@@ -15,6 +15,8 @@
     cursor: pointer;
     position: relative;
 
+    backface-visibility: hidden;
+
     &__hamburgerBar {
         background-color: $cp-white;
         width: 100%;
@@ -30,17 +32,25 @@
 
     &__hamburgerBar--top { 
         top: 32%;
-        transition: all 1s;
+        transition: transform .4s;
     }
 
     &__hamburgerBar--middle { 
         top: 50%;
-        transition: all 5s;
+        transition: opacity 5s;
     }
 
     &__hamburgerBar--bottom {
         top: 67%;
-        transition: all 1s;
+        transition: transform .4s;
+    }
+
+    &:hover > &__hamburgerBar--top {
+        transform: translateY(-2px);
+    }
+
+    &:hover > &__hamburgerBar--bottom {
+        transform: translateY(2px);
     }
 }
 

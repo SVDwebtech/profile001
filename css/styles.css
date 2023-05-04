@@ -543,6 +543,7 @@ body {
   margin: 0;
   cursor: pointer;
   position: relative;
+  backface-visibility: hidden;
 }
 .hamburgerBtn__hamburgerBar {
   background-color: #f0f0f0;
@@ -555,15 +556,21 @@ body {
 }
 .hamburgerBtn__hamburgerBar--top {
   top: 32%;
-  transition: all 1s;
+  transition: transform 0.4s;
 }
 .hamburgerBtn__hamburgerBar--middle {
   top: 50%;
-  transition: all 5s;
+  transition: opacity 5s;
 }
 .hamburgerBtn__hamburgerBar--bottom {
   top: 67%;
-  transition: all 1s;
+  transition: transform 0.4s;
+}
+.hamburgerBtn:hover > .hamburgerBtn__hamburgerBar--top {
+  transform: translateY(-2px);
+}
+.hamburgerBtn:hover > .hamburgerBtn__hamburgerBar--bottom {
+  transform: translateY(2px);
 }
 
 .navList {
