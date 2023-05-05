@@ -6,7 +6,7 @@
     border: none;
     background-color: transparent;
 
-    width: clamp(4.8rem, 12vw, 6.2rem);
+    width: clamp(4.2rem, 10vw, 5.2rem);
     height: 5rem;
 
     padding: 0;
@@ -32,17 +32,22 @@
 
     &__hamburgerBar--top { 
         top: 32%;
-        transition: transform .4s;
+        transition: all .5s;
     }
 
     &__hamburgerBar--middle { 
         top: 50%;
-        transition: opacity 5s;
+        transition: opacity 3s;
     }
 
     &__hamburgerBar--bottom {
         top: 67%;
-        transition: transform .4s;
+        transition: all .5s;
+    }
+
+    &__hamburgerBar--transparent {
+        opacity: 0;
+        transition: all 0s;
     }
 
     &:hover > &__hamburgerBar--top {
@@ -52,7 +57,20 @@
     &:hover > &__hamburgerBar--bottom {
         transform: translateY(2px);
     }
-}
+
+    .navbar > & > &__hamburgerBar--right {
+    transform: rotate(135deg);
+    height: 4px;
+    top: 50%;
+    }
+
+    .navbar > & > &__hamburgerBar--left {
+    transform: rotate(-135deg) !important;
+    height: 4px;
+    top: 50%;
+    }
+
+}    
 
 .navList {
     display: none;
