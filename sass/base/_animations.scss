@@ -1,0 +1,75 @@
+@keyframes animateNavLink {
+  0% {
+    background-position: 100%;
+  }
+  50% {
+    background-position: 50%;
+  }
+  100% {
+    background-position: 0%;
+  }
+}
+
+@keyframes animateNavListContainerMoveIn {
+  0% {
+    transform: translateX(-100%);
+    // opacity: 0;
+  }
+
+  25% {
+    // opacity: .75;
+  }
+
+  100% {
+    transform: translateX(0%);
+    // opacity: 1;
+  }
+}
+
+@keyframes animateNavListContainerMoveOut {
+  0% {
+    transform: translateX(0%);
+    // opacity: 1;
+  }
+
+  75% {
+    // opacity: .75;
+  }
+
+  100% {
+    transform: translateX(-100%);
+    // opacity: 0;
+  }
+}
+
+@keyframes animateNavItemsMoveIn {
+  0% {
+    transform: translateX(150px);
+    opacity: 0;
+  }
+
+  10% {
+    opacity: .5;
+  }
+
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes animateNavItemsMoveOut {
+  0% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+
+  80% {
+    opacity: .5;
+  }
+
+  100% {
+    transform: translateX(200px);
+    opacity: 0;
+  }
+} 
