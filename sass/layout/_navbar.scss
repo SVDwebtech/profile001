@@ -3,9 +3,10 @@
     justify-content: flex-end;
     align-items: center;
 
-    background-color: transparent;
-    padding: 0rem clamp(2rem, 6.5vw, 4rem) 4rem;;
-    // padding: 2rem;
+    
+    background: linear-gradient(to right, transparent 80%, rgba($cp-darkBlue, .2) 85%);
+    // border-bottom: 1px solid $cp-lightGrey;
+    padding: 0rem clamp(2rem, 6.5vw, 4rem);
 
     position: -webkit-sticky;
     position: fixed;
