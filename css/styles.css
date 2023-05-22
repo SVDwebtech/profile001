@@ -259,31 +259,26 @@ body {
   font-size: clamp(calc(1.7rem + 2.3vh - 2rem), 4vw, calc(2.3rem + 2.3vh - 2rem));
 }
 
-.navbar__logo {
-  color: #f0f0f0;
-  text-align: center;
-}
-.navbar__logo--devName {
-  font-size: clamp(1.5rem, 4vw, 2.3rem);
+.logo__text--devName {
+  font-family: "Alegreya", serif;
+  font-size: clamp(1.75rem, 6vw, 3rem);
   font-weight: 900;
+  letter-spacing: 2px;
   line-height: 1;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7), 2px 2px 2px rgba(0, 0, 0, 0.7), 3px 3px 2px rgba(0, 0, 0, 0.7), 4px 4px 2px rgba(0, 0, 0, 0.7);
 }
-.navbar__logo--devDesc {
-  font-size: clamp(1rem, 2.5vw, 1.5rem);
+.logo__text--devNameFirstLetter {
+  font-size: clamp(2.5rem, 9vw, 5rem);
+}
+.logo__text--devDesc {
+  font-family: "Caveat", cursive;
+  font-size: clamp(1rem, 4vw, 2rem);
+  letter-spacing: 1px;
+  line-height: 1;
 }
 
 .about__section {
   text-align: justify;
-}
-
-.navbar__logoBox--logoLink {
-  text-decoration: none;
-}
-.navbar__logoBox--logo {
-  display: inline-block;
-  color: white;
-  font-weight: 900;
-  letter-spacing: 0.3rem;
 }
 
 .footer {
@@ -563,27 +558,23 @@ body {
 
 .logo {
   display: flex;
-}
-.logo--nav {
   align-items: center;
 }
-.logo--hero {
-  flex-direction: column;
-  align-items: center;
-}
-.logo--img {
+.logo__img {
   border: 2px solid whitesmoke;
   border-radius: 50%;
-  box-shadow: 0 10px 20px black;
-  width: clamp(4rem, 12vw, 6rem);
+  box-shadow: 0px 3px 7px 1px rgba(0, 0, 0, 0.9);
+  display: block;
+  height: auto;
+  width: clamp(5rem, 13vw, 7rem);
 }
-.logo--text {
+.logo__text {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-left: 1rem;
+  align-items: flex-start;
+  margin-left: 0.75rem;
 }
-
 .hamburgerBtn {
   display: flex;
   flex-direction: column;
@@ -918,10 +909,11 @@ body {
 
 .navbar {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   align-items: center;
   background: linear-gradient(to right, transparent 80%, rgba(0, 48, 73, 0.2) 85%);
   padding: 0rem clamp(2rem, 6.5vw, 4rem);
+  padding-top: 0.75rem;
   position: -webkit-sticky;
   position: fixed;
   top: 0;

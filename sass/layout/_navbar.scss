@@ -1,12 +1,14 @@
 .navbar {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
 
     
     background: linear-gradient(to right, transparent 80%, rgba($cp-darkBlue, .2) 85%);
     // border-bottom: 1px solid $cp-lightGrey;
     padding: 0rem clamp(2rem, 6.5vw, 4rem);
+
+    padding-top: .75rem;
 
     position: -webkit-sticky;
     position: fixed;
