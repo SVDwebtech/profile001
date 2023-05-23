@@ -1,14 +1,12 @@
 .navbar {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
 
     
-    background: linear-gradient(to right, transparent 80%, rgba($cp-darkBlue, .2) 85%);
+    // background: linear-gradient(to right, transparent 75%, rgba($cp-dark, .7) 90%, rgba($cp-darkBlue, .6));
     // border-bottom: 1px solid $cp-lightGrey;
-    padding: 0rem clamp(2rem, 6.5vw, 4rem);
-
-    padding-top: .75rem;
+    padding: .75rem clamp(2rem, 6.5vw, 4rem);
 
     position: -webkit-sticky;
     position: fixed;
@@ -18,4 +16,11 @@
 
     z-index: 1000;
 
+    transition: all .6s;
+
+}
+
+.navbar--background {
+    background: linear-gradient(to bottom right, rgba($cp-red, 1) 5%, rgba($cp-darkRed, .8) 20%, rgba($cp-darkBlue, .9) 75%, rgba($cp-blue, .6));
+    border-bottom: 1px solid $cp-lightGrey;
 }

@@ -557,8 +557,11 @@ body {
 }
 
 .logo {
-  display: none;
+  display: flex;
   align-items: center;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.6s;
 }
 .logo__img {
   border: 2px solid whitesmoke;
@@ -909,17 +912,21 @@ body {
 
 .navbar {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   align-items: center;
-  background: linear-gradient(to right, transparent 80%, rgba(0, 48, 73, 0.2) 85%);
-  padding: 0rem clamp(2rem, 6.5vw, 4rem);
-  padding-top: 0.75rem;
+  padding: 0.75rem clamp(2rem, 6.5vw, 4rem);
   position: -webkit-sticky;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   z-index: 1000;
+  transition: all 0.6s;
+}
+
+.navbar--background {
+  background: linear-gradient(to bottom right, #c1121f 5%, rgba(153, 24, 24, 0.8) 20%, rgba(0, 48, 73, 0.9) 75%, rgba(27, 144, 216, 0.6));
+  border-bottom: 1px solid #d7d7d7;
 }
 
 body {

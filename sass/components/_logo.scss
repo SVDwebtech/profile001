@@ -1,6 +1,13 @@
 .logo {
-    display: none;
+    display: flex;
     align-items: center;
+
+    visibility: hidden;
+    opacity: 0;
+
+    transition: all .6s;
+
+
     
     &__img {
         border: 2px solid whitesmoke;

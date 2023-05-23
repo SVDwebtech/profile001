@@ -14,6 +14,10 @@ const navItem3 = document.querySelector('.navItem3');
 const navItem4 = document.querySelector('.navItem4');
 const navItem5 = document.querySelector('.navItem5');
 
+const profilePhoto = document.querySelector('.profilePhoto');
+const logo = document.querySelector('.logo');
+const navbar = document.querySelector('.navbar');
+
 hamburgerBtn.addEventListener('click', () => {
   
   if (!hamburgerTopBar.classList.contains('hamburgerBtn__hamburgerBar--right')) {
@@ -69,3 +73,16 @@ hamburgerBtn.addEventListener('click', () => {
     }, 2000);
   }  
 });
+
+window.onscroll = () => {
+  if(window.scrollY > 300) {
+    logo.style.visibility = "visible";
+    logo.style.opacity = "1";
+    navbar.classList.add('navbar--background');
+
+  } else {
+    logo.style.visibility = "hidden";
+    logo.style.opacity = "0";
+    navbar.classList.remove('navbar--background');
+  }
+}
