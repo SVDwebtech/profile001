@@ -1,7 +1,6 @@
 .logo {
-    display: flex;
+    display: none;
     align-items: center;
-
     
     &__img {
         border: 2px solid whitesmoke;
@@ -10,9 +9,7 @@
         
         display: block;
         height: auto;
-        width: clamp(5rem, 13vw, 7rem);
-        
-        
+        width: clamp(3.5rem, 11vw, 6rem);
     }
 
     &__text {
@@ -20,7 +17,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: flex-start;
-        margin-left: .75rem;
+        margin-left: clamp(.75rem, 2vw, 1.25rem);
 
         &--devName {
             
