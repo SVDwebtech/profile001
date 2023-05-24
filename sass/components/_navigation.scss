@@ -120,7 +120,7 @@
 
     &__navLink {
         color: transparent;
-        font-size: 2rem;
+        font-size: 2.5rem;
         font-weight: 900;
         background-clip: text;
         -webkit-background-clip: text;
@@ -137,7 +137,7 @@
 
     &__navLink::after {
         content: "";
-        background-color: red;
+        background-color: #C1121F;
         
         height: 2px;
         width: 99%;
