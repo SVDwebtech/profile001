@@ -19,6 +19,18 @@ const logo = document.querySelector('.logo');
 const navbar = document.querySelector('.navbar');
 
 hamburgerBtn.addEventListener('click', () => {
+  if(!navbar.classList.contains('navbar--background')){
+    setTimeout(() => {
+      logo.style.visibility = "visible";
+      logo.style.opacity = "1";
+      navbar.classList.add('navbar--background');
+    }, 300);
+    
+  } else if(window.scrollY < 300) {
+    logo.style.visibility = "hidden";
+    logo.style.opacity = "0";
+    navbar.classList.remove('navbar--background');
+  }
   
   if (!hamburgerTopBar.classList.contains('hamburgerBtn__hamburgerBar--right')) {
     setTimeout(() => {
@@ -48,11 +60,11 @@ hamburgerBtn.addEventListener('click', () => {
         item.classList.remove('navItem--moveOut');
         item.classList.add('navItem--moveIn');
       }
-      navItem1.style.animationDelay = '.50s';
-      navItem2.style.animationDelay = '.70s';
-      navItem3.style.animationDelay = '.90s';
-      navItem4.style.animationDelay = '1.20s';
-      navItem5.style.animationDelay = '1.40s';
+      navItem1.style.animationDelay = '.70s';
+      navItem2.style.animationDelay = '1s';
+      navItem3.style.animationDelay = '1.30s';
+      navItem4.style.animationDelay = '1.60s';
+      navItem5.style.animationDelay = '1.90s';
     }, 20);
   } else {
     hamburgerMenu.classList.remove('navList--navListMoveIn')
@@ -80,7 +92,7 @@ window.onscroll = () => {
     logo.style.opacity = "1";
     navbar.classList.add('navbar--background');
 
-  } else {
+  } else if(window.scrollY < 300 && hamburgerMenu.classList.contains('navList--displayNone')){
     logo.style.visibility = "hidden";
     logo.style.opacity = "0";
     navbar.classList.remove('navbar--background');

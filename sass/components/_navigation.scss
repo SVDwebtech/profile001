@@ -89,7 +89,7 @@
     justify-content: flex-start;
     align-items: center;
 
-    background: linear-gradient(to bottom, $cp-darkRed 10px, $cp-darkBlue, black 100px), url("../../img/hero/hero-background-img.webp");
+    background: linear-gradient(to bottom, rgba($cp-darkBlue, .8), rgba($cp-dark, .9) 20%), url("../../img/hero/hero-background-img.webp");
     // background: conic-gradient(
     //             from 45deg at 107% -7%, 
     //             rgba($cp-blue, .75) 115deg, 
