@@ -17,8 +17,25 @@ const navItem5 = document.querySelector('.navItem5');
 const profilePhoto = document.querySelector('.profilePhoto');
 const logo = document.querySelector('.logo');
 const navbar = document.querySelector('.navbar');
+const navFrame = document.querySelector('.navFrame');
+
+let height = navbar.offsetHeight;
+navFrame.style.height = `${height}px`;
+
+visualViewport.addEventListener("resize", () => {
+  height = navbar.offsetHeight;
+  navFrame.style.height = `${height}px`;
+
+  console.log(`navbar height = ${navbar.offsetHeight}`);
+  console.log(`navFrame height = ${navFrame.offsetHeight}`);
+});
 
 hamburgerBtn.addEventListener('click', () => {
+  
+  console.log(`navbar offsetHeight = ${navbar.offsetHeight}`);
+  navFrame.style.height = `${height}px`;
+  console.log(`navFrame offsetHeight = ${navFrame.offsetHeight}`);
+
   if(!navbar.classList.contains('navbar--background')){
     setTimeout(() => {
       logo.style.visibility = "visible";

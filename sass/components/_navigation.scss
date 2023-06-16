@@ -8,7 +8,8 @@
     border: none;
     background-color: transparent;
 
-    width: clamp(4.2rem, 10vw, 5.2rem);
+    // width: clamp(4.2rem, 10vw, 5.2rem);
+    width: 3rem;
     height: 4.6rem;
 
     padding: 0;
@@ -90,15 +91,6 @@
     align-items: center;
 
     background: linear-gradient(to bottom, rgba($cp-darkBlue, .8), rgba($cp-dark, .9) 20%), url("../../img/hero/hero-background-img.webp");
-    // background: conic-gradient(
-    //             from 45deg at 107% -7%, 
-    //             rgba($cp-blue, .75) 115deg, 
-    //             rgba($cp-dark, .2), 
-    //             rgba($cp-red, .75) 215deg),
-    //             url(../../img/hero/hero-background-img.webp);
-    // background-position: bottom;
-    // background-repeat: no-repeat;
-    // background-size: cover;
 
     width: 100%;
     height: 100vh;
@@ -160,6 +152,22 @@
 
     &__navLink:hover {
         animation: animateNavLink .4s ease-in 1 forwards;
+    }
+
+    .navFrame {
+        background: linear-gradient(to bottom right, rgba($cp-red, 1) 5%, rgba($cp-darkRed, .8) 20%, rgba($cp-darkBlue, .9) 75%, rgba($cp-blue, .6));
+        border-bottom: 1px solid $cp-lightGrey;
+
+        // padding: .75rem clamp(2rem, 6.5vw, 4rem);
+
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+
+        z-index: 100;
+
+
     }
 }
 

@@ -585,7 +585,7 @@ body {
   justify-content: center;
   border: none;
   background-color: transparent;
-  width: clamp(4.2rem, 10vw, 5.2rem);
+  width: 3rem;
   height: 4.6rem;
   padding: 0;
   margin: 0;
@@ -695,6 +695,15 @@ body {
 }
 .navList__navLink:hover {
   animation: animateNavLink 0.4s ease-in 1 forwards;
+}
+.navList .navFrame {
+  background: linear-gradient(to bottom right, #c1121f 5%, rgba(153, 24, 24, 0.8) 20%, rgba(0, 48, 73, 0.9) 75%, rgba(27, 144, 216, 0.6));
+  border-bottom: 1px solid #d7d7d7;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
 }
 
 .navList--navListMoveIn {
