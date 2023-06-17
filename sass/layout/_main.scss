@@ -28,7 +28,12 @@
     }
     
     &__portfolioSection {
-        background-color: $cp-white;            
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: stretch;
+        
+        gap: 2rem;          
     }
 
     &__skillsSection {

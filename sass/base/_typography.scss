@@ -86,6 +86,11 @@ body {
 		&--blue {
 			color: $cf-darkBlue ;
 		}
+
+		&--project {
+			color: $cf-darkRed;
+			font-size: 1.8rem;
+		}
 	}
 
 	&__headingH3--blue {
@@ -99,6 +104,10 @@ body {
 		font-weight: 400;
 		line-height: 1;
 		letter-spacing: 1px;
+
+		&--project {
+			color: $cf-darkBlue;
+		}
 	 }
 }
 
@@ -112,8 +121,10 @@ body {
 		color: $cf-white;
 	}
 
-	&--projects {
+	&--project {
+		color: $cf-darkBlue;
 		font-size: clamp(calc(1.7rem + 2.3vh - 2rem), 4vw, calc(2.1rem + 2.3vh - 2rem));
+		font-weight: 900;
 		text-align: center;
 	}
 
@@ -137,15 +148,20 @@ body {
 		font-size: clamp(calc(1.2rem + 1.2vh), 4vw, calc(1.6rem + 1.2vh));
 	}
 
+	&--primary-white-portfolioCard {
+		color: $cf-red;
+		font-size: clamp(calc(1.9rem + 2.3vh - 2rem), 4vw, calc(2.6rem + 2.3vh - 2rem));
+	}
+
 	&--primary-white-btn {
 		color: $cf-red;
 		//font-size: clamp(calc(1.2rem + 1.2vh), 4vw, calc(1.6rem + 1.2vh));
 		font-size: clamp(calc(1.9rem + 2.3vh - 2rem), 4vw, calc(2.6rem + 2.3vh - 2rem));
 	}
 
-	&--primary-blue {
-		color: $cf-white;
-		font-size: clamp(calc(1.2rem + 1.2vh), 4vw, calc(1.6rem + 1.2vh));
+	&--primary-darkRed {
+		color: $cf-darkRed;
+		font-size: clamp(calc(1.9rem + 2.3vh - 2rem), 4vw, calc(2.6rem + 2.3vh - 2rem));
 	}
 
 	&--primary-blue-btn {
@@ -157,6 +173,11 @@ body {
 	&--secondary {
 		color: $cf-white;
 		font-size: clamp(calc(.8rem + 1.2vh), 3.9vw, calc(1rem + 1.2vh));
+	}
+
+	&--secondary-portfolioCard {
+		color: $cf-darkBlue;
+		font-size: clamp(calc(1.7rem + 2.3vh - 2rem), 4vw, calc(2.3rem + 2.3vh - 2rem));
 	}
 
 	&--secondary-btn {

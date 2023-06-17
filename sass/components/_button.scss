@@ -1,7 +1,7 @@
 .btn:link, .btn:visited {  
     display: block;
-    border: 2px solid $cp-grey;
-    border-radius: $br-m;
+    border: 1px solid $cp-grey;
+    border-radius: $br-sm;
     box-shadow: $bs-btn;
 
     width: fit-content;
@@ -12,13 +12,18 @@
         padding: .125em 1em;
     }
 
+    &--primary-white-portfolioCard {
+        background-color: $cp-white;
+        padding: .125em 1em;
+    }
+
     &--primary-white-btn {
         background-color: $cp-white;
         padding: .125em 1em;
     }
 
-    &--primary-blue {
-        background-color: $cp-darkBlue;
+    &--primary-darkRed {
+        background-color: $cp-darkRed;
         padding: .125em 1em;
     }
 
@@ -28,6 +33,11 @@
     } 
 
     &--secondary {
+        background-color: transparent;
+        padding: .075em .75em;
+    }
+
+    &--secondary-portfolioCard {
         background-color: transparent;
         padding: .075em .75em;
     }
@@ -45,8 +55,8 @@
 .btn { 
     display: block;
 
-    border: 2px solid $cp-grey;
-    border-radius: $br-m;
+    border: 1px solid $cp-grey;
+    border-radius: $br-sm;
     box-shadow: $bs-btn;
 
     width: fit-content;
@@ -57,13 +67,18 @@
         padding: .125em 1em;
     }
 
+    &--primary-white-portfolioCard {
+        background-color: $cp-white;
+        padding: .125em 1em;
+    }
+
     &--primary-white-btn {
         background-color: $cp-white;
         padding: .125em 1em;
     }
 
-    &--primary-blue {
-        background-color: $cp-darkBlue;
+    &--primary-darkRed {
+        background-color: $cp-darkRed;
         padding: .125em 1em;
     }
 
@@ -80,6 +95,11 @@
     } 
 
     &--secondary {
+        background-color: transparent;
+        padding: .075em .75em;
+    }
+
+    &--secondary-portfolioCard {
         background-color: transparent;
         padding: .075em .75em;
     }

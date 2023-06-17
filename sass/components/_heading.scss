@@ -17,6 +17,10 @@
 .headingH3Container {
     margin: 0 0 2rem;
 
+    &--project {
+        margin: 0rem;
+    }
+
     &--contactInfo {
         margin-top: 8rem;
     }
@@ -37,6 +41,13 @@
         height: 3px;
         background-image: linear-gradient(to right, rgba(0,0,0,0) 10%, rgba($cp-darkBlue, 0.4) 35%, rgba($cp-darkBlue, 0.75) 50%, rgba($cp-darkBlue, 0.4) 75%, rgba(0,0,0,0) 90%);
         margin: .75rem auto;
+    }
+
+    &__hr--project {
+        border: 0;
+        height: 1px;
+        background-image: linear-gradient(to right, rgba(0,0,0,0) 10%, rgba($cp-darkBlue, 0.4) 35%, rgba($cp-darkBlue, 0.75) 50%, rgba($cp-darkBlue, 0.4) 75%, rgba(0,0,0,0) 90%);
+        margin: 0.5rem auto 0;
     }
 
     &__subheadingH3 {
