@@ -5,8 +5,8 @@
     position: relative;
 
     &__cardImage {
-        filter: blur(10px);
-        -webkit-filter: blur(10px);
+        filter: blur(2px);
+        -webkit-filter: blur(2px);
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -35,7 +35,7 @@
 
         gap: 1rem;
 
-        background: linear-gradient(to top, transparent 25%, rgba($cp-white, .7) 75%, rgba($cp-white, 1) 95%);
+        background: linear-gradient(to top, transparent 5%, rgba($cp-white, 0.4) 25%, rgba($cp-white, .85) 85%);
         
         padding: 1rem;
 
