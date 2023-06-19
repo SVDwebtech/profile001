@@ -1,5 +1,4 @@
 .headingH2Container {
-    margin: 0 0 2rem;
 
     &__hr {
         border: 0;
@@ -10,7 +9,6 @@
 
     &__subheadingH2 {
         margin-left: clamp(3rem, 12vw, 12rem);
-       //margin-left: 5rem;
     }    
 }
 

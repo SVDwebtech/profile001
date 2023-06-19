@@ -553,9 +553,6 @@ body {
   margin: 2rem auto;
 }
 
-.headingH2Container {
-  margin: 0 0 2rem;
-}
 .headingH2Container__hr {
   border: 0;
   height: 1px;
@@ -768,30 +765,6 @@ body {
 
 .navItem--moveOut {
   animation: animateNavItemsMoveOut 0.3s ease-in forwards;
-}
-
-.paragraph {
-  margin: 0 auto 2rem;
-}
-
-.paragraph:last-of-type {
-  margin: 0 auto 4rem;
-}
-
-.cardSkills .paragraph--skills {
-  margin: 0 auto 0;
-}
-
-.contactSection .paragraph:last-of-type {
-  margin: 0 auto 1rem;
-}
-
-.contactSection__contactItem > .contactItem__paragraph.paragraph {
-  margin: 0;
-}
-
-#portfolioParagraph {
-  margin: 0 auto 2rem;
 }
 
 .socialMedia {
