@@ -240,7 +240,7 @@ body {
 }
 
 .btn {
-  font-weight: 900;
+  font-weight: 700;
   letter-spacing: 1px;
 }
 .btn--primary-white {
@@ -249,7 +249,8 @@ body {
 }
 .btn--primary-white-portfolioCard {
   color: #c1121f;
-  font-size: clamp(calc(1.9rem + 2.3vh - 2rem), 4vw, calc(2.6rem + 2.3vh - 2rem));
+  font-size: clamp(calc(2.1rem + 2.3vh - 2rem), 4vw, calc(2.8rem + 2.3vh - 2rem));
+  font-weight: 900;
 }
 .btn--primary-white-btn {
   color: #c1121f;
@@ -268,8 +269,8 @@ body {
   font-size: clamp(calc(.8rem + 1.2vh), 3.9vw, calc(1rem + 1.2vh));
 }
 .btn--secondary-portfolioCard {
-  color: #003049;
-  font-size: clamp(calc(1.7rem + 2.3vh - 2rem), 4vw, calc(2.3rem + 2.3vh - 2rem));
+  color: #f0f0f0;
+  font-size: clamp(calc(1.8rem + 2.3vh - 2rem), 4vw, calc(2.4rem + 2.3vh - 2rem));
 }
 .btn--secondary-btn {
   color: #f0f0f0;
@@ -365,7 +366,7 @@ body {
 }
 .btn:link--primary-white-portfolioCard, .btn:visited--primary-white-portfolioCard {
   background-color: #f0f0f0;
-  padding: 0.125em 1em;
+  padding: 0.175em 1.125em;
 }
 .btn:link--primary-white-btn, .btn:visited--primary-white-btn {
   background-color: #f0f0f0;
@@ -384,8 +385,8 @@ body {
   padding: 0.075em 0.75em;
 }
 .btn:link--secondary-portfolioCard, .btn:visited--secondary-portfolioCard {
-  background-color: transparent;
-  padding: 0.075em 0.75em;
+  background-color: rgba(44, 44, 44, 0.75);
+  padding: 0.125em 1em;
 }
 .btn:link--secondary-btn, .btn:visited--secondary-btn {
   background-color: transparent;
@@ -408,7 +409,7 @@ body {
 }
 .btn--primary-white-portfolioCard {
   background-color: #f0f0f0;
-  padding: 0.125em 1em;
+  padding: 0.175em 1.125em;
 }
 .btn--primary-white-btn {
   background-color: #f0f0f0;
@@ -433,8 +434,8 @@ body {
   padding: 0.075em 0.75em;
 }
 .btn--secondary-portfolioCard {
-  background-color: transparent;
-  padding: 0.075em 0.75em;
+  background-color: rgba(44, 44, 44, 0.75);
+  padding: 0.125em 1em;
 }
 .btn--secondary-btn {
   background-color: transparent;
@@ -463,8 +464,8 @@ body {
   position: relative;
 }
 .cardPortfolio__cardImage {
-  filter: blur(10px);
-  -webkit-filter: blur(10px);
+  filter: blur(2px);
+  -webkit-filter: blur(2px);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -486,7 +487,7 @@ body {
   justify-content: center;
   align-items: center;
   gap: 1rem;
-  background: linear-gradient(to top, transparent 25%, rgba(240, 240, 240, 0.7) 75%, #f0f0f0 95%);
+  background: linear-gradient(to top, transparent 5%, rgba(240, 240, 240, 0.4) 25%, rgba(240, 240, 240, 0.85) 85%);
   padding: 1rem;
   width: 100%;
   height: 100%;

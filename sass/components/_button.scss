@@ -14,7 +14,7 @@
 
     &--primary-white-portfolioCard {
         background-color: $cp-white;
-        padding: .125em 1em;
+        padding: .175em 1.125em;
     }
 
     &--primary-white-btn {
@@ -38,8 +38,8 @@
     }
 
     &--secondary-portfolioCard {
-        background-color: transparent;
-        padding: .075em .75em;
+        background-color: rgba($cp-dark, .75);
+        padding: .125em 1em;
     }
 
     &--secondary-btn {
@@ -69,7 +69,7 @@
 
     &--primary-white-portfolioCard {
         background-color: $cp-white;
-        padding: .125em 1em;
+        padding: .175em 1.125em;
     }
 
     &--primary-white-btn {
@@ -100,8 +100,8 @@
     }
 
     &--secondary-portfolioCard {
-        background-color: transparent;
-        padding: .075em .75em;
+        background-color: rgba($cp-dark, .75);
+        padding: .125em 1em;
     }
 
     &--secondary-btn {

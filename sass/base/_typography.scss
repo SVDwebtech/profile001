@@ -140,7 +140,7 @@ body {
 }
 
 .btn {
-	font-weight:900;
+	font-weight:700;
 	letter-spacing: 1px;
 
 	&--primary-white {
@@ -150,7 +150,8 @@ body {
 
 	&--primary-white-portfolioCard {
 		color: $cf-red;
-		font-size: clamp(calc(1.9rem + 2.3vh - 2rem), 4vw, calc(2.6rem + 2.3vh - 2rem));
+		font-size: clamp(calc(2.1rem + 2.3vh - 2rem), 4vw, calc(2.8rem + 2.3vh - 2rem));
+		font-weight: 900;
 	}
 
 	&--primary-white-btn {
@@ -176,8 +177,8 @@ body {
 	}
 
 	&--secondary-portfolioCard {
-		color: $cf-darkBlue;
-		font-size: clamp(calc(1.7rem + 2.3vh - 2rem), 4vw, calc(2.3rem + 2.3vh - 2rem));
+		color: $cf-white;
+		font-size: clamp(calc(1.8rem + 2.3vh - 2rem), 4vw, calc(2.4rem + 2.3vh - 2rem));
 	}
 
 	&--secondary-btn {
