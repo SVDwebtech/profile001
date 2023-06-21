@@ -385,7 +385,7 @@ body {
   padding: 0.075em 0.75em;
 }
 .btn:link--secondary-portfolioCard, .btn:visited--secondary-portfolioCard {
-  background-color: rgba(44, 44, 44, 0.75);
+  background-color: rgba(0, 48, 73, 0.75);
   padding: 0.125em 1em;
 }
 .btn:link--secondary-btn, .btn:visited--secondary-btn {
@@ -434,7 +434,7 @@ body {
   padding: 0.075em 0.75em;
 }
 .btn--secondary-portfolioCard {
-  background-color: rgba(44, 44, 44, 0.75);
+  background-color: rgba(0, 48, 73, 0.75);
   padding: 0.125em 1em;
 }
 .btn--secondary-btn {
