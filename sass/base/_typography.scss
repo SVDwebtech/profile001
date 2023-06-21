@@ -76,6 +76,7 @@ body {
 .headingH3Container {
 	font-family: 'Lato', sans-serif;
 	text-align: center;
+	
 	&__headingH3 {
 		color: $cf-white;
 		font-size: clamp(calc(1.9rem + 2.3vh - 2rem), 4vw, calc(2.6rem + 2.3vh - 2rem));
@@ -91,11 +92,11 @@ body {
 			color: $cf-darkRed;
 			font-size: 1.8rem;
 		}
-	}
 
-	&__headingH3--blue {
-		color: $cf-darkBlue;
-		font-size: clamp(calc(2.8rem + 2.3vh - 2rem), 8vw, calc(5rem + 2.3vh - 2rem));
+		&--skills {
+			color: $cf-darkBlue;
+			font-size: clamp(calc(2.8rem + 2.3vh - 2rem), 8vw, calc(5rem + 2.3vh - 2rem));
+		}
 	}
 
 	 &__subheadingH3 {
