@@ -1,11 +1,22 @@
 .btn:link, .btn:visited {  
-    display: block;
+    // display: block;
     border: 1px solid $cp-grey;
     border-radius: $br-sm;
     box-shadow: $bs-btn;
 
     width: fit-content;
     margin: 0 auto;
+
+    &--aboutSectionCallMe {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        gap: .5rem;
+
+        background-color: $cp-darkBlue;
+        padding: .35em 1.25em;
+    }
 
     &--primary-white {
         background-color: $cp-white;
@@ -53,14 +64,24 @@
 }
 
 .btn { 
-    display: block;
-
+    // display: block;
     border: 1px solid $cp-grey;
     border-radius: $br-sm;
     box-shadow: $bs-btn;
 
     width: fit-content;
     margin: 0 auto;
+
+    &--aboutSectionCallMe {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        gap: .5rem;
+
+        background-color: $cp-darkBlue;
+        padding: .35em 1.25em;
+    }
 
     &--primary-white {
         background-color: $cp-white;
