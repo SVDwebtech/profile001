@@ -618,6 +618,11 @@ body {
   margin-bottom: 1rem;
 }
 
+.icon {
+  width: 2.8rem;
+  height: 2.8rem;
+}
+
 .logo {
   display: flex;
   align-items: center;
