@@ -42,10 +42,10 @@
     }
 
     &__skillsSection {
-        background-color: $cp-white; 
+        & > * {
+            margin-bottom: 2rem;
+        }
     }
-        
-    
 
     &__contactSection {
         .contactItem {

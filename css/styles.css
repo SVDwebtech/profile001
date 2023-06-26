@@ -243,10 +243,9 @@ body {
   font-weight: 700;
   letter-spacing: 1px;
 }
-.btn--aboutSectionCallMe {
+.btn--contactMeText {
   color: #f0f0f0;
   font-size: clamp(calc(2.1rem + 2.3vh - 2rem), 4vw, calc(2.8rem + 2.3vh - 2rem));
-  font-weight: 900;
 }
 .btn--primary-white {
   color: #c1121f;
@@ -357,20 +356,20 @@ body {
 
 .btn:link, .btn:visited {
   border: 1px solid #898989;
-  border-radius: 0.35rem;
+  border-radius: 0.6rem;
   box-shadow: 0px 1px 12px 2px rgba(44, 44, 44, 0.4);
   width: fit-content;
   margin: 0 auto;
   backface-visibility: hidden;
   transition: all 0.2s;
 }
-.btn:link--aboutSectionCallMe, .btn:visited--aboutSectionCallMe {
+.btn:link--contactMe, .btn:visited--contactMe {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 0.5rem;
   background-color: #003049;
-  padding: 0.35em 1.25em;
+  padding: 0.55em 1.25em;
 }
 .btn:link--primary-white, .btn:visited--primary-white {
   background-color: #f0f0f0;
@@ -407,20 +406,20 @@ body {
 
 .btn {
   border: 1px solid #898989;
-  border-radius: 0.35rem;
+  border-radius: 0.6rem;
   box-shadow: 0px 1px 12px 2px rgba(44, 44, 44, 0.4);
   width: fit-content;
   margin: 0 auto;
   backface-visibility: hidden;
   transition: all 0.2s;
 }
-.btn--aboutSectionCallMe {
+.btn--contactMe {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 0.5rem;
   background-color: #003049;
-  padding: 0.35em 1.25em;
+  padding: 0.55em 1.25em;
 }
 .btn--primary-white {
   background-color: #f0f0f0;
@@ -619,8 +618,8 @@ body {
 }
 
 .icon {
-  width: 2.8rem;
-  height: 2.8rem;
+  width: 1.8rem;
+  height: 1.8rem;
 }
 
 .logo {
@@ -951,8 +950,8 @@ body {
   align-items: stretch;
   gap: 2rem;
 }
-.main__skillsSection {
-  background-color: #f0f0f0;
+.main__skillsSection > * {
+  margin-bottom: 2rem;
 }
 .main__contactSection .contactItem {
   display: flex;

@@ -1,13 +1,14 @@
 .btn:link, .btn:visited {  
     // display: block;
     border: 1px solid $cp-grey;
-    border-radius: $br-sm;
+    // border-radius: $br-sm;
+    border-radius: .6rem;
     box-shadow: $bs-btn;
 
     width: fit-content;
     margin: 0 auto;
 
-    &--aboutSectionCallMe {
+    &--contactMe {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -15,7 +16,7 @@
         gap: .5rem;
 
         background-color: $cp-darkBlue;
-        padding: .35em 1.25em;
+        padding: .55em 1.25em;
     }
 
     &--primary-white {
@@ -66,13 +67,14 @@
 .btn { 
     // display: block;
     border: 1px solid $cp-grey;
-    border-radius: $br-sm;
+    // border-radius: $br-sm;
+    border-radius: .6rem;
     box-shadow: $bs-btn;
 
     width: fit-content;
     margin: 0 auto;
 
-    &--aboutSectionCallMe {
+    &--contactMe {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -80,7 +82,7 @@
         gap: .5rem;
 
         background-color: $cp-darkBlue;
-        padding: .35em 1.25em;
+        padding: .55em 1.25em;
     }
 
     &--primary-white {
