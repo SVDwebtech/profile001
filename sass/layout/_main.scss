@@ -38,7 +38,17 @@
         justify-content: center;
         align-items: stretch;
         
-        gap: 2rem;          
+        & > * {
+            margin-bottom: 2rem;
+        }  
+
+        & > article {
+            margin-bottom: 3rem;
+        }
+
+        & > article:last-of-type {
+            margin-bottom: 0rem;
+        }        
     }
 
     &__skillsSection {
