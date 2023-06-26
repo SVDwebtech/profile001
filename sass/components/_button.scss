@@ -8,7 +8,7 @@
     width: fit-content;
     margin: 0 auto;
 
-    &--contactMe {
+    &--contactMe, &--formBtn {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -74,7 +74,7 @@
     width: fit-content;
     margin: 0 auto;
 
-    &--contactMe {
+    &--contactMe, &--formBtn {
         display: flex;
         justify-content: center;
         align-items: center;

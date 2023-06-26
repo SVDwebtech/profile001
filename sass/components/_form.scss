@@ -1,43 +1,42 @@
-.form {
+.contactForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
 
-    padding-bottom: 4rem;
-    margin-bottom: 4rem;
-
-    &__inputAndBtnContainer {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-
-        background-color: $cp-white;
-        border-radius: $br-l;
-
-        padding: 2rem 2rem;
-    }
-
-    &__inputContainer {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-start;
-
-        padding: 1rem 0;;    
-    }
-
-    &__input {
-        border: 3px solid $cp-darkBlue;
-        width: 100%;
-        height: 3.5rem;   
-    }
-
-    &__textArea {
-        border: 3px solid $cp-darkBlue;
-        width: 100%;
-        height: 15rem;   
-    }
-
-    &__btn {
-        margin: 2rem auto;
-    }
-    
-
+  gap: 1rem;
 }
+
+.formGroup {
+  margin-bottom: 1rem;
+}
+
+.formGroup label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.formGroup input,
+.formGroup textarea {
+  
+  background-color: $cp-white;
+  border-radius: $br-m;
+  border: 1px solid #003049;
+
+  width: 100%;
+  padding: 0.5rem;
+}
+
+// .submitButton {
+//   background-color: #4CAF50;
+//   color: #fff;
+//   border: none;
+//   padding: 0.5rem 1rem;
+//   font-size: 1rem;
+//   border-radius: 4px;
+//   cursor: pointer;
+// }
+
+// .submitButton:hover {
+//   background-color: #45a049;
+// }

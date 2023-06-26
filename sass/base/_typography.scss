@@ -144,7 +144,7 @@ body {
 	font-weight:700;
 	letter-spacing: 1px;
 
-	&--contactMeText {
+	&--contactMeText, &--formBtnText {
 		color: $cf-white;
 		font-size: clamp(calc(2.1rem + 2.3vh - 2rem), 4vw, calc(2.8rem + 2.3vh - 2rem));
 		// font-weight: 900;
@@ -194,8 +194,6 @@ body {
 		font-size: clamp(calc(1.7rem + 2.3vh - 2rem), 4vw, calc(2.3rem + 2.3vh - 2rem));
 	}
 }
-
-
 
 .logo__text {
 	
@@ -272,11 +270,8 @@ body {
 
 
 
-.form {
-	color: $cf-darkBlue;
-
-	&__inputContainer {
-		font-size: clamp(1.6rem, 5vw, 2.4rem);
-		font-weight: 700;
-	}
+.contactForm {
+	color:  $cf-darkBlue;
+	font-size: clamp(calc(2.1rem + 2.3vh - 2rem), 4.3vw, calc(2.5rem + 2.3vh - 2rem));
+	font-weight: 700;
 }

@@ -243,7 +243,7 @@ body {
   font-weight: 700;
   letter-spacing: 1px;
 }
-.btn--contactMeText {
+.btn--contactMeText, .btn--formBtnText {
   color: #f0f0f0;
   font-size: clamp(calc(2.1rem + 2.3vh - 2rem), 4vw, calc(2.8rem + 2.3vh - 2rem));
 }
@@ -330,11 +330,9 @@ body {
   font-size: clamp(1.8rem, 6vw, 2.5rem);
 }
 
-.form {
+.contactForm {
   color: #003049;
-}
-.form__inputContainer {
-  font-size: clamp(1.6rem, 5vw, 2.4rem);
+  font-size: clamp(calc(2.1rem + 2.3vh - 2rem), 4.3vw, calc(2.5rem + 2.3vh - 2rem));
   font-weight: 700;
 }
 
@@ -363,7 +361,7 @@ body {
   backface-visibility: hidden;
   transition: all 0.2s;
 }
-.btn:link--contactMe, .btn:visited--contactMe {
+.btn:link--contactMe, .btn:link--formBtn, .btn:visited--contactMe, .btn:visited--formBtn {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -413,7 +411,7 @@ body {
   backface-visibility: hidden;
   transition: all 0.2s;
 }
-.btn--contactMe {
+.btn--contactMe, .btn--formBtn {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -537,37 +535,30 @@ body {
   margin: 0 auto;
 }
 
-.form {
-  padding-bottom: 4rem;
-  margin-bottom: 4rem;
-}
-.form__inputAndBtnContainer {
+.contactForm {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: stretch;
+  gap: 1rem;
+}
+
+.formGroup {
+  margin-bottom: 1rem;
+}
+
+.formGroup label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.formGroup input,
+.formGroup textarea {
   background-color: #f0f0f0;
-  border-radius: 1rem;
-  padding: 2rem 2rem;
-}
-.form__inputContainer {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  padding: 1rem 0;
-}
-.form__input {
-  border: 3px solid #003049;
+  border-radius: 0.5rem;
+  border: 1px solid #003049;
   width: 100%;
-  height: 3.5rem;
-}
-.form__textArea {
-  border: 3px solid #003049;
-  width: 100%;
-  height: 15rem;
-}
-.form__btn {
-  margin: 2rem auto;
+  padding: 0.5rem;
 }
 
 .headingH2Container__hr {
