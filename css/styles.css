@@ -768,6 +768,10 @@ body {
   animation: animateNavItemsMoveOut 0.3s ease-in forwards;
 }
 
+.paragraph--userX {
+  margin-bottom: 2.5rem;
+}
+
 .socialMedia {
   display: flex;
   justify-content: space-evenly;
@@ -785,7 +789,7 @@ body {
   justify-content: center;
   align-items: center;
   gap: 5rem;
-  margin: 8rem 0 10rem;
+  margin: 3rem 0 4.5rem;
 }
 .techStack__img {
   width: clamp(5rem, 20.5vw, 18rem);
