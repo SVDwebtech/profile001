@@ -852,7 +852,7 @@ body {
   align-items: center;
 }
 .header__hero > * {
-  margin-bottom: calc(10vh - 2.8rem);
+  margin-bottom: calc(9vh - 2.8rem);
 }
 @media (min-height: 640px) {
   .header__hero > * {
@@ -877,7 +877,7 @@ body {
   display: block;
 }
 .header__hero .primaryHeading__subheading {
-  margin-bottom: calc(10vh - 2.8rem);
+  margin-bottom: calc(9vh - 2.8rem);
 }
 @media (min-height: 640px) {
   .header__hero .primaryHeading__subheading {
@@ -887,7 +887,7 @@ body {
 .header__hero .cta {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 1.5rem;
   justify-content: center;
   align-items: center;
   width: 100%;

@@ -48,7 +48,7 @@
         align-items: center;
 
         & > * {
-            margin-bottom: calc(10vh - 2.8rem);
+            margin-bottom: calc(9vh - 2.8rem);
 
             @media (min-height: 640px) {
                 margin-bottom: calc(10vh - 4rem);
@@ -76,7 +76,7 @@
             }
 
             &__subheading {
-                margin-bottom: calc(10vh - 2.8rem);
+                margin-bottom: calc(9vh - 2.8rem);
 
                 @media (min-height: 640px) {
                     margin-bottom: calc(10vh - 4rem);
@@ -87,7 +87,7 @@
         .cta {
             display: flex;
             flex-direction: column;
-            gap: 2rem;
+            gap: 1.5rem;
             @media (min-width: 450px) {
                 flex-direction: row;
                 gap: 2rem;
