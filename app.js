@@ -117,14 +117,32 @@ window.onscroll = () => {
 }
 
 /////////////////////////////////////////////////////////////////////////////////////
-// close hamburgerMenu when navItem in hamburgerMenu is clicked
+// animate hamburgerMenu (close menu) and hamburgerBtn (change to hamburgerBtn) when 
+// navItem in hamburgerMenu is clicked
 /////////////////////////////////////////////////////////////////////////////////////
-
-navItems[0].style.backgroundColor = "magenta";
 
 for(let item of navItems) {
   item.addEventListener('click', ()=> {
-    hamburgerMenu.classList.add('navList--displayNone');
-    hamburgerMenu.classList.remove('navList--display');
+    setTimeout(() => {
+      hamburgerTopBar.classList.toggle('hamburgerBtn__hamburgerBar--right');
+      hamburgerMiddleBar.classList.toggle('hamburgerBtn__hamburgerBar--transparent');
+      hamburgerBottomBar.classList.toggle('hamburgerBtn__hamburgerBar--left');
+    }, 500);
+    hamburgerMenu.classList.remove('navList--navListMoveIn')
+    hamburgerMenu.classList.add('navList--navListMoveOut')
+    for(let item of navItems) {
+      item.style.opacity = "1";
+      item.classList.remove('navItem--moveIn');
+      item.classList.add('navItem--moveOut');
+    }
+    navItem1.style.animationDelay = '.20s';
+    navItem2.style.animationDelay = '.30s';
+    navItem3.style.animationDelay = '.40s';
+    navItem4.style.animationDelay = '.50s';
+    navItem5.style.animationDelay = '.60s';
+    setTimeout(() => {
+      hamburgerMenu.classList.remove('navList--display');
+      hamburgerMenu.classList.add('navList--displayNone');
+    }, 2000);
   });
 }
