@@ -37,6 +37,8 @@
         flex-direction: column;
         justify-content: center;
         align-items: stretch;
+
+        position: relative;
         
         & > * {
             margin-bottom: 2rem;
@@ -52,12 +54,15 @@
     }
 
     &__skillsSection {
+        position: relative;
+
         & > * {
             margin-bottom: 2rem;
         }
     }
 
     &__contactSection {
+        position: relative;
 
         & > * {
             margin-bottom: 2rem;

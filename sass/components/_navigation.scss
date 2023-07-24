@@ -166,9 +166,13 @@
         right: 0;
 
         z-index: 100;
-
-
     }
+}
+
+.navLinkId {
+    position: absolute;
+    top: -10rem;
+    left: 0;
 }
 
 .navList--navListMoveIn {
@@ -186,4 +190,3 @@
 .navItem--moveOut {
   animation: animateNavItemsMoveOut .3s ease-in forwards;
 } 
-

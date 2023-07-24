@@ -752,6 +752,12 @@ body {
   z-index: 100;
 }
 
+.navLinkId {
+  position: absolute;
+  top: -10rem;
+  left: 0;
+}
+
 .navList--navListMoveIn {
   animation: animateNavListContainerMoveIn 0.4s ease-out forwards;
 }
@@ -850,6 +856,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 .header__hero > * {
   margin-bottom: calc(9vh - 2.8rem);
@@ -932,6 +939,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: stretch;
+  position: relative;
 }
 .main__portfolioSection > * {
   margin-bottom: 2rem;
@@ -942,8 +950,14 @@ body {
 .main__portfolioSection > article:last-of-type {
   margin-bottom: 0rem;
 }
+.main__skillsSection {
+  position: relative;
+}
 .main__skillsSection > * {
   margin-bottom: 2rem;
+}
+.main__contactSection {
+  position: relative;
 }
 .main__contactSection > * {
   margin-bottom: 2rem;

@@ -9,6 +9,10 @@
     background-repeat: no-repeat;
     background-size: cover;
 
+    min-height: 100vh;
+
+    padding: 7.5rem clamp(2rem, 6.5vw, 4rem) 4rem;
+
     @media (min-width: 400px) {
         background: conic-gradient(
                 from 45deg at 107% -7%, 
@@ -33,10 +37,6 @@
         background-size: cover;
     }
 
-    min-height: 100vh;
-
-    padding: 7.5rem clamp(2rem, 6.5vw, 4rem) 4rem;
-
     &__navbar {
         margin-bottom: calc(10vh - 5rem);
     }
@@ -46,6 +46,8 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+
+        position: relative;
 
         & > * {
             margin-bottom: calc(9vh - 2.8rem);

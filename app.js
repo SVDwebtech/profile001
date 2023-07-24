@@ -115,3 +115,16 @@ window.onscroll = () => {
     navbar.classList.remove('navbar--background');
   }
 }
+
+/////////////////////////////////////////////////////////////////////////////////////
+// close hamburgerMenu when navItem in hamburgerMenu is clicked
+/////////////////////////////////////////////////////////////////////////////////////
+
+navItems[0].style.backgroundColor = "magenta";
+
+for(let item of navItems) {
+  item.addEventListener('click', ()=> {
+    hamburgerMenu.classList.add('navList--displayNone');
+    hamburgerMenu.classList.remove('navList--display');
+  });
+}
