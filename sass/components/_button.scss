@@ -1,156 +1,68 @@
-.btn:link, .btn:visited {  
-    // display: block;
-    border: 1px solid $cp-grey;
-    // border-radius: $br-sm;
-    border-radius: .6rem;
+.btn {  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: .5rem;
+
+    background-color: $cp-darkBlue;
+    border-top: 2px solid $cp-dark;
+    border-left: 2px solid $cp-darkGrey;
+    border-bottom: 1px solid $cp-grey;
+    border-right: 1px solid $cp-lightGrey;
+    border-radius: $br-sm;
     box-shadow: $bs-btn;
 
     width: fit-content;
+
+    padding: .25em 1em;
     margin: 0 auto;
 
-    &--contactMe, &--formBtn {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        
-        gap: .5rem;
+    backface-visibility: hidden;
+    transition: all .2s;
 
+    &:link, &:visited {
+        text-decoration: none;
+        transform: translateY(0px);
+    }
+
+    &:hover {
+        box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, .7);
+        transform: translateY(-2px);
+    }
+
+    &:active {
+        border-bottom: 1px solid $cp-darkGrey;
+        border-right: 1px solid $cp-darkGrey;
+        box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, .7);
+        transform: translateY(-1px);
+    }
+
+    &--primaryBtn {
         background-color: $cp-darkBlue;
-        padding: .55em 1.25em;
     }
 
-    &--primary-white {
-        background-color: $cp-white;
-        padding: .125em 1em;
+    &--primaryBtn-hero {
+        background-color: rgba($cp-white, .4);
     }
 
-    &--primary-white-portfolioCard {
-        background-color: $cp-white;
+    &--primaryBtn-white {
+        background-color: rgba($cp-white, .8);
+    }
+
+    &--primaryBtn-white-portfolioCard {
+        background-color: rgba($cp-white, .8);
         padding: .175em 1.125em;
     }
 
-    &--primary-white-btn {
-        background-color: $cp-white;
-        padding: .125em 1em;
-    }
-
-    &--primary-darkRed {
-        background-color: $cp-darkRed;
-        padding: .125em 1em;
-    }
-
-    &--primary-blue-btn {
-        background-color: $cp-darkBlue;
-        padding: .125em 1em;
-    } 
-
-    &--secondary {
-        background-color: transparent;
-        padding: .075em .75em;
-    }
-
-    &--secondary-portfolioCard {
-        background-color: rgba($cp-darkBlue, .75);
-        padding: .125em 1em;
-    }
-
-    &--secondary-btn {
-        background-color: transparent;
-        padding: .075em .75em;
-    }
-    
-    
-    backface-visibility: hidden;
-    transition: all .2s;
-}
-
-.btn { 
-    // display: block;
-    border: 1px solid $cp-grey;
-    // border-radius: $br-sm;
-    border-radius: .6rem;
-    box-shadow: $bs-btn;
-
-    width: fit-content;
-    margin: 0 auto;
-
-    &--contactMe, &--formBtn {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+    &--secondaryBtn {
+        background-color: rgba($cp-darkBlue, .5);
+        padding: .0225em .5em;
         
-        gap: .5rem;
-
-        background-color: $cp-darkBlue;
-        padding: .55em 1.25em;
     }
 
-    &--primary-white {
-        background-color: $cp-white;
-        padding: .125em 1em;
+    &--secondaryBtn-hero {
+        background-color: rgba($cp-white, .1);
+        padding: .125em .75em;
     }
-
-    &--primary-white-portfolioCard {
-        background-color: $cp-white;
-        padding: .175em 1.125em;
-    }
-
-    &--primary-white-btn {
-        background-color: $cp-white;
-        padding: .125em 1em;
-    }
-
-    &--primary-darkRed {
-        background-color: $cp-darkRed;
-        padding: .125em 1em;
-    }
-
-    &--primary-blue-btn {
-        background-color: $cp-darkBlue;
-        padding: .125em 1em;
-    } 
-
-    &--primary:hover {
-        border: 5px solid $cp-white;
-        background-color: $cp-grey;
-        box-shadow: $bs-btnHover;
-        transform: translateY(-3px);
-    } 
-
-    &--secondary {
-        background-color: transparent;
-        padding: .075em .75em;
-    }
-
-    &--secondary-portfolioCard {
-        background-color: rgba($cp-darkBlue, .75);
-        padding: .125em 1em;
-    }
-
-    &--secondary-btn {
-        background-color: transparent;
-        padding: .075em .75em;
-    }
-
-    &--secondary:hover {
-        border: 5px solid $cp-white;
-        background-color: $cp-grey;
-        box-shadow: $bs-btnHover;
-        transform: translateY(-3px);
-    }
-       
-    backface-visibility: hidden;
-    transition: all .2s;
-    
-}
-
-.btn:active {
-
-    border-top-color: $cp-grey;
-    border-left-color: $cp-grey;
-    border-bottom-color: $cp-lightGrey;
-    border-right-color: $cp-lightGrey;
-    background-color: $cp-lightGrey;
-    box-shadow: none;
-    transform: translateY(2px);
 }

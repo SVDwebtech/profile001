@@ -235,45 +235,29 @@ body {
   text-align: center;
 }
 .btn {
+  color: #f0f0f0;
   font-weight: 700;
   letter-spacing: 1px;
 }
-.btn--contactMeText, .btn--formBtnText {
-  color: #f0f0f0;
+.btn--primaryBtn {
   font-size: clamp(calc(2.1rem + 2.3vh - 2rem), 4vw, calc(2.8rem + 2.3vh - 2rem));
 }
-.btn--primary-white {
-  color: #c1121f;
+.btn--primaryBtn-white {
+  color: #003049;
   font-size: clamp(calc(1.2rem + 1.2vh), 4vw, calc(1.6rem + 1.2vh));
 }
-.btn--primary-white-portfolioCard {
+.btn--primaryBtn-white-portfolioCard {
   color: #c1121f;
   font-size: clamp(calc(2.1rem + 2.3vh - 2rem), 4vw, calc(2.8rem + 2.3vh - 2rem));
   font-weight: 900;
 }
-.btn--primary-white-btn {
-  color: #c1121f;
-  font-size: clamp(calc(1.9rem + 2.3vh - 2rem), 4vw, calc(2.6rem + 2.3vh - 2rem));
-}
-.btn--primary-darkRed {
-  color: #991818;
-  font-size: clamp(calc(1.9rem + 2.3vh - 2rem), 4vw, calc(2.6rem + 2.3vh - 2rem));
-}
-.btn--primary-blue-btn {
-  color: #f0f0f0;
-  font-size: clamp(calc(1.9rem + 2.3vh - 2rem), 4vw, calc(2.6rem + 2.3vh - 2rem));
-}
-.btn--secondary {
+.btn--secondaryBtn {
   color: #f0f0f0;
   font-size: clamp(calc(.8rem + 1.2vh), 3.9vw, calc(1rem + 1.2vh));
 }
-.btn--secondary-portfolioCard {
+.btn--secondaryBtn-portfolioCard {
   color: #f0f0f0;
   font-size: clamp(calc(1.8rem + 2.3vh - 2rem), 4vw, calc(2.4rem + 2.3vh - 2rem));
-}
-.btn--secondary-btn {
-  color: #f0f0f0;
-  font-size: clamp(calc(1.7rem + 2.3vh - 2rem), 4vw, calc(2.3rem + 2.3vh - 2rem));
 }
 
 .logo__text--devName {
@@ -347,131 +331,63 @@ body {
   margin-right: 0.5rem;
 }
 
-.btn:link, .btn:visited {
-  border: 1px solid #898989;
-  border-radius: 0.6rem;
-  box-shadow: 0px 1px 12px 2px rgba(44, 44, 44, 0.4);
-  width: fit-content;
-  margin: 0 auto;
-  backface-visibility: hidden;
-  transition: all 0.2s;
-}
-.btn:link--contactMe, .btn:link--formBtn, .btn:visited--contactMe, .btn:visited--formBtn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 0.5rem;
-  background-color: #003049;
-  padding: 0.55em 1.25em;
-}
-.btn:link--primary-white, .btn:visited--primary-white {
-  background-color: #f0f0f0;
-  padding: 0.125em 1em;
-}
-.btn:link--primary-white-portfolioCard, .btn:visited--primary-white-portfolioCard {
-  background-color: #f0f0f0;
-  padding: 0.175em 1.125em;
-}
-.btn:link--primary-white-btn, .btn:visited--primary-white-btn {
-  background-color: #f0f0f0;
-  padding: 0.125em 1em;
-}
-.btn:link--primary-darkRed, .btn:visited--primary-darkRed {
-  background-color: #991818;
-  padding: 0.125em 1em;
-}
-.btn:link--primary-blue-btn, .btn:visited--primary-blue-btn {
-  background-color: #003049;
-  padding: 0.125em 1em;
-}
-.btn:link--secondary, .btn:visited--secondary {
-  background-color: transparent;
-  padding: 0.075em 0.75em;
-}
-.btn:link--secondary-portfolioCard, .btn:visited--secondary-portfolioCard {
-  background-color: rgba(0, 48, 73, 0.75);
-  padding: 0.125em 1em;
-}
-.btn:link--secondary-btn, .btn:visited--secondary-btn {
-  background-color: transparent;
-  padding: 0.075em 0.75em;
-}
-
 .btn {
-  border: 1px solid #898989;
-  border-radius: 0.6rem;
-  box-shadow: 0px 1px 12px 2px rgba(44, 44, 44, 0.4);
-  width: fit-content;
-  margin: 0 auto;
-  backface-visibility: hidden;
-  transition: all 0.2s;
-}
-.btn--contactMe, .btn--formBtn {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 0.5rem;
   background-color: #003049;
-  padding: 0.55em 1.25em;
+  border-top: 2px solid #333333;
+  border-left: 2px solid #3e3e3e;
+  border-bottom: 1px solid #898989;
+  border-right: 1px solid #d7d7d7;
+  border-radius: 0.35rem;
+  box-shadow: 0px 1px 12px 2px rgba(51, 51, 51, 0.4);
+  width: fit-content;
+  padding: 0.25em 1em;
+  margin: 0 auto;
+  backface-visibility: hidden;
+  transition: all 0.2s;
 }
-.btn--primary-white {
-  background-color: #f0f0f0;
-  padding: 0.125em 1em;
+.btn:link, .btn:visited {
+  text-decoration: none;
+  transform: translateY(0px);
 }
-.btn--primary-white-portfolioCard {
-  background-color: #f0f0f0;
+.btn:hover {
+  box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.7);
+  transform: translateY(-2px);
+}
+.btn:active {
+  border-bottom: 1px solid #3e3e3e;
+  border-right: 1px solid #3e3e3e;
+  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.7);
+  transform: translateY(-1px);
+}
+.btn--primaryBtn {
+  background-color: #003049;
+}
+.btn--primaryBtn-hero {
+  background-color: rgba(240, 240, 240, 0.4);
+}
+.btn--primaryBtn-white {
+  background-color: rgba(240, 240, 240, 0.8);
+}
+.btn--primaryBtn-white-portfolioCard {
+  background-color: rgba(240, 240, 240, 0.8);
   padding: 0.175em 1.125em;
 }
-.btn--primary-white-btn {
-  background-color: #f0f0f0;
-  padding: 0.125em 1em;
+.btn--secondaryBtn {
+  background-color: rgba(0, 48, 73, 0.5);
+  padding: 0.0225em 0.5em;
 }
-.btn--primary-darkRed {
-  background-color: #991818;
-  padding: 0.125em 1em;
-}
-.btn--primary-blue-btn {
-  background-color: #003049;
-  padding: 0.125em 1em;
-}
-.btn--primary:hover {
-  border: 5px solid #f0f0f0;
-  background-color: #898989;
-  box-shadow: 0px 8px 40px 3px rgba(0, 0, 0, 0.7);
-  transform: translateY(-3px);
-}
-.btn--secondary {
-  background-color: transparent;
-  padding: 0.075em 0.75em;
-}
-.btn--secondary-portfolioCard {
-  background-color: rgba(0, 48, 73, 0.75);
-  padding: 0.125em 1em;
-}
-.btn--secondary-btn {
-  background-color: transparent;
-  padding: 0.075em 0.75em;
-}
-.btn--secondary:hover {
-  border: 5px solid #f0f0f0;
-  background-color: #898989;
-  box-shadow: 0px 8px 40px 3px rgba(0, 0, 0, 0.7);
-  transform: translateY(-3px);
-}
-
-.btn:active {
-  border-top-color: #898989;
-  border-left-color: #898989;
-  border-bottom-color: #d7d7d7;
-  border-right-color: #d7d7d7;
-  background-color: #d7d7d7;
-  box-shadow: none;
-  transform: translateY(2px);
+.btn--secondaryBtn-hero {
+  background-color: rgba(240, 240, 240, 0.1);
+  padding: 0.125em 0.75em;
 }
 
 .cardPortfolio {
   border-radius: 5px;
-  box-shadow: 0 0 7px 3px rgba(44, 44, 44, 0.4);
+  box-shadow: 0 0 7px 3px rgba(51, 51, 51, 0.4);
   position: relative;
 }
 .cardPortfolio__cardImage {
@@ -559,7 +475,7 @@ body {
 .headingH2Container__hr {
   border: 0;
   height: 1px;
-  background-image: linear-gradient(to right, #1b90d8 20%, rgba(27, 144, 216, 0.75) 35%, rgba(27, 144, 216, 0.5) 50%, rgba(27, 144, 216, 0.25) 65%, rgba(27, 144, 216, 0.1) 80%, rgba(44, 44, 44, 0.05) 95%);
+  background-image: linear-gradient(to right, #1b90d8 20%, rgba(27, 144, 216, 0.75) 35%, rgba(27, 144, 216, 0.5) 50%, rgba(27, 144, 216, 0.25) 65%, rgba(27, 144, 216, 0.1) 80%, rgba(51, 51, 51, 0.05) 95%);
   margin: 0.075rem 0 0.15rem;
 }
 .headingH2Container__subheadingH2 {
@@ -694,7 +610,7 @@ body {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  background: linear-gradient(to bottom, rgba(0, 48, 73, 0.8), rgba(44, 44, 44, 0.9) 20%), url("../../img/hero/hero-background-img.webp");
+  background: linear-gradient(to bottom, rgba(0, 48, 73, 0.8), rgba(51, 51, 51, 0.9) 20%), url("../../img/hero/hero-background-img.webp");
   width: 100%;
   height: 100vh;
   margin: 0;
@@ -806,7 +722,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #2c2c2c;
+  background-color: #333333;
   padding: 6rem 2rem 0rem;
 }
 .footer > * {
@@ -825,7 +741,7 @@ body {
 }
 
 .header {
-  background: conic-gradient(from 45deg at 107% -12%, rgba(27, 144, 216, 0.75) 115deg, rgba(44, 44, 44, 0.2), rgba(193, 18, 31, 0.75) 215deg), url(../../img/hero/hero-background-img.webp);
+  background: conic-gradient(from 45deg at 107% -12%, rgba(27, 144, 216, 0.75) 115deg, rgba(51, 51, 51, 0.2), rgba(193, 18, 31, 0.75) 215deg), url(../../img/hero/hero-background-img.webp);
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
@@ -834,7 +750,7 @@ body {
 }
 @media (min-width: 400px) {
   .header {
-    background: conic-gradient(from 45deg at 107% -7%, rgba(27, 144, 216, 0.75) 123deg, rgba(44, 44, 44, 0.2), rgba(193, 18, 31, 0.75) 215deg), url(../../img/hero/hero-background-img.webp);
+    background: conic-gradient(from 45deg at 107% -7%, rgba(27, 144, 216, 0.75) 123deg, rgba(51, 51, 51, 0.2), rgba(193, 18, 31, 0.75) 215deg), url(../../img/hero/hero-background-img.webp);
     background-position: bottom;
     background-repeat: no-repeat;
     background-size: cover;
@@ -842,7 +758,7 @@ body {
 }
 @media (min-width: 500px) {
   .header {
-    background: conic-gradient(from 45deg at 107% -7%, rgba(27, 144, 216, 0.75) 135deg, rgba(44, 44, 44, 0.2), rgba(193, 18, 31, 0.75) 215deg), url(../../img/hero/hero-background-img.webp);
+    background: conic-gradient(from 45deg at 107% -7%, rgba(27, 144, 216, 0.75) 135deg, rgba(51, 51, 51, 0.2), rgba(193, 18, 31, 0.75) 215deg), url(../../img/hero/hero-background-img.webp);
     background-position: bottom;
     background-repeat: no-repeat;
     background-size: cover;
