@@ -135,7 +135,9 @@ body {
 	}
 
 	&--contactItem {
-		
+		@media (max-width: 350px) and (min-height: 950px) {
+            font-size: clamp(calc(1.8rem + 2.1vh - 2rem), 4vw, calc(2.2rem + 2vh - 2rem));
+        }
 	}
 }
 

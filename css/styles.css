@@ -234,6 +234,12 @@ body {
   color: #991818;
   text-align: center;
 }
+@media (max-width: 350px) and (min-height: 950px) {
+  .paragraph--contactItem {
+    font-size: clamp(calc(1.8rem + 2.1vh - 2rem), 4vw, calc(2.2rem + 2vh - 2rem));
+  }
+}
+
 .btn {
   color: #f0f0f0;
   font-weight: 700;
@@ -910,7 +916,13 @@ body {
   gap: 0.5rem;
 }
 .main__contactSection .contactItem__icon {
-  width: 1.4rem;
+  width: 2rem;
+  height: 2rem;
+}
+@media (max-width: 350px) and (min-height: 950px) {
+  .main__contactSection .contactItem {
+    flex-direction: column;
+  }
 }
 
 .navbar {
