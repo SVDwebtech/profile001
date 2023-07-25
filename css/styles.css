@@ -237,6 +237,7 @@ body {
 .btn {
   color: #f0f0f0;
   font-weight: 700;
+  line-height: 1.6;
   letter-spacing: 1px;
 }
 .btn--primaryBtn {
@@ -394,6 +395,10 @@ body {
 .btn--secondaryBtn-portfolioCard {
   background-color: rgba(0, 48, 73, 0.65);
   padding: 0.125em 0.75em;
+}
+.btn__icon {
+  width: 2.3rem;
+  height: 2.3rem;
 }
 
 .cardPortfolio {
