@@ -145,7 +145,11 @@ body {
 	letter-spacing: 1px;
 
 	&--primaryBtn {
-		font-size: clamp(calc(2.1rem + 2.3vh - 2rem), 4vw, calc(2.8rem + 2.3vh - 2rem));
+		font-size: clamp(calc(2rem + 2.2vh - 2rem), 4vw, calc(2.4rem + 2.3vh - 2rem));
+	}
+	
+	&--primaryBtn-hero {
+		font-size: clamp(calc(2rem + 2.2vh - 2rem), 4.2vw, calc(2.4rem + 2.3vh - 2rem));
 	}
 
 	&--primaryBtn-white {
@@ -161,7 +165,12 @@ body {
 
 	&--secondaryBtn {
 		color: $cf-white;
-		font-size: clamp(calc(.8rem + 1.2vh), 3.9vw, calc(1rem + 1.2vh));
+		font-size: clamp(calc(1.8rem + 2vh - 2rem), 3.8vw, calc(2.2rem + 22vh - 2rem));
+	}
+
+	&--secondaryBtn-hero {
+		color: $cf-white;
+		font-size: clamp(calc(1.8rem + 2vh - 2rem), 3.8vw, calc(2.2rem + 2.2vh - 2rem));
 	}
 
 	&--secondaryBtn-portfolioCard {

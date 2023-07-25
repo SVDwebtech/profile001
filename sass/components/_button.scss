@@ -6,10 +6,10 @@
     gap: .5rem;
 
     background-color: $cp-darkBlue;
-    border-top: 2px solid $cp-dark;
-    border-left: 2px solid $cp-darkGrey;
-    border-bottom: 1px solid $cp-grey;
-    border-right: 1px solid $cp-lightGrey;
+    border-top: 1px solid $cp-darkGrey;
+    border-left: 1px solid $cp-grey;
+    border-bottom: 1px solid $cp-lightGrey;
+    border-right: 1px solid $cp-light;
     border-radius: $br-sm;
     box-shadow: $bs-btn;
 
@@ -32,14 +32,14 @@
     }
 
     &:active {
-        border-bottom: 1px solid $cp-darkGrey;
-        border-right: 1px solid $cp-darkGrey;
+        border-bottom: 1px solid $cp-grey;
+        border-right: 1px solid $cp-grey;
         box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, .7);
         transform: translateY(-1px);
     }
 
     &--primaryBtn {
-        background-color: $cp-darkBlue;
+        background-color: rgba($cp-darkBlue, .85);
     }
 
     &--primaryBtn-hero {
