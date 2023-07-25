@@ -251,12 +251,12 @@ body {
 }
 .btn--primaryBtn-white-portfolioCard {
   color: #c1121f;
-  font-size: clamp(calc(2.1rem + 2.3vh - 2rem), 4vw, calc(2.8rem + 2.3vh - 2rem));
+  font-size: clamp(calc(1.8rem + 2vh - 2rem), 3.8vw, calc(2.4rem + 2.1vh - 2rem));
   font-weight: 900;
 }
 .btn--secondaryBtn {
   color: #f0f0f0;
-  font-size: clamp(calc(1.8rem + 2vh - 2rem), 3.8vw, calc(2.2rem + 22vh - 2rem));
+  font-size: clamp(calc(1.8rem + 2vh - 2rem), 3.8vw, calc(2.2rem + 2.2vh - 2rem));
 }
 .btn--secondaryBtn-hero {
   color: #f0f0f0;
@@ -264,7 +264,7 @@ body {
 }
 .btn--secondaryBtn-portfolioCard {
   color: #f0f0f0;
-  font-size: clamp(calc(1.8rem + 2.3vh - 2rem), 4vw, calc(2.4rem + 2.3vh - 2rem));
+  font-size: clamp(calc(1.8rem + 2vh - 2rem), 3.8vw, calc(2.2rem + 2.2vh - 2rem));
 }
 
 .logo__text--devName {
@@ -344,12 +344,12 @@ body {
   align-items: center;
   gap: 0.5rem;
   background-color: #003049;
-  border-top: 1px solid #626262;
-  border-left: 1px solid #9c9c9c;
-  border-bottom: 1px solid #cccccc;
-  border-right: 1px solid #e8e8e8;
-  border-radius: 0.35rem;
-  box-shadow: 0px 1px 12px 2px rgba(51, 51, 51, 0.4);
+  border-top: 2px solid #626262;
+  border-left: 2px solid #9c9c9c;
+  border-bottom: 2px solid #cccccc;
+  border-right: 2px solid #e8e8e8;
+  border-radius: 0.45rem;
+  box-shadow: 0px 0px 8px 4px rgba(51, 51, 51, 0.5);
   width: fit-content;
   padding: 0.25em 1em;
   margin: 0 auto;
@@ -361,12 +361,12 @@ body {
   transform: translateY(0px);
 }
 .btn:hover {
-  box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.7);
+  box-shadow: 0px 0px 7px 3px rgba(0, 0, 0, 0.55);
   transform: translateY(-2px);
 }
 .btn:active {
-  border-bottom: 1px solid #9c9c9c;
-  border-right: 1px solid #9c9c9c;
+  border-bottom: 2px solid #9c9c9c;
+  border-right: 2px solid #9c9c9c;
   box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.7);
   transform: translateY(-1px);
 }
@@ -389,6 +389,10 @@ body {
 }
 .btn--secondaryBtn-hero {
   background-color: rgba(242, 242, 242, 0.1);
+  padding: 0.125em 0.75em;
+}
+.btn--secondaryBtn-portfolioCard {
+  background-color: rgba(0, 48, 73, 0.65);
   padding: 0.125em 0.75em;
 }
 

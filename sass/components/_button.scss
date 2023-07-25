@@ -6,11 +6,11 @@
     gap: .5rem;
 
     background-color: $cp-darkBlue;
-    border-top: 1px solid $cp-darkGrey;
-    border-left: 1px solid $cp-grey;
-    border-bottom: 1px solid $cp-lightGrey;
-    border-right: 1px solid $cp-light;
-    border-radius: $br-sm;
+    border-top: 2px solid $cp-darkGrey;
+    border-left: 2px solid $cp-grey;
+    border-bottom: 2px solid $cp-lightGrey;
+    border-right: 2px solid $cp-light;
+    border-radius: .45rem;
     box-shadow: $bs-btn;
 
     width: fit-content;
@@ -27,13 +27,13 @@
     }
 
     &:hover {
-        box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, .7);
+        box-shadow: 0px 0px 7px 3px rgba(0, 0, 0, .55);
         transform: translateY(-2px);
     }
 
     &:active {
-        border-bottom: 1px solid $cp-grey;
-        border-right: 1px solid $cp-grey;
+        border-bottom: 2px solid $cp-grey;
+        border-right: 2px solid $cp-grey;
         box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, .7);
         transform: translateY(-1px);
     }
@@ -63,6 +63,11 @@
 
     &--secondaryBtn-hero {
         background-color: rgba($cp-white, .1);
+        padding: .125em .75em;
+    }
+
+    &--secondaryBtn-portfolioCard {
+        background-color: rgba($cp-darkBlue, .65);
         padding: .125em .75em;
     }
 }
