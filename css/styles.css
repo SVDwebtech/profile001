@@ -360,6 +360,7 @@ body {
   width: fit-content;
   padding: 0.25em 1em;
   margin: 0 auto;
+  cursor: pointer;
   backface-visibility: hidden;
   transition: all 0.2s;
 }
@@ -645,6 +646,7 @@ body {
 }
 .navList__navItem {
   margin-bottom: 1rem;
+  cursor: pointer;
 }
 .navList__navLink {
   color: transparent;
