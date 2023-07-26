@@ -15,7 +15,7 @@
         min-height: 30vh;
 
          @media (max-width: 320px) and (min-height: 750px) {
-            min-height: 36vh;
+            min-height: 38vh;
         }
     }
 
@@ -63,6 +63,7 @@
 
         @media (max-width: 320px) and (min-height: 750px) {
             flex-direction: column;
+            gap: 1.5rem;
         }
     }
     
