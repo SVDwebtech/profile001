@@ -163,6 +163,17 @@ body {
   font-size: clamp(calc(2.1rem + 2.3vh - 2rem), 4.3vw, calc(2.5rem + 2.3vh - 2rem));
   text-align: center;
 }
+@media (min-width: 56.25em) {
+  .primaryHeading__headline {
+    font-size: clamp(2rem, 4.5vw, 5rem);
+  }
+  .primaryHeading__headline-firstLetter {
+    font-size: clamp(2.2rem, 6vw, 5.2rem);
+  }
+  .primaryHeading__subheading {
+    font-size: clamp(1rem, 2.8vw, 2.5rem);
+  }
+}
 
 .headingH2Container__headingH2 {
   color: #1b90d8;
@@ -804,6 +815,29 @@ body {
     background-size: cover;
   }
 }
+@media (min-width: 700px) {
+  .header {
+    background: conic-gradient(from 55deg at 107% -7%, rgba(27, 144, 216, 0.75) 135deg, rgba(51, 51, 51, 0.2), rgba(193, 18, 31, 0.75) 215deg), url(../../img/hero/hero-background-img.webp);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+@media (min-width: 900px) {
+  .header {
+    background: conic-gradient(from 65deg at 107% -7%, rgba(27, 144, 216, 0.75) 135deg, rgba(51, 51, 51, 0.2), rgba(193, 18, 31, 0.75) 215deg), url(../../img/hero/hero-background-img.webp);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+@media (min-width: 56.25em) {
+  .header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
 .header__navbar {
   margin-bottom: calc(10vh - 5rem);
 }
@@ -812,6 +846,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  min-width: 100%;
   position: relative;
 }
 .header__hero > * {
@@ -822,6 +857,42 @@ body {
     margin-bottom: calc(10vh - 4rem);
   }
 }
+.header__hero .heroContentContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+@media (min-width: 37.5em) {
+  .header__hero .heroContentContainer {
+    max-width: 587px;
+  }
+}
+@media (min-width: 56.25em) {
+  .header__hero .heroContentContainer {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    min-width: min(95%, 950px);
+  }
+}
+@media (min-width: 75em) {
+  .header__hero .heroContentContainer {
+    min-width: min(95%, 1250px);
+  }
+}
+.header__hero .heroTextContentContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 5vh;
+}
+@media (min-width: 56.25em) {
+  .header__hero .heroTextContentContainer {
+    width: 52%;
+  }
+}
 .header__hero .figure {
   margin-bottom: calc(6vh - 3.5rem);
 }
@@ -830,11 +901,31 @@ body {
     margin-bottom: calc(6vh - 4rem);
   }
 }
+@media (min-width: 56.25em) {
+  .header__hero .figure {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 48%;
+  }
+}
+@media (min-width: 900px) and (min-height: 750px) {
+  .header__hero .figure {
+    justify-content: flex-start;
+    align-self: flex-start;
+  }
+}
 .header__hero .figure__img {
   border: 5px solid #f2f2f2;
   border-radius: 50%;
   box-shadow: 3px 7px 5px 5px rgba(0, 0, 0, 0.3);
   width: clamp(calc(8rem + 15vh - 4rem), 55vw, calc(18rem + 20vh - 12rem));
+}
+@media (min-width: 56.25em) {
+  .header__hero .figure__img {
+    border-radius: 1rem;
+    width: 85%;
+  }
 }
 .header__hero .primaryHeading > * {
   display: block;
@@ -847,18 +938,41 @@ body {
     margin-bottom: calc(10vh - 4rem);
   }
 }
+@media (min-width: 56.25em) {
+  .header__hero .primaryHeading__subheading {
+    margin-bottom: calc(10vh - 2.25rem);
+  }
+  .header__hero .primaryHeading__paragraph {
+    max-width: 548px;
+  }
+}
+@media (min-width: 900px) and (min-height: 700px) {
+  .header__hero .primaryHeading__subheading {
+    margin-bottom: calc(10vh - 3.5rem);
+  }
+}
 .header__hero .cta {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
   justify-content: center;
   align-items: center;
+  gap: 1.5rem;
   width: 100%;
 }
 @media (min-width: 450px) {
   .header__hero .cta {
     flex-direction: row;
     gap: 2rem;
+  }
+}
+@media (min-height: 900px) and (min-width: 600px) {
+  .header__hero .cta {
+    flex-direction: column;
+  }
+}
+@media (min-height: 650px) and (min-width: 900px) {
+  .header__hero .cta {
+    flex-direction: column;
   }
 }
 

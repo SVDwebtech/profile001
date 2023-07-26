@@ -37,6 +37,37 @@
         background-size: cover;
     }
 
+    @media (min-width: 700px) {
+        background: conic-gradient(
+                from 55deg at 107% -7%, 
+                rgba($cp-blue, .75) 135deg, 
+                rgba($cp-dark, .2), 
+                rgba($cp-red, .75) 215deg),
+                url(../../img/hero/hero-background-img.webp);
+        background-position: bottom;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    @media (min-width: 900px) {
+        background: conic-gradient(
+                from 65deg at 107% -7%, 
+                rgba($cp-blue, .75) 135deg, 
+                rgba($cp-dark, .2), 
+                rgba($cp-red, .75) 215deg),
+                url(../../img/hero/hero-background-img.webp);
+        background-position: bottom;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+
+    @include respond(tab-land) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
     &__navbar {
         margin-bottom: calc(10vh - 5rem);
     }
@@ -47,6 +78,8 @@
         justify-content: center;
         align-items: center;
 
+        min-width: 100%;
+
         position: relative;
 
         & > * {
@@ -56,6 +89,42 @@
                 margin-bottom: calc(10vh - 4rem);
             }
         }
+
+        .heroContentContainer {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+
+            @include respond(tab-port) {
+                max-width: 587px;
+            }
+            
+            @include respond(tab-land) {
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+
+                min-width: min(95%, 950px);
+            }
+
+            @include respond(desk) {
+                min-width: min(95%, 1250px);
+            }
+        }
+
+        .heroTextContentContainer {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+
+            gap: 5vh;
+
+            @include respond(tab-land) {
+                width: 52%;                  
+            }
+        } 
         
         .figure {
             margin-bottom: calc(6vh - 3.5rem);
@@ -64,11 +133,28 @@
                 margin-bottom: calc(6vh - 4rem);
             }
 
+            @include respond(tab-land) {
+                display: flex;
+                justify-content: center;
+                align-items: flex-start;
+                width: 48%;                   
+            }
+
+            @media (min-width: 900px) and (min-height: 750px) {
+                justify-content: flex-start;
+                align-self: flex-start;
+            }
+
             &__img {
                 border: 5px solid $cp-white;
                 border-radius: 50%;
                 box-shadow: 3px 7px 5px 5px rgba(0, 0, 0, .3);
                 width: clamp(calc(8rem + 15vh - 4rem), 55vw, calc(18rem + 20vh - 12rem));
+
+                @include respond(tab-land) {
+                    border-radius: 1rem;
+                    width: 85%;                  
+                }
             }
         }
 
@@ -84,20 +170,47 @@
                     margin-bottom: calc(10vh - 4rem);
                 }
             }
+
+            @include respond(tab-land) {
+                &__subheading {
+                    margin-bottom: calc(10vh - 2.25rem);
+                }
+
+                &__paragraph {
+                    max-width: 548px;
+                }
+            }
+
+            @media (min-width: 900px) and (min-height: 700px) {
+                &__subheading {
+                    margin-bottom: calc(10vh - 3.5rem);
+                }
+            }
         }
 
         .cta {
             display: flex;
             flex-direction: column;
+            justify-content: center;
+            align-items: center;
             gap: 1.5rem;
+
+            width: 100%;
+            
             @media (min-width: 450px) {
                 flex-direction: row;
                 gap: 2rem;
             }
-            justify-content: center;
-            align-items: center;
 
-            width: 100%;
+            @media (min-height: 900px) and (min-width: 600px) {
+                flex-direction: column;
+            }
+
+            @media (min-height: 650px) and (min-width: 900px) {
+                flex-direction: column;
+            }
+
+            
         }
-    } 
+    }
 }

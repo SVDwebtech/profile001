@@ -44,6 +44,20 @@ body {
 		font-size: clamp(calc(2.1rem + 2.3vh - 2rem), 4.3vw, calc(2.5rem + 2.3vh - 2rem));
 		text-align: center;
 	}
+
+	@include respond(tab-land) {
+		&__headline {
+			font-size: clamp(2rem, 4.5vw, 5rem);
+		}
+
+		&__headline-firstLetter {
+			font-size: clamp(2.2rem, 6vw, 5.2rem);
+		}
+
+		&__subheading {
+			font-size: clamp(1rem, 2.8vw, 2.5rem);
+		}
+	}
 }
 
 .headingH2Container {
