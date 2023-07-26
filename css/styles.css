@@ -235,9 +235,9 @@ body {
   color: #991818;
   text-align: center;
 }
-@media (max-width: 350px) and (min-height: 950px) {
+@media (max-width: 350px) and (min-height: 750px) {
   .paragraph--contactItem {
-    font-size: clamp(calc(1.8rem + 2.1vh - 2rem), 4vw, calc(2.2rem + 2vh - 2rem));
+    font-size: clamp(calc(1.8rem + 2.2vh - 2rem), 4vw, calc(2.2rem + 2.2vh - 2rem));
   }
 }
 
@@ -414,24 +414,6 @@ body {
   box-shadow: 0 0 7px 3px rgba(51, 51, 51, 0.4);
   position: relative;
 }
-.cardPortfolio__cardImage {
-  filter: blur(2px);
-  -webkit-filter: blur(2px);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 100%;
-  min-height: 20rem;
-}
-.cardPortfolio__cardImage--light {
-  background-image: url("../../img/portfolioProjects/lightSwitch002.webp");
-}
-.cardPortfolio__cardImage--memory {
-  background-image: url("../../img/portfolioProjects/memoryGame014.webp");
-}
-.cardPortfolio__cardImage--webdev {
-  background-image: url("../../img/portfolioProjects/prtfolio-pic-profile001.webp");
-}
 .cardPortfolio__cardContent {
   display: flex;
   flex-direction: column;
@@ -442,14 +424,10 @@ body {
   padding: 1rem;
   width: 100%;
   height: 100%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 200;
 }
 .cardPortfolio__cta {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 2rem;
@@ -922,7 +900,7 @@ body {
   width: 2rem;
   height: 2rem;
 }
-@media (max-width: 350px) and (min-height: 950px) {
+@media (max-width: 350px) and (min-height: 750px) {
   .main__contactSection .contactItem {
     flex-direction: column;
   }
