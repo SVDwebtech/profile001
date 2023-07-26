@@ -257,4 +257,8 @@ body {
 	color:  $cf-darkBlue;
 	font-size: clamp(calc(2.1rem + 2.3vh - 2rem), 4.3vw, calc(2.5rem + 2.3vh - 2rem));
 	font-weight: 700;
+
+	input, textarea {
+		font-size: clamp(calc(2.1rem + 2.3vh - 2rem), 4.3vw, calc(2.5rem + 2.3vh - 2rem));
+	}
 }
