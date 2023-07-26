@@ -195,6 +195,7 @@ body {
 }
 .headingH3Container__headingH3--blue {
   color: #003049;
+  line-height: 1.2;
 }
 .headingH3Container__headingH3--project {
   color: #991818;
