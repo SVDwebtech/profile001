@@ -4,28 +4,32 @@
 
     position: relative;
 
-    // &__cardImage {
-    //     filter: blur(2px);
-    //     -webkit-filter: blur(2px);
-    //     background-position: center;
-    //     background-repeat: no-repeat;
-    //     background-size: cover;
+    &__cardImage {
+        filter: blur(2px);
+        -webkit-filter: blur(2px);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
 
-    //     width: 100%;
-    //     min-height: 25rem;
-    // }
+        width: 100%;
+        min-height: 30vh;
 
-    // &__cardImage--light {
-    //     background-image: url("../../img/portfolioProjects/lightSwitch002.webp");
-    // }
+         @media (max-width: 320px) and (min-height: 750px) {
+            min-height: 36vh;
+        }
+    }
 
-    // &__cardImage--memory {
-    //     background-image: url("../../img/portfolioProjects/memoryGame014.webp");
-    // }
+    &__cardImage--light {
+        background-image: url("../../img/portfolioProjects/lightSwitch002.webp");
+    }
 
-    // &__cardImage--webdev {
-    //     background-image: url("../../img/portfolioProjects/prtfolio-pic-profile001.webp");
-    // }
+    &__cardImage--memory {
+        background-image: url("../../img/portfolioProjects/memoryGame014.webp");
+    }
+
+    &__cardImage--webdev {
+        background-image: url("../../img/portfolioProjects/prtfolio-pic-profile001.webp");
+    }
 
     &__cardContent {
         display: flex;
@@ -42,20 +46,24 @@
         width: 100%;
         height: 100%;
         
-        // position: absolute;
-        // top: 50%;
-        // left: 50%;
-        // transform: translate(-50%, -50%);
-        // z-index: 200;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 200;
     }
 
     &__cta {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         justify-content: center;
         align-items: center;
 
         gap: 2rem;
+
+        @media (max-width: 320px) and (min-height: 750px) {
+            flex-direction: column;
+        }
     }
     
 }
