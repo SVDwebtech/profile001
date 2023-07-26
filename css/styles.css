@@ -120,6 +120,7 @@ body {
   	of the box. */
   box-sizing: border-box;
   position: relative;
+  background-color: #f2f2f2;
 }
 
 ol, ul {
@@ -979,6 +980,12 @@ body {
 .main {
   background-color: #f2f2f2;
   padding: 3rem 2rem 0;
+}
+@media (min-width: 500px) {
+  .main {
+    margin: 0 auto;
+    max-width: 90%;
+  }
 }
 .main > * {
   margin-bottom: 4rem;
