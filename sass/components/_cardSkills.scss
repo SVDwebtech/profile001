@@ -8,17 +8,13 @@
 
     @include respond(tab-port) {
         flex-direction: row;
+        justify-content: space-around;
         align-items: flex-start;
         flex-wrap: wrap;
 
         gap: 1rem;
     }
 
-    @include respond(tab-land) {
-        justify-content: space-around;
-
-        gap: 1rem;
-    }
 }
 
 .cardSkills {
