@@ -1,8 +1,25 @@
+.cardSkillsContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    gap: .5rem;
+
+    @include respond(tab-port) {
+        flex-direction: row;
+        align-items: flex-start;
+        flex-wrap: wrap;
+
+        gap: 1rem;
+    }
+}
+
 .cardSkills {
     background-color: $cp-white;
 
     max-width: 450px;
-    padding: 2.5rem;
+    padding: 1rem;
     margin: 0 auto .5rem;
     
     &__figure {
@@ -13,5 +30,21 @@
         display: block;
         width: clamp(5rem, 18vw, 10rem); 
         margin: 0 auto;   
+    }
+
+    @include respond(tab-port) {
+        max-width: 250px;
+
+        &__img {
+            width: clamp(calc(1.8rem + 4vw), 8vh, calc(4.2rem + 4vw));
+        }
+    }
+
+    @include respond(tab-land) {
+        max-width: 373px;
+
+        &__img {
+            width: clamp(calc(1.8rem + 4vw), 8vh, calc(4.2rem + 4vw));
+        }
     }
 }

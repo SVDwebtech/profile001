@@ -1,8 +1,36 @@
+.cardPortfolioContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+
+    gap: 3rem;
+
+    @media (min-width: 600px) {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+
+        gap: 3rem;
+    } 
+}
+
 .cardPortfolio {
     border-radius: 5px;
     box-shadow: 0 0 7px 3px rgba($cp-dark, .4);
 
+    min-width: 100%;
+
     position: relative;
+    
+    
+    @media (min-width: 785px) {
+        min-width: min(310px, 100%);  
+    }
+
+    @include respond(desk) {
+        min-width: min(420px, 100%);  
+    }
 
     &__cardImage {
         filter: blur(2px);
@@ -12,9 +40,13 @@
         background-size: cover;
 
         width: 100%;
-        min-height: 30vh;
+        min-height: 32vh;
 
-         @media (max-width: 320px) and (min-height: 750px) {
+        @include respond(tab-land) {
+            min-height: 36vh;
+        }
+
+        @media (max-width: 320px) and (min-height: 750px) {
             min-height: 38vh;
         }
     }
@@ -59,7 +91,11 @@
         justify-content: center;
         align-items: center;
 
-        gap: 2rem;
+        gap: 3rem;
+
+        @include respond(tab-port) {
+            gap: 1.25rem;
+        }
 
         @media (max-width: 320px) and (min-height: 750px) {
             flex-direction: column;

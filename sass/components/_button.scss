@@ -3,7 +3,7 @@
     justify-content: center;
     align-items: center;
 
-    gap: .5rem;
+    gap: .25rem;
 
     background-color: $cp-darkBlue;
     border-top: 2px solid $cp-darkGrey;
@@ -53,7 +53,7 @@
 
     &--primaryBtn-white-portfolioCard {
         background-color: rgba($cp-white, .8);
-        padding: .175em 1.125em;
+        padding: .175em .5em;
     }
 
     &--secondaryBtn {
@@ -75,5 +75,11 @@
     &__icon {
         width: 2.3rem;
         height: 2.3rem;
+    }
+}
+
+.aboutSection > .btn {
+    @include respond(tab-land) {
+        margin-top: 2rem;
     }
 }
