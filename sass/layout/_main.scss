@@ -79,6 +79,69 @@
             margin-bottom: 2rem;
         }
 
+        .textAndContactMessageContainer {
+            @include respond(desk) {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: flex-start;
+
+                gap: 3rem;
+
+                .introParAndContactItemsContainer {
+                    margin-top: 3rem;
+                    max-width: 42%;
+                }
+
+                .contactMessageContainer {
+                    flex: 1 0 50%;
+                    margin-top: 0rem;
+                }
+            }
+        }
+
+        .introParAndContactItemsContainer {
+            @include respond(tab-land) {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: flex-start;
+
+                gap: 3rem;
+
+                .introParagraph {
+                    flex: 1 0 40%;
+                    order: 0;
+                }
+
+                .contactItemsContainer {
+                    justify-content: flex-start;
+                    margin-top: .25rem;
+                    min-width: fit-content;
+                }
+            }
+
+            @include respond(desk) {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: flex-start;
+
+                gap: 3rem;
+
+                .introParagraph {
+                    flex: 1 0 40%;
+                    order: 0;
+                }
+
+                .contactItemsContainer {
+                    justify-content: flex-start;
+                    margin-top: .25rem;
+                    min-width: fit-content;
+                }
+            }
+        }
+
         .contactItemsContainer, .contactMessageContainer {
             display: flex;
             flex-direction: column;
@@ -88,8 +151,15 @@
             gap: 1rem;
 
             margin-top: 3rem;
+        }
 
-
+        .contactItemsContainer {
+            @include respond(tab-port) {
+                align-items: flex-start;
+                .headingH3Container {
+                    margin-bottom: 1rem;
+                }
+            }
         }
 
         .contactItem {
