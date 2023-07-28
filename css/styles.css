@@ -229,7 +229,7 @@ body {
 }
 .headingH3Container__headingH3--project {
   color: #991818;
-  font-size: 1.8rem;
+  font-size: clamp(calc(2.3rem + 2vh - 2rem), 2.5vw, calc(3.3rem + 2vh - 2rem));
 }
 .headingH3Container__headingH3--skills {
   color: #003049;
@@ -335,7 +335,7 @@ body {
 }
 @media (min-height: 950px) {
   .btn--primaryBtn-white-portfolioCard {
-    font-size: clamp(calc(1.7rem + 1.9vh - 2rem), 3.5vw, calc(2.3rem + 1.9vh - 2rem));
+    font-size: clamp(calc(1.7rem + 1.8vh - 2rem), 3.5vw, calc(2.3rem + 1.8vh - 2rem));
   }
 }
 .btn--secondaryBtn {
@@ -352,7 +352,7 @@ body {
 }
 @media (min-height: 950px) {
   .btn--secondaryBtn-portfolioCard {
-    font-size: clamp(calc(1.7rem + 1.9vh - 2rem), 3.5vw, calc(2.3rem + 1.9vh - 2rem));
+    font-size: clamp(calc(1.7rem + 1.8vh - 2rem), 3.5vw, calc(2.3rem + 1.8vh - 2rem));
   }
 }
 
@@ -580,16 +580,16 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
-  min-height: 32vh;
+  min-height: 30vh;
 }
 @media (min-width: 56.25em) {
   .cardPortfolio__cardImage {
     min-height: 36vh;
   }
 }
-@media (max-width: 320px) and (min-height: 750px) {
+@media (min-width: 785px) and (max-width: 1200px) and (min-height: 950px) {
   .cardPortfolio__cardImage {
-    min-height: 38vh;
+    min-height: 45vh;
   }
 }
 .cardPortfolio__cardImage--light {
@@ -629,10 +629,10 @@ body {
     gap: 1.25rem;
   }
 }
-@media (max-width: 320px) and (min-height: 750px) {
+@media (min-width: 785px) and (max-width: 1200px) and (min-height: 950px) {
   .cardPortfolio__cta {
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 1.75rem;
   }
 }
 
@@ -655,6 +655,7 @@ body {
 
 .cardSkills {
   background-color: #f2f2f2;
+  min-width: 320px;
   max-width: 450px;
   padding: 1rem;
   margin: 0 0 0.5rem;

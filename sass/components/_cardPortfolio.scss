@@ -45,14 +45,18 @@
         background-size: cover;
 
         width: 100%;
-        min-height: 32vh;
+        min-height: 30vh;
 
         @include respond(tab-land) {
             min-height: 36vh;
         }
 
-        @media (max-width: 320px) and (min-height: 750px) {
-            min-height: 38vh;
+        // @media (max-width: 320px) and (min-height: 750px) {
+        //     min-height: 32vh;
+        // }
+
+        @media (min-width: 785px) and (max-width: 1200px) and (min-height: 950px) {
+            min-height: 45vh;
         }
     }
 
@@ -102,9 +106,14 @@
             gap: 1.25rem;
         }
 
-        @media (max-width: 320px) and (min-height: 750px) {
+        // @media (max-width: 320px) and (min-height: 750px) {
+        //     flex-direction: column;
+        //     gap: 1.5rem;
+        // }
+
+        @media (min-width: 785px) and (max-width: 1200px) and (min-height: 950px) {
             flex-direction: column;
-            gap: 1.5rem;
+            gap: 1.75rem;
         }
     }
     
