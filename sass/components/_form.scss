@@ -5,6 +5,10 @@
   align-items: stretch;
 
   gap: 1rem;
+
+  @include respond(tab-land) {
+    gap: .125rem;
+  }
 }
 
 .formGroup {

@@ -1,6 +1,6 @@
 .main {
     background-color: $cp-white;
-    padding: 3rem 2rem 0;
+    padding: 7rem 2rem 0;
 
     @media (min-width: 500px) {
         margin: 0 auto;
@@ -8,7 +8,7 @@
     }
 
     & > * {
-        margin-bottom: 4rem;
+        margin-bottom: 7rem;
     }
 
     &__aboutSection {
@@ -162,7 +162,7 @@
         }
 
         .contactItemsContainer {
-            @include respond(tab-port) {
+            @include respond(tab-land) {
                 align-items: flex-start;
                 .headingH3Container {
                     margin-bottom: 1rem;
@@ -180,6 +180,7 @@
             @include respond(tab-port) {
                 flex-direction: row;
                 flex-wrap: wrap;
+                justify-content: center;
 
                 row-gap: .75rem;
                 column-gap: 4rem;

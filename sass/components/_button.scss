@@ -18,6 +18,10 @@
     padding: .25em 1em;
     margin: 0 auto;
 
+    @include respond(tab-land) {
+        margin: 0 auto 0 0;
+    }
+
     cursor: pointer;
     backface-visibility: hidden;
     transition: all .2s;

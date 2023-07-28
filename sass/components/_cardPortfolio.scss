@@ -13,6 +13,11 @@
 
         gap: 3rem;
     } 
+
+    @include respond(tab-land) {
+        justify-content: space-around;
+        gap: 5rem;
+    }
 }
 
 .cardPortfolio {
