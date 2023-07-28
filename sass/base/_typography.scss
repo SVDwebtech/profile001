@@ -157,6 +157,10 @@ body {
 	font-weight: 700;
 	text-align: center;
 
+	@include respond(tab-port) {
+		text-align: justify;
+	}
+
 	&--white {
 		color: $cf-white;
 	}

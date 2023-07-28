@@ -252,6 +252,11 @@ body {
   font-weight: 700;
   text-align: center;
 }
+@media (min-width: 37.5em) {
+  .paragraph {
+    text-align: justify;
+  }
+}
 .paragraph--white {
   color: #f0f0f0;
 }
