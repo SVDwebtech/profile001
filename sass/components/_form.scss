@@ -27,16 +27,17 @@
   padding: 0.5rem;
 }
 
-// .submitButton {
-//   background-color: #4CAF50;
-//   color: #fff;
-//   border: none;
-//   padding: 0.5rem 1rem;
-//   font-size: 1rem;
-//   border-radius: 4px;
-//   cursor: pointer;
-// }
+.contactFormNameDetailsContainer, .contactFormNumberDetailsContainer {
+    @include respond(tab-port) {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
 
-// .submitButton:hover {
-//   background-color: #45a049;
-// }
+        gap: 2rem;
+    }
+
+    .formGroup {
+        flex: 1 0 250px;
+    }
+}

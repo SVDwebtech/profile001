@@ -86,10 +86,10 @@
                 justify-content: space-between;
                 align-items: flex-start;
 
-                gap: 3rem;
+                gap: 5rem;
 
                 .introParAndContactItemsContainer {
-                    margin-top: 3rem;
+                    // margin-top: 3rem;
                     max-width: 42%;
                 }
 
@@ -107,14 +107,15 @@
                 justify-content: space-between;
                 align-items: flex-start;
 
-                gap: 3rem;
+                gap: 5rem;
 
                 .introParagraph {
-                    flex: 1 0 40%;
+                    flex: 0 0 45%;
                     order: 0;
                 }
 
                 .contactItemsContainer {
+                    flex: 0 0 55%;
                     justify-content: flex-start;
                     margin-top: .25rem;
                     min-width: fit-content;
@@ -129,10 +130,10 @@
 
                 gap: 3rem;
 
-                .introParagraph {
-                    flex: 1 0 40%;
-                    order: 0;
-                }
+                // .introParagraph {
+                //     flex: 1 0 40%;
+                //     order: 0;
+                // }
 
                 .contactItemsContainer {
                     justify-content: flex-start;
@@ -151,6 +152,13 @@
             gap: 1rem;
 
             margin-top: 3rem;
+
+            @include respond(tab-port) {
+                align-items: stretch;
+                .headingH3Container {
+                    margin-bottom: 1rem;
+                }
+            }
         }
 
         .contactItemsContainer {
@@ -159,6 +167,30 @@
                 .headingH3Container {
                     margin-bottom: 1rem;
                 }
+            }
+        }
+
+        .contactItemsInnerContainer {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            gap: .75rem;
+
+            @include respond(tab-port) {
+                flex-direction: row;
+                flex-wrap: wrap;
+
+                row-gap: .75rem;
+                column-gap: 4rem;
+            }
+
+            @include respond(tab-land) {
+                flex-direction: column;
+                flex-wrap: nowrap;
+                align-items: flex-start;
+
+                gap: 1.5rem;
             }
         }
 

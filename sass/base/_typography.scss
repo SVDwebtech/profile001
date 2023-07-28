@@ -138,6 +138,12 @@ body {
 		}
 	}
 
+	.contactForm__headingH3 {
+		@include respond(tab-port) {
+			text-align: left;
+		}
+	}
+
 	 &__subheadingH3 {
 	 	color: $cf-red;
 		font-size: clamp(calc(1.7rem + 2.3vh - 2rem), 4vw, calc(2.3rem + 2.3vh - 2rem));
