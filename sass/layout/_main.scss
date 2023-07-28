@@ -34,6 +34,18 @@
         background-position-x: center;
         background-position-y: center;
 
+        @include respond(tab-land) {
+            background-size: clamp(18rem, 35vw, 35rem);
+        }
+
+        @include respond(desk) {
+            background-size: clamp(10rem, 27vw, 27rem);
+        }
+
+        @include respond(big-desk) {
+            background-size: clamp(10rem, 20vw, 20rem);
+        }
+
         width: 100%;
         height: 100%;
 

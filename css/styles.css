@@ -1294,6 +1294,21 @@ body {
   left: 0;
   z-index: -100;
 }
+@media (min-width: 56.25em) {
+  .main__aboutSection::after {
+    background-size: clamp(18rem, 35vw, 35rem);
+  }
+}
+@media (min-width: 75em) {
+  .main__aboutSection::after {
+    background-size: clamp(10rem, 27vw, 27rem);
+  }
+}
+@media (min-width: 112.5em) {
+  .main__aboutSection::after {
+    background-size: clamp(10rem, 20vw, 20rem);
+  }
+}
 .main__portfolioSection {
   display: flex;
   flex-direction: column;
