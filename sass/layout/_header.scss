@@ -60,6 +60,18 @@
         background-repeat: no-repeat;
         background-size: cover;
     }
+
+    @media (min-width: 900px) and (min-height: 750px) {
+        background: conic-gradient(
+                from 50deg at 107% -7%, 
+                rgba($cp-blue, .75) 135deg, 
+                rgba($cp-dark, .2), 
+                rgba($cp-red, .75) 215deg),
+                url(../../img/hero/hero-background-img.webp);
+        background-position: bottom;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
     
 
     @include respond(tab-land) {
@@ -111,6 +123,12 @@
             @include respond(desk) {
                 min-width: min(95%, 1250px);
             }
+
+            @media (min-width: 900px) and (min-height: 750px) {
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: center;
+            }
         }
 
         .heroTextContentContainer {
@@ -140,9 +158,14 @@
                 width: 48%;                   
             }
 
-            @media (min-width: 900px) and (min-height: 750px) {
+            @media (min-width: 900px) and (max-height: 750px) {
                 justify-content: flex-start;
                 align-self: flex-start;
+            }
+
+            @media (min-width: 900px) and (min-height: 750px) {
+                justify-content: center;
+                align-self: center;
             }
 
             &__img {
@@ -154,6 +177,11 @@
                 @include respond(tab-land) {
                     border-radius: 1rem;
                     width: 85%;                  
+                }
+
+                @media (min-width: 900px) and (min-height: 750px) {
+                    border-radius: 50%;
+                    width: clamp(calc(7rem + 14vh - 4rem), 50vw, calc(17rem + 19vh - 12rem));
                 }
             }
         }
@@ -184,6 +212,12 @@
             @media (min-width: 900px) and (min-height: 700px) {
                 &__subheading {
                     margin-bottom: calc(10vh - 3.5rem);
+                }
+            }
+
+            @media (min-width: 900px) and (min-height: 750px) {
+                &__paragraph {
+                    min-width: 600px;
                 }
             }
         }
