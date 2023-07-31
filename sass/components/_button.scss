@@ -1,137 +1,90 @@
-.btn {
-	&,
-	&:link,
-	&:visited {
-		display: inline-block;
+.btn {  
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-		text-align: center;
-		text-decoration: none;
-		border-radius: 5px;
-		outline: none;
+    gap: .25rem;
 
-		padding: .3em 1.5em;
+    background-color: $cp-darkBlue;
+    border-top: 2px solid $cp-darkGrey;
+    border-left: 2px solid $cp-grey;
+    border-bottom: 2px solid $cp-lightGrey;
+    border-right: 2px solid $cp-light;
+    border-radius: .45rem;
+    box-shadow: $bs-btn;
 
-		backface-visibility: hidden;
-		transition: box-shadow .2s, transform .2s, border .2s;
-	}
+    width: fit-content;
 
-	&--onGreyBackground {
-		color: $color-font-brightRed;
-		font-size: 1.4rem;
-		font-weight: 600;
-		background-color: transparent;
-		border: 2px solid $color-font-brightRed;
-		border-bottom: 2px solid rgb(177, 10, 10);
-		border-right: 2px solid rgb(177, 10, 10);
-		// padding: .15em 1em;
+    padding: .25em 1em;
+    margin: 0 auto;
 
-		&:hover {
-			border: 2px solid $color-font-brightRed;
-			box-shadow: 0 .5rem .5rem rgba(0, 0, 0, .4);
-			transform: translateY(-.2rem);
-		}
+    cursor: pointer;
+    backface-visibility: hidden;
+    transition: all .2s;
 
-		&:active,
-		&:focus {
-			outline: none;
-			transform: translateY(.2rem);
-			box-shadow: 0 .5rem 2rem rgba(255, 255, 255, .3);
-		}
-	}
+    &:link, &:visited {
+        text-decoration: none;
+        transform: translateY(0px);
+    }
 
-	&--onBlueBackground {
-		color: $color-font-white;
-		font-size: 1.4rem;
-		font-weight: 600;
-		background-color: transparent;
-		border: 2px solid $color-font-white;
-		border-bottom: 2px solid rgba(255, 255, 255, 0.472);
-		border-right: 2px solid rgba(255, 255, 255, 0.472);
-		// padding: .15em 1em;
+    &:hover {
+        box-shadow: 0px 0px 7px 3px rgba(0, 0, 0, .55);
+        transform: translateY(-2px);
+    }
 
-		&:hover {
-			border: 2px solid $color-font-white;
-			box-shadow: 0 .5rem .5rem rgba(#eeeeeef1, .4);
-			transform: translateY(-.2rem);
-		}
+    &:active {
+        border-bottom: 2px solid $cp-grey;
+        border-right: 2px solid $cp-grey;
+        box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, .7);
+        transform: translateY(-1px);
+    }
 
-		&:active,
-		&:focus {
-			outline: none;
-			transform: translateY(.2rem);
-			box-shadow: 0 .5rem 2rem rgba(255, 255, 255, .3);
-		}
-	}
+    &--primaryBtn {
+        background-color: rgba($cp-darkBlue, .85);
+    }
+
+    &--primaryBtn-hero {
+        background-color: rgba($cp-white, .4);
+    }
+
+    &--primaryBtn-white {
+        background-color: rgba($cp-white, .8);
+    }
+
+    &--primaryBtn-white-portfolioCard {
+        background-color: rgba($cp-white, .8);
+        padding: .175em .5em;
+    }
+
+    &--secondaryBtn {
+        background-color: rgba($cp-darkBlue, .5);
+        padding: .0225em .5em;
+    }
+
+    &--secondaryBtn-hero {
+        background-color: rgba($cp-white, .1);
+        padding: .125em .75em;
+    }
+
+    &--secondaryBtn-portfolioCard {
+        background-color: rgba($cp-darkBlue, .65);
+        padding: .125em .75em;
+    }
+
+    &__icon {
+        width: 2.3rem;
+        height: 2.3rem;
+    }
 }
-// times icons for close buttons
-.btnClose {
-	&,
-	&:link,
-	&:visited {
-		text-decoration: none;
-	}
 
-	&__iconWrapper {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		height: 5rem;
-		width: 5rem;
-	}
-
-	&__icon {
-		// close button for the about popup in the about section
-		&--aboutpopup {
-			color: $color-font-darkGrey;
-			font-size: 3rem;
-			font-weight: 600;
-
-			backface-visibility: hidden;
-			transition: all .2s;
-
-			&:hover {
-				color: $color-font-white;
-				font-size: 5rem;
-				transform: translateY(-.2rem);
-			}
-
-			&:active,
-			&:focus {
-				outline: none;
-				transform: translateY(.2rem);
-			}
-		}
-		// close button for the card popup in the skills section
-		&--cardpopup {
-			color: $color-font-darkGrey;
-			font-size: 2rem;
-			font-weight: 600;
-
-			backface-visibility: hidden;
-			transition: all .2s;
-
-			&:hover {
-				color: $color-font-white;
-				font-size: 3.5rem;
-				cursor: pointer;
-				transform: translateY(-.2rem);
-			}
-
-			&:active,
-			&:focus {
-				outline: none;
-				transform: translateY(.2rem);
-			}
-		}
-	}
+.aboutSection > .btn {
+    @include respond(tab-land) {
+        margin-top: 2rem;
+    }
 }
-// a classlist for the mock buttons with a hover effect on the tool description categories
-.mockbtn {
-	border-bottom: 1px solid $color-primary-darkBlue;
-	padding-bottom: .3rem;
-}
-//  classlist for the right arrow with a hover effect on the tool description categories
-.noneRarr {
-	visibility: hidden;
-	opacity: 0;
+
+@include respond(tab-land) {
+    .aboutContactMeBtn, .skillsContactMeBtn, .sendMessageBtn {
+        margin: 0 auto 0 0;
+    }
 }

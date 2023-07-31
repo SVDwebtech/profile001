@@ -1,0 +1,53 @@
+.cardSkillsContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    gap: .5rem;
+
+    @include respond(tab-port) {
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: flex-start;
+        flex-wrap: wrap;
+
+        gap: 1rem;
+    }
+
+}
+
+.cardSkills {
+    background-color: $cp-white;
+
+    min-width: 320px;
+    max-width: 450px;
+    padding: 1rem;
+    margin: 0 0 .5rem;
+    
+    &__figure {
+        margin-bottom: 1rem;
+    }
+
+    &__img {
+        display: block;
+        width: clamp(calc(1.4rem + 3.2vw), 6.2vh, calc(3.8rem + 3.2vw));
+        margin: 0 auto;   
+    }
+
+    @include respond(tab-port) {
+        max-width: 250px;
+
+        &__img {
+            width: clamp(calc(1.3rem + 3vw), 6vh, calc(3.6rem + 3vw));
+        }
+    }
+
+    @include respond(tab-land) {
+        min-width: 310px;
+
+        &__img {
+            width: clamp(calc(1.4rem + 3vw), 6vh, calc(3.6rem + 3vw));
+        }
+    }
+}

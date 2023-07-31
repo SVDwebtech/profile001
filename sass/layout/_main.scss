@@ -1,1 +1,228 @@
+.main {
+    background-color: $cp-white;
+    padding: 7rem 2rem 0;
 
+    @media (min-width: 500px) {
+        margin: 0 auto;
+        max-width: 90%;
+    }
+
+    & > * {
+        margin-bottom: 7rem;
+    }
+
+    &__aboutSection {
+        position: relative;
+        z-index: 100;
+
+        & > * {
+            margin-bottom: 2rem;
+        }
+
+        @include respond(tab-land) {
+            & > .paragraph {
+                display: inline;
+            }
+        }
+    }
+
+    &__aboutSection::after {
+        content: "";
+        background: linear-gradient(to left, rgba($cp-white, 1), rgba($cp-white, 0) 5%), url("../img/about/AboutMeBackgroundImage.webp");
+        background-size: clamp(22rem, 55vw, 55rem);
+        background-repeat: no-repeat;
+        background-position-x: center;
+        background-position-y: center;
+
+        @include respond(tab-land) {
+            background-size: clamp(18rem, 35vw, 35rem);
+        }
+
+        @include respond(desk) {
+            background-size: clamp(10rem, 27vw, 27rem);
+        }
+
+        @include respond(big-desk) {
+            background-size: clamp(10rem, 20vw, 20rem);
+        }
+
+        width: 100%;
+        height: 100%;
+
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -100;
+    }
+    
+    &__portfolioSection {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: stretch;
+
+        position: relative; 
+        
+        & > * {
+            margin-bottom: 2rem;
+        }  
+
+        & > article {
+            margin-bottom: 3rem;
+        }
+
+        & > article:last-of-type {
+            margin-bottom: 0rem;
+        }       
+    }
+
+    &__skillsSection {
+        position: relative;
+
+        & > * {
+            margin-bottom: 2rem;
+        }
+    }
+
+    &__contactSection {
+        position: relative;
+
+        & > * {
+            margin-bottom: 2rem;
+        }
+
+        .textAndContactMessageContainer {
+            @include respond(desk) {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: flex-start;
+
+                gap: 5rem;
+
+                .introParAndContactItemsContainer {
+                    // margin-top: 3rem;
+                    max-width: 42%;
+                }
+
+                .contactMessageContainer {
+                    flex: 1 0 50%;
+                    margin-top: 0rem;
+                }
+            }
+        }
+
+        .introParAndContactItemsContainer {
+            @include respond(tab-land) {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: flex-start;
+
+                gap: 5rem;
+
+                .introParagraph {
+                    flex: 0 0 45%;
+                    order: 0;
+                }
+
+                .contactItemsContainer {
+                    flex: 0 0 55%;
+                    justify-content: flex-start;
+                    margin-top: .25rem;
+                    min-width: fit-content;
+                }
+            }
+
+            @include respond(desk) {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: flex-start;
+
+                gap: 3rem;
+
+                // .introParagraph {
+                //     flex: 1 0 40%;
+                //     order: 0;
+                // }
+
+                .contactItemsContainer {
+                    justify-content: flex-start;
+                    margin-top: .25rem;
+                    min-width: fit-content;
+                }
+            }
+        }
+
+        .contactItemsContainer, .contactMessageContainer {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: stretch;
+            
+            gap: 1rem;
+
+            margin-top: 3rem;
+
+            @include respond(tab-port) {
+                align-items: stretch;
+                .headingH3Container {
+                    margin-bottom: 1rem;
+                }
+            }
+        }
+
+        .contactItemsContainer {
+            @include respond(tab-land) {
+                align-items: flex-start;
+                .headingH3Container {
+                    margin-bottom: 1rem;
+                }
+            }
+        }
+
+        .contactItemsInnerContainer {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            gap: .75rem;
+
+            @include respond(tab-port) {
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center;
+
+                row-gap: .75rem;
+                column-gap: 4rem;
+            }
+
+            @include respond(tab-land) {
+                flex-direction: column;
+                flex-wrap: nowrap;
+                align-items: flex-start;
+
+                gap: 1.5rem;
+            }
+        }
+
+        .contactItem {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+
+            gap: .5rem;
+
+            &__icon {
+                width: 2rem;
+                height: 2rem;
+            }
+
+            @media (max-width: 350px) and (min-height: 750px) {
+                flex-direction: column;
+            }
+        }
+    }
+}

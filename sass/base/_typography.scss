@@ -1,470 +1,380 @@
+// font-family: 'Alegreya', serif;
+// font-family: 'Alegreya SC', serif;
+// font-family: 'Caveat', cursive;
+// font-family: 'Caveat Brush', cursive;
+// font-family: 'Lato', sans-serif;
+
 body {
-	color: $color-primary-darkBlue;
+	color: $cf-white;
 	font-family: 'Lato', sans-serif;
-	font-weight: 300;
-	line-height: 1.6;
-	// padding for large screen sizes
-	padding: 0 2rem 2rem 2rem;
-
-	@include respond(tablet-landscape) {
-		// 0 padding on smaller screen sizes
-		// and adjust the navbar margin-left and margin-right to 0 as well
-		padding: 0;
-	}
-}
-
-// topography of heading-primary;
-.heading-primary {
-	&--span {
-		font-size: 1.8rem;
-
-		@include respond(tablet-landscape) {
-			font-size: 1.7rem;
-		}
-
-		@include respond(tablet-portrait) {
-			font-size: 3rem;
-		}
-
-		@include respond(tabletPortraitMaxand850Max) {
-			font-size: 2.5rem;
-		}
-
-		@include respond(phone500) {
-			font-size: 1.65rem;
-		}
-	}
-	&--span2 {
-		color: transparent;
-		font-size: 6rem;
-		font-weight: 900;
-
-		@include respond(tablet-landscape) {
-			font-size: 5.5rem;
-		}
-
-		@include respond(tablet-portrait) {
-			font-size: 7rem;
-		}
-
-		@include respond(tabletPortraitMaxand850Max) {
-			font-size: 6rem;
-		}
-
-		@include respond(phone600) {
-			font-size: 4.2rem;
-		}
-
-		@include respond(phone450) {
-			font-size: 3.6rem;
-		}
-
-		@include respond(phone400) {
-			font-size: 2.8rem;
-		}
-
-		@include respond(phone300) {
-			font-size: 2.5rem;
-		}
-
-		background-image: linear-gradient(
-			to right,
-			rgba($color-font-brightRed, 1),
-			rgba($color-font-darkBlue, 1)
-		);
-		background-size: cover;
-		@include backgroundTextTransparent;
-	}
-}
-
-.displayNone {
-	display: none;
-}
-
-// topography of heading-secondary;
-.heading-secondary {
-	// to set text background color;
-	&--red {
-		background-image: linear-gradient(
-			to right,
-			$color-primary-brightRed,
-			$color-primary-white
-		);
-	}
-	// to set text background color;
-	&--blue {
-		background-image: linear-gradient(
-			to right,
-			$color-primary-darkBlue,
-			$color-font-default
-		);
-	}
-	// to set text background color;
-	&--redSub {
-		background-image: linear-gradient(
-			to right,
-			$color-primary-white,
-			$color-primary-brightRed
-		);
-	}
-	// to set text background color;
-	&--blueSub {
-		background-image: linear-gradient(
-			to right,
-			$color-font-default,
-			$color-primary-darkBlue
-		);
-	}
-	// topography of heading-secondary--main;
-	&--main {
-		display: block;
-		width: max-content;
-		margin: 0 auto;
-		font-size: $font-size-heading-secondary-main;
-		font-weight: 900;
-		letter-spacing: .3rem;
-		text-transform: uppercase;
-		@include backgroundTextTransparent; // to make background text color visible;
-	}
-	// topography of heading-secondary--main;
-	&--sub {
-		display: inline-block;
-		font-size: $font-size-heading-secondary-sub;
-		font-weight: 900;
-		letter-spacing: .1rem;
-		text-transform: lowercase;
-		// to make background text color visible;
-		@include backgroundTextTransparent;
-		padding: .5rem 0 .8rem 0;
-	}
-	&--mainWhiteSubBorder {
-		border-bottom: 1px solid $color-primary-darkBlue;
-	}
-	// sets top and bottom border values of heading-secondary--sub;
-	&--whiteSubBorder {
-		// border-top: 1px solid $color-primary-darkBlue;
-		border-bottom: 1px solid $color-primary-darkBlue;
-	}
-	&--mainRedSubBorder {
-		border-bottom: 1px solid $color-primary-brightRed;
-	}
-	// sets top and bottom border values of heading-secondary--sub;
-	&--redSubBorder {
-		// border-top: 1px solid $color-primary-brightRed;
-		border-bottom: 1px solid $color-primary-brightRed;
-	}
-}
-// topography of heading-tertiary;
-.heading-tertiary {
-	font-size: $font-size-heading-tertiary;
-	font-weight: 900;
-	letter-spacing: .2rem;
-	text-transform: uppercase;
-	&--portfolio-card {
-		@include respond(phone600) {
-			font-size: 1.7rem;
-		}
-	}
-}
-// topography of paragraph;
-.paragraph {
-	font-size: $font-size-paragraph-medium;
+	font-size: 1.6rem;
 	font-weight: 400;
-	@include respond(tablet-landscape) {
-		font-size: 1.86rem;
-	}
-	@include respond(tablet-portrait) {
-		font-size: 2.5rem;
-	}
-	@include respond(phone600) {
-		font-size: 1.8rem;
-	}
-	&:not(:last-child) {
-		margin-bottom: .8rem;
-	}
-	&__card {
-		font-size: 1.6rem;
-	}
-	&__skills,
-	&__portfolio {
-		@include respond(tablet-portrait) {
-			font-size: 2.5rem;
-		}
-	}
-	&__popup {
-		font-size: 1.25rem;
-		font-weight: 100;
-		&:not(:last-child) {
-			margin-bottom: 1rem;
-		}
-		@include respond(tablet-landscape) {
-			font-size: 1.35rem;
-		}
-		@include respond(tablet-portrait) {
-			font-size: 1.45rem;
-		}
-		@include respond(tablet-portrait-2) {
-			font-size: 1.55rem;
-		}
-		@include respond(phone600) {
-			font-size: 1.8rem;
-			font-weight: 100;
-		}
-	}
+	line-height: 1.6;
 }
-// topography of navlogo;
-.navbar {
-	&__logoBox {
-		&--logoLink {
-			text-decoration: none;
-		}
-		&--logo {
-			display: inline-block;
-			color: $color-font-white;
-			font-weight: 900;
-			letter-spacing: .3rem;
-		}
-		&--logoTextName {
-			font-size: clamp(1.8rem, 2.5vw, 2.5rem);
-			line-height: 1;
-		}
-		&--logoTextDev {
-			//font-size: 1rem;
-			font-size: clamp(1rem, 2vw, 1.3rem);
-		}
-	}
-}
-// topography of navlist;
-.navList {
-	list-style: none;
-	&__navItem {
-		&--navLink {
-			color: $color-font-white;
-			font-size: $font-size-paragraph-medium;
-			font-weight: 700;
-			letter-spacing: .2rem;
-			text-transform: uppercase;
-			text-decoration: none;
-		}
-	}
-}
-// topography of hamburger menu;
-.hamburger {
-	&__item {
-		list-style: none;
-	}
-	&__link {
-		color: $color-font-white;
-		font-size: $font-size-paragraph-large;
-		font-weight: 900;
-		text-transform: uppercase;
-		text-decoration: none;
-	}
-}
-// topography of about-section;
-.header {
-	&__paragraph {
-		color: $color-font-white;
-		font-size: 2.2rem;
-		font-weight: 700;
-		@include respond(tablet-portrait) {
-			text-align: center;
-			font-size: 4rem;
-		}
-		@include respond(phone600) {
-			text-align: center;
-			font-size: 2.6rem;
-		}
-		@include respond(phone550) {
-			font-size: 2.4rem;
-		}
-		@include respond(phone500) {
-			font-size: 2.2rem;
-		}
-		@include respond(phone450) {
-			font-size: 2rem;
-		}
-		@include respond(phone400) {
-			font-size: 1.9rem;
-		}
-		@include respond(phone350) {
-			font-size: 1.8rem;
-		}
-		@include respond(phone300) {
-			font-size: 1.7rem;
-		}
-	}
-	.socialMedia__icon {
-		color: $color-font-white;
-		font-size: 4rem;
-		@include respond(tablet-portrait) {
-			font-size: 6.5rem;
-		}
-		@include respond(phone600) {
-			font-size: 4rem;
-		}
-		@include respond(phone550) {
-			font-size: 3.8rem;
-		}
-		@include respond(phone500) {
-			font-size: 3.6rem;
-		}
-		@include respond(phone450) {
-			font-size: 3.4rem;
-		}
-		@include respond(phone400) {
-			font-size: 3.3rem;
-		}
-		@include respond(phone350) {
-			font-size: 3.2rem;
-		}
-		@include respond(phone300) {
-			font-size: 3.1rem;
-		}
-	}
-}
-// topography of about-section;
-.about__content--text {
-	color: white;
-	text-align: justify;
-}
-// topography of skills-section;
-.skills {
+
+.primaryHeading {
 	text-align: center;
-}
-.tools__navbarItem {
-	color: $color-font-darkBlue;
-	font-size: 1.4rem;
-	font-weight: 700;
-	text-align: left;
-	@include respond(phone300) {
-		font-size: 1.2rem;
-	}
-}
-.tools__toolsList {
-	&--items {
-		font-size: $font-size-paragraph-small;
+
+	&__headline {
+		font-family: 'Alegreya', serif;;
+		font-size: clamp(3rem, 11.1vw, 6rem);
 		font-weight: 900;
-		letter-spacing: .28rem;
+		letter-spacing: 2px;
+		line-height: 1;
+		text-shadow: 
+            1px 1px 2px rgba(0, 0, 0, .7),
+            2px 2px 2px rgba(0, 0, 0, .7),
+            3px 3px 2px rgba(0, 0, 0, .7),
+            4px 4px 2px rgba(0, 0, 0, .7);     
 	}
-	&--item1 {
-		color: $color-font-white;
+
+	&__headline-firstLetter {
+		font-size: clamp(5rem, 15vw, 9rem);
 	}
-	&--item2 {
-		color: $color-font-white;
+
+	&__subheading {
+		font-family: 'Caveat', cursive;
+		font-size: clamp(1.8rem, 6.8vw, 3.5rem);
+		font-weight: 400;
+		letter-spacing: 2px;
+		line-height: 0.8;
 	}
-	&--item3 {
-		color: $color-font-white;
-	}
-}
-// topography of portfolio-section;
-.portfolio-card {
-	color: $color-font-white;
-	// text-align: center;
-	h4 {
-		font-size: 1.8rem;
-	}
-	.paragraph {
-		font-size: $font-size-paragraph-small;
-		margin: 0.5rem;
-	}
-	&__techlist--item {
-		font-size: $font-size-paragraph-small;
-		text-align: center;
-	}
-	.portfolio-card__buttons--btn {
-		color: $color-font-white;
-	}
-}
-// topography of contact-section;
-.contact {
-	h3,
-	p {
-		color: $color-font-white;
-		text-align: center;
-	}
-	&__itemsContainer {
-		&--tel,
-		&--email {
-			color: $color-primary-white;
-			font-size: 1.35rem;
-			font-weight: 600;
-			text-align: center;
-			text-decoration: none;
-			@include respond(tablet-landscape) {
-				font-size: 1.3rem;
-			}
-			@include respond(tablet-portrait) {
-				font-size: 2rem;
-			}
-			@include respond(phone600) {
-				font-size: 1.7rem;
-			}
-			@include respond(phone425) {
-				font-size: 1.8rem;
-			}
-			@include respond(phone400) {
-				font-size: 1.62rem;
-			}
-			@include respond(phone350) {
-				font-size: 1.3rem;
-			}
-			@include respond(phone300) {
-				font-size: 1.2rem;
-			}
-		}
-	}
-	.socialMediaContact__icon {
-		color: $color-primary-white;
-		@include respond(tablet-portrait) {
-			font-size: 4.5rem;
-		}
-		@include respond(phone400) {
-			font-size: 4rem;
-		}
-		@include respond(phone350) {
-			font-size: 3.3rem;
-		}
-		@include respond(phone300) {
-			font-size: 3rem;
-		}
-	}
-	&__form {
-		&--item {
-			font-size: $font-size-paragraph-medium;
-			font-weight: 700;
-		}
-		&--labels {
-			color: $color-primary-white;
-			font-weight: 400;
-			letter-spacing: .1rem; // text-transform: uppercase;
-		}
-	}
-}
-// topography of footer-section;
-.footer {
+
 	&__paragraph {
-		color: $color-font-darkGrey;
-		font-size: $font-size-paragraph-medium;
-		&--intro {
-			text-decoration: underline;
+		font-size: clamp(calc(2.1rem + 2.3vh - 2rem), 4.3vw, calc(2.5rem + 2.3vh - 2rem));
+		text-align: center;
+	}
+
+	@include respond(tab-land) {
+		&__headline {
+			font-size: clamp(2rem, 4.5vw, 5rem);
 		}
-		&--span {
-			color: $color-font-white;
+
+		&__headline-firstLetter {
+			font-size: clamp(2.2rem, 6vw, 5.2rem);
 		}
-		&--brand {
-			color: $color-font-brightRed;
-			font-size: $font-size-paragraph-xtralarge;
-			font-weight: 700;
-			letter-spacing: 3px;
-			@include respond(phone600) {
-				letter-spacing: 1px;
+
+		&__subheading {
+			font-size: clamp(1rem, 2.8vw, 2.5rem);
+		}
+	}
+}
+
+.headingH2Container {
+	&__headingH2 {
+		color: $cf-blue;
+		font-family: 'Alegreya SC', serif;
+		font-size: clamp(calc(2.6rem + 3vh - 2rem), 11vw, calc(6.2rem + 3vh - 2rem));
+		// font-size: clamp(3.5rem, 11.3vw, 6.5rem);
+		font-weight: 900;
+		line-height: 1;
+		letter-spacing: 4px;
+		text-shadow: 
+		        1px 0px 2px $cp-darkBlue,
+		        2px -1px 2px $cp-darkBlue,
+		        3px -1px 2px $cp-darkBlue,
+		        4px -1px 2px $cp-darkBlue;     
+	}
+
+	&__subheadingH2 {
+	 	color: $cf-red;
+		font-family: 'Caveat', cursive;
+		// font-size: clamp(calc(1.8rem + 3vh - 2rem), 6.6vw, calc(3.5rem + 3vh - 2rem));
+		font-size: clamp(calc(2.8rem + 2.3vh - 2rem), 8vw, calc(5rem + 2.3vh - 2rem));
+		// font-size: clamp(2rem, 6.8vw, 3.7rem);
+		font-weight: 700;
+		line-height: 1;
+		letter-spacing: 1px;
+	}
+
+	@include respond(tab-port) {
+	 	&__headingH2 {
+			font-size: clamp(calc(2.2rem + 2.6vh - 2rem), 10vw, calc(5.8rem + 2.6vh - 2rem));
+			     
+		}
+		&__subheadingH2 {
+			font-size: clamp(calc(2.2rem + 1.7vh - 2rem), 6vw, calc(4.4rem + 1.7vh - 2rem));
+			
+		}
+	}
+}
+
+.headingH3Container {
+	font-family: 'Lato', sans-serif;
+	text-align: center;
+	
+	&__headingH3 {
+		color: $cf-white;
+		font-size: clamp(calc(2.6rem + 2.3vh - 2rem), 4.3vw, calc(3.1rem + 2.3vh - 2rem));
+		font-weight: 900;
+		line-height: 1;
+		letter-spacing: 2px;
+
+		&--blue {
+			color: $cf-darkBlue ;
+			line-height: 1.2;
+
+			@include respond(tab-port) {
+				font-size: clamp(calc(1.4rem + .9vh - 2rem), 5vw, calc(3.6rem + .9vh - 2rem));
+			}
+
+			@include respond(tab-land) {
+				text-align: left;
+			}
+		}
+
+		&--project {
+			color: $cf-darkRed;
+			font-size: clamp(calc(2.3rem + 2vh - 2rem), 2.5vw, calc(3.3rem + 2vh - 2rem));
+		}
+
+		&--skills {
+			color: $cf-darkBlue;
+			font-size: clamp(calc(1.8rem + 3.3vh - 2rem), 5.2vw, calc(3.8rem + 3.3vh - 2rem));
+
+			// @include respond(tab-port) {
+			// 	font-size: clamp(calc(1.2rem + .7vh - 2rem), 4vw, calc(3.4rem + .7vh - 2rem));
+			// }
+
+			@include respond(tab-port) {
+				font-size: clamp(calc(1.5rem + 3.3vh - 2rem), 3.3vw, calc(3.4rem + 3.3vh - 2rem));
+			}
+
+			@include respond(tab-land) {
+				font-size: clamp(calc(1.2rem + 3vh - 2rem), 3vw, calc(3.1rem + 3vh - 2rem));
 			}
 		}
 	}
-	@include respond(phone600) {
-		&__par {
-			font-size: 1.6rem;
+
+	.contactForm__headingH3 {
+		@include respond(tab-land) {
+			text-align: left;
 		}
+	}
+
+	 &__subheadingH3 {
+	 	color: $cf-red;
+		font-size: clamp(calc(1.7rem + 2.3vh - 2rem), 4vw, calc(2.3rem + 2.3vh - 2rem));
+		font-weight: 400;
+		line-height: 1;
+		letter-spacing: 1px;
+
+		&--project {
+			color: $cf-darkBlue;
+		}
+	 }
+}
+
+.paragraph {
+	color:  $cf-darkBlue;
+	font-size: clamp(calc(2.1rem + 2.3vh - 2rem), 4.3vw, calc(2.5rem + 2.3vh - 2rem));
+	font-weight: 700;
+	text-align: center;
+
+	@include respond(tab-land) {
+		text-align: justify;
+	}
+
+	@media (min-height: 950px) {
+		font-size: clamp(calc(2rem + 1.9vh - 2rem), 3vw, calc(2.4rem + 1.9vh - 2rem));
+		// font-size: 1rem;
+	}
+
+	&--white {
+		color: $cf-white;
+	}
+
+	&--project {
+		color: $cf-darkBlue;
+		font-size: clamp(calc(1.7rem + 2.3vh - 2rem), 4vw, calc(2.1rem + 2.3vh - 2rem));
+		font-weight: 900;
+		text-align: center;
+
+		@media (min-height: 950px) {
+		font-size: clamp(calc(2rem + 1.9vh - 2rem), 3vw, calc(2.4rem + 1.9vh - 2rem));
+		// font-size: 1rem;
+	}
+	}
+
+	&--skills {
+		color:  $cf-darkRed;
+		font-size: clamp(calc(1.9rem + 2.1vh - 2rem), 4vw, calc(2.3rem + 2.1vh - 2rem));
+		text-align: center;
+
+		@include respond(tab-port) {
+			font-size: clamp(calc(1.9rem + 2vh - 2rem), 3vw, calc(2.3rem + 2.1vh - 2rem));
+		}
+
+		@include respond(tab-land) {
+			font-size: clamp(calc(1.8rem + 1.9vh - 2rem), 2.4vw, calc(2.1rem + 1.9vh - 2rem));
+		}
+	}
+
+	&--contactItem {
+		@media (max-width: 350px) and (min-height: 750px) {
+            font-size: clamp(calc(1.7rem + 2.1vh - 2rem), 4vw, calc(2.1rem + 2.1vh - 2rem));
+        }
+	}
+}
+
+.btn {
+	color: $cf-white;
+	font-weight:700;
+	line-height: 1.6;
+	letter-spacing: 1px;
+
+	&--primaryBtn {
+		font-size: clamp(calc(2rem + 2.2vh - 2rem), 4vw, calc(2.4rem + 2.3vh - 2rem));
+	}
+	
+	&--primaryBtn-hero {
+		font-size: clamp(calc(2rem + 2.2vh - 2rem), 4.2vw, calc(2.4rem + 2.3vh - 2rem));
+	}
+
+	&--primaryBtn-white {
+		color: $cf-darkBlue;
+		font-size: clamp(calc(1.2rem + 1.2vh), 4vw, calc(1.6rem + 1.2vh));
+	}
+
+	&--primaryBtn-white-portfolioCard {
+		color: $cf-red;
+		font-size: clamp(calc(1.8rem + 2vh - 2rem), 3.8vw, calc(2.4rem + 2.1vh - 2rem));
+		font-weight: 900;
+
+		@media (min-height: 950px) {
+			font-size: clamp(calc(1.7rem + 1.8vh - 2rem), 3.5vw, calc(2.3rem + 1.8vh - 2rem));
+		}
+	}
+
+	&--secondaryBtn {
+		color: $cf-white;
+		font-size: clamp(calc(1.8rem + 2vh - 2rem), 3.8vw, calc(2.2rem + 2.2vh - 2rem));
+	}
+
+	&--secondaryBtn-hero {
+		color: $cf-white;
+		font-size: clamp(calc(1.8rem + 2vh - 2rem), 3.8vw, calc(2.2rem + 2.2vh - 2rem));
+	}
+
+	&--secondaryBtn-portfolioCard {
+		color: $cf-white;
+		font-size: clamp(calc(1.8rem + 2vh - 2rem), 3.8vw, calc(2.2rem + 2.2vh - 2rem));
+
+		@media (min-height: 950px) {
+			font-size: clamp(calc(1.7rem + 1.8vh - 2rem), 3.5vw, calc(2.3rem + 1.8vh - 2rem));
+		}
+	}
+}
+
+.logo__text {
+	
+	&--devName {
+		font-family: 'Alegreya', serif;
+		font-size: clamp(1.6rem, 5vw, 2.5rem);
+		font-weight: 900;
+		letter-spacing: 2px;
+		line-height: 1;
+		text-shadow: 
+            1px 1px 2px rgba(0, 0, 0, .7),
+            2px 2px 2px rgba(0, 0, 0, .7),
+            3px 3px 2px rgba(0, 0, 0, .7),
+            4px 4px 2px rgba(0, 0, 0, .7);
+	}
+
+	&--devNameFirstLetter {
+		font-size: clamp(2.5rem, 7vw, 3.5rem);
+	}
+
+	&--devDesc {
+		font-family: 'Caveat', cursive;
+		font-size: clamp(1.25rem, 4vw, 2rem);
+		letter-spacing: 1px;
+		line-height: 1;
+	}
+}
+
+.header	{
+	
+}
+
+.hero {
+
+}
+
+.about {
+	
+	&__section {
+		text-align: justify;
+	}
+}
+
+.footer {
+	text-align: center;
+	
+	&__figure--figcaption-name {
+		font-family: 'Alegreya', serif;;
+		font-size: clamp(1rem, 11.1vw, 4rem);
+		font-weight: 900;
+		letter-spacing: 2px;
+		line-height: 1;
+	}
+	&__figure--figcaption-name-firstLetter {
+		font-size: clamp(1.6rem, 15vw, 4.8rem);
+	}
+	&__figure--figcaption-dev {
+		font-family: 'Caveat', cursive;
+		font-size: clamp(1rem, 6.8vw, 2.8rem);
+		font-weight: 400;
+		letter-spacing: 2px;
+		line-height: 0.8;
+	}
+	&__legalNotices--headingH2 {
+		font-size: clamp(2.2rem, 7vw, 3rem);
+	}
+	&__legalNotices--paragraph {
+		font-size: clamp(1.8rem, 6vw, 2.5rem);
+	}
+
+	@include respond(tab-port) {
+		&__figure--figcaption-name {
+			font-size: clamp(2rem, 6vw, 4rem);
+		}
+		&__figure--figcaption-name-firstLetter {
+			font-size: clamp(3rem, 7vw, 6rem);
+		}
+		&__figure--figcaption-dev {
+			font-size: clamp(1.5rem, 6vw, 3.2rem);
+		}
+		&__legalNotices--headingH2 {
+			font-size: clamp(2rem, 5vw, 2.8rem);
+		}
+		&__legalNotices--paragraph {
+			font-size: clamp(1.6rem, 5vw, 2.2rem);
+		}
+	}
+
+	@include respond(tab-land) {
+		&__figure--figcaption-name {
+			text-align: left;
+		}
+		&__figure--figcaption-name-firstLetter {
+			text-align: left;
+		}
+		&__legalNotices--headingH2 {
+			text-align: left;
+		}
+		&__legalNotices--paragraph {
+			text-align: left;
+		}
+	}
+}
+
+.contactForm {
+	color:  $cf-darkBlue;
+	font-size: clamp(calc(2.1rem + 2.3vh - 2rem), 4.3vw, calc(2.5rem + 2.3vh - 2rem));
+	font-weight: 700;
+
+	input, textarea {
+		font-size: clamp(calc(2.1rem + 2.3vh - 2rem), 4.3vw, calc(2.5rem + 2.3vh - 2rem));
 	}
 }

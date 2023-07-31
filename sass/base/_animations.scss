@@ -1,58 +1,75 @@
-// //////////////////////////////////////////////////////////////////
-// moveInLeft
-// animation for span1 element in primary-heading in header
-@keyframes moveInLeft {
-	0% {
-		opacity: 0;
-		transform: translateX(-4.8rem);
-	}
-
-	80% {
-		transform: translateX(1rem);
-	}
-
-	100% {
-		opacity: 1;
-		transform: translateX(0);
-	}
+@keyframes animateNavLink {
+  0% {
+    background-position: 100%;
+  }
+  50% {
+    background-position: 50%;
+  }
+  100% {
+    background-position: 0%;
+  }
 }
-// //////////////////////////////////////////////////////////////////
-// moveInRight
-// animation for span3 element in primary-heading in header
-@keyframes moveInRight {
-	0% {
-		opacity: 0;
-		transform: translateX(4.8rem);
-	}
 
-	80% {
-		transform: translateX(-1rem);
-	}
+@keyframes animateNavListContainerMoveIn {
+  0% {
+    transform: translateX(-100%);
+    // opacity: 0;
+  }
 
-	100% {
-		opacity: 1;
-		transform: translateX(0);
-	}
+  25% {
+    // opacity: .75;
+  }
+
+  100% {
+    transform: translateX(0%);
+    // opacity: 1;
+  }
 }
-// //////////////////////////////////////////////////////////////////
-// rotateAndMoveInRight
-// animation for span2 element in primary-heading in header
-@keyframes rotateAndMoveInRight {
-	0% {
-		opacity: 0;
-		transform: translateY(-12rem) translateX(15rem) scale(1) rotateY(45deg);
-	}
 
-	25% {
-		opacity: 0;
-	}
+@keyframes animateNavListContainerMoveOut {
+  0% {
+    transform: translateX(0%);
+    // opacity: 1;
+  }
 
-	65% {
-		transform: scale(.4) rotateY(140deg);
-	}
+  75% {
+    // opacity: .75;
+  }
 
-	100% {
-		opacity: 1;
-		transform: translateY(0rem) translateX(0rem) scale(1) rotateY(360deg);
-	}
+  100% {
+    transform: translateX(-100%);
+    // opacity: 0;
+  }
 }
+
+@keyframes animateNavItemsMoveIn {
+  0% {
+    transform: translateX(150px);
+    opacity: 0;
+  }
+
+  10% {
+    opacity: .5;
+  }
+
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes animateNavItemsMoveOut {
+  0% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+
+  80% {
+    opacity: .5;
+  }
+
+  100% {
+    transform: translateX(200px);
+    opacity: 0;
+  }
+} 

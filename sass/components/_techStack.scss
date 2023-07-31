@@ -1,0 +1,37 @@
+.techStack {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    column-gap: 3.5rem;
+    row-gap: 2rem;
+
+    margin: 1.5rem 0 2.8rem;
+
+    @include respond(tab-port) {
+        column-gap: 4rem;
+        row-gap: 2rem;
+    }
+
+    @include respond(tab-land) {
+        justify-content: space-around;
+        column-gap: 6rem;
+        row-gap: 2rem;
+
+    }
+
+    &__img {
+        width: clamp(4rem, 10vw, 8rem);
+        filter: drop-shadow(0 15px 10px rgba(0, 0, 0, .6));
+
+        @include respond(tab-port) {
+            width: clamp(3rem, 8vw, 7rem);
+            filter: drop-shadow(0 12px 7px rgba(0, 0, 0, .5));
+        }
+
+        @include respond(tab-land) {
+            width: clamp(3rem, 5vw, 7rem);
+            filter: drop-shadow(0 12px 7px rgba(0, 0, 0, .5));
+        }
+    }
+}

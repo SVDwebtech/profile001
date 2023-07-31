@@ -6,761 +6,571 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Web Developer & Designer | Schalk van Dyk | I design and build functional websites and applications</title>
         <script src="https://kit.fontawesome.com/dec787a9fd.js" crossorigin="anonymous"></script>
-        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Open+Sans&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="./css/styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Alegreya+SC:wght@900&family=Alegreya:wght@900&family=Caveat+Brush&family=Caveat:wght@700&family=Lato:wght@400;700;900&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet" href="./css/style.css">
     </head>
 
     <body>
-        <!-- CV link -->
-        <!-- <div class="cv-and-span1-box">
-        <a class="" id="cv" href="CV_04-02-2021_Schalk_van_Dyk.pdf" download="CV_SchalkvanDyk" >My CV</a>
-        <span id="nav-logo-span-1">Schalk van Dyk t/a </span>
-    </div> -->
 
-        <!-- component: navigation -->
-        <!-- secondary navigation -->
-        <!-- hamburger menu button> -->
-        <!-- this button's functionality relies on the checkbox hack and only appears
-        on screen sizes with a screen width smaller than 900px -->
-        <input type="checkbox" name="hamburger" id="hamburgerToggle" class="hamburger__checkbox">
-        <label for="hamburgerToggle" class="hamburger__button">
-            <span class="hamburger__icon"></span>
-        </label>
+        <header class="header">
 
-        <!-- hamburger menu -->
-        <!-- secondary navigation -->
-        <!-- a list of navigation links that appears when the hamburger button is clicked -->
-        <ul class="hamburger__container">
-            <div class="hamburger__content">
-                <li class="hamburger__item">
-                    <a id="aboutLink" class="hamburger__link hamburgerLink" href="#about">about</a>
-                </li>
-                <li class="hamburger__item">
-                    <a id="skillsLink" class="hamburger__link hamburgerLink" href="#skills">skills</a>
-                </li>
-                <li class="hamburger__item">
-                    <a id="portfolioLink" class="hamburger__link hamburgerLink" href="#portfolio">portfolio</a>
-                </li>
-                <li class="hamburger__item">
-                    <a id="contactLink" class="hamburger__link hamburgerLink" href="#contact">contact</a>
-                </li>
-            </div>
-        </ul>
-
-        <!-- header-section -->
-        <!-- the header is the landing page section of the entire webpage and
-        is an introduction to the web developer and contains links to the developer's social-media profiles -->
-        <header id="home" class="header">
-            <!-- component: navigation -->
-            <!-- navbar -->
-            <!-- primary navigation of the entire webpage -->
-            <!-- this appears as a fixed banner across the top of the page -->
             <nav class="header__navbar navbar">
-                <!-- logobox -->
-                <!-- contains the logo -->
-                <!-- also functions as a navigation link to the home/landing page section of the entire webpage  -->
-                <div class="navbar__logoBox">
-                    <a class="navbar__logoBox--logoLink" href="#home">
-                        <!-- logo image -->
-                        <div class="navList__navItem--navBrandImg">
-                            <img class="navbar__logoBox--logoImage" src="./img/logo-photo.webp" alt="">
-                        </div>
-                        <!-- logo text -->
-                        <div class="navbar__logoBox--logoText navList__navItem--navLink">
-                            <p class="navbar__logoBox--logoTextName">Schalk van Dyk</p>
-                            <p class="navbar__logoBox--logoTextDev">Web Developer and Designer</p>
-                        </div>
-                    </a>
-                </div>
-                <!-- the nav container contains a list of primary navigation links, to the various
-                page sections of the page, that appears accross the navbar on screen width 
-                sizes larger than 900px -->
-                <div class="navbar__navContainer">
-                    <ul class="navbar__navContainer--navList navList">
-                        <!-- about navlink -->
-                        <li class="navList__navItem">
-                            <a class="navList__navItem--navLink" href="#about">
-                                <p>about</p>
-                            </a>
-                        </li>
-                        <!-- skills navlink -->
-                        <li class="navList__navItem">
-                            <a class="navList__navItem--navLink" href="#skills">skills</a>
-                        </li>
-                        <!-- portfolio navlink -->
-                        <li class="navList__navItem">
-                            <a class="navList__navItem--navLink" href="#portfolio">portfolio</a>
-                        </li>
-                        <!-- contact navlink -->
-                        <li class="navList__navItem">
-                            <a class="navList__navItem--navLink" href="#contact">contact</a>
-                        </li>
-                    </ul>
-                </div>
+
+                <figure class="navbar__logo logo">
+                    <img class="logo__img" src="./img/profile/profile-photo-front.webp" alt="logo image that consists of a portrait picture of Schalk van Dyk, a web developer and designer">
+                    <figcaption class="logo__text">
+                        <p class="logo__text--devName"><span class="logo__text--devNameFirstLetter">S</span>chalk van Dyk</p>
+                        <p class="logo__text--devDesc">Web Developer and Designer</p>
+                    </figcaption>
+                </figure>
+
+                <button class="navbar__hamburgerBtn hamburgerBtn">
+                    <span class="hamburgerBtn__hamburgerBar hamburgerBar hamburgerBtn__hamburgerBar--top"></span>
+                    <span class="hamburgerBtn__hamburgerBar hamburgerBar hamburgerBtn__hamburgerBar--middle"></span>
+                    <span class="hamburgerBtn__hamburgerBar hamburgerBar hamburgerBtn__hamburgerBar--bottom"></span>
+                </button>
+
+                <ul class="navbar__navList navList navList--displayNone">
+                    <div class="navFrame"></div>
+                    <li class="navList__navItem navItem navItem1">
+                        <a class="navList__navLink navLink" href="#home">Home</a>
+                    </li>
+                    <li class="navList__navItem navItem navItem2">
+                        <a class="navList__navLink navLink" href="#about">About</a>
+                    </li>
+                    <li class="navList__navItem navItem navItem3">
+                        <a class="navList__navLink navLink" href="#projects">Projects</a>
+                    </li>
+                    <li class="navList__navItem navItem navItem4">
+                        <a class="navList__navLink navLink" href="#skills">Skills</a>
+                    </li>
+                    <li class="navList__navItem navItem navItem5">
+                        <a class="navList__navLink navLink" href="#contact">Contact</a>
+                    </li>
+                </ul>
+
             </nav>
-            <!-- utility: subsection-wrapper -->
-            <div class="subsection-wrapper-header">
-                <!-- header content -->
-                <!-- header content contains the actual content that appears
-                on the landing/header section of the page when the webpage loads -->
-                <div class="header__content">
-                    <!-- position primary heading in the center horizontally and vertically of the page on 
-                    all screen sizes -->
-                    <div class="header__contentTopCenter u-margin-bottom-medium">
-                        <!-- heading-primary content -->
-                        <!-- introduces the user to the web developer -->
-                        <div class="header__headingPrimary heading-primary u-margin-bottom-small">
-                            <!-- typography: heading-primary -->
-                            <h1>
-                                <span class="header__headingPrimary--span header__headingPrimary--span1 heading-primary--span1 heading-primary--span">Hello, my name is </span>
-                                <span class="header__headingPrimary--span header__headingPrimary--span2 heading-primary--span2 heading-primary--span">Schalk van Dyk</span>
-                                <span class="header__headingPrimary--span header__headingPrimary--span3 heading-primary--span3 heading-primary--span u-margin-bottom-small">and I'm a web developer and
-                                    designer.</span>
-                                <span class="header__headingPrimary--span header__headingPrimary--span3 heading-primary--span3 heading-primary--span u-margin-bottom-small">I design and develop
-                                    functional, fast loading and lag free, responsive with mobile-first in mind, efficient and easy to use, with active and dynamic content, websites and
-                                    applications.</span>
-                                <span class="header__headingPrimary--span header__headingPrimary--span3 heading-primary--span3 heading-primary--span">I am also <span id='heading-span-4'></span><span
-                                        id="heading-span-5" class="displayNone"> _</span></span>
-                            </h1>
+
+            <section class="header__hero hero">
+
+                <div id="home" class="navLinkId"></div>
+
+                <div class="hero__heroContentContainer heroContentContainer">
+
+                    <figure class="hero__figure figure">
+                        <img class="figure__img profilePhoto" src="./img/profile/profile-photo-front.webp" alt="a portrait picture of Schalk van Dyk, a web developer and designer">
+                    </figure>
+
+                    <div class="hero__heroTextContentContainer heroTextContentContainer">
+
+                        <h1 class="hero__primaryHeading primaryHeading">
+                            <span class="primaryHeading__headline"><span class="primaryHeading__headline-firstLetter">S</span>chalk van Dyk</span>
+                            <span class="primaryHeading__subheading">Web Developer and Designer</span>
+                            <span class="primaryHeading__paragraph">Creating modern websites and applications that drive traffic & sales.</span>
+                        </h1>
+
+                        <div class="hero__cta cta">
+                            <a class="btn btn--primaryBtn-hero" href="#projects">
+                                <svg class="btn__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M5 8V16C5 17.8856 5 18.8284 5.58579 19.4142C6.17157 20 7.11438 20 9 20H15C16.8856 20 17.8284 20 18.4142 19.4142C19 18.8284 19 17.8856 19 16V8M5 8H19M5 8H3.36364C3.21017 8 3.13343 8 3.08014 7.96011C3.06488 7.94868 3.05132 7.93512 3.03989 7.91986C3 7.86657 3 7.78983 3 7.63636V7.63636C3 6.10168 3 5.33434 3.39892 4.80144C3.51321 4.64876 3.64876 4.51321 3.80144 4.39892C4.33434 4 5.10168 4 6.63636 4H17.3636C18.8983 4 19.6657 4 20.1986 4.39892C20.3512 4.51321 20.4868 4.64876 20.6011 4.80144C21 5.33434 21 6.10168 21 7.63636V7.63636C21 7.78983 21 7.86657 20.9601 7.91986C20.9487 7.93512 20.9351 7.94868 20.9199 7.96011C20.8666 8 20.7898 8 20.6364 8H19"
+                                        stroke="#f0f0f0" stroke-width="2" />
+                                    <path d="M10 16H14" stroke="#f0f0f0" stroke-width="2" stroke-linecap="round" />
+                                </svg>
+                                <span>My Projects</span>
+                            </a>
+                            <a class="btn btn--secondaryBtn-hero" href="#contact">
+                                <svg class="btn__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M4.48833 3.32808L5.50842 2.54674C5.91432 2.23584 6.48935 2.28119 6.8415 2.65187L9.79013 5.7557C10.1568 6.14166 10.1568 6.74723 9.79013 7.13319L8.98765 7.97792C8.62098 8.36388 8.62098 8.96945 8.98765 9.35542L11.5 12L13.9417 14.5702C14.3359 14.9852 14.9974 14.9852 15.3917 14.5702L16.0965 13.8282C16.474 13.4309 17.1009 13.4114 17.5023 13.7845L20.7217 16.7766C21.1437 17.1688 21.1478 17.8356 20.7308 18.233L19.3228 19.5747C17.7784 21.0465 15.5063 21.4579 13.5438 20.6213C8.83442 18.6136 5.0481 14.9144 2.93134 10.2531L2.81681 10.0008C1.7532 7.65864 2.44617 4.8923 4.48833 3.32808Z"
+                                        stroke="#f0f0f0" stroke-width="2" />
+                                </svg>
+                                <span>Contact Me</span>
+                            </a>
                         </div>
+
                     </div>
-                    <!-- position social media content left bottom on all screen sizes except on phone screen sizes where
-                    it should be in the center horizontally  -->
-                    <div class="header__contentBottomLeft">
-                        <!-- social-media content -->
-                        <!-- contains links to the social-media profiles of the web developer -->
-                        <div id="header__socialMedia">
-                            <p class="paragraph header__paragraph">Check out my profiles: </p>
-                            <!-- component: socialmedia -->
-                            <div class="socialMedia">
-                                <!-- facebook profile link -->
-                                <div class="socialMedia__linkWrapper">
-                                    <a target="_blank" href="https://web.facebook.com/SchalkvanDyk/">
-                                        <i class="fab fa-facebook-square fa-3x socialMedia__icon"></i>
-                                    </a>
-                                </div>
-                                <!-- linkedin profile link -->
-                                <div class="socialMedia__linkWrapper">
-                                    <a target="_blank" href="https://www.linkedin.com/in/schalk-van-dyk-65978836/">
-                                        <i class="fab fa-linkedin fa-3x socialMedia__icon"></i>
-                                    </a>
-                                </div>
-                                <!-- github profile link -->
-                                <div class="socialMedia__linkWrapper">
-                                    <a target="_blank" href="https://github.com/SVDwebtech">
-                                        <i class="fab fa-github-square fa-3x socialMedia__icon"></i>
-                                    </a>
-                                </div>
-                                <!-- twitter profile link -->
-                                <div class="socialMedia__linkWrapper">
-                                    <a target="_blank" href="https://twitter.com/SVDwebtech">
-                                        <i class="fab fa-twitter-square fa-3x socialMedia__icon"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+
                 </div>
-            </div>
+
+
+
+
+
+            </section>
+
         </header>
 
-        <!-- main-section -->
-        <!-- the main section contains the main content of the entire page and
-        consists of the about-section, skills-section, portfolio-section and contact-section -->
-        <main>
+        <main class="main">
 
-            <!-- filler-and-section-wrapper -->
-            <div class="filler-and-section-wrapper-about-skills">
+            <section class="main__aboutSection aboutSection">
 
-                <!-- component: filler -->
-                <!-- a div to fill the space behind the navbar -->
-                <div id="about" class="filler--blue">
-                    <!-- this is a filler to fill space behind the navbar -->
+                <div id="about" class="navLinkId"></div>
+
+                <div class="aboutSection__headingH2Container headingH2Container">
+                    <h2 data-text="about" class="headingH2Container__headingH2 headingH2">About</h2>
+                    <hr class="headingH2Container__hr hr">
+                    <p class="headingH2Container__subheadingH2 subheadingH2">get to know me</p>
                 </div>
 
-                <!-- about-section -->
-                <section class="about">
-                    <!-- banner heading-secondary -->
-                    <!-- utility: u-center-text & u-margin-bottom -->
-                    <div class="u-center-text u-margin-bottom-medium">
-                        <!-- typography: heading-secondary -->
-                        <h2 class="heading-secondary">
-                            <span class="heading-secondary--red heading-secondary--main heading-secondary--mainRedSubBorder">About me</span>
-                            <span class="heading-secondary--redSub heading-secondary--sub heading-secondary--redSubBorder">Get to know me</span>
-                        </h2>
-                    </div>
-                    <!-- utility: subsection-wrapper -->
-                    <div class="subsection-wrapper-about">
-                        <!-- about-content -->
-                        <div class="about__content">
-                            <!-- about images container -->
-                            <div class="about__content--images">
-                                <!-- component: composition -->
-                                <div class="img-comp">
-                                    <img class="img-comp__img img-comp__img--schalk" src="./img/schalk-1300.webp" alt="">
-                                    <img class="img-comp__img img-comp__img--family" src="./img/family-2k.webp" alt="">
-                                    <img class="img-comp__img img-comp__img--potjiekos" src="./img/potjiekos-2k.webp" alt="">
-                                </div>
-                            </div>
-                            <!-- about text container -->
-                            <div class="about__content--text">
-                                <!-- topography: heading-tertiary and utility: u-margin-bottom-xtrasmall -->
-                                <h3 class="heading-tertiary u-margin-bottom-small">Hi, I'm Schalk.</h3>
-                                <!-- topography: paragraph -->
-                                <p class="paragraph">I reside in a small town called Modimolle, in the southern part
-                                    of Limpopo.</p>
-                                <p class="paragraph">When I'm not engaged in web development (or staring at my computer
-                                    monitor) I enjoy spending time with my family, especially outdoors.
-                                    I love traditional Afrikaner dishes prepared over an open fire.
-                                    I also love to read and play guitar.</p>
-                                <p class="paragraph">I fell in love with web development in 2020 and deliver top notch web
-                                    development services. Below you'll find what I have to offer and how
-                                    to reach me.</p>
-                                <!-- component: button  -->
-                                <!-- utility: u-margin-top-small -->
-                                <a class="btn btn--onBlueBackground u-margin-top-xtrasmall learnMorePopupBtn" href="#popup-link">Learn More</a>
-                            </div>
-                        </div>
-                    </div>
-                </section>
+                <p class="aboutSection__paragraph paragraph">I reside in a small town called
+                    Modimolle in the southern part of Limpopo.</p>
+                <p class="aboutSection__paragraph paragraph">I enjoy spending time with my
+                    family, especially outdoors, and love traditional Afrikaner dishes
+                    prepared over an open fire.</p>
+                <p class="aboutSection__paragraph paragraph">I fell in love with web
+                    development in 2020 and enjoy using my skills to help fellow
+                    entrepreneurs sell their services and products online.</p>
 
-                <!-- component: popup -->
-                <div class="popup" id="popup-link">
-                    <div class="popup__content-wrapper">
-                        <!-- component: popup -- it serves as a wrapper for the popup content -->
-                        <div class="popup__content">
-                            <!-- topography: heading-tertiary and utility: u-margin-bottom-small -->
-                            <h3 class="heading-tertiary u-margin-bottom-small">Hi, I'm Schalk.</h3>
-                            <!-- topography: paragraph -->
-                            <p class="paragraph__popup popup__par">I call the Bushveld my home.</p>
-                            <img class="popup__img popup__img--1" src="./img/schalk-300.webp" alt="">
-                            <!-- topography: paragraph -->
-                            <p class="paragraph__popup">You'll find me in a small town called Modimolle, better known as
-                                Nylstroom, in the southern part of Limpopo. It is about a 120km drive from Tshwane
-                                (Pretoria) in Gauteng. The Waterberg district is arguably the hunting mecca of
-                                South Africa. It's a hide-away to soak in the beauty of nature and
-                                recharge your life force. I love it here!</P>
-                            <img class="popup__img popup__img--2" src="./img/family-300.webp" alt="">
-                            <!-- topography: paragraph -->
-                            <p class="paragraph__popup"">When I'm not engaged in web development (or staring at my computer
-                            monitor) I enjoy spending time with my family, especially outdoors.  Hiking is fun!  
-                            When cabin fever sets in there's enough blue skyes to lift the winter blues.  
-                            I love to keep fit and there's no better way to do than doing it close to nature 
-                            together with your family. It is also a great chance to learn more and see more.</p>
-                        <!-- topography: paragraph -->
-                        <p class=" paragraph__popup">I love braaivleis (meat grilled over an open fire), biltong
-                                (strips of meat cured by adding salt and spices, and then drying), boerewors
-                                (traditional Afrikaner sausage) and potjiekos (traditional Afrikaner dish prepared
-                                outside in a pot over an open fire). I also love to read and play guitar. Lately
-                                I've been neglecting my guitar, but every now and again I pick up my guitar and
-                                strum my worries away....</p>
-                            <img class="popup__img popup__img--3" src="./img/potjiekos-300.webp" alt="">
-                            <!-- topography: paragraph -->
-                            <p class="paragraph__popup">I fell in love with web development in 2020 and I'm constantly
-                                improving my programming skills to deliver top notch web
-                                development services. I've switched to web/software development
-                                fairly late in life. And although the learning curve is quite steep,
-                                especially with the fast pace at which all the technologies evovle,
-                                I enjoy all it has to offer. I guess it is the whole process of
-                                starting a project from scratch; developing it; improving it; until
-                                the finished product comes to life! Creation is truly liberating! </p>
-                            <!-- topography: paragraph -->
-                            <p class="paragraph__popup">In the pages below you'll find what I have to offer and how to reach me.</p>
-                            <!-- component: button -->
-                            <!-- return button -->
-                            <a class="btnClose learnMoreCloseBtn" href="#about">
-                                <div class="btnClose__iconWrapper">
-                                    <p class="btnClose__icon--aboutpopup">
-                                        &times;
-                                    </p>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
+                <a class="btn btn--primaryBtn aboutContactMeBtn" href="#contact">
 
-                <!-- component: filler -->
-                <!-- a div to fill the space behind the navbar -->
-                <div id="skills" class="filler--blue">
-                    <!-- this is a filler to fill space behind the navbar -->
-                </div>
+                    <svg class="btn__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M4.48833 3.32808L5.50842 2.54674C5.91432 2.23584 6.48935 2.28119 6.8415 2.65187L9.79013 5.7557C10.1568 6.14166 10.1568 6.74723 9.79013 7.13319L8.98765 7.97792C8.62098 8.36388 8.62098 8.96945 8.98765 9.35542L11.5 12L13.9417 14.5702C14.3359 14.9852 14.9974 14.9852 15.3917 14.5702L16.0965 13.8282C16.474 13.4309 17.1009 13.4114 17.5023 13.7845L20.7217 16.7766C21.1437 17.1688 21.1478 17.8356 20.7308 18.233L19.3228 19.5747C17.7784 21.0465 15.5063 21.4579 13.5438 20.6213C8.83442 18.6136 5.0481 14.9144 2.93134 10.2531L2.81681 10.0008C1.7532 7.65864 2.44617 4.8923 4.48833 3.32808Z"
+                            stroke="#f0f0f0" stroke-width="2" />
+                    </svg>
 
-            </div>
+                    <span class="btn--contactMeText">Contact Me</span>
 
-            <!-- skills-section -->
-            <section class="skills">
+                </a>
 
-                <!-- banner heading-secondary -->
-                <!-- utility: u-center-text & u-margin-bottom -->
-                <div class="u-center-text u-margin-bottom-medium">
-                    <!-- typography: heading-secondary -->
-                    <h2 class="heading-secondary">
-                        <span class="heading-secondary--blue heading-secondary--main heading-secondary--mainWhiteSubBorder">My skills</span>
-                        <span class="heading-secondary--blueSub heading-secondary--sub heading-secondary--whiteSubBorder">What I'm good at</span>
-                    </h2>
-                </div>
-
-                <!-- utility: subsection-wrapper -->
-                <div class="subsection-wrapper-skills">
-
-                    <!-- container for the skills content which is divided in two sections: 
-                        1. what I aim to achieve with my skills and 
-                        2. the technologies I use to achieve those skills -->
-                    <!-- skills-content -->
-                    <div class="skills__content">
-
-                        <!-- skills-content-above-section -->
-                        <!-- container for what I aim to achieve with my skills -->
-                        <div class="skills__contAbove">
-
-                            <div class="skills__contAbove--description">
-                                <h3 class="heading-tertiary u-margin-bottom-xtrasmall">User Experience</h3>
-                                <p class="paragraph paragraph__skills">I aim to create fast loading web pages with lag-free interaction.
-                                    My designs are responsive, with mobile first in mind, that render well on a variety
-                                    of devices or screen sizes. Better user experiences allows the user to focus on the
-                                    product or service. I love to construct dynamic
-                                    pages which comes to life.</p>
-                            </div>
-
-                            <!-- component: carousel -->
-                            <!-- carousel to display different cards you can go through -->
-                            <div class="skills__contAbove--carousel carousel">
-
-                                <!-- carouselFunction is the actual card that displays the information -->
-                                <div class="skills__contAbove--carouselFunction carousel__carouselFunction">
-
-                                    <!-- carousel left arrow container -->
-                                    <div class="carousel__carouselFunction--arrowContainer">
-                                        <i class="fas fa-angle-double-left carousel__carouselFunction--arrowLeft carouselLeftArrow"></i>
-                                    </div>
-
-                                    <!-- carousel card -->
-                                    <div class="carousel__carouselFunction--card card">
-
-                                        <!-- carousel card heading -->
-                                        <div class="card__heading-wrapper">
-                                            <h4 class="card__heading">
-                                                <span class="carouselCardHeadingIcon">
-                                                    <i class="fa fa-sm fa-fast-forward card__heading--icon" aria-hidden="true"></i>
-                                                </span>
-                                                <span class="card__heading--text carouselCardHeading"> Fast</span>
-                                            </h4>
-                                        </div>
-
-                                        <!-- carousel card content -->
-                                        <div class="card__content">
-                                            <p class="card__content--short-description paragraph paragraph__card carouselCardInfo">I create fast loading web pages.</p>
-                                            <!-- long description will appear on when you click on more info -->
-                                            <!-- <p class="card__content--long-description paragraph">I use light weight designs to create fast loading web pages, with 
-                                                lag-free interaction, which increases visitor retention and loyalty!</p> -->
-                                        </div>
-
-                                        <!-- carousel card button -->
-                                        <!-- component: button -->
-                                        <!-- button wrapper -->
-                                        <div class="card__button-wrapper">
-                                            <!-- component: btn--grey-->
-                                            <button class="btn btn--onBlueBackground card__button cardOpenMoreInfoPopup">More info</button>
-                                        </div>
-
-                                        <!-- component: cardpopup -->
-                                        <div id="cardPopupLink" class="card__popup">
-                                            <h4 class="card__popup--heading u-margin-bottom-xtrasmall carouselPopupHeading">Fast</h4>
-                                            <p class="card__popup--paragraph carouselPopupInfo">I use light weight designs to create fast loading web pages, with
-                                                lag-free interaction, which increases visitor retention and loyalty!</p>
-                                            <!-- component: button> -->
-                                            <div class="btnClose">
-                                                <div class="btnClose__iconWrapper">
-                                                    <p class="btnClose__icon--cardpopup popupCloseMoreInfoIcon">
-                                                        &times;
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                    </div>
-
-                                    <!-- carousel right arrow container -->
-                                    <div class="carousel__carouselFunction--arrowContainer">
-                                        <i class="fas fa-angle-double-right carousel__carouselFunction--arrowRight carouselRightArrow"></i>
-                                    </div>
-
-                                </div>
-
-                                <!-- carouselIndex indicates which card in the sequence you are currently at -->
-                                <div class="skills__contAbove--carouselIndex carousel__carouselIndex u-margin-top-small">
-                                    <div class=carousel__carouselIndex--indexContainer>
-                                        <div class="carousel__carouselIndex--indexBox carouselIndex0"></div>
-                                        <div class="carousel__carouselIndex--indexBox carouselIndex1"></div>
-                                        <div class="carousel__carouselIndex--indexBox carouselIndex2"></div>
-                                        <div class="carousel__carouselIndex--indexBox carouselIndex3"></div>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-
-                        <!-- horizontal line to divide skills content above from skills content below -->
-                        <hr>
-
-                        <!-- skills-content-below-section -->
-                        <!-- container for the technologies I use to achieve my coding goals -->
-                        <div class="skills__contBelow u-margin-top-small">
-
-                            <!-- skills-below-description -->
-                            <!-- description of how I use the technologies -->
-                            <div class="skills__contBelow--description u-margin-bottom-large">
-                                <h3 class="heading-tertiary u-margin-bottom-xtrasmall">Toolbelt</h3>
-                                <p class="paragraph paragraph__skills">I work on both the front-end and back-end of web applications or pages.
-                                    I aim to deliver end to end solutions. To this end I make use of
-                                    the latest technologies to construct solutions aimed at achieving
-                                    client goals swiftly.
-                                </p>
-                            </div>
-
-                            <!-- skills-below-toolsContainer -->
-                            <!-- holds a box to the left with 3 categories of tools, and
-                                a box to the right with a reference to each tool of all
-                                the categories combined -->
-                            <div class="skills__contBelow--toolsContainer">
-
-                                <!-- component: tools -->
-                                <div class="tools">
-
-                                    <!-- tools navbar with categories as nav items in left box -->
-                                    <div class="tools__toolsNav">
-                                        <ul class="tools__navbar">
-                                            <li class="tools__navbarItem tools__navbarItem--languages"><i class="fa fa-md fa-language" aria-hidden="true"></i> <span class="languageSpan mockbtn">
-                                                    Langs<span class="languageRarr"> &rarr;</span></span></li>
-                                            <li class="tools__navbarItem tools__navbarItem--tools"><i class="fa fa-md fa-wrench" aria-hidden="true"></i> <span class="toolsSpan mockbtn"> Tools<span
-                                                        class="toolsRarr"> &rarr;</span></span></li>
-                                            <li class="tools__navbarItem tools__navbarItem--frameworksAndLibs"><i class="fa fa-md fa-briefcase" aria-hidden="true"></i> <span
-                                                    class="framesLibsSpan mockbtn"> Fmwks & Libs<span class="framesLibsRarr"> &rarr;</span></span></li>
-                                        </ul>
-                                    </div>
-
-                                    <!-- tools of each category in boxes position on top of each other -->
-                                    <!-- programming languages -->
-                                    <div class="tools__toolsCard tools__toolsCard--1">
-                                        <ul class="tools__toolsList tools__toolsList--toolList1">
-                                            <li class="tools__toolsList--items tools__toolsList--item1 tools__toolsList--absItem1">HTML</li>
-                                            <li class="tools__toolsList--items tools__toolsList--item1 tools__toolsList--absItem2">CSS</li>
-                                            <li class="tools__toolsList--items tools__toolsList--item1 tools__toolsList--absItem3">SASS</li>
-                                            <li class="tools__toolsList--items tools__toolsList--item1 tools__toolsList--absItem4">JavaScript</li>
-                                        </ul>
-                                    </div>
-
-                                    <!-- programming tools -->
-                                    <div class="tools__toolsCard tools__toolsCard--2">
-                                        <ul class="tools__toolsList tools__toolsList--toolList1">
-                                            <li class="tools__toolsList--items tools__toolsList--item2 tools__toolsList--absItem5">Git</li>
-                                            <li class="tools__toolsList--items tools__toolsList--item2 tools__toolsList--absItem6">GitHub</li>
-                                            <li class="tools__toolsList--items tools__toolsList--item2 tools__toolsList--absItem7">Npm</li>
-                                            <li class="tools__toolsList--items tools__toolsList--item2 tools__toolsList--absItem8">VSCode</li>
-                                            <li class="tools__toolsList--items tools__toolsList--item2 tools__toolsList--absItem9">CodePen</li>
-                                        </ul>
-                                    </div>
-
-                                    <!-- programming frmwrks and libs -->
-                                    <div class="tools__toolsCard tools__toolsCard--3">
-                                        <ul class="tools__toolsList tools__toolsList--toolList1">
-                                            <li class="tools__toolsList--items tools__toolsList--item3 tools__toolsList--absItem10">Bootstrap</li>
-                                            <li class="tools__toolsList--items tools__toolsList--item3 tools__toolsList--absItem11">Node.js</li>
-                                            <li class="tools__toolsList--items tools__toolsList--item3 tools__toolsList--absItem12">Express.js</li>
-                                        </ul>
-                                    </div>
-
-                                </div>
-
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                </div>
             </section>
 
-            <!-- component: filler -->
-            <!-- a div to fill the space behind the navbar -->
-            <div id="portfolio" class="filler--white">
-                <!-- this is a filler to fill space behind the navbar -->
-            </div>
+            <section class="main__portfolioSection portfolioSection">
 
-            <!-- filler-and-section-wrapper -->
-            <div class="filler-and-section-wrapper-portfolio-contact">
+                <div id="projects" class="navLinkId"></div>
 
-                <!-- section-wrapper -->
-                <div class="section-wrapper-portfolio">
-
-                    <!-- portfolio-section -->
-                    <section class="portfolio">
-
-                        <!-- banner heading-secondary -->
-                        <!-- utility: u-center-text & u-margin-bottom -->
-                        <div class="u-center-text u-margin-bottom-medium">
-                            <!-- typography: heading-secondary -->
-                            <h2 class="heading-secondary">
-                                <span class="heading-secondary--red heading-secondary--main heading-secondary--mainRedSubBorder">Portfolio</span>
-                                <span class="heading-secondary--redSub heading-secondary--sub heading-secondary--redSubBorder">Check it out</span>
-                            </h2>
-                        </div>
-
-                        <!-- utility: subsection-wrapper -->
-                        <div class="subsection-wrapper-portfolio">
-
-                            <!-- portfolio content wrapper -->
-                            <div class="portfolio__content">
-                                <!-- portfolio image container -->
-                                <div class="portfolio__contAbove portfolio-image">
-                                    <img class="portfolio-image__image" src="./img/memoryGame014.webp" alt="">
-                                </div>
-                                <!-- portfolio projectinfo container -->
-                                <div class="portfolio__contBelow portfolio-card">
-                                    <h3 class="portfolio-card__heading heading-tertiary u-margin-bottom-small">Memory Game</h3>
-                                    <h4 class="u-margin-bottom-extrasmall u-margin-bottom-xtrasmall">Description: </h4>
-                                    <p class=" paragraph u-margin-bottom-small">A cool web based memory card game. Apart form
-                                        an awesome visual card flip functionality through CSS, JS served me well with the game logic.</p>
-                                    <div class="portfolio-card__techandbuttons-container">
-                                        <div class="portfolio-card__tech u-margin-bottom-small">
-                                            <h4 class="u-margin-bottom-extrasmall u-margin-bottom-small">Technologies: </h4>
-                                            <ul class="portfolio-card__techlist">
-                                                <li class="portfolio-card__techlist--item portfolio-card__techlist--js">JavaScript</li>
-                                                <li class="portfolio-card__techlist--item portfolio-card__techlist--html">HTML</li>
-                                                <li class="portfolio-card__techlist--item portfolio-card__techlist--css">CSS</li>
-                                                <li class="portfolio-card__techlist--item portfolio-card__techlist--css">SASS</li>
-                                            </ul>
-                                        </div>
-                                        <div class="portfolio-card__buttons">
-                                            <!-- <h4 class="u-margin-bottom-extrasmall">View the project or the code:</h4> -->
-                                            <a class="portfolio-card__buttons--btn portfolio-card__buttons--project btn btn--onBlueBackground" href="#">View Project</a>
-                                            <a class="portfolio-card__buttons--btn portfolio-card__buttons--code btn btn--onBlueBackground" href="#">View Code</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- portfolio content wrapper -->
-                            <div class="portfolio__content">
-                                <!-- portfolio image container -->
-                                <div class="portfolio__contAbove portfolio-image">
-                                    <img class="portfolio-image__image" src="./img/lightSwitch002.webp" alt="">
-                                </div>
-                                <!-- portfolio projectinfo container -->
-                                <div class="portfolio__contBelow portfolio-card">
-                                    <h3 class="portfolio-card__heading heading-tertiary u-margin-bottom-small">Light Switch Project</h3>
-                                    <h4 class="u-margin-bottom-extrasmall u-margin-bottom-xtrasmall">Description: </h4>
-                                    <p class=" paragraph u-margin-bottom-small">This is a simple light switch project. A simple site that demonstrates
-                                        a mastery of CSS and DOM manipulation.</p>
-                                    <div class="portfolio-card__techandbuttons-container">
-                                        <div class="portfolio-card__tech u-margin-bottom-small">
-                                            <h4 class="u-margin-bottom-extrasmall u-margin-bottom-small">Technologies: </h4>
-                                            <ul class="portfolio-card__techlist">
-                                                <li class="portfolio-card__techlist--item portfolio-card__techlist--js">JavaScript</li>
-                                                <li class="portfolio-card__techlist--item portfolio-card__techlist--html">HTML</li>
-                                                <li class="portfolio-card__techlist--item portfolio-card__techlist--css">CSS</li>
-                                                <li class="portfolio-card__techlist--item portfolio-card__techlist--css">SASS</li>
-                                            </ul>
-                                        </div>
-                                        <div class="portfolio-card__buttons">
-                                            <!-- <h4 class="u-margin-bottom-extrasmall">View the project or the code:</h4> -->
-                                            <a class="portfolio-card__buttons--btn portfolio-card__buttons--project btn btn--onBlueBackground" href="#">View Project</a>
-                                            <a class="portfolio-card__buttons--btn portfolio-card__buttons--code btn btn--onBlueBackground" href="#">View Code</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- portfolio content wrapper -->
-                            <div class="portfolio__content">
-                                <!-- portfolio image container -->
-                                <div class="portfolio__contAbove portfolio-image">
-                                    <img class="portfolio-image__image" src="./img/prtfolio-pic-profile001.webp" alt="">
-                                </div>
-                                <!-- portfolio projectinfo container -->
-                                <div class="portfolio__contBelow portfolio-card">
-                                    <h3 class="portfolio-card__heading heading-tertiary u-margin-bottom-small">My Portfolio Website</h3>
-                                    <h4 class="u-margin-bottom-extrasmall u-margin-bottom-xtrasmall">Description: </h4>
-                                    <p class=" paragraph u-margin-bottom-small">This is my portfolio project. It's a static site to introduce
-                                        me as a web developer and designer, and most important, to showcase
-                                        the projects I worked on.</p>
-                                    <div class="portfolio-card__techandbuttons-container">
-                                        <div class="portfolio-card__tech u-margin-bottom-small">
-                                            <h4 class="u-margin-bottom-extrasmall u-margin-bottom-small">Technologies: </h4>
-                                            <ul class="portfolio-card__techlist">
-                                                <li class="portfolio-card__techlist--item portfolio-card__techlist--js">JavaScript</li>
-                                                <li class="portfolio-card__techlist--item portfolio-card__techlist--html">HTML</li>
-                                                <li class="portfolio-card__techlist--item portfolio-card__techlist--css">CSS</li>
-                                            </ul>
-                                        </div>
-                                        <div class="portfolio-card__buttons">
-                                            <!-- <h4 class="u-margin-bottom-extrasmall">View the project or the code:</h4> -->
-                                            <a class="portfolio-card__buttons--btn portfolio-card__buttons--project btn btn--onBlueBackground" href="#">View Project</a>
-                                            <a class="portfolio-card__buttons--btn portfolio-card__buttons--code btn btn--onBlueBackground" href="#">View Code</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-
-                    </section>
-
+                <div class="portfolioSection__headingH2Container headingH2Container">
+                    <h2 data-text="portfolio" class="headingH2Container__headingH2 headingH2">Projects</h2>
+                    <hr class="headingH2Container__hr hr">
+                    <p class="headingH2Container__subheadingH2 subheadingH2">check out my work</p>
                 </div>
 
-                <!-- component: filler -->
-                <!-- a div to fill the space behind the navbar -->
-                <div id="contact" class="filler--blue">
-                    <!-- this is a filler to fill space behind the navbar -->
-                </div>
+                <p class="portfolioSection__paragraph paragraph onlyParagraph" id="portfolioParagraph">Step into
+                    my portfolio, a realm of boundless creativity. Discover my latest masterpieces,
+                    blending art and technology with passion and skill. Welcome to a world of
+                    innovation and inspiration.</p>
 
-            </div>
+                <div class="portfolioSection__cardPortfolioContainer cardPortfolioContainer">
 
-            <!-- contact-section -->
-            <section id="contact" class="contact">
+                    <article class="portfolioSection__cardPortfolio cardPortfolio">
 
-                <!-- banner heading-secondary -->
-                <!-- utility: u-center-text & u-margin-bottom -->
-                <div class="u-center-text u-margin-bottom-medium">
+                        <div class="cardPortfolio__cardImage cardPortfolio__cardImage--light"></div>
 
-                    <!-- typography: heading-secondary -->
-                    <h2 class="heading-secondary">
-                        <span class="heading-secondary--blue heading-secondary--main heading-secondary--mainWhiteSubBorder">Contact</span>
-                        <span class="heading-secondary--blueSub heading-secondary--sub heading-secondary--whiteSubBorder">get in touch</span>
-                    </h2>
+                        <div class="cardPortfolio__cardContent">
 
-                </div>
-
-                <!-- utility: subsection-wrapper -->
-                <div class="subsection-wrapper-contact">
-
-                    <!-- contact-content -->
-                    <div class="contact__content">
-
-                        <div class="contact__contAbove">
-
-                            <!-- contact tel&email -->
-                            <div class="contact__contAbove--telAndEmail u-margin-bottom-large">
-
-                                <h3 class="heading-tertiary u-margin-bottom-small">Contact details</h3>
-
-                                <div class="contact__itemsContainer">
-                                    <a href="tel:+27825503872" class="contact__itemsContainer--tel"><i class="fas fa-phone fa-1x"></i>+2782 550 3872</a>
-                                    <a href="mailto:schalkvandyk1979@gmail.com" class="contact__itemsContainer--email"><i class="fas fa-envelope fa-1x"></i>schalkvandyk1979@gmail.com</a>
-                                </div>
-
+                            <div class="cardPortfolio__headingH3Container headingH3Container--project headingH3Container">
+                                <h3 data-text="portfolio" class="headingH3Container__headingH3 headingH3Container__headingH3--project headingH3">Light Switch</h3>
+                                <hr class="headingH3Container__hr headingH3Container__hr--project hr">
                             </div>
 
-                            <!-- contact socialmedia -->
-                            <div class="contact__contAbove--socialMedia u-margin-bottom-large">
+                            <p class="cardPortfolio__paragraph paragraph--project onlyParagraph">A basic static website showcasing my DOM
+                                manipulation skills and expertise.</p>
 
-                                <h3 class="heading-tertiary u-margin-bottom-small">Profile links</h3>
+                            <div class="cardPortfolio__cta cta">
 
-                                <!-- component-socialmedia -->
-                                <div class="contact__socialMedia socialMediaContact">
+                                <a class="btn btn--primaryBtn-white-portfolioCard" href="https://svdwebtech.github.io/lightSwitch002/" target="_blank">
 
-                                    <div class="socialMedia__linkWrapper">
-                                        <a class="socialMediaContact__button" target="_blank" href="https://web.facebook.com/SchalkvanDyk/">
-                                            <i class="fab fa-facebook-square fa-3x socialMedia__icon socialMedia socialMediaContact__icon"></i>
-                                        </a>
-                                    </div>
+                                    <svg class="btn__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M14 10L10 14" stroke="#c1121f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path
+                                            d="M16.7059 13.1765L19.0588 10.8235C20.6832 9.19916 20.6832 6.56554 19.0588 4.94118V4.94118C17.4345 3.31681 14.8008 3.31681 13.1765 4.94118L10.8235 7.29412M7.29412 10.8235L4.94118 13.1765C3.31681 14.8008 3.31681 17.4345 4.94118 19.0588V19.0588C6.56554 20.6832 9.19916 20.6832 10.8235 19.0588L13.1765 16.7059"
+                                            stroke="#c1121f" stroke-width="2" stroke-linecap="round" />
+                                    </svg>
 
-                                    <div class="socialMedia__linkWrapper">
-                                        <a class="socialMediaContact__button" target="_blank" href="https://www.linkedin.com/in/schalk-van-dyk-65978836/">
-                                            <i class="fab fa-linkedin fa-3x socialMedia__icon socialMedia socialMediaContact__icon"></i>
-                                        </a>
-                                    </div>
+                                    <span>View</span>
+                                </a>
 
-                                    <div class="socialMedia__linkWrapper">
-                                        <a class="socialMediaContact__button" target="_blank" href="https://github.com/SVDwebtech">
-                                            <i class="fab fa-github-square fa-3x socialMedia__icon socialMedia socialMediaContact__icon"></i>
-                                        </a>
-                                    </div>
+                                <a class="btn btn--secondaryBtn-portfolioCard" href="https://github.com/SVDwebtech/lightSwitch002/blob/master/README.md" target="_blank">
 
-                                    <div class="socialMedia__linkWrapper">
-                                        <a class="socialMediaContact__button" target="_blank" href="https://twitter.com/SVDwebtech">
-                                            <i class="fab fa-twitter-square fa-3x socialMedia__icon socialMedia socialMediaContact__icon"></i>
-                                        </a>
-                                    </div>
+                                    <svg class="btn__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M20 12V12C20 10.1144 20 9.17157 19.4142 8.58579C18.8284 8 17.8856 8 16 8H14.6569C13.8394 8 13.4306 8 13.0631 7.84776C12.6955 7.69552 12.4065 7.40649 11.8284 6.82843L11.1716 6.17157C10.5935 5.59351 10.3045 5.30448 9.93694 5.15224C9.5694 5 9.16065 5 8.34315 5H8C6.11438 5 5.17157 5 4.58579 5.58579C4 6.17157 4 7.11438 4 9V15C4 16.8856 4 17.8284 4.58579 18.4142C5.17157 19 6.11438 19 8 19H11"
+                                            stroke="#f0f0f0" stroke-width="2" />
+                                        <circle cx="16.5" cy="16.5" r="2.5" stroke="#f0f0f0" stroke-width="2" />
+                                        <path d="M19.5 19.5L21 21" stroke="#f0f0f0" stroke-width="2" stroke-linecap="round" />
+                                    </svg>
 
-                                </div>
+                                    <span>Info</span>
+                                </a>
 
                             </div>
 
                         </div>
 
-                        <div class="contact__contBelow u-margin-bottom-large">
+                    </article>
 
-                            <h3 class="heading-tertiary">Message me</h3>
+                    <article class="portfolioSection__cardPortfolio cardPortfolio">
 
-                            <!-- <p class="paragraph">Send me a message and I will get back to you asap.</p> -->
+                        <div class="cardPortfolio__cardImage cardPortfolio__cardImage--memory"></div>
 
-                            <div class="contact__formWrapper">
+                        <div class="cardPortfolio__cardContent">
 
-                                <form onsubmit="sendEmail(); reset(); return false;" class="contact__form">
+                            <div class="cardPortfolio__headingH3Container headingH3Container--project headingH3Container">
+                                <h3 data-text="portfolio" class="headingH3Container__headingH3 headingH3Container__headingH3--project headingH3">Memory Card Game</h3>
+                                <hr class="headingH3Container__hr headingH3Container__hr--project hr">
+                            </div>
 
-                                    <div class="nameAndEmail">
-                                        <div class="contact__form--name contact__form--item">
-                                            <label for="fullName" class="contact__form--labels"></label>
-                                            <input type="text" name="clientFullName" id="fullName" placeholder="Name" class="contact__form--inputs contact__form--nameInputs" required>
-                                        </div>
-                                        <div class="contact__form--email contact__form--item">
-                                            <label for="email" class="contact__form--labels"></label>
-                                            <input type="email" name="clientEmailAddress" id="email" placeholder="Email" class="contact__form--inputs contact__form--emailInputs" required>
-                                        </div>
-                                    </div>
+                            <p class="cardPortfolio__paragraph paragraph--project onlyParagraph">A basic web page hosting a memory card game, providing simple entertainment for users.</p>
 
-                                    <div class="contact__form--subject contact__form--item">
-                                        <label for="subject" class="contact__form--labels"></label>
-                                        <input type="text" name="messageSubject" id="subject" placeholder="Subject" required class="contact__form--inputs contact__form--subject">
-                                    </div>
+                            <div class="cardPortfolio__cta cta">
 
-                                    <div class="contact__form--message contact__form--item">
-                                        <label for="message" class="contact__form--labels"></label>
-                                        <textarea name="messageContent" id="message" placeholder="Describe project...." rows="5" class="contact__form--inputs contact__form--message"></textarea>
-                                    </div>
+                                <a class="btn btn--primaryBtn-white-portfolioCard" href="https://svdwebtech.github.io/memoryGame014/" target="_blank">
 
-                                    <div class="u-margin-top-small">
-                                        <button type="submit" class="btn btn--onBlueBackground submitBtn">Send Message</button>
-                                    </div>
+                                    <svg class="btn__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M14 10L10 14" stroke="#c1121f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path
+                                            d="M16.7059 13.1765L19.0588 10.8235C20.6832 9.19916 20.6832 6.56554 19.0588 4.94118V4.94118C17.4345 3.31681 14.8008 3.31681 13.1765 4.94118L10.8235 7.29412M7.29412 10.8235L4.94118 13.1765C3.31681 14.8008 3.31681 17.4345 4.94118 19.0588V19.0588C6.56554 20.6832 9.19916 20.6832 10.8235 19.0588L13.1765 16.7059"
+                                            stroke="#c1121f" stroke-width="2" stroke-linecap="round" />
+                                    </svg>
 
-                                </form>
+                                    <span>View</span>
+                                </a>
+
+                                <a class="btn btn--secondaryBtn-portfolioCard" href="https://github.com/SVDwebtech/memoryGame014/blob/master/README.md" target="_blank">
+
+                                    <svg class="btn__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M20 12V12C20 10.1144 20 9.17157 19.4142 8.58579C18.8284 8 17.8856 8 16 8H14.6569C13.8394 8 13.4306 8 13.0631 7.84776C12.6955 7.69552 12.4065 7.40649 11.8284 6.82843L11.1716 6.17157C10.5935 5.59351 10.3045 5.30448 9.93694 5.15224C9.5694 5 9.16065 5 8.34315 5H8C6.11438 5 5.17157 5 4.58579 5.58579C4 6.17157 4 7.11438 4 9V15C4 16.8856 4 17.8284 4.58579 18.4142C5.17157 19 6.11438 19 8 19H11"
+                                            stroke="#f0f0f0" stroke-width="2" />
+                                        <circle cx="16.5" cy="16.5" r="2.5" stroke="#f0f0f0" stroke-width="2" />
+                                        <path d="M19.5 19.5L21 21" stroke="#f0f0f0" stroke-width="2" stroke-linecap="round" />
+                                    </svg>
+
+                                    <span>Info</span>
+                                </a>
 
                             </div>
 
                         </div>
 
-                    </div>
+                    </article>
 
                 </div>
 
             </section>
 
+            <section class="main__skillsSection skillsSection">
+
+                <div id="skills" class="navLinkId"></div>
+
+                <div class="skillsSection__headingH2Container headingH2Container">
+                    <h2 data-text="portfolio" class="headingH2Container__headingH2 headingH2">Skills</h2>
+                    <hr class="headingH2Container__hr hr">
+                    <p class="headingH2Container__subheadingH2 subheadingH2">what I do</p>
+                </div>
+
+                <div class="skillsSection__headingH3Container headingH3Container">
+                    <h3 data-text="portfolio" class="headingH3Container__headingH3 headingH3Container__headingH3--blue headingH3">Website and Web App Design & Development:
+                        Crafting the Digital Experience
+                    </h3>
+                </div>
+
+                <article class="skillsSection__userX userX">
+
+                    <p class="paragraph paragraph--userX">I specialize in creating fast-loading,
+                        responsive web pages and apps for seamless user interaction. With a
+                        mobile-first approach, I ensure optimal rendering on various devices.
+                        My designs create better user experiences, enabling full focus on the
+                        product or service. Additionally, I excel at constructing dynamic
+                        pages and apps.</p>
+
+                    <div class="skillsSection__cardSkillsContainer cardSkillsContainer">
+
+                        <article class="skillsSection__cardSkills cardSkills">
+                            <figure class="cardSkills__figure">
+                                <img class="cardSkills__img" src="./img/svgIcons/fastIcon.svg" alt="an image of the home page of a portfolio website">
+                            </figure>
+                            <div class="cardSkills__headingH3Container headingH3Container headingH3Container--skills">
+                                <h3 data-text="portfolio" class="cardSkills__headingH3 headingH3Container__headingH3 headingH3Container__headingH3--skills headingH3">High-Speed</h3>
+                                <hr class="headingH3Container__hr headingH3Container__hr--skills hr">
+                            </div>
+                            <p class="cardSkills__paragraph paragraph paragraph--skills onlyParagraph">fast loading web pages and applications</p>
+                        </article>
+
+                        <article class="skillsSection__cardSkills cardSkills">
+                            <figure class="cardSkills__figure">
+                                <img class="cardSkills__img" src="./img/svgIcons/responsiveIcon.svg" alt="an image of the home page of a portfolio website">
+                            </figure>
+                            <div class="cardSkills__headingH3Container headingH3Container headingH3Container--skills">
+                                <h3 data-text="portfolio" class="cardSkills__headingH3 headingH3Container__headingH3 headingH3Container__headingH3--skills headingH3">Responsive</h3>
+                                <hr class="headingH3Container__hr headingH3Container__hr--skills hr">
+                            </div>
+                            <p class="cardSkills__paragraph paragraph paragraph--skills onlyParagraph">flexible layouts and responsive images</p>
+                        </article>
+
+                        <article class="skillsSection__cardSkills cardSkills">
+                            <figure class="cardSkills__figure">
+                                <img class="cardSkills__img" src="./img/svgIcons/intuitiveIcon.svg" alt="an image of the home page of a portfolio website">
+                            </figure>
+                            <div class="cardSkills__headingH3Container headingH3Container headingH3Container--skills">
+                                <h3 data-text="portfolio" class="cardSkills__headingH3 headingH3Container__headingH3 headingH3Container__headingH3--skills headingH3">Intuitive</h3>
+                                <hr class="headingH3Container__hr headingH3Container__hr--skills hr">
+                            </div>
+                            <p class="cardSkills__paragraph paragraph paragraph--skills onlyParagraph">efficient and easy to use and a good user experience</p>
+                        </article>
+
+                        <article class="skillsSection__cardSkills cardSkills">
+                            <figure class="cardSkills__figure">
+                                <img class="cardSkills__img" src="./img/svgIcons/dynamicIcon.svg" alt="an image of the home page of a portfolio website">
+                            </figure>
+                            <div class="cardSkills__headingH3Container headingH3Container headingH3Container--skills">
+                                <h3 data-text="portfolio" class="cardSkills__headingH3 headingH3Container__headingH3 headingH3Container__headingH3--skills headingH3">Dynamic</h3>
+                                <hr class="headingH3Container__hr headingH3Container__hr--skills hr">
+                            </div>
+                            <p class="cardSkills__paragraph paragraph paragraph--skills onlyParagraph">active and dynamic content to improve user experience</p>
+                        </article>
+
+                    </div>
+
+                </article>
+
+                <div class="skillsSection__headingH3Container headingH3Container">
+                    <h3 data-text="portfolio" class="headingH3Container__headingH3 headingH3Container__headingH3--blue headingH3">Tech I use</h3>
+                </div>
+
+                <article class="skillsSection__tech tech">
+                    <p class="paragraph">I specialize in full-stack web development,
+                        proficiently handling both the front-end and back-end aspects
+                        of web applications and pages. My approach involves delivering
+                        comprehensive end-to-end solutions, leveraging cutting-edge
+                        technologies to swiftly accomplish clients' objectives.</p>
+
+                    <div class="skillsSection__techStack techStack">
+                        <img class="techStack__img" src="./img/svgIcons/htmlIcon.svg" alt="">
+                        <img class="techStack__img" src="./img/svgIcons/cssIcon.svg" alt="">
+                        <img class="techStack__img" src="./img/svgIcons/jsIcon.svg" alt="">
+                        <img class="techStack__img" src="./img/svgIcons/bootstrapIcon.svg" alt="">
+                        <img class="techStack__img" src="./img/svgIcons/sassIcon.svg" alt="">
+                        <img class="techStack__img" src="./img/svgIcons/nodeJsIcon.svg" alt="">
+                        <img class="techStack__img" src="./img/svgIcons/npmIcon.svg" alt="">
+                        <img class="techStack__img" src="./img/svgIcons/mySqlIcon.svg" alt="">
+                        <img class="techStack__img" src="./img/svgIcons/gitIcon.svg" alt="">
+                        <img class="techStack__img" src="./img/svgIcons/gitHubIcon.svg" alt="">
+                        <img class="techStack__img" src="./img/svgIcons/figmaIcon.svg" alt="">
+                        <img class="techStack__img" src="./img/svgIcons/vscodeIcon.svg" alt="">
+                        <img class="techStack__img" src="./img/svgIcons/codepenIcon.svg" alt="">
+                    </div>
+                </article>
+
+                <a class="btn btn--primaryBtn skillsContactMeBtn" href="#contact">
+                    <svg class="btn__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M4.48833 3.32808L5.50842 2.54674C5.91432 2.23584 6.48935 2.28119 6.8415 2.65187L9.79013 5.7557C10.1568 6.14166 10.1568 6.74723 9.79013 7.13319L8.98765 7.97792C8.62098 8.36388 8.62098 8.96945 8.98765 9.35542L11.5 12L13.9417 14.5702C14.3359 14.9852 14.9974 14.9852 15.3917 14.5702L16.0965 13.8282C16.474 13.4309 17.1009 13.4114 17.5023 13.7845L20.7217 16.7766C21.1437 17.1688 21.1478 17.8356 20.7308 18.233L19.3228 19.5747C17.7784 21.0465 15.5063 21.4579 13.5438 20.6213C8.83442 18.6136 5.0481 14.9144 2.93134 10.2531L2.81681 10.0008C1.7532 7.65864 2.44617 4.8923 4.48833 3.32808Z"
+                            stroke="#f0f0f0" stroke-width="2" />
+                    </svg>
+                    <span class="btn--contactMeText">Contact Me</span>
+                </a>
+
+                </article>
+
+            </section>
+
+            <section class="main__contactSection contactSection">
+
+                <div id="contact" class="navLinkId"></div>
+
+                <div class="contactSection__headingH2Container headingH2Container">
+                    <h2 data-text="portfolio" class="headingH2Container__headingH2 headingH2">Contact</h2>
+                    <hr class="headingH2Container__hr hr">
+                    <p class="headingH2Container__subheadingH2 subheadingH2">let's connect right now</p>
+                </div>
+
+                <div class="contactSection__textAndContactMessageContainer textAndContactMessageContainer">
+
+                    <div class="contactSection__introParAndContactItemsContainer introParAndContactItemsContainer">
+
+                        <p class="contactSection__paragraph paragraph introParagraph">Looking for a standout website
+                            or app that sets you apart? Look no further! I'm here to help. Send
+                            me a message now, and let's schedule a consultation that fits
+                            your schedule.</p>
+
+                        <article class="contactSection__contactItemsContainer contactItemsContainer">
+
+                            <div class="contactSection__headingH3Container headingH3Container headingH3Container--contactInfo">
+                                <h3 data-text="portfolio" class="headingH3Container__headingH3 headingH3Container__headingH3--blue headingH3">Contact Info:</h3>
+                            </div>
+
+                            <div class="contactSection__contactItemsInnerContainer contactItemsInnerContainer">
+
+                                <div class="contactSection__contactItem contactItem">
+                                    <svg class="contactItem__icon" width="27" height="28" viewBox="0 0 27 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M2.82607 2.0906L3.79708 1.11959C4.41541 0.501256 5.41792 0.501255 6.03625 1.11959L10.1304 5.21375C10.7487 5.83208 10.7487 6.83459 10.1304 7.45292L7.29243 10.2909C6.8192 10.7641 6.70188 11.4871 7.00118 12.0857C8.73138 15.5461 11.5373 18.352 14.9976 20.0822C15.5962 20.3815 16.3192 20.2641 16.7924 19.7909L19.6304 16.9529C20.2487 16.3346 21.2513 16.3346 21.8696 16.9529L25.9637 21.0471C26.5821 21.6654 26.5821 22.6679 25.9637 23.2863L24.9927 24.2573C21.6498 27.6002 16.3574 27.9764 12.5752 25.1398L10.6619 23.7048C7.90132 21.6343 5.44902 19.182 3.37857 16.4214L1.94358 14.5081C-0.893022 10.726 -0.516906 5.43357 2.82607 2.0906Z"
+                                            fill="#003049" />
+                                    </svg>
+                                    <p class="paragraph paragraph--contactItem">+27 82 550 3872</p>
+                                </div>
+
+                                <div class="contactSection__contactItem contactItem">
+                                    <svg class="contactItem__icon" width="29" height="23" viewBox="0 0 29 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M1.74733e-06 5.89396C0 5.92908 0 5.96443 0 5.99999V16.1667C0 18.9951 0 20.4093 0.87868 21.288C1.75736 22.1667 3.17157 22.1667 6 22.1667H22.5C25.3284 22.1667 26.7426 22.1667 27.6213 21.288C28.5 20.4093 28.5 18.9951 28.5 16.1667V6C28.5 5.96443 28.5 5.92908 28.5 5.89396L15.2213 13.271C14.6172 13.6066 13.8828 13.6066 13.2787 13.271L1.74733e-06 5.89396ZM0.0262167 3.75014C0.182282 3.7541 0.339719 3.79477 0.485643 3.87584L14.25 11.5227L28.0144 3.87584C28.1603 3.79477 28.3177 3.7541 28.4738 3.75014C28.4155 2.34583 28.2275 1.48483 27.6213 0.87868C26.7426 0 25.3284 0 22.5 0H6C3.17157 0 1.75736 0 0.87868 0.87868C0.272529 1.48483 0.084527 2.34583 0.0262167 3.75014Z"
+                                            fill="#003049" />
+                                    </svg>
+                                    <p class="paragraph paragraph--contactItem">schalk@schalkvandyk.com</p>
+                                </div>
+
+                                <div id="internetItem" class="contactSection__contactItem contactItem">
+                                    <svg class="contactItem__icon" width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M12.5798 0L12.5798 7.74654C11.6187 7.6461 10.6793 7.45463 9.78559 7.17699C8.40542 6.74823 7.17476 6.12673 6.15649 5.36303C5.48669 4.86068 4.92191 4.30686 4.46685 3.7205C6.64675 1.69545 9.46169 0.344683 12.5798 0ZM15.7465 1.21429e-05V7.74654C16.7077 7.6461 17.6471 7.45462 18.5408 7.17699C19.9209 6.74823 21.1516 6.12673 22.1699 5.36303C22.8396 4.8607 23.4044 4.3069 23.8595 3.72057C21.6796 1.69551 18.8647 0.344718 15.7465 1.21429e-05ZM25.9533 6.15719C25.401 6.78982 24.7689 7.37209 24.0699 7.89636C22.7357 8.89698 21.1737 9.67501 19.4802 10.2011C18.2799 10.574 17.0234 10.8173 15.7465 10.9274V12.5788L28.3261 12.5789C28.0647 10.216 27.2257 8.02736 25.9533 6.15719ZM28.3262 15.7455L15.7465 15.7455V17.3969C17.0234 17.5071 18.2799 17.7504 19.4802 18.1233C21.1737 18.6494 22.7357 19.4274 24.0699 20.428C24.7692 20.9525 25.4015 21.535 25.954 22.1679C27.2263 20.2975 28.0652 18.1086 28.3262 15.7455ZM23.8602 24.6048C23.405 24.0181 22.84 23.464 22.1699 22.9613C21.1516 22.1976 19.9209 21.5761 18.5408 21.1474C17.6471 20.8697 16.7077 20.6783 15.7465 20.5778V28.3261C18.865 27.9813 21.6802 26.6302 23.8602 24.6048ZM12.5798 28.3261L12.5798 20.5778C11.6187 20.6783 10.6793 20.8697 9.78559 21.1474C8.40542 21.5761 7.17476 22.1976 6.15649 22.9613C5.48631 23.464 4.92127 24.0181 4.46608 24.6048C6.64609 26.6303 9.46132 27.9813 12.5798 28.3261ZM2.37232 22.168C2.92478 21.535 3.55716 20.9525 4.25649 20.428C5.59065 19.4274 7.15271 18.6494 8.84612 18.1233C10.0464 17.7504 11.3029 17.5071 12.5798 17.3969V15.7455L0 15.7455C0.261083 18.1086 1.1 20.2976 2.37232 22.168ZM0.00018874 12.5788L12.5798 12.5788V10.9274C11.3029 10.8173 10.0464 10.574 8.84612 10.2011C7.15271 9.67501 5.59064 8.89698 4.25649 7.89636C3.55744 7.37207 2.92528 6.78978 2.37298 6.15712C1.10059 8.0273 0.261532 10.216 0.00018874 12.5788Z"
+                                            fill="#003049" />
+                                    </svg>
+                                    <p class="paragraph paragraph--contactItem">www.schalkvandyk.com</p>
+                                </div>
+
+                            </div>
+
+                        </article>
+
+                    </div>
+
+                    <article class="contactSection__contactMessageContainer contactMessageContainer">
+
+                        <div class="contactSection__headingH3Container headingH3Container headingH3Container--messageMe">
+                            <h3 data-text=" portfolio" class="headingH3Container__headingH3 headingH3Container__headingH3--blue headingH3 contactForm__headingH3">Message Me:</h3>
+                        </div>
+
+                        <form onsubmit="sendEmail(); reset(); return false;" class="contactForm">
+
+                            <div class="contactFormNameDetailsContainer">
+
+                                <div class="formGroup">
+                                    <label for="firstName">Name:</label>
+                                    <input type="text" id="firstName" name="firstName" placeholder="Enter your name" required>
+                                </div>
+                                <div class="formGroup">
+                                    <label for="surName">Surname:</label>
+                                    <input type="text" id="surName" name="surName" placeholder="Enter your name" required>
+                                </div>
+
+                            </div>
+
+                            <div class="contactFormNumberDetailsContainer">
+
+                                <div class="formGroup">
+                                    <label for="telephone">Number:</label>
+                                    <input type="tel" id="telephone" name="telephone" placeholder="Enter your whatssapp number">
+                                </div>
+                                <div class="formGroup">
+                                    <label for="email">Email:</label>
+                                    <input type="email" id="email" name="email" placeholder="Enter your email address">
+                                </div>
+
+                            </div>
+
+                            <div class="formGroup">
+                                <label for="message">Message:</label>
+                                <textarea id="message" name="message" rows="4" placeholder="Enter you message" required></textarea>
+                            </div>
+
+                            <div class="formGroup">
+                                <button type="submit" class="btn btn--primaryBtn">
+                                    <svg class="btn__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect x="3" y="4" width="18" height="15" rx="2" stroke="#f0f0f0" stroke-width="2" />
+                                        <path d="M3 8L11.1877 11.639C11.7049 11.8688 12.2951 11.8688 12.8123 11.639L21 8" stroke="#f0f0f0" stroke-width="2" />
+                                    </svg>
+                                    <span class="btn--formBtnText sendMessageBtn">Send Message</span>
+                                </button>
+                            </div>
+                        </form>
+
+                    </article>
+
+                </div>
+
+            </section>
         </main>
 
-        <!-- footer -->
-        <!-- name of designer and developer -->
-        <!-- copyright certificate -->
+        <aside>Sidebar</aside>
+
         <footer class="footer">
 
-            <!-- paragraph -->
-            <p class="paragraph footer__paragraph">
+            <div class="footer__contentWrapper">
 
-                <!-- designer and developer -->
-                <span class="footer__par footer__par--par1">
-                    <span class="footer__paragraph--intro">Designed & Developed by:</span><span class="footer__paragraph--span"> <span class="footer__paragraph--developer">Schalk van Dyk t/a
-                        </span><span class="footer__paragraph--brand">SVDwebtech</span></span>
-                </span>
+                <figure class="footer__figure">
+                    <img class="footer__figure--img" src="./img/footer-photo.webp" alt="a portrait picture of Schalk van Dyk, a web developer and designer">
+                    <figcaption class="footer__figure--figcaption">
+                        <p class="footer__figure--figcaption-name"><span class="footer__figure--figcaption-name-firstLetter">S</span>chalk van Dyk</p>
+                        <p class="footer__figure--figcaption-dev">Web Developer and Designer</p>
+                    </figcaption>
+                </figure>
 
-                <!-- seperator -->
-                <span class="footer__seperator footer__seperator--display-none">
-                    ||
-                </span>
+                <div class="footer__socialMedia socialMedia">
 
-                <!-- copyright certificate -->
-                <span class="footer__par footer__par--par2">
-                    <span class="footer__paragraph--span"> &copy; Schalk van Dyk 2021 - 2022. All rights reserved.</span>
-                </span>
+                    <a href="https://www.linkedin.com/in/schalk-van-dyk-65978836/" target="_blank" class="socialMedia__link socialMedia__link--linkedin">
+                        <svg width="49" height="48" viewBox="0 0 49 48" fill="none" xmlns="http://www.w3.org/2000/svg" class="socialMedia__icon socialMedia__icon--linkedin">
+                            <path d="M0.5 24C0.5 10.7452 11.2452 0 24.5 0C37.7548 0 48.5 10.7452 48.5 24C48.5 37.2548 37.7548 48 24.5 48C11.2452 48 0.5 37.2548 0.5 24Z" fill="#0077B5" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M17.8188 14.8227C17.8188 16.3918 16.6377 17.6473 14.7412 17.6473H14.7064C12.8805 17.6473 11.7 16.3918 11.7 14.8227C11.7 13.2204 12.9164 12 14.777 12C16.6377 12 17.7835 13.2204 17.8188 14.8227ZM17.4606 19.8778V36.2196H12.0216V19.8778H17.4606ZM37.0752 36.2196L37.0754 26.8497C37.0754 21.8303 34.3922 19.4941 30.8132 19.4941C27.9254 19.4941 26.6326 21.0802 25.9107 22.1929V19.8783H20.4711C20.5428 21.4117 20.4711 36.22 20.4711 36.22H25.9107V27.0934C25.9107 26.605 25.946 26.1178 26.0898 25.7681C26.4829 24.7924 27.3779 23.7822 28.8805 23.7822C30.8494 23.7822 31.6365 25.2807 31.6365 27.4767V36.2196H37.0752Z"
+                                fill="white" />
+                        </svg>
+                    </a>
 
-            </p>
+                    <a href="https://github.com/SVDwebtech" target="_blank" class="socialMedia__link socialMedia__link--github">
+                        <svg width="49" height="48" viewBox="0 0 49 48" fill="none" xmlns="http://www.w3.org/2000/svg" class="socialMedia__icon socialMedia__icon--github">
+                            <path
+                                d="M24.5002 0C11.247 0 0.5 11.0169 0.5 24.6076C0.5 35.4799 7.37679 44.7039 16.9128 47.9577C18.1123 48.1855 18.5526 47.4239 18.5526 46.7739C18.5526 46.1872 18.5304 44.2487 18.52 42.1925C11.8431 43.6811 10.4342 39.2891 10.4342 39.2891C9.34249 36.4448 7.76945 35.6885 7.76945 35.6885C5.59192 34.1613 7.93359 34.1926 7.93359 34.1926C10.3436 34.3662 11.6126 36.7285 11.6126 36.7285C13.7532 40.4904 17.2272 39.4028 18.5967 38.7741C18.8121 37.1836 19.4341 36.0981 20.1205 35.4836C14.7897 34.8613 9.1859 32.7513 9.1859 23.3224C9.1859 20.6358 10.1234 18.4406 11.6587 16.7174C11.4095 16.0976 10.588 13.5947 11.8912 10.2052C11.8912 10.2052 13.9066 9.54387 18.493 12.7276C20.4074 12.1824 22.4606 11.9089 24.5002 11.8996C26.5398 11.9089 28.5946 12.1824 30.5126 12.7276C35.0934 9.54387 37.106 10.2052 37.106 10.2052C38.4123 13.5947 37.5905 16.0976 37.3413 16.7174C38.8801 18.4406 39.8113 20.6358 39.8113 23.3224C39.8113 32.7738 34.1968 34.8548 28.8525 35.464C29.7133 36.2276 30.4804 37.7252 30.4804 40.021C30.4804 43.3135 30.4526 45.9634 30.4526 46.7739C30.4526 47.4288 30.8846 48.1961 32.1011 47.9544C41.632 44.697 48.5 35.4762 48.5 24.6076C48.5 11.0169 37.7546 0 24.5002 0Z"
+                                fill="#161514" />
+                            <path
+                                d="M9.66085 35.1623C9.60809 35.2833 9.42085 35.3196 9.25027 35.2365C9.07652 35.157 8.97893 34.992 9.03526 34.8706C9.08683 34.7459 9.27447 34.7112 9.44782 34.7947C9.62197 34.8742 9.72115 35.0408 9.66085 35.1623Z"
+                                fill="#161514" />
+                            <path
+                                d="M10.6312 36.263C10.5169 36.3707 10.2936 36.3207 10.142 36.1504C9.98535 35.9806 9.956 35.7534 10.0718 35.6441C10.1896 35.5363 10.4062 35.5868 10.5633 35.7566C10.72 35.9285 10.7506 36.1541 10.6312 36.263Z"
+                                fill="#161514" />
+                            <path
+                                d="M11.5757 37.6663C11.4289 37.77 11.1889 37.6728 11.0405 37.4561C10.8938 37.2394 10.8938 36.9796 11.0437 36.8755C11.1925 36.7714 11.4289 36.865 11.5792 37.0801C11.7256 37.3004 11.7256 37.5602 11.5757 37.6663Z"
+                                fill="#161514" />
+                            <path
+                                d="M12.8697 39.0219C12.7384 39.1692 12.4587 39.1297 12.254 38.9287C12.0446 38.7322 11.9863 38.4534 12.118 38.3062C12.2509 38.1585 12.5321 38.2001 12.7384 38.3994C12.9463 38.5955 13.0097 38.8763 12.8697 39.0219Z"
+                                fill="#161514" />
+                            <path
+                                d="M14.6548 39.8091C14.5969 40 14.3276 40.0867 14.0562 40.0056C13.7853 39.9221 13.608 39.6986 13.6627 39.5057C13.719 39.3137 13.9896 39.2233 14.2629 39.31C14.5334 39.3932 14.7112 39.6151 14.6548 39.8091Z"
+                                fill="#161514" />
+                            <path
+                                d="M16.6153 39.9552C16.622 40.1561 16.392 40.3228 16.1071 40.3264C15.8207 40.3329 15.589 40.1703 15.5859 39.9726C15.5859 39.7696 15.8108 39.6046 16.0972 39.5998C16.382 39.5941 16.6153 39.7555 16.6153 39.9552Z"
+                                fill="#161514" />
+                            <path
+                                d="M18.4397 39.6392C18.4738 39.8353 18.2759 40.0366 17.993 40.0903C17.7149 40.1419 17.4575 40.0209 17.4222 39.8264C17.3877 39.6255 17.5892 39.4241 17.8669 39.3721C18.1501 39.3221 18.4036 39.4399 18.4397 39.6392Z"
+                                fill="#161514" />
+                        </svg>
+                    </a>
+
+                    <a href="https://web.facebook.com/SVDwebtech/" target="blank" class="socialMedia__link socialMedia__link--facebook">
+                        <svg width="49" height="48" viewBox="0 0 49 48" fill="none" xmlns="http://www.w3.org/2000/svg" class="socialMedia__icon socialMedia__icon--facebook">
+                            <path d="M0.5 24C0.5 10.7452 11.2452 0 24.5 0C37.7548 0 48.5 10.7452 48.5 24C48.5 37.2548 37.7548 48 24.5 48C11.2452 48 0.5 37.2548 0.5 24Z" fill="#3B5998" />
+                            <path
+                                d="M27.0015 38.1115V25.0542H30.6059L31.0836 20.5546H27.0015L27.0077 18.3025C27.0077 17.1289 27.1192 16.5001 28.8048 16.5001H31.0581V12H27.4532C23.1231 12 21.5991 14.1828 21.5991 17.8536V20.5551H18.9V25.0547H21.5991V38.1115H27.0015Z"
+                                fill="white" />
+                        </svg>
+                    </a>
+
+                    <a href="https://twitter.com/SVDwebtech/" target="_blank" class="socialMedia__link socialMedia__link--twitter">
+                        <svg width="49" height="48" viewBox="0 0 49 48" fill="none" xmlns="http://www.w3.org/2000/svg" class="socialMedia__icon socialMedia__icon--twitter">
+                            <path d="M0.5 24C0.5 10.7452 11.2452 0 24.5 0C37.7548 0 48.5 10.7452 48.5 24C48.5 37.2548 37.7548 48 24.5 48C11.2452 48 0.5 37.2548 0.5 24Z" fill="#55ACEE" />
+                            <path
+                                d="M23.7812 19.5075L23.8316 20.338L22.9922 20.2363C19.9369 19.8465 17.2677 18.5245 15.0013 16.3043L13.8934 15.2027L13.608 16.0162C13.0036 17.8297 13.3897 19.7448 14.6488 21.0328C15.3203 21.7447 15.1692 21.8464 14.0109 21.4227C13.608 21.2871 13.2554 21.1854 13.2219 21.2362C13.1044 21.3549 13.5073 22.8971 13.8262 23.5073C14.2627 24.3547 15.1524 25.1851 16.1261 25.6766L16.9487 26.0664L15.975 26.0834C15.0349 26.0834 15.0013 26.1003 15.1021 26.4562C15.4378 27.5578 16.764 28.7273 18.2413 29.2357L19.2822 29.5916L18.3756 30.1339C17.0326 30.9136 15.4546 31.3542 13.8766 31.3881C13.1211 31.4051 12.5 31.4728 12.5 31.5237C12.5 31.6932 14.5481 32.6423 15.74 33.0151C19.3157 34.1167 23.563 33.6422 26.7526 31.761C29.0189 30.4221 31.2852 27.7612 32.3428 25.1851C32.9136 23.8123 33.4844 21.304 33.4844 20.1007C33.4844 19.3211 33.5347 19.2194 34.4748 18.2873C35.0288 17.7449 35.5492 17.1517 35.65 16.9823C35.8178 16.6603 35.8011 16.6603 34.9449 16.9484C33.518 17.4568 33.3165 17.389 34.0216 16.6264C34.542 16.084 35.1631 15.101 35.1631 14.8129C35.1631 14.7621 34.9113 14.8468 34.6259 14.9993C34.3238 15.1688 33.6523 15.423 33.1486 15.5756L32.2421 15.8637L31.4195 15.3044C30.9663 14.9993 30.3283 14.6604 29.9926 14.5587C29.1364 14.3214 27.827 14.3553 27.0548 14.6265C24.9563 15.3892 23.6301 17.3551 23.7812 19.5075Z"
+                                fill="white" />
+                        </svg>
+                    </a>
+
+                </div>
+
+                <article class="footer__legalNotices">
+                    <h3 class="footer__legalNotices--headingH2">Copyright</h3>
+                    <div class="footer__legalNoticesParContainer">
+                        <p class="footer__legalNotices--paragraph">&#169; 2023 Schalk van Dyk.</p>
+                        <p class="footer__legalNotices--paragraph">All rights reserved.</p>
+                    </div>
+                </article>
+
+            </div>
+
+
 
         </footer>
 
@@ -772,47 +582,22 @@
 
         <script>
 
-            // const submitBtn = document.querySelector(".submitBtn");
-
-            // submitBtn.addEventListener("click", function(){
-
-            //     const name = document.querySelector("#fullName");
-            //     const email = document.querySelector("#email");
-            //     const subject = document.querySelector("#subject");
-            //     const message = document.querySelector("#message");
-
-            //     Email.send({
-            //         SecureToken : "6e7267cd-38a6-41a7-8bb0-35df93e1f48c",
-            //         To : 'schalk@schalkvandyk.com',
-            //         From : email.value,
-            //         Subject : "New Contact Form Enquiry",
-            //         Body : "Name: " + name.value 
-            //             + "<br> Email: " + email.value        
-            //             + "<br> Subject: " + subject.value        
-            //             + "<br> Message: " + message.value        
-            //     }).then(
-            //     message => alert("Message sent successfully. Thank you.")
-            //     );
-
-            // });
-
             function sendEmail() {
-
                 Email.send({
                     SecureToken: "6e7267cd-38a6-41a7-8bb0-35df93e1f48c",
                     To: 'schalk@schalkvandyk.com',
                     From: 'schalk@schalkvandyk.com',
                     Subject: "New Contact Form Enquiry",
-                    Body: "Name: " + document.getElementById("fullName").value
+                    Body: "Name: " + document.getElementById("firstName").value
+                        + " "
+                        + document.getElementById("surName").value
                         + "<br> Email: " + document.getElementById("email").value
                         + "<br> Subject: " + document.getElementById("subject").value
                         + "<br> Message: " + document.getElementById("message").value
                 }).then(
                     message => alert("Message sent successfully. Thank you.")
                 );
-
             }
-
         </script>
     </body>
 

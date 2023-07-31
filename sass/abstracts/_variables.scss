@@ -1,49 +1,51 @@
 // primary colors
-$color-primary-darkBlue: #04042e;
-$color-primary-brightBlue: #040483;
-$color-primary-brightRed: #ff0000;
-$color-primary-darkRed: #b30f0f;
-$color-primary-white: #f1f1f1;
-
-$color-grey-light-1: #cacad3;
-$color-grey-light-2: #aaaaaa;
+$cp-blue: #1b90d8;
+$cp-darkBlue: #003049;
+$cp-red: #c1121f;
+$cp-darkRed: #991818;
+$cp-dark: #333333;
+$cp-darkGrey: #626262;
+$cp-grey: #9c9c9c;
+$cp-lightGrey: #cccccc;
+$cp-light: #e8e8e8;
+$cp-white: #f2f2f2;
 
 // font colors
-$color-font-default: #a1a1a1;
-$color-font-darkGrey: #999595;
-$color-font-darkGrey2: #615a5a;
-$color-font-white: #c9c8c8;
-$color-font-darkBlue: #04042e;
-$color-font-brightRed: #ff0000;
+$cf-blue: #1b90d8;
+$cf-darkBlue: #003049;
+$cf-red: #c1121f;
+$cf-darkRed: #991818;
+$cf-white: #f0f0f0;
+$cf-dark: #292828;
 
-// font-size-heading-primary
-$font-size-heading-primary-main: 4rem;
-$font-size-heading-primary-sub: 1.8rem;
 
-// font-size-heading-secondary
-$font-size-heading-secondary-main: 3rem;
-$font-size-heading-secondary-sub: 1.3rem;
-
-// font-size-heading-tertiary
-$font-size-heading-tertiary: 2rem;
-
-// font-size-paragraph
-$font-size-paragraph-xtralarge: 2.6rem;
-$font-size-paragraph-large: 2.2rem;
-$font-size-paragraph-medium: 1.8rem;
-$font-size-paragraph-small: 1.4rem;
-$font-size-paragraph-xtrasmall: 1rem;
-
-// font-size-button
-$font-size-btn-xtralarge: 2.5rem;
-$font-size-btn-large: 2rem;
-$font-size-btn-medium: 1.6rem;
-$font-size-btn-small: 1.2rem;
-$font-size-btn-xtrasmall: .8rem;
+// font-size
+$fs-h1: 3rem;
+$fs-h2: 2.5rem;
+$fs-h3: 2rem;
+$fs-h4: 1.5rem;
+$fs-btn: 1.5rem;
+$fs-p: 1rem;
 
 // border-radius
-$border-radius-small: .2rem;
-$border-radius-medium: .5rem;
+$br-sm: .35rem;
+$br-m: .5rem;
+$br-l: 1rem;
 
 // box-shadow
-$box-shadow-dark: 0 .5rem .5rem rgba(0, 0, 0, .4);
+$bs-dark: 0 0 5px 2px rgba(0, 0, 0, .4);
+$bs-btn: 0px 0px 8px 4px rgba($cp-dark, .5);
+$bs-btnHover: 0px 8px 40px 3px rgba(0, 0, 0, .7);
+
+//margin
+$mb-section: 4rem;
+$mb-h1: 4rem;
+$mb-btn: 4rem;
+$mb-h2: 2rem;
+$mb-h3: 1.5rem;
+$mb-h4: 1rem;
+$mb-p: 1rem;
+
+
+
+

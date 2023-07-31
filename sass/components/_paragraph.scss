@@ -1,0 +1,14 @@
+.paragraph {
+    @include respond(tab-port) {
+    
+    }
+
+}
+
+.paragraph--userX {
+    margin-bottom: 2.5rem;
+}
+
+.paragraph:last-of-type {
+}
+

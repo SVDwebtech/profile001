@@ -1,0 +1,69 @@
+.headingH2Container {
+
+    &__hr {
+        border: 0;
+        height: 1px;
+        background-image: linear-gradient(to right, rgba($cp-blue, 1) 20%, rgba($cp-blue, .75) 35%, rgba($cp-blue, 0.5) 50%, rgba($cp-blue, 0.25) 65%, rgba($cp-blue, 0.10) 80%, rgba($cp-dark, 0.05) 95%);
+        margin: .075rem 0 .15rem;
+    }
+
+    &__subheadingH2 {
+        margin-left: clamp(3rem, 12vw, 12rem);
+    }    
+}
+
+.headingH3Container {
+    // margin: 0 0 2rem;
+
+    &--project {
+        margin: 0rem;
+    }
+
+    &--skills {
+        // margin-bottom: .5rem;
+    }
+
+    &--contactInfo {
+        // margin-top: 8rem;
+    }
+
+    &--messageMe {
+        // margin: 8rem 0 0;
+    }
+
+    &__hr {
+        border: 0;
+        height: 2px;
+        background-image: linear-gradient(to right, rgba(0,0,0,0) 10%, rgba($cp-white, 0.4) 35%, rgba($cp-white, 0.75) 50%, rgba($cp-white, 0.4) 75%, rgba(0,0,0,0) 90%);
+        margin: .75rem 0;
+    }
+
+    &__hr--blue {
+        border: 0;
+        height: 1px;
+        background-image: linear-gradient(to right, rgba(0,0,0,0) 10%, rgba($cp-darkBlue, 0.4) 35%, rgba($cp-darkBlue, 0.75) 50%, rgba($cp-darkBlue, 0.4) 75%, rgba(0,0,0,0) 90%);
+        margin: .75rem auto;
+    }
+
+    &__hr--project {
+        border: 0;
+        height: 1px;
+        background-image: linear-gradient(to right, rgba(0,0,0,0) 10%, rgba($cp-darkBlue, 0.4) 35%, rgba($cp-darkBlue, 0.75) 50%, rgba($cp-darkBlue, 0.4) 75%, rgba(0,0,0,0) 90%);
+        margin: 0.5rem auto 0;
+    }
+    
+    &__hr--skills {
+        border: 0;
+        height: 1px;
+        background-image: linear-gradient(to right, rgba(0,0,0,0) 10%, rgba($cp-darkBlue, 0.4) 35%, rgba($cp-darkBlue, 0.75) 50%, rgba($cp-darkBlue, 0.4) 75%, rgba(0,0,0,0) 90%);
+        margin: 0.85rem auto 0;
+    }
+
+    &__subheadingH3 {
+        // margin-left: clamp(3rem, 12vw, 12rem);
+    }    
+}
+
+.headingH4 {
+    margin-bottom: $mb-h4;
+}

@@ -1,0 +1,47 @@
+.contactForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+
+  gap: 1rem;
+
+  @include respond(tab-land) {
+    gap: .125rem;
+  }
+}
+
+.formGroup {
+  margin-bottom: 1rem;
+}
+
+.formGroup label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.formGroup input,
+.formGroup textarea {
+  
+  background-color: $cp-white;
+  border-radius: $br-m;
+  border: 1px solid #003049;
+
+  width: 100%;
+  padding: 0.5rem;
+}
+
+.contactFormNameDetailsContainer, .contactFormNumberDetailsContainer {
+    @include respond(tab-port) {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+
+        gap: 2rem;
+    }
+
+    .formGroup {
+        flex: 1 0 250px;
+    }
+}
