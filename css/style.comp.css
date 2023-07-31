@@ -593,13 +593,13 @@ body {
   }
 }
 .cardPortfolio__cardImage--light {
-  background-image: url("../../img/portfolioProjects/lightSwitch002.webp");
+  background-image: url("../img/portfolioProjects/lightSwitch002.webp");
 }
 .cardPortfolio__cardImage--memory {
-  background-image: url("../../img/portfolioProjects/memoryGame014.webp");
+  background-image: url("../img/portfolioProjects/memoryGame014.webp");
 }
 .cardPortfolio__cardImage--webdev {
-  background-image: url("../../img/portfolioProjects/prtfolio-pic-profile001.webp");
+  background-image: url("../img/portfolioProjects/prtfolio-pic-profile001.webp");
 }
 .cardPortfolio__cardContent {
   display: flex;
@@ -1081,7 +1081,7 @@ body {
 }
 
 .header {
-  background: conic-gradient(from 45deg at 107% -12%, rgba(27, 144, 216, 0.75) 115deg, rgba(51, 51, 51, 0.2), rgba(193, 18, 31, 0.75) 215deg), url(../../img/hero/hero-background-img.webp);
+  background: conic-gradient(from 45deg at 107% -12%, rgba(27, 144, 216, 0.75) 115deg, rgba(51, 51, 51, 0.2), rgba(193, 18, 31, 0.75) 215deg), url("../img/hero/hero-background-img.webp");
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1090,7 +1090,7 @@ body {
 }
 @media (min-width: 400px) {
   .header {
-    background: conic-gradient(from 45deg at 107% -7%, rgba(27, 144, 216, 0.75) 123deg, rgba(51, 51, 51, 0.2), rgba(193, 18, 31, 0.75) 215deg), url(../../img/hero/hero-background-img.webp);
+    background: conic-gradient(from 45deg at 107% -7%, rgba(27, 144, 216, 0.75) 123deg, rgba(51, 51, 51, 0.2), rgba(193, 18, 31, 0.75) 215deg), url("../img/hero/hero-background-img.webp");
     background-position: bottom;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1098,7 +1098,7 @@ body {
 }
 @media (min-width: 500px) {
   .header {
-    background: conic-gradient(from 45deg at 107% -7%, rgba(27, 144, 216, 0.75) 135deg, rgba(51, 51, 51, 0.2), rgba(193, 18, 31, 0.75) 215deg), url(../../img/hero/hero-background-img.webp);
+    background: conic-gradient(from 45deg at 107% -7%, rgba(27, 144, 216, 0.75) 135deg, rgba(51, 51, 51, 0.2), rgba(193, 18, 31, 0.75) 215deg), url("../img/hero/hero-background-img.webp");
     background-position: bottom;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1106,7 +1106,7 @@ body {
 }
 @media (min-width: 700px) {
   .header {
-    background: conic-gradient(from 55deg at 107% -7%, rgba(27, 144, 216, 0.75) 135deg, rgba(51, 51, 51, 0.2), rgba(193, 18, 31, 0.75) 215deg), url(../../img/hero/hero-background-img.webp);
+    background: conic-gradient(from 55deg at 107% -7%, rgba(27, 144, 216, 0.75) 135deg, rgba(51, 51, 51, 0.2), rgba(193, 18, 31, 0.75) 215deg), url("../img/hero/hero-background-img.webp");
     background-position: bottom;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1114,7 +1114,7 @@ body {
 }
 @media (min-width: 900px) {
   .header {
-    background: conic-gradient(from 65deg at 107% -7%, rgba(27, 144, 216, 0.75) 135deg, rgba(51, 51, 51, 0.2), rgba(193, 18, 31, 0.75) 215deg), url(../../img/hero/hero-background-img.webp);
+    background: conic-gradient(from 65deg at 107% -7%, rgba(27, 144, 216, 0.75) 135deg, rgba(51, 51, 51, 0.2), rgba(193, 18, 31, 0.75) 215deg), url("../img/hero/hero-background-img.webp");
     background-position: bottom;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1122,7 +1122,7 @@ body {
 }
 @media (min-width: 900px) and (min-height: 750px) {
   .header {
-    background: conic-gradient(from 50deg at 107% -7%, rgba(27, 144, 216, 0.75) 135deg, rgba(51, 51, 51, 0.2), rgba(193, 18, 31, 0.75) 215deg), url(../../img/hero/hero-background-img.webp);
+    background: conic-gradient(from 50deg at 107% -7%, rgba(27, 144, 216, 0.75) 135deg, rgba(51, 51, 51, 0.2), rgba(193, 18, 31, 0.75) 215deg), url("../img/hero/hero-background-img.webp");
     background-position: bottom;
     background-repeat: no-repeat;
     background-size: cover;
