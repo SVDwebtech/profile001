@@ -10,7 +10,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Alegreya+SC:wght@900&family=Alegreya:wght@900&family=Caveat+Brush&family=Caveat:wght@700&family=Lato:wght@400;700;900&display=swap"
             rel="stylesheet">
-        <link rel="stylesheet" href="./css/styles.css">
+        <link rel="stylesheet" href="./css/style.css">
     </head>
 
     <body>
@@ -588,7 +588,9 @@
                     To: 'schalk@schalkvandyk.com',
                     From: 'schalk@schalkvandyk.com',
                     Subject: "New Contact Form Enquiry",
-                    Body: "Name: " + document.getElementById("fullName").value
+                    Body: "Name: " + document.getElementById("firstName").value
+                        + " "
+                        + document.getElementById("surName").value
                         + "<br> Email: " + document.getElementById("email").value
                         + "<br> Subject: " + document.getElementById("subject").value
                         + "<br> Message: " + document.getElementById("message").value
