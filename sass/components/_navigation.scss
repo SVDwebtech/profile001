@@ -90,7 +90,10 @@
     justify-content: flex-start;
     align-items: center;
 
-    background: linear-gradient(to bottom, rgba($cp-darkBlue, .8), rgba($cp-dark, .9) 20%), url("../../img/hero/hero-background-img.webp");
+    background: linear-gradient(to bottom, rgba($cp-darkBlue, .8), rgba($cp-dark, .9) 20%), url("../img/hero/hero-background-img.webp");
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
 
     width: 100%;
     height: 100vh;
@@ -118,7 +121,7 @@
         background-clip: text;
         -webkit-background-clip: text;
 
-        background-image: url("../../img/backgroundImages/bgAnimateTextWallpaper.png");
+        background-image: url("../img/backgroundImages/bgAnimateTextWallpaper.png");
         background-size: 200%;
         background-repeat: no-repeat;
         background-position: 100%;
@@ -158,8 +161,6 @@
     .navFrame {
         background: linear-gradient(to bottom right, rgba($cp-red, 1) 5%, rgba($cp-darkRed, .8) 20%, rgba($cp-darkBlue, .9) 75%, rgba($cp-blue, .6));
         border-bottom: 1px solid $cp-lightGrey;
-
-        // padding: .75rem clamp(2rem, 6.5vw, 4rem);
 
         position: absolute;
         top: 0;
