@@ -1018,6 +1018,10 @@ body {
   }
 }
 
+.testimonialCard {
+  background-color: #333333;
+}
+
 .footer {
   display: flex;
   flex-direction: column;
