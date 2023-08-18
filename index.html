@@ -583,21 +583,23 @@
         <script>
 
             function sendEmail() {
+
                 Email.send({
                     SecureToken: "6e7267cd-38a6-41a7-8bb0-35df93e1f48c",
                     To: 'schalk@schalkvandyk.com',
                     From: 'schalk@schalkvandyk.com',
                     Subject: "New Contact Form Enquiry",
-                    Body: "Name: " + document.getElementById("firstName").value
-                        + " "
-                        + document.getElementById("surName").value
+                    Body: "First Name: " + document.getElementById("firstName").value
+                        + "<br> Last Name: " + document.getElementById("surName").value
+                        + "<br> Telephone: " + document.getElementById("telephone").value
                         + "<br> Email: " + document.getElementById("email").value
-                        + "<br> Subject: " + document.getElementById("subject").value
                         + "<br> Message: " + document.getElementById("message").value
                 }).then(
                     message => alert("Message sent successfully. Thank you.")
                 );
+
             }
+
         </script>
     </body>
 
