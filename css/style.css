@@ -380,7 +380,7 @@ body {
 
 .testimonialCard__paragraph {
   color: #003049;
-  font-size: clamp(calc(2.1rem + 2.3vh - 2rem), 4.3vw, calc(2.5rem + 2.3vh - 2rem));
+  font-size: clamp(calc(2rem + 2.1vh - 2rem), 2.8vw, calc(2.4rem + 2.1vh - 2rem));
   font-weight: 400;
   font-style: italic;
   text-align: center;
