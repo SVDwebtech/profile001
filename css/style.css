@@ -1062,7 +1062,7 @@ body {
   left: 0;
 }
 .testimonialCard__figure {
-  background-color: #1b90d8;
+  background: linear-gradient(340deg, #003049 20%, #1b90d8 70%, rgba(242, 242, 242, 0.1) 97%);
   border-bottom-left-radius: 1.5rem;
   border-bottom-right-radius: 1.5rem;
   padding: 6.5rem 0 2rem;

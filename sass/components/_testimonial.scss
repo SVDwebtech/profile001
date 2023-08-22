@@ -30,7 +30,7 @@
   }
   
   &__figure {
-    background-color: $cp-blue;
+    background: linear-gradient(340deg, $cp-darkBlue 20%, $cp-blue 70%, rgba($cp-white, .1) 97%);
 
     border-bottom-left-radius: 1.5rem;
     border-bottom-right-radius: 1.5rem;
