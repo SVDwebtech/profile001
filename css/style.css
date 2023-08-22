@@ -391,10 +391,11 @@ body {
   font-weight: 900;
   line-height: 1;
   letter-spacing: 2px;
+  text-shadow: 0 0 8px rgba(51, 51, 51, 0.95);
   text-align: center;
 }
 .testimonialCard__figcaptionSubHeading {
-  color: #f0f0f0;
+  color: rgba(240, 240, 240, 0.7);
   font-size: clamp(calc(2.1rem + 2.3vh - 2rem), 4.3vw, calc(2.5rem + 2.3vh - 2rem));
   font-weight: 700;
   text-align: center;
