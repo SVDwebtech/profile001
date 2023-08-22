@@ -309,6 +309,31 @@ body {
 }
 
 .testimonialCard {
+	
+	// &__headingH4 {
+	// 	color: $cf-darkBlue;
+	// 	font-size: clamp(calc(2.6rem + 2.3vh - 2rem), 4.3vw, calc(3.1rem + 2.3vh - 2rem));
+	// 	font-weight: 900;
+	// 	line-height: 1;
+	// 	letter-spacing: 2px;
+	// }
+
+	// &__headingH5 {
+	// 	color: $cf-blue;
+	// 	font-size: clamp(calc(2.6rem + 2.3vh - 2rem), 4.3vw, calc(3.1rem + 2.3vh - 2rem));
+	// 	font-weight: 900;
+	// 	line-height: 1;
+	// 	letter-spacing: 2px;
+	// }
+
+	&__paragraph {
+		color:  $cf-darkBlue;
+		font-size: clamp(calc(2.1rem + 2.3vh - 2rem), 4.3vw, calc(2.5rem + 2.3vh - 2rem));
+		font-weight: 400;
+		font-style: italic;
+		text-align: center;
+	}
+
 	&__figcaptionHeading {
 		color: $cf-white;
 		font-size: clamp(calc(2.6rem + 2.3vh - 2rem), 4.3vw, calc(3.1rem + 2.3vh - 2rem));
