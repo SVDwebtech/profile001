@@ -10,6 +10,22 @@
 
   &__paragraph {
     padding: 3rem 2rem 2rem;
+    position: relative;
+  }
+
+  &__paragraph::after {
+    content: "";
+
+    // background-image: ;
+
+    width: 50%;
+    height: 50%;
+
+    padding: 3rem 2rem 2rem;
+
+    position: absolute;
+    top: 0;
+    left: 0;
   }
   
   &__figure {
@@ -25,6 +41,7 @@
   }
 
   &__img {
+    background: linear-gradient(157deg, $cp-darkBlue 10%, $cp-blue 50%, $cp-white);
     border: 2px solid $cf-white;
     border-radius: 100%;
     box-shadow: 0 5px 18px 5px rgba($cf-dark, .5),

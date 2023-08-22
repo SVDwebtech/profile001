@@ -1047,6 +1047,16 @@ body {
 }
 .testimonialCard__paragraph {
   padding: 3rem 2rem 2rem;
+  position: relative;
+}
+.testimonialCard__paragraph::after {
+  content: "";
+  width: 50%;
+  height: 50%;
+  padding: 3rem 2rem 2rem;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 .testimonialCard__figure {
   background-color: #1b90d8;
@@ -1057,6 +1067,7 @@ body {
   position: relative;
 }
 .testimonialCard__img {
+  background: linear-gradient(157deg, #003049 10%, #1b90d8 50%, #f2f2f2);
   border: 2px solid #f0f0f0;
   border-radius: 100%;
   box-shadow: 0 5px 18px 5px rgba(41, 40, 40, 0.5), 0 2px 5px 1px rgba(41, 40, 40, 0.8);
