@@ -308,6 +308,24 @@ body {
 	}
 }
 
+.testimonialCard {
+	&__figcaptionHeading {
+		color: $cf-white;
+		font-size: clamp(calc(2.6rem + 2.3vh - 2rem), 4.3vw, calc(3.1rem + 2.3vh - 2rem));
+		font-weight: 900;
+		line-height: 1;
+		letter-spacing: 2px;
+		text-align: center;
+	}
+
+	&__figcaptionSubHeading {
+		color:  $cf-white;
+		font-size: clamp(calc(2.1rem + 2.3vh - 2rem), 4.3vw, calc(2.5rem + 2.3vh - 2rem));
+		font-weight: 700;
+		text-align: center;
+	}
+}
+
 .footer {
 	text-align: center;
 	

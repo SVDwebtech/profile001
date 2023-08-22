@@ -3,5 +3,36 @@
 }
 
 .testimonialCard {
-  background-color: $cp-light;
+  border-top-left-radius: .5rem;
+  border-top-right-radius: .5rem;
+
+  box-shadow: 0 0 13px 2px rgba($cf-dark, .2);
+  
+  &__figure {
+    background-color: $cp-blue;
+
+    border-bottom-left-radius: 1.5rem;
+    border-bottom-right-radius: 1.5rem;
+    
+    padding: 6.5rem 0 2rem;
+    margin-top: 6.5rem;
+
+    position: relative;
+  }
+
+  &__img {
+    border: 2px solid $cf-white;
+    border-radius: 100%;
+    box-shadow: 0 5px 18px 5px rgba($cf-dark, .5),
+                0 2px 5px 1px rgba($cf-dark, .8);
+    width: 10rem;
+
+    position: absolute;
+    top: 0;
+    left: 50%;
+    
+
+    transform: translate(-50%, -50%);    
+  }
+  
 }
