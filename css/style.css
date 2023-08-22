@@ -1044,6 +1044,8 @@ body {
 .testimonialCard {
   border-top-left-radius: 0.5rem;
   border-top-right-radius: 0.5rem;
+  border-bottom-left-radius: 1.5rem;
+  border-bottom-right-radius: 1.5rem;
   box-shadow: 0 0 13px 2px rgba(41, 40, 40, 0.2);
 }
 .testimonialCard__paragraph {
