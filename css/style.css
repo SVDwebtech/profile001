@@ -615,14 +615,14 @@ body {
     min-height: 45vh;
   }
 }
+.cardPortfolio__cardImage--protea {
+  background-image: url("../img/portfolioProjects/proteaPharmacy041.webp");
+}
 .cardPortfolio__cardImage--light {
   background-image: url("../img/portfolioProjects/lightSwitch002.webp");
 }
 .cardPortfolio__cardImage--memory {
   background-image: url("../img/portfolioProjects/memoryGame014.webp");
-}
-.cardPortfolio__cardImage--webdev {
-  background-image: url("../img/portfolioProjects/prtfolio-pic-profile001.webp");
 }
 .cardPortfolio__cardContent {
   display: flex;
