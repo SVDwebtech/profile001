@@ -1436,6 +1436,9 @@ body {
 .main__portfolioSection > article:last-of-type {
   margin-bottom: 0rem;
 }
+.main__testimonialSection > * {
+  margin-bottom: 2rem;
+}
 .main__skillsSection {
   position: relative;
 }
