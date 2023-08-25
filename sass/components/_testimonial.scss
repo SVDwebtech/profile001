@@ -1,8 +1,18 @@
 .testimonialContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 
+  row-gap: 2rem;
+  gap: 4rem;
 }
 
 .testimonialCard {
+  // flex: 1 0 min(100%, 350px);  use this for more than one testimonial
+  width: min(100%, 450px);
+
   border-top-left-radius: .5rem;
   border-top-right-radius: .5rem;
 
@@ -58,6 +68,10 @@
     
 
     transform: translate(-50%, -50%);    
+  }
+
+  &__figcaption {
+    padding: 0 2rem;
   }
   
 }

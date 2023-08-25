@@ -1041,7 +1041,18 @@ body {
   }
 }
 
+.testimonialContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  row-gap: 2rem;
+  gap: 4rem;
+}
+
 .testimonialCard {
+  width: min(100%, 450px);
   border-top-left-radius: 0.5rem;
   border-top-right-radius: 0.5rem;
   border-bottom-left-radius: 1.5rem;
@@ -1082,6 +1093,9 @@ body {
   top: 0;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+.testimonialCard__figcaption {
+  padding: 0 2rem;
 }
 
 .footer {
