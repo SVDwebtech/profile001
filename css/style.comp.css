@@ -378,6 +378,29 @@ body {
   text-align: justify;
 }
 
+.testimonialCard__paragraph {
+  color: #003049;
+  font-size: clamp(calc(2rem + 2.1vh - 2rem), 2.8vw, calc(2.4rem + 2.1vh - 2rem));
+  font-weight: 400;
+  font-style: italic;
+  text-align: center;
+}
+.testimonialCard__figcaptionHeading {
+  color: #f0f0f0;
+  font-size: clamp(calc(2.6rem + 2.3vh - 2rem), 4.3vw, calc(3.1rem + 2.3vh - 2rem));
+  font-weight: 900;
+  line-height: 1;
+  letter-spacing: 2px;
+  text-shadow: 0 0 8px rgba(51, 51, 51, 0.95);
+  text-align: center;
+}
+.testimonialCard__figcaptionSubHeading {
+  color: rgba(240, 240, 240, 0.7);
+  font-size: clamp(calc(2.1rem + 2.3vh - 2rem), 4.3vw, calc(2.5rem + 2.3vh - 2rem));
+  font-weight: 700;
+  text-align: center;
+}
+
 .footer {
   text-align: center;
 }
@@ -592,14 +615,14 @@ body {
     min-height: 45vh;
   }
 }
+.cardPortfolio__cardImage--protea {
+  background-image: url("../img/portfolioProjects/proteaPharmacy041.webp");
+}
 .cardPortfolio__cardImage--light {
   background-image: url("../img/portfolioProjects/lightSwitch002.webp");
 }
 .cardPortfolio__cardImage--memory {
   background-image: url("../img/portfolioProjects/memoryGame014.webp");
-}
-.cardPortfolio__cardImage--webdev {
-  background-image: url("../img/portfolioProjects/prtfolio-pic-profile001.webp");
 }
 .cardPortfolio__cardContent {
   display: flex;
@@ -1018,6 +1041,63 @@ body {
   }
 }
 
+.testimonialContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  row-gap: 2rem;
+  gap: 4rem;
+}
+
+.testimonialCard {
+  width: min(100%, 450px);
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+  border-bottom-left-radius: 1.5rem;
+  border-bottom-right-radius: 1.5rem;
+  box-shadow: 0 0 13px 2px rgba(41, 40, 40, 0.2);
+}
+.testimonialCard__paragraph {
+  padding: 3rem 2rem 2rem;
+  position: relative;
+}
+.testimonialCard__paragraph::after {
+  content: "";
+  background-image: url("../img/testimonials/InvertedCommaIcon.png");
+  background-size: 10rem;
+  background-position: 2rem 1rem;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.testimonialCard__figure {
+  background: linear-gradient(340deg, #003049 20%, #1b90d8 70%, rgba(242, 242, 242, 0.1) 97%);
+  border-bottom-left-radius: 1.5rem;
+  border-bottom-right-radius: 1.5rem;
+  padding: 6.5rem 0 2rem;
+  margin-top: 5rem;
+  position: relative;
+}
+.testimonialCard__img {
+  background: linear-gradient(157deg, #003049 10%, #1b90d8 50%, #f2f2f2);
+  border: 2px solid #f0f0f0;
+  border-radius: 100%;
+  box-shadow: 0 5px 18px 5px rgba(41, 40, 40, 0.5), 0 2px 5px 1px rgba(41, 40, 40, 0.8);
+  width: 10rem;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.testimonialCard__figcaption {
+  padding: 0 2rem;
+}
+
 .footer {
   display: flex;
   flex-direction: column;
@@ -1369,6 +1449,9 @@ body {
 }
 .main__portfolioSection > article:last-of-type {
   margin-bottom: 0rem;
+}
+.main__testimonialSection > * {
+  margin-bottom: 2rem;
 }
 .main__skillsSection {
   position: relative;
