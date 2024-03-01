@@ -229,7 +229,7 @@ body {
 }
 .headingH3Container__headingH3--project {
   color: #991818;
-  font-size: clamp(calc(2.3rem + 2vh - 2rem), 2.5vw, calc(3.3rem + 2vh - 2rem));
+  font-size: clamp(calc(2.8rem + 2vh - 2rem), 2.5vw, calc(3.8rem + 2vh - 2rem));
 }
 .headingH3Container__headingH3--skills {
   color: #003049;
@@ -617,6 +617,9 @@ body {
 }
 .cardPortfolio__cardImage--protea {
   background-image: url("../img/portfolioProjects/proteaPharmacy041.webp");
+}
+.cardPortfolio__cardImage--orange {
+  background-image: url("../img/portfolioProjects/orangeTree044.webp");
 }
 .cardPortfolio__cardImage--light {
   background-image: url("../img/portfolioProjects/lightSwitch002.webp");
