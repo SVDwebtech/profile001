@@ -19,6 +19,8 @@ const logo = document.querySelector('.logo');
 const navbar = document.querySelector('.navbar');
 const navFrame = document.querySelector('.navFrame');
 
+const copyrightDate = document.querySelector('.copyrightDate');
+
 let height = navbar.offsetHeight;
 navFrame.style.height = `${height}px`;
 
@@ -146,3 +148,7 @@ for(let item of navItems) {
     }, 2000);
   });
 }
+/////////////////////////////////////////////////////////////////////
+/// copyright date 
+const date = new Date();
+copyrightDate.textContent = date.getFullYear();
