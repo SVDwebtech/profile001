@@ -71,3 +71,20 @@ ORDER: base + typography > general layout + grid > page layout > components
 	height: clamp(3.5rem, 9vw, 4.5rem);
 }
 
+////////////////////////////////////////////////////////////////////////////
+/// display flex column or row
+@mixin displayFlexColumn {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 1rem;
+}
+@mixin displayFlexRow {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	gap: 1rem;
+}
+

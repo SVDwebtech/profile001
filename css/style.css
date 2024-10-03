@@ -986,6 +986,10 @@ body {
   margin-bottom: 2.5rem;
 }
 
+.servicesCard {
+  border: 1px solid black;
+}
+
 .socialMedia {
   display: flex;
   justify-content: space-between;
@@ -1419,6 +1423,15 @@ body {
     display: inline;
   }
 }
+.main__servicesSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  align-items: flex-start;
+  gap: 2rem;
+}
 .main__aboutSection::after {
   content: "";
   background: linear-gradient(to left, #f2f2f2, rgba(242, 242, 242, 0) 5%), url("../img/about/AboutMeBackgroundImage.webp");
@@ -1590,6 +1603,14 @@ body {
   .main__contactSection .contactItem {
     flex-direction: column;
   }
+}
+
+.servicesSection__servicesContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
 }
 
 .navbar {
