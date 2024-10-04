@@ -26,12 +26,6 @@
         }
     }
 
-    &__servicesSection {
-        @include displayFlexColumn;
-        align-items: flex-start;
-        gap: 2rem;
-    }
-
     &__aboutSection::after {
         content: "";
         background: linear-gradient(to left, rgba($cp-white, 1), rgba($cp-white, 0) 5%), url("../img/about/AboutMeBackgroundImage.webp");
@@ -59,6 +53,12 @@
         top: 0;
         left: 0;
         z-index: -100;
+    }
+
+    &__servicesSection {
+        @include displayFlexColumn;
+        align-items: flex-start;
+        gap: 2rem;
     }
     
     &__portfolioSection {
@@ -240,7 +240,12 @@
 }
 
 .servicesSection {
+    // position: relative;
     &__servicesContainer {
         @include displayFlexColumn
+    }
+    &__servicesListContainer {
+        @include displayFlexColumn;
+        gap: 3.5rem;
     }
 }
