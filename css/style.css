@@ -1127,7 +1127,7 @@ body {
   z-index: 1000;
   overflow: scroll;
 }
-.seoPricing__exitBtn {
+.seoPricing__returnHomeBtnContainer {
   position: fixed;
   top: 2rem;
   right: 2rem;

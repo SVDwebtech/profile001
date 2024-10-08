@@ -32,10 +32,15 @@
       left: 0;
       z-index: 1000;
       overflow: scroll;
-      &__exitBtn {
+      &__returnHomeBtnContainer {
             position: fixed;
             top: 2rem;
             right: 2rem;
+      }
+      &__exitBtn {
+            // position: fixed;
+            // top: 2rem;
+            // right: 2rem;
       }
       &__headingContainer {
             @include displayFlexColumn;
