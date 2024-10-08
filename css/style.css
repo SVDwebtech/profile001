@@ -385,6 +385,12 @@ body {
 .btn--primaryBtn-seoPricingCard {
   font-size: clamp(calc(2rem + 2vh - 2rem), 4vw, calc(2.4rem + 2.1vh - 2rem));
 }
+.btn--primaryBtn-returnHomeBtnText {
+  color: #003049;
+  font-weight: 900;
+  line-height: 1.1;
+  text-align: left;
+}
 .btn--secondaryBtn {
   color: #f0f0f0;
   font-size: clamp(calc(1.8rem + 2vh - 2rem), 3.8vw, calc(2.2rem + 2.2vh - 2rem));
@@ -598,8 +604,18 @@ body {
   width: 2.3rem;
   height: 2.3rem;
 }
-.btn--exitBtn {
-  background-color: #991818;
+.btn--returnHomeBtn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  gap: 1rem;
+  background-color: #cccccc;
+  border-top: 2px solid #9c9c9c;
+  border-left: 2px solid #9c9c9c;
+  border-bottom: 2px solid #e8e8e8;
+  border-right: 2px solid #e8e8e8;
   box-shadow: 0 0 12px 3px rgba(3, 3, 3, 0.25);
 }
 
@@ -867,6 +883,10 @@ body {
   min-width: 3rem;
   min-height: 3rem;
 }
+.icons--returnHomeBtnIcon {
+  min-width: 4rem;
+  min-height: 4rem;
+}
 
 .logo {
   display: flex;
@@ -1131,6 +1151,9 @@ body {
   position: fixed;
   top: 2rem;
   right: 2rem;
+}
+.seoPricing__returnHomeBtnText {
+  margin-top: 0rem;
 }
 .seoPricing__headingContainer {
   display: flex;

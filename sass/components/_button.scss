@@ -81,8 +81,14 @@
         width: 2.3rem;
         height: 2.3rem;
     }
-    &--exitBtn {
-        background-color: $cp-darkRed;
+    &--returnHomeBtn {
+        @include displayFlexRow;
+        gap: 1rem;
+        background-color: $cp-lightGrey;
+        border-top: 2px solid $cp-grey;
+        border-left: 2px solid $cp-grey;
+        border-bottom: 2px solid $cp-light;
+        border-right: 2px solid $cp-light;
         box-shadow: 0 0 12px 3px rgba(3, 3, 3, .25);
     }
 }

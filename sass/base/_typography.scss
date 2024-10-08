@@ -294,7 +294,14 @@ body {
 
 	&--primaryBtn-seoPricingCard {
 		font-size: clamp(calc(2rem + 2vh - 2rem), 4vw, calc(2.4rem + 2.1vh - 2rem));
-	  }
+	}
+
+	&--primaryBtn-returnHomeBtnText {
+		color: $cf-darkBlue;
+		font-weight: 900;
+		line-height: 1.1;
+		text-align: left;
+	}
 
 	&--secondaryBtn {
 		color: $cf-white;

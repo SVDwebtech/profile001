@@ -37,10 +37,8 @@
             top: 2rem;
             right: 2rem;
       }
-      &__exitBtn {
-            // position: fixed;
-            // top: 2rem;
-            // right: 2rem;
+      &__returnHomeBtnText {
+            margin-top: 0rem;
       }
       &__headingContainer {
             @include displayFlexColumn;
