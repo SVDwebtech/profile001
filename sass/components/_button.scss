@@ -28,14 +28,14 @@
     }
 
     &:hover {
-        box-shadow: 0px 0px 7px 3px rgba(0, 0, 0, .55);
+        box-shadow: 0px 0px 8px 2px rgba(0, 0, 0, .55);
         transform: translateY(-2px);
     }
 
     &:active {
         border-bottom: 2px solid $cp-grey;
         border-right: 2px solid $cp-grey;
-        box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, .7);
+        box-shadow: 0 0 12px 3px rgba(0, 0, 0, .35);
         transform: translateY(-1px);
     }
 
@@ -56,6 +56,12 @@
         padding: .175em .5em;
     }
 
+    &--primaryBtn-seoPricingCard {
+        background: linear-gradient(to bottom right, rgba($cp-darkRed, 1), rgba($cp-darkBlue, 1));;
+        box-shadow: 0 0 12px 3px rgba(3, 3, 3, .35);
+        margin: 2rem 0;
+    }
+
     &--secondaryBtn {
         background-color: rgba($cp-darkBlue, .5);
         padding: .0225em .5em;
@@ -74,6 +80,10 @@
     &__icon {
         width: 2.3rem;
         height: 2.3rem;
+    }
+    &--exitBtn {
+        background-color: $cp-darkRed;
+        box-shadow: 0 0 12px 3px rgba(3, 3, 3, .25);
     }
 }
 

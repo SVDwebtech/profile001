@@ -170,6 +170,12 @@ body {
 	&--servicesSection {
 		color: $cf-darkBlue;
 	}
+	&--seoPricing {
+		font-size: clamp(2rem, 7vw, 2.4rem);
+		color: $cf-darkBlue;
+		text-align: center;
+		line-height: 1.2;
+	}
 }
 
 .headingH4 {
@@ -178,6 +184,24 @@ body {
 		color: $cf-darkRed;
 		font-family:  "Sedgwick Ave", cursive;
 		line-height: 1.2;
+	}
+	&--pricingCard {
+		color: $cf-blue;
+		font-family:  'Caveat', cursive;
+		font-size: clamp(2.6rem, 7vw, 3rem);
+		text-align: center;
+		line-height: 1.2;
+	}
+}
+.headingH5 {
+	color: $cf-darkBlue;
+	&--pricingCard {
+		font-size: clamp(2.2rem, 5.5vw, 2.6rem);
+		font-weight: 900;
+		background: linear-gradient(to bottom right, rgba($cp-darkRed, 1), rgba($cp-darkBlue, 1));
+		background-clip: text;
+		-webkit-text-fill-color: transparent;
+		-webkit-background-clip: text;
 	}
 }
 
@@ -234,6 +258,9 @@ body {
 	&--servicesCard {
 		line-height: 1.2;
 	}
+	&--pricingCardBenefitItem {
+		text-align: left;
+	}
 }
 
 .btn {
@@ -264,6 +291,10 @@ body {
 			font-size: clamp(calc(1.7rem + 1.8vh - 2rem), 3.5vw, calc(2.3rem + 1.8vh - 2rem));
 		}
 	}
+
+	&--primaryBtn-seoPricingCard {
+		font-size: clamp(calc(2rem + 2vh - 2rem), 4vw, calc(2.4rem + 2.1vh - 2rem));
+	  }
 
 	&--secondaryBtn {
 		color: $cf-white;

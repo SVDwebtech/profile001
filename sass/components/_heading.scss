@@ -66,4 +66,7 @@
 
 .headingH4 {
     margin-bottom: $mb-h4;
+    &--pricingCard {
+        margin-bottom: 0;
+    }
 }

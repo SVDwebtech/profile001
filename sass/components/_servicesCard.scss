@@ -1,6 +1,5 @@
 .servicesCard {
       @include displayFlexColumn;
-      // position: relative;
       &__cardLink {
             @include displayFlexRow;
             background: linear-gradient(to bottom right, rgba($cp-white, 1), rgba(0, 237, 254, .2) 60%, rgba(0, 237, 254, .5));
@@ -18,17 +17,32 @@
       &__paragraph {
             width: 75%;
       }
-      // &__pricing {
-      //       @include displayFlexColumn;
-      //       justify-content: flex-start;
-      //       background-color: $cp-white;
-      //       padding: 2rem;
-      //       margin: 0 auto;
-      //       width: 100%;
-      //       height: 100%;
-      //       position: fixed;
-      //       top: 0;
-      //       left: 0;
-      //       z-index: 1000;
-      // }
+}
+.seoPricing {
+      @include displayFlexColumn;
+      gap: 2rem;
+      justify-content: flex-start;
+      background-color: $cp-white;
+      padding: 8rem 2rem 2rem;
+      margin: 0 auto;
+      width: 100%;
+      height: 100%;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 1000;
+      overflow: scroll;
+      &__exitBtn {
+            position: fixed;
+            top: 2rem;
+            right: 2rem;
+      }
+      &__headingContainer {
+            @include displayFlexColumn;
+            gap: .5rem;
+      }
+      &__pricingCardsContainer {
+            @include displayFlexColumn;
+            gap: 4rem;
+      }
 }
