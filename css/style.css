@@ -1146,6 +1146,9 @@ body {
   left: 0;
   z-index: 1000;
   overflow: scroll;
+  opacity: 0;
+  transform-origin: top;
+  transition: all 0.5s;
 }
 .seoPricing__returnHomeBtnContainer {
   position: fixed;
@@ -1170,6 +1173,10 @@ body {
   align-items: center;
   gap: 1rem;
   gap: 4rem;
+}
+
+.displayNone {
+  display: none;
 }
 
 .socialMedia {

@@ -21,6 +21,10 @@ const navFrame = document.querySelector('.navFrame');
 
 const copyrightDate = document.querySelector('.copyrightDate');
 
+const returnHomeBtn = document.querySelector('.returnHomeBtn');
+const seoPricing = document.querySelector('.seoPricing');
+const cardLink = document.querySelector('.cardLink');
+
 let height = navbar.offsetHeight;
 navFrame.style.height = `${height}px`;
 
@@ -152,3 +156,34 @@ for(let item of navItems) {
 /// copyright date 
 const date = new Date();
 copyrightDate.textContent = date.getFullYear();
+/////////////////////////////////////////////////////////////////////
+/// pricing return home button
+displaySeoPricing();
+cardLink.addEventListener('click', function(){
+  cardLinkBtnLogic();
+});
+returnHomeBtn.addEventListener('click', function(){
+  returnHomeBtnLogic();
+});
+function displaySeoPricing() {
+  seoPricing.classList.toggle('displayNone');
+};
+function cardLinkBtnLogic() {
+  if(seoPricing.classList.contains('displayNone')) {
+    seoPricing.classList.toggle('displayNone');
+    document.body.style.overflow = 'hidden';
+    setTimeout(() => {
+      seoPricing.style.opacity = 1;
+    }, 100);
+  }
+};
+function returnHomeBtnLogic() {
+  if(!seoPricing.classList.contains('displayNone')) {
+    seoPricing.style.opacity = 0;
+    document.body.style.overflow = 'scroll';
+  }
+  setTimeout(() => {
+    seoPricing.scrollTo(0, 0);
+    seoPricing.classList.toggle('displayNone');
+  }, 600);
+};
