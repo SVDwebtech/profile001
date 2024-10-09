@@ -1155,6 +1155,10 @@ body {
   top: 2rem;
   right: 2rem;
 }
+.seoPricing__returnHomeBtn {
+  opacity: 0;
+  transition: opacity 0.5s;
+}
 .seoPricing__returnHomeBtnText {
   margin-top: 0rem;
 }

@@ -40,6 +40,10 @@
             top: 2rem;
             right: 2rem;
       }
+      &__returnHomeBtn {
+            opacity: 0;
+            transition: opacity .5s;
+      }
       &__returnHomeBtnText {
             margin-top: 0rem;
       }

@@ -162,28 +162,41 @@ displaySeoPricing();
 cardLink.addEventListener('click', function(){
   cardLinkBtnLogic();
 });
+seoPricing.addEventListener('scroll', function(){
+  returnHomeBtn.style.opacity = 0;
+});
+seoPricing.addEventListener('scrollend', function(){
+  returnHomeBtn.style.opacity = 1;
+});
 returnHomeBtn.addEventListener('click', function(){
   returnHomeBtnLogic();
 });
 function displaySeoPricing() {
   seoPricing.classList.toggle('displayNone');
+  returnHomeBtn.classList.toggle('displayNone');
 };
 function cardLinkBtnLogic() {
   if(seoPricing.classList.contains('displayNone')) {
     seoPricing.classList.toggle('displayNone');
+    returnHomeBtn.classList.toggle('displayNone');
     document.body.style.overflow = 'hidden';
     setTimeout(() => {
       seoPricing.style.opacity = 1;
     }, 100);
+    setTimeout(() => {
+      returnHomeBtn.style.opacity = 1;
+    }, 1500);
   }
 };
 function returnHomeBtnLogic() {
   if(!seoPricing.classList.contains('displayNone')) {
+    seoPricing.scrollTo(0, 0);
     seoPricing.style.opacity = 0;
     document.body.style.overflow = 'scroll';
+    setTimeout(() => {
+      returnHomeBtn.style.opacity = 0;
+      seoPricing.classList.toggle('displayNone');
+      returnHomeBtn.classList.toggle('displayNone');
+    }, 600);
   }
-  setTimeout(() => {
-    seoPricing.scrollTo(0, 0);
-    seoPricing.classList.toggle('displayNone');
-  }, 600);
 };
