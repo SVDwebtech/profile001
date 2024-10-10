@@ -38,7 +38,8 @@
       &__returnHomeBtnContainer {
             position: fixed;
             top: 2rem;
-            right: 2rem;
+            left: 0rem;
+            right: 0rem;
       }
       &__returnHomeBtn {
             opacity: 0;
@@ -46,6 +47,9 @@
       }
       &__returnHomeBtnText {
             margin-top: 0rem;
+      }
+      &__lineBreakReturnHomeBtnText {
+            display: none;
       }
       &__headingContainer {
             @include displayFlexColumn;

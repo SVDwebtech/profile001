@@ -298,9 +298,10 @@ body {
 
 	&--primaryBtn-returnHomeBtnText {
 		color: $cf-darkBlue;
+		font-size: clamp(calc(2.6rem + 2vh - 2rem), 4vw, calc(3rem + 2.1vh - 2rem));
 		font-weight: 900;
 		line-height: 1.1;
-		text-align: left;
+		text-align: center;
 	}
 
 	&--secondaryBtn {
