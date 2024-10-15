@@ -1,4 +1,0 @@
-/////////////////////////////////////////////////////////////////////
-/// variables
-const servicesLink = document.querySelectorAll('.servicesLink');
-servicesLink[0].style

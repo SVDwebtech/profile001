@@ -1,30 +1,30 @@
+//////////////////////////////////////////////////////////////////////////
+/// imports
+import { cardLink, returnHomeBtn, seoPricing, servicesLinks } from "./modules/appVariables.js";
+import { displaySeoPricing, cardLinkBtnLogic, returnHomeBtnLogic } from "./modules/servicesLogic.js";
+//////////////////////////////////////////////////////////////////////////
+/// app variables
+// hamburger variables
 const hamburgerBtn = document.querySelector('.hamburgerBtn');
-
 const hamburgerTopBar = document.querySelector(".hamburgerBtn__hamburgerBar--top");
 const hamburgerMiddleBar = document.querySelector(".hamburgerBtn__hamburgerBar--middle");
 const hamburgerBottomBar = document.querySelector(".hamburgerBtn__hamburgerBar--bottom");
-
+// nav variables
 const hamburgerMenu = document.querySelector('.navList');
-
 const navItems = document.querySelectorAll('.navItem');
-
 const navItem1 = document.querySelector('.navItem1');
 const navItem2 = document.querySelector('.navItem2');
 const navItem3 = document.querySelector('.navItem3');
 const navItem4 = document.querySelector('.navItem4');
 const navItem5 = document.querySelector('.navItem5');
-
 const profilePhoto = document.querySelector('.profilePhoto');
 const logo = document.querySelector('.logo');
 const navbar = document.querySelector('.navbar');
 const navFrame = document.querySelector('.navFrame');
-
+// copyright variables
 const copyrightDate = document.querySelector('.copyrightDate');
-
-const returnHomeBtn = document.querySelector('.returnHomeBtn');
-const seoPricing = document.querySelector('.seoPricing');
-const cardLink = document.querySelector('.cardLink');
-
+//////////////////////////////////////////////////////////////////////////
+/// app logic
 let height = navbar.offsetHeight;
 navFrame.style.height = `${height}px`;
 
@@ -157,11 +157,13 @@ for(let item of navItems) {
 const date = new Date();
 copyrightDate.textContent = date.getFullYear();
 /////////////////////////////////////////////////////////////////////
-/// pricing return home button
+/// services logic
 displaySeoPricing();
-cardLink.addEventListener('click', function(){
-  cardLinkBtnLogic();
-});
+for(let link of servicesLinks) {
+  link.addEventListener('click', function() {
+        cardLinkBtnLogic();
+  })
+}
 seoPricing.addEventListener('scroll', function(){
   returnHomeBtn.style.opacity = 0;
 });
@@ -171,32 +173,4 @@ seoPricing.addEventListener('scrollend', function(){
 returnHomeBtn.addEventListener('click', function(){
   returnHomeBtnLogic();
 });
-function displaySeoPricing() {
-  seoPricing.classList.toggle('displayNone');
-  returnHomeBtn.classList.toggle('displayNone');
-};
-function cardLinkBtnLogic() {
-  if(seoPricing.classList.contains('displayNone')) {
-    seoPricing.classList.toggle('displayNone');
-    returnHomeBtn.classList.toggle('displayNone');
-    document.body.style.overflow = 'hidden';
-    setTimeout(() => {
-      seoPricing.style.opacity = 1;
-    }, 100);
-    setTimeout(() => {
-      returnHomeBtn.style.opacity = 1;
-    }, 1500);
-  }
-};
-function returnHomeBtnLogic() {
-  if(!seoPricing.classList.contains('displayNone')) {
-    seoPricing.scrollTo(0, 0);
-    seoPricing.style.opacity = 0;
-    document.body.style.overflow = 'scroll';
-    setTimeout(() => {
-      returnHomeBtn.style.opacity = 0;
-      seoPricing.classList.toggle('displayNone');
-      returnHomeBtn.classList.toggle('displayNone');
-    }, 600);
-  }
-};
+
