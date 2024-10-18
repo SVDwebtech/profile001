@@ -93,7 +93,6 @@
     }
     &--returnHomeBtn {
         @include displayFlexRow;
-        align-items: end;
         gap: .75rem;
         background-color: $cp-lightGrey;
         border-top: 2px solid $cp-grey;

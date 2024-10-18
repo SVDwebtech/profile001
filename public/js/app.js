@@ -1,7 +1,9 @@
 //////////////////////////////////////////////////////////////////////////
 /// imports
-import { cardLink, returnHomeBtn, seoPricing, servicesLinks } from "./modules/appVariables.js";
-import { displaySeoPricing, cardLinkBtnLogic, returnHomeBtnLogic } from "./modules/servicesLogic.js";
+//appVariables
+import { servicesLinks, servicesPricingCards } from "./modules/appVariables.js";
+//servicesLogic
+import { servicesCardLinkBtnLogic  } from "./modules/servicesLogic.js";
 //////////////////////////////////////////////////////////////////////////
 /// app variables
 // hamburger variables
@@ -158,19 +160,7 @@ const date = new Date();
 copyrightDate.textContent = date.getFullYear();
 /////////////////////////////////////////////////////////////////////
 /// services logic
-displaySeoPricing();
-for(let link of servicesLinks) {
-  link.addEventListener('click', function() {
-        cardLinkBtnLogic();
-  })
-}
-seoPricing.addEventListener('scroll', function(){
-  returnHomeBtn.style.opacity = 0;
-});
-seoPricing.addEventListener('scrollend', function(){
-  returnHomeBtn.style.opacity = 1;
-});
-returnHomeBtn.addEventListener('click', function(){
-  returnHomeBtnLogic();
-});
-
+servicesCardLinkBtnLogic();
+// servicesPricingCards[0].classList.toggle('displayNone');
+// servicesPricingCards[0].style.opacity = 1;
+// document.querySelectorAll('.returnHomeBtn')[0].style.opacity = 1;

@@ -17,8 +17,11 @@
         min-height: 3rem;
     }
     &--returnHomeBtnIcon {
-        min-width: clamp(1.5rem, 6vw, 4.5rem);
-        min-height: clamp(1.5rem, 6vw 4.5rem);
-        // margin-bottom: .5rem;
+        width: 3rem;
+        height: 3rem;
+    }
+    &--checkMarkIcon {
+        width: 13rem;
+        height: 3rem;
     }
 }
