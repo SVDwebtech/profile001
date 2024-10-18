@@ -915,6 +915,10 @@ body {
   width: 3rem;
   height: 3rem;
 }
+.iconBox--servicesHeading {
+  width: 8rem;
+  height: 8rem;
+}
 .iconBox__icon {
   width: 3rem;
   height: 3rem;
@@ -924,14 +928,18 @@ body {
   transform: translate(-50%, -50%);
   z-index: 100;
 }
+.iconBox__icon--servicesHeading {
+  width: 8rem;
+  height: 8rem;
+}
 .iconBox__path--btn {
   fill: #cccccc;
 }
-.iconBox__path--checkmark {
+.iconBox__path--checkmark, .iconBox__path--servicesHeading {
   fill: #f2f2f2;
 }
 .iconBox__iconBackDrop {
-  background: linear-gradient(to bottom right, blue, red);
+  background: linear-gradient(to bottom right, #991818, #003049);
   border-radius: 100%;
   width: 2.8rem;
   height: 2.8rem;
@@ -940,6 +948,11 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 0;
+}
+.iconBox__iconBackDrop--servicesHeading {
+  background: linear-gradient(to bottom right, #991818 35%, #003049 60%);
+  width: 7.8rem;
+  height: 7.8rem;
 }
 
 .logo {

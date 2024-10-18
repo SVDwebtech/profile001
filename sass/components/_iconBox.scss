@@ -6,6 +6,10 @@
             width: 3rem;
             height: 3rem;
       }
+      &--servicesHeading {
+            width: 8rem;
+            height: 8rem;
+      }
       &__icon {
             width: 3rem;
             height: 3rem;
@@ -14,15 +18,19 @@
             left: 50%;
             transform: translate(-50%, -50%);
             z-index: 100;
+            &--servicesHeading {
+                  width: 8rem;
+                  height: 8rem;
+            }
       }
       &__path--btn {
             fill: $cp-lightGrey;
       }
-      &__path--checkmark {
+      &__path--checkmark, &__path--servicesHeading {
             fill: $cp-white;
       }
       &__iconBackDrop {
-            background: linear-gradient(to bottom right, blue, red);
+            background: linear-gradient(to bottom right, rgba($cp-darkRed, 1), rgba($cp-darkBlue, 1));
             border-radius: 100%;
             width: 2.8rem;
             height: 2.8rem;
@@ -31,5 +39,10 @@
             left: 50%;
             transform: translate(-50%, -50%);
             z-index: 0;
+            &--servicesHeading {
+                  background: linear-gradient(to bottom right, rgba($cp-darkRed, 1) 35%, rgba($cp-darkBlue, 1) 60%);
+                  width: 7.8rem;
+                  height: 7.8rem;
+            }
       }
 }
