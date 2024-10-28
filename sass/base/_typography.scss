@@ -192,6 +192,13 @@ body {
 		text-align: center;
 		line-height: 1.2;
 	}
+	&--domainsItemHeading {
+		color: $cf-darkRed;
+		font-size: clamp(1.6rem, 5vw, 2rem);
+		font-weight: 900;
+		text-decoration: underline 2px;
+		text-underline-offset: 3px;
+	}
 }
 .headingH5 {
 	color: $cf-darkBlue;
@@ -202,6 +209,16 @@ body {
 		background-clip: text;
 		-webkit-text-fill-color: transparent;
 		-webkit-background-clip: text;
+	}
+}
+.headingH6 {
+	color: $cf-darkBlue;
+	&--pricingCard {
+		color: $cf-darkRed;
+		font-size: clamp(1.6rem, 5vw, 2rem);
+		font-weight: 900;
+		text-decoration: underline 2px;
+		text-underline-offset: 3px;
 	}
 }
 
@@ -260,6 +277,9 @@ body {
 	}
 	&--pricingCardBenefitItem {
 		text-align: left;
+	}
+	&--pricingCardBenefitItemForDomains {
+		text-align: center;
 	}
 }
 

@@ -20,6 +20,7 @@
 }
 .servicesPricingCards {
       @include displayFlexColumn;
+      align-items: normal;
       gap: 2rem;
       justify-content: flex-start;
       background-color: $cp-white;
@@ -58,7 +59,9 @@
       }
       &__pricingCardsContainer {
             @include displayFlexColumn;
+            align-items: center;
             gap: 4rem;
+            margin: 2rem 0;
       }
 }
 .displayNone {

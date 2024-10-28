@@ -3,7 +3,7 @@
       background: linear-gradient(to right, rgba($cp-white, 1) 30%, rgba(0, 237, 254, .2) 70%, rgba(0, 237, 254, .3));
       box-shadow: 5px 5px 12px 3px rgba(3, 3, 3, .25);
       padding: 2rem 2rem;
-      width: 100%;
+      width: min(100%, 45rem);
       &__pricingCardBenefits {
             @include displayFlexColumn;
             gap: 1.75rem;
@@ -15,6 +15,11 @@
             align-items: flex-start;
             gap: .5rem;
             width: min(80%, 35rem);
+      }
+      &__pricingCardBenefitsItemForDomains {
+            @include displayFlexColumn;
+            gap: .5rem;
+            width: min(100%, 35rem);
       }
       &__paragraph {
             width: 75%;
