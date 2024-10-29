@@ -3,7 +3,7 @@
 //appVariables
 import { servicesLinks } from "./modules/appVariables.js";
 //servicesLogic
-import { servicesCardLinkBtnLogic } from "./modules/servicesLogic.js";
+import { servicesCardLinkBtnLogic, servicesCardReturnHomeBtnLogic } from "./modules/servicesLogic.js";
 //////////////////////////////////////////////////////////////////////////
 /// app variables
 // hamburger variables
@@ -161,3 +161,4 @@ copyrightDate.textContent = date.getFullYear();
 /////////////////////////////////////////////////////////////////////
 /// services logic
 servicesCardLinkBtnLogic();
+servicesCardReturnHomeBtnLogic()

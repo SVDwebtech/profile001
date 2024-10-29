@@ -1,6 +1,6 @@
 //////////////////////////////////////////////////////////////////////////
 /// imports
-import { servicesLinks } from "./appVariables.js";
+import { returnHomeBtns, servicesLinks } from "./appVariables.js";
 //////////////////////////////////////////////////////////////////////////
 /// functions
 const servicesCardLinkBtnLogic = () => {
@@ -16,6 +16,18 @@ const servicesCardLinkBtnLogic = () => {
             
       }
 }
+const servicesCardReturnHomeBtnLogic = () => {
+      for(let btn of returnHomeBtns) {
+            const card = btn.parentElement.parentElement;
+            btn.addEventListener('click', function() {
+                  card.style.opacity = 0;
+                  setTimeout(() => {
+                        card.style.visibility = 'hidden';
+                        card.classList.toggle('displayNone');
+                  }, 10020);
+            });
+      }
+}
 //////////////////////////////////////////////////////////////////////////
 /// export
-export { servicesCardLinkBtnLogic };
+export { servicesCardLinkBtnLogic, servicesCardReturnHomeBtnLogic };
