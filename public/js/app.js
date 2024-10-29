@@ -1,9 +1,9 @@
 //////////////////////////////////////////////////////////////////////////
 /// imports
 //appVariables
-import { servicesLinks, servicesPricingCards } from "./modules/appVariables.js";
+import { servicesLinks } from "./modules/appVariables.js";
 //servicesLogic
-import { servicesCardLinkBtnLogic  } from "./modules/servicesLogic.js";
+import { servicesCardLinkBtnLogic } from "./modules/servicesLogic.js";
 //////////////////////////////////////////////////////////////////////////
 /// app variables
 // hamburger variables
@@ -161,6 +161,3 @@ copyrightDate.textContent = date.getFullYear();
 /////////////////////////////////////////////////////////////////////
 /// services logic
 servicesCardLinkBtnLogic();
-// servicesPricingCards[0].classList.toggle('displayNone');
-// servicesPricingCards[0].style.opacity = 1;
-// document.querySelectorAll('.returnHomeBtn')[0].style.opacity = 1;

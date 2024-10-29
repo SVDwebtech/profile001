@@ -1,7 +1,6 @@
 //////////////////////////////////////////////////////////////////////////
 /// services variables
 const servicesLinks = document.querySelectorAll('.servicesLink');
-const servicesPricingCards = document.querySelectorAll('.servicesPricingCards');
 //////////////////////////////////////////////////////////////////////////
 /// export
-export { servicesLinks, servicesPricingCards };
+export { servicesLinks };
