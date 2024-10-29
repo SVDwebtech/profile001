@@ -22,15 +22,35 @@ const servicesCardReturnHomeBtnLogic = () => {
             const card = btn.parentElement.parentElement;
             if(!card.classList.contains('.displayNone')) {
                   btn.addEventListener('click', function() {
-                  card.style.opacity = 0;
-                  setTimeout(() => {
-                        card.style.visibility = 'hidden';
-                        card.classList.toggle('displayNone');
-                  }, 1020);
-            });
+                        card.style.opacity = 0;
+                        setTimeout(() => {
+                              card.style.visibility = 'hidden';
+                              card.classList.toggle('displayNone');
+                        }, 1020);
+                  });
             }
+      }
+}
+const hideReturnHomeBtnOnScrollLogic = () => {
+      for(let link of servicesLinks) {
+            const card = link.nextElementSibling.nextElementSibling;
+            card.addEventListener('scroll', function() {
+                  for(let btn of returnHomeBtns) {
+                        btn.style.opacity = 0;
+                  }
+            });
+      }
+}
+const showReturnHomeBtnOnScrollEndLogic = () => {
+      for(let link of servicesLinks) {
+            const card = link.nextElementSibling.nextElementSibling;
+            card.addEventListener('scrollend', function() {
+                  for(let btn of returnHomeBtns) {
+                        btn.style.opacity = 1;
+                  }
+            });
       }
 }
 //////////////////////////////////////////////////////////////////////////
 /// export
-export { servicesCardLinkBtnLogic, servicesCardReturnHomeBtnLogic };
+export { servicesCardLinkBtnLogic, servicesCardReturnHomeBtnLogic, hideReturnHomeBtnOnScrollLogic, showReturnHomeBtnOnScrollEndLogic };

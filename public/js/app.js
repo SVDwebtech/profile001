@@ -3,7 +3,7 @@
 //appVariables
 import { servicesLinks } from "./modules/appVariables.js";
 //servicesLogic
-import { servicesCardLinkBtnLogic, servicesCardReturnHomeBtnLogic } from "./modules/servicesLogic.js";
+import { servicesCardLinkBtnLogic, servicesCardReturnHomeBtnLogic, hideReturnHomeBtnOnScrollLogic, showReturnHomeBtnOnScrollEndLogic } from "./modules/servicesLogic.js";
 //////////////////////////////////////////////////////////////////////////
 /// app variables
 // hamburger variables
@@ -161,4 +161,6 @@ copyrightDate.textContent = date.getFullYear();
 /////////////////////////////////////////////////////////////////////
 /// services logic
 servicesCardLinkBtnLogic();
-servicesCardReturnHomeBtnLogic()
+servicesCardReturnHomeBtnLogic();
+hideReturnHomeBtnOnScrollLogic();
+showReturnHomeBtnOnScrollEndLogic();
