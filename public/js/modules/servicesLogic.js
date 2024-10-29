@@ -7,25 +7,28 @@ const servicesCardLinkBtnLogic = () => {
       for(let link of servicesLinks) {
             link.addEventListener('click', function() {
                   const card = link.nextElementSibling.nextElementSibling;
-                  card.classList.toggle('displayNone');
-                  card.style.visibility = 'visible';
-                  setTimeout(() => {
-                       card.style.opacity = 1; 
-                  }, 50);
+                  if(card.classList.contains('displayNone')) {
+                        card.classList.toggle('displayNone');
+                        card.style.visibility = 'visible';
+                        setTimeout(() => {
+                              card.style.opacity = 1; 
+                        }, 50);
+                  }
             });
-            
       }
 }
 const servicesCardReturnHomeBtnLogic = () => {
       for(let btn of returnHomeBtns) {
             const card = btn.parentElement.parentElement;
-            btn.addEventListener('click', function() {
+            if(!card.classList.contains('.displayNone')) {
+                  btn.addEventListener('click', function() {
                   card.style.opacity = 0;
                   setTimeout(() => {
                         card.style.visibility = 'hidden';
                         card.classList.toggle('displayNone');
-                  }, 10020);
+                  }, 1020);
             });
+            }
       }
 }
 //////////////////////////////////////////////////////////////////////////
