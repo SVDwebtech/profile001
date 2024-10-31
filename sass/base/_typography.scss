@@ -169,6 +169,11 @@ body {
 .headingH3 {
 	&--servicesSection {
 		color: $cf-darkBlue;
+		font-size: clamp(2rem, 7vw, 2.4rem);
+		font-weight: 900;
+		text-align: center;
+		line-height: 1.2;
+
 	}
 	&--seoPricing {
 		font-size: clamp(2rem, 7vw, 2.4rem);
@@ -183,6 +188,7 @@ body {
 	&--cardLinkHeading {
 		color: $cf-darkRed;
 		font-family:  "Sedgwick Ave", cursive;
+		text-shadow: 1px 1px 1px rgba($cf-white, 1);
 		line-height: 1.2;
 	}
 	&--pricingCard {

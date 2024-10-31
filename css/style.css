@@ -263,6 +263,10 @@ body {
 
 .headingH3--servicesSection {
   color: #003049;
+  font-size: clamp(2rem, 7vw, 2.4rem);
+  font-weight: 900;
+  text-align: center;
+  line-height: 1.2;
 }
 .headingH3--seoPricing {
   font-size: clamp(2rem, 7vw, 2.4rem);
@@ -277,6 +281,7 @@ body {
 .headingH4--cardLinkHeading {
   color: #991818;
   font-family: "Sedgwick Ave", cursive;
+  text-shadow: 1px 1px 1px #f0f0f0;
   line-height: 1.2;
 }
 .headingH4--pricingCard {
@@ -925,6 +930,13 @@ body {
   width: 13rem;
   height: 3rem;
 }
+.icons--cardLinkRarrIcon {
+  width: 3.5rem;
+  height: 3.5rem;
+}
+.icons--cardLinkRarrIconFill {
+  fill: #991818;
+}
 
 .iconBox {
   width: 3rem;
@@ -1212,20 +1224,73 @@ body {
   justify-content: center;
   align-items: center;
   gap: 1rem;
-  background: linear-gradient(to bottom right, #f2f2f2, rgba(0, 237, 254, 0.2) 60%, rgba(0, 237, 254, 0.5));
+  gap: 5vw;
   box-shadow: 5px 5px 12px 3px rgba(3, 3, 3, 0.25);
   border: 10px solid;
   border-image-slice: 1;
   border-width: 3px;
   border-image-source: linear-gradient(to bottom right, #991818, #003049);
   padding: 2rem;
-  width: 100%;
+  width: min(100%, 36rem);
+}
+.servicesCard__cardLink--graphicDesign {
+  background: linear-gradient(to right, #f2f2f2 50%, rgba(27, 144, 216, 0.2) 75%, rgba(0, 48, 73, 0.3)), url("../../img/Services/ServicesGraphicDesign.webp");
+}
+.servicesCard__cardLink--websiteDesign {
+  background: linear-gradient(to right, #f2f2f2 50%, rgba(27, 144, 216, 0.2) 75%, rgba(0, 48, 73, 0.3)), url("../../img/Services/ServicesWebsiteDesignAndDevelopment.webp");
+}
+.servicesCard__cardLink--websiteMaintenance {
+  background: linear-gradient(to right, #f2f2f2 50%, rgba(27, 144, 216, 0.2) 75%, rgba(0, 48, 73, 0.3)), url("../../img/Services/ServicesWebsiteMaintenance.webp");
+}
+.servicesCard__cardLink--domainsAndHosting {
+  background: linear-gradient(to right, #f2f2f2 50%, rgba(27, 144, 216, 0.2) 75%, rgba(0, 48, 73, 0.3)), url("../../img/Services/ServicesDomainsAndHosting.webp");
+}
+.servicesCard__cardLink--socialMarketing {
+  background: linear-gradient(to right, #f2f2f2 50%, rgba(27, 144, 216, 0.2) 75%, rgba(0, 48, 73, 0.3)), url("../../img/Services/ServicesSocialMediaMarketing.webp");
+}
+.servicesCard__cardLink--googleAds {
+  background: linear-gradient(to right, #f2f2f2 50%, rgba(27, 144, 216, 0.2) 75%, rgba(0, 48, 73, 0.3)), url("../../img/Services/ServicesGoogleAds.webp");
+}
+.servicesCard__cardLink--seoMarketing {
+  background: linear-gradient(to right, #f2f2f2 50%, rgba(27, 144, 216, 0.2) 75%, rgba(0, 48, 73, 0.3)), url("../../img/Services/ServicesSEOMarketing.webp");
+}
+.servicesCard__cardLink--graphicDesign, .servicesCard__cardLink--websiteDesign, .servicesCard__cardLink--websiteMaintenance, .servicesCard__cardLink--graphicDesign, .servicesCard__cardLink--domainsAndHosting, .servicesCard__cardLink--socialMarketing, .servicesCard__cardLink--googleAds, .servicesCard__cardLink--seoMarketing {
+  background-size: contain;
+  background-position: right;
+  background-repeat: no-repeat;
 }
 .servicesCard__headingH4 {
   margin-bottom: 0;
 }
 .servicesCard__paragraph {
-  width: 75%;
+  width: min(85%, 33rem);
+}
+@media (min-width: 56.25em) {
+  .servicesCard {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    gap: 5rem;
+  }
+  .servicesCard__cardLink {
+    gap: 1.5vw;
+    padding: 2rem 1.75rem;
+    width: min(47%, 33rem);
+  }
+  .servicesCard__cardLink--websiteDesign {
+    order: 2;
+  }
+  .servicesCard__cardLink--domainsAndHosting {
+    order: 2;
+  }
+  .servicesCard__cardLink--googleAds {
+    order: 2;
+  }
+  .servicesCard__paragraph {
+    width: min(47%, 25rem);
+  }
 }
 
 .servicesPricingCards {
@@ -1919,7 +1984,16 @@ body {
   justify-content: center;
   align-items: center;
   gap: 1rem;
+  align-items: stretch;
   gap: 3.5rem;
+}
+.servicesSection__headingH3 {
+  margin-bottom: 2rem;
+}
+@media (min-width: 56.25em) {
+  .servicesSection__servicesListContainer {
+    gap: 7rem;
+  }
 }
 
 .navbar {

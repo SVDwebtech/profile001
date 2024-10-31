@@ -238,13 +238,21 @@
         }
     }
 }
-
 .servicesSection {
     &__servicesContainer {
         @include displayFlexColumn
     }
     &__servicesListContainer {
         @include displayFlexColumn;
+        align-items: stretch;
         gap: 3.5rem;
+    }
+    &__headingH3 {
+        margin-bottom: 2rem;
+    }
+    @include respond(tab-land) {
+        &__servicesListContainer {
+            gap: 7rem;
+        }
     }
 }
