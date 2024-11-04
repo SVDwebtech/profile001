@@ -421,8 +421,8 @@ body {
     font-size: clamp(calc(1.7rem + 1.8vh - 2rem), 3.5vw, calc(2.3rem + 1.8vh - 2rem));
   }
 }
-.btn--primaryBtn-seoPricingCard {
-  font-size: clamp(calc(2.2rem + 2vh - 2rem), 4vw, calc(2.6rem + 2.1vh - 2rem));
+.btn--primaryBtn-getStartedPricingCard {
+  font-size: clamp(1.8rem, 6.5vw, 2rem);
 }
 .btn--primaryBtn-returnHomeBtnText {
   color: #003049;
@@ -624,7 +624,7 @@ body {
   background-color: rgba(242, 242, 242, 0.8);
   padding: 0.175em 0.5em;
 }
-.btn--primaryBtn-seoPricingCard {
+.btn--primaryBtn-getStartedPricingCard {
   background: linear-gradient(to bottom right, #991818, #003049);
   box-shadow: 0 0 12px 3px rgba(3, 3, 3, 0.35);
   padding: 0.75rem 1.5rem;
