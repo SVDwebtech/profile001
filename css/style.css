@@ -308,6 +308,7 @@ body {
   font-family: "Caveat", cursive;
   font-size: clamp(2rem, 7vw, 2.2rem);
   font-weight: 700;
+  text-align: center;
 }
 
 .headingH6 {
@@ -1187,7 +1188,7 @@ body {
   gap: 1rem;
   background: linear-gradient(to right, #f2f2f2 30%, rgba(0, 237, 254, 0.2) 70%, rgba(0, 237, 254, 0.3));
   box-shadow: 5px 5px 12px 3px rgba(3, 3, 3, 0.25);
-  padding: 2rem 2rem;
+  padding: 4rem 2rem 2rem;
   width: min(100%, 45rem);
 }
 .pricingCard__pricingCardBenefits {
@@ -1208,7 +1209,7 @@ body {
   justify-content: center;
   align-items: flex-start;
   gap: 0.5rem;
-  padding: 0 2rem;
+  padding: 0 1rem;
   width: 100%;
 }
 .pricingCard__paragraph {
@@ -1216,13 +1217,18 @@ body {
 }
 @media (min-width: 56.25em) {
   .pricingCard {
-    flex: 0 0 500px;
+    width: min(100%, 380px);
     justify-content: flex-start;
   }
 }
 @media (min-width: 75em) {
   .pricingCard {
-    flex: 1 0 500px;
+    width: min(100%, 450px);
+  }
+}
+@media (min-width: 1500px) {
+  .pricingCard {
+    width: min(100%, 550px);
   }
 }
 
@@ -1385,13 +1391,14 @@ body {
   align-items: center;
   gap: 1rem;
   gap: 5rem;
+  width: 100%;
 }
 @media (min-width: 37.5em) {
   .servicesPricingCards {
     padding: 8rem 4rem 2rem;
   }
 }
-@media (min-width: 56.25em) {
+@media (min-width: 37.5em) {
   .servicesPricingCards__lineBreakHeading {
     display: none;
   }
@@ -1401,6 +1408,7 @@ body {
     justify-content: center;
     align-items: center;
     gap: 1rem;
+    justify-content: space-evenly;
     align-items: stretch;
     flex-wrap: wrap;
     gap: 5rem;

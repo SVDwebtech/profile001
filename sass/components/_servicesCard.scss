@@ -126,16 +126,18 @@
       &__packagesContainer {
             @include displayFlexColumn;
             gap: 5rem;
+            width: 100%;
       }
       @include respond(tab-port) {
             padding: 8rem 4rem 2rem;
       }
-      @include respond(tab-land) {
+      @include respond(tab-port) {
             &__lineBreakHeading {
                   display: none;
             }
             &__packagesContainer {
                   @include displayFlexRow;
+                  justify-content: space-evenly;
                   align-items: stretch;
                   flex-wrap: wrap;
                   gap: 5rem;
