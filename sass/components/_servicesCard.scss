@@ -37,9 +37,6 @@
             background-position: right;
             background-repeat: no-repeat;
       }
-      // &__cardLinkRarrIcon {
-      //       justify-self: flex-end;
-      // }
       &__headingH4 {
             margin-bottom: 0;
       }
@@ -54,27 +51,27 @@
                   padding: 2rem 1.75rem;
                   width: min(47%, 33rem);
             }
-            // &__cardLink--graphicDesign {
-            //       background: linear-gradient(to right, rgba($cp-white, 1) 50%, rgba($cp-blue, .2) 75%, rgba($cp-darkBlue, .3)), url('../../img/Services/ServicesGraphicDesign.webp');
-            // }
+            &__cardLink--graphicDesign {
+                  order: 0;
+            }
             &__cardLink--websiteDesign {
-                  order: 2;
+                  order: 1;
             }
-            // &__cardLink--websiteMaintenance {
-            //       background: linear-gradient(to right, rgba($cp-white, 1) 50%, rgba($cp-blue, .2) 75%, rgba($cp-darkBlue, .3)), url('../../img/Services/ServicesWebsiteMaintenance.webp');
-            // }
+            &__cardLink--websiteMaintenance {
+                  order: 0;
+            }
             &__cardLink--domainsAndHosting {
-                  order: 2;
+                  order: 1;
             }
-            // &__cardLink--socialMarketing {
-            //       background: linear-gradient(to right, rgba($cp-white, 1) 50%, rgba($cp-blue, .2) 75%, rgba($cp-darkBlue, .3)), url('../../img/Services/ServicesSocialMediaMarketing.webp');
-            // }
+            &__cardLink--socialMarketing {
+                  order: 0;
+            }
             &__cardLink--googleAds {
-                  order: 2;
+                  order: 1;
             }
-            // &__cardLink--seoMarketing {
-            //       background: linear-gradient(to right, rgba($cp-white, 1) 50%, rgba($cp-blue, .2) 75%, rgba($cp-darkBlue, .3)), url('../../img/Services/ServicesSEOMarketing.webp');
-            // }
+            &__cardLink--seoMarketing {
+                  order: 0;
+            }
             &__paragraph {
                   width: min(47%, 25rem);
             }
@@ -97,7 +94,6 @@
       z-index: 1000;
       overflow: scroll;
       opacity: 0;
-      // visibility: hidden;
       transform-origin: top;
       transition: all 1s;
       &__returnHomeBtnContainer {
@@ -126,6 +122,24 @@
             align-items: center;
             gap: 4rem;
             margin: 2rem 0;
+      }
+      &__packagesContainer {
+            @include displayFlexColumn;
+            gap: 5rem;
+      }
+      @include respond(tab-port) {
+            padding: 8rem 4rem 2rem;
+      }
+      @include respond(tab-land) {
+            &__lineBreakHeading {
+                  display: none;
+            }
+            &__packagesContainer {
+                  @include displayFlexRow;
+                  align-items: stretch;
+                  flex-wrap: wrap;
+                  gap: 5rem;
+            }
       }
 }
 .displayNone {

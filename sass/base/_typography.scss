@@ -175,9 +175,10 @@ body {
 		line-height: 1.2;
 
 	}
-	&--seoPricing {
-		font-size: clamp(2rem, 7vw, 2.4rem);
+	&--servicesPricingCard {
 		color: $cf-darkBlue;
+		font-size: clamp(2.2rem, 7vw, 2.4rem);
+		font-weight: 900;
 		text-align: center;
 		line-height: 1.2;
 	}
@@ -191,10 +192,10 @@ body {
 		text-shadow: 1px 1px 1px rgba($cf-white, 1);
 		line-height: 1.2;
 	}
-	&--pricingCard {
-		color: $cf-blue;
-		font-family:  'Caveat', cursive;
-		font-size: clamp(2.6rem, 7vw, 3rem);
+	&--pricingCardsContainer {
+		color: $cf-darkRed;
+		font-size: clamp(2rem, 7vw, 2.2rem);
+		font-weight: 900;
 		text-align: center;
 		line-height: 1.2;
 	}
@@ -208,13 +209,11 @@ body {
 }
 .headingH5 {
 	color: $cf-darkBlue;
-	&--pricingCard {
-		font-size: clamp(2.2rem, 5.5vw, 2.6rem);
-		font-weight: 900;
-		background: linear-gradient(to bottom right, rgba($cp-darkRed, 1), rgba($cp-darkBlue, 1));
-		background-clip: text;
-		-webkit-text-fill-color: transparent;
-		-webkit-background-clip: text;
+	&--pricingCardPackage {
+		color: $cf-blue;
+		font-family: 'Caveat', cursive;
+		font-size: clamp(2rem, 7vw, 2.2rem);
+		font-weight: 700;
 	}
 }
 .headingH6 {
@@ -225,6 +224,14 @@ body {
 		font-weight: 900;
 		text-decoration: underline 2px;
 		text-underline-offset: 3px;
+	}
+	&--packagePrice {
+		font-size: clamp(1.8rem, 6.5vw, 2rem);
+		font-weight: 900;
+		background: linear-gradient(to bottom right, rgba($cp-darkRed, 1), rgba($cp-darkBlue, 1));
+		background-clip: text;
+		-webkit-text-fill-color: transparent;
+		-webkit-background-clip: text;
 	}
 }
 
@@ -281,11 +288,16 @@ body {
 	&--servicesCard {
 		line-height: 1.2;
 	}
-	&--pricingCardBenefitItem {
-		text-align: left;
-	}
-	&--pricingCardBenefitItemForDomains {
+	&--bodyText-servicesPricingCard, &--bodyText-pricingCardBenefit, &--bodyText-pricingCardBenefitForDomains {
+		color: $cf-darkBlue;
+		font-size: clamp(1.6rem, 5.5vw, 1.8rem);
+		font-weight: 400;
+		line-height: 1.6;
 		text-align: center;
+	}
+	&--bodyText-pricingCardBenefit {
+		font-size: clamp(1.4rem, 5vw, 1.6rem);
+		text-align: left;
 	}
 }
 
