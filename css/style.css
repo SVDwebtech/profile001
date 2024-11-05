@@ -986,7 +986,6 @@ body {
 }
 .iconBox__iconBackDrop {
   background: linear-gradient(to bottom right, #991818, #003049);
-  border-radius: 100%;
   width: 2.8rem;
   height: 2.8rem;
   position: absolute;
