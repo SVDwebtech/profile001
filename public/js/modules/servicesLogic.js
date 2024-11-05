@@ -9,6 +9,7 @@ const servicesCardLinkBtnLogic = () => {
                   const card = link.nextElementSibling.nextElementSibling;
                   if(card.classList.contains('displayNone')) {
                         card.classList.toggle('displayNone');
+                        card.scrollTo(0, 0);
                         card.style.visibility = 'visible';
                         setTimeout(() => {
                               card.style.opacity = 1; 
