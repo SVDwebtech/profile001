@@ -337,8 +337,9 @@ body {
 
 	&--primaryBtn-returnHomeBtnText {
 		color: $cf-darkBlue;
-		font-size: clamp(calc(2.6rem + 2vh - 2rem), 4vw, calc(3rem + 2.1vh - 2rem));
+		font-size: clamp(.8rem, 3.5vw, 1rem);
 		font-weight: 900;
+		letter-spacing: .5px;
 		line-height: 1.2;
 		text-align: center;
 		margin-top: 25rem;
