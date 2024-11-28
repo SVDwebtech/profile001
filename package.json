@@ -2,7 +2,7 @@
   "name": "profile001",
   "version": "1.0.0",
   "description": "a landing/profile page for Schalk van Dyk, a web developer",
-  "main": "app.js",
+  "main": "server.js",
   "scripts": {
     "watch:sass": "sass sass/main.scss css/style.css -w",
     "compile:sass": "sass sass/main.scss css/style.comp.css",
