@@ -161,7 +161,7 @@ body {
   line-height: 0.8;
 }
 .primaryHeading__paragraph {
-  font-size: clamp(calc(2.1rem + 2.3vh - 2rem), 4.3vw, calc(2.5rem + 2.3vh - 2rem));
+  font-size: clamp(2.1rem + 2.3vh - 2rem, 4.3vw, 2.5rem + 2.3vh - 2rem);
   text-align: center;
 }
 @media (min-width: 56.25em) {
@@ -179,7 +179,7 @@ body {
 .headingH2Container__headingH2 {
   color: #1b90d8;
   font-family: "Alegreya SC", serif;
-  font-size: clamp(calc(2.6rem + 3vh - 2rem), 11vw, calc(6.2rem + 3vh - 2rem));
+  font-size: clamp(2.6rem + 3vh - 2rem, 11vw, 6.2rem + 3vh - 2rem);
   font-weight: 900;
   line-height: 1;
   letter-spacing: 4px;
@@ -188,17 +188,17 @@ body {
 .headingH2Container__subheadingH2 {
   color: #c1121f;
   font-family: "Caveat", cursive;
-  font-size: clamp(calc(2.8rem + 2.3vh - 2rem), 8vw, calc(5rem + 2.3vh - 2rem));
+  font-size: clamp(2.8rem + 2.3vh - 2rem, 8vw, 5rem + 2.3vh - 2rem);
   font-weight: 700;
   line-height: 1;
   letter-spacing: 1px;
 }
 @media (min-width: 37.5em) {
   .headingH2Container__headingH2 {
-    font-size: clamp(calc(2.2rem + 2.6vh - 2rem), 10vw, calc(5.8rem + 2.6vh - 2rem));
+    font-size: clamp(2.2rem + 2.6vh - 2rem, 10vw, 5.8rem + 2.6vh - 2rem);
   }
   .headingH2Container__subheadingH2 {
-    font-size: clamp(calc(2.2rem + 1.7vh - 2rem), 6vw, calc(4.4rem + 1.7vh - 2rem));
+    font-size: clamp(2.2rem + 1.7vh - 2rem, 6vw, 4.4rem + 1.7vh - 2rem);
   }
 }
 
@@ -208,7 +208,7 @@ body {
 }
 .headingH3Container__headingH3 {
   color: #f0f0f0;
-  font-size: clamp(calc(2.6rem + 2.3vh - 2rem), 4.3vw, calc(3.1rem + 2.3vh - 2rem));
+  font-size: clamp(2.6rem + 2.3vh - 2rem, 4.3vw, 3.1rem + 2.3vh - 2rem);
   font-weight: 900;
   line-height: 1;
   letter-spacing: 2px;
@@ -219,7 +219,7 @@ body {
 }
 @media (min-width: 37.5em) {
   .headingH3Container__headingH3--blue {
-    font-size: clamp(calc(1.4rem + .9vh - 2rem), 5vw, calc(3.6rem + .9vh - 2rem));
+    font-size: clamp(1.4rem + 0.9vh - 2rem, 5vw, 3.6rem + 0.9vh - 2rem);
   }
 }
 @media (min-width: 56.25em) {
@@ -229,20 +229,20 @@ body {
 }
 .headingH3Container__headingH3--project {
   color: #991818;
-  font-size: clamp(calc(2.8rem + 2vh - 2rem), 2.5vw, calc(3.8rem + 2vh - 2rem));
+  font-size: clamp(2.8rem + 2vh - 2rem, 2.5vw, 3.8rem + 2vh - 2rem);
 }
 .headingH3Container__headingH3--skills {
   color: #003049;
-  font-size: clamp(calc(1.8rem + 3.3vh - 2rem), 5.2vw, calc(3.8rem + 3.3vh - 2rem));
+  font-size: clamp(1.8rem + 3.3vh - 2rem, 5.2vw, 3.8rem + 3.3vh - 2rem);
 }
 @media (min-width: 37.5em) {
   .headingH3Container__headingH3--skills {
-    font-size: clamp(calc(1.5rem + 3.3vh - 2rem), 3.3vw, calc(3.4rem + 3.3vh - 2rem));
+    font-size: clamp(1.5rem + 3.3vh - 2rem, 3.3vw, 3.4rem + 3.3vh - 2rem);
   }
 }
 @media (min-width: 56.25em) {
   .headingH3Container__headingH3--skills {
-    font-size: clamp(calc(1.2rem + 3vh - 2rem), 3vw, calc(3.1rem + 3vh - 2rem));
+    font-size: clamp(1.2rem + 3vh - 2rem, 3vw, 3.1rem + 3vh - 2rem);
   }
 }
 @media (min-width: 56.25em) {
@@ -252,7 +252,7 @@ body {
 }
 .headingH3Container__subheadingH3 {
   color: #c1121f;
-  font-size: clamp(calc(1.7rem + 2.3vh - 2rem), 4vw, calc(2.3rem + 2.3vh - 2rem));
+  font-size: clamp(1.7rem + 2.3vh - 2rem, 4vw, 2.3rem + 2.3vh - 2rem);
   font-weight: 400;
   line-height: 1;
   letter-spacing: 1px;
@@ -332,7 +332,7 @@ body {
 
 .paragraph {
   color: #003049;
-  font-size: clamp(calc(2.1rem + 2.3vh - 2rem), 4.3vw, calc(2.5rem + 2.3vh - 2rem));
+  font-size: clamp(2.1rem + 2.3vh - 2rem, 4.3vw, 2.5rem + 2.3vh - 2rem);
   font-weight: 700;
   text-align: center;
 }
@@ -343,7 +343,7 @@ body {
 }
 @media (min-height: 950px) {
   .paragraph {
-    font-size: clamp(calc(2rem + 1.9vh - 2rem), 3vw, calc(2.4rem + 1.9vh - 2rem));
+    font-size: clamp(2rem + 1.9vh - 2rem, 3vw, 2.4rem + 1.9vh - 2rem);
   }
 }
 .paragraph--white {
@@ -351,33 +351,33 @@ body {
 }
 .paragraph--project {
   color: #003049;
-  font-size: clamp(calc(1.7rem + 2.3vh - 2rem), 4vw, calc(2.1rem + 2.3vh - 2rem));
+  font-size: clamp(1.7rem + 2.3vh - 2rem, 4vw, 2.1rem + 2.3vh - 2rem);
   font-weight: 900;
   text-align: center;
 }
 @media (min-height: 950px) {
   .paragraph--project {
-    font-size: clamp(calc(2rem + 1.9vh - 2rem), 3vw, calc(2.4rem + 1.9vh - 2rem));
+    font-size: clamp(2rem + 1.9vh - 2rem, 3vw, 2.4rem + 1.9vh - 2rem);
   }
 }
 .paragraph--skills {
   color: #991818;
-  font-size: clamp(calc(1.9rem + 2.1vh - 2rem), 4vw, calc(2.3rem + 2.1vh - 2rem));
+  font-size: clamp(1.9rem + 2.1vh - 2rem, 4vw, 2.3rem + 2.1vh - 2rem);
   text-align: center;
 }
 @media (min-width: 37.5em) {
   .paragraph--skills {
-    font-size: clamp(calc(1.9rem + 2vh - 2rem), 3vw, calc(2.3rem + 2.1vh - 2rem));
+    font-size: clamp(1.9rem + 2vh - 2rem, 3vw, 2.3rem + 2.1vh - 2rem);
   }
 }
 @media (min-width: 56.25em) {
   .paragraph--skills {
-    font-size: clamp(calc(1.8rem + 1.9vh - 2rem), 2.4vw, calc(2.1rem + 1.9vh - 2rem));
+    font-size: clamp(1.8rem + 1.9vh - 2rem, 2.4vw, 2.1rem + 1.9vh - 2rem);
   }
 }
 @media (max-width: 350px) and (min-height: 750px) {
   .paragraph--contactItem {
-    font-size: clamp(calc(1.7rem + 2.1vh - 2rem), 4vw, calc(2.1rem + 2.1vh - 2rem));
+    font-size: clamp(1.7rem + 2.1vh - 2rem, 4vw, 2.1rem + 2.1vh - 2rem);
   }
 }
 .paragraph--servicesCard {
@@ -402,23 +402,23 @@ body {
   letter-spacing: 1px;
 }
 .btn--primaryBtn {
-  font-size: clamp(calc(2rem + 2.2vh - 2rem), 4vw, calc(2.4rem + 2.3vh - 2rem));
+  font-size: clamp(2rem + 2.2vh - 2rem, 4vw, 2.4rem + 2.3vh - 2rem);
 }
 .btn--primaryBtn-hero {
-  font-size: clamp(calc(2rem + 2.2vh - 2rem), 4.2vw, calc(2.4rem + 2.3vh - 2rem));
+  font-size: clamp(2rem + 2.2vh - 2rem, 4.2vw, 2.4rem + 2.3vh - 2rem);
 }
 .btn--primaryBtn-white {
   color: #003049;
-  font-size: clamp(calc(1.2rem + 1.2vh), 4vw, calc(1.6rem + 1.2vh));
+  font-size: clamp(1.2rem + 1.2vh, 4vw, 1.6rem + 1.2vh);
 }
 .btn--primaryBtn-white-portfolioCard {
   color: #c1121f;
-  font-size: clamp(calc(1.8rem + 2vh - 2rem), 3.8vw, calc(2.4rem + 2.1vh - 2rem));
+  font-size: clamp(1.8rem + 2vh - 2rem, 3.8vw, 2.4rem + 2.1vh - 2rem);
   font-weight: 900;
 }
 @media (min-height: 950px) {
   .btn--primaryBtn-white-portfolioCard {
-    font-size: clamp(calc(1.7rem + 1.8vh - 2rem), 3.5vw, calc(2.3rem + 1.8vh - 2rem));
+    font-size: clamp(1.7rem + 1.8vh - 2rem, 3.5vw, 2.3rem + 1.8vh - 2rem);
   }
 }
 .btn--primaryBtn-getStartedPricingCard {
@@ -426,7 +426,7 @@ body {
 }
 .btn--primaryBtn-returnHomeBtnText {
   color: #003049;
-  font-size: clamp(.8rem, 3.5vw, 1rem);
+  font-size: clamp(0.8rem, 3.5vw, 1rem);
   font-weight: 900;
   letter-spacing: 0.5px;
   line-height: 1.2;
@@ -435,19 +435,19 @@ body {
 }
 .btn--secondaryBtn {
   color: #f0f0f0;
-  font-size: clamp(calc(1.8rem + 2vh - 2rem), 3.8vw, calc(2.2rem + 2.2vh - 2rem));
+  font-size: clamp(1.8rem + 2vh - 2rem, 3.8vw, 2.2rem + 2.2vh - 2rem);
 }
 .btn--secondaryBtn-hero {
   color: #f0f0f0;
-  font-size: clamp(calc(1.8rem + 2vh - 2rem), 3.8vw, calc(2.2rem + 2.2vh - 2rem));
+  font-size: clamp(1.8rem + 2vh - 2rem, 3.8vw, 2.2rem + 2.2vh - 2rem);
 }
 .btn--secondaryBtn-portfolioCard {
   color: #f0f0f0;
-  font-size: clamp(calc(1.8rem + 2vh - 2rem), 3.8vw, calc(2.2rem + 2.2vh - 2rem));
+  font-size: clamp(1.8rem + 2vh - 2rem, 3.8vw, 2.2rem + 2.2vh - 2rem);
 }
 @media (min-height: 950px) {
   .btn--secondaryBtn-portfolioCard {
-    font-size: clamp(calc(1.7rem + 1.8vh - 2rem), 3.5vw, calc(2.3rem + 1.8vh - 2rem));
+    font-size: clamp(1.7rem + 1.8vh - 2rem, 3.5vw, 2.3rem + 1.8vh - 2rem);
   }
 }
 
@@ -475,14 +475,14 @@ body {
 
 .testimonialCard__paragraph {
   color: #003049;
-  font-size: clamp(calc(2rem + 2.1vh - 2rem), 2.8vw, calc(2.4rem + 2.1vh - 2rem));
+  font-size: clamp(2rem + 2.1vh - 2rem, 2.8vw, 2.4rem + 2.1vh - 2rem);
   font-weight: 400;
   font-style: italic;
   text-align: center;
 }
 .testimonialCard__figcaptionHeading {
   color: #f0f0f0;
-  font-size: clamp(calc(2.6rem + 2.3vh - 2rem), 4.3vw, calc(3.1rem + 2.3vh - 2rem));
+  font-size: clamp(2.6rem + 2.3vh - 2rem, 4.3vw, 3.1rem + 2.3vh - 2rem);
   font-weight: 900;
   line-height: 1;
   letter-spacing: 2px;
@@ -491,7 +491,7 @@ body {
 }
 .testimonialCard__figcaptionSubHeading {
   color: rgba(240, 240, 240, 0.7);
-  font-size: clamp(calc(2.1rem + 2.3vh - 2rem), 4.3vw, calc(2.5rem + 2.3vh - 2rem));
+  font-size: clamp(2.1rem + 2.3vh - 2rem, 4.3vw, 2.5rem + 2.3vh - 2rem);
   font-weight: 700;
   text-align: center;
 }
@@ -556,11 +556,11 @@ body {
 
 .contactForm {
   color: #003049;
-  font-size: clamp(calc(2.1rem + 2.3vh - 2rem), 4.3vw, calc(2.5rem + 2.3vh - 2rem));
+  font-size: clamp(2.1rem + 2.3vh - 2rem, 4.3vw, 2.5rem + 2.3vh - 2rem);
   font-weight: 700;
 }
 .contactForm input, .contactForm textarea {
-  font-size: clamp(calc(2.1rem + 2.3vh - 2rem), 4.3vw, calc(2.5rem + 2.3vh - 2rem));
+  font-size: clamp(2.1rem + 2.3vh - 2rem, 4.3vw, 2.5rem + 2.3vh - 2rem);
 }
 
 .u-center-text {
@@ -649,11 +649,11 @@ body {
 }
 .btn--returnHomeBtn:link, .btn--returnHomeBtn:visited {
   text-decoration: none;
-  box-shadow: 0 0 12px 2px rgba(3, 3, 3, 0.35), 0 0 80px 40px white;
+  box-shadow: 0 0 12px 2px rgba(3, 3, 3, 0.35), 0 0 80px 40px rgb(255, 255, 255);
   transform: translateY(0px);
 }
 .btn--returnHomeBtn:hover {
-  box-shadow: 0px 0px 8px 2px rgba(0, 0, 0, 0.55), 0 0 80px 40px white;
+  box-shadow: 0px 0px 8px 2px rgba(0, 0, 0, 0.55), 0 0 80px 40px rgb(255, 255, 255);
   transform: translateY(-2px);
 }
 .btn--returnHomeBtn {
@@ -668,7 +668,7 @@ body {
   border-left: 2px solid #9c9c9c;
   border-bottom: 2px solid #e8e8e8;
   border-right: 2px solid #e8e8e8;
-  box-shadow: 0 0 12px 6px rgba(3, 3, 3, 0.35), 0 0 80px 40px white;
+  box-shadow: 0 0 12px 6px rgba(3, 3, 3, 0.35), 0 0 80px 40px rgb(255, 255, 255);
   padding: 0.15rem 0.75rem 0.35rem;
 }
 
@@ -810,7 +810,7 @@ body {
 }
 .cardSkills__img {
   display: block;
-  width: clamp(calc(1.4rem + 3.2vw), 6.2vh, calc(3.8rem + 3.2vw));
+  width: clamp(1.4rem + 3.2vw, 6.2vh, 3.8rem + 3.2vw);
   margin: 0 auto;
 }
 @media (min-width: 37.5em) {
@@ -818,7 +818,7 @@ body {
     max-width: 250px;
   }
   .cardSkills__img {
-    width: clamp(calc(1.3rem + 3vw), 6vh, calc(3.6rem + 3vw));
+    width: clamp(1.3rem + 3vw, 6vh, 3.6rem + 3vw);
   }
 }
 @media (min-width: 56.25em) {
@@ -826,7 +826,7 @@ body {
     min-width: 310px;
   }
   .cardSkills__img {
-    width: clamp(calc(1.4rem + 3vw), 6vh, calc(3.6rem + 3vw));
+    width: clamp(1.4rem + 3vw, 6vh, 3.6rem + 3vw);
   }
 }
 
@@ -1021,7 +1021,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  margin-left: clamp(.75rem, 2vw, 1.25rem);
+  margin-left: clamp(0.75rem, 2vw, 1.25rem);
 }
 .hamburgerBtn {
   display: flex;
@@ -1759,7 +1759,7 @@ body {
   border: 5px solid #f2f2f2;
   border-radius: 50%;
   box-shadow: 3px 7px 5px 5px rgba(0, 0, 0, 0.3);
-  width: clamp(calc(8rem + 15vh - 4rem), 55vw, calc(18rem + 20vh - 12rem));
+  width: clamp(8rem + 15vh - 4rem, 55vw, 18rem + 20vh - 12rem);
 }
 @media (min-width: 56.25em) {
   .header__hero .figure__img {
@@ -1770,7 +1770,7 @@ body {
 @media (min-width: 900px) and (min-height: 750px) {
   .header__hero .figure__img {
     border-radius: 50%;
-    width: clamp(calc(7rem + 14vh - 4rem), 50vw, calc(17rem + 19vh - 12rem));
+    width: clamp(7rem + 14vh - 4rem, 50vw, 17rem + 19vh - 12rem);
   }
 }
 .header__hero .primaryHeading > * {

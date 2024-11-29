@@ -1,6 +1,7 @@
 {
   "name": "profile001",
   "version": "1.0.0",
+  "type": "module",
   "description": "a landing/profile page for Schalk van Dyk, a web developer",
   "main": "server.js",
   "scripts": {
