@@ -122,19 +122,105 @@ An innovative system streamlining project workflows and automating portfolio upd
 
 6. **Implement File Management**  
     Store project assets, screenshots, and downloadable case studies:  Use a cloud service like AWS S3 or Google Cloud Storage for scalable and secure storage.
-    
+
 7. **Add Analytics and Reporting**  
     Track views, likes, and case study downloads in the database.  Display analytics in both the admin dashboard and portfolio cards (e.g., "Downloaded 20 times").
 8. **Test and Debug**  
     Conduct unit tests for APIs, UI components, and database queries.
     Perform integration tests to ensure seamless interaction between the frontend, backend, and database.
     Test for responsiveness across devices and browsers.
+
 9. **Deploy the System**  
     **Backend**: Host the server using Heroku, AWS, or DigitalOcean.  
     **Frontend**: Deploy the client application using Netlify or Vercel.  
     **Database**: Use a cloud database service like AWS RDS or MongoDB Atlas.
+
 10. **Continuous Improvement**  
     Collect client and visitor feedback to refine features. Monitor system performance and scale as needed. This plan provides a structured roadmap to build the system effectively while ensuring scalability and user satisfaction.
+
+## **Dependencies**
+Here’s a breakdown of all the dependencies (both normal and dev-dependencies) and their uses in your project:
+
+### **Normal Dependencies**  
+
+* express  
+  * **Purpose**: A web framework for Node.js to handle server-side routing and middleware.  
+  * **Usage**: Build and manage the backend API, handle requests to serve static files, and create routes for the portfolio and other functionalities.  
+
+* mysql2
+  * **Purpose**: A MySQL database connector for Node.js.
+  * **Usage**: Connect to the MySQL database, run queries to store and retrieve data for the portfolio automation (e.g., project information, client details, and stats).  
+
+* axios
+  * **Purpose**: A promise-based HTTP client for making API requests.
+  * **Usage**: Fetch data from the backend (such as project information) on the frontend or send requests to external APIs if needed.  
+
+* dotenv
+  * **Purpose**: Manage environment variables.
+  * **Usage**: Store sensitive data such as database credentials, API keys, and server ports securely in a .env file.
+
+* bcryptjs
+  * **Purpose**: Hash passwords securely.
+  * **Usage**: Encrypt client passwords during registration and verify them during login.
+
+* jsonwebtoken (JWT)
+  * **Purpose**: Create and verify JSON Web Tokens for authentication.
+  * **Usage**: Securely handle user authentication, ensuring only logged-in users can access restricted features (e.g., private portfolio items).  
+
+* cors
+  * **Purpose**: Enable cross-origin resource sharing.  
+  * **Usage**: Allow the frontend (e.g., running on localhost:3000) to make API requests to the backend (e.g., running on localhost:5000).
+
+* body-parser
+  * **Purpose**: Parse incoming request bodies.
+  * **Usage**: Extract data (e.g., JSON or URL-encoded forms) sent from the frontend to the backend in requests.  
+
+* ejs
+  * **Purpose**: A templating engine for creating HTML views.
+  * **Usage**: Render dynamic HTML pages for the portfolio (if you’re using server-side rendering instead of a fully client-side app).  
+
+### **Dev Dependencies**  
+
+* sass
+  * **Purpose**: A CSS preprocessor for writing cleaner, modular, and reusable styles.
+  * **Usage**: Compile .scss files into CSS for the project.
+
+* autoprefixer
+  * **Purpose**: Automatically add vendor prefixes to CSS rules for better browser compatibility.
+  * **Usage**: Process compiled CSS files to ensure compatibility across various browsers.
+  
+* postcss-cli
+  * **Purpose**: A CLI tool for running PostCSS
+  plugins (e.g., autoprefixer).
+  * **Usage**: Automate tasks like adding prefixes and optimizing CSS.
+
+* npm-run-all
+  * **Purpose**: A tool to run multiple npm scripts in sequence or parallel.
+  * **Usage**: Simplify workflows like combining sass compilation, CSS prefixing, and compression into a single build:css command.
+
+* concat
+  * **Purpose**: A utility for concatenating multiple files.
+  * **Usage**: Combine multiple CSS or JS files into a single file to reduce HTTP requests and improve performance.
+
+### **How These Will Be Used**
+
+#### **Frontend**:
+* Use sass, autoprefixer, and postcss-cli to create optimized, production-ready styles.
+* Use axios to fetch and display portfolio data dynamically.
+* If EJS is used, templates will provide server-side rendered views.
+
+#### **Backend**:
+* Use express to set up routes (e.g., /api/projects or /portfolio).
+* Use mysql2 to interact with a MySQL database for CRUD operations on projects and client data.
+* Use bcryptjs and jsonwebtoken to manage authentication for secure client or admin logins.
+* Use dotenv for environment variables like database credentials or JWT secrets.
+* Use cors to handle cross-origin requests.
+
+#### **Development Workflow**:
+* Use npm-run-all to combine build tasks.
+* Use sass to compile modular SCSS into CSS.
+* Use autoprefixer and postcss-cli to ensure browser compatibility.
+---
  
    
 
