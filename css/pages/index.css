@@ -1,3 +1,10 @@
+body {
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: auto;
+  gap: 0;
+}
+
 /*
 0px			- 		600px:			mobile 		--> Mobile First Approach 
 											   	    (where normal styles apply)
@@ -20,4 +27,4 @@ ORDER: base + typography > general layout + grid > page layout > components
   background-color: blue;
 }
 
-/*# sourceMappingURL=portfolio.css.map */
+/*# sourceMappingURL=index.css.map */

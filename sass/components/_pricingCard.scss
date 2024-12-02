@@ -1,3 +1,4 @@
+@use "../abstracts" as *; // This imports all mixins and variables into the file
 .pricingCard {
       @include displayFlexColumn;
       background: linear-gradient(to right, rgba($cp-white, 1) 30%, rgba(0, 237, 254, .2) 70%, rgba(0, 237, 254, .3));

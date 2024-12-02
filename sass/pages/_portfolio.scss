@@ -1,4 +1,6 @@
+@use "../abstracts" as *; // This imports all mixins and variables into the file
 // New SCSS file for portfolio-specific styling
 .portfolioBody {
-      background-color: salmon;
+      background-color: blue;
+      // background-color: red; //this is the change
 }

@@ -1,3 +1,4 @@
+@use "../abstracts" as *; // This imports all mixins and variables into the file
 .navbar {
     display: flex;
     justify-content: space-between;

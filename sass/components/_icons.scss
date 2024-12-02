@@ -1,3 +1,4 @@
+@use "../abstracts" as *; // This imports all mixins and variables into the file
 .icon {
     width: 1.8rem;
     height: 1.8rem

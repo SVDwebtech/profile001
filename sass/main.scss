@@ -1,40 +1,5 @@
-@import "abstracts/variables";
-@import "abstracts/mixins";
-
-@import "base/animations";
-@import "base/base";
-@import "base/typography";
-@import "base/utilities";
-
-@import "components/button";
-@import "components/cardpopup";
-@import "components/cardPortfolio";
-@import "components/cardSkills";
-@import "components/carousel";
-@import "components/composition";
-@import "components/filler";
-@import "components/form";
-@import "components/heading";
-@import "components/icons";
-@import "components/iconBox";
-@import "components/logo";
-@import "components/minicard";
-@import "components/navigation";
-@import "components/paragraph";
-@import "components/popup";
-@import "components/portfolio-card";
-@import "components/portfolio-image";
-@import "components/pricingCard";
-@import "components/servicesCard";
-@import "components/socialmedia";
-@import "components/techStack";
-@import "components/testimonial";
-@import "components/tools";
-
-@import "layout/footer";
-@import "layout/header";
-@import "layout/main";
-@import "layout/navbar";
-
-@import "pages/home";
-@import "pages/portfolio";
+@use "./abstracts" as *;
+@use "./base" as *;
+@use "./components" as *;
+@use "./layout" as *;
+@use "./pages" as *;
