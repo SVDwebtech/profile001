@@ -1,5 +1,5 @@
-@use "../abstracts" as *; // This imports all mixins and variables into the file
 // New SCSS file for portfolio-specific styling
+@use "../abstracts" as *; // This imports all mixins and variables into the file
 .portfolioBody {
       background-color: greenyellow; 
 }

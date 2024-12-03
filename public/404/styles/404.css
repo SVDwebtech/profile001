@@ -1,0 +1,84 @@
+/*
+0px			- 		600px:			mobile 		--> Mobile First Approach 
+											   	    (where normal styles apply)
+600px		- 		900px: 			tab-port 	-->	Tablet Portrait 
+900px		-		1200px:			tab-land	-->	Tablet Landscape
+1200px		-		1800px:			desk		-->	Desktop 
+1800px +							big-desk	-->	Big Desktop
+
+REMEMBER: 1em = 16px;
+$breakpoint argument choices
+	- tab-port and >	600 --> 900 	: min-width: 37.5em (600/16)
+	- tab-land and >	900 --> 1200	: min-width: 56.25em (900/16)
+	- desk and >		1200 --> 1800	: min-width: 75em (1200/16)
+	- big-desk and >    1800 +			: min-width: 112.5em (1800/16)
+
+ORDER: base + typography > general layout + grid > page layout > components
+
+*/
+body {
+  font-family: "Lato", sans-serif;
+  background-color: #f2f2f2;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  height: 100vh;
+  text-align: center;
+}
+body .headingH1 {
+  line-height: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  gap: 0.5rem;
+  animation: bounce 1.5s infinite;
+}
+body .headingH1--page404PrimaryHeading {
+  color: #c1121f;
+  font-size: clamp(3rem, 8vw, 3.2rem);
+  font-weight: 900;
+  letter-spacing: 2px;
+  text-transform: capitalize;
+}
+body .headingH1--page404SecondaryHeading {
+  color: #292828;
+  font-size: clamp(1.6rem, 5.5vw, 1.8rem);
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+body p {
+  color: rgba(41, 40, 40, 0.65);
+  font-size: clamp(1.4rem, 5.5vw, 1.6rem);
+}
+body a {
+  display: inline-block;
+  font-size: clamp(1.6rem, 5.5vw, 1.8rem);
+  color: #1b90d8;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border: 2px solid #1b90d8;
+  border-radius: 1px;
+  transition: all 0.3s ease;
+}
+body a:hover {
+  color: #f0f0f0;
+  border-color: #003049;
+  background-color: #003049;
+  text-decoration: none;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+/*# sourceMappingURL=404.css.map */

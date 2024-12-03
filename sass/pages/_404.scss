@@ -1,0 +1,59 @@
+@use "../abstracts/" as *;
+// 404 Page Styling
+body {
+      font-family: 'Lato', sans-serif;
+      background-color: $cp-white;
+      padding: 2rem;
+      @include displayFlexColumn;
+      height: 100vh;
+      text-align: center;
+      .headingH1 {
+            line-height: 1;
+            @include displayFlexColumn;
+            gap: .5rem;
+            animation: bounce 1.5s infinite; // Cool bounce animation for the "404"
+            &--page404PrimaryHeading {
+                  color: $cf-red;
+                  font-size: clamp(3rem, 8vw, 3.2rem);
+                  font-weight: 900;
+                  letter-spacing: 2px;
+                  text-transform: capitalize;
+            }
+            &--page404SecondaryHeading {
+                  color: $cf-dark;
+                  font-size: clamp(1.6rem, 5.5vw, 1.8rem);
+                  font-weight: 700;
+                  letter-spacing: 2px;
+            }
+      }
+      p {
+            color: rgba($cf-dark, .65);
+            font-size: clamp(1.4rem, 5.5vw, 1.6rem);
+      }
+      a {
+            display: inline-block;
+            font-size: clamp(1.6rem, 5.5vw, 1.8rem);;
+            color: $cf-blue;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border: 2px solid $cp-blue;
+            border-radius: 1px;
+            transition: all 0.3s ease;
+            &:hover {
+                  color: $cf-white;
+                  border-color: $cp-darkBlue;
+                  background-color: $cp-darkBlue;
+                  text-decoration: none;
+            }
+      }
+}
+
+// Animation for the "404"
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
