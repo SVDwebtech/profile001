@@ -1,6 +1,6 @@
 @use "../abstracts/" as *;
 // 404 Page Styling
-body {
+.page404Container {
       font-family: 'Lato', sans-serif;
       background-color: $cp-white;
       padding: 2rem;

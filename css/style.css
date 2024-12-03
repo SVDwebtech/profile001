@@ -2089,7 +2089,7 @@ body {
   background-color: greenyellow;
 }
 
-body {
+.page404Container {
   font-family: "Lato", sans-serif;
   background-color: #f2f2f2;
   padding: 2rem;
@@ -2101,7 +2101,7 @@ body {
   height: 100vh;
   text-align: center;
 }
-body .headingH1 {
+.page404Container .headingH1 {
   line-height: 1;
   display: flex;
   flex-direction: column;
@@ -2111,24 +2111,24 @@ body .headingH1 {
   gap: 0.5rem;
   animation: bounce 1.5s infinite;
 }
-body .headingH1--page404PrimaryHeading {
+.page404Container .headingH1--page404PrimaryHeading {
   color: #c1121f;
   font-size: clamp(3rem, 8vw, 3.2rem);
   font-weight: 900;
   letter-spacing: 2px;
   text-transform: capitalize;
 }
-body .headingH1--page404SecondaryHeading {
+.page404Container .headingH1--page404SecondaryHeading {
   color: #292828;
   font-size: clamp(1.6rem, 5.5vw, 1.8rem);
   font-weight: 700;
   letter-spacing: 2px;
 }
-body p {
+.page404Container p {
   color: rgba(41, 40, 40, 0.65);
   font-size: clamp(1.4rem, 5.5vw, 1.6rem);
 }
-body a {
+.page404Container a {
   display: inline-block;
   font-size: clamp(1.6rem, 5.5vw, 1.8rem);
   color: #1b90d8;
@@ -2138,7 +2138,7 @@ body a {
   border-radius: 1px;
   transition: all 0.3s ease;
 }
-body a:hover {
+.page404Container a:hover {
   color: #f0f0f0;
   border-color: #003049;
   background-color: #003049;
