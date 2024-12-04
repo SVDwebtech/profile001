@@ -1,6 +1,7 @@
 @use "../abstracts/" as *;
 // 404 Page Styling
 .page404Container {
+      color: $cf-darkBlue;
       font-family: 'Lato', sans-serif;
       background-color: $cp-white;
       padding: 2rem;
@@ -20,23 +21,32 @@
                   text-transform: capitalize;
             }
             &--page404SecondaryHeading {
-                  color: $cf-dark;
                   font-size: clamp(1.6rem, 5.5vw, 1.8rem);
                   font-weight: 700;
                   letter-spacing: 2px;
             }
       }
+      .headingH2 {
+            @include displayFlexColumn;
+            gap: .5rem;
+            color: rgba($cf-darkBlue, .95);
+            font-size: clamp(1.4rem, 5.5vw, 1.6rem);
+            font-weight: 400;
+            letter-spacing: 2px;
+            line-height: .5;
+            text-transform: capitalize;
+      }
       p {
-            color: rgba($cf-dark, .65);
             font-size: clamp(1.4rem, 5.5vw, 1.6rem);
       }
       a {
             display: inline-block;
-            font-size: clamp(1.6rem, 5.5vw, 1.8rem);;
-            color: $cf-blue;
+            color: $cf-darkBlue;
+            font-size: clamp(1.6rem, 5.5vw, 1.8rem);
+            font-weight: 600;
             text-decoration: none;
             padding: 0.5rem 1rem;
-            border: 2px solid $cp-blue;
+            border: 2px solid $cp-darkBlue;
             border-radius: 1px;
             transition: all 0.3s ease;
             &:hover {

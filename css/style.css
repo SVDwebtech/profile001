@@ -2090,6 +2090,7 @@ body {
 }
 
 .page404Container {
+  color: #003049;
   font-family: "Lato", sans-serif;
   background-color: #f2f2f2;
   padding: 2rem;
@@ -2119,22 +2120,35 @@ body {
   text-transform: capitalize;
 }
 .page404Container .headingH1--page404SecondaryHeading {
-  color: #292828;
   font-size: clamp(1.6rem, 5.5vw, 1.8rem);
   font-weight: 700;
   letter-spacing: 2px;
 }
+.page404Container .headingH2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  gap: 0.5rem;
+  color: rgba(0, 48, 73, 0.95);
+  font-size: clamp(1.4rem, 5.5vw, 1.6rem);
+  font-weight: 400;
+  letter-spacing: 2px;
+  line-height: 0.5;
+  text-transform: capitalize;
+}
 .page404Container p {
-  color: rgba(41, 40, 40, 0.65);
   font-size: clamp(1.4rem, 5.5vw, 1.6rem);
 }
 .page404Container a {
   display: inline-block;
+  color: #003049;
   font-size: clamp(1.6rem, 5.5vw, 1.8rem);
-  color: #1b90d8;
+  font-weight: 600;
   text-decoration: none;
   padding: 0.5rem 1rem;
-  border: 2px solid #1b90d8;
+  border: 2px solid #003049;
   border-radius: 1px;
   transition: all 0.3s ease;
 }
