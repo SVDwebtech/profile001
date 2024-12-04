@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Error <%= statusCode %></title>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;600;700;900&display=swap"
+            rel="stylesheet">
+      <link rel="stylesheet" href="/error/styles/error.css">
+</head>
+<body>
+      <div class="pageErrorContainer">
+            <h1 class="pageErrorContainer__headingH1 headingH1 headingH1--pageErrorContainer">
+                  <span class="pageErrorContainer__headingH1 headingH1 headingH1--pageErrorPrimaryHeading">Oops!</span> 
+                  <span class="pageErrorContainer__headingH1 headingH1 headingH1--pageErrorSecondaryHeading"><%= error %></span>
+            </h1>
+            <h2 class="pageErrorContainer__headingH2 headingH2 headingH2--pageErrorErrorCode">Error Code:<%= statusCode %> </br>(Server Error)</h2>
+            <p class="pageErrorContainer__paragraph paragraph paragraph--pageErrorContainer"><%= message %></p>
+            <a class="btn btn--pageErrorContainer" href="/">Return Home</a>
+      </div>
+      
+</body>
+</html>
