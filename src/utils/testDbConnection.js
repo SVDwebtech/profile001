@@ -1,5 +1,4 @@
 import pool from '../../config/db.js'; // Import the database pool
-
 const testDbConnection = async () => {
     try {
         // Attempt to get a connection from the pool
