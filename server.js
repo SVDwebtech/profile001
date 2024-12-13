@@ -3,10 +3,19 @@ import express from 'express';
 import dotenv from 'dotenv';
 import path from 'path';
 import { fileURLToPath } from 'url';
+import helmet from 'helmet';
+import cors from 'cors';
+import morgan from 'morgan';
+import clientRoutes from './src/routes/clientRoutes.js';
+import projectRoutes from './src/routes/projectRoutes.js';
+import { authenticateUser } from './src/middleware/auth.js';
+
 // Load environment variables from .env file
 dotenv.config();
+
 // Create an instance of an Express application. `express()` initializes the main application object, which is used to define routes, middleware, and other server-related functionality.
 const app = express();
+
 // Define the port: Use the environment variable PORT or default to 3000
 const port = process.env.PORT || 5000;
 
@@ -15,20 +24,28 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 // Middleware
-app.set('view engine', 'ejs'); // Set EJS as the view engine
-app.set('views', path.join(__dirname, 'views')); // Set the views folder
-app.use(express.static('public')); // Serve static files from the "public" folder
-app.use(express.json()); // Parse JSON requests
+app.use(helmet()); // Add security headers
+app.use(cors()); // Enable cross-origin resource sharing
+app.use(morgan('dev')); // Log HTTP requests in the console
+app.use(express.static(path.join(__dirname, 'public'))); // Serve static files from the "public" folder
+app.use(express.json()); // Parse JSON request bodies
+app.use(express.urlencoded({ extended: true })); // Parse URL-encoded request bodies
+
+// Set EJS as the view engine
+app.set('view engine', 'ejs');
+app.set('views', path.join(__dirname, 'views'));
 
 // Route to serve the home page
 app.get('/', (req, res) => {
       res.send('Welcome to my server!');
     });
+
 // Route to serve the portfolio page
 app.get('/portfolio', (req, res) => {
       // Render the 'portfolio.ejs' template located in the 'views' folder
       res.render('portfolio');
     });
+    
 // Define a route to intentionally trigger an error for testing
 app.get('/test-error', (req, res, next) => {
       console.log('Hello from the test-error page');
@@ -39,11 +56,24 @@ app.get('/test-error', (req, res, next) => {
       // Pass the error to the next middleware (the centralized error-handling middleware)
       next(error);
     });
+
+// Test authenticate for /protected-route
+app.get('/protected-route', authenticateUser, (req, res) => {
+      res.json({ message: `Welcome, ${req.user.name}!` });
+    });
+
+// Integrate Client Routes
+app.use('/api/clients', clientRoutes);
+
+// Integrate Project Routes
+app.use('/api/projects', projectRoutes);
+
 // Middleware to handle 404 errors (Non-existent routes)
 app.use((req, res, next) => {
       // Render the custom 404 page
       res.status(404).render('404');
     });
+
 // Centralized error-handling middleware
 app.use((err, req, res, next) => {
       console.error(err.stack); // Log error details
@@ -70,6 +100,7 @@ app.use((err, req, res, next) => {
         });
       }
     });
+    
 // Start the server
 app.listen(port, () => {
       console.log(`Server is running on http://localhost:${port}`);
