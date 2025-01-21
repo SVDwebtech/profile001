@@ -6,6 +6,7 @@ import { fileURLToPath } from 'url';
 import helmet from 'helmet';
 import cors from 'cors';
 import morgan from 'morgan';
+import authRoutes from './src/routes/authRoutes.js';
 import clientRoutes from './src/routes/clientRoutes.js';
 import projectRoutes from './src/routes/projectRoutes.js';
 import { authenticateUser } from './src/middleware/auth.js';
@@ -37,7 +38,7 @@ app.set('views', path.join(__dirname, 'views'));
 
 // Route to serve the home page
 app.get('/', (req, res) => {
-      res.send('Welcome to my server!');
+      res.render('home');
     });
 
 // Route to serve the portfolio page
@@ -61,6 +62,9 @@ app.get('/test-error', (req, res, next) => {
 app.get('/protected-route', authenticateUser, (req, res) => {
       res.json({ message: `Welcome, ${req.user.name}!` });
     });
+
+// Integrate Auth Routes
+app.use('/api/auth', authRoutes);
 
 // Integrate Client Routes
 app.use('/api/clients', clientRoutes);
@@ -100,7 +104,7 @@ app.use((err, req, res, next) => {
         });
       }
     });
-    
+
 // Start the server
 app.listen(port, () => {
       console.log(`Server is running on http://localhost:${port}`);

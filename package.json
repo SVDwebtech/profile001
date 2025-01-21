@@ -6,7 +6,7 @@
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
-    "watch:sass-main": "sass --watch sass/main.scss:css/style.css",
+    "watch:sass-main": "sass --watch sass/main.scss:public/css/style.css",
     "watch:sass-portfolio": "sass --watch sass/pages/_portfolio.scss:public/portfolio/styles/portfolio.css",
     "watch:sass-404": "sass --watch sass/pages/_404.scss:public/404/styles/404.css",
     "watch:sass-error": "sass --watch sass/pages/_error.scss:public/error/styles/error.css",

@@ -1,4 +1,4 @@
-@forward "animations";
-@forward "base";
-@forward "typography";
-@forward "utilities";
+@use "animations" as *;
+@use "base" as *;
+@use "typography" as *;
+@use "utilities" as *;

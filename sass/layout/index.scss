@@ -1,4 +1,4 @@
-@forward "footer";
-@forward "header";
-@forward "main";
-@forward "navbar";
+@use "footer" as *;
+@use "header" as *;
+@use "main" as *;
+@use "navbar" as *;

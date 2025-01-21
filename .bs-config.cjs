@@ -1,10 +1,10 @@
 module.exports = {
-      proxy: "http://localhost:5000/portfolio",
+      proxy: "http://localhost:5000/",
       files: [
-          "css/*.css",
           "views/*.ejs",
-          "public/js/**/*.js",
-          "public/portfolio/styles/*.css"
+          "public/css/**/*.css",
+          "public/portfolio/styles/*.css",
+          "public/js/**/*.js"
       ],
       injectChanges: true,
       notify: true

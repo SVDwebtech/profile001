@@ -1,4 +1,4 @@
-@use "../abstracts" as *; // This imports all mixins and variables into the file
+@use "../abstracts/index.scss" as *; // This imports all mixins and variables into the file
 // basic reset
 *,
 *::after,
