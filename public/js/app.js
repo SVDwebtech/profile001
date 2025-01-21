@@ -8,6 +8,10 @@ import { servicesCardLinkBtnLogic, servicesCardReturnHomeBtnLogic, hideReturnHom
 /// app variables
 // hamburger variables
 const hamburgerBtn = document.querySelector('.hamburgerBtn');
+// hamburgerBtn.addEventListener('click', () => {
+//     console.log('hamburgerBtn clicked');
+//     hamburgerBtn.style.backgroundColor = "red";
+//   });
 const hamburgerTopBar = document.querySelector(".hamburgerBtn__hamburgerBar--top");
 const hamburgerMiddleBar = document.querySelector(".hamburgerBtn__hamburgerBar--middle");
 const hamburgerBottomBar = document.querySelector(".hamburgerBtn__hamburgerBar--bottom");
