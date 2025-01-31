@@ -1,9 +1,7 @@
 // imports
 import { hamLogic } from "./modules/hamburgerLogic.js";
 import { servicesCardLinkBtnLogic, servicesCardReturnHomeBtnLogic, hideReturnHomeBtnOnScrollLogic, showReturnHomeBtnOnScrollEndLogic } from "./modules/servicesLogic.js";
-
-// variables
-const copyrightDate = document.querySelector(".copyrightDate");
+import { getCopyrightCurrentYear } from "./modules/copyrightDateLogic.js";
 
 // hamburger logic
 document.addEventListener("DOMContentLoaded", function () {
@@ -11,8 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 // copyright date logic
-const date = new Date();
-copyrightDate.textContent = date.getFullYear();
+getCopyrightCurrentYear();
 
 // services logic
 servicesCardLinkBtnLogic();
