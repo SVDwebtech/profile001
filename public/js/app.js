@@ -1,6 +1,6 @@
 // imports
 import { hamLogic } from "./modules/hamburgerLogic.js";
-import { servicesLinks } from "./modules/appVariables.js";
+import { servicesCardLinkBtnLogic, servicesCardReturnHomeBtnLogic, hideReturnHomeBtnOnScrollLogic, showReturnHomeBtnOnScrollEndLogic } from "./modules/servicesLogic.js";
 
 // variables
 const copyrightDate = document.querySelector(".copyrightDate");

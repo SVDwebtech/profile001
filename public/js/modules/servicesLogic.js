@@ -1,7 +1,7 @@
-//////////////////////////////////////////////////////////////////////////
-/// imports
-import { returnHomeBtns, servicesLinks } from "./appVariables.js";
-//////////////////////////////////////////////////////////////////////////
+// services variables
+const returnHomeBtns = document.querySelectorAll('.returnHomeBtn');
+const servicesLinks = document.querySelectorAll('.servicesLink');
+
 /// functions
 const servicesCardLinkBtnLogic = () => {
       for(let link of servicesLinks) {
@@ -52,6 +52,6 @@ const showReturnHomeBtnOnScrollEndLogic = () => {
             });
       }
 }
-//////////////////////////////////////////////////////////////////////////
+
 /// export
 export { servicesCardLinkBtnLogic, servicesCardReturnHomeBtnLogic, hideReturnHomeBtnOnScrollLogic, showReturnHomeBtnOnScrollEndLogic };

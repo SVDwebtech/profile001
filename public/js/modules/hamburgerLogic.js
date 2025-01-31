@@ -146,7 +146,7 @@ function hamLogic() {
     } else if (window.scrollY < 300 && hamburgerMenu.classList.contains("navList--displayNone")) {
       hideNav();
     }
-  };
+  }; 
 
   /////////////////////////////////////////////////////////////////////////////////////
   // animate hamburgerMenu (close menu) and hamburgerBtn (change to hamburgerBtn) when
