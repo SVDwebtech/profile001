@@ -10,6 +10,8 @@ import authRoutes from './src/routes/authRoutes.js';
 import clientRoutes from './src/routes/clientRoutes.js';
 import projectRoutes from './src/routes/projectRoutes.js';
 import { authenticateUser } from './src/middleware/auth.js';
+// import browser-sync
+import browserSync from 'browser-sync';
 
 // Load environment variables from .env file
 dotenv.config();
@@ -45,6 +47,7 @@ app.get('/', (req, res) => {
 app.get('/portfolio', (req, res) => {
       // Render the 'portfolio.ejs' template located in the 'views' folder
       res.render('portfolio');
+      // res.send("<h1>Hello World!</h1>");
     });
     
 // Define a route to intentionally trigger an error for testing
@@ -107,5 +110,19 @@ app.use((err, req, res, next) => {
 
 // Start the server
 app.listen(port, () => {
-      console.log(`Server is running on http://localhost:${port}`);
-    });
+  console.log(`🚀 Server running at http://localhost:${port}`);
+
+  // <script async src="/browser-sync/browser-sync-client.js"></script> --> insert this inside the <head> of each page
+  // 🔹 Initialize BrowserSync after Express starts
+  const bs = browserSync.create();
+  bs.init({
+      proxy: `http://localhost:${port}`, // Proxy Express server
+      files: ["views/**/*.ejs", "public/**/*.{css,js,html}"], // Watch changes
+      watch: true, // Auto-detect file changes
+      notify: false, // Disable pop-up notifications
+      open: 'local', // Auto-opening browser
+      reloadDelay: 500, // Avoid conflicts
+      injectChanges: true, // 🔥 Injects CSS changes instead of full reload
+      ui: { port: 3001 } // Set UI port
+  });
+});
